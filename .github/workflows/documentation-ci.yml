@@ -36,10 +36,27 @@ jobs:
           make clean-generated
           make all
 
-      - name: Fail on any generated file not matching a committed baseline
+      - name: Fail on any generated text file not matching a committed baseline
         run: |
           git status --porcelain
-          git diff --exit-code -- dist content/catalog.json MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json
+          git diff --exit-code -- content/catalog.json MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json 'dist/site-public' 'dist/site-private' 'dist/reports'
+
+      - name: Structural QA check on all generated PDFs
+        run: |
+          python3 -c '
+          import pathlib, subprocess
+          pdfs = list(pathlib.Path("dist/pdf").rglob("*.pdf"))
+          print(f"Vérification de {len(pdfs)} fichiers PDF avec qpdf...")
+          errors = 0
+          for pdf in pdfs:
+              res = subprocess.run(["qpdf", "--check", str(pdf)], capture_output=True)
+              if res.returncode != 0:
+                  print(f"Erreur qpdf sur {pdf}: {res.stderr.decode()}")
+                  errors += 1
+          if errors > 0:
+              raise SystemExit(f"{errors} erreurs structurelles PDF détectées !")
+          print(f"Succès : les {len(pdfs)} PDF sont 100% valides structurellement.")
+          '
 
       - name: Secret scan and public/private confidentiality gates
         run: python3 tools/ci_gates.py
