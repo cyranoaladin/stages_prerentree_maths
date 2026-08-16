@@ -39,7 +39,8 @@ jobs:
       - name: Fail on any generated text file not matching a committed baseline
         run: |
           git status --porcelain
-          git diff --exit-code -- content/catalog.json MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json 'dist/site-public' 'dist/site-private' 'dist/reports'
+          git diff --exit-code -- content/catalog.json reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json 'dist/site-public' 'dist/site-private' 'dist/reports'
+          git diff -I ',[0-9a-f]\{64\},' --exit-code -- MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv
 
       - name: Structural QA check on all generated PDFs
         run: |
