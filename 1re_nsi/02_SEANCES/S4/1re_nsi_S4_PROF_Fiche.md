@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Listes, tuples, dictionnaires et tables CSV</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Corrigé, différenciation et pilotage</div>
 </div><div class="prof-only"></div>
-# Objectifs
+## Objectifs
 
 - maîtriser indexation et longueur ;
 - comprendre mutation et aliasing ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - importer une table CSV ;
 - filtrer, trier et contrôler des données ;
 
-# Déroulé minute par minute
+## Déroulé minute par minute
 
 - 0-10 rituel ;
 - 10-28 listes/index ;
@@ -30,7 +30,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - 100-112 tri/cohérence ;
 - 112-120 synthèse/exit ;
 
-# Rituel prêt à l’emploi
+## Rituel prêt à l’emploi
 
 ## Question 1
 
@@ -140,7 +140,7 @@ Expliquer le résultat.
 - `csv.DictReader` produit des dictionnaires dont les valeurs sont d’abord des chaînes : il faut convertir les nombres.
 
 
-# Consignes prêtes à dire
+## Consignes prêtes à dire
 
 - « Avant d’exécuter, écris ce que tu prévois. »
 - « Une réponse sans contrôle reste une hypothèse. »
@@ -148,7 +148,7 @@ Expliquer le résultat.
 - « Ne change qu’une chose à la fois, puis relance les tests. »
 - « Explique le rôle de cette variable sans lire le code mot à mot. »
 
-# Points de vigilance
+## Points de vigilance
 
 - ne pas transformer l’activité en copie de code projeté ;
 - vérifier que les deux élèves alternent pilote et navigateur ;
@@ -156,7 +156,7 @@ Expliquer le résultat.
 - demander un test sur les bornes ;
 - conserver le fichier final et le journal des erreurs.
 
-# Indicateurs de réussite
+## Indicateurs de réussite
 
 | Élève | Prévision exacte | Code exécutable | Tests pertinents | Explication | Aide maximale |
 |---|:---:|:---:|:---:|:---:|:---:|

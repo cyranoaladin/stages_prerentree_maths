@@ -1,8 +1,8 @@
-# Index - Entrée en Première générale - Spécialité mathématiques
-
+# Index — 1re Spécialité Mathématiques
+## Documents du niveau
 ## Documents généraux
-- [1ere_spe_Guide_Formateur](../01_ENSEIGNANT/1ere_spe_Guide_Formateur.html)
-- [1ere_spe_Tableau_Bord_Enseignant](../01_ENSEIGNANT/1ere_spe_Tableau_Bord_Enseignant.html)
+- [Guide du formateur](../01_ENSEIGNANT/1ere_spe_Guide_Formateur.html)
+- [Tableau de bord enseignant](../01_ENSEIGNANT/1ere_spe_Tableau_Bord_Enseignant.html)
 ## Séances
 ### Séance 1
 - [Fiche professeur](../02_SEANCES/S1/1ere_spe_S1_PROF_Fiche.html)

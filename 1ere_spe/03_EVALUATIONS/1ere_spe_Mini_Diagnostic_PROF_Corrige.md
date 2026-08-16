@@ -1,5 +1,5 @@
-# 1ere_spe_Mini_Diagnostic_PROF_Corrige
-## Mini-diagnostic complémentaire - Corrigé et exploitation
+# 1re Spécialité Mathématiques — Diagnostic initial (Corrigé enseignant)
+## Corrigé et conseils d’exploitation
 
 ## Annexe F — Mini-diagnostic complémentaire
 

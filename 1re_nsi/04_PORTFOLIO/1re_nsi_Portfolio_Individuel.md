@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Stage Première NSI - Python</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Nom : ........................................................</div>
 </div>
-# Ma carte de départ
+## Ma carte de départ
 
 | Compétence | 0 | 1 | 2 | 3 | 4 | Preuve |
 |---|:---:|:---:|:---:|:---:|:---:|---|
@@ -27,7 +27,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | Algorithmes | ☐ | ☐ | ☐ | ☐ | ☐ |  |
 | Autonomie | ☐ | ☐ | ☐ | ☐ | ☐ |  |
 
-# Journal des cinq séances
+## Journal des cinq séances
 
 ## Séance 1
 
@@ -69,7 +69,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 
 <div class="answer"></div>
 
-# Bilan final
+## Bilan final
 
 ## Mes trois progrès
 

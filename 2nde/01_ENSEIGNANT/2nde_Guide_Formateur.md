@@ -1,5 +1,5 @@
-# 2nde_Guide_Formateur
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Guide du formateur
+## Protocole d’animation et repères pédagogiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
@@ -76,7 +76,7 @@ Le bilan final distingue :
 - la capacité de l’élève à estimer sa propre certitude ;
 - le plan de travail court recommandé pour septembre.
 
-# Correction réglementaire préalable
+## Correction réglementaire préalable
 
 Le cadre réglementaire indiqué dans la demande doit être **corrigé sur un point important**.
 
@@ -92,7 +92,7 @@ Cette actualisation modifie légèrement la transition à préparer : le nouveau
 
 ---
 
-# 1. Cadre, données disponibles et informations manquantes
+## 1. Cadre, données disponibles et informations manquantes
 
 ## 1.1 Niveau et format retenus
 
@@ -166,7 +166,7 @@ Le programme est construit selon les hypothèses suivantes :
 
 ---
 
-# 2. Référentiel officiel applicable en 2026-2027
+## 2. Référentiel officiel applicable en 2026-2027
 
 ## 2.1 Programme suivi en Troisième en 2025-2026
 
@@ -234,7 +234,7 @@ Il doit :
 
 ---
 
-# 3. Diagnostic synthétique du groupe
+## 3. Diagnostic synthétique du groupe
 
 ## 3.1 Diagnostic détaillé par domaine
 
@@ -354,7 +354,7 @@ Le mini-diagnostic complémentaire proposé en annexe est donc obligatoire avant
 
 ---
 
-# 4. Prérequis de Troisième et transition vers la Seconde
+## 4. Prérequis de Troisième et transition vers la Seconde
 
 Le tableau ci-dessous croise les acquis de fin de Troisième avec le nouveau programme de Seconde. Il ne constitue pas un plan de cours annuel : il permet de sélectionner les objets réellement prioritaires pour dix heures de stage. Le nouveau programme demande notamment de réactiver les calculs sur les fractions et puissances, le calcul littéral, les équations et inéquations, les pourcentages, les fonctions, Pythagore, Thalès, la trigonométrie, les statistiques et les probabilités. ([Ministère de l'Education nationale][3])
 
@@ -405,7 +405,7 @@ Ne seront pas enseignés comme chapitres complets :
 
 ---
 
-# 5. Objectifs du stage
+## 5. Objectifs du stage
 
 ## 5.1 Objectifs généraux
 

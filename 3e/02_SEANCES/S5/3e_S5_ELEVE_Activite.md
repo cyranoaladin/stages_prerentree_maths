@@ -1,5 +1,5 @@
-# 3e_S5_ELEVE_Activite
-## Séance 5 — Lire les données et mobiliser l’ensemble des acquis
+# 3e — Séance 5 : Lire les données et mobiliser l’ensemble des acquis
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

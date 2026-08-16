@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Boucles, compteurs et accumulateurs</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Nom : ........................................................</div>
 </div><div class="student-only"></div>
-# Mes objectifs
+## Mes objectifs
 
 - [ ] comprendre les valeurs produites par range ;
 - [ ] choisir entre for et while ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - [ ] éviter les erreurs de borne ;
 - [ ] justifier une terminaison simple ;
 
-# Rituel sans ordinateur
+## Rituel sans ordinateur
 
 ## Question 1
 
@@ -123,11 +123,11 @@ for i in range(1, 4):
 5. Écrire une boucle `while` dont le variant est explicite.
 
 
-# Plan de code ou pseudo-code
+## Plan de code ou pseudo-code
 
 <div class="answer-lg"></div>
 
-# Tests prévus avant exécution
+## Tests prévus avant exécution
 
 | Test | Entrée | Résultat attendu | Résultat obtenu | Validé |
 |---:|---|---|---|:---:|
@@ -136,7 +136,7 @@ for i in range(1, 4):
 | 3 |  |  |  | ☐ |
 | 4 |  |  |  | ☐ |
 
-# Journal de débogage
+## Journal de débogage
 
 | Symptôme observé | Hypothèse | Modification testée | Résultat |
 |---|---|---|---|
@@ -144,11 +144,11 @@ for i in range(1, 4):
 |  |  |  |  |
 |  |  |  |  |
 
-# Trace écrite personnelle
+## Trace écrite personnelle
 
 <div class="answer-lg"></div>
 
-# Exit ticket
+## Exit ticket
 
 1. Une construction Python que je sais utiliser :
 

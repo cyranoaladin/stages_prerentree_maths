@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Python - stage complet</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Accès aux documents, PDF et code</div>
 </div>
-# Accès rapide
+## Accès rapide
 
 ## Documents généraux
 

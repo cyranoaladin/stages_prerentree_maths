@@ -1,5 +1,5 @@
-# 4e_S4_SUPPORTS_Manipulation
-## Séance 4 — Voir, raisonner, démontrer
+# 4e — Séance 4 : Voir, raisonner, démontrer
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

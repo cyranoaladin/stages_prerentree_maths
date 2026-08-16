@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="student-only"></div>
 
-# Partie A - prévoir sans exécuter
+## Partie A - prévoir sans exécuter
 
 ## 1. Affectation
 
@@ -58,7 +58,7 @@ Qu’est-ce qui est affiché et que vaut `r` ?
 
 <div class="answer"></div>
 
-# Partie B - programmer
+## Partie B - programmer
 
 Écrire une fonction `compte_superieurs(valeurs, seuil)` qui renvoie le nombre de valeurs strictement supérieures au seuil.
 

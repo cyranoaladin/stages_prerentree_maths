@@ -1,8 +1,8 @@
-# Index - Entrée en Quatrième - Mathématiques
-
+# Index — 4e
+## Documents du niveau
 ## Documents généraux
-- [4e_Guide_Formateur](../01_ENSEIGNANT/4e_Guide_Formateur.html)
-- [4e_Tableau_Bord_Enseignant](../01_ENSEIGNANT/4e_Tableau_Bord_Enseignant.html)
+- [Guide du formateur](../01_ENSEIGNANT/4e_Guide_Formateur.html)
+- [Tableau de bord enseignant](../01_ENSEIGNANT/4e_Tableau_Bord_Enseignant.html)
 ## Séances
 ### Séance 1
 - [Fiche professeur](../02_SEANCES/S1/4e_S1_PROF_Fiche.html)

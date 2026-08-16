@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="confidential">CONFIDENTIEL - données pédagogiques d’un élève mineur.</div>
 
-# 1. Synthèse du diagnostic
+## 1. Synthèse du diagnostic
 
 - 13 questions traitées sur 18 ;
 - aucun domaine encore totalement stabilisé ;
@@ -33,7 +33,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - un paramètre n’est pas la valeur renvoyée ;
 - sans `return`, une fonction renvoie `None`.
 
-# 2. Plan d’action
+## 2. Plan d’action
 
 | Séance | Objectif personnel | Aide prévue | Indicateur |
 |---:|---|---|---|
@@ -43,7 +43,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | 4 | stabiliser indexation et `len` | schéma indices/valeurs | 5 accès corrects |
 | 5 | assembler un projet | squelette détaillé | projet exécuté et expliqué |
 
-# 3. Suivi
+## 3. Suivi
 
 | Compétence | Initial | S1 | S2 | S3 | S4 | S5 | Final |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -55,7 +55,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | Tables CSV | 2 |  |  |  |  |  |  |
 | Autonomie | 1 |  |  |  |  |  |  |
 
-# 4. Conseils pour l’année
+## 4. Conseils pour l’année
 
 - tracer à la main avant d’exécuter ;
 - conserver un carnet d’erreurs ;
@@ -64,7 +64,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - ne pas copier un code sans pouvoir expliquer chaque variable ;
 - revoir le mémento après chaque chapitre.
 
-# 5. Modèle de bilan final
+## 5. Modèle de bilan final
 
 <div class="answer-lg"></div>
 

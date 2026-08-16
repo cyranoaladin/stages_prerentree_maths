@@ -1,5 +1,5 @@
-# 1ere_spe_S2_AIDES_Cartes
-## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
+# 1re Spécialité Mathématiques — Séance 2 : Fonctions, fonctions de référence et première approche de la dérivation
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

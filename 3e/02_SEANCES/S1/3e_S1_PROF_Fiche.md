@@ -1,5 +1,5 @@
-# 3e_S1_PROF_Fiche
-## Séance 1 — Sécuriser le moteur numérique
+# 3e — Séance 1 : Sécuriser le moteur numérique
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

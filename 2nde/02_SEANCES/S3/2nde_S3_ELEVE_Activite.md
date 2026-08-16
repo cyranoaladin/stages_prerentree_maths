@@ -1,5 +1,5 @@
-# 2nde_S3_ELEVE_Activite
-## Séance 3 — Modéliser une situation
+# 2nde — Séance 3 : Modéliser une situation
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

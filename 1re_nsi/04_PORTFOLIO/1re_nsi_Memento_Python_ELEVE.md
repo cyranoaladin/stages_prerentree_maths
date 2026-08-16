@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Première NSI - référence de l’élève</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Syntaxe, méthodes, tests et erreurs fréquentes</div>
 </div>
-# 1. Lire un programme
+## 1. Lire un programme
 
 Python exécute les instructions dans l’ordre, sauf lorsqu’une condition, une boucle ou un appel de fonction modifie le flux.
 
@@ -21,7 +21,7 @@ x = x + 1      # évalue x + 1 puis remplace x
 x == 4         # comparaison, renvoie True ou False
 ```
 
-# 2. Types et conversions
+## 2. Types et conversions
 
 | Type | Exemple | Conversion |
 |---|---|---|
@@ -33,14 +33,14 @@ x == 4         # comparaison, renvoie True ou False
 
 Attention : `input()` renvoie toujours une chaîne.
 
-# 3. Opérateurs
+## 3. Opérateurs
 
 - calcul : `+ - * / // % **` ;
 - comparaison : `== != < <= > >=` ;
 - logique : `and or not` ;
 - appartenance : `in`, `not in`.
 
-# 4. Conditions
+## 4. Conditions
 
 ```python
 if condition:
@@ -60,7 +60,7 @@ Négations utiles :
 | `A and B` | `(not A) or (not B)` |
 | `A or B` | `(not A) and (not B)` |
 
-# 5. Boucles
+## 5. Boucles
 
 ## `for`
 
@@ -91,7 +91,7 @@ for valeur in valeurs:
     somme += valeur
 ```
 
-# 6. Fonctions
+## 6. Fonctions
 
 ```python
 def moyenne(valeurs: list[float]) -> float:
@@ -106,7 +106,7 @@ def moyenne(valeurs: list[float]) -> float:
 - sans `return` : résultat `None` ;
 - variable locale : créée dans la fonction.
 
-# 7. Tests
+## 7. Tests
 
 ```python
 assert est_pair(4) is True
@@ -116,7 +116,7 @@ assert maximum_deux(-3, -7) == -3
 
 Tester : cas ordinaire, borne, égalité, vide ou invalide selon le contrat.
 
-# 8. Chaînes, tuples et listes
+## 8. Chaînes, tuples et listes
 
 ```python
 texte = "python"
@@ -137,7 +137,7 @@ Compréhension :
 carres = [x*x for x in L if x >= 0]
 ```
 
-# 9. Mutation et copie
+## 9. Mutation et copie
 
 ```python
 a = [1, 2]
@@ -147,7 +147,7 @@ c = a.copy()      # copie superficielle
 
 Modifier `b` modifie `a`, mais pas `c`.
 
-# 10. Dictionnaires
+## 10. Dictionnaires
 
 ```python
 mesure = {"id": "C01", "temperature": 28.4}
@@ -158,7 +158,7 @@ for cle, valeur in mesure.items():
     print(cle, valeur)
 ```
 
-# 11. CSV
+## 11. CSV
 
 ```python
 import csv
@@ -169,7 +169,7 @@ with open("mesures_capteurs.csv", encoding="utf-8", newline="") as fichier:
 
 Les valeurs sont des chaînes : convertir avant de calculer.
 
-# 12. Algorithmes essentiels
+## 12. Algorithmes essentiels
 
 ## Recherche séquentielle
 
@@ -197,7 +197,7 @@ def maximum(valeurs):
 
 Nécessite une liste triée. À chaque tour, élimine environ la moitié de la zone restante.
 
-# 13. Erreurs fréquentes
+## 13. Erreurs fréquentes
 
 | Erreur | Symptôme | Correction |
 |---|---|---|
@@ -211,7 +211,7 @@ Nécessite une liste triée. À chaque tour, élimine environ la moitié de la z
 | aliasing | modification inattendue | utiliser `copy()` si nécessaire |
 | CSV non converti | concaténation de chaînes | convertir avec `int`/`float` |
 
-# 14. Checklist avant de rendre un programme
+## 14. Checklist avant de rendre un programme
 
 - [ ] noms explicites ;
 - [ ] fonctions courtes ;

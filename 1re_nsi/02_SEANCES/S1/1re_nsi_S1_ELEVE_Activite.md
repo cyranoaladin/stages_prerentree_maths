@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Variables, types, booléens et conditions</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Nom : ........................................................</div>
 </div><div class="student-only"></div>
-# Mes objectifs
+## Mes objectifs
 
 - [ ] comprendre l’ordre d’évaluation d’une affectation ;
 - [ ] distinguer affectation et comparaison ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - [ ] écrire une condition et sa négation ;
 - [ ] programmer un classificateur robuste ;
 
-# Rituel sans ordinateur
+## Rituel sans ordinateur
 
 ## Question 1
 
@@ -145,7 +145,7 @@ print(age + 1)
 
 ```python
 n = -3
-# À compléter
+## À compléter
 ```
 
 3. Écrire la négation Python de chacune des conditions :
@@ -164,11 +164,11 @@ n = -3
 4. Écrire des tests sur les valeurs limites `-1`, `0`, `30`, `31` du classificateur de température.
 
 
-# Plan de code ou pseudo-code
+## Plan de code ou pseudo-code
 
 <div class="answer-lg"></div>
 
-# Tests prévus avant exécution
+## Tests prévus avant exécution
 
 | Test | Entrée | Résultat attendu | Résultat obtenu | Validé |
 |---:|---|---|---|:---:|
@@ -177,7 +177,7 @@ n = -3
 | 3 |  |  |  | ☐ |
 | 4 |  |  |  | ☐ |
 
-# Journal de débogage
+## Journal de débogage
 
 | Symptôme observé | Hypothèse | Modification testée | Résultat |
 |---|---|---|---|
@@ -185,11 +185,11 @@ n = -3
 |  |  |  |  |
 |  |  |  |  |
 
-# Trace écrite personnelle
+## Trace écrite personnelle
 
 <div class="answer-lg"></div>
 
-# Exit ticket
+## Exit ticket
 
 1. Une construction Python que je sais utiliser :
 

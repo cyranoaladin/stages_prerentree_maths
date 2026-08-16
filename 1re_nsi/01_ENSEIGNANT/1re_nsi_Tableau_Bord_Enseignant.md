@@ -13,11 +13,11 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="confidential">CONFIDENTIEL - document de suivi nominatif.</div>
 
-# Échelle
+## Échelle
 
 0 non situé - 1 à reconstruire - 2 avec aide - 3 autonome - 4 transféré.
 
-# Grille récapitulative
+## Grille récapitulative
 
 | Compétence | Ahmad initial | Ahmad final | Ahmed initial | Ahmed final | Preuve conservée |
 |---|:---:|:---:|:---:|:---:|---|
@@ -40,7 +40,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | Autonomie | 1 |  | 2 |  |  |
 | Explication orale | 1 |  | 2 |  |  |
 
-# Suivi par séance
+## Suivi par séance
 
 | Séance | Élève | Rituel | Atelier commun | Parcours | Aide max | Tests | Oral | Décision suivante |
 |---:|---|:---:|:---:|---|:---:|:---:|:---:|---|
@@ -55,7 +55,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | 5 | Ahmad |  |  | Projet guidé |  |  |  |  |
 | 5 | Ahmed |  |  | Projet autonome |  |  |  |  |
 
-# Notes de séance
+## Notes de séance
 
 ## Séance 1
 

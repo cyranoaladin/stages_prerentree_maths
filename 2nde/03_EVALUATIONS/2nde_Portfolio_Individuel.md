@@ -1,5 +1,5 @@
-# 2nde_Portfolio_Individuel
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Portfolio individuel de suivi
+## Grille d’auto-évaluation
 
 **Nom et prénom :** ..............................................................................  
 **Établissement :** ..............................................................................  

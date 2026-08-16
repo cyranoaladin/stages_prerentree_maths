@@ -1,5 +1,5 @@
-# 3e_S4_SUPPORTS_Manipulation
-## Séance 4 — Choisir un rapport trigonométrique
+# 3e — Séance 4 : Choisir un rapport trigonométrique
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

@@ -1,5 +1,5 @@
-# Dossier individuel - Fares Darghouth
-## Entrée en Quatrième - Mathématiques
+# 4e — Dossier individuel — Fares Darghouth
+## Synthèse et profil élève
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

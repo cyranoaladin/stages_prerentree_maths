@@ -1,5 +1,5 @@
-# 1ere_spe_S4_PROF_Fiche
-## Séance 4 — Pourcentages, événements et probabilités conditionnelles
+# 1re Spécialité Mathématiques — Séance 4 : Pourcentages, événements et probabilités conditionnelles
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

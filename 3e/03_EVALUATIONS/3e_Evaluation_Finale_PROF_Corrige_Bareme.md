@@ -1,7 +1,7 @@
-# 3e_Evaluation_Finale_PROF_Corrige
-## Évaluation finale - Corrigé et exploitation
+# 3e — Évaluation finale (Corrigé & Barème)
+## Corrigé et barème d’évaluation
 
-# 15. Évaluation finale proposée
+## 15. Évaluation finale proposée
 
 Durée : **25 à 28 minutes**.
 Sans note. Certitude obligatoire de 1 à 4.

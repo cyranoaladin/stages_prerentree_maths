@@ -1,5 +1,5 @@
-# 2nde_Evaluation_Finale_ELEVE
-## Évaluation finale
+# 2nde — Évaluation finale (Élève)
+## Sujet de synthèse
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

@@ -62,12 +62,31 @@ def build_date() -> str:
 BUILD_DATE = build_date()
 
 
+def extract_human_title(path: Path, root: Path = ROOT) -> str:
+    full_path = root / path
+    if full_path.exists():
+        text = full_path.read_text(encoding="utf-8", errors="replace")
+        fm_match = re.search(r'(?m)^title:\s*["\']?(.*?)["\']?\s*$', text)
+        if fm_match:
+            return fm_match.group(1).strip()
+        for line in text.splitlines():
+            line_s = line.strip()
+            if line_s.startswith("# "):
+                title_text = line_s[2:].strip()
+                if title_text and not title_text.startswith(path.stem):
+                    return title_text
+                elif title_text:
+                    return title_text.replace("_", " ")
+    return path.stem.replace("_", " ")
+
+
 def classify_document(path: Path) -> dict[str, object]:
     """Classify one operational Markdown source without reading private PDFs."""
     path_text = path.as_posix()
     level = next((item for item in LEVELS if item in path.parts), "racine")
     session = next((item for item in path.parts if item.startswith("S") and item[1:].isdigit()), None)
     name = path.stem
+    human_title = extract_human_title(path)
     confidential = "04_NOMINATIFS" in path.parts
     if confidential:
         audience = "nominatif_prive"
@@ -106,11 +125,14 @@ def classify_document(path: Path) -> dict[str, object]:
         "level": level,
         "session": session,
         "source": path.as_posix(),
-        "title": name.replace("_", " "),
+        "filename": path.name,
+        "title": human_title,
+        "display_title": human_title,
         "audience": audience,
         "type": document_type,
         "confidential": confidential,
     }
+
 
 
 def public_documents(documents: list[dict[str, object]]) -> list[dict[str, object]]:
@@ -253,7 +275,7 @@ def render_math_for_print(fragment: str) -> str:
 
 def render_fragment(source: Path) -> str:
     result = subprocess.run(
-        ["pandoc", str(source), "--from=gfm", "--to=html5", "--mathml", "--shift-heading-level-by=1"],
+        ["pandoc", str(source), "--from=gfm", "--to=html5", "--mathml"],
         check=True,
         capture_output=True,
         text=True,
@@ -268,6 +290,7 @@ def page_shell(title: str, content: str, css_href: str, js_href: str, breadcrumb
     safe_title = html.escape(title)
     confidentiality = '<p class="notice confidential">CONFIDENTIEL — diffusion strictement limitée.</p>' if confidential else ''
     pdf_action = f'<a class="button" href="{html.escape(pdf_href)}">Télécharger le PDF</a>' if pdf_href else ''
+    main_header = f'<h1>{safe_title}</h1>' if not re.search(r'<h1[\s>]', content, flags=re.I) else ''
     return f'''<!doctype html>
 <html lang="fr">
 <head>
@@ -284,10 +307,11 @@ def page_shell(title: str, content: str, css_href: str, js_href: str, breadcrumb
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
   <header class="site-header"><a class="brand" href="{html.escape(relative_link_placeholder())}">Nexus Réussite</a><span class="badge">{html.escape(badge)}</span>{pdf_action}<button class="print-button" type="button" onclick="window.print()">Imprimer</button></header>
   <nav class="breadcrumbs" aria-label="Fil d’Ariane">{breadcrumbs}</nav>
-  <main id="contenu"><h1>{safe_title}</h1>{confidentiality}{content}</main>
+  <main id="contenu">{main_header}{confidentiality}{content}</main>
   <footer>Version {VERSION} · Génération locale {BUILD_DATE} · Nexus Réussite</footer>
 </body>
 </html>'''
+
 
 
 def relative_link_placeholder() -> str:
@@ -354,9 +378,19 @@ def portal_page(site: Path, catalog: list[dict[str, object]], private: bool) -> 
     (site / "assets/search-index.js").write_text("window.NEXUS_SEARCH_INDEX = " + json.dumps(index, ensure_ascii=False) + ";\n", encoding="utf-8")
 
 
+LEVEL_HUMAN_NAMES = {
+    "4e": "4e",
+    "3e": "3e",
+    "2nde": "2nde",
+    "1ere_spe": "1re Spécialité Mathématiques",
+    "1re_nsi": "1re NSI",
+}
+
+
 def level_page(site: Path, level: str, catalog: list[dict[str, object]], private: bool) -> None:
     entries = [item for item in (catalog if private else public_documents(catalog)) if item["level"] == level]
     sessions = []
+    human_level = LEVEL_HUMAN_NAMES.get(level, level)
     for number in range(1, 6):
         session = f"S{number}"
         actions = []
@@ -372,10 +406,11 @@ def level_page(site: Path, level: str, catalog: list[dict[str, object]], private
                     actions.append(f'<a href="../../site-private/{level}/index.html">{label} (zone privée)</a>')
         sessions.append(f'<article class="session-card"><h2>Séance {number}</h2><p>{" · ".join(actions) or "Documents privés ou à générer"}</p></article>')
     content = '<p><a href="../index.html">Retour au portail</a></p><div class="card-grid">' + "".join(sessions) + '</div><h2>Documents du niveau</h2><ul>' + "".join(f'<li><a href="{html.escape(relative_link(site / level / "index.html", document_html_path(item, private)))}">{html.escape(str(item["title"]))}</a> <span class="badge">{html.escape(str(item["audience"]).upper())}</span></li>' for item in entries if item["session"] is None) + '</ul>'
-    page = page_shell(f"Niveau {level}", content, "../assets/site.css", "../assets/site.js", f'<a href="../index.html">Accueil</a> / {level}', "PRIVÉ" if private else "LOCAL", None, private).replace("__ROOT__", "../index.html")
+    page = page_shell(f"Niveau {human_level}", content, "../assets/site.css", "../assets/site.js", f'<a href="../index.html">Accueil</a> / {html.escape(human_level)}', "PRIVÉ" if private else "LOCAL", None, private).replace("__ROOT__", "../index.html")
     target = site / level / "index.html"
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(page, encoding="utf-8")
+
 
 
 def utility_pages(site: Path, private: bool) -> None:
@@ -637,6 +672,9 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
     external = 0
     html_errors: list[str] = []
     heading_order_errors: list[str] = []
+    title_technical_errors: list[str] = []
+    h1_count_errors: list[str] = []
+
     for path in generated_html:
         text = path.read_text(encoding="utf-8", errors="replace")
         if '<html lang="fr">' not in text or '<main id="contenu">' not in text or 'skip-link' not in text:
@@ -649,13 +687,28 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
                 heading_order_errors.append(path.relative_to(ROOT).as_posix())
                 break
             previous = level
+
+        # Check H1 headers for technical stems, underscores or duplicate H1s
+        h1_matches = re.findall(r'<h1[^>]*>(.*?)</h1>', text, flags=re.S | re.I)
+        if len(h1_matches) != 1:
+            h1_count_errors.append(path.relative_to(ROOT).as_posix())
+        for h1_val in h1_matches:
+            clean_h1 = re.sub(r'<[^>]+>', '', h1_val).strip()
+            if '_' in clean_h1 or re.search(r'\b(4e|3e|2nde|1ere_spe|1re_nsi)_S\d_', clean_h1):
+                title_technical_errors.append(path.relative_to(ROOT).as_posix())
+
     students = load_students(ROOT, validate_filesystem=False)
     directory_to_student = {student.directory: student for student in students}
     student_leaks = 0
     cross_student = 0
+    unaccented_title_errors = 0
+
     for document in catalog:
         source = ROOT / str(document["source"])
         text = source.read_text(encoding="utf-8", errors="replace")
+        disp_title = str(document.get("display_title", document.get("title", "")))
+        if re.search(r'\b(ELEVE|PROF|Activite)\b', disp_title):
+            unaccented_title_errors += 1
         if document["audience"] == "eleve" and re.search(r'(?i)\b(corrig[ée]|réponses? attendues?|barème)\b', text):
             student_leaks += 1
         if "04_NOMINATIFS" in source.parts:
@@ -668,13 +721,16 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
                 if any(text_contains_name(text, name) for name in student.names):
                     cross_student += 1
                     break
+
     session_errors = 0
     for level in LEVELS:
         for path in (ROOT / level / "02_SEANCES").glob("S*/*_PROF_Fiche.md"):
             endpoints = [int(value) for value in re.findall(r'\|\s*(?:\d+\s*[–-]\s*)?(\d+)\s*min', path.read_text(), flags=re.I)]
             if not endpoints or max(endpoints) != 120:
                 session_errors += 1
+
     pdf_failures: list[str] = []
+    pdf_file_uri_errors: list[str] = []
     page_count = 0
     for path in generated_pdf:
         try:
@@ -682,17 +738,39 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
             page_count += len(reader.pages)
             if reader.is_encrypted or path.stat().st_size == 0:
                 pdf_failures.append(path.relative_to(ROOT).as_posix())
+            for page in reader.pages:
+                annots = page.get("/Annots")
+                if not annots:
+                    continue
+                for ref in list(annots.get_object()):
+                    annot = ref.get_object()
+                    if annot.get("/Subtype") == "/Link":
+                        action = annot.get("/A")
+                        if action and action.get_object().get("/S") == "/URI":
+                            uri = str(action.get_object().get("/URI", ""))
+                            if uri.lower().startswith("file:"):
+                                pdf_file_uri_errors.append(path.relative_to(ROOT).as_posix())
+                                break
         except Exception:
             pdf_failures.append(path.relative_to(ROOT).as_posix())
+
     counts = {
-        "generated_html": len(generated_html), "generated_pdf": len(generated_pdf), "pages": page_count,
-        "external_resources": external, "html_errors": len(html_errors), "student_correction_leaks": student_leaks,
-        "cross_student_pii_leaks": cross_student, "session_duration_errors": session_errors,
-        "pdf_structural_failures": len(pdf_failures), "heading_order_errors": len(heading_order_errors),
+        "generated_html": len(generated_html),
+        "generated_pdf": len(generated_pdf),
+        "pages": page_count,
+        "external_resources": external,
+        "html_errors": len(html_errors),
+        "student_correction_leaks": student_leaks,
+        "cross_student_pii_leaks": cross_student,
+        "session_duration_errors": session_errors,
+        "pdf_structural_failures": len(pdf_failures),
+        "pdf_local_uri_leaks": len(pdf_file_uri_errors),
+        "heading_order_errors": len(heading_order_errors),
+        "title_technical_errors": len(title_technical_errors),
+        "h1_count_errors": len(h1_count_errors),
+        "unaccented_title_errors": unaccented_title_errors,
     }
     # Automated counters only. This file is safe to overwrite on every build.
-    # NAVIGATION_QA.md, ACCESSIBILITY_QA.md, MATH_CONTENT_AUDIT.md and PDF_STRUCTURAL_QA.md
-    # hold the real, manually/agent-audited reports and must never be overwritten here.
     (reports / "BUILD_QA_COUNTERS.md").write_text(
         "# Compteurs QA automatisés (régénérés à chaque build)\n\n"
         f"- Pages HTML générées : {len(generated_html)}\n"
@@ -701,23 +779,27 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
         f"- PDF contrôlés : {len(generated_pdf)}\n"
         f"- Pages PDF totales : {page_count}\n"
         f"- Échecs d'ouverture/chiffrement/vide PDF : {len(pdf_failures)}\n"
+        f"- Fuites d'URI file: dans les PDF : {len(pdf_file_uri_errors)}\n"
         f"- Fiches professeur à 120 minutes : {20 - session_errors}/20\n"
         f"- Fuites de corrigé côté élève détectées : {student_leaks}\n"
         f"- Fuites de PII inter-élèves détectées : {cross_student}\n"
-        f"- Sauts de niveaux de titre (heading-order) : {len(heading_order_errors)}\n\n"
+        f"- Sauts de niveaux de titre (heading-order) : {len(heading_order_errors)}\n"
+        f"- Titres techniques/underscores dans H1 : {len(title_technical_errors)}\n"
+        f"- Anomalies de comptage H1 (dupliqués/manquants) : {len(h1_count_errors)}\n"
+        f"- Titres non accentués/non humanisés : {unaccented_title_errors}\n\n"
         "Pour l'audit détaillé (méthode, preuves, sévérité), voir NAVIGATION_QA.md, ACCESSIBILITY_QA.md, "
         "MATH_CONTENT_AUDIT.md et PDF_STRUCTURAL_QA.md dans ce même dossier.\n",
         encoding="utf-8",
     )
-    # content/catalog.json intentionally carries no validation_status field: a generated
-    # artifact should not self-declare its own QA state. QA_STATUS.json is the single,
-    # deterministic, hash-linked source of truth for whether a given catalog passed QA.
     catalog_path = ROOT / "content/catalog.json"
     automated_failure_keys = (
         "html_errors", "student_correction_leaks", "cross_student_pii_leaks",
-        "session_duration_errors", "pdf_structural_failures", "heading_order_errors",
+        "session_duration_errors", "pdf_structural_failures", "pdf_local_uri_leaks",
+        "heading_order_errors", "title_technical_errors", "h1_count_errors",
+        "unaccented_title_errors",
     )
     automated_status = "validated" if all(counts[key] == 0 for key in automated_failure_keys) else "failed"
+
     qa_status = {
         "schemaVersion": "nexus-qa-status-v1",
         "catalogSha256": sha256(catalog_path) if catalog_path.exists() else None,

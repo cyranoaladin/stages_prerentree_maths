@@ -4,7 +4,7 @@ lang: fr-FR
 ---
 
 
-# Corrigé du test initial
+## Corrigé du test initial
 
 | Q | Réponse | Domaine | Lecture pédagogique |
 |---:|:---:|---|---|

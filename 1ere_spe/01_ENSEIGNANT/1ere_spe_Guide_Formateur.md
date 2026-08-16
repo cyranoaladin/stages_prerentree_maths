@@ -1,5 +1,5 @@
-# 1ere_spe_Guide_Formateur
-## Entrée en Première générale - Spécialité mathématiques
+# 1re Spécialité Mathématiques — Guide du formateur
+## Protocole d’animation et repères pédagogiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
@@ -77,7 +77,7 @@ Le bilan final distingue :
 - la capacité de l’élève à estimer sa propre certitude ;
 - le plan de travail court recommandé pour septembre.
 
-# Correction réglementaire préalable
+## Correction réglementaire préalable
 
 Le cadre réglementaire fourni comporte **un point exact et un point à corriger**.
 
@@ -105,7 +105,7 @@ Cette transition est importante : les élèves ont été formés selon l’ancie
 
 ---
 
-# 1. Cadre, données disponibles et informations manquantes
+## 1. Cadre, données disponibles et informations manquantes
 
 ## 1.1 Cadre général
 
@@ -193,7 +193,7 @@ Le programme est proposé sous les hypothèses suivantes :
 
 ---
 
-# 2. Référentiel officiel applicable en 2026-2027
+## 2. Référentiel officiel applicable en 2026-2027
 
 ## 2.1 Programme de Seconde effectivement suivi
 
@@ -262,7 +262,7 @@ Il doit prioritairement :
 
 ---
 
-# 3. Diagnostic synthétique du groupe
+## 3. Diagnostic synthétique du groupe
 
 ## 3.1 Tableau par domaine
 
@@ -373,7 +373,7 @@ Un mini-diagnostic complémentaire est donc nécessaire. Il est proposé en anne
 
 ---
 
-# 4. Prérequis de Seconde et transition vers la Première spécialité
+## 4. Prérequis de Seconde et transition vers la Première spécialité
 
 ## 4.1 Tableau croisé
 
@@ -431,7 +431,7 @@ Un élève qui confond encore image et antécédent, ou qui ne maîtrise pas le 
 
 ---
 
-# 5. Objectifs du stage
+## 5. Objectifs du stage
 
 ## 5.1 Objectifs généraux
 

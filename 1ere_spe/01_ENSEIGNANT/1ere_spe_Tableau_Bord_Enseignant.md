@@ -1,5 +1,5 @@
-# 1ere_spe_Tableau_Bord_Enseignant
-## Entrée en Première générale - Spécialité mathématiques
+# 1re Spécialité Mathématiques — Tableau de bord enseignant
+## Suivi collectif des compétences
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

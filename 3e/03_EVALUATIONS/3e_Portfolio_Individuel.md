@@ -1,5 +1,5 @@
-# 3e_Portfolio_Individuel
-## Entrée en Troisième - Mathématiques
+# 3e — Portfolio individuel de suivi
+## Grille d’auto-évaluation
 
 **Nom et prénom :** ..............................................................................  
 **Établissement :** ..............................................................................  

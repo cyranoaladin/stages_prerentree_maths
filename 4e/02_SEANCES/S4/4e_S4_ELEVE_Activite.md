@@ -1,5 +1,5 @@
-# 4e_S4_ELEVE_Activite
-## Séance 4 — Voir, raisonner, démontrer
+# 4e — Séance 4 : Voir, raisonner, démontrer
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

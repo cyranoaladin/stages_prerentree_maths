@@ -1,5 +1,5 @@
-# 4e_Evaluation_Finale_ELEVE
-## Évaluation finale
+# 4e — Évaluation finale (Élève)
+## Sujet de synthèse
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................
@@ -11,7 +11,7 @@
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 14. Évaluation finale proposée
+## 14. Évaluation finale proposée
 
 Chaque question comporte une certitude de 1 à 4.
 

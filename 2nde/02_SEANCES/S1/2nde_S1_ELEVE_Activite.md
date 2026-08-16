@@ -1,5 +1,5 @@
-# 2nde_S1_ELEVE_Activite
-## Séance 1 — Réparer le moteur de calcul
+# 2nde — Séance 1 : Réparer le moteur de calcul
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

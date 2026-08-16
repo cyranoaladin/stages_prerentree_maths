@@ -1,5 +1,5 @@
-# 1ere_spe_S4_ELEVE_Activite
-## Séance 4 — Pourcentages, événements et probabilités conditionnelles
+# 1re Spécialité Mathématiques — Séance 4 : Pourcentages, événements et probabilités conditionnelles
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

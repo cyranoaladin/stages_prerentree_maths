@@ -1,8 +1,8 @@
-# Index - Entrée en Seconde générale et technologique - Mathématiques
-
+# Index — 2nde
+## Documents du niveau
 ## Documents généraux
-- [2nde_Guide_Formateur](../01_ENSEIGNANT/2nde_Guide_Formateur.html)
-- [2nde_Tableau_Bord_Enseignant](../01_ENSEIGNANT/2nde_Tableau_Bord_Enseignant.html)
+- [Guide du formateur](../01_ENSEIGNANT/2nde_Guide_Formateur.html)
+- [Tableau de bord enseignant](../01_ENSEIGNANT/2nde_Tableau_Bord_Enseignant.html)
 ## Séances
 ### Séance 1
 - [Fiche professeur](../02_SEANCES/S1/2nde_S1_PROF_Fiche.html)

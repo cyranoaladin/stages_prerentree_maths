@@ -1,9 +1,10 @@
-# DOCUMENT MAÎTRE - Entrée en Seconde générale et technologique - Mathématiques
+# Document maître — 2nde
+
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
 
-# 2nde_Guide_Formateur
+## Guide du formateur
 ## Entrée en Seconde générale et technologique - Mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -81,7 +82,7 @@ Le bilan final distingue :
 - la capacité de l’élève à estimer sa propre certitude ;
 - le plan de travail court recommandé pour septembre.
 
-# Correction réglementaire préalable
+## Correction réglementaire préalable
 
 Le cadre réglementaire indiqué dans la demande doit être **corrigé sur un point important**.
 
@@ -97,7 +98,7 @@ Cette actualisation modifie légèrement la transition à préparer : le nouveau
 
 ---
 
-# 1. Cadre, données disponibles et informations manquantes
+## 1. Cadre, données disponibles et informations manquantes
 
 ## 1.1 Niveau et format retenus
 
@@ -171,7 +172,7 @@ Le programme est construit selon les hypothèses suivantes :
 
 ---
 
-# 2. Référentiel officiel applicable en 2026-2027
+## 2. Référentiel officiel applicable en 2026-2027
 
 ## 2.1 Programme suivi en Troisième en 2025-2026
 
@@ -239,7 +240,7 @@ Il doit :
 
 ---
 
-# 3. Diagnostic synthétique du groupe
+## Diagnostic initial
 
 ## 3.1 Diagnostic détaillé par domaine
 
@@ -359,7 +360,7 @@ Le mini-diagnostic complémentaire proposé en annexe est donc obligatoire avant
 
 ---
 
-# 4. Prérequis de Troisième et transition vers la Seconde
+## 4. Prérequis de Troisième et transition vers la Seconde
 
 Le tableau ci-dessous croise les acquis de fin de Troisième avec le nouveau programme de Seconde. Il ne constitue pas un plan de cours annuel : il permet de sélectionner les objets réellement prioritaires pour dix heures de stage. Le nouveau programme demande notamment de réactiver les calculs sur les fractions et puissances, le calcul littéral, les équations et inéquations, les pourcentages, les fonctions, Pythagore, Thalès, la trigonométrie, les statistiques et les probabilités. ([Ministère de l'Education nationale][3])
 
@@ -410,7 +411,7 @@ Ne seront pas enseignés comme chapitres complets :
 
 ---
 
-# 5. Objectifs du stage
+## 5. Objectifs du stage
 
 ## 5.1 Objectifs généraux
 
@@ -483,7 +484,7 @@ Ne seront pas enseignés comme chapitres complets :
 _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs, l’ordre des séances et les diagnostics ne sont pas modifiés ; ils sont déclinés ici en supports opérationnels._
 
 
-# 2nde_Tableau_Bord_Enseignant
+## Tableau de bord enseignant
 ## Entrée en Seconde générale et technologique - Mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -604,7 +605,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S1_PROF_Fiche
+## Séance 1 — PROF F : Réparer le moteur de calcul
 ## Séance 1 — Réparer le moteur de calcul
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -841,7 +842,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S1_ELEVE_Activite
+## Séance 1 — ELEVE A : Réparer le moteur de calcul
 ## Séance 1 — Réparer le moteur de calcul
 
 **Nom et prénom :** ..............................................................................  
@@ -1030,7 +1031,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S1_SUPPORTS_Manipulation
+## Séance 1 — SUPPORTS M : Réparer le moteur de calcul
 ## Séance 1 — Réparer le moteur de calcul
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1091,7 +1092,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S1_AIDES_Cartes
+## Séance 1 — AIDES C : Réparer le moteur de calcul
 ## Séance 1 — Réparer le moteur de calcul
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1155,7 +1156,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 2nde_S2_PROF_Fiche
+## Séance 2 — PROF F : Construire l’algèbre du lycée
 ## Séance 2 — Construire l’algèbre du lycée
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1357,7 +1358,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S2_ELEVE_Activite
+## Séance 2 — ELEVE A : Construire l’algèbre du lycée
 ## Séance 2 — Construire l’algèbre du lycée
 
 **Nom et prénom :** ..............................................................................  
@@ -1512,7 +1513,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S2_SUPPORTS_Manipulation
+## Séance 2 — SUPPORTS M : Construire l’algèbre du lycée
 ## Séance 2 — Construire l’algèbre du lycée
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1555,7 +1556,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S2_AIDES_Cartes
+## Séance 2 — AIDES C : Construire l’algèbre du lycée
 ## Séance 2 — Construire l’algèbre du lycée
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1619,7 +1620,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 2nde_S3_PROF_Fiche
+## Séance 3 — PROF F : Modéliser une situation
 ## Séance 3 — Modéliser une situation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1797,7 +1798,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S3_ELEVE_Activite
+## Séance 3 — ELEVE A : Modéliser une situation
 ## Séance 3 — Modéliser une situation
 
 **Nom et prénom :** ..............................................................................  
@@ -1939,7 +1940,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S3_SUPPORTS_Manipulation
+## Séance 3 — SUPPORTS M : Modéliser une situation
 ## Séance 3 — Modéliser une situation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1982,7 +1983,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S3_AIDES_Cartes
+## Séance 3 — AIDES C : Modéliser une situation
 ## Séance 3 — Modéliser une situation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2046,7 +2047,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 2nde_S4_PROF_Fiche
+## Séance 4 — PROF F : Choisir le bon théorème
 ## Séance 4 — Choisir le bon théorème
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2231,7 +2232,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S4_ELEVE_Activite
+## Séance 4 — ELEVE A : Choisir le bon théorème
 ## Séance 4 — Choisir le bon théorème
 
 **Nom et prénom :** ..............................................................................  
@@ -2379,7 +2380,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S4_SUPPORTS_Manipulation
+## Séance 4 — SUPPORTS M : Choisir le bon théorème
 ## Séance 4 — Choisir le bon théorème
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2419,7 +2420,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S4_AIDES_Cartes
+## Séance 4 — AIDES C : Choisir le bon théorème
 ## Séance 4 — Choisir le bon théorème
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2483,7 +2484,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 2nde_S5_PROF_Fiche
+## Séance 5 — PROF F : Relier, contrôler et expliquer
 ## Séance 5 — Relier, contrôler et expliquer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2655,7 +2656,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S5_ELEVE_Activite
+## Séance 5 — ELEVE A : Relier, contrôler et expliquer
 ## Séance 5 — Relier, contrôler et expliquer
 
 **Nom et prénom :** ..............................................................................  
@@ -2790,7 +2791,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S5_SUPPORTS_Manipulation
+## Séance 5 — SUPPORTS M : Relier, contrôler et expliquer
 ## Séance 5 — Relier, contrôler et expliquer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2835,7 +2836,7 @@ _Source pédagogique unique : `stage_prerentree_seconde_maths.md`. Les objectifs
 
 <div class="page-break"></div>
 
-# 2nde_S5_AIDES_Cartes
+## Séance 5 — AIDES C : Relier, contrôler et expliquer
 ## Séance 5 — Relier, contrôler et expliquer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2899,7 +2900,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 2nde_Mini_Diagnostic_ELEVE
+## Diagnostic initial
 ## Mini-diagnostic complémentaire
 
 **Nom et prénom :** ..............................................................................  
@@ -2956,7 +2957,7 @@ Durée indicative : 15 minutes.
 
 <div class="page-break"></div>
 
-# 2nde_Mini_Diagnostic_PROF_Corrige
+## Diagnostic initial
 ## Mini-diagnostic complémentaire - Corrigé et exploitation
 
 ## Annexe F — Mini-diagnostic complémentaire
@@ -3016,7 +3017,7 @@ Durée indicative : 15 minutes.
 
 <div class="page-break"></div>
 
-# 2nde_Evaluation_Finale_ELEVE
+## Évaluation finale
 ## Évaluation finale
 
 **Nom et prénom :** ..............................................................................  
@@ -3125,7 +3126,7 @@ Certitude 1 à 4 obligatoire.
 
 <div class="page-break"></div>
 
-# 2nde_Evaluation_Finale_PROF_Corrige
+## Évaluation finale
 ## Évaluation finale - Corrigé et exploitation
 
 ## Annexe G — Évaluation finale
@@ -3229,7 +3230,7 @@ Certitude 1 à 4 obligatoire.
 
 <div class="page-break"></div>
 
-# 2nde_Portfolio_Individuel
+## Portfolio individuel
 ## Entrée en Seconde générale et technologique - Mathématiques
 
 **Nom et prénom :** ..............................................................................  

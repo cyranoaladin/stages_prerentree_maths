@@ -1,5 +1,5 @@
-# 2nde_Tableau_Bord_Enseignant
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Tableau de bord enseignant
+## Suivi collectif des compétences
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

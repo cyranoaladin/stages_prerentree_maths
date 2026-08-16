@@ -1,5 +1,5 @@
-# 2nde_S2_AIDES_Cartes
-## Séance 2 — Construire l’algèbre du lycée
+# 2nde — Séance 2 : Construire l’algèbre du lycée
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

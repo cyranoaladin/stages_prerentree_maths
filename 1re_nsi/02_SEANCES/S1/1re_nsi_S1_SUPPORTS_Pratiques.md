@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Variables, types, booléens et conditions</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Fiches de manipulation, traçage et projet</div>
 </div><div class="student-only"></div>
-# Support 1 - table mémoire
+## Support 1 - table mémoire
 
 Découper ou projeter cette grille. Une ligne correspond à l’état **après** l’instruction.
 
@@ -23,7 +23,7 @@ Découper ou projeter cette grille. Une ligne correspond à l’état **après**
 |  |  |  |  |  |
 |  |  |  |  |  |
 
-# Support 2 - cartes de types
+## Support 2 - cartes de types
 
 <div class="cut-card"><h3>int</h3><p>Entier : 0, 12, -7</p><p>Conversion : <code>int(...)</code></p></div>
 <div class="cut-card"><h3>float</h3><p>Nombre approché : 3.5</p><p>Conversion : <code>float(...)</code></p></div>
@@ -31,7 +31,7 @@ Découper ou projeter cette grille. Une ligne correspond à l’état **après**
 <div class="cut-card"><h3>bool</h3><p><code>True</code> ou <code>False</code></p><p>Produit par une comparaison.</p></div>
 <div class="cut-card"><h3>None</h3><p>Absence de valeur.</p><p>Retour implicite d’une fonction sans <code>return</code>.</p></div>
 
-# Support 3 - table de vérité
+## Support 3 - table de vérité
 
 | A | B | `A and B` | `A or B` | `not A` |
 |:---:|:---:|:---:|:---:|:---:|
@@ -40,7 +40,7 @@ Découper ou projeter cette grille. Une ligne correspond à l’état **après**
 | True | False |  |  |  |
 | True | True |  |  |  |
 
-# Support 4 - cartes de bornes
+## Support 4 - cartes de bornes
 
 <div class="cut-card"><h3>-1</h3><p>Juste avant la borne 0</p></div>
 <div class="cut-card"><h3>0</h3><p>Borne inférieure</p></div>

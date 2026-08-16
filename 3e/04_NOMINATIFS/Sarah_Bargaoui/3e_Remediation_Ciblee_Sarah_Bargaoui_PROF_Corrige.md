@@ -1,5 +1,5 @@
-# Exercices de remédiation ciblés - Sarah Bargaoui
-## Entrée en Troisième - Mathématiques
+# 3e — Plan de remédiation ciblée — Sarah Bargaoui (Corrigé enseignant)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

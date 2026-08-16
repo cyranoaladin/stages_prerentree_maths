@@ -1,5 +1,5 @@
-# Dossier individuel - Noa Maniaci
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Dossier individuel — Noa Maniaci
+## Synthèse et profil élève
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

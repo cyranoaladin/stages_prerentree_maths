@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Fonctions, contrats, tests et débogage</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Nom : ........................................................</div>
 </div><div class="student-only"></div>
-# Mes objectifs
+## Mes objectifs
 
 - [ ] distinguer paramètre et argument ;
 - [ ] distinguer print, return et None ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - [ ] documenter une fonction ;
 - [ ] écrire des assertions de test ;
 
-# Rituel sans ordinateur
+## Rituel sans ordinateur
 
 ## Question 1
 
@@ -113,11 +113,11 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 5. Lire la documentation de `math.isclose` et l’utiliser pour tester un flottant.
 
 
-# Plan de code ou pseudo-code
+## Plan de code ou pseudo-code
 
 <div class="answer-lg"></div>
 
-# Tests prévus avant exécution
+## Tests prévus avant exécution
 
 | Test | Entrée | Résultat attendu | Résultat obtenu | Validé |
 |---:|---|---|---|:---:|
@@ -126,7 +126,7 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 | 3 |  |  |  | ☐ |
 | 4 |  |  |  | ☐ |
 
-# Journal de débogage
+## Journal de débogage
 
 | Symptôme observé | Hypothèse | Modification testée | Résultat |
 |---|---|---|---|
@@ -134,11 +134,11 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 |  |  |  |  |
 |  |  |  |  |
 
-# Trace écrite personnelle
+## Trace écrite personnelle
 
 <div class="answer-lg"></div>
 
-# Exit ticket
+## Exit ticket
 
 1. Une construction Python que je sais utiliser :
 

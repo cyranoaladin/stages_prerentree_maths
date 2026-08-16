@@ -20,7 +20,7 @@ Donner une seule carte à la fois. L’élève inscrit la carte maximale utilis�
 <div class="cut-card"><h3>D - Contrat</h3><p>Écris une précondition et une postcondition.</p></div>
 <div class="cut-card"><h3>E - Tests</h3><p>Ajoute un cas normal, un cas limite et un cas invalide.</p></div></div>
 
-# Ticket des aides
+## Ticket des aides
 
 | Exercice | Aucune | A | B | C | D | E | Réussi ensuite |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

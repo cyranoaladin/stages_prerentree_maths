@@ -1,5 +1,5 @@
-# 4e_S2_ELEVE_Activite
-## Séance 2 — Mesurer une surface ou un contour
+# 4e — Séance 2 : Mesurer une surface ou un contour
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

@@ -1,5 +1,5 @@
-# Exercices de remédiation ciblés - Ines KEFI
-## Entrée en Quatrième - Mathématiques
+# 4e — Plan de remédiation ciblée — Ines Kefi (Élève)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - VERSION ELEVE SANS CORRIGE**
 

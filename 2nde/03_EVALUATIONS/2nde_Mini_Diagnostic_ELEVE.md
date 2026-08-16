@@ -1,5 +1,5 @@
-# 2nde_Mini_Diagnostic_ELEVE
-## Mini-diagnostic complémentaire
+# 2nde — Diagnostic initial (Élève)
+## Test de positionnement
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

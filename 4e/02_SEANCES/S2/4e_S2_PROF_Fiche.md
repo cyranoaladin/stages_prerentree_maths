@@ -1,5 +1,5 @@
-# 4e_S2_PROF_Fiche
-## Séance 2 — Mesurer une surface ou un contour
+# 4e — Séance 2 : Mesurer une surface ou un contour
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

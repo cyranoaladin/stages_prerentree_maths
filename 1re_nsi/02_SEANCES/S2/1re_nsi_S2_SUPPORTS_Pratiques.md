@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Boucles, compteurs et accumulateurs</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Fiches de manipulation, traçage et projet</div>
 </div><div class="student-only"></div>
-# Support 1 - bandes `range`
+## Support 1 - bandes `range`
 
 Compléter avant toute exécution.
 
@@ -22,7 +22,7 @@ Compléter avant toute exécution.
 | `range(10, 2, -2)` |  |  |  |  |
 | `range(5, 5)` |  |  |  |  |
 
-# Support 2 - cartes de schémas de boucle
+## Support 2 - cartes de schémas de boucle
 
 <div class="cut-card"><h3>Compteur</h3><p>Compte combien de fois une propriété est vraie.</p><pre><code>compteur = 0
 ...
@@ -33,7 +33,7 @@ total += valeur</code></pre></div>
 <div class="cut-card"><h3>Extremum</h3><p>Part du premier élément puis compare les suivants.</p></div>
 <div class="cut-card"><h3>Recherche</h3><p>S’arrête ou renvoie un résultat dès que la cible est trouvée.</p></div>
 
-# Support 3 - grille de trace de boucle
+## Support 3 - grille de trace de boucle
 
 | Tour | Valeur de boucle | État avant | Instruction | État après | Condition d’arrêt |
 |---:|---:|---|---|---|---|
@@ -43,6 +43,6 @@ total += valeur</code></pre></div>
 | 4 |  |  |  |  |  |
 | 5 |  |  |  |  |  |
 
-# Support 4 - tri `for` / `while`
+## Support 4 - tri `for` / `while`
 
 Découper puis classer : « parcourir une liste », « attendre un mot de passe valide », « répéter 20 fois », « lire jusqu’au mot fin », « parcourir les caractères d’un texte », « recommencer tant que la saisie est invalide ».

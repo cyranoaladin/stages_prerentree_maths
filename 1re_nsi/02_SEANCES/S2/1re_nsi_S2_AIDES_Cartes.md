@@ -20,7 +20,7 @@ Donner une seule carte à la fois. L’élève inscrit la carte maximale utilis�
 <div class="cut-card"><h3>D - Boucle</h3><p>Vérifie que la variable de boucle ou la condition évolue.</p></div>
 <div class="cut-card"><h3>E - Vérifier</h3><p>Compte les tours et compare le résultat à un calcul manuel.</p></div></div>
 
-# Ticket des aides
+## Ticket des aides
 
 | Exercice | Aucune | A | B | C | D | E | Réussi ensuite |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

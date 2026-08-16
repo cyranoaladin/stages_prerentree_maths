@@ -1,5 +1,5 @@
-# 2nde_S4_SUPPORTS_Manipulation
-## Séance 4 — Choisir le bon théorème
+# 2nde — Séance 4 : Choisir le bon théorème
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

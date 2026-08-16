@@ -1,5 +1,5 @@
-# Corrigé enseignant - Remédiation ciblée - Ines KEFI
-## Entrée en Quatrième - Mathématiques
+# 4e — Plan de remédiation ciblée — Ines Kefi (Corrigé enseignant)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - ENSEIGNANT**
 

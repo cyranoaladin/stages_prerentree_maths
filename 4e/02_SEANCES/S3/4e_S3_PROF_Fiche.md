@@ -1,5 +1,5 @@
-# 4e_S3_PROF_Fiche
-## Séance 3 — Donner du sens aux lettres
+# 4e — Séance 3 : Donner du sens aux lettres
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

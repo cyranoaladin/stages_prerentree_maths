@@ -1,9 +1,10 @@
-# DOCUMENT MAÎTRE - Entrée en Première générale - Spécialité mathématiques
+# Document maître — 1re Spécialité Mathématiques
+
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
 
-# 1ere_spe_Guide_Formateur
+## Guide du formateur
 ## Entrée en Première générale - Spécialité mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -82,7 +83,7 @@ Le bilan final distingue :
 - la capacité de l’élève à estimer sa propre certitude ;
 - le plan de travail court recommandé pour septembre.
 
-# Correction réglementaire préalable
+## Correction réglementaire préalable
 
 Le cadre réglementaire fourni comporte **un point exact et un point à corriger**.
 
@@ -110,7 +111,7 @@ Cette transition est importante : les élèves ont été formés selon l’ancie
 
 ---
 
-# 1. Cadre, données disponibles et informations manquantes
+## 1. Cadre, données disponibles et informations manquantes
 
 ## 1.1 Cadre général
 
@@ -198,7 +199,7 @@ Le programme est proposé sous les hypothèses suivantes :
 
 ---
 
-# 2. Référentiel officiel applicable en 2026-2027
+## 2. Référentiel officiel applicable en 2026-2027
 
 ## 2.1 Programme de Seconde effectivement suivi
 
@@ -267,7 +268,7 @@ Il doit prioritairement :
 
 ---
 
-# 3. Diagnostic synthétique du groupe
+## Diagnostic initial
 
 ## 3.1 Tableau par domaine
 
@@ -378,7 +379,7 @@ Un mini-diagnostic complémentaire est donc nécessaire. Il est proposé en anne
 
 ---
 
-# 4. Prérequis de Seconde et transition vers la Première spécialité
+## 4. Prérequis de Seconde et transition vers la Première spécialité
 
 ## 4.1 Tableau croisé
 
@@ -436,7 +437,7 @@ Un élève qui confond encore image et antécédent, ou qui ne maîtrise pas le 
 
 ---
 
-# 5. Objectifs du stage
+## 5. Objectifs du stage
 
 ## 5.1 Objectifs généraux
 
@@ -508,7 +509,7 @@ Un élève qui confond encore image et antécédent, ou qui ne maîtrise pas le 
 _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectifs, l’ordre des séances et les diagnostics ne sont pas modifiés ; ils sont déclinés ici en supports opérationnels._
 
 
-# 1ere_spe_Tableau_Bord_Enseignant
+## Tableau de bord enseignant
 ## Entrée en Première générale - Spécialité mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -636,7 +637,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S1_PROF_Fiche
+## Séance 1 — PROF F : Calcul algébrique, inéquations et transition vers le second degré
 ## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -882,7 +883,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S1_ELEVE_Activite
+## Séance 1 — ELEVE A : Calcul algébrique, inéquations et transition vers le second degré
 ## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
 
 **Nom et prénom :** ..............................................................................  
@@ -1063,7 +1064,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S1_SUPPORTS_Manipulation
+## Séance 1 — SUPPORTS M : Calcul algébrique, inéquations et transition vers le second degré
 ## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1116,7 +1117,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S1_AIDES_Cartes
+## Séance 1 — AIDES C : Calcul algébrique, inéquations et transition vers le second degré
 ## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1181,7 +1182,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 1ere_spe_S2_PROF_Fiche
+## Séance 2 — PROF F : Fonctions, fonctions de référence et première approche de la dérivation
 ## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1401,7 +1402,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S2_ELEVE_Activite
+## Séance 2 — ELEVE A : Fonctions, fonctions de référence et première approche de la dérivation
 ## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
 
 **Nom et prénom :** ..............................................................................  
@@ -1561,7 +1562,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S2_SUPPORTS_Manipulation
+## Séance 2 — SUPPORTS M : Fonctions, fonctions de référence et première approche de la dérivation
 ## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1621,7 +1622,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S2_AIDES_Cartes
+## Séance 2 — AIDES C : Fonctions, fonctions de référence et première approche de la dérivation
 ## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1686,7 +1687,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 1ere_spe_S3_PROF_Fiche
+## Séance 3 — PROF F : Vecteurs, droites et transition vers le produit scalaire
 ## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1912,7 +1913,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S3_ELEVE_Activite
+## Séance 3 — ELEVE A : Vecteurs, droites et transition vers le produit scalaire
 ## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
 
 **Nom et prénom :** ..............................................................................  
@@ -2062,7 +2063,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S3_SUPPORTS_Manipulation
+## Séance 3 — SUPPORTS M : Vecteurs, droites et transition vers le produit scalaire
 ## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2108,7 +2109,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S3_AIDES_Cartes
+## Séance 3 — AIDES C : Vecteurs, droites et transition vers le produit scalaire
 ## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2173,7 +2174,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 1ere_spe_S4_PROF_Fiche
+## Séance 4 — PROF F : Pourcentages, événements et probabilités conditionnelles
 ## Séance 4 — Pourcentages, événements et probabilités conditionnelles
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2402,7 +2403,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S4_ELEVE_Activite
+## Séance 4 — ELEVE A : Pourcentages, événements et probabilités conditionnelles
 ## Séance 4 — Pourcentages, événements et probabilités conditionnelles
 
 **Nom et prénom :** ..............................................................................  
@@ -2550,7 +2551,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S4_SUPPORTS_Manipulation
+## Séance 4 — SUPPORTS M : Pourcentages, événements et probabilités conditionnelles
 ## Séance 4 — Pourcentages, événements et probabilités conditionnelles
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2596,7 +2597,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S4_AIDES_Cartes
+## Séance 4 — AIDES C : Pourcentages, événements et probabilités conditionnelles
 ## Séance 4 — Pourcentages, événements et probabilités conditionnelles
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2661,7 +2662,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 1ere_spe_S5_PROF_Fiche
+## Séance 5 — PROF F : Suites numériques, Python et évaluation de synthèse
 ## Séance 5 — Suites numériques, Python et évaluation de synthèse
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2890,7 +2891,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S5_ELEVE_Activite
+## Séance 5 — ELEVE A : Suites numériques, Python et évaluation de synthèse
 ## Séance 5 — Suites numériques, Python et évaluation de synthèse
 
 **Nom et prénom :** ..............................................................................  
@@ -3060,7 +3061,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S5_SUPPORTS_Manipulation
+## Séance 5 — SUPPORTS M : Suites numériques, Python et évaluation de synthèse
 ## Séance 5 — Suites numériques, Python et évaluation de synthèse
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -3108,7 +3109,7 @@ _Source pédagogique unique : `stage_prerentree_premiere_maths.md`. Les objectif
 
 <div class="page-break"></div>
 
-# 1ere_spe_S5_AIDES_Cartes
+## Séance 5 — AIDES C : Suites numériques, Python et évaluation de synthèse
 ## Séance 5 — Suites numériques, Python et évaluation de synthèse
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -3173,7 +3174,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 1ere_spe_Mini_Diagnostic_ELEVE
+## Diagnostic initial
 ## Mini-diagnostic complémentaire
 
 **Nom et prénom :** ..............................................................................  
@@ -3245,7 +3246,7 @@ for n in range(4):
 
 <div class="page-break"></div>
 
-# 1ere_spe_Mini_Diagnostic_PROF_Corrige
+## Diagnostic initial
 ## Mini-diagnostic complémentaire - Corrigé et exploitation
 
 ## Annexe F — Mini-diagnostic complémentaire
@@ -3353,7 +3354,7 @@ $$\left(\frac12\right)^2=\frac14<\frac12.$$
 
 <div class="page-break"></div>
 
-# 1ere_spe_Evaluation_Finale_ELEVE
+## Évaluation finale
 ## Évaluation finale
 
 **Nom et prénom :** ..............................................................................  
@@ -3451,7 +3452,7 @@ for _ in range(4):
 
 <div class="page-break"></div>
 
-# 1ere_spe_Evaluation_Finale_PROF_Corrige
+## Évaluation finale
 ## Évaluation finale - Corrigé et exploitation
 
 ## Annexe G — Évaluation finale proposée
@@ -3603,7 +3604,7 @@ $$v_n=100\times1{,}02^n.$$
 
 <div class="page-break"></div>
 
-# 1ere_spe_Portfolio_Individuel
+## Portfolio individuel
 ## Entrée en Première générale - Spécialité mathématiques
 
 **Nom et prénom :** ..............................................................................  

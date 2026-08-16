@@ -1,5 +1,5 @@
-# 3e_S1_AIDES_Cartes
-## Séance 1 — Sécuriser le moteur numérique
+# 3e — Séance 1 : Sécuriser le moteur numérique
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
