@@ -1,0 +1,179 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="author" content="Nexus Réussite"><title>Corrigé du test initial - Première NSI</title><style>
+@page {
+  size: A4;
+  margin: 15mm 16mm 17mm 16mm;
+  @bottom-center { content: "Nexus Réussite - Stage Première NSI - " counter(page) " / " counter(pages); color:#70798c; font-size:8pt; }
+}
+:root { --navy:#071A3A; --blue:#154B8B; --gold:#C9A227; --red:#D71F2B; --ink:#182238; --muted:#5D6878; --light:#F7F5EF; --line:#D8DEE8; --green:#1E6B55; }
+html { font-size: 11pt; }
+body { font-family: Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.45; }
+h1,h2,h3,h4 { color:var(--navy); break-after:avoid; }
+h1 { font-size:24pt; border-bottom:3px solid var(--gold); padding-bottom:5mm; }
+h2 { font-size:17pt; border-left:4px solid var(--gold); padding-left:4mm; margin-top:9mm; }
+h3 { font-size:13pt; margin-top:6mm; }
+h4 { font-size:11.5pt; }
+p,li { orphans:3; widows:3; }
+ul, ol { break-inside: avoid; }
+.numbered-item { margin: 2mm 0; }
+a { color:var(--blue); }
+table { width:100%; border-collapse:collapse; margin:4mm 0 6mm; font-size:9.4pt; }
+tr { break-inside:avoid; }
+th { background:var(--navy); color:white; padding:2.4mm; text-align:left; }
+td { border:1px solid var(--line); padding:2.2mm; vertical-align:top; }
+blockquote { background:var(--light); border-left:4px solid var(--gold); padding:4mm; margin:4mm 0; }
+code { font-family:"DejaVu Sans Mono", Consolas, monospace; background:#F2F4F8; padding:0.2mm 0.6mm; border-radius:1mm; }
+pre { background:#F2F4F8; border:1px solid #D6DDE8; border-left:4px solid var(--blue); padding:4mm; white-space:pre-wrap; break-inside:avoid; font-size:8.7pt; }
+pre code { background:transparent; padding:0; }
+.cover { min-height:245mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after:always; }
+.cover img { width:62mm; margin-bottom:18mm; }
+.cover h1 { border:0; padding:0; margin:0 0 5mm; font-size:28pt; }
+.cover .kicker { color:var(--gold); text-transform:uppercase; letter-spacing:1.4px; font-weight:bold; }
+.cover .subtitle { font-size:15pt; color:var(--blue); font-weight:bold; }
+.cover .meta { margin-top:12mm; border-top:1px solid var(--gold); border-bottom:1px solid var(--gold); padding:5mm 8mm; line-height:1.7; }
+.page-break { break-before:page; height:0; }
+.confidential { color:#8B1A1A; border:1px solid #8B1A1A; background:#FFF7F6; padding:3mm; font-weight:bold; }
+.teacher-note { border-left:4px solid var(--red); background:#FFF5F4; padding:3.5mm; margin:4mm 0; }
+.student-note { border-left:4px solid var(--blue); background:#F3F7FC; padding:3.5mm; margin:4mm 0; }
+.success { border-left:4px solid var(--green); background:#F3FAF7; padding:3.5mm; margin:4mm 0; }
+.answer { min-height:18mm; border:1px solid #AAB4C3; border-radius:2mm; margin:2mm 0 4mm; }
+.answer-lg { min-height:36mm; border:1px solid #AAB4C3; border-radius:2mm; margin:2mm 0 4mm; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:4mm; }
+.card { border:1px solid var(--gold); border-radius:2mm; padding:4mm; break-inside:avoid; min-height:42mm; }
+.cut-card { display:inline-block; width:47%; min-height:64mm; vertical-align:top; border:1.5px dashed var(--navy); padding:7mm; margin:1%; break-inside:avoid; }
+.small { font-size:8.5pt; color:var(--muted); }
+.badge { display:inline-block; border:1px solid var(--gold); border-radius:10mm; padding:1mm 3mm; font-size:8pt; font-weight:bold; color:var(--navy); }
+.path-foundation { background:#F3F7FC; }
+.path-mastery { background:#F8F6EF; }
+.path-extension { background:#F3FAF7; }
+.checklist li { margin-bottom:2mm; }
+.no-break { break-inside:avoid; }
+.student-only::before { content:"DOCUMENT ÉLÈVE - SANS CORRIGÉ"; display:block; color:var(--blue); font-weight:bold; border-bottom:1px solid var(--line); margin-bottom:4mm; padding-bottom:2mm; }
+.prof-only::before { content:"DOCUMENT ENSEIGNANT - CORRIGÉ INCLUS"; display:block; color:var(--red); font-weight:bold; border-bottom:1px solid var(--line); margin-bottom:4mm; padding-bottom:2mm; }
+@media print { a { color:inherit; text-decoration:none; } }
+</style></head><body><h1>Corrigé du test initial</h1>
+<table>
+<thead>
+<tr>
+  <th style="text-align:right">Q</th>
+  <th style="text-align:center">Réponse</th>
+  <th>Domaine</th>
+  <th>Lecture pédagogique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:right">1</td>
+  <td style="text-align:center"><strong>B</strong></td>
+  <td>Binaire</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">2</td>
+  <td style="text-align:center"><strong>D</strong></td>
+  <td>Binaire</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">3</td>
+  <td style="text-align:center"><strong>A</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">4</td>
+  <td style="text-align:center"><strong>C</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">5</td>
+  <td style="text-align:center"><strong>B</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">6</td>
+  <td style="text-align:center"><strong>A</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">7</td>
+  <td style="text-align:center"><strong>D</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">8</td>
+  <td style="text-align:center"><strong>B</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">9</td>
+  <td style="text-align:center"><strong>C</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">10</td>
+  <td style="text-align:center"><strong>A</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">11</td>
+  <td style="text-align:center"><strong>B</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">12</td>
+  <td style="text-align:center"><strong>D</strong></td>
+  <td>Programmation</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">13</td>
+  <td style="text-align:center"><strong>A</strong></td>
+  <td>Web</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">14</td>
+  <td style="text-align:center"><strong>C</strong></td>
+  <td>Web</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">15</td>
+  <td style="text-align:center"><strong>B</strong></td>
+  <td>Réseaux</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">16</td>
+  <td style="text-align:center"><strong>A</strong></td>
+  <td>Réseaux</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">17</td>
+  <td style="text-align:center"><strong>C</strong></td>
+  <td>Tables</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+<tr>
+  <td style="text-align:right">18</td>
+  <td style="text-align:center"><strong>D</strong></td>
+  <td>Métadonnées</td>
+  <td>Faux+sûr : confronter ; juste+hésitant : consolider ; vide : diagnostiquer</td>
+</tr>
+</tbody>
+</table>
+<h2>Questions d’entretien ciblées</h2>
+<ul>
+<li>Ahmad : Q3, Q4, Q7, Q9, Q11 ou Q12.</li>
+<li>Ahmed : Q6, Q8, Q10, Q12, puis un accumulateur <code>s += i</code>.</li>
+</ul>
+</body></html>

@@ -1,0 +1,620 @@
+{
+  "module": "1re_nsi",
+  "sessions": {
+    "1": {
+      "intervals": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          25
+        ],
+        [
+          25,
+          45
+        ],
+        [
+          45,
+          65
+        ],
+        [
+          65,
+          70
+        ],
+        [
+          70,
+          95
+        ],
+        [
+          95,
+          110
+        ],
+        [
+          110,
+          118
+        ],
+        [
+          118,
+          120
+        ]
+      ],
+      "total_minutes": 120,
+      "continuous": true,
+      "starts_0": true,
+      "ends_120": true
+    },
+    "2": {
+      "intervals": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          30
+        ],
+        [
+          30,
+          50
+        ],
+        [
+          50,
+          65
+        ],
+        [
+          65,
+          70
+        ],
+        [
+          70,
+          100
+        ],
+        [
+          100,
+          112
+        ],
+        [
+          112,
+          120
+        ]
+      ],
+      "total_minutes": 120,
+      "continuous": true,
+      "starts_0": true,
+      "ends_120": true
+    },
+    "3": {
+      "intervals": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          30
+        ],
+        [
+          30,
+          48
+        ],
+        [
+          48,
+          65
+        ],
+        [
+          65,
+          70
+        ],
+        [
+          70,
+          100
+        ],
+        [
+          100,
+          112
+        ],
+        [
+          112,
+          120
+        ]
+      ],
+      "total_minutes": 120,
+      "continuous": true,
+      "starts_0": true,
+      "ends_120": true
+    },
+    "4": {
+      "intervals": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          28
+        ],
+        [
+          28,
+          45
+        ],
+        [
+          45,
+          65
+        ],
+        [
+          65,
+          70
+        ],
+        [
+          70,
+          100
+        ],
+        [
+          100,
+          112
+        ],
+        [
+          112,
+          120
+        ]
+      ],
+      "total_minutes": 120,
+      "continuous": true,
+      "starts_0": true,
+      "ends_120": true
+    },
+    "5": {
+      "intervals": [
+        [
+          0,
+          10
+        ],
+        [
+          10,
+          27
+        ],
+        [
+          27,
+          43
+        ],
+        [
+          43,
+          58
+        ],
+        [
+          58,
+          63
+        ],
+        [
+          63,
+          68
+        ],
+        [
+          68,
+          105
+        ],
+        [
+          105,
+          115
+        ],
+        [
+          115,
+          120
+        ]
+      ],
+      "total_minutes": 120,
+      "continuous": true,
+      "starts_0": true,
+      "ends_120": true
+    }
+  },
+  "qcm": {
+    "question_count": 42,
+    "part_count": 7,
+    "parts": [
+      "Données de base",
+      "Types construits",
+      "Tables",
+      "Web",
+      "Architecture",
+      "Programmation",
+      "Algorithmique"
+    ],
+    "four_options_each": true,
+    "answer_count": 42,
+    "one_answer_per_question": true
+  },
+  "python": [
+    {
+      "file": "06_CODE/projet_final_solution.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "Nombre de mesures : 8\nTempérature minimale : -1.5\nTempérature maximale : 33.1\nTempérature moyenne : 23.82\nAlertes : 3\n",
+      "run_stderr": ""
+    },
+    {
+      "file": "06_CODE/projet_final_starter_ahmad.py",
+      "compile_ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "06_CODE/s1_variables_conditions_solution.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "28.4 normal\n",
+      "run_stderr": ""
+    },
+    {
+      "file": "06_CODE/s1_variables_conditions_starter.py",
+      "compile_ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "06_CODE/s2_boucles_solution.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "somme = 35.0\npositives = 3\nmaximum = 17.0\n",
+      "run_stderr": ""
+    },
+    {
+      "file": "06_CODE/s2_boucles_starter.py",
+      "compile_ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "06_CODE/s3_fonctions_tests_solution.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "",
+      "run_stderr": ""
+    },
+    {
+      "file": "06_CODE/s3_fonctions_tests_starter.py",
+      "compile_ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "06_CODE/s4_structures_csv_solution.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "[{'id': 'C02', 'date': '2026-08-24', 'temperature': 31.2, 'humidite': 52, 'statut': 'ALERTE'}, {'id': 'C03', 'date': '2026-08-24', 'temperature': -1.5, 'humidite': 80, 'statut': 'ALERTE'}, {'id': 'C06', 'date': '2026-08-25', 'temperature': 33.1, 'humidite': 48, 'statut': 'ALERTE'}]\n",
+      "run_stderr": ""
+    },
+    {
+      "file": "06_CODE/s4_structures_csv_starter.py",
+      "compile_ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "06_CODE/tests_projet.py",
+      "compile_ok": true,
+      "stderr": "",
+      "run_ok": true,
+      "run_stdout": "Tous les tests passent.\n",
+      "run_stderr": ""
+    }
+  ],
+  "pdf": {
+    "count": 56,
+    "total_pages": 652,
+    "unreadable": [],
+    "non_a4": [],
+    "blank_pages": [],
+    "documents": [
+      {
+        "file": "00_MASTER/1re_nsi_DOCUMENT_MAITRE_COMPLET_INTERNE.pdf",
+        "pages": 148,
+        "bytes": 2692046
+      },
+      {
+        "file": "00_MASTER/1re_nsi_Programme_Stage_PUBLIC.pdf",
+        "pages": 3,
+        "bytes": 82152
+      },
+      {
+        "file": "00_MASTER/1re_nsi_QUICK_START.pdf",
+        "pages": 3,
+        "bytes": 86324
+      },
+      {
+        "file": "00_MASTER/RAPPORT_PRODUCTION_NSI.pdf",
+        "pages": 2,
+        "bytes": 24176
+      },
+      {
+        "file": "00_MASTER/index.pdf",
+        "pages": 3,
+        "bytes": 81514
+      },
+      {
+        "file": "01_ENSEIGNANT/1re_nsi_Guide_Formateur.pdf",
+        "pages": 6,
+        "bytes": 90711
+      },
+      {
+        "file": "01_ENSEIGNANT/1re_nsi_Guide_Installation_Python.pdf",
+        "pages": 4,
+        "bytes": 85700
+      },
+      {
+        "file": "01_ENSEIGNANT/1re_nsi_Matrice_Annuelle_Python.pdf",
+        "pages": 3,
+        "bytes": 85764
+      },
+      {
+        "file": "01_ENSEIGNANT/1re_nsi_Tableau_Bord_Enseignant.pdf",
+        "pages": 4,
+        "bytes": 85708
+      },
+      {
+        "file": "02_SEANCES/S1/1re_nsi_S1_AIDES_Cartes.pdf",
+        "pages": 4,
+        "bytes": 82145
+      },
+      {
+        "file": "02_SEANCES/S1/1re_nsi_S1_ELEVE_Activite.pdf",
+        "pages": 6,
+        "bytes": 101493
+      },
+      {
+        "file": "02_SEANCES/S1/1re_nsi_S1_PROF_Fiche.pdf",
+        "pages": 6,
+        "bytes": 101981
+      },
+      {
+        "file": "02_SEANCES/S1/1re_nsi_S1_SUPPORTS_Pratiques.pdf",
+        "pages": 7,
+        "bytes": 94363
+      },
+      {
+        "file": "02_SEANCES/S2/1re_nsi_S2_AIDES_Cartes.pdf",
+        "pages": 4,
+        "bytes": 82485
+      },
+      {
+        "file": "02_SEANCES/S2/1re_nsi_S2_ELEVE_Activite.pdf",
+        "pages": 6,
+        "bytes": 94906
+      },
+      {
+        "file": "02_SEANCES/S2/1re_nsi_S2_PROF_Fiche.pdf",
+        "pages": 5,
+        "bytes": 94352
+      },
+      {
+        "file": "02_SEANCES/S2/1re_nsi_S2_SUPPORTS_Pratiques.pdf",
+        "pages": 5,
+        "bytes": 89054
+      },
+      {
+        "file": "02_SEANCES/S3/1re_nsi_S3_AIDES_Cartes.pdf",
+        "pages": 4,
+        "bytes": 82064
+      },
+      {
+        "file": "02_SEANCES/S3/1re_nsi_S3_ELEVE_Activite.pdf",
+        "pages": 5,
+        "bytes": 91577
+      },
+      {
+        "file": "02_SEANCES/S3/1re_nsi_S3_PROF_Fiche.pdf",
+        "pages": 5,
+        "bytes": 91904
+      },
+      {
+        "file": "02_SEANCES/S3/1re_nsi_S3_SUPPORTS_Pratiques.pdf",
+        "pages": 5,
+        "bytes": 86640
+      },
+      {
+        "file": "02_SEANCES/S4/1re_nsi_S4_AIDES_Cartes.pdf",
+        "pages": 4,
+        "bytes": 82399
+      },
+      {
+        "file": "02_SEANCES/S4/1re_nsi_S4_ELEVE_Activite.pdf",
+        "pages": 6,
+        "bytes": 93723
+      },
+      {
+        "file": "02_SEANCES/S4/1re_nsi_S4_PROF_Fiche.pdf",
+        "pages": 5,
+        "bytes": 93110
+      },
+      {
+        "file": "02_SEANCES/S4/1re_nsi_S4_SUPPORTS_Pratiques.pdf",
+        "pages": 4,
+        "bytes": 86512
+      },
+      {
+        "file": "02_SEANCES/S5/1re_nsi_S5_AIDES_Cartes.pdf",
+        "pages": 4,
+        "bytes": 82638
+      },
+      {
+        "file": "02_SEANCES/S5/1re_nsi_S5_ELEVE_Activite.pdf",
+        "pages": 5,
+        "bytes": 88977
+      },
+      {
+        "file": "02_SEANCES/S5/1re_nsi_S5_PROF_Fiche.pdf",
+        "pages": 5,
+        "bytes": 88618
+      },
+      {
+        "file": "02_SEANCES/S5/1re_nsi_S5_SUPPORTS_Pratiques.pdf",
+        "pages": 4,
+        "bytes": 84246
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Evaluation_Finale_ELEVE.pdf",
+        "pages": 4,
+        "bytes": 84097
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+        "pages": 3,
+        "bytes": 80911
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Mini_Diagnostic_Pratique_ELEVE.pdf",
+        "pages": 3,
+        "bytes": 81977
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Mini_Diagnostic_Pratique_PROF_Corrige.pdf",
+        "pages": 2,
+        "bytes": 80337
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_QCM_42_Candidat_Libre_ELEVE.pdf",
+        "pages": 11,
+        "bytes": 42083
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_QCM_42_Candidat_Libre_PROF_Corrige.pdf",
+        "pages": 2,
+        "bytes": 20388
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+        "pages": 5,
+        "bytes": 148920
+      },
+      {
+        "file": "03_EVALUATIONS/1re_nsi_Test_Initial_PROF_Corrige.pdf",
+        "pages": 1,
+        "bytes": 17015
+      },
+      {
+        "file": "04_PORTFOLIO/1re_nsi_Memento_Python_ELEVE.pdf",
+        "pages": 7,
+        "bytes": 101190
+      },
+      {
+        "file": "04_PORTFOLIO/1re_nsi_Portfolio_Individuel.pdf",
+        "pages": 4,
+        "bytes": 84224
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Dossier_Individuel_Ahmad_BELDI.pdf",
+        "pages": 4,
+        "bytes": 85600
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_ELEVE.pdf",
+        "pages": 3,
+        "bytes": 81491
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_PROF_Corrige.pdf",
+        "pages": 2,
+        "bytes": 79197
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmad_BELDI/SOURCE_Bilan_Eleve_Ahmad_BELDI_NSI.pdf",
+        "pages": 8,
+        "bytes": 1318544
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmad_BELDI/SOURCE_Bilan_Parents_Ahmad_BELDI_NSI.pdf",
+        "pages": 4,
+        "bytes": 1148138
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.pdf",
+        "pages": 4,
+        "bytes": 85805
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_ELEVE.pdf",
+        "pages": 3,
+        "bytes": 81465
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_PROF_Corrige.pdf",
+        "pages": 2,
+        "bytes": 78376
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Premiere_NSI.pdf",
+        "pages": 8,
+        "bytes": 1292567
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Terminale_NSI.pdf",
+        "pages": 8,
+        "bytes": 1309577
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Parents_Ahmed_BENHADJ_SALEM_Premiere_NSI.pdf",
+        "pages": 4,
+        "bytes": 1146867
+      },
+      {
+        "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Parents_Ahmed_BENHADJ_SALEM_Terminale_NSI.pdf",
+        "pages": 4,
+        "bytes": 1158194
+      },
+      {
+        "file": "07_SOURCES/stage_prerentree_premiere_nsi.pdf",
+        "pages": 10,
+        "bytes": 110439
+      },
+      {
+        "file": "08_PACKS_PDF/1re_nsi_PACK_ELEVE_COMPLET.pdf",
+        "pages": 98,
+        "bytes": 1921797
+      },
+      {
+        "file": "08_PACKS_PDF/1re_nsi_PACK_ENSEIGNANT_COMPLET.pdf",
+        "pages": 148,
+        "bytes": 2692046
+      },
+      {
+        "file": "08_PACKS_PDF/1re_nsi_PACK_TRAVAIL_Ahmad_BELDI.pdf",
+        "pages": 7,
+        "bytes": 173851
+      },
+      {
+        "file": "08_PACKS_PDF/1re_nsi_PACK_TRAVAIL_Ahmed_BENHADJ_SALEM.pdf",
+        "pages": 18,
+        "bytes": 220633
+      }
+    ]
+  },
+  "html": {
+    "broken_local_links": [],
+    "external_loaded_resources": []
+  },
+  "student": {
+    "solution_leaks": [],
+    "generic_full_names": [],
+    "student_code_zip_leaks": []
+  },
+  "cross_student_hits": [],
+  "missing_expected": [],
+  "gates": {
+    "all_sessions_120": true,
+    "qcm_contract": true,
+    "python_compile": true,
+    "python_solutions_run": true,
+    "pdf_openable": true,
+    "pdf_a4": true,
+    "pdf_no_blank_pages": true,
+    "links_clean": true,
+    "offline_resources": true,
+    "student_no_solution_leak": true,
+    "generic_student_no_names": true,
+    "student_code_zips_clean": true,
+    "cross_student_clean": true,
+    "all_expected_present": true
+  }
+}

@@ -1,0 +1,35 @@
+
+@page { size: A4; margin: 16mm 17mm 17mm 17mm; }
+:root { --navy:#071A3A; --gold:#C9A227; --red:#D71F2B; --light:#F6F4EE; --line:#D9DDE4; }
+html { font-size: 11pt; }
+body { font-family: Arial, Helvetica, sans-serif; color:#182238; line-height:1.45; max-width:180mm; margin:0 auto; }
+h1,h2,h3,h4 { color:var(--navy); page-break-after:avoid; }
+h1 { font-size:24pt; border-bottom:3px solid var(--gold); padding-bottom:7mm; }
+h2 { font-size:17pt; border-left:4px solid var(--gold); padding-left:4mm; margin-top:10mm; }
+h3 { font-size:13pt; margin-top:7mm; }
+h4 { font-size:11.5pt; }
+p, li { orphans:3; widows:3; }
+table { width:100%; border-collapse:collapse; margin:4mm 0 6mm; font-size:9.5pt; page-break-inside:auto; }
+tr { page-break-inside:avoid; }
+th { background:var(--navy); color:white; padding:2.5mm; text-align:left; }
+td { border:1px solid var(--line); padding:2.3mm; vertical-align:top; }
+blockquote { background:var(--light); border-left:4px solid var(--gold); padding:4mm; margin:5mm 0; }
+code, pre { background:#F3F5F7; border:1px solid #DDE2E8; }
+pre { padding:4mm; white-space:pre-wrap; }
+.page-break { break-before:page; page-break-before:always; height:0; }
+.answer-space { min-height:20mm; border-bottom:1px dotted #777; margin:2mm 0 5mm; }
+.card-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.card { border:1px solid var(--gold); border-radius:3mm; padding:5mm; min-height:48mm; break-inside:avoid; }
+.confidential { color:#8B1A1A; border:1px solid #8B1A1A; padding:3mm; font-weight:bold; }
+.small { font-size:8.5pt; color:#536070; }
+svg { max-width:100%; height:auto; }
+math annotation, math annotation-xml { display:none; }
+.math-display { display:block; text-align:center; margin:4mm 0; }
+.mfrac { display:inline-block; vertical-align:middle; text-align:center; font-size:0.92em; line-height:1.15; margin:0 .1em; }
+.mfrac-num { display:block; border-bottom:0.6pt solid currentColor; padding:0 .2em; }
+.mfrac-den { display:block; padding:0 .2em; }
+.msqrt-sym { font-size:1.05em; }
+.msqrt-content { border-top:0.6pt solid currentColor; padding:0 .15em; }
+.msqrt-index { font-size:0.62em; margin-right:-.3em; }
+@media print { a { color:inherit; text-decoration:none; } }
+@media print { .site-header, .breadcrumbs, .skip-link, .print-button, .button { display:none !important; } }

@@ -1,0 +1,161 @@
+niveau,type,fichier,description,nominatif
+4e,enseignant,4e/01_ENSEIGNANT/4e_Guide_Formateur.md,Guide du formateur,non
+4e,enseignant,4e/01_ENSEIGNANT/4e_Tableau_Bord_Enseignant.md,Tableau de bord et grilles de suivi,non
+4e,seance_1,4e/02_SEANCES/S1/4e_S1_PROF_Fiche.md,Fiche enseignant complète,non
+4e,seance_1,4e/02_SEANCES/S1/4e_S1_ELEVE_Activite.md,Fiche élève autonome,non
+4e,seance_1,4e/02_SEANCES/S1/4e_S1_SUPPORTS_Manipulation.md,Supports imprimables,non
+4e,seance_1,4e/02_SEANCES/S1/4e_S1_AIDES_Cartes.md,Cartes d’aide graduées,non
+4e,seance_2,4e/02_SEANCES/S2/4e_S2_PROF_Fiche.md,Fiche enseignant complète,non
+4e,seance_2,4e/02_SEANCES/S2/4e_S2_ELEVE_Activite.md,Fiche élève autonome,non
+4e,seance_2,4e/02_SEANCES/S2/4e_S2_SUPPORTS_Manipulation.md,Supports imprimables,non
+4e,seance_2,4e/02_SEANCES/S2/4e_S2_AIDES_Cartes.md,Cartes d’aide graduées,non
+4e,seance_3,4e/02_SEANCES/S3/4e_S3_PROF_Fiche.md,Fiche enseignant complète,non
+4e,seance_3,4e/02_SEANCES/S3/4e_S3_ELEVE_Activite.md,Fiche élève autonome,non
+4e,seance_3,4e/02_SEANCES/S3/4e_S3_SUPPORTS_Manipulation.md,Supports imprimables,non
+4e,seance_3,4e/02_SEANCES/S3/4e_S3_AIDES_Cartes.md,Cartes d’aide graduées,non
+4e,seance_4,4e/02_SEANCES/S4/4e_S4_PROF_Fiche.md,Fiche enseignant complète,non
+4e,seance_4,4e/02_SEANCES/S4/4e_S4_ELEVE_Activite.md,Fiche élève autonome,non
+4e,seance_4,4e/02_SEANCES/S4/4e_S4_SUPPORTS_Manipulation.md,Supports imprimables,non
+4e,seance_4,4e/02_SEANCES/S4/4e_S4_AIDES_Cartes.md,Cartes d’aide graduées,non
+4e,seance_5,4e/02_SEANCES/S5/4e_S5_PROF_Fiche.md,Fiche enseignant complète,non
+4e,seance_5,4e/02_SEANCES/S5/4e_S5_ELEVE_Activite.md,Fiche élève autonome,non
+4e,seance_5,4e/02_SEANCES/S5/4e_S5_SUPPORTS_Manipulation.md,Supports imprimables,non
+4e,seance_5,4e/02_SEANCES/S5/4e_S5_AIDES_Cartes.md,Cartes d’aide graduées,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Mini_Diagnostic_ELEVE.md,Mini-diagnostic élève,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Mini_Diagnostic_PROF_Corrige.md,Mini-diagnostic corrigé,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Evaluation_Finale_ELEVE.md,Évaluation finale élève,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Evaluation_Finale_PROF_Corrige_Bareme.md,Évaluation finale corrigée et barème,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Portfolio_Individuel.md,Portfolio individuel vierge,non
+4e,evaluation,4e/03_EVALUATIONS/4e_Test_Initial.pdf,Test initial original,non
+4e,nominatif,4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Dossier_Individuel_Sinda_Chikhaoui.md,Dossier individuel,oui
+4e,nominatif,4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Remediation_Ciblee_Sinda_Chikhaoui.md,Exercices ciblés,oui
+4e,nominatif_source,4e/04_NOMINATIFS/Sinda_Chikhaoui/bilan-nexus-parents_chikhaoui_maths.pdf,Bilan parents source,oui
+4e,nominatif_source,4e/04_NOMINATIFS/Sinda_Chikhaoui/bilan-nexus-eleve_chikhaoui_maths.pdf,Bilan élève source,oui
+4e,nominatif,4e/04_NOMINATIFS/Fares_Darghouth/4e_Dossier_Individuel_Fares_Darghouth.md,Dossier individuel,oui
+4e,nominatif,4e/04_NOMINATIFS/Fares_Darghouth/4e_Remediation_Ciblee_Fares_Darghouth.md,Exercices ciblés,oui
+4e,nominatif_source,4e/04_NOMINATIFS/Fares_Darghouth/bilan-nexus-parents_fares_darghouth_maths.pdf,Bilan parents source,oui
+4e,nominatif_source,4e/04_NOMINATIFS/Fares_Darghouth/bilan-nexus-eleve_fares_darghouth_maths.pdf,Bilan élève source,oui
+4e,master,4e/00_MASTER/4e_MASTER_Documentation_Stage.md,Document maître complet du niveau,non
+3e,enseignant,3e/01_ENSEIGNANT/3e_Guide_Formateur.md,Guide du formateur,non
+3e,enseignant,3e/01_ENSEIGNANT/3e_Tableau_Bord_Enseignant.md,Tableau de bord et grilles de suivi,non
+3e,seance_1,3e/02_SEANCES/S1/3e_S1_PROF_Fiche.md,Fiche enseignant complète,non
+3e,seance_1,3e/02_SEANCES/S1/3e_S1_ELEVE_Activite.md,Fiche élève autonome,non
+3e,seance_1,3e/02_SEANCES/S1/3e_S1_SUPPORTS_Manipulation.md,Supports imprimables,non
+3e,seance_1,3e/02_SEANCES/S1/3e_S1_AIDES_Cartes.md,Cartes d’aide graduées,non
+3e,seance_2,3e/02_SEANCES/S2/3e_S2_PROF_Fiche.md,Fiche enseignant complète,non
+3e,seance_2,3e/02_SEANCES/S2/3e_S2_ELEVE_Activite.md,Fiche élève autonome,non
+3e,seance_2,3e/02_SEANCES/S2/3e_S2_SUPPORTS_Manipulation.md,Supports imprimables,non
+3e,seance_2,3e/02_SEANCES/S2/3e_S2_AIDES_Cartes.md,Cartes d’aide graduées,non
+3e,seance_3,3e/02_SEANCES/S3/3e_S3_PROF_Fiche.md,Fiche enseignant complète,non
+3e,seance_3,3e/02_SEANCES/S3/3e_S3_ELEVE_Activite.md,Fiche élève autonome,non
+3e,seance_3,3e/02_SEANCES/S3/3e_S3_SUPPORTS_Manipulation.md,Supports imprimables,non
+3e,seance_3,3e/02_SEANCES/S3/3e_S3_AIDES_Cartes.md,Cartes d’aide graduées,non
+3e,seance_4,3e/02_SEANCES/S4/3e_S4_PROF_Fiche.md,Fiche enseignant complète,non
+3e,seance_4,3e/02_SEANCES/S4/3e_S4_ELEVE_Activite.md,Fiche élève autonome,non
+3e,seance_4,3e/02_SEANCES/S4/3e_S4_SUPPORTS_Manipulation.md,Supports imprimables,non
+3e,seance_4,3e/02_SEANCES/S4/3e_S4_AIDES_Cartes.md,Cartes d’aide graduées,non
+3e,seance_5,3e/02_SEANCES/S5/3e_S5_PROF_Fiche.md,Fiche enseignant complète,non
+3e,seance_5,3e/02_SEANCES/S5/3e_S5_ELEVE_Activite.md,Fiche élève autonome,non
+3e,seance_5,3e/02_SEANCES/S5/3e_S5_SUPPORTS_Manipulation.md,Supports imprimables,non
+3e,seance_5,3e/02_SEANCES/S5/3e_S5_AIDES_Cartes.md,Cartes d’aide graduées,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Mini_Diagnostic_ELEVE.md,Mini-diagnostic élève,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Mini_Diagnostic_PROF_Corrige.md,Mini-diagnostic corrigé,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Evaluation_Finale_ELEVE.md,Évaluation finale élève,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Evaluation_Finale_PROF_Corrige_Bareme.md,Évaluation finale corrigée et barème,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Portfolio_Individuel.md,Portfolio individuel vierge,non
+3e,evaluation,3e/03_EVALUATIONS/3e_Test_Initial.pdf,Test initial original,non
+3e,nominatif,3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Dossier_Individuel_Sarah_Bargaoui.md,Dossier individuel,oui
+3e,nominatif,3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Remediation_Ciblee_Sarah_Bargaoui.md,Exercices ciblés,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Sarah_Bargaoui/bilan-nexus-parents_bargaoui_maths.pdf,Bilan parents source,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Sarah_Bargaoui/bilan-nexus-eleve_bargaoui_maths.pdf,Bilan élève source,oui
+3e,nominatif,3e/04_NOMINATIFS/Selim_Mansouri/3e_Dossier_Individuel_Selim_Mansouri.md,Dossier individuel,oui
+3e,nominatif,3e/04_NOMINATIFS/Selim_Mansouri/3e_Remediation_Ciblee_Selim_Mansouri.md,Exercices ciblés,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Selim_Mansouri/bilan-nexus-parents_selim_mansouri_maths.pdf,Bilan parents source,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Selim_Mansouri/bilan-nexus-eleve_selim_mansouri_maths.pdf,Bilan élève source,oui
+3e,nominatif,3e/04_NOMINATIFS/Amine_Mansouri/3e_Dossier_Individuel_Amine_Mansouri.md,Dossier individuel,oui
+3e,nominatif,3e/04_NOMINATIFS/Amine_Mansouri/3e_Remediation_Ciblee_Amine_Mansouri.md,Exercices ciblés,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Amine_Mansouri/bilan-nexus-parents_amine_mansouri_maths.pdf,Bilan parents source,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Amine_Mansouri/bilan-nexus-eleve_amine_mansouri_maths.pdf,Bilan élève source,oui
+3e,nominatif,3e/04_NOMINATIFS/Fares_Laajili/3e_Dossier_Individuel_Fares_Laajili.md,Dossier individuel,oui
+3e,nominatif,3e/04_NOMINATIFS/Fares_Laajili/3e_Remediation_Ciblee_Fares_Laajili.md,Exercices ciblés,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Fares_Laajili/bilan-nexus-parents_laajili_maths.pdf,Bilan parents source,oui
+3e,nominatif_source,3e/04_NOMINATIFS/Fares_Laajili/bilan-nexus-eleve_laajili_maths.pdf,Bilan élève source,oui
+3e,master,3e/00_MASTER/3e_MASTER_Documentation_Stage.md,Document maître complet du niveau,non
+2nde,enseignant,2nde/01_ENSEIGNANT/2nde_Guide_Formateur.md,Guide du formateur,non
+2nde,enseignant,2nde/01_ENSEIGNANT/2nde_Tableau_Bord_Enseignant.md,Tableau de bord et grilles de suivi,non
+2nde,seance_1,2nde/02_SEANCES/S1/2nde_S1_PROF_Fiche.md,Fiche enseignant complète,non
+2nde,seance_1,2nde/02_SEANCES/S1/2nde_S1_ELEVE_Activite.md,Fiche élève autonome,non
+2nde,seance_1,2nde/02_SEANCES/S1/2nde_S1_SUPPORTS_Manipulation.md,Supports imprimables,non
+2nde,seance_1,2nde/02_SEANCES/S1/2nde_S1_AIDES_Cartes.md,Cartes d’aide graduées,non
+2nde,seance_2,2nde/02_SEANCES/S2/2nde_S2_PROF_Fiche.md,Fiche enseignant complète,non
+2nde,seance_2,2nde/02_SEANCES/S2/2nde_S2_ELEVE_Activite.md,Fiche élève autonome,non
+2nde,seance_2,2nde/02_SEANCES/S2/2nde_S2_SUPPORTS_Manipulation.md,Supports imprimables,non
+2nde,seance_2,2nde/02_SEANCES/S2/2nde_S2_AIDES_Cartes.md,Cartes d’aide graduées,non
+2nde,seance_3,2nde/02_SEANCES/S3/2nde_S3_PROF_Fiche.md,Fiche enseignant complète,non
+2nde,seance_3,2nde/02_SEANCES/S3/2nde_S3_ELEVE_Activite.md,Fiche élève autonome,non
+2nde,seance_3,2nde/02_SEANCES/S3/2nde_S3_SUPPORTS_Manipulation.md,Supports imprimables,non
+2nde,seance_3,2nde/02_SEANCES/S3/2nde_S3_AIDES_Cartes.md,Cartes d’aide graduées,non
+2nde,seance_4,2nde/02_SEANCES/S4/2nde_S4_PROF_Fiche.md,Fiche enseignant complète,non
+2nde,seance_4,2nde/02_SEANCES/S4/2nde_S4_ELEVE_Activite.md,Fiche élève autonome,non
+2nde,seance_4,2nde/02_SEANCES/S4/2nde_S4_SUPPORTS_Manipulation.md,Supports imprimables,non
+2nde,seance_4,2nde/02_SEANCES/S4/2nde_S4_AIDES_Cartes.md,Cartes d’aide graduées,non
+2nde,seance_5,2nde/02_SEANCES/S5/2nde_S5_PROF_Fiche.md,Fiche enseignant complète,non
+2nde,seance_5,2nde/02_SEANCES/S5/2nde_S5_ELEVE_Activite.md,Fiche élève autonome,non
+2nde,seance_5,2nde/02_SEANCES/S5/2nde_S5_SUPPORTS_Manipulation.md,Supports imprimables,non
+2nde,seance_5,2nde/02_SEANCES/S5/2nde_S5_AIDES_Cartes.md,Cartes d’aide graduées,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Mini_Diagnostic_ELEVE.md,Mini-diagnostic élève,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Mini_Diagnostic_PROF_Corrige.md,Mini-diagnostic corrigé,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Evaluation_Finale_ELEVE.md,Évaluation finale élève,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Evaluation_Finale_PROF_Corrige_Bareme.md,Évaluation finale corrigée et barème,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Portfolio_Individuel.md,Portfolio individuel vierge,non
+2nde,evaluation,2nde/03_EVALUATIONS/2nde_Test_Initial.pdf,Test initial original,non
+2nde,nominatif,2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Dossier_Individuel_Noa_Maniaci.md,Dossier individuel,oui
+2nde,nominatif,2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Remediation_Ciblee_Noa_Maniaci.md,Exercices ciblés,oui
+2nde,nominatif_source,2nde/04_NOMINATIFS/Noa_Maniaci/bilan-nexus-parents_noa_maths.pdf,Bilan parents source,oui
+2nde,nominatif_source,2nde/04_NOMINATIFS/Noa_Maniaci/bilan-nexus-eleve_noa_maths.pdf,Bilan élève source,oui
+2nde,nominatif,2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Dossier_Individuel_Ahmed_Bakir.md,Dossier individuel,oui
+2nde,nominatif,2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Remediation_Ciblee_Ahmed_Bakir.md,Exercices ciblés,oui
+2nde,nominatif_source,2nde/04_NOMINATIFS/Ahmed_Bakir/bilan-nexus-parents_bakir_maths.pdf,Bilan parents source,oui
+2nde,nominatif_source,2nde/04_NOMINATIFS/Ahmed_Bakir/bilan-nexus-eleve_bakir_maths.pdf,Bilan élève source,oui
+2nde,master,2nde/00_MASTER/2nde_MASTER_Documentation_Stage.md,Document maître complet du niveau,non
+1ere_spe,enseignant,1ere_spe/01_ENSEIGNANT/1ere_spe_Guide_Formateur.md,Guide du formateur,non
+1ere_spe,enseignant,1ere_spe/01_ENSEIGNANT/1ere_spe_Tableau_Bord_Enseignant.md,Tableau de bord et grilles de suivi,non
+1ere_spe,seance_1,1ere_spe/02_SEANCES/S1/1ere_spe_S1_PROF_Fiche.md,Fiche enseignant complète,non
+1ere_spe,seance_1,1ere_spe/02_SEANCES/S1/1ere_spe_S1_ELEVE_Activite.md,Fiche élève autonome,non
+1ere_spe,seance_1,1ere_spe/02_SEANCES/S1/1ere_spe_S1_SUPPORTS_Manipulation.md,Supports imprimables,non
+1ere_spe,seance_1,1ere_spe/02_SEANCES/S1/1ere_spe_S1_AIDES_Cartes.md,Cartes d’aide graduées,non
+1ere_spe,seance_2,1ere_spe/02_SEANCES/S2/1ere_spe_S2_PROF_Fiche.md,Fiche enseignant complète,non
+1ere_spe,seance_2,1ere_spe/02_SEANCES/S2/1ere_spe_S2_ELEVE_Activite.md,Fiche élève autonome,non
+1ere_spe,seance_2,1ere_spe/02_SEANCES/S2/1ere_spe_S2_SUPPORTS_Manipulation.md,Supports imprimables,non
+1ere_spe,seance_2,1ere_spe/02_SEANCES/S2/1ere_spe_S2_AIDES_Cartes.md,Cartes d’aide graduées,non
+1ere_spe,seance_3,1ere_spe/02_SEANCES/S3/1ere_spe_S3_PROF_Fiche.md,Fiche enseignant complète,non
+1ere_spe,seance_3,1ere_spe/02_SEANCES/S3/1ere_spe_S3_ELEVE_Activite.md,Fiche élève autonome,non
+1ere_spe,seance_3,1ere_spe/02_SEANCES/S3/1ere_spe_S3_SUPPORTS_Manipulation.md,Supports imprimables,non
+1ere_spe,seance_3,1ere_spe/02_SEANCES/S3/1ere_spe_S3_AIDES_Cartes.md,Cartes d’aide graduées,non
+1ere_spe,seance_4,1ere_spe/02_SEANCES/S4/1ere_spe_S4_PROF_Fiche.md,Fiche enseignant complète,non
+1ere_spe,seance_4,1ere_spe/02_SEANCES/S4/1ere_spe_S4_ELEVE_Activite.md,Fiche élève autonome,non
+1ere_spe,seance_4,1ere_spe/02_SEANCES/S4/1ere_spe_S4_SUPPORTS_Manipulation.md,Supports imprimables,non
+1ere_spe,seance_4,1ere_spe/02_SEANCES/S4/1ere_spe_S4_AIDES_Cartes.md,Cartes d’aide graduées,non
+1ere_spe,seance_5,1ere_spe/02_SEANCES/S5/1ere_spe_S5_PROF_Fiche.md,Fiche enseignant complète,non
+1ere_spe,seance_5,1ere_spe/02_SEANCES/S5/1ere_spe_S5_ELEVE_Activite.md,Fiche élève autonome,non
+1ere_spe,seance_5,1ere_spe/02_SEANCES/S5/1ere_spe_S5_SUPPORTS_Manipulation.md,Supports imprimables,non
+1ere_spe,seance_5,1ere_spe/02_SEANCES/S5/1ere_spe_S5_AIDES_Cartes.md,Cartes d’aide graduées,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Mini_Diagnostic_ELEVE.md,Mini-diagnostic élève,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Mini_Diagnostic_PROF_Corrige.md,Mini-diagnostic corrigé,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Evaluation_Finale_ELEVE.md,Évaluation finale élève,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Evaluation_Finale_PROF_Corrige_Bareme.md,Évaluation finale corrigée et barème,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Portfolio_Individuel.md,Portfolio individuel vierge,non
+1ere_spe,evaluation,1ere_spe/03_EVALUATIONS/1ere_spe_Test_Initial.pdf,Test initial original,non
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Dossier_Individuel_Donia_Khadhrani.md,Dossier individuel,oui
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Remediation_Ciblee_Donia_Khadhrani.md,Exercices ciblés,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Donia_Khadhrani/bilan-nexus-parents_donia_khadhrani_maths.pdf,Bilan parents source,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Donia_Khadhrani/bilan-nexus-eleve_donia_khadhrani_maths.pdf,Bilan élève source,oui
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Dossier_Individuel_Malek_Khadhrani.md,Dossier individuel,oui
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Remediation_Ciblee_Malek_Khadhrani.md,Exercices ciblés,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Malek_Khadhrani/bilan-nexus-parents_malek_khadhrani_maths.pdf,Bilan parents source,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Malek_Khadhrani/bilan-nexus-eleve_malek_khadhrani_maths.pdf,Bilan élève source,oui
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Dossier_Individuel_Ahmad_Beldi.md,Dossier individuel,oui
+1ere_spe,nominatif,1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Remediation_Ciblee_Ahmad_Beldi.md,Exercices ciblés,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Ahmad_Beldi/bilan-nexus-parents_beldi_maths.pdf,Bilan parents source,oui
+1ere_spe,nominatif_source,1ere_spe/04_NOMINATIFS/Ahmad_Beldi/bilan-nexus-eleve_beldi_maths.pdf,Bilan élève source,oui
+1ere_spe,master,1ere_spe/00_MASTER/1ere_spe_MASTER_Documentation_Stage.md,Document maître complet du niveau,non

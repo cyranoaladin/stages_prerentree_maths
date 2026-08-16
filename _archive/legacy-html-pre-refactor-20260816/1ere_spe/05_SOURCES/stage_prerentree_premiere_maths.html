@@ -1,0 +1,3590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>stage_prerentree_premiere_maths</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">
+@page { size: A4; margin: 16mm 17mm 17mm 17mm; }
+:root { --navy:#071A3A; --gold:#C9A227; --red:#D71F2B; --light:#F6F4EE; --line:#D9DDE4; }
+html { font-size: 11pt; }
+body { font-family: Arial, Helvetica, sans-serif; color:#182238; line-height:1.45; max-width:180mm; margin:0 auto; }
+h1,h2,h3,h4 { color:var(--navy); page-break-after:avoid; }
+h1 { font-size:24pt; border-bottom:3px solid var(--gold); padding-bottom:7mm; }
+h2 { font-size:17pt; border-left:4px solid var(--gold); padding-left:4mm; margin-top:10mm; }
+h3 { font-size:13pt; margin-top:7mm; }
+h4 { font-size:11.5pt; }
+p, li { orphans:3; widows:3; }
+table { width:100%; border-collapse:collapse; margin:4mm 0 6mm; font-size:9.5pt; page-break-inside:auto; }
+tr { page-break-inside:avoid; }
+th { background:var(--navy); color:white; padding:2.5mm; text-align:left; }
+td { border:1px solid var(--line); padding:2.3mm; vertical-align:top; }
+blockquote { background:var(--light); border-left:4px solid var(--gold); padding:4mm; margin:5mm 0; }
+code, pre { background:#F3F5F7; border:1px solid #DDE2E8; }
+pre { padding:4mm; white-space:pre-wrap; }
+.page-break { break-before:page; page-break-before:always; height:0; }
+.answer-space { min-height:20mm; border-bottom:1px dotted #777; margin:2mm 0 5mm; }
+.card-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.card { border:1px solid var(--gold); border-radius:3mm; padding:5mm; min-height:48mm; break-inside:avoid; }
+.confidential { color:#8B1A1A; border:1px solid #8B1A1A; padding:3mm; font-weight:bold; }
+.small { font-size:8.5pt; color:#536070; }
+svg { max-width:100%; height:auto; }
+@media print { a { color:inherit; text-decoration:none; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">stage_prerentree_premiere_maths</h1>
+</header>
+<h1 id="programme-complet-du-stage-de-pré-rentrée">Programme complet du
+stage de pré-rentrée</h1>
+<h2 id="mathématiques-entrée-en-première-générale-spécialité-mathématiques">Mathématiques
+— Entrée en Première générale, spécialité mathématiques</h2>
+<h3 id="nexus-réussite-5-séances-de-2-heures-rentrée-2026-2027">Nexus
+Réussite — 5 séances de 2 heures — Rentrée 2026-2027</h3>
+<hr />
+<h1 id="correction-réglementaire-préalable">Correction réglementaire
+préalable</h1>
+<p>Le cadre réglementaire fourni comporte <strong>un point exact et un
+point à corriger</strong>.</p>
+<p>Les élèves entrant en Première en septembre 2026 ont bien suivi leur
+classe de Seconde en 2025-2026 sous le programme de mathématiques publié
+en 2019. Ce programme visait notamment la consolidation du calcul
+numérique et algébrique, des inéquations du premier degré, des
+fonctions, des vecteurs, des droites, des pourcentages, des probabilités
+et de l’algorithmique.</p>
+<p>En revanche, le programme de spécialité mathématiques de Première de
+2019 <strong>n’est plus celui qui s’applique à cette cohorte</strong>.
+L’arrêté du 26 février 2026, publié au BO n° 14 du 2 avril 2026,
+remplace l’annexe de 2019 et entre en application à la rentrée
+2026-2027. Éduscol confirme que les nouveaux programmes de mathématiques
+s’appliquent en Seconde et en Première dès septembre 2026. (<a href="https://www.education.gouv.fr/bo/2026/Hebdo14/MENE2602917A" title="Programme d’enseignement de spécialité de mathématiques de la classe de première de la voie générale | Ministère de l&#39;Education nationale">Ministère
+de l’Education nationale</a>)</p>
+<p>Le stage doit donc assurer la transition suivante :</p>
+<blockquote>
+<p><strong>Programme de Seconde 2019 suivi en 2025-2026 → nouveau
+programme de spécialité de Première 2026 applicable en
+2026-2027.</strong></p>
+</blockquote>
+<p>Cette transition est importante : les élèves ont été formés selon
+l’ancien programme de Seconde, mais entreront directement dans un
+nouveau programme de Première qui renforce notamment :</p>
+<ul>
+<li>les automatismes ;</li>
+<li>le vocabulaire ensembliste et la logique ;</li>
+<li>les suites numériques ;</li>
+<li>le second degré ;</li>
+<li>la dérivation ;</li>
+<li>la fonction exponentielle ;</li>
+<li>la trigonométrie ;</li>
+<li>le produit scalaire ;</li>
+<li>les vecteurs normaux et les équations de cercle ;</li>
+<li>les probabilités conditionnelles, l’indépendance et les variables
+aléatoires ;</li>
+<li>les listes et la programmation en Python.</li>
+</ul>
+<hr />
+<h1 id="cadre-données-disponibles-et-informations-manquantes">1. Cadre,
+données disponibles et informations manquantes</h1>
+<h2 id="cadre-général">1.1 Cadre général</h2>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Donnée retenue</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Niveau</td>
+<td>Entrée en Première générale</td>
+</tr>
+<tr class="even">
+<td>Enseignement visé</td>
+<td>Spécialité mathématiques</td>
+</tr>
+<tr class="odd">
+<td>Année scolaire</td>
+<td>2026-2027</td>
+</tr>
+<tr class="even">
+<td>Durée</td>
+<td>10 heures</td>
+</tr>
+<tr class="odd">
+<td>Organisation</td>
+<td>5 séances de 2 heures</td>
+</tr>
+<tr class="even">
+<td>Effectif actuellement documenté</td>
+<td>3 élèves</td>
+</tr>
+<tr class="odd">
+<td>Élèves</td>
+<td>Donia Khadhrani, Malek Khadhrani, Ahmad Beldi</td>
+</tr>
+<tr class="even">
+<td>Répartition visée</td>
+<td>Environ 65-70 % de tronc commun et 30-35 % de personnalisation</td>
+</tr>
+<tr class="odd">
+<td>Finalité</td>
+<td>Consolider la Seconde et préparer les premières notions
+structurantes de la spécialité</td>
+</tr>
+</tbody>
+</table>
+<h2 id="documents-exploités">1.2 Documents exploités</h2>
+<h3 id="test-de-positionnement">Test de positionnement</h3>
+<p>Le test comporte :</p>
+<ul>
+<li>18 questions ;</li>
+<li>une durée indicative de 25 minutes ;</li>
+<li>une seule réponse par question ;</li>
+<li>une certitude déclarée de 1 à 4 ;</li>
+<li>aucune calculatrice ni document ;</li>
+<li>la possibilité de laisser une question sans réponse ;</li>
+<li>un entretien oral prévu sur deux ou trois questions pour comprendre
+le raisonnement.</li>
+</ul>
+<p>Les questions évaluent neuf domaines :</p>
+<ol type="1">
+<li>calcul littéral ;</li>
+<li>inéquations et signes ;</li>
+<li>fonctions ;</li>
+<li>fonctions de référence ;</li>
+<li>vecteurs ;</li>
+<li>droites du plan ;</li>
+<li>pourcentages et évolutions ;</li>
+<li>probabilités ;</li>
+<li>calcul numérique : puissances et racines carrées.</li>
+</ol>
+<h3 id="bilans-individuels">Bilans individuels</h3>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th style="text-align: right;">Questions traitées</th>
+<th>Profil global</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia Khadhrani</strong></td>
+<td style="text-align: right;">18/18</td>
+<td>1 domaine solide, 2 à consolider, 4 à installer, 2 certitudes
+erronées à rectifier</td>
+</tr>
+<tr class="even">
+<td><strong>Malek Khadhrani</strong></td>
+<td style="text-align: right;">17/18</td>
+<td>2 domaines solides, 2 à consolider, 1 à installer, 4 certitudes
+erronées à rectifier</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad Beldi</strong></td>
+<td style="text-align: right;">17/18</td>
+<td>2 domaines solides, 3 à consolider, 2 à installer, 2 certitudes
+erronées à rectifier</td>
+</tr>
+</tbody>
+</table>
+<p>Donia présente un acquis solide en vecteurs, des réussites encore
+hésitantes en calcul littéral et numérique, des lacunes identifiées en
+inéquations, fonctions, fonctions de référence et pourcentages, ainsi
+que des conceptions à rectifier sur les droites et les probabilités.</p>
+<p>Malek possède des acquis solides en calcul littéral et en
+pourcentages, mais doit rectifier des conceptions sur les fonctions, les
+fonctions de référence, les vecteurs et certaines règles de calcul
+numérique. Les droites du plan sont à installer et les inéquations ainsi
+que les probabilités restent à consolider.</p>
+<p>Ahmad possède des acquis solides sur les inéquations et les vecteurs.
+Il doit rectifier une erreur de factorisation et la confusion entre
+image et antécédent, installer des repères plus sûrs sur les fonctions
+de référence et les probabilités, puis consolider les droites, les
+pourcentages et le calcul numérique.</p>
+<h2 id="informations-manquantes-à-confirmer-avant-la-première-séance">1.3
+Informations manquantes à confirmer avant la première séance</h2>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 64%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Information</th>
+<th>Incidence pédagogique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Effectif définitif</td>
+<td>Le programme est actuellement construit pour trois élèves</td>
+</tr>
+<tr class="even">
+<td>Arrivée éventuelle d’autres élèves</td>
+<td>Nécessiterait une nouvelle lecture collective des bilans</td>
+</tr>
+<tr class="odd">
+<td>Compte rendu des entretiens oraux</td>
+<td>Permettrait de distinguer erreur de lecture, de calcul ou de
+conception</td>
+</tr>
+<tr class="even">
+<td>Durée réelle de passation</td>
+<td>La mention « durée non mesurée — saisie papier » interdit toute
+conclusion sur la vitesse</td>
+</tr>
+<tr class="odd">
+<td>Établissements d’origine</td>
+<td>Les progressions de Seconde peuvent avoir différé</td>
+</tr>
+<tr class="even">
+<td>Chapitres effectivement traités en Seconde</td>
+<td>En particulier Python, statistiques, échantillonnage et fonction
+racine carrée</td>
+</tr>
+<tr class="odd">
+<td>Niveau réel en Python</td>
+<td>Le test ne l’évalue pas</td>
+</tr>
+<tr class="even">
+<td>PAP, troubles spécifiques ou besoins particuliers</td>
+<td>Peut modifier le rythme, la quantité d’écrit ou le format des
+supports</td>
+</tr>
+<tr class="odd">
+<td>Ordinateurs disponibles</td>
+<td>Nécessaire pour une pratique individuelle de Python</td>
+</tr>
+<tr class="even">
+<td>Calculatrices disponibles</td>
+<td>Nécessaires à partir de la séance 2 ou 4</td>
+</tr>
+<tr class="odd">
+<td>Date des séances et travail interséances possible</td>
+<td>Permettrait d’organiser une réelle réactivation espacée</td>
+</tr>
+</tbody>
+</table>
+<h2 id="hypothèses-de-travail">1.4 Hypothèses de travail</h2>
+<p>Le programme est proposé sous les hypothèses suivantes :</p>
+<ul>
+<li>groupe définitif de trois élèves ;</li>
+<li>une salle équipée d’un tableau et d’un vidéoprojecteur ;</li>
+<li>une calculatrice par élève ;</li>
+<li>au moins un ordinateur pour deux élèves, idéalement un par élève
+;</li>
+<li>pas de besoin éducatif particulier encore signalé ;</li>
+<li>cinq minutes de pause active au milieu de chaque séance ;</li>
+<li>absence de notation chiffrée pendant le stage ;</li>
+<li>possibilité de donner dix à quinze minutes de travail entre deux
+séances ;</li>
+<li>différenciation par le nombre de questions, les aides et la
+profondeur, non par la préparation de trois cours séparés.</li>
+</ul>
+<hr />
+<h1 id="référentiel-officiel-applicable-en-2026-2027">2. Référentiel
+officiel applicable en 2026-2027</h1>
+<h2 id="programme-de-seconde-effectivement-suivi">2.1 Programme de
+Seconde effectivement suivi</h2>
+<p>Le programme de Seconde de 2019 a notamment travaillé :</p>
+<ul>
+<li>les ensembles de nombres réels et les intervalles ;</li>
+<li>le calcul avec puissances, racines et fractions ;</li>
+<li>les identités remarquables ;</li>
+<li>le développement et la factorisation ;</li>
+<li>les équations et inéquations du premier degré ;</li>
+<li>les fonctions, leurs représentations, leurs images, antécédents et
+variations ;</li>
+<li>les fonctions carré, inverse, racine carrée et cube ;</li>
+<li>les vecteurs, la colinéarité, les coordonnées et les normes ;</li>
+<li>les droites, leurs coefficients directeurs et leurs équations ;</li>
+<li>les pourcentages, évolutions successives et réciproques ;</li>
+<li>les événements, unions, intersections et probabilités ;</li>
+<li>l’algorithmique, les fonctions informatiques, conditions et
+boucles.</li>
+</ul>
+<p>Ces contenus constituent les prérequis directs de la spécialité.</p>
+<h2 id="nouveau-programme-de-première-spécialité-applicable">2.2 Nouveau
+programme de Première spécialité applicable</h2>
+<p>Le nouveau programme est organisé en quatre parties thématiques :</p>
+<ol type="1">
+<li>algèbre ;</li>
+<li>analyse ;</li>
+<li>géométrie ;</li>
+<li>probabilités et statistiques.</li>
+</ol>
+<p>Il comprend trois composantes transversales :</p>
+<ul>
+<li>vocabulaire ensembliste et logique ;</li>
+<li>algorithmique et programmation ;</li>
+<li>automatismes.</li>
+</ul>
+<p>Le programme précise que ce découpage ne constitue pas un ordre de
+progression et que les interactions entre domaines doivent être
+exploitées. La démonstration y est explicitement présentée comme une
+composante fondamentale.</p>
+<h3 id="contenus-majeurs-de-première">Contenus majeurs de Première</h3>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 89%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Principaux contenus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Algèbre</td>
+<td>Suites, suites arithmétiques et géométriques, second degré, formes
+factorisée et canonique, discriminant, signe</td>
+</tr>
+<tr class="even">
+<td>Analyse</td>
+<td>Taux de variation, dérivation, tangentes, variations, optimisation,
+exponentielle, trigonométrie</td>
+</tr>
+<tr class="odd">
+<td>Géométrie</td>
+<td>Produit scalaire, orthogonalité, vecteur normal, projection
+orthogonale, équation de cercle</td>
+</tr>
+<tr class="even">
+<td>Probabilités</td>
+<td>Probabilités conditionnelles, indépendance, probabilités totales,
+répétitions de Bernoulli, variables aléatoires</td>
+</tr>
+<tr class="odd">
+<td>Algorithmique</td>
+<td>Variables, conditions, boucles, fonctions et nouvelle notion de
+liste</td>
+</tr>
+<tr class="even">
+<td>Logique</td>
+<td>Implication, équivalence, réciproque, contraposée, contre-exemple,
+négation d’une proposition</td>
+</tr>
+<tr class="odd">
+<td>Automatismes</td>
+<td>Calcul algébrique, signes, fonctions, droites, évolutions,
+probabilités et statistiques</td>
+</tr>
+</tbody>
+</table>
+<p>Le programme demande expressément d’entretenir les automatismes
+acquis en Seconde : calcul de taux, développement et factorisation,
+produit nul, signes d’expressions, lecture de fonctions, coefficients
+directeurs et probabilités.</p>
+<h2 id="conséquences-pour-le-stage">2.3 Conséquences pour le stage</h2>
+<p>Le stage ne doit être ni :</p>
+<ul>
+<li>une reprise exhaustive du programme de Seconde ;</li>
+<li>ni une prélecture accélérée de toute la Première.</li>
+</ul>
+<p>Il doit prioritairement :</p>
+<ol type="1">
+<li>supprimer les obstacles qui empêcheraient d’entrer dans le second
+degré, les suites, la dérivation et les probabilités conditionnelles
+;</li>
+<li>rendre immédiatement disponibles les automatismes de Seconde ;</li>
+<li>préparer les changements de registre : formule, tableau, graphique,
+langage naturel, code ;</li>
+<li>développer la justification et le contrôle ;</li>
+<li>introduire seulement quelques notions nouvelles lorsque les
+prérequis sont stabilisés.</li>
+</ol>
+<hr />
+<h1 id="diagnostic-synthétique-du-groupe">3. Diagnostic synthétique du
+groupe</h1>
+<h2 id="tableau-par-domaine">3.1 Tableau par domaine</h2>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 23%" />
+<col style="width: 22%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 3%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Donia Khadhrani</th>
+<th>Malek Khadhrani</th>
+<th>Ahmad Beldi</th>
+<th>Besoin collectif</th>
+<th style="text-align: right;">Priorité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Calcul littéral</strong></td>
+<td>Réussites hésitantes ; procédures disponibles mais peu assurées</td>
+<td>Solide</td>
+<td>Identité remarquable réussie, mais factorisation de (x^2-9) erronée
+avec forte confiance</td>
+<td>Choisir entre développer, réduire et factoriser ; reconnaître une
+différence de carrés</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Inéquations et signes</strong></td>
+<td>Ne maîtrise pas encore le changement de sens ni le tableau de
+signes</td>
+<td>Réussites correctes mais pas totalement assurées</td>
+<td>Solide</td>
+<td>Stabiliser la résolution et le lien avec le signe d’un produit</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Fonctions</strong></td>
+<td>Calcul d’image possible, mais confusion image-antécédent</td>
+<td>Erreur de substitution à une valeur négative et confusion
+image-antécédent</td>
+<td>Calcul d’image correct, confusion image-antécédent</td>
+<td>Le vocabulaire fonctionnel est un obstacle commun</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Fonctions de référence</strong></td>
+<td>Fonction inverse et comparaison (x^2/x) non maîtrisées</td>
+<td>Fonction inverse non traitée ; croit qu’on ne peut pas comparer
+(x^2) et (x) sur (]0;1[)</td>
+<td>Connaît partiellement l’inverse, mais se trompe sur (x^2&lt;x)</td>
+<td>Reprendre domaines, signes et variations des fonctions carré,
+inverse et racine</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Vecteurs</strong></td>
+<td>Solide, quoique parfois peu assuré</td>
+<td>Confusion sur les coordonnées de () et la colinéarité</td>
+<td>Solide</td>
+<td>Remédiation ciblée pour Malek, approfondissement pour les deux
+autres</td>
+<td style="text-align: right;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Droites du plan</strong></td>
+<td>Confond coefficient directeur et variation d’ordonnée ; mauvaise
+lecture de l’ordonnée à l’origine</td>
+<td>Formule du coefficient directeur non disponible ; lecture d’une
+équation partiellement acquise</td>
+<td>Correct mais certaines certitudes non renseignées</td>
+<td>Formule de pente, équation réduite et interprétation graphique</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Pourcentages et évolutions</strong></td>
+<td>Confond variation absolue et taux ; coefficient multiplicateur non
+installé</td>
+<td>Solide</td>
+<td>Correct mais confiance incomplètement renseignée</td>
+<td>Reprise courte commune, remédiation forte pour Donia</td>
+<td style="text-align: right;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Probabilités</strong></td>
+<td>Double comptage dans une union ; événement contraire partiellement
+disponible</td>
+<td>Réussites correctes mais peu assurées</td>
+<td>Confusion sur l’union ; complémentaire non traité</td>
+<td>Ensembles, intersection, union, complémentaire, arbres</td>
+<td style="text-align: right;"><strong>1</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Calcul numérique</strong></td>
+<td>Puissances et racines réussies mais peu assurées</td>
+<td>Erreur sur les règles de puissances</td>
+<td>Réussites correctes mais confiance incomplète</td>
+<td>Entretien quotidien, remédiation ciblée pour Malek</td>
+<td style="text-align: right;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Confiance</strong></td>
+<td>Calibration globale de 50 %</td>
+<td>Calibration globale de 43 %</td>
+<td>Calibration globale de 50 %</td>
+<td>De nombreuses réponses sûres sont fausses et certaines réponses
+justes restent hésitantes</td>
+<td style="text-align: right;"><strong>Transversal</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Les classifications individuelles sont celles des bilans Nexus ;
+elles ne doivent pas être interprétées comme des notes scolaires.</p>
+<h2 id="difficultés-communes-les-plus-structurantes">3.2 Difficultés
+communes les plus structurantes</h2>
+<h3 id="a.-le-langage-des-fonctions">A. Le langage des fonctions</h3>
+<p>Les trois élèves rencontrent une difficulté sur l’interprétation du
+point ((3;7)) d’une courbe :</p>
+<p>[ (3;7)C_f f(3)=7.]</p>
+<p>Il faut stabiliser simultanément les formulations :</p>
+<ul>
+<li><ol start="7" type="1">
+<li>est l’image de (3) ;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>est un antécédent de (7).</li>
+</ol></li>
+</ul>
+<p>Cette difficulté est prioritaire, car le langage fonctionnel est
+omniprésent dans :</p>
+<ul>
+<li>le second degré ;</li>
+<li>les suites explicites ;</li>
+<li>la dérivation ;</li>
+<li>l’exponentielle ;</li>
+<li>la trigonométrie ;</li>
+<li>les variables aléatoires.</li>
+</ul>
+<h3 id="b.-les-procédures-sont-parfois-appliquées-aux-nombres-plutôt-quà-la-structure">B.
+Les procédures sont parfois appliquées aux nombres plutôt qu’à la
+structure</h3>
+<p>Exemples observés :</p>
+<ul>
+<li>remplacer (x) par (-2) sans gérer correctement le produit de deux
+nombres négatifs ;</li>
+<li>calculer une pente en combinant les coordonnées sans former les
+différences ;</li>
+<li>produire les coordonnées de () sans respecter « arrivée moins départ
+» ;</li>
+<li>ajouter des probabilités sans retrancher l’intersection ;</li>
+<li>reconnaître un carré, mais ne pas identifier une différence de
+carrés.</li>
+</ul>
+<h3 id="c.-la-compréhension-des-fonctions-de-référence-est-insuffisante">C.
+La compréhension des fonctions de référence est insuffisante</h3>
+<p>La propriété</p>
+<p>[ 0&lt;x&lt;1 x^2&lt;x]</p>
+<p>n’est stabilisée chez aucun des trois élèves. Or cette comparaison
+préfigure :</p>
+<ul>
+<li>l’étude des variations ;</li>
+<li>les raisonnements sur les intervalles ;</li>
+<li>les suites ;</li>
+<li>les inégalités ;</li>
+<li>l’analyse qualitative des fonctions.</li>
+</ul>
+<h3 id="d.-la-confiance-nest-pas-encore-un-indicateur-fiable">D. La
+confiance n’est pas encore un indicateur fiable</h3>
+<p>Le groupe présente deux phénomènes opposés :</p>
+<ul>
+<li>des réponses fausses données avec certitude élevée ;</li>
+<li>des réponses correctes données avec hésitation.</li>
+</ul>
+<p>Il faut donc apprendre à distinguer :</p>
+<blockquote>
+<p>« Je reconnais la question » de « Je sais expliquer et contrôler ma
+réponse ».</p>
+</blockquote>
+<h2 id="points-dappui-du-groupe">3.3 Points d’appui du groupe</h2>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 94%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Points d’appui exploitables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Donia</td>
+<td>Vecteurs ; calcul littéral ; puissances et racines, malgré une
+confiance faible</td>
+</tr>
+<tr class="even">
+<td>Malek</td>
+<td>Calcul littéral ; inéquations ; pourcentages ; événements
+élémentaires</td>
+</tr>
+<tr class="odd">
+<td>Ahmad</td>
+<td>Inéquations ; vecteurs ; droites ; calcul numérique</td>
+</tr>
+</tbody>
+</table>
+<p>L’hétérogénéité n’est pas un obstacle majeur : les domaines forts ne
+sont pas les mêmes. Elle permet des parcours tournants sans figer un
+élève dans un rôle de tuteur permanent.</p>
+<h2 id="limites-du-test-initial">3.4 Limites du test initial</h2>
+<p>Le test est bien ciblé sur plusieurs automatismes indispensables,
+mais il ne situe pas directement :</p>
+<ul>
+<li>les suites numériques ;</li>
+<li>l’algorithmique et Python ;</li>
+<li>les listes ;</li>
+<li>le taux de variation ;</li>
+<li>l’intuition de la dérivation ;</li>
+<li>la forme canonique ;</li>
+<li>le discriminant ;</li>
+<li>le produit scalaire ;</li>
+<li>les probabilités conditionnelles ;</li>
+<li>les statistiques descriptives ;</li>
+<li>les variables aléatoires ;</li>
+<li>la logique et la démonstration ;</li>
+<li>la fonction exponentielle ;</li>
+<li>le cercle trigonométrique.</li>
+</ul>
+<p>Un mini-diagnostic complémentaire est donc nécessaire. Il est proposé
+en annexe F.</p>
+<hr />
+<h1 id="prérequis-de-seconde-et-transition-vers-la-première-spécialité">4.
+Prérequis de Seconde et transition vers la Première spécialité</h1>
+<h2 id="tableau-croisé">4.1 Tableau croisé</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 29%" />
+<col style="width: 25%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Acquis attendu de Seconde</th>
+<th>Mobilisation en Première spécialité 2026</th>
+<th>État du groupe</th>
+<th>Décision pour le stage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Calcul avec relatifs, fractions, puissances et racines</td>
+<td>Second degré, dérivation, exponentielle, géométrie</td>
+<td>Globalement disponible, mais erreurs ciblées</td>
+<td>Rituel quotidien</td>
+</tr>
+<tr class="even">
+<td>Développer et factoriser</td>
+<td>Formes du trinôme, dérivées de polynômes, équations</td>
+<td>Inégal selon les élèves</td>
+<td>Séance 1 prioritaire</td>
+</tr>
+<tr class="odd">
+<td>Identités remarquables</td>
+<td>Forme canonique et factorisation</td>
+<td>Différence de carrés fragile chez Ahmad</td>
+<td>Reconstruction ciblée</td>
+</tr>
+<tr class="even">
+<td>Résoudre une équation du premier degré</td>
+<td>Modélisation, suites, tangentes</td>
+<td>Non testé directement dans ce questionnaire</td>
+<td>Vérification rapide</td>
+</tr>
+<tr class="odd">
+<td>Résoudre une inéquation</td>
+<td>Signes de trinômes, variations, optimisation</td>
+<td>Donia en difficulté</td>
+<td>Séance 1</td>
+</tr>
+<tr class="even">
+<td>Étudier le signe d’un produit</td>
+<td>Second degré factorisé, signe de dérivée</td>
+<td>Hétérogène</td>
+<td>Séance 1</td>
+</tr>
+<tr class="odd">
+<td>Calculer une image et un antécédent</td>
+<td>Toutes les fonctions de Première</td>
+<td>Obstacle commun</td>
+<td>Séance 2 prioritaire</td>
+</tr>
+<tr class="even">
+<td>Fonctions carré, inverse, racine</td>
+<td>Dérivation, variations, comparaisons</td>
+<td>Fragile pour les trois</td>
+<td>Séance 2</td>
+</tr>
+<tr class="odd">
+<td>Taux de variation</td>
+<td>Nombre dérivé et tangente</td>
+<td>Non évalué</td>
+<td>Anticipation séance 2</td>
+</tr>
+<tr class="even">
+<td>Coordonnées de vecteurs et colinéarité</td>
+<td>Produit scalaire, orthogonalité</td>
+<td>Très hétérogène</td>
+<td>Séance 3</td>
+</tr>
+<tr class="odd">
+<td>Coefficient directeur et équation de droite</td>
+<td>Tangente, vecteur normal, géométrie repérée</td>
+<td>Fragile pour Donia et Malek</td>
+<td>Séance 3</td>
+</tr>
+<tr class="even">
+<td>Pourcentages et coefficients multiplicateurs</td>
+<td>Suites géométriques et exponentielle</td>
+<td>Fragile chez Donia</td>
+<td>Séance 4</td>
+</tr>
+<tr class="odd">
+<td>Union, intersection, complémentaire</td>
+<td>Probabilités conditionnelles et indépendance</td>
+<td>Fragile chez Donia et Ahmad</td>
+<td>Séance 4</td>
+</tr>
+<tr class="even">
+<td>Arbres de probabilités</td>
+<td>Probabilités totales</td>
+<td>Non évalué</td>
+<td>Anticipation séance 4</td>
+</tr>
+<tr class="odd">
+<td>Variables, boucles et fonctions Python</td>
+<td>Suites, simulations, listes</td>
+<td>Non évalué</td>
+<td>Séance 5 et diagnostic</td>
+</tr>
+<tr class="even">
+<td>Raisonnement logique</td>
+<td>Démonstration, contraposée, contre-exemple</td>
+<td>Non évalué</td>
+<td>Travail transversal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notions-de-première-raisonnablement-anticipées">4.2 Notions de
+Première raisonnablement anticipées</h2>
+<h3 id="à-introduire-réellement">À introduire réellement</h3>
+<ul>
+<li>suites explicites et définies par récurrence ;</li>
+<li>premiers termes d’une suite ;</li>
+<li>suites arithmétiques et géométriques comme modèles d’évolutions
+;</li>
+<li>forme factorisée d’un trinôme ;</li>
+<li>forme canonique sur un exemple simple ;</li>
+<li>taux de variation ;</li>
+<li>sécante et tangente, sans cours complet sur les dérivées ;</li>
+<li>produit scalaire par les coordonnées sur des exemples simples ;</li>
+<li>vecteur normal à une droite ;</li>
+<li>probabilité conditionnelle à partir d’un tableau ou d’un arbre
+;</li>
+<li>liste Python et boucle de génération de termes.</li>
+</ul>
+<h3 id="à-présenter-seulement-comme-horizon">À présenter seulement comme
+horizon</h3>
+<ul>
+<li>discriminant et résolution générale du second degré ;</li>
+<li>règles complètes de dérivation ;</li>
+<li>fonction exponentielle ;</li>
+<li>cercle trigonométrique et radians ;</li>
+<li>formule des probabilités totales dans des situations complexes
+;</li>
+<li>indépendance formalisée ;</li>
+<li>variables aléatoires, variance et écart type ;</li>
+<li>équations de cercle et projections orthogonales.</li>
+</ul>
+<h2 id="ce-qui-ne-doit-pas-être-suranticipé">4.3 Ce qui ne doit pas être
+suranticipé</h2>
+<p>Mon avis didactique est net : <strong>enseigner intégralement le
+discriminant ou les formules de dérivation pendant ces dix heures serait
+prématuré</strong>.</p>
+<p>Un élève qui confond encore image et antécédent, ou qui ne maîtrise
+pas le signe d’un produit, ne tire aucun bénéfice durable d’une
+mémorisation anticipée de (=b^2-4ac). Le stage doit construire les
+conditions de compréhension du cours de Première, non remplacer les
+premiers chapitres de l’année.</p>
+<hr />
+<h1 id="objectifs-du-stage">5. Objectifs du stage</h1>
+<h2 id="objectifs-généraux">5.1 Objectifs généraux</h2>
+<p>À l’issue du stage, chaque élève devra pouvoir :</p>
+<ol type="1">
+<li>développer, réduire et factoriser une expression simple ;</li>
+<li>reconnaître les principales identités remarquables ;</li>
+<li>résoudre une inéquation du premier degré ;</li>
+<li>établir le signe d’un produit de facteurs affines ;</li>
+<li>calculer une image et déterminer un antécédent ;</li>
+<li>interpréter correctement un point d’une courbe ;</li>
+<li>connaître les domaines, signes et variations élémentaires des
+fonctions carré, inverse et racine carrée ;</li>
+<li>déterminer les coordonnées d’un vecteur ;</li>
+<li>tester une colinéarité ;</li>
+<li>calculer un coefficient directeur ;</li>
+<li>déterminer une équation réduite de droite ;</li>
+<li>utiliser un coefficient multiplicateur ;</li>
+<li>traiter des évolutions successives ;</li>
+<li>calculer une probabilité d’union sans double comptage ;</li>
+<li>utiliser un événement contraire ;</li>
+<li>lire un tableau ou un arbre de probabilités ;</li>
+<li>calculer les premiers termes d’une suite ;</li>
+<li>distinguer une définition explicite et une définition par récurrence
+;</li>
+<li>exécuter et compléter un programme Python simple ;</li>
+<li>rédiger une justification courte et contrôler un résultat ;</li>
+<li>déclarer une confiance plus cohérente avec la maîtrise réelle.</li>
+</ol>
+<h2 id="hiérarchie-des-priorités">5.2 Hiérarchie des priorités</h2>
+<h3 id="priorité-1-obstacles-collectifs">Priorité 1 — Obstacles
+collectifs</h3>
+<ul>
+<li>image et antécédent ;</li>
+<li>fonctions de référence ;</li>
+<li>coefficient directeur ;</li>
+<li>union, intersection et complémentaire ;</li>
+<li>choix entre développement et factorisation ;</li>
+<li>contrôle des signes.</li>
+</ul>
+<h3 id="priorité-2-préparation-directe-de-la-première">Priorité 2 —
+Préparation directe de la Première</h3>
+<ul>
+<li>second degré sous forme factorisée ;</li>
+<li>taux de variation ;</li>
+<li>suites ;</li>
+<li>produit scalaire ;</li>
+<li>probabilités conditionnelles ;</li>
+<li>Python et listes.</li>
+</ul>
+<h3 id="priorité-3-consolidations-individualisées">Priorité 3 —
+Consolidations individualisées</h3>
+<ul>
+<li>Donia : inéquations, droites, pourcentages et probabilités ;</li>
+<li>Malek : fonctions, vecteurs, droites et puissances ;</li>
+<li>Ahmad : factorisation, fonctions et probabilités.</li>
+</ul>
+<h2 id="objectifs-opérationnels-par-séance">5.3 Objectifs opérationnels
+par séance</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Séance</th>
+<th>Objectifs opérationnels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Algèbre</strong></td>
+<td>Développer, factoriser, résoudre une inéquation et dresser un
+tableau de signes</td>
+</tr>
+<tr class="even">
+<td><strong>2. Fonctions</strong></td>
+<td>Distinguer image et antécédent, maîtriser les fonctions de référence
+et calculer un taux de variation</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Géométrie repérée</strong></td>
+<td>Calculer vecteurs, colinéarité, pente et équation de droite ;
+découvrir le produit scalaire</td>
+</tr>
+<tr class="even">
+<td><strong>4. Évolutions et probabilités</strong></td>
+<td>Utiliser des coefficients multiplicateurs, calculer une union et
+lire un arbre conditionnel</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Suites et Python</strong></td>
+<td>Calculer des termes, reconnaître un modèle arithmétique ou
+géométrique, coder une génération simple et réussir l’évaluation
+finale</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="progression-détaillée-des-cinq-séances">6. Progression détaillée
+des cinq séances</h1>
+<p>La répartition type est la suivante :</p>
+<ul>
+<li>environ 80 minutes de tronc commun ;</li>
+<li>35 minutes de parcours différenciés ;</li>
+<li>5 minutes de pause ou transition.</li>
+</ul>
+<p>Les rituels, les exit tickets et l’évaluation finale sont réalisés
+individuellement ; la part effective de travail individualisé atteint
+ainsi environ 30 à 35 %.</p>
+<hr />
+<h2 id="séance-1-calcul-algébrique-inéquations-et-transition-vers-le-second-degré">Séance
+1 — Calcul algébrique, inéquations et transition vers le second
+degré</h2>
+<h3 id="objectifs">Objectifs</h3>
+<ul>
+<li>réactiver les règles de puissances et de racines ;</li>
+<li>distinguer développement, réduction et factorisation ;</li>
+<li>utiliser les identités remarquables ;</li>
+<li>résoudre une inéquation ;</li>
+<li>dresser le signe d’un produit de deux facteurs affines ;</li>
+<li>découvrir l’intérêt des formes développée, factorisée et
+canonique.</li>
+</ul>
+<h3 id="déroulé">Déroulé</h3>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 14%" />
+<col style="width: 35%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temps</th>
+<th>Phase</th>
+<th>Tronc commun</th>
+<th>Différenciation et supports</th>
+<th>Indicateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0-10 min</td>
+<td>Rituel initial</td>
+<td>Quatre questions : puissance, racine, identité remarquable,
+signe</td>
+<td>Mini-tableaux ; certitude 1 à 4</td>
+<td>3 réponses justes sur 4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10-20 min</td>
+<td>Retour sur les conceptions</td>
+<td>Analyse de (x^2-9), ((-2)^2), (-2^2)</td>
+<td>Verbalisation avant correction</td>
+<td>L’élève nomme la propriété utilisée</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20-45 min</td>
+<td>Construction</td>
+<td>Développer, factoriser, choisir une forme</td>
+<td>Cartes « développer/factoriser/réduire »</td>
+<td>Choix de forme justifié</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45-65 min</td>
+<td>Entraînement guidé</td>
+<td>Inéquation du premier degré et produit de facteurs</td>
+<td>Axe gradué et tableau de signes</td>
+<td>Changement de sens correctement expliqué</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">65-70 min</td>
+<td>Pause active</td>
+<td>Jeu oral sur les signes</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70-105 min</td>
+<td>Parcours personnalisés</td>
+<td>Même fiche de base, trois niveaux</td>
+<td>Voir ci-dessous</td>
+<td>80 % du parcours adapté</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">105-115 min</td>
+<td>Anticipation Première</td>
+<td>(x<sup>2-6x+5=(x-1)(x-5)=(x-3)</sup>2-4)</td>
+<td>Manipulation algébrique ou graphique</td>
+<td>Les rôles des trois formes sont compris</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115-120 min</td>
+<td>Exit ticket</td>
+<td>Une factorisation et un tableau de signes</td>
+<td>Individuel</td>
+<td>Méthode autonome</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contenus-personnalisés">Contenus personnalisés</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Travail prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia</strong></td>
+<td>Résolution de (-2x+6), changement du sens, signe de ((2x-6)(x+1)),
+écriture des intervalles</td>
+</tr>
+<tr class="even">
+<td><strong>Malek</strong></td>
+<td>Règles de puissances, calcul avec valeurs négatives, simplification
+de radicaux, contrôle par développement</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad</strong></td>
+<td>Différence de carrés, distinction ((a-b)^2) et ((a-b)(a+b)),
+factorisations immédiates</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace-écrite-attendue">Trace écrite attendue</h3>
+<p>[ (a+b)<sup>2=a</sup>2+2ab+b^2]</p>
+<p>[ (a-b)<sup>2=a</sup>2-2ab+b^2]</p>
+<p>[ (a-b)(a+b)=a<sup>2-b</sup>2]</p>
+<blockquote>
+<p>Lorsqu’on multiplie ou divise les deux membres d’une inégalité par un
+nombre négatif, on change le sens de l’inégalité.</p>
+</blockquote>
+<blockquote>
+<p>La forme factorisée est particulièrement adaptée à la recherche des
+zéros et du signe.</p>
+</blockquote>
+<h3 id="erreurs-à-surveiller">Erreurs à surveiller</h3>
+<ul>
+<li>écrire ((a-b)<sup>2=a</sup>2-b^2) ;</li>
+<li>factoriser (x^2-9) en ((x-9)(x+9)) ;</li>
+<li>additionner les exposants lors d’un quotient ;</li>
+<li>oublier le changement de sens d’une inégalité ;</li>
+<li>attribuer directement le signe d’un facteur au produit ;</li>
+<li>construire un tableau de signes sans ordonner les racines.</li>
+</ul>
+<hr />
+<h2 id="séance-2-fonctions-fonctions-de-référence-et-première-approche-de-la-dérivation">Séance
+2 — Fonctions, fonctions de référence et première approche de la
+dérivation</h2>
+<h3 id="objectifs-1">Objectifs</h3>
+<ul>
+<li>stabiliser image, antécédent et courbe représentative ;</li>
+<li>passer d’une formule à un tableau et à une courbe ;</li>
+<li>connaître les caractéristiques des fonctions carré, inverse et
+racine carrée ;</li>
+<li>comparer (x) et (x^2) selon l’intervalle ;</li>
+<li>calculer un taux de variation ;</li>
+<li>donner une première signification à la pente d’une sécante et d’une
+tangente.</li>
+</ul>
+<h3 id="déroulé-1">Déroulé</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 32%" />
+<col style="width: 19%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temps</th>
+<th>Phase</th>
+<th>Tronc commun</th>
+<th>Différenciation et supports</th>
+<th>Indicateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0-10 min</td>
+<td>Rituel cumulatif</td>
+<td>Factorisation, signe, intervalle</td>
+<td>Mini-tableaux</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10-20 min</td>
+<td>Conflit cognitif</td>
+<td>Que signifie ((3;7)C_f) ?</td>
+<td>Cartes de formulations</td>
+<td>4 formulations classées correctement</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20-45 min</td>
+<td>Construction</td>
+<td>Formule, tableau, courbe, image, antécédent</td>
+<td>Fiche à trois registres</td>
+<td>Passage correct entre deux registres</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45-65 min</td>
+<td>Fonctions de référence</td>
+<td>Carré, inverse, racine ; domaines et variations</td>
+<td>Courbes imprimées ou GeoGebra</td>
+<td>Comparaisons justifiées</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">65-70 min</td>
+<td>Pause</td>
+<td>Vrai/faux rapide</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70-105 min</td>
+<td>Parcours personnalisés</td>
+<td>Exercices gradués</td>
+<td>Voir ci-dessous</td>
+<td>80 % du parcours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">105-115 min</td>
+<td>Anticipation dérivation</td>
+<td>Taux de variation de (x^2) entre (1) et (1+h)</td>
+<td>Tableau de sécantes</td>
+<td>Interprétation de la pente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115-120 min</td>
+<td>Exit ticket</td>
+<td>Une image, un antécédent, une comparaison</td>
+<td>Individuel</td>
+<td>3/3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contenus-personnalisés-1">Contenus personnalisés</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 92%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Travail prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia</strong></td>
+<td>Interpréter un point de courbe, calculer des images, déterminer des
+antécédents simples, établir domaines et variations</td>
+</tr>
+<tr class="even">
+<td><strong>Malek</strong></td>
+<td>Substituer une valeur négative, comprendre la fonction inverse,
+comparer (x^2) et (x) sur (]0;1[)</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad</strong></td>
+<td>Rectifier image-antécédent, consolider la fonction carré et
+approfondir par une première équation (f(x)=k)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace-écrite-attendue-1">Trace écrite attendue</h3>
+<p>[ (a;b)C_f f(a)=b.]</p>
+<ul>
+<li><ol start="2" type="a">
+<li>est l’image de (a) ;</li>
+</ol></li>
+<li><ol type="a">
+<li>est un antécédent de (b).</li>
+</ol></li>
+</ul>
+<p>Pour (0&lt;x&lt;1) :</p>
+<p>[ x^2&lt;x.]</p>
+<p>Le taux de variation de (f) entre (a) et (b) est :</p>
+<p>[ .]</p>
+<p>Le nouveau programme définit précisément la dérivation à partir du
+taux de variation, des sécantes puis de la tangente.</p>
+<h3 id="erreurs-à-surveiller-1">Erreurs à surveiller</h3>
+<ul>
+<li>intervertir abscisse et ordonnée ;</li>
+<li>dire que (3) est l’image de (7) lorsque (f(3)=7) ;</li>
+<li>oublier les parenthèses dans (f(-2)) ;</li>
+<li>affirmer que la fonction inverse est décroissante sur tout (R)
+;</li>
+<li>oublier que (0) n’appartient pas au domaine de la fonction inverse
+;</li>
+<li>généraliser (x^2&gt;x) sans tenir compte de l’intervalle ;</li>
+<li>confondre taux de variation et valeur de la fonction.</li>
+</ul>
+<hr />
+<h2 id="séance-3-vecteurs-droites-et-transition-vers-le-produit-scalaire">Séance
+3 — Vecteurs, droites et transition vers le produit scalaire</h2>
+<h3 id="objectifs-2">Objectifs</h3>
+<ul>
+<li>calculer les coordonnées d’un vecteur ;</li>
+<li>utiliser le déterminant pour tester la colinéarité ;</li>
+<li>calculer un coefficient directeur ;</li>
+<li>déterminer une équation réduite de droite ;</li>
+<li>interpréter coefficient directeur et ordonnée à l’origine ;</li>
+<li>découvrir le produit scalaire par les coordonnées ;</li>
+<li>reconnaître un vecteur normal simple.</li>
+</ul>
+<h3 id="déroulé-2">Déroulé</h3>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 32%" />
+<col style="width: 17%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temps</th>
+<th>Phase</th>
+<th>Tronc commun</th>
+<th>Différenciation et supports</th>
+<th>Indicateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0-10 min</td>
+<td>Rituel</td>
+<td>Fonction, taux de variation, signe</td>
+<td>Mini-tableaux</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10-20 min</td>
+<td>Représentation</td>
+<td>De (A) vers (B) : « arrivée moins départ »</td>
+<td>Repère grand format</td>
+<td>Coordonnées de () correctes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20-45 min</td>
+<td>Vecteurs</td>
+<td>Coordonnées, norme, colinéarité</td>
+<td>Quadrillage et calcul</td>
+<td>Critère correctement choisi</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45-65 min</td>
+<td>Droites</td>
+<td>Coefficient directeur et équation (y=mx+p)</td>
+<td>Deux points puis point-pente</td>
+<td>Pente correcte dans 3 cas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">65-70 min</td>
+<td>Pause</td>
+<td>Jeu « parallèle, sécante ou perpendiculaire »</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70-105 min</td>
+<td>Parcours personnalisés</td>
+<td>Exercices différenciés</td>
+<td>Voir ci-dessous</td>
+<td>80 % du parcours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">105-115 min</td>
+<td>Anticipation Première</td>
+<td>( uv=x_ux_v+y_uy_v ) et orthogonalité</td>
+<td>Cas numériques simples</td>
+<td>Produit scalaire nul interprété</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115-120 min</td>
+<td>Exit ticket</td>
+<td>Vecteur, pente, équation</td>
+<td>Individuel</td>
+<td>3 étapes justifiées</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contenus-personnalisés-2">Contenus personnalisés</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Travail prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia</strong></td>
+<td>Formule du coefficient directeur, lecture de l’ordonnée à l’origine,
+équation à partir de deux points</td>
+</tr>
+<tr class="even">
+<td><strong>Malek</strong></td>
+<td>Coordonnées de (), colinéarité, coefficient directeur et équation
+réduite</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad</strong></td>
+<td>Entretien des acquis ; passage à l’équation cartésienne et
+découverte du vecteur normal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace-écrite-attendue-2">Trace écrite attendue</h3>
+<p>Pour (A(x_A;y_A)) et (B(x_B;y_B)) :</p>
+<p>[ ===================</p>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>x</mi><mi>B</mi></msub><mo>−</mo><msub><mi>x</mi><mi>A</mi></msub><mspace width="0.222em"></mspace><msub><mi>y</mi><mi>B</mi></msub><mo>−</mo><msub><mi>y</mi><mi>A</mi></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\begin{pmatrix}
+x_B-x_A\
+y_B-y_A
+\end{pmatrix}</annotation></semantics></math>
+<p>\end{pmatrix}. ]</p>
+<p>Si (x_Ax_B), le coefficient directeur de ((AB)) vaut :</p>
+<p>[ m=.]</p>
+<p>Pour deux vecteurs (u(x;y)) et (v(x’;y’)) :</p>
+<p>[ (u,v)=xy’-yx’.]</p>
+<p>Ils sont colinéaires si et seulement si ce déterminant est nul.</p>
+<p>Première anticipation :</p>
+<p>[ uv=xx’+yy’.]</p>
+<p>Dans un repère orthonormé, un produit scalaire nul caractérise
+l’orthogonalité. Le programme de Première prolonge ensuite ce travail
+par le produit scalaire, les vecteurs normaux et les équations
+cartésiennes.</p>
+<h3 id="erreurs-à-surveiller-2">Erreurs à surveiller</h3>
+<ul>
+<li>faire « départ moins arrivée » ;</li>
+<li>changer l’ordre dans une seule des deux différences ;</li>
+<li>calculer une pente avec une somme ;</li>
+<li>confondre (m) et (p) dans (y=mx+p) ;</li>
+<li>croire que (p) est l’abscisse du point d’intersection avec l’axe des
+abscisses ;</li>
+<li>confondre colinéarité et orthogonalité ;</li>
+<li>appliquer une formule sans vérifier que la droite n’est pas
+verticale.</li>
+</ul>
+<hr />
+<h2 id="séance-4-pourcentages-événements-et-probabilités-conditionnelles">Séance
+4 — Pourcentages, événements et probabilités conditionnelles</h2>
+<h3 id="objectifs-3">Objectifs</h3>
+<ul>
+<li>distinguer variation absolue, taux et coefficient multiplicateur
+;</li>
+<li>calculer une valeur initiale ou finale ;</li>
+<li>composer deux évolutions ;</li>
+<li>distinguer union, intersection et complémentaire ;</li>
+<li>éviter le double comptage ;</li>
+<li>lire un arbre ou un tableau ;</li>
+<li>introduire la probabilité conditionnelle.</li>
+</ul>
+<h3 id="déroulé-3">Déroulé</h3>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 29%" />
+<col style="width: 24%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temps</th>
+<th>Phase</th>
+<th>Tronc commun</th>
+<th>Différenciation et supports</th>
+<th>Indicateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0-10 min</td>
+<td>Rituel</td>
+<td>Droite, vecteur, fonction</td>
+<td>Mini-tableaux</td>
+<td>3/4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10-25 min</td>
+<td>Information chiffrée</td>
+<td>120 TND → 90 TND ; taux et coefficient</td>
+<td>Tableau valeur initiale/variation/finale</td>
+<td>Le dénominateur est la valeur initiale</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">25-45 min</td>
+<td>Évolutions</td>
+<td>Coefficients successifs et évolution réciproque</td>
+<td>Calculatrice après mise en équation</td>
+<td>Produit des coefficients</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45-65 min</td>
+<td>Ensembles et probabilités</td>
+<td>Union, intersection, complémentaire</td>
+<td>Diagrammes de Venn et dé</td>
+<td>Aucun double comptage</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">65-70 min</td>
+<td>Pause</td>
+<td>Jeu oral sur les événements</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70-105 min</td>
+<td>Parcours personnalisés</td>
+<td>Pourcentages et probabilités gradués</td>
+<td>Voir ci-dessous</td>
+<td>80 % du parcours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">105-115 min</td>
+<td>Anticipation Première</td>
+<td>Tableau croisé, arbre pondéré, (P_A(B))</td>
+<td>Situation à deux catégories</td>
+<td>Lecture correcte d’une branche</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115-120 min</td>
+<td>Exit ticket</td>
+<td>Un taux et une probabilité</td>
+<td>Individuel</td>
+<td>Deux démarches justifiées</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contenus-personnalisés-3">Contenus personnalisés</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Travail prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia</strong></td>
+<td>Calcul du taux, coefficient multiplicateur, évolutions successives,
+formule de l’union</td>
+</tr>
+<tr class="even">
+<td><strong>Malek</strong></td>
+<td>Entretien des acquis et approfondissement vers (P_A(B)), arbres et
+probabilités totales</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad</strong></td>
+<td>Union, intersection, événement contraire, arbre simple, contrôle des
+événements décrits en français</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace-écrite-attendue-3">Trace écrite attendue</h3>
+<p>Une hausse de (t%) correspond au coefficient :</p>
+<p>[ 1+.]</p>
+<p>Une baisse de (t%) correspond au coefficient :</p>
+<p>[ 1-.]</p>
+<p>Pour deux événements (A) et (B) :</p>
+<p>[ P(AB) ==========</p>
+<p>P(A)+P(B)-P(AB). ]</p>
+<p>[ P(A)=1-P(A).]</p>
+<p>Introduction :</p>
+<p>[ P_A(B)= P(A).]</p>
+<p>Le nouveau programme attend ensuite l’utilisation d’arbres et de
+tableaux, la distinction entre (P(AB)), (P_A(B)) et (P_B(A)), ainsi que
+la formule des probabilités totales.</p>
+<h3 id="erreurs-à-surveiller-3">Erreurs à surveiller</h3>
+<ul>
+<li>diviser une baisse par la valeur finale au lieu de la valeur
+initiale ;</li>
+<li>écrire (-0{,}15) comme coefficient d’une baisse de 15 % ;</li>
+<li>additionner les taux successifs ;</li>
+<li>oublier que (+10%) puis (-10%) ne s’annulent pas ;</li>
+<li>compter deux fois (AB) ;</li>
+<li>confondre « au moins » et « exactement » ;</li>
+<li>prendre pour contraire un événement seulement incompatible ;</li>
+<li>multiplier des probabilités sans justification.</li>
+</ul>
+<hr />
+<h2 id="séance-5-suites-numériques-python-et-évaluation-de-synthèse">Séance
+5 — Suites numériques, Python et évaluation de synthèse</h2>
+<h3 id="objectifs-4">Objectifs</h3>
+<ul>
+<li>découvrir les modes de définition d’une suite ;</li>
+<li>calculer des termes ;</li>
+<li>reconnaître un accroissement constant ou un taux constant ;</li>
+<li>relier suites et évolutions ;</li>
+<li>générer des termes en Python ;</li>
+<li>utiliser une liste ;</li>
+<li>réinvestir les acquis des quatre séances ;</li>
+<li>élaborer un plan de travail pour septembre.</li>
+</ul>
+<p>Le programme de Première présente les suites par formule explicite,
+relation de récurrence, algorithme ou motif. Il formalise ensuite les
+suites arithmétiques et géométriques.</p>
+<h3 id="déroulé-4">Déroulé</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 15%" />
+<col style="width: 31%" />
+<col style="width: 22%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temps</th>
+<th>Phase</th>
+<th>Tronc commun</th>
+<th>Différenciation et supports</th>
+<th>Indicateurs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0-10 min</td>
+<td>Rituel cumulatif</td>
+<td>Une question par séance</td>
+<td>Individuel</td>
+<td>4/5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10-30 min</td>
+<td>Construction</td>
+<td>Suite, indice, terme, explicite et récurrence</td>
+<td>Tableau de termes</td>
+<td>Les notations sont comprises</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30-50 min</td>
+<td>Modèles</td>
+<td>Suites arithmétiques et géométriques</td>
+<td>Contextes de capital et de points</td>
+<td>Modèle correctement choisi</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">50-65 min</td>
+<td>Python</td>
+<td>Boucle, fonction, liste de termes</td>
+<td>Ordinateurs ou code projeté</td>
+<td>Code exécuté ou tracé correctement</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">65-70 min</td>
+<td>Pause</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70-90 min</td>
+<td>Parcours personnalisés</td>
+<td>Suites et Python gradués</td>
+<td>Voir ci-dessous</td>
+<td>80 % du parcours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">90-115 min</td>
+<td>Évaluation finale</td>
+<td>16 items, certitude 1 à 4</td>
+<td>Individuel</td>
+<td>Comparaison initial/final</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">115-120 min</td>
+<td>Bilan</td>
+<td>Une priorité et un engagement</td>
+<td>Carte personnelle</td>
+<td>Plan explicite</td>
+</tr>
+</tbody>
+</table>
+<h3 id="contenus-personnalisés-4">Contenus personnalisés</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élève</th>
+<th>Travail prioritaire</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Donia</strong></td>
+<td>Tableau de termes, distinction (u_n) et (u_{n+1}), lien avec
+coefficients multiplicateurs</td>
+</tr>
+<tr class="even">
+<td><strong>Malek</strong></td>
+<td>Reconnaître une suite géométrique, contrôler les puissances dans le
+terme général, écrire une boucle</td>
+</tr>
+<tr class="odd">
+<td><strong>Ahmad</strong></td>
+<td>Passer d’un contexte à une récurrence, programmer un seuil,
+approfondissement logique</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trace-écrite-attendue-4">Trace écrite attendue</h3>
+<p>Une suite peut être définie :</p>
+<ul>
+<li>explicitement : (u_n=f(n)) ;</li>
+<li>par récurrence : (u_{n+1}=f(u_n)) avec un terme initial.</li>
+</ul>
+<p>Suite arithmétique :</p>
+<p>[ u_{n+1}=u_n+r u_n=u_0+nr.]</p>
+<p>Suite géométrique :</p>
+<p>[ u_{n+1}=q,u_n u_n=u_0q^n.]</p>
+<p>Exemple Python :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> termes_suite(u0: <span class="bu">float</span>, q: <span class="bu">float</span>, nombre: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">list</span>[<span class="bu">float</span>]:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Renvoie les premiers termes d&#39;une suite géométrique.&quot;&quot;&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> nombre <span class="op">&lt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">&quot;Le nombre de termes doit être positif.&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    termes: <span class="bu">list</span>[<span class="bu">float</span>] <span class="op">=</span> []</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> u0</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(nombre):</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        termes.append(u)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        u <span class="op">*=</span> q</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> termes</span></code></pre></div>
+<h3 id="erreurs-à-surveiller-4">Erreurs à surveiller</h3>
+<ul>
+<li>confondre indice et valeur ;</li>
+<li>commencer au mauvais indice ;</li>
+<li>calculer (u_{n+1}) avec la valeur initiale à chaque étape ;</li>
+<li>confondre accroissement constant et taux constant ;</li>
+<li>écrire (u_n=u_0+nq) pour une suite géométrique ;</li>
+<li>placer <code>return</code> dans la boucle ;</li>
+<li>modifier une variable sans conserver les valeurs dans une liste
+;</li>
+<li>oublier que <code>range(5)</code> produit cinq indices de 0 à
+4.</li>
+</ul>
+<hr />
+<h1 id="différenciation-réaliste-et-non-chronophage">7. Différenciation
+réaliste et non chronophage</h1>
+<h2 id="principe">7.1 Principe</h2>
+<p>La différenciation repose sur un <strong>même support de
+base</strong> comprenant :</p>
+<ol type="1">
+<li>une activité commune ;</li>
+<li>deux exercices indispensables ;</li>
+<li>un exercice de maîtrise ;</li>
+<li>une activité d’approfondissement ;</li>
+<li>des aides numérotées ;</li>
+<li>un critère de réussite.</li>
+</ol>
+<p>Les élèves ne reçoivent pas trois cours différents.</p>
+<h2 id="trois-parcours">7.2 Trois parcours</h2>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parcours</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Consolidation</strong></td>
+<td>Procédure découpée, valeurs simples, aide graphique ou première
+étape fournie</td>
+</tr>
+<tr class="even">
+<td><strong>Maîtrise</strong></td>
+<td>Méthode non indiquée, rédaction et contrôle obligatoires</td>
+</tr>
+<tr class="odd">
+<td><strong>Approfondissement</strong></td>
+<td>Transfert, contre-exemple, généralisation ou anticipation de
+Première</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aides-graduées">7.3 Aides graduées</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Aide</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A</strong></td>
+<td>Reformulation de la question</td>
+</tr>
+<tr class="even">
+<td><strong>B</strong></td>
+<td>Identification de l’objet recherché</td>
+</tr>
+<tr class="odd">
+<td><strong>C</strong></td>
+<td>Propriété ou formule possible</td>
+</tr>
+<tr class="even">
+<td><strong>D</strong></td>
+<td>Première étape du calcul</td>
+</tr>
+<tr class="odd">
+<td><strong>E</strong></td>
+<td>Méthode de vérification sans donner la réponse</td>
+</tr>
+</tbody>
+</table>
+<p>Une réponse juste obtenue après l’aide D est enregistrée comme «
+réussie avec aide », non comme « autonome ».</p>
+<h2 id="variables-didactiques">7.4 Variables didactiques</h2>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 83%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Variables modifiables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Calcul littéral</td>
+<td>Nombre de termes, coefficients entiers ou rationnels, identité
+visible ou non</td>
+</tr>
+<tr class="even">
+<td>Inéquations</td>
+<td>Coefficient de (x) positif ou négatif, produit de deux ou trois
+facteurs</td>
+</tr>
+<tr class="odd">
+<td>Fonctions</td>
+<td>Formule, tableau ou graphique ; antécédent unique ou multiple</td>
+</tr>
+<tr class="even">
+<td>Droites</td>
+<td>Pente entière, rationnelle ou droite verticale</td>
+</tr>
+<tr class="odd">
+<td>Vecteurs</td>
+<td>Coordonnées positives ou relatives</td>
+</tr>
+<tr class="even">
+<td>Pourcentages</td>
+<td>Une évolution ou plusieurs ; valeur initiale ou finale
+recherchée</td>
+</tr>
+<tr class="odd">
+<td>Probabilités</td>
+<td>Équiprobabilité, tableau, arbre ; événements disjoints ou non</td>
+</tr>
+<tr class="even">
+<td>Suites</td>
+<td>Définition explicite ou récurrente ; indice initial 0 ou 1</td>
+</tr>
+<tr class="odd">
+<td>Python</td>
+<td>Code à exécuter, compléter, corriger ou écrire</td>
+</tr>
+</tbody>
+</table>
+<h2 id="groupes-de-besoin-tournants">7.5 Groupes de besoin
+tournants</h2>
+<p>Pour trois élèves, les 35 minutes différenciées peuvent être
+organisées ainsi :</p>
+<ul>
+<li>10 minutes d’accompagnement direct de Donia ;</li>
+<li>10 minutes d’accompagnement direct de Malek ;</li>
+<li>10 minutes d’accompagnement direct d’Ahmad ;</li>
+<li>5 minutes de reprise collective.</li>
+</ul>
+<p>Pendant qu’un élève travaille avec l’enseignant, les deux autres
+disposent :</p>
+<ul>
+<li>d’une fiche autocorrective partielle ;</li>
+<li>d’une question de justification ;</li>
+<li>d’un exercice de transfert ;</li>
+<li>ou d’un code à tracer.</li>
+</ul>
+<h2 id="attribution-initiale-des-parcours">7.6 Attribution initiale des
+parcours</h2>
+<p>Cette attribution reste révisable à chaque séance.</p>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 30%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Séance</th>
+<th>Donia</th>
+<th>Malek</th>
+<th>Ahmad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Algèbre</td>
+<td>Consolidation</td>
+<td>Consolidation puis maîtrise</td>
+<td>Consolidation ciblée puis maîtrise</td>
+</tr>
+<tr class="even">
+<td>2. Fonctions</td>
+<td>Consolidation</td>
+<td>Consolidation</td>
+<td>Consolidation puis maîtrise</td>
+</tr>
+<tr class="odd">
+<td>3. Géométrie</td>
+<td>Consolidation</td>
+<td>Consolidation</td>
+<td>Maîtrise/approfondissement</td>
+</tr>
+<tr class="even">
+<td>4. Probabilités</td>
+<td>Consolidation</td>
+<td>Maîtrise/approfondissement</td>
+<td>Consolidation</td>
+</tr>
+<tr class="odd">
+<td>5. Suites/Python</td>
+<td>Consolidation</td>
+<td>Maîtrise</td>
+<td>Maîtrise/approfondissement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rituel-réutilisable">7.7 Rituel réutilisable</h2>
+<p>Chaque réponse comprend :</p>
+<pre class="text"><code>Réponse : ______________________________________
+
+Certitude : 1 / 2 / 3 / 4
+
+Propriété, relation ou contrôle utilisé :
+________________________________________________</code></pre>
+<p>Le rituel comporte :</p>
+<ul>
+<li>un automatisme de calcul ;</li>
+<li>une notion de la veille ;</li>
+<li>une notion plus ancienne ;</li>
+<li>un vrai/faux à justifier ;</li>
+<li>un contrôle de vraisemblance.</li>
+</ul>
+<hr />
+<h1 id="plans-daction-individualisés">8. Plans d’action
+individualisés</h1>
+<h2 id="donia-khadhrani">8.1 Donia Khadhrani</h2>
+<h3 id="profil">Profil</h3>
+<ul>
+<li><strong>Point d’appui principal</strong> : vecteurs.</li>
+<li><strong>Acquis à sécuriser</strong> : calcul littéral et
+numérique.</li>
+<li><strong>Notions à installer</strong> : inéquations, fonctions,
+fonctions de référence, pourcentages.</li>
+<li><strong>Certitudes à rectifier</strong> : droites et
+probabilités.</li>
+</ul>
+<h3 id="priorités">Priorités</h3>
+<ol type="1">
+<li>traduire correctement (f(a)=b) ;</li>
+<li>maîtriser la comparaison entre (x) et (x^2) ;</li>
+<li>résoudre une inéquation ;</li>
+<li>calculer un coefficient directeur ;</li>
+<li>distinguer baisse absolue et taux de baisse ;</li>
+<li>utiliser (P(AB)) sans double comptage.</li>
+</ol>
+<h3 id="remédiations">Remédiations</h3>
+<ul>
+<li>cartes image-antécédent ;</li>
+<li>axe gradué ;</li>
+<li>courbes de référence annotées ;</li>
+<li>tableau « valeur initiale — coefficient — valeur finale » ;</li>
+<li>diagrammes de Venn ;</li>
+<li>contrôle systématique par un exemple numérique.</li>
+</ul>
+<h3 id="indicateurs-de-réussite">Indicateurs de réussite</h3>
+<ul>
+<li>4 formulations fonctionnelles correctes consécutivement ;</li>
+<li>3 inéquations autonomes sur 4 ;</li>
+<li>3 coefficients directeurs corrects sur 3 ;</li>
+<li>aucune confusion entre 30 TND et 25 % ;</li>
+<li>union et complémentaire correctement distingués ;</li>
+<li>aucune erreur à certitude 4 lors de l’évaluation finale.</li>
+</ul>
+<h3 id="conseil-pour-lannée">Conseil pour l’année</h3>
+<p>Donia devra écrire systématiquement :</p>
+<blockquote>
+<p>« Ce que je cherche » puis « la relation que j’utilise ».</p>
+</blockquote>
+<p>Sa réussite actuelle est souvent meilleure que son niveau de
+confiance ; l’objectif est de transformer les procédures déjà
+disponibles en outils conscients.</p>
+<h3 id="plan-post-stage">Plan post-stage</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Semaine</th>
+<th>Travail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Inéquations et calcul littéral</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Fonctions et fonctions de référence</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Droites et vecteurs</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Pourcentages et probabilités</td>
+</tr>
+</tbody>
+</table>
+<p>Format : trois séances de quinze minutes par semaine.</p>
+<hr />
+<h2 id="malek-khadhrani">8.2 Malek Khadhrani</h2>
+<h3 id="profil-1">Profil</h3>
+<ul>
+<li><strong>Points d’appui</strong> : calcul littéral et
+pourcentages.</li>
+<li><strong>Acquis à consolider</strong> : inéquations et
+probabilités.</li>
+<li><strong>Notion à installer</strong> : droites.</li>
+<li><strong>Certitudes à rectifier</strong> : fonctions, fonctions de
+référence, vecteurs et calcul numérique.</li>
+</ul>
+<h3 id="priorités-1">Priorités</h3>
+<ol type="1">
+<li>substituer correctement une valeur négative ;</li>
+<li>stabiliser image et antécédent ;</li>
+<li>comprendre la fonction inverse ;</li>
+<li>calculer () ;</li>
+<li>reconnaître la colinéarité ;</li>
+<li>calculer une pente ;</li>
+<li>utiliser correctement les règles de puissances.</li>
+</ol>
+<h3 id="remédiations-1">Remédiations</h3>
+<ul>
+<li>parenthèses obligatoires lors des substitutions ;</li>
+<li>flèche géométrique orientée « A vers B » ;</li>
+<li>quadrillage ;</li>
+<li>déterminant calculé dans deux ordres pour observer le changement de
+signe ;</li>
+<li>contrôle d’une règle de puissance par écriture développée ;</li>
+<li>comparaison numérique avant généralisation.</li>
+</ul>
+<h3 id="indicateurs-de-réussite-1">Indicateurs de réussite</h3>
+<ul>
+<li>aucune erreur de signe sur trois substitutions ;</li>
+<li>coordonnées de vecteurs exactes dans quatre cas ;</li>
+<li>colinéarité correctement justifiée ;</li>
+<li>pente calculée sans addition des coordonnées ;</li>
+<li>règles de puissances expliquées et non seulement récitées ;</li>
+<li>disparition des réponses fausses fortement assurées.</li>
+</ul>
+<h3 id="conseil-pour-lannée-1">Conseil pour l’année</h3>
+<p>Malek doit ralentir au moment où une question lui paraît familière.
+Son principal risque n’est pas l’absence de connaissances, mais
+l’activation trop rapide d’une règle approximative.</p>
+<h3 id="plan-post-stage-1">Plan post-stage</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Semaine</th>
+<th>Travail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Fonctions et substitutions</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Fonctions de référence</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Vecteurs et droites</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Puissances, suites et Python</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ahmad-beldi">8.3 Ahmad Beldi</h2>
+<h3 id="profil-2">Profil</h3>
+<ul>
+<li><strong>Points d’appui</strong> : inéquations et vecteurs.</li>
+<li><strong>Acquis à consolider</strong> : droites, pourcentages et
+calcul numérique.</li>
+<li><strong>Notions à installer</strong> : fonctions de référence et
+probabilités.</li>
+<li><strong>Certitudes à rectifier</strong> : calcul littéral et
+fonctions.</li>
+</ul>
+<h3 id="priorités-2">Priorités</h3>
+<ol type="1">
+<li>reconnaître une différence de carrés ;</li>
+<li>distinguer carré d’une différence et différence de carrés ;</li>
+<li>stabiliser image et antécédent ;</li>
+<li>comparer (x) et (x^2) sur différents intervalles ;</li>
+<li>distinguer union, intersection et complémentaire ;</li>
+<li>renseigner systématiquement son niveau de certitude.</li>
+</ol>
+<h3 id="remédiations-2">Remédiations</h3>
+<ul>
+<li>comparaison par développement ;</li>
+<li>classement de cartes d’identités remarquables ;</li>
+<li>représentations graphiques ;</li>
+<li>diagrammes d’ensembles ;</li>
+<li>verbalisation du contraire d’un événement ;</li>
+<li>obligation d’un contrôle avant certitude 4.</li>
+</ul>
+<h3 id="indicateurs-de-réussite-2">Indicateurs de réussite</h3>
+<ul>
+<li>cinq factorisations immédiates sans confusion ;</li>
+<li>quatre questions image-antécédent correctes ;</li>
+<li>trois comparaisons de fonctions justifiées ;</li>
+<li>union et complémentaire maîtrisés ;</li>
+<li>toutes les certitudes renseignées ;</li>
+<li>justification autonome sur au moins deux exercices
+d’approfondissement.</li>
+</ul>
+<h3 id="conseil-pour-lannée-2">Conseil pour l’année</h3>
+<p>Ahmad peut rapidement accéder au parcours de maîtrise, à condition de
+ne pas confondre vitesse et solidité. Il devra conserver le réflexe de
+justification même lorsque le résultat lui semble évident.</p>
+<h3 id="plan-post-stage-2">Plan post-stage</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Semaine</th>
+<th>Travail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Factorisation et identités</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Fonctions de référence</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Probabilités</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Suites, produit scalaire et Python</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="évaluation-et-suivi">9. Évaluation et suivi</h1>
+<h2 id="dispositif-dévaluation">9.1 Dispositif d’évaluation</h2>
+<h3 id="avant-le-stage">Avant le stage</h3>
+<ul>
+<li>test initial ;</li>
+<li>certitude 1 à 4 ;</li>
+<li>mini-diagnostic complémentaire ;</li>
+<li>entretien oral de cinq minutes par élève.</li>
+</ul>
+<h3 id="pendant-le-stage">Pendant le stage</h3>
+<ul>
+<li>cinq rituels ;</li>
+<li>cinq exit tickets ;</li>
+<li>observation des méthodes ;</li>
+<li>relevé des aides utilisées ;</li>
+<li>une erreur analysée par séance ;</li>
+<li>auto-évaluation en fin de séance.</li>
+</ul>
+<h3 id="à-la-fin">À la fin</h3>
+<ul>
+<li>évaluation de transfert de 25 minutes ;</li>
+<li>entretien bref ;</li>
+<li>grille de maîtrise ;</li>
+<li>plan de travail personnalisé.</li>
+</ul>
+<h2 id="échelle-de-maîtrise">9.2 Échelle de maîtrise</h2>
+<table>
+<colgroup>
+<col style="width: 28%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Niveau</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><strong>0 — Non situé</strong></td>
+<td>Données insuffisantes</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><strong>1 — À reconstruire</strong></td>
+<td>Conception erronée ou absence de procédure</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><strong>2 — En
+consolidation</strong></td>
+<td>Réussite avec aide ou uniquement dans un cas familier</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><strong>3 — Maîtrisé</strong></td>
+<td>Réussite autonome et justifiée</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><strong>4 — Transféré</strong></td>
+<td>Réussite dans une situation nouvelle ou capacité à expliquer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="matrice-réussite-confiance">9.3 Matrice réussite-confiance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Résultat</th>
+<th style="text-align: right;">Confiance</th>
+<th>Geste pédagogique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Juste</td>
+<td style="text-align: right;">3-4</td>
+<td>Entretenir et transférer</td>
+</tr>
+<tr class="even">
+<td>Juste</td>
+<td style="text-align: right;">1-2</td>
+<td>Faire expliciter et consolider</td>
+</tr>
+<tr class="odd">
+<td>Faux</td>
+<td style="text-align: right;">1-2</td>
+<td>Installer la notion</td>
+</tr>
+<tr class="even">
+<td>Faux</td>
+<td style="text-align: right;">3-4</td>
+<td>Confronter la conception puis reconstruire</td>
+</tr>
+<tr class="odd">
+<td>Non répondu</td>
+<td style="text-align: right;">—</td>
+<td>Diagnostiquer avant d’enseigner</td>
+</tr>
+</tbody>
+</table>
+<h2 id="critères-de-réussite-finale">9.4 Critères de réussite
+finale</h2>
+<p>Le stage est considéré comme efficace si l’élève :</p>
+<ul>
+<li>réussit au moins 80 % des prérequis prioritaires ;</li>
+<li>ne reproduit aucune conception initiale avec certitude 4 ;</li>
+<li>choisit seul la méthode sur au moins trois problèmes de transfert
+;</li>
+<li>rédige une justification correcte ;</li>
+<li>contrôle un résultat numérique ou graphique ;</li>
+<li>distingue image, antécédent, union, intersection et complémentaire
+;</li>
+<li>calcule les premiers termes d’une suite ;</li>
+<li>comprend un programme Python simple.</li>
+</ul>
+<h2 id="portfolio-du-stage">9.5 Portfolio du stage</h2>
+<p>Chaque élève conserve :</p>
+<ol type="1">
+<li>le test initial ;</li>
+<li>le mini-diagnostic ;</li>
+<li>sa carte de priorités ;</li>
+<li>les cinq fiches de séance ;</li>
+<li>les cinq traces écrites ;</li>
+<li>deux erreurs initiales corrigées ;</li>
+<li>les cinq exit tickets ;</li>
+<li>un programme Python commenté ;</li>
+<li>l’évaluation finale ;</li>
+<li>le plan de travail de septembre.</li>
+</ol>
+<hr />
+<h1 id="banque-de-supports-et-dactivités">10. Banque de supports et
+d’activités</h1>
+<h2 id="supports-à-préparer">10.1 Supports à préparer</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ALG-1</td>
+<td>Cartes développer/factoriser/réduire</td>
+</tr>
+<tr class="even">
+<td>ALG-2</td>
+<td>Cartes identités remarquables</td>
+</tr>
+<tr class="odd">
+<td>ALG-3</td>
+<td>Axes et tableaux de signes</td>
+</tr>
+<tr class="even">
+<td>FCT-1</td>
+<td>Cartes image-antécédent</td>
+</tr>
+<tr class="odd">
+<td>FCT-2</td>
+<td>Courbes des fonctions de référence</td>
+</tr>
+<tr class="even">
+<td>FCT-3</td>
+<td>Tableau formule-valeurs-courbe</td>
+</tr>
+<tr class="odd">
+<td>GEO-1</td>
+<td>Repères quadrillés</td>
+</tr>
+<tr class="even">
+<td>GEO-2</td>
+<td>Cartes vecteurs et colinéarité</td>
+</tr>
+<tr class="odd">
+<td>GEO-3</td>
+<td>Fiches pentes et équations</td>
+</tr>
+<tr class="even">
+<td>PRO-1</td>
+<td>Tableau valeur initiale-coefficient-valeur finale</td>
+</tr>
+<tr class="odd">
+<td>PRO-2</td>
+<td>Diagrammes de Venn</td>
+</tr>
+<tr class="even">
+<td>PRO-3</td>
+<td>Arbres pondérés incomplets</td>
+</tr>
+<tr class="odd">
+<td>SU-1</td>
+<td>Tableaux de termes</td>
+</tr>
+<tr class="even">
+<td>SU-2</td>
+<td>Cartes explicite/récurrence</td>
+</tr>
+<tr class="odd">
+<td>PY-1</td>
+<td>Codes à tracer</td>
+</tr>
+<tr class="even">
+<td>PY-2</td>
+<td>Codes à corriger</td>
+</tr>
+<tr class="odd">
+<td>EV-1</td>
+<td>Mini-diagnostic</td>
+</tr>
+<tr class="even">
+<td>EV-2</td>
+<td>Évaluation finale</td>
+</tr>
+<tr class="odd">
+<td>SUIVI-1</td>
+<td>Grille enseignant</td>
+</tr>
+<tr class="even">
+<td>AUTO-1</td>
+<td>Grille d’auto-évaluation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="activités-concrètes">10.2 Activités concrètes</h2>
+<h3 id="activité-1-le-point-37-parle">Activité 1 — « Le point ((3;7))
+parle »</h3>
+<p>Cartes à classer :</p>
+<ul>
+<li>(f(3)=7) ;</li>
+<li>(f(7)=3) ;</li>
+<li><ol start="7" type="1">
+<li>est l’image de (3) ;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>est l’antécédent de (7) ;</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>est l’image de (7) ;</li>
+</ol></li>
+<li>le point ((3;7)) appartient à (C_f).</li>
+</ul>
+<p>Objectif : construire un réseau d’équivalences, non apprendre une
+phrase isolée.</p>
+<h3 id="activité-2-trois-formes-trois-usages">Activité 2 — « Trois
+formes, trois usages »</h3>
+<p>À partir de :</p>
+<p>[ P(x)=x^2-6x+5,]</p>
+<p>faire obtenir :</p>
+<p>[ P(x)=x^2-6x+5,]</p>
+<p>[ P(x)=(x-1)(x-5),]</p>
+<p>[ P(x)=(x-3)^2-4.]</p>
+<p>Question :</p>
+<blockquote>
+<p>Quelle forme choisir pour calculer, trouver les zéros ou repérer le
+minimum ?</p>
+</blockquote>
+<h3 id="activité-3-la-pente-sans-formule-magique">Activité 3 — « La
+pente sans formule magique »</h3>
+<p>Sur un quadrillage, faire déplacer un point :</p>
+<ul>
+<li>(+3) horizontalement ;</li>
+<li>(+6) verticalement.</li>
+</ul>
+<p>Faire verbaliser :</p>
+<p>[ m= ==2.]</p>
+<h3 id="activité-4-lélément-compté-deux-fois">Activité 4 — « L’élément
+compté deux fois »</h3>
+<p>Pour un dé :</p>
+<ul>
+<li>(A={2,4,6}) ;</li>
+<li>(B={5,6}).</li>
+</ul>
+<p>Écrire d’abord les ensembles avant de calculer :</p>
+<p>[ AB={2,4,5,6}.]</p>
+<h3 id="activité-5-de-lévolution-à-la-suite">Activité 5 — « De
+l’évolution à la suite »</h3>
+<p>Un capital de 200 TND augmente de 5 % par mois :</p>
+<p>[ u_{n+1}=1{,}05u_n.]</p>
+<p>Faire produire successivement :</p>
+<ul>
+<li>un tableau ;</li>
+<li>une relation de récurrence ;</li>
+<li>une formule explicite ;</li>
+<li>un programme Python.</li>
+</ul>
+<h3 id="activité-6-les-sécantes-se-rapprochent">Activité 6 — « Les
+sécantes se rapprochent »</h3>
+<p>Pour (f(x)=x^2), calculer la pente entre (1) et :</p>
+<ul>
+<li><ol start="2" type="1">
+<li>;</li>
+</ol></li>
+<li>(1{,}5) ;</li>
+<li>(1{,}1) ;</li>
+<li>(1{,}01).</li>
+</ul>
+<p>Faire apparaître progressivement la valeur 2.</p>
+<hr />
+<h1 id="annexes-opérationnelles">11. Annexes opérationnelles</h1>
+<h2 id="annexe-a-fiche-type-de-séance">Annexe A — Fiche type de
+séance</h2>
+<pre class="text"><code>SÉANCE N° : ________      THÈME : __________________________
+
+Objectif commun :
+___________________________________________________________
+
+Prérequis :
+___________________________________________________________
+
+Lien avec le programme de Première :
+___________________________________________________________
+
+Rituel :
+___________________________________________________________
+
+Situation de départ :
+___________________________________________________________
+
+Institutionnalisation / trace écrite :
+___________________________________________________________
+
+Parcours Donia :
+___________________________________________________________
+
+Parcours Malek :
+___________________________________________________________
+
+Parcours Ahmad :
+___________________________________________________________
+
+Aides disponibles :
+A □  B □  C □  D □  E □
+
+Erreur principale à surveiller :
+___________________________________________________________
+
+Indicateur de réussite :
+___________________________________________________________
+
+Exit ticket :
+___________________________________________________________</code></pre>
+<hr />
+<h2 id="annexe-b-fiche-différenciée-type">Annexe B — Fiche différenciée
+type</h2>
+<h3 id="partie-commune">Partie commune</h3>
+<ol type="1">
+<li>Reformuler la question.</li>
+<li>Identifier l’objet recherché.</li>
+<li>Choisir une propriété.</li>
+<li>Effectuer le calcul.</li>
+<li>Contrôler.</li>
+<li>Déclarer une certitude.</li>
+</ol>
+<h3 id="parcours-consolidation">Parcours consolidation</h3>
+<ul>
+<li>étapes intermédiaires visibles ;</li>
+<li>une représentation fournie ;</li>
+<li>coefficients simples ;</li>
+<li>deux exercices successifs du même type.</li>
+</ul>
+<h3 id="parcours-maîtrise">Parcours maîtrise</h3>
+<ul>
+<li>méthode non indiquée ;</li>
+<li>rédaction exigée ;</li>
+<li>coefficients relatifs ou rationnels ;</li>
+<li>problème de transfert.</li>
+</ul>
+<h3 id="parcours-approfondissement">Parcours approfondissement</h3>
+<ul>
+<li>généralisation ;</li>
+<li>contre-exemple ;</li>
+<li>comparaison de deux méthodes ;</li>
+<li>notion de Première anticipée.</li>
+</ul>
+<hr />
+<h2 id="annexe-c-grille-de-suivi-enseignant">Annexe C — Grille de suivi
+enseignant</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 9%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 7%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Compétence</th>
+<th style="text-align: right;">Initial</th>
+<th style="text-align: right;">S1</th>
+<th style="text-align: right;">S2</th>
+<th style="text-align: right;">S3</th>
+<th style="text-align: right;">S4</th>
+<th style="text-align: right;">S5</th>
+<th style="text-align: right;">Final</th>
+<th>Aide maximale utilisée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Développer</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Factoriser</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Résoudre une inéquation</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tableau de signes</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Calculer une image</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Déterminer un antécédent</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fonctions de référence</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Taux de variation</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Coordonnées d’un vecteur</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Colinéarité</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Coefficient directeur</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Équation de droite</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Pourcentages</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Union/intersection</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Complémentaire</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Arbre pondéré</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Termes d’une suite</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Python</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Justification</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Calibration de la confiance</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="annexe-d-grille-dauto-évaluation">Annexe D — Grille
+d’auto-évaluation</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 5%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Je sais…</th>
+<th style="text-align: center;">Pas encore</th>
+<th style="text-align: center;">Avec aide</th>
+<th style="text-align: center;">Seul</th>
+<th style="text-align: center;">Expliquer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>développer une expression</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>factoriser une différence de carrés</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>résoudre une inéquation</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>faire un tableau de signes</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>distinguer image et antécédent</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>utiliser une fonction de référence</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>calculer un taux de variation</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>calculer un vecteur</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>calculer une pente</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>déterminer une équation de droite</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>traiter une évolution</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>calculer une union</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>utiliser un complémentaire</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>lire un arbre</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>calculer des termes d’une suite</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="even">
+<td>comprendre un code Python</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+<tr class="odd">
+<td>contrôler un résultat</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+<td style="text-align: center;">☐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="annexe-e-exercices-différenciés-avec-corrections">Annexe E —
+Exercices différenciés avec corrections</h2>
+<h3 id="série-1-algèbre">Série 1 — Algèbre</h3>
+<h4 id="consolidation">Consolidation</h4>
+<ol type="1">
+<li>Développer :</li>
+</ol>
+<p>[ (3x-2)^2.]</p>
+<ol start="2" type="1">
+<li>Factoriser :</li>
+</ol>
+<p>[ 4x^2-25.]</p>
+<ol start="3" type="1">
+<li>Résoudre :</li>
+</ol>
+<p>[ -3x+9.]</p>
+<ol start="4" type="1">
+<li>Étudier le signe de :</li>
+</ol>
+<p>[ (x-2)(x+4).]</p>
+<h4 id="maîtrise">Maîtrise</h4>
+<ol start="5" type="1">
+<li>Pour</li>
+</ol>
+<p>[ P(x)=x^2-6x+5,]</p>
+<p>vérifier que :</p>
+<p>[ P(x)=(x-1)(x-5)]</p>
+<p>et que :</p>
+<p>[ P(x)=(x-3)^2-4.]</p>
+<ol start="6" type="1">
+<li>Résoudre :</li>
+</ol>
+<p>[ P(x).]</p>
+<h4 id="approfondissement">Approfondissement</h4>
+<ol start="7" type="1">
+<li>Montrer que, pour tout réel (x),</li>
+</ol>
+<p>[ x^2-6x+10&gt;0.]</p>
+<h4 id="correction">Correction</h4>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ (3x-2)<sup>2=9x</sup>2-12x+4.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ 4x^2-25=(2x-5)(2x+5).]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ -3x x.]</p>
+<ol start="4" type="1">
+<li>Les racines sont (-4) et (2). Le produit est :</li>
+</ol>
+<ul>
+<li>positif sur (]-;-4[]2;+[) ;</li>
+<li>nul en (-4) et (2) ;</li>
+<li>négatif sur (]-4;2[).</li>
+</ul>
+<ol start="5" type="1">
+<li><p>Développements directs.</p></li>
+<li></li>
+</ol>
+<p>[ P(x) x.]</p>
+<ol start="7" type="1">
+<li></li>
+</ol>
+<p>[ x<sup>2-6x+10=(x-3)</sup>2+1&gt;0.]</p>
+<hr />
+<h3 id="série-2-fonctions">Série 2 — Fonctions</h3>
+<p>Soit :</p>
+<p>[ f(x)=x^2-3x.]</p>
+<ol type="1">
+<li>Calculer (f(-2)).</li>
+<li>Résoudre (f(x)=0).</li>
+<li>Le point (A(4;4)) appartient-il à (C_f) ?</li>
+<li>Compléter : si (f(3)=7), alors…</li>
+<li>Comparer (x^2) et (x) lorsque (0&lt;x&lt;1).</li>
+<li>Calculer le taux de variation de (g(x)=x^2) entre (1) et (1+h), avec
+(h).</li>
+</ol>
+<h4 id="correction-1">Correction</h4>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ f(-2)=(-2)^2-3(-2)=4+6=10.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ x^2-3x=x(x-3)=0,]</p>
+<p>donc (x=0) ou (x=3).</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ f(4)=16-12=4,]</p>
+<p>donc (AC_f).</p>
+<ol start="4" type="1">
+<li><ol start="7" type="1">
+<li>est l’image de (3) et (3) est un antécédent de (7).</li>
+</ol></li>
+<li></li>
+</ol>
+<p>[ 0&lt;x&lt;1x^2&lt;x.]</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<p>[ ===================</p>
+<h1 id="section"></h1>
+<p>2+h. ]</p>
+<p>Lorsque (h) se rapproche de 0, cette pente se rapproche de 2.</p>
+<hr />
+<h3 id="série-3-vecteurs-et-droites">Série 3 — Vecteurs et droites</h3>
+<p>On donne (A(1;2)), (B(4;-3)) et (C(7;-8)).</p>
+<ol type="1">
+<li>Calculer ().</li>
+<li>Calculer ().</li>
+<li>Les points (A), (B) et (C) sont-ils alignés ?</li>
+<li>Calculer le coefficient directeur de ((AB)).</li>
+<li>Déterminer une équation de ((AB)).</li>
+<li>Soient (u(2;-1)) et (v(1;2)). Calculer (uv).</li>
+</ol>
+<h4 id="correction-2">Correction</h4>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ =(3;-5).]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ =(6;-10).]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ =2,]</p>
+<p>donc les points sont alignés.</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p>[ m==-.]</p>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<p>[ y-2=-(x-1),]</p>
+<p>soit :</p>
+<p>[ y=-53x+.]</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<p>[ uv =================</p>
+<p>2+(-1)=0. ]</p>
+<p>Les vecteurs sont orthogonaux.</p>
+<hr />
+<h3 id="série-4-pourcentages-et-probabilités">Série 4 — Pourcentages et
+probabilités</h3>
+<ol type="1">
+<li>Un prix passe de 120 à 90 TND. Calculer le taux d’évolution.</li>
+<li>Un prix augmente de 10 %, puis baisse de 10 %. Calculer l’évolution
+globale.</li>
+<li>Sur un dé, (A=) « pair » et (B=) « au moins 5 ». Calculer
+(P(AB)).</li>
+<li>Donner le contraire de « obtenir au moins un six lors de deux
+lancers ».</li>
+<li>Dans un groupe, 60 % choisissent mathématiques. Parmi eux, 40 %
+choisissent aussi NSI. Calculer la proportion choisissant les deux.</li>
+<li>Parmi les 40 % qui ne choisissent pas mathématiques, 10 %
+choisissent NSI. Calculer la proportion totale choisissant NSI.</li>
+</ol>
+<h4 id="correction-3">Correction</h4>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ =-0{,}25.]</p>
+<p>Baisse de 25 %.</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ 1{,}1090=0{,}99.]</p>
+<p>Baisse globale de 1 %.</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ A={2,4,6}, B={5,6},]</p>
+<p>donc :</p>
+<p>[ AB={2,4,5,6}]</p>
+<p>et :</p>
+<p>[ P(AB)==.]</p>
+<ol start="4" type="1">
+<li><p>« N’obtenir aucun six ».</p></li>
+<li></li>
+</ol>
+<p>[ 0{,}6040=0{,}24.]</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<p>[ 0{,}6040 + 0{,}4010 ==================</p>
+<p>0{,}28. ]</p>
+<hr />
+<h3 id="série-5-suites-et-python">Série 5 — Suites et Python</h3>
+<ol type="1">
+<li>Soit (u_0=5) et (u_{n+1}=u_n+3). Calculer (u_1,u_2,u_3).</li>
+<li>Donner (u_n).</li>
+<li>Soit (v_0=200) et (v_{n+1}=1{,}05v_n). Calculer (v_1) et (v_2).</li>
+<li>Donner (v_n).</li>
+<li>Déterminer la liste construite :</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>termes <span class="op">=</span> []</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    termes.append(u)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> u <span class="op">-</span> <span class="dv">1</span></span></code></pre></div>
+<h4 id="correction-4">Correction</h4>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ u_1=8,u_2=11,u_3=14.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ u_n=5+3n.]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ v_1=210,v_2=220{,}5.]</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p>[ v_n=20005^n.]</p>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">9</span>, <span class="dv">17</span>, <span class="dv">33</span>]</span></code></pre></div>
+<hr />
+<h2 id="annexe-f-mini-diagnostic-complémentaire">Annexe F —
+Mini-diagnostic complémentaire</h2>
+<p>Durée indicative : 15 minutes. Certitude 1 à 4 pour chaque
+réponse.</p>
+<ol type="1">
+<li><p>Résoudre : [ 2x-5&lt;7.]</p></li>
+<li><p>Écrire la solution sous forme d’intervalle.</p></li>
+<li><p>Soit (f(x)=). Pour quelles valeurs de (x) l’expression est-elle
+définie ?</p></li>
+<li><p>Déterminer le coefficient directeur de la droite passant par
+((-1;2)) et ((3;10)).</p></li>
+<li><p>Une valeur passe de 80 à 92. Calculer le taux
+d’évolution.</p></li>
+<li><p>Pour la série (2;4;4;5;10), calculer la moyenne, la médiane et
+l’étendue.</p></li>
+<li><p>Soit (u_0=3) et (u_{n+1}=2u_n-1). Calculer
+(u_1,u_2,u_3).</p></li>
+<li><p>Quelle liste est construite ?</p></li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> []</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    L.append(n <span class="op">*</span> n)</span></code></pre></div>
+<ol start="9" type="1">
+<li>Donner un contre-exemple à :</li>
+</ol>
+<blockquote>
+<p>« Pour tout réel (x), (x^2&gt;x). »</p>
+</blockquote>
+<ol start="10" type="1">
+<li>Donner la négation de :</li>
+</ol>
+<blockquote>
+<p>« Tous les élèves ont réussi les deux exercices. »</p>
+</blockquote>
+<h3 id="correction-5">Correction</h3>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ 2x&lt;12x&lt;6.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[]-;6[.]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ x+1 x.]</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p>[ m===2.]</p>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<p>[ =0{,}15,]</p>
+<p>soit 15 %.</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<ul>
+<li>moyenne : (5) ;</li>
+<li>médiane : (4) ;</li>
+<li>étendue : (8).</li>
+</ul>
+<ol start="7" type="1">
+<li></li>
+</ol>
+<p>[ u_1=5,u_2=9,u_3=17.]</p>
+<ol start="8" type="1">
+<li></li>
+</ol>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>]</span></code></pre></div>
+<ol start="9" type="1">
+<li>(x=), car :</li>
+</ol>
+<p>[ ()^2=&lt;.]</p>
+<ol start="10" type="1">
+<li>« Au moins un élève n’a pas réussi les deux exercices. »</li>
+</ol>
+<hr />
+<h2 id="annexe-g-évaluation-finale-proposée">Annexe G — Évaluation
+finale proposée</h2>
+<p>Durée : 25 minutes. Certitude 1 à 4 obligatoire.</p>
+<ol type="1">
+<li><p>Développer : [ (2x-5)^2.]</p></li>
+<li><p>Factoriser : [ 9x^2-16.]</p></li>
+<li><p>Résoudre : [ -4x+8.]</p></li>
+<li><p>Résoudre : [ (x-3)(2x+1)&lt;0.]</p></li>
+<li><p>Soit (f(x)=x^2+2x-3). Calculer (f(-3)).</p></li>
+<li><p>Si ((2;5)C_f), traduire cette information de deux
+manières.</p></li>
+<li><p>Comparer (x) et (x^2) pour (0&lt;x&lt;1).</p></li>
+<li><p>Calculer le taux de variation de (g(x)=x^2) entre (2) et
+(2+h).</p></li>
+<li><p>Pour (A(-2;1)) et (B(4;-5)), calculer ().</p></li>
+<li><p>Calculer le coefficient directeur de ((AB)).</p></li>
+<li><p>Un prix augmente de 20 %, puis diminue de 25 %. Calculer
+l’évolution globale.</p></li>
+<li><p>Sur un dé, (A={1,2,3,4}) et (B={3,4,5}). Calculer
+(P(AB)).</p></li>
+<li><p>Donner (P(A)).</p></li>
+<li><p>Soit (u_0=4) et (u_{n+1}=u_n+5). Calculer (u_3) et donner
+(u_n).</p></li>
+<li><p>Soit (v_0=100) et (v_{n+1}=1{,}02v_n). Donner (v_n).</p></li>
+<li><p>Donner la valeur de <code>L</code> :</p></li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> []</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    L.append(u)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    u <span class="op">=</span> <span class="dv">3</span> <span class="op">*</span> u</span></code></pre></div>
+<h3 id="corrigé">Corrigé</h3>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ 4x^2-20x+25.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[ (3x-4)(3x+4).]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ x.]</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p>[ x]-;3</p>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<p>[ f(-3)=9-6-3=0.]</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<p>[ f(2)=5.]</p>
+<ol start="5" type="1">
+<li>est l’image de (2) et (2) est un antécédent de (5).</li>
+</ol>
+<ol start="7" type="1">
+<li></li>
+</ol>
+<p>[ x^2&lt;x.]</p>
+<ol start="8" type="1">
+<li></li>
+</ol>
+<p>[ ===================</p>
+<p>4+h. ]</p>
+<ol start="9" type="1">
+<li></li>
+</ol>
+<p>[ =(6;-6).]</p>
+<ol start="10" type="1">
+<li></li>
+</ol>
+<p>[ m==-1.]</p>
+<ol start="11" type="1">
+<li></li>
+</ol>
+<p>[ 1{,}2075=0{,}90.]</p>
+<p>Baisse globale de 10 %.</p>
+<ol start="12" type="1">
+<li></li>
+</ol>
+<p>[ AB={1,2,3,4,5},]</p>
+<p>donc :</p>
+<p>[ P(AB)=.]</p>
+<ol start="13" type="1">
+<li></li>
+</ol>
+<p>[ P(A)=1-=.]</p>
+<ol start="14" type="1">
+<li></li>
+</ol>
+<p>[ u_3=19,u_n=4+5n.]</p>
+<ol start="15" type="1">
+<li></li>
+</ol>
+<p>[ v_n=10002^n.]</p>
+<ol start="16" type="1">
+<li></li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">18</span>, <span class="dv">54</span>]</span></code></pre></div>
+<hr />
+<h1 id="recommandations-didactiques-et-pédagogiques">12. Recommandations
+didactiques et pédagogiques</h1>
+<h2 id="traiter-dabord-les-certitudes-erronées">12.1 Traiter d’abord les
+certitudes erronées</h2>
+<p>Une erreur fortement assurée ne doit pas être corrigée par la seule
+présentation de la « bonne règle ».</p>
+<p>La démarche recommandée est :</p>
+<ol type="1">
+<li>faire expliciter la procédure utilisée ;</li>
+<li>conserver la réponse initiale visible ;</li>
+<li>proposer un exemple ou contre-exemple qui la met en défaut ;</li>
+<li>faire formuler la contradiction ;</li>
+<li>reconstruire la propriété ;</li>
+<li>entraîner ;</li>
+<li>réinterroger à distance.</li>
+</ol>
+<p>Cette approche rejoint le programme officiel, qui insiste sur
+l’identification, l’analyse et la compréhension des erreurs, ainsi que
+sur l’alternance entre recherche, verbalisation, cours, exemples,
+exercices et rituels.</p>
+<h2 id="exiger-une-relation-avant-le-calcul">12.2 Exiger une relation
+avant le calcul</h2>
+<p>Avant tout calcul, l’élève écrit :</p>
+<pre class="text"><code>Je cherche :
+________________________________________________
+
+Je connais :
+________________________________________________
+
+La relation ou propriété utile est :
+________________________________________________
+
+Je contrôlerai le résultat en :
+________________________________________________</code></pre>
+<p>Cette exigence est essentielle pour :</p>
+<ul>
+<li>le coefficient directeur ;</li>
+<li>le taux d’évolution ;</li>
+<li>les probabilités ;</li>
+<li>les suites ;</li>
+<li>le produit scalaire ;</li>
+<li>la dérivation future.</li>
+</ul>
+<h2 id="développer-la-démonstration-progressivement">12.3 Développer la
+démonstration progressivement</h2>
+<p>La rigueur attendue en spécialité ne signifie pas commencer par des
+démonstrations longues.</p>
+<p>La progression recommandée est :</p>
+<ol type="1">
+<li>compléter une justification ;</li>
+<li>choisir la bonne propriété ;</li>
+<li>rédiger une implication ;</li>
+<li>construire un contre-exemple ;</li>
+<li>distinguer implication et réciproque ;</li>
+<li>produire une démonstration courte.</li>
+</ol>
+<p>Le nouveau programme accorde une place explicite au contre-exemple, à
+la réciproque, à la contraposée et à la négation de propositions.</p>
+<h2 id="utiliser-systématiquement-des-contrôles">12.4 Utiliser
+systématiquement des contrôles</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Domaine</th>
+<th>Contrôle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Développement</td>
+<td>Substituer une valeur simple</td>
+</tr>
+<tr class="even">
+<td>Factorisation</td>
+<td>Redévelopper</td>
+</tr>
+<tr class="odd">
+<td>Inéquation</td>
+<td>Tester une valeur de chaque intervalle</td>
+</tr>
+<tr class="even">
+<td>Fonction</td>
+<td>Vérifier avec la formule ou la courbe</td>
+</tr>
+<tr class="odd">
+<td>Vecteur</td>
+<td>Représenter le déplacement</td>
+</tr>
+<tr class="even">
+<td>Pente</td>
+<td>Contrôler le sens de variation</td>
+</tr>
+<tr class="odd">
+<td>Pourcentage</td>
+<td>Comparer à la valeur initiale</td>
+</tr>
+<tr class="even">
+<td>Probabilité</td>
+<td>Vérifier que le résultat est entre 0 et 1</td>
+</tr>
+<tr class="odd">
+<td>Suite</td>
+<td>Recalculer les premiers termes par récurrence</td>
+</tr>
+<tr class="even">
+<td>Python</td>
+<td>Tracer manuellement deux tours de boucle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ne-pas-confondre-automatisation-et-mécanisation">12.5 Ne pas
+confondre automatisation et mécanisation</h2>
+<p>Les rituels doivent associer :</p>
+<ul>
+<li>calcul mental ;</li>
+<li>identification d’une structure ;</li>
+<li>verbalisation ;</li>
+<li>justification ;</li>
+<li>contrôle ;</li>
+<li>changement de registre.</li>
+</ul>
+<p>Le programme de Première précise que les automatismes doivent être
+travaillés régulièrement et ne doivent pas constituer un chapitre
+isolé.</p>
+<h2 id="encadrer-la-calculatrice">12.6 Encadrer la calculatrice</h2>
+<p>La calculatrice est utilisée :</p>
+<ul>
+<li>après la mise en équation ;</li>
+<li>pour explorer une courbe ;</li>
+<li>pour vérifier une valeur ;</li>
+<li>pour observer des taux de variation ;</li>
+<li>pour produire des termes de suites.</li>
+</ul>
+<p>Elle ne remplace pas :</p>
+<ul>
+<li>la propriété ;</li>
+<li>le choix de la méthode ;</li>
+<li>la justification ;</li>
+<li>le contrôle de cohérence.</li>
+</ul>
+<h2 id="utiliser-python-comme-outil-mathématique">12.7 Utiliser Python
+comme outil mathématique</h2>
+<p>Python doit servir à :</p>
+<ul>
+<li>générer des termes de suites ;</li>
+<li>stocker des valeurs dans une liste ;</li>
+<li>simuler une expérience ;</li>
+<li>rechercher un seuil ;</li>
+<li>tester une conjecture.</li>
+</ul>
+<p>Il ne doit pas être traité comme un chapitre indépendant de syntaxe.
+Le nouveau programme prévoit précisément l’intégration de la liste aux
+suites, tableaux de valeurs et séries statistiques.</p>
+<h2 id="conseils-pour-la-poursuite-en-première">12.8 Conseils pour la
+poursuite en Première</h2>
+<p>Pendant les quatre premières semaines :</p>
+<ul>
+<li>trois rituels de dix minutes par semaine ;</li>
+<li>une reprise hebdomadaire d’une erreur initiale ;</li>
+<li>une question de justification par séance ;</li>
+<li>un problème mêlant deux domaines ;</li>
+<li>une courte activité Python toutes les deux semaines ;</li>
+<li>un contrôle de suivi après un mois ;</li>
+<li>maintien de la certitude 1 à 4 sur quelques questions ciblées.</li>
+</ul>
+<hr />
+<h1 id="synthèse-opérationnelle">Synthèse opérationnelle</h1>
+<p>Le diagnostic collectif conduit à organiser le stage selon la
+progression suivante :</p>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 91%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Séance</th>
+<th>Axe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Calcul littéral, inéquations, signes et préparation du second
+degré</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>Fonctions, fonctions de référence et taux de variation</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>Vecteurs, droites et première approche du produit scalaire</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>Pourcentages, probabilités et première approche du
+conditionnement</td>
+</tr>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td>Suites, Python et évaluation finale</td>
+</tr>
+</tbody>
+</table>
+<p>Cette progression est préférable à la juxtaposition des parcours
+automatiques contenus dans les bilans individuels. Elle :</p>
+<ul>
+<li>traite les obstacles réellement communs ;</li>
+<li>entretient les automatismes de Seconde ;</li>
+<li>conserve une différenciation précise pour Donia, Malek et Ahmad
+;</li>
+<li>prépare les notions structurantes de Première sans les enseigner
+prématurément ;</li>
+<li>intègre calcul, raisonnement, démonstration, algorithmique et
+confiance ;</li>
+<li>respecte le nouveau programme de spécialité applicable en septembre
+2026.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,272 @@
+{
+  "module": "1re_nsi",
+  "pdf_count": 50,
+  "markdown_count": 40,
+  "html_count": 38,
+  "python_count": 11,
+  "support_pdf_count": 5,
+  "code_zip_count": 4,
+  "all_code_tests_passed": true,
+  "a4_page_size_failure_count": 0,
+  "blank_page_failure_count": 0,
+  "student_pdf_solution_leak_count": 0,
+  "generic_student_name_leak_count": 0,
+  "student_code_solution_leak_count": 0,
+  "page_size_failures": [],
+  "blank_page_failures": [],
+  "student_pdf_solution_leaks": [],
+  "generic_name_leaks": [],
+  "student_code_solution_leaks": [],
+  "pdfs": [
+    {
+      "file": "00_MASTER/1re_nsi_DOCUMENT_MAITRE_COMPLET_INTERNE.pdf",
+      "pages": 127,
+      "bytes": 2423159
+    },
+    {
+      "file": "00_MASTER/1re_nsi_Programme_Stage_PUBLIC.pdf",
+      "pages": 3,
+      "bytes": 82152
+    },
+    {
+      "file": "00_MASTER/index.pdf",
+      "pages": 3,
+      "bytes": 80832
+    },
+    {
+      "file": "01_ENSEIGNANT/1re_nsi_Guide_Formateur.pdf",
+      "pages": 6,
+      "bytes": 90711
+    },
+    {
+      "file": "01_ENSEIGNANT/1re_nsi_Matrice_Annuelle_Python.pdf",
+      "pages": 3,
+      "bytes": 85764
+    },
+    {
+      "file": "01_ENSEIGNANT/1re_nsi_Tableau_Bord_Enseignant.pdf",
+      "pages": 4,
+      "bytes": 85708
+    },
+    {
+      "file": "02_SEANCES/S1/1re_nsi_S1_AIDES_Cartes.pdf",
+      "pages": 4,
+      "bytes": 82145
+    },
+    {
+      "file": "02_SEANCES/S1/1re_nsi_S1_ELEVE_Activite.pdf",
+      "pages": 6,
+      "bytes": 101493
+    },
+    {
+      "file": "02_SEANCES/S1/1re_nsi_S1_PROF_Fiche.pdf",
+      "pages": 6,
+      "bytes": 101981
+    },
+    {
+      "file": "02_SEANCES/S1/1re_nsi_S1_SUPPORTS_Pratiques.pdf",
+      "pages": 7,
+      "bytes": 94363
+    },
+    {
+      "file": "02_SEANCES/S2/1re_nsi_S2_AIDES_Cartes.pdf",
+      "pages": 4,
+      "bytes": 82485
+    },
+    {
+      "file": "02_SEANCES/S2/1re_nsi_S2_ELEVE_Activite.pdf",
+      "pages": 6,
+      "bytes": 94906
+    },
+    {
+      "file": "02_SEANCES/S2/1re_nsi_S2_PROF_Fiche.pdf",
+      "pages": 5,
+      "bytes": 94352
+    },
+    {
+      "file": "02_SEANCES/S2/1re_nsi_S2_SUPPORTS_Pratiques.pdf",
+      "pages": 5,
+      "bytes": 89054
+    },
+    {
+      "file": "02_SEANCES/S3/1re_nsi_S3_AIDES_Cartes.pdf",
+      "pages": 4,
+      "bytes": 82064
+    },
+    {
+      "file": "02_SEANCES/S3/1re_nsi_S3_ELEVE_Activite.pdf",
+      "pages": 5,
+      "bytes": 91577
+    },
+    {
+      "file": "02_SEANCES/S3/1re_nsi_S3_PROF_Fiche.pdf",
+      "pages": 5,
+      "bytes": 91904
+    },
+    {
+      "file": "02_SEANCES/S3/1re_nsi_S3_SUPPORTS_Pratiques.pdf",
+      "pages": 5,
+      "bytes": 86640
+    },
+    {
+      "file": "02_SEANCES/S4/1re_nsi_S4_AIDES_Cartes.pdf",
+      "pages": 4,
+      "bytes": 82399
+    },
+    {
+      "file": "02_SEANCES/S4/1re_nsi_S4_ELEVE_Activite.pdf",
+      "pages": 6,
+      "bytes": 93723
+    },
+    {
+      "file": "02_SEANCES/S4/1re_nsi_S4_PROF_Fiche.pdf",
+      "pages": 5,
+      "bytes": 93110
+    },
+    {
+      "file": "02_SEANCES/S4/1re_nsi_S4_SUPPORTS_Pratiques.pdf",
+      "pages": 4,
+      "bytes": 86512
+    },
+    {
+      "file": "02_SEANCES/S5/1re_nsi_S5_AIDES_Cartes.pdf",
+      "pages": 4,
+      "bytes": 82638
+    },
+    {
+      "file": "02_SEANCES/S5/1re_nsi_S5_ELEVE_Activite.pdf",
+      "pages": 5,
+      "bytes": 88977
+    },
+    {
+      "file": "02_SEANCES/S5/1re_nsi_S5_PROF_Fiche.pdf",
+      "pages": 5,
+      "bytes": 88618
+    },
+    {
+      "file": "02_SEANCES/S5/1re_nsi_S5_SUPPORTS_Pratiques.pdf",
+      "pages": 4,
+      "bytes": 84246
+    },
+    {
+      "file": "03_EVALUATIONS/1re_nsi_Evaluation_Finale_ELEVE.pdf",
+      "pages": 4,
+      "bytes": 84097
+    },
+    {
+      "file": "03_EVALUATIONS/1re_nsi_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+      "pages": 3,
+      "bytes": 80911
+    },
+    {
+      "file": "03_EVALUATIONS/1re_nsi_Mini_Diagnostic_Pratique_ELEVE.pdf",
+      "pages": 3,
+      "bytes": 81977
+    },
+    {
+      "file": "03_EVALUATIONS/1re_nsi_Mini_Diagnostic_Pratique_PROF_Corrige.pdf",
+      "pages": 2,
+      "bytes": 80337
+    },
+    {
+      "file": "03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+      "pages": 5,
+      "bytes": 148920
+    },
+    {
+      "file": "04_PORTFOLIO/1re_nsi_Memento_Python_ELEVE.pdf",
+      "pages": 7,
+      "bytes": 101190
+    },
+    {
+      "file": "04_PORTFOLIO/1re_nsi_Portfolio_Individuel.pdf",
+      "pages": 4,
+      "bytes": 84224
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Dossier_Individuel_Ahmad_BELDI.pdf",
+      "pages": 4,
+      "bytes": 85600
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_ELEVE.pdf",
+      "pages": 3,
+      "bytes": 81491
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_PROF_Corrige.pdf",
+      "pages": 2,
+      "bytes": 79197
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmad_BELDI/SOURCE_Bilan_Eleve_Ahmad_BELDI_NSI.pdf",
+      "pages": 8,
+      "bytes": 1318544
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmad_BELDI/SOURCE_Bilan_Parents_Ahmad_BELDI_NSI.pdf",
+      "pages": 4,
+      "bytes": 1148138
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.pdf",
+      "pages": 4,
+      "bytes": 85805
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_ELEVE.pdf",
+      "pages": 3,
+      "bytes": 81465
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_PROF_Corrige.pdf",
+      "pages": 2,
+      "bytes": 78376
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Premiere_NSI.pdf",
+      "pages": 8,
+      "bytes": 1292567
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Terminale_NSI.pdf",
+      "pages": 8,
+      "bytes": 1309577
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Parents_Ahmed_BENHADJ_SALEM_Premiere_NSI.pdf",
+      "pages": 4,
+      "bytes": 1146867
+    },
+    {
+      "file": "05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Parents_Ahmed_BENHADJ_SALEM_Terminale_NSI.pdf",
+      "pages": 4,
+      "bytes": 1158194
+    },
+    {
+      "file": "07_SOURCES/stage_prerentree_premiere_nsi.pdf",
+      "pages": 10,
+      "bytes": 110439
+    },
+    {
+      "file": "08_PACKS_PDF/1re_nsi_PACK_ELEVE_COMPLET.pdf",
+      "pages": 94,
+      "bytes": 1832675
+    },
+    {
+      "file": "08_PACKS_PDF/1re_nsi_PACK_ENSEIGNANT_COMPLET.pdf",
+      "pages": 127,
+      "bytes": 2423159
+    },
+    {
+      "file": "08_PACKS_PDF/1re_nsi_PACK_TRAVAIL_Ahmad_BELDI.pdf",
+      "pages": 7,
+      "bytes": 173851
+    },
+    {
+      "file": "08_PACKS_PDF/1re_nsi_PACK_TRAVAIL_Ahmed_BENHADJ_SALEM.pdf",
+      "pages": 7,
+      "bytes": 173723
+    }
+  ]
+}

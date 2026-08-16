@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>1ere_spe_Mini_Diagnostic_PROF_Corrige</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">
+@page { size: A4; margin: 16mm 17mm 17mm 17mm; }
+:root { --navy:#071A3A; --gold:#C9A227; --red:#D71F2B; --light:#F6F4EE; --line:#D9DDE4; }
+html { font-size: 11pt; }
+body { font-family: Arial, Helvetica, sans-serif; color:#182238; line-height:1.45; max-width:180mm; margin:0 auto; }
+h1,h2,h3,h4 { color:var(--navy); page-break-after:avoid; }
+h1 { font-size:24pt; border-bottom:3px solid var(--gold); padding-bottom:7mm; }
+h2 { font-size:17pt; border-left:4px solid var(--gold); padding-left:4mm; margin-top:10mm; }
+h3 { font-size:13pt; margin-top:7mm; }
+h4 { font-size:11.5pt; }
+p, li { orphans:3; widows:3; }
+table { width:100%; border-collapse:collapse; margin:4mm 0 6mm; font-size:9.5pt; page-break-inside:auto; }
+tr { page-break-inside:avoid; }
+th { background:var(--navy); color:white; padding:2.5mm; text-align:left; }
+td { border:1px solid var(--line); padding:2.3mm; vertical-align:top; }
+blockquote { background:var(--light); border-left:4px solid var(--gold); padding:4mm; margin:5mm 0; }
+code, pre { background:#F3F5F7; border:1px solid #DDE2E8; }
+pre { padding:4mm; white-space:pre-wrap; }
+.page-break { break-before:page; page-break-before:always; height:0; }
+.answer-space { min-height:20mm; border-bottom:1px dotted #777; margin:2mm 0 5mm; }
+.card-grid { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.card { border:1px solid var(--gold); border-radius:3mm; padding:5mm; min-height:48mm; break-inside:avoid; }
+.confidential { color:#8B1A1A; border:1px solid #8B1A1A; padding:3mm; font-weight:bold; }
+.small { font-size:8.5pt; color:#536070; }
+svg { max-width:100%; height:auto; }
+@media print { a { color:inherit; text-decoration:none; } }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">1ere_spe_Mini_Diagnostic_PROF_Corrige</h1>
+</header>
+<h1 id="ere_spe_mini_diagnostic_prof_corrige">1ere_spe_Mini_Diagnostic_PROF_Corrige</h1>
+<h2 id="mini-diagnostic-complémentaire---corrigé-et-exploitation">Mini-diagnostic
+complémentaire - Corrigé et exploitation</h2>
+<h2 id="annexe-f-mini-diagnostic-complémentaire">Annexe F —
+Mini-diagnostic complémentaire</h2>
+<p>Durée indicative : 15 minutes. Certitude 1 à 4 pour chaque
+réponse.</p>
+<ol type="1">
+<li><p>Résoudre : [ 2x-5&lt;7.]</p></li>
+<li><p>Écrire la solution sous forme d’intervalle.</p></li>
+<li><p>Soit (f(x)=). Pour quelles valeurs de (x) l’expression est-elle
+définie ?</p></li>
+<li><p>Déterminer le coefficient directeur de la droite passant par
+((-1;2)) et ((3;10)).</p></li>
+<li><p>Une valeur passe de 80 à 92. Calculer le taux
+d’évolution.</p></li>
+<li><p>Pour la série (2;4;4;5;10), calculer la moyenne, la médiane et
+l’étendue.</p></li>
+<li><p>Soit (u_0=3) et (u_{n+1}=2u_n-1). Calculer
+(u_1,u_2,u_3).</p></li>
+<li><p>Quelle liste est construite ?</p></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> []</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    L.append(n <span class="op">*</span> n)</span></code></pre></div>
+<ol start="9" type="1">
+<li>Donner un contre-exemple à :</li>
+</ol>
+<blockquote>
+<p>« Pour tout réel (x), (x^2&gt;x). »</p>
+</blockquote>
+<ol start="10" type="1">
+<li>Donner la négation de :</li>
+</ol>
+<blockquote>
+<p>« Tous les élèves ont réussi les deux exercices. »</p>
+</blockquote>
+<h3 id="correction">Correction</h3>
+<ol type="1">
+<li></li>
+</ol>
+<p>[ 2x&lt;12x&lt;6.]</p>
+<ol start="2" type="1">
+<li></li>
+</ol>
+<p>[]-;6[.]</p>
+<ol start="3" type="1">
+<li></li>
+</ol>
+<p>[ x+1 x.]</p>
+<ol start="4" type="1">
+<li></li>
+</ol>
+<p>[ m===2.]</p>
+<ol start="5" type="1">
+<li></li>
+</ol>
+<p>[ =0{,}15,]</p>
+<p>soit 15 %.</p>
+<ol start="6" type="1">
+<li></li>
+</ol>
+<ul>
+<li>moyenne : (5) ;</li>
+<li>médiane : (4) ;</li>
+<li>étendue : (8).</li>
+</ul>
+<ol start="7" type="1">
+<li></li>
+</ol>
+<p>[ u_1=5,u_2=9,u_3=17.]</p>
+<ol start="8" type="1">
+<li></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">9</span>]</span></code></pre></div>
+<ol start="9" type="1">
+<li>(x=), car :</li>
+</ol>
+<p>[ ()^2=&lt;.]</p>
+<ol start="10" type="1">
+<li>« Au moins un élève n’a pas réussi les deux exercices. »</li>
+</ol>
+<hr />
+<h2 id="barème-dexploitation-conseillé">Barème d’exploitation
+conseillé</h2>
+<ul>
+<li>1 point par procédure ou résultat correct.</li>
+<li>0,5 point lorsque la démarche est correcte mais comporte une erreur
+de calcul secondaire.</li>
+<li>0 point lorsque la relation utilisée n’est pas pertinente.</li>
+<li>La certitude n’ajoute ni ne retire de point ; elle détermine le
+geste pédagogique.</li>
+</ul>
+<h2 id="lecture-réussite-confiance">Lecture réussite × confiance</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Résultat</th>
+<th style="text-align: right;">Certitude</th>
+<th>Décision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>juste</td>
+<td style="text-align: right;">3-4</td>
+<td>entretenir ou transférer</td>
+</tr>
+<tr class="even">
+<td>juste</td>
+<td style="text-align: right;">1-2</td>
+<td>consolider et faire expliquer</td>
+</tr>
+<tr class="odd">
+<td>faux</td>
+<td style="text-align: right;">1-2</td>
+<td>installer la notion</td>
+</tr>
+<tr class="even">
+<td>faux</td>
+<td style="text-align: right;">3-4</td>
+<td>confronter puis reconstruire</td>
+</tr>
+<tr class="odd">
+<td>vide</td>
+<td style="text-align: right;">-</td>
+<td>diagnostiquer oralement</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="author" content="Nexus Réussite"><title>QCM blanc candidat individuel - Première NSI</title><style>
+@page {
+  size: A4;
+  margin: 15mm 16mm 17mm 16mm;
+  @bottom-center { content: "Nexus Réussite - Stage Première NSI - " counter(page) " / " counter(pages); color:#70798c; font-size:8pt; }
+}
+:root { --navy:#071A3A; --blue:#154B8B; --gold:#C9A227; --red:#D71F2B; --ink:#182238; --muted:#5D6878; --light:#F7F5EF; --line:#D8DEE8; --green:#1E6B55; }
+html { font-size: 11pt; }
+body { font-family: Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.45; }
+h1,h2,h3,h4 { color:var(--navy); break-after:avoid; }
+h1 { font-size:24pt; border-bottom:3px solid var(--gold); padding-bottom:5mm; }
+h2 { font-size:17pt; border-left:4px solid var(--gold); padding-left:4mm; margin-top:9mm; }
+h3 { font-size:13pt; margin-top:6mm; }
+h4 { font-size:11.5pt; }
+p,li { orphans:3; widows:3; }
+ul, ol { break-inside: avoid; }
+.numbered-item { margin: 2mm 0; }
+a { color:var(--blue); }
+table { width:100%; border-collapse:collapse; margin:4mm 0 6mm; font-size:9.4pt; }
+tr { break-inside:avoid; }
+th { background:var(--navy); color:white; padding:2.4mm; text-align:left; }
+td { border:1px solid var(--line); padding:2.2mm; vertical-align:top; }
+blockquote { background:var(--light); border-left:4px solid var(--gold); padding:4mm; margin:4mm 0; }
+code { font-family:"DejaVu Sans Mono", Consolas, monospace; background:#F2F4F8; padding:0.2mm 0.6mm; border-radius:1mm; }
+pre { background:#F2F4F8; border:1px solid #D6DDE8; border-left:4px solid var(--blue); padding:4mm; white-space:pre-wrap; break-inside:avoid; font-size:8.7pt; }
+pre code { background:transparent; padding:0; }
+.cover { min-height:245mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after:always; }
+.cover img { width:62mm; margin-bottom:18mm; }
+.cover h1 { border:0; padding:0; margin:0 0 5mm; font-size:28pt; }
+.cover .kicker { color:var(--gold); text-transform:uppercase; letter-spacing:1.4px; font-weight:bold; }
+.cover .subtitle { font-size:15pt; color:var(--blue); font-weight:bold; }
+.cover .meta { margin-top:12mm; border-top:1px solid var(--gold); border-bottom:1px solid var(--gold); padding:5mm 8mm; line-height:1.7; }
+.page-break { break-before:page; height:0; }
+.confidential { color:#8B1A1A; border:1px solid #8B1A1A; background:#FFF7F6; padding:3mm; font-weight:bold; }
+.teacher-note { border-left:4px solid var(--red); background:#FFF5F4; padding:3.5mm; margin:4mm 0; }
+.student-note { border-left:4px solid var(--blue); background:#F3F7FC; padding:3.5mm; margin:4mm 0; }
+.success { border-left:4px solid var(--green); background:#F3FAF7; padding:3.5mm; margin:4mm 0; }
+.answer { min-height:18mm; border:1px solid #AAB4C3; border-radius:2mm; margin:2mm 0 4mm; }
+.answer-lg { min-height:36mm; border:1px solid #AAB4C3; border-radius:2mm; margin:2mm 0 4mm; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:4mm; }
+.card { border:1px solid var(--gold); border-radius:2mm; padding:4mm; break-inside:avoid; min-height:42mm; }
+.cut-card { display:inline-block; width:47%; min-height:64mm; vertical-align:top; border:1.5px dashed var(--navy); padding:7mm; margin:1%; break-inside:avoid; }
+.small { font-size:8.5pt; color:var(--muted); }
+.badge { display:inline-block; border:1px solid var(--gold); border-radius:10mm; padding:1mm 3mm; font-size:8pt; font-weight:bold; color:var(--navy); }
+.path-foundation { background:#F3F7FC; }
+.path-mastery { background:#F8F6EF; }
+.path-extension { background:#F3FAF7; }
+.checklist li { margin-bottom:2mm; }
+.no-break { break-inside:avoid; }
+.student-only::before { content:"DOCUMENT ÉLÈVE - SANS CORRIGÉ"; display:block; color:var(--blue); font-weight:bold; border-bottom:1px solid var(--line); margin-bottom:4mm; padding-bottom:2mm; }
+.prof-only::before { content:"DOCUMENT ENSEIGNANT - CORRIGÉ INCLUS"; display:block; color:var(--red); font-weight:bold; border-bottom:1px solid var(--line); margin-bottom:4mm; padding-bottom:2mm; }
+@media print { a { color:inherit; text-decoration:none; } }
+</style></head><body><h1>QCM blanc - Candidat individuel Première NSI</h1>
+<p><strong>Durée : 2 heures - 42 questions - 7 parties - calculatrice interdite.</strong></p>
+<p>Une seule réponse est correcte. Le format d’entraînement reprend l’évaluation ponctuelle officielle : 1 point par bonne réponse, 0 sinon, puis conversion sur 20 par <code>points × 20 / 42</code>.</p>
+<div class="callout red"><strong>Différence avec le test de positionnement Nexus :</strong> dans ce QCM blanc, une réponse fausse n’enlève pas de point. Après une première passe prudente, il est rationnel de répondre à toutes les questions.</div>
+
+<h1>Partie - Données de base</h1>
+<h2>Question 1</h2>
+<p>101101 en binaire vaut en décimal :</p>
+<ul>
+<li>☐ A. 35</li>
+<li>☐ B. 45</li>
+<li>☐ C. 46</li>
+<li>☐ D. 53</li>
+</ul>
+<h2>Question 2</h2>
+<p>Sur 8 bits non signés, la plus grande valeur est :</p>
+<ul>
+<li>☐ A. 127</li>
+<li>☐ B. 128</li>
+<li>☐ C. 255</li>
+<li>☐ D. 256</li>
+</ul>
+<h2>Question 3</h2>
+<p>En complément à 2 sur 8 bits, -1 est représenté par :</p>
+<ul>
+<li>☐ A. 00000001</li>
+<li>☐ B. 10000001</li>
+<li>☐ C. 11111111</li>
+<li>☐ D. 10000000</li>
+</ul>
+<h2>Question 4</h2>
+<p>En Python, l’affirmation correcte est :</p>
+<ul>
+<li>☐ A. 0.1+0.2 vaut toujours exactement 0.3</li>
+<li>☐ B. les flottants sont des rationnels exacts</li>
+<li>☐ C. il faut éviter de tester directement certaines égalités de flottants</li>
+<li>☐ D. float et int ont toujours la même représentation</li>
+</ul>
+<h2>Question 5</h2>
+<p><code>True and not False</code> vaut :</p>
+<ul>
+<li>☐ A. True</li>
+<li>☐ B. False</li>
+<li>☐ C. None</li>
+<li>☐ D. 1.0</li>
+</ul>
+<h2>Question 6</h2>
+<p>Unicode sert principalement à :</p>
+<ul>
+<li>☐ A. compresser les images</li>
+<li>☐ B. identifier des caractères de nombreuses écritures</li>
+<li>☐ C. chiffrer les fichiers</li>
+<li>☐ D. router des paquets</li>
+</ul>
+<h1>Partie - Types construits</h1>
+<h2>Question 7</h2>
+<p>Un tuple Python est :</p>
+<ul>
+<li>☐ A. toujours modifiable</li>
+<li>☐ B. un regroupement ordonné non mutable</li>
+<li>☐ C. un dictionnaire</li>
+<li>☐ D. un fichier CSV</li>
+</ul>
+<h2>Question 8</h2>
+<p>Pour <code>L=[10,20,30]</code>, <code>L[2]</code> vaut :</p>
+<ul>
+<li>☐ A. 20</li>
+<li>☐ B. 30</li>
+<li>☐ C. IndexError</li>
+<li>☐ D. 3</li>
+</ul>
+<h2>Question 9</h2>
+<p><code>[x*x for x in range(4)]</code> vaut :</p>
+<ul>
+<li>☐ A. [1,4,9,16]</li>
+<li>☐ B. [0,1,4,9]</li>
+<li>☐ C. [0,1,2,3]</li>
+<li>☐ D. [4]</li>
+</ul>
+<h2>Question 10</h2>
+<p>Pour <code>M=[[1,2],[3,4]]</code>, <code>M[1][0]</code> vaut :</p>
+<ul>
+<li>☐ A. 1</li>
+<li>☐ B. 2</li>
+<li>☐ C. 3</li>
+<li>☐ D. 4</li>
+</ul>
+<h2>Question 11</h2>
+<p>Pour <code>d={&quot;a&quot;:1}</code>, ajouter la clé b associée à 2 se fait par :</p>
+<ul>
+<li>☐ A. d.add(&quot;b&quot;,2)</li>
+<li>☐ B. d[&quot;b&quot;]=2</li>
+<li>☐ C. d.append(2)</li>
+<li>☐ D. d(&quot;b&quot;)=2</li>
+</ul>
+<h2>Question 12</h2>
+<p>Après <code>a=[1,2] ; b=a ; b.append(3)</code>, a vaut :</p>
+<ul>
+<li>☐ A. [1,2]</li>
+<li>☐ B. [1,2,3]</li>
+<li>☐ C. [3]</li>
+<li>☐ D. erreur</li>
+</ul>
+<h1>Partie - Tables</h1>
+<h2>Question 13</h2>
+<p>Dans une table CSV, une ligne correspond généralement à :</p>
+<ul>
+<li>☐ A. un descripteur</li>
+<li>☐ B. un enregistrement</li>
+<li>☐ C. un fichier entier</li>
+<li>☐ D. un type Python</li>
+</ul>
+<h2>Question 14</h2>
+<p><code>csv.DictReader</code> produit chaque ligne sous forme de :</p>
+<ul>
+<li>☐ A. chaîne unique</li>
+<li>☐ B. liste d’entiers</li>
+<li>☐ C. dictionnaire</li>
+<li>☐ D. tuple de bytes</li>
+</ul>
+<h2>Question 15</h2>
+<p>Pour garder les lignes de score &gt;=10, on effectue :</p>
+<ul>
+<li>☐ A. une projection</li>
+<li>☐ B. un filtrage</li>
+<li>☐ C. une fusion</li>
+<li>☐ D. un encodage</li>
+</ul>
+<h2>Question 16</h2>
+<p>Trier une liste de dictionnaires <code>t</code> par score peut s’écrire :</p>
+<ul>
+<li>☐ A. sorted(t, key=lambda x: x[&quot;score&quot;])</li>
+<li>☐ B. t.sort(&quot;score&quot;)</li>
+<li>☐ C. sort(score,t)</li>
+<li>☐ D. sorted(&quot;score&quot;)</li>
+</ul>
+<h2>Question 17</h2>
+<p>Fusionner deux tables suppose notamment :</p>
+<ul>
+<li>☐ A. aucun champ commun</li>
+<li>☐ B. un critère de correspondance</li>
+<li>☐ C. qu’elles aient la même longueur</li>
+<li>☐ D. qu’elles soient triées en binaire</li>
+</ul>
+<h2>Question 18</h2>
+<p>Une métadonnée est :</p>
+<ul>
+<li>☐ A. une donnée fausse</li>
+<li>☐ B. une donnée qui décrit une autre donnée</li>
+<li>☐ C. une donnée secrète</li>
+<li>☐ D. une copie de sauvegarde</li>
+</ul>
+<h1>Partie - Web</h1>
+<h2>Question 19</h2>
+<p>Le rôle principal de HTML est de :</p>
+<ul>
+<li>☐ A. mettre en forme</li>
+<li>☐ B. structurer le contenu</li>
+<li>☐ C. router les paquets</li>
+<li>☐ D. stocker les utilisateurs</li>
+</ul>
+<h2>Question 20</h2>
+<p>Le rôle principal de CSS est de :</p>
+<ul>
+<li>☐ A. présenter le contenu</li>
+<li>☐ B. exécuter Python</li>
+<li>☐ C. définir les adresses IP</li>
+<li>☐ D. gérer le disque</li>
+</ul>
+<h2>Question 21</h2>
+<p>Dans le modèle client-serveur :</p>
+<ul>
+<li>☐ A. le serveur interroge toujours le client</li>
+<li>☐ B. le client envoie une requête et reçoit une réponse</li>
+<li>☐ C. aucun protocole n’est utilisé</li>
+<li>☐ D. le navigateur fabrique tout sans réseau</li>
+</ul>
+<h2>Question 22</h2>
+<p>Une requête GET est adaptée lorsque :</p>
+<ul>
+<li>☐ A. on transmet un mot de passe en clair dans l’URL</li>
+<li>☐ B. on demande une ressource sans effet sensible</li>
+<li>☐ C. on veut garantir la confidentialité</li>
+<li>☐ D. on remplace HTTPS</li>
+</ul>
+<h2>Question 23</h2>
+<p>HTTPS apporte principalement :</p>
+<ul>
+<li>☐ A. la compression</li>
+<li>☐ B. le chiffrement et l’authentification du serveur</li>
+<li>☐ C. un stockage local</li>
+<li>☐ D. une adresse IP fixe</li>
+</ul>
+<h2>Question 24</h2>
+<p>Un gestionnaire d’événement est exécuté :</p>
+<ul>
+<li>☐ A. lorsqu’un événement associé se produit</li>
+<li>☐ B. uniquement au démarrage du serveur</li>
+<li>☐ C. avant le chargement de la page dans tous les cas</li>
+<li>☐ D. par le routeur</li>
+</ul>
+<h1>Partie - Architecture</h1>
+<h2>Question 25</h2>
+<p>Dans une architecture de von Neumann, le processeur :</p>
+<ul>
+<li>☐ A. stocke uniquement les images</li>
+<li>☐ B. exécute les instructions</li>
+<li>☐ C. remplace le système d’exploitation</li>
+<li>☐ D. attribue les adresses IP</li>
+</ul>
+<h2>Question 26</h2>
+<p>Le système d’exploitation :</p>
+<ul>
+<li>☐ A. gère ressources, fichiers et processus</li>
+<li>☐ B. est une page Web</li>
+<li>☐ C. est un protocole de routage</li>
+<li>☐ D. remplace la mémoire vive</li>
+</ul>
+<h2>Question 27</h2>
+<p>Une adresse IP sert à :</p>
+<ul>
+<li>☐ A. identifier une machine sur un réseau</li>
+<li>☐ B. nommer un fichier</li>
+<li>☐ C. compresser un paquet</li>
+<li>☐ D. chiffrer une chaîne</li>
+</ul>
+<h2>Question 28</h2>
+<p>Un routeur :</p>
+<ul>
+<li>☐ A. exécute les fonctions Python</li>
+<li>☐ B. transmet les paquets vers leur destination</li>
+<li>☐ C. convertit toujours HTML en CSS</li>
+<li>☐ D. stocke uniquement les mots de passe</li>
+</ul>
+<h2>Question 29</h2>
+<p>Le découpage en paquets permet notamment :</p>
+<ul>
+<li>☐ A. d’interdire tout partage du réseau</li>
+<li>☐ B. de transmettre et réassembler des données</li>
+<li>☐ C. de supprimer les protocoles</li>
+<li>☐ D. de garantir zéro perte sans mécanisme</li>
+</ul>
+<h2>Question 30</h2>
+<p>Sous Unix, la commande <code>ls</code> sert à :</p>
+<ul>
+<li>☐ A. lister les fichiers</li>
+<li>☐ B. changer de répertoire</li>
+<li>☐ C. supprimer un fichier</li>
+<li>☐ D. afficher une adresse IP</li>
+</ul>
+<h1>Partie - Programmation</h1>
+<h2>Question 31</h2>
+<p>Après <code>a=3 ; b=a ; a=5</code>, b vaut :</p>
+<ul>
+<li>☐ A. 3</li>
+<li>☐ B. 5</li>
+<li>☐ C. 8</li>
+<li>☐ D. None</li>
+</ul>
+<h2>Question 32</h2>
+<p>La négation de <code>x &gt; 5</code> est :</p>
+<ul>
+<li>☐ A. x &lt; 5</li>
+<li>☐ B. x &gt;= 5</li>
+<li>☐ C. x &lt;= 5</li>
+<li>☐ D. x != 5</li>
+</ul>
+<h2>Question 33</h2>
+<p><code>range(2,8,2)</code> produit :</p>
+<ul>
+<li>☐ A. 2,4,6</li>
+<li>☐ B. 2,4,6,8</li>
+<li>☐ C. 2,3,4,5,6,7</li>
+<li>☐ D. 8,6,4,2</li>
+</ul>
+<h2>Question 34</h2>
+<p>Une boucle while est particulièrement adaptée lorsque :</p>
+<ul>
+<li>☐ A. le nombre de tours dépend d’une condition</li>
+<li>☐ B. le nombre de tours est toujours exactement 3</li>
+<li>☐ C. on veut définir un dictionnaire</li>
+<li>☐ D. on écrit une page HTML</li>
+</ul>
+<h2>Question 35</h2>
+<p>Une fonction sans return exécuté renvoie :</p>
+<ul>
+<li>☐ A. 0</li>
+<li>☐ B. False</li>
+<li>☐ C. None</li>
+<li>☐ D. une erreur systématique</li>
+</ul>
+<h2>Question 36</h2>
+<p>Un bon jeu de tests :</p>
+<ul>
+<li>☐ A. prouve toujours la correction</li>
+<li>☐ B. comprend cas normaux et limites</li>
+<li>☐ C. ne contient qu’un exemple</li>
+<li>☐ D. remplace la spécification</li>
+</ul>
+<h1>Partie - Algorithmique</h1>
+<h2>Question 37</h2>
+<p>La recherche séquentielle :</p>
+<ul>
+<li>☐ A. examine des éléments un à un</li>
+<li>☐ B. exige une liste triée</li>
+<li>☐ C. est toujours logarithmique</li>
+<li>☐ D. trie la liste</li>
+</ul>
+<h2>Question 38</h2>
+<p>Pour calculer un maximum dans une liste non vide, une bonne initialisation est :</p>
+<ul>
+<li>☐ A. 0 dans tous les cas</li>
+<li>☐ B. le premier élément</li>
+<li>☐ C. None sans traitement</li>
+<li>☐ D. la longueur de la liste</li>
+</ul>
+<h2>Question 39</h2>
+<p>Le tri par sélection place à chaque étape :</p>
+<ul>
+<li>☐ A. un élément choisi au hasard</li>
+<li>☐ B. le plus petit élément restant à sa position</li>
+<li>☐ C. la moitié droite à gauche</li>
+<li>☐ D. la moyenne en tête</li>
+</ul>
+<h2>Question 40</h2>
+<p>Dans le pire cas, les tris insertion et sélection étudiés sont de coût :</p>
+<ul>
+<li>☐ A. constant</li>
+<li>☐ B. logarithmique</li>
+<li>☐ C. linéaire</li>
+<li>☐ D. quadratique</li>
+</ul>
+<h2>Question 41</h2>
+<p>La recherche dichotomique nécessite :</p>
+<ul>
+<li>☐ A. une liste triée</li>
+<li>☐ B. un dictionnaire vide</li>
+<li>☐ C. un réseau</li>
+<li>☐ D. une fonction récursive obligatoirement</li>
+</ul>
+<h2>Question 42</h2>
+<p>Une stratégie gloutonne :</p>
+<ul>
+<li>☐ A. explore forcément toutes les solutions</li>
+<li>☐ B. fait un choix local à chaque étape</li>
+<li>☐ C. garantit toujours l’optimum pour tout problème</li>
+<li>☐ D. est identique à la dichotomie</li>
+</ul>
+</body></html>
