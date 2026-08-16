@@ -24,6 +24,13 @@
 
 - **Sinda Chikhaoui** : Transfert et plan de rentrée
 - **Fares Darghouth** : Synthèse et plan de travail
+- **Ines KEFI** : Transfert mixte et calibration de la confiance
+  - *Tâche de départ :* problème de synthèse mêlant deux domaines retravaillés pendant le stage.
+  - *Niveau de parcours :* transfert.
+  - *Aide maximale prévue :* aucune, sauf demande explicite de l’élève.
+  - *Critère de réussite :* aucune erreur répétée à certitude 4 sur les notions retravaillées ; calibration cohérente entre réussite réelle et confiance annoncée (départ à 67 %).
+  - *Tâche de transfert :* problème final noté en autonomie complète.
+  - *Décision :* construire avec elle le plan de travail de septembre à partir des points encore fragiles observés en séance.
 
 ## Déroulé validé du programme
 

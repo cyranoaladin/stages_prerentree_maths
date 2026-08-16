@@ -20,6 +20,7 @@
 | Selim Mansouri | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | |
 | Amine Mansouri | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | |
 | Fares Laajili | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | |
+| Elyes KEFI | | | | | | | | | | | | | | | | 
 
 
 ## Séance 1 - Observations
@@ -32,6 +33,7 @@
 | Selim Mansouri | | | | | | |
 | Amine Mansouri | | | | | | |
 | Fares Laajili | | | | | | |
+| Elyes KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -45,6 +47,7 @@
 | Selim Mansouri | | | | | | |
 | Amine Mansouri | | | | | | |
 | Fares Laajili | | | | | | |
+| Elyes KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -58,6 +61,7 @@
 | Selim Mansouri | | | | | | |
 | Amine Mansouri | | | | | | |
 | Fares Laajili | | | | | | |
+| Elyes KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -71,6 +75,7 @@
 | Selim Mansouri | | | | | | |
 | Amine Mansouri | | | | | | |
 | Fares Laajili | | | | | | |
+| Elyes KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -84,6 +89,7 @@
 | Selim Mansouri | | | | | | |
 | Amine Mansouri | | | | | | |
 | Fares Laajili | | | | | | |
+| Elyes KEFI | | | | | | | 
 
 
 ## Bilan de fin de stage
@@ -94,6 +100,7 @@
 | Selim Mansouri | | | | | |
 | Amine Mansouri | | | | | |
 | Fares Laajili | | | | | |
+| Elyes KEFI | | | | | | 
 
 ## Grille source du programme
 

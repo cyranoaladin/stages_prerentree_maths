@@ -24,6 +24,13 @@
 
 - **Sinda Chikhaoui** : Relatifs et fractions - reconstruction prioritaire
 - **Fares Darghouth** : Fractions - conflit cognitif
+- **Ines KEFI** : Fractions et relatifs - reconstruction prioritaire
+  - *Tâche de départ :* confrontation individuelle sur le rangement de -8 ; 3 ; -2 ; 0 ; 5, puis sur un déplacement -6 → +9, avant les bandes fractionnaires pour (5/6-1/3).
+  - *Niveau de parcours :* reconstruction (relatifs et fractions).
+  - *Aide maximale prévue :* jusqu’à la carte C (droite graduée et bandes fractionnaires guidées).
+  - *Critère de réussite :* 4 classements ou déplacements de relatifs corrects et justifiés à l’oral ; 4 soustractions de fractions consécutives sans oubli de conversion du numérateur.
+  - *Tâche de transfert :* problème mixte relatifs et fractions sans support visuel.
+  - *Décision :* réussite rapide → second problème mixte sans support ; blocage → reprendre avec jetons ou bande guidée en ciblant l’erreur de conversion du numérateur.
 
 ## Déroulé validé du programme
 

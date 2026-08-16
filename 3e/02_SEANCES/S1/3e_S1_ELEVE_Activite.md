@@ -12,6 +12,7 @@
 * rectifier l’erreur de signe de Selim ;
 * confronter la règle erronée de multiplication de fractions de Fares ;
 * situer la multiplication de fractions chez Amine et Selim ;
+* confronter les produits croisés inversés d’Elyes en multiplication de fractions ;
 * entretenir les puissances ;
 * commencer le travail sur la confiance.
 

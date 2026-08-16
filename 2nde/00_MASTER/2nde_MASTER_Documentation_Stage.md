@@ -801,7 +801,7 @@ Consigne :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (-17)
 2. (81) et (-27)
@@ -1319,7 +1319,7 @@ Construire géométriquement $(x-4)^2$ et faire identifier :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. $x^2+x-12$
 2. $x^2-10x+25$
@@ -1760,7 +1760,7 @@ Utiliser 100 TND :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (92) TND
 2. (96) TND, soit une baisse globale de 4 %
@@ -2192,7 +2192,7 @@ Faire construire les carrés d’aires 9, 16 et 25 autour d’un triangle 3-4-5.
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (13)
 2. Oui, car $6^2+8^2=10^2$
@@ -2621,7 +2621,7 @@ Sur le même triangle, changer l’angle colorié. Faire constater que :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. Moyenne $6{,}6$, médiane (5), étendue (9)
 2. (2/5)

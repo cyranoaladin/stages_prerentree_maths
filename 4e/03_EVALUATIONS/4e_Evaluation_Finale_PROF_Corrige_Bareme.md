@@ -22,7 +22,7 @@ Chaque question comporte une certitude de 1 à 4.
 15. Problème de proportionnalité : une recette pour 6 personnes nécessite 450 g de farine. Quelle quantité de farine faut-il pour 8 personnes ?
 16. Problème intégré aire + expression littérale : un rectangle a pour longueur ((x+5)) cm et pour largeur (4) cm. Son aire vaut $44\text{ cm}^2$. Calculer (x), puis la longueur du rectangle.
 
-### Réponses attendues
+## Réponses attendues
 
 1. (4)
 2. (3)

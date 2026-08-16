@@ -10,6 +10,7 @@
 
 * remédier aux difficultés géométriques de Fares ;
 * entretenir et approfondir les acquis de Sinda ;
+* confronter les hypothèses non fournies et le centre de symétrie chez Ines ;
 * distinguer une donnée, une propriété et une conclusion ;
 * rédiger un raisonnement simple ;
 * préparer la transition vers Pythagore et la translation.

@@ -164,7 +164,7 @@ $$\frac{(1+h)^2-1}{h}=\frac{2h+h^2}{h}=2+h.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

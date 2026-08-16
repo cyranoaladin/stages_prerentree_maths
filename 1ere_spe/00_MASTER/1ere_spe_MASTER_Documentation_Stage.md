@@ -824,7 +824,7 @@ $$x^2-6x+10=(x-3)^2+1>0.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 
@@ -1347,7 +1347,7 @@ $$\frac{(1+h)^2-1}{h}=\frac{2h+h^2}{h}=2+h.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 
@@ -1850,7 +1850,7 @@ Les vecteurs sont orthogonaux.
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 
@@ -2338,7 +2338,7 @@ $$0{,}60\times0{,}40+0{,}40\times0{,}10=0{,}28.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 
@@ -2838,7 +2838,7 @@ $$v_n=200\times1{,}05^n.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

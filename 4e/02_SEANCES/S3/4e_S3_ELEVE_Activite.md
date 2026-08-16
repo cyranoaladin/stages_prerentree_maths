@@ -10,6 +10,7 @@
 
 * diagnostiquer le niveau réel de Fares ;
 * stabiliser les acquis de base chez Sinda ;
+* installer le calcul littéral chez Ines (réduction des constantes signées) ;
 * comprendre les différents rôles de la lettre ;
 * substituer une valeur ;
 * réduire des termes semblables ;

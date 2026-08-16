@@ -144,7 +144,7 @@ Faire construire les carrés d’aires 9, 16 et 25 autour d’un triangle 3-4-5.
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (13)
 2. Oui, car $6^2+8^2=10^2$

@@ -139,7 +139,7 @@ Utiliser 100 TND :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (92) TND
 2. (96) TND, soit une baisse globale de 4 %

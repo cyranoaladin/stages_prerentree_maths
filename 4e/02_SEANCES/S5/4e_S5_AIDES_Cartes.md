@@ -58,3 +58,4 @@ Explique pourquoi la réponse est plausible.
 |---|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | Sinda Chikhaoui | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |
 | Fares Darghouth | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |
+| Ines KEFI | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |

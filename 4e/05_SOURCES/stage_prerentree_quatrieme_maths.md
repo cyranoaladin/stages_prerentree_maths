@@ -16,20 +16,23 @@ Le présent programme porte donc sur les **mathématiques**. Aucun test ni bilan
 
 ### Élèves actuellement documentés
 
-Deux dossiers complets sont disponibles :
+Trois dossiers complets sont disponibles :
 
 * **Sinda Chikhaoui** : bilan parents et bilan élève ;
-* **Fares Darghouth** : bilan parents et bilan élève.
+* **Fares Darghouth** : bilan parents et bilan élève ;
+* **Ines KEFI** : bilan parents et bilan élève.
 
 Les bilans de Sinda indiquent 18 questions traitées sur 18, trois domaines solides, un domaine à installer et trois domaines à rectifier en priorité.  
 
 Les bilans de Fares indiquent 15 questions traitées sur 18, deux domaines solides, un domaine à consolider, trois domaines à rectifier et un domaine à situer.  
 
+Les bilans d’Ines indiquent 18 questions traitées sur 18, trois domaines solides, un domaine à installer et trois domaines à rectifier en priorité (calibration réussite-confiance : 67 %).
+
 ### Informations encore manquantes
 
 Le programme ci-dessous est directement exploitable, mais les éléments suivants devront être confirmés avant la première séance :
 
-1. **Effectif définitif du groupe** : seuls deux élèves sont documentés à ce jour.
+1. **Effectif définitif du groupe** : seuls trois élèves sont documentés à ce jour.
 2. **Présence éventuelle d’autres élèves** dont les bilans modifieraient la hiérarchie collective.
 3. **Notes de l’entretien oral post-test** : le questionnaire prévoit une reprise orale de deux ou trois questions, mais aucun compte rendu de cet échange n’a été fourni. 
 4. **Besoins éducatifs particuliers** : PAP, troubles attentionnels, dyscalculie, lenteur graphique, difficultés langagières ou anxiété.
@@ -49,7 +52,7 @@ Le programme ci-dessous est directement exploitable, mais les éléments suivant
 
 Le programme est conçu :
 
-* pour un groupe initial de **deux élèves**, extensible à trois, quatre ou cinq ;
+* pour un groupe de **trois élèves** documentés (Sinda Chikhaoui, Fares Darghouth, Ines KEFI), extensible à quatre ou cinq ;
 * avec une salle équipée d’un tableau ;
 * avec règle, équerre, compas, rapporteur et calculatrice disponibles ;
 * avec une pause active de cinq minutes au milieu de chaque séance ;
@@ -71,7 +74,7 @@ Le nouveau programme de mathématiques du cycle 4 publié au BO du 5 mars 2026 e
 
 Par conséquent, pour les élèves qui entrent en **Quatrième en septembre 2026**, le programme applicable demeure le programme du cycle 4 publié au **BO n° 31 du 30 juillet 2020**. La page officielle Éduscol consacrée aux programmes en vigueur en 2026-2027 confirme que la Quatrième reste sous ce référentiel. ([éduscol][2])
 
-Les deux élèves ont également effectué leur Cinquième en 2025-2026 sous ce même référentiel. Le stage doit donc croiser :
+Les trois élèves ont également effectué leur Cinquième en 2025-2026 sous ce même référentiel. Le stage doit donc croiser :
 
 * les attendus de fin de Cinquième du programme 2020 ;
 * les prérequis nécessaires au programme de Quatrième 2020 ;
@@ -85,18 +88,18 @@ Les repères annuels de progression et les attendus de fin d’année Éduscol c
 
 ## 2.1 Diagnostic par domaine
 
-| Domaine                 | Sinda Chikhaoui                                                                                                                                                                            | Fares Darghouth                                                                                                                                            | Lecture collective                                                                                                                           |                            Priorité |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------: |
-| **Nombres relatifs**    | Deux erreurs significatives : mauvaise gestion de ( -(-4) ) et déplacement dans le mauvais sens sur une droite graduée. Certaines réponses fausses sont données avec une confiance élevée. | Quatre réponses justes, mais une réussite accompagnée d’hésitation sur le calcul comportant une soustraction d’un négatif.                                 | Domaine très hétérogène : reconstruction pour Sinda, automatisation et consolidation pour Fares.                                             |                               **2** |
-| **Fractions**           | Réussit l’addition à même dénominateur, mais répond (4/3) à (5/6-1/3), avec une certitude élevée.                                                                                          | Réussit l’addition, mais répond (2/3) à (5/6-1/3), avec une certitude maximale.                                                                            | Obstacle commun, mais procédures erronées différentes. C’est le meilleur point d’entrée collectif.                                           |                               **1** |
-| **Proportionnalité**    | Deux réponses justes ; confiance correcte mais pas toujours maximale.                                                                                                                      | Deux réponses justes avec forte confiance.                                                                                                                 | Point d’appui collectif. À entretenir par des problèmes courts, sans séance entière.                                                         |                               **4** |
-| **Calcul littéral**     | Deux erreurs : distributivité appliquée à un seul terme et erreur de signe dans la réduction des constantes.                                                                               | Deux questions non traitées ; niveau réel inconnu.                                                                                                         | Domaine indispensable à diagnostiquer puis installer. Il ne faut pas assimiler l’absence de réponse de Fares à un échec conceptuel démontré. |                               **1** |
-| **Géométrie**           | Quatre réponses justes : angles, triangle rectangle, symétrie centrale et parallélogramme.                                                                                                 | Trois réponses fausses et une non traitée : somme des angles, angle aigu d’un triangle rectangle, caractérisation du parallélogramme et symétrie centrale. | Écart maximal entre les deux élèves. La différenciation doit être forte.                                                                     | **1 pour Fares** / **3 pour Sinda** |
-| **Aires et périmètres** | Calcule correctement l’aire du rectangle, mais oublie la division par deux pour le triangle.                                                                                               | Confond périmètre et aire du rectangle, puis additionne base et hauteur pour le triangle.                                                                  | Besoin collectif prioritaire. Les conceptions erronées sont distinctes et doivent être rendues visibles.                                     |                               **1** |
-| **Statistiques**        | Deux réponses justes avec forte confiance.                                                                                                                                                 | Deux réponses justes ; la moyenne est trouvée avec très peu de confiance.                                                                                  | Point d’appui collectif, mais la confiance de Fares doit être consolidée.                                                                    |                               **4** |
-| **Auto-évaluation**     | Calibration annoncée à 70 %.                                                                                                                                                               | Calibration annoncée à 70 %.                                                                                                                               | Les deux élèves savent globalement identifier leur degré de certitude. Ce levier sera réutilisé à chaque séance.                             |                         Transversal |
+| Domaine                 | Sinda Chikhaoui                                                                                                                                                                            | Fares Darghouth                                                                                                                                            | Ines KEFI                                                                                                                                            | Lecture collective                                                                                                                                                                | Priorité                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| **Nombres relatifs**    | Deux erreurs significatives : mauvaise gestion de ( -(-4) ) et déplacement dans le mauvais sens sur une droite graduée. Certaines réponses fausses sont données avec une confiance élevée. | Quatre réponses justes, mais une réussite accompagnée d’hésitation sur le calcul comportant une soustraction d’un négatif.                                 | Deux réponses fausses données avec une certitude maximale : ordre décroissant annoncé au lieu de croissant ; déplacement vers la gauche au lieu de la droite. | Domaine très hétérogène : reconstruction pour Sinda et Ines (erreurs différentes, toutes deux données avec une confiance élevée), automatisation et consolidation pour Fares.        | **2**                                            |
+| **Fractions**           | Réussit l’addition à même dénominateur, mais répond (4/3) à (5/6-1/3), avec une certitude élevée.                                                                                          | Réussit l’addition, mais répond (2/3) à (5/6-1/3), avec une certitude maximale.                                                                            | Pour (5/6-1/3), convertit le dénominateur mais pas le numérateur de (1/3) : conversion partielle.                                                        | Obstacle commun aux trois élèves, mais procédures erronées différentes à chaque fois. C’est le meilleur point d’entrée collectif.                                                    | **1**                                            |
+| **Proportionnalité**    | Deux réponses justes ; confiance correcte mais pas toujours maximale.                                                                                                                      | Deux réponses justes avec forte confiance.                                                                                                                 | Deux réponses justes et assurées.                                                                                                                        | Point d’appui collectif pour les trois élèves. À entretenir par des problèmes courts, sans séance entière.                                                                           | **4**                                            |
+| **Calcul littéral**     | Deux erreurs : distributivité appliquée à un seul terme et erreur de signe dans la réduction des constantes.                                                                               | Deux questions non traitées ; niveau réel inconnu.                                                                                                         | Distributivité disponible ; erreur de signe sur (2-6) dans une réduction.                                                                                | Domaine indispensable à installer pour les trois élèves. Il ne faut pas assimiler l’absence de réponse de Fares à un échec conceptuel démontré.                                      | **1**                                            |
+| **Géométrie**           | Quatre réponses justes : angles, triangle rectangle, symétrie centrale et parallélogramme.                                                                                                 | Trois réponses fausses et une non traitée : somme des angles, angle aigu d’un triangle rectangle, caractérisation du parallélogramme et symétrie centrale. | Hypothèse « isocèle » ajoutée sans justification ; centre de symétrie confondu avec la seule classe des carrés.                                         | Écart marqué entre les trois élèves. La différenciation doit être forte : reconstruction pour Fares, confrontation ciblée pour Ines, approfondissement pour Sinda.                   | **1 pour Fares** / **2 pour Ines** / **3 pour Sinda** |
+| **Aires et périmètres** | Calcule correctement l’aire du rectangle, mais oublie la division par deux pour le triangle.                                                                                               | Confond périmètre et aire du rectangle, puis additionne base et hauteur pour le triangle.                                                                  | Aire du rectangle et du triangle correctement calculées.                                                                                                 | Besoin partagé par Sinda et Fares, avec des conceptions erronées distinctes à rendre visibles. Ines maîtrise le domaine et reçoit un entretien/approfondissement (figures composées). | **1**                                            |
+| **Statistiques**        | Deux réponses justes avec forte confiance.                                                                                                                                                 | Deux réponses justes ; la moyenne est trouvée avec très peu de confiance.                                                                                  | Moyenne et fréquence correctement calculées.                                                                                                             | Point d’appui collectif pour Sinda et Ines, mais la confiance de Fares doit être consolidée.                                                                                          | **4**                                            |
+| **Auto-évaluation**     | Calibration annoncée à 70 %.                                                                                                                                                               | Calibration annoncée à 70 %.                                                                                                                               | Calibration annoncée à 67 %.                                                                                                                              | Les trois élèves savent globalement identifier leur degré de certitude. Ce levier sera réutilisé à chaque séance.                                                                    | Transversal                                      |
 
-Les erreurs exactes, les degrés de confiance et les explications fournies dans ce tableau proviennent du détail question par question des deux bilans élèves.  
+Les erreurs exactes, les degrés de confiance et les explications fournies dans ce tableau proviennent du détail question par question des trois bilans élèves.  
 
 ## 2.2 Obstacles didactiques repérés
 
@@ -170,6 +173,33 @@ Les erreurs exactes, les degrés de confiance et les explications fournies dans 
      * manque de temps ;
      * peur de répondre.
 
+### Chez Ines
+
+1. **Ordre des relatifs**
+
+   * conception repérée : -8 ; 3 ; -2 ; 0 ; 5 rangés dans l’ordre décroissant au lieu de croissant, avec une certitude maximale ;
+   * obstacle : consigne « ordre croissant » non contrôlée avant de conclure.
+
+2. **Déplacement sur une droite graduée**
+
+   * conception repérée : déplacement annoncé vers la gauche pour un énoncé demandant un déplacement vers la droite ;
+   * obstacle : sens du déplacement déduit du signe du nombre de départ plutôt que de la consigne.
+
+3. **Fractions**
+
+   * conception repérée : pour (5/6-1/3), le dénominateur commun est trouvé mais le numérateur de (1/3) n’est pas converti ;
+   * obstacle : conversion perçue comme portant sur le dénominateur seul.
+
+4. **Calcul littéral**
+
+   * conception repérée : distributivité disponible, mais erreur de signe sur (2-6) lors d’une réduction ;
+   * obstacle : gestion des constantes signées non stabilisée malgré une procédure correcte par ailleurs.
+
+5. **Géométrie**
+
+   * conception repérée : hypothèse « triangle isocèle » ajoutée sans justification ; centre de symétrie confondu avec la seule classe des carrés ;
+   * obstacle : ajout d’une donnée non fournie par l’énoncé ; sur-restriction d’une propriété à un cas particulier.
+
 ## 2.3 Besoins communs
 
 Les besoins communs prioritaires sont :
@@ -181,7 +211,8 @@ Les besoins communs prioritaires sont :
 5. développer le contrôle de vraisemblance ;
 6. verbaliser la règle utilisée avant de calculer ;
 7. maintenir la proportionnalité et les statistiques ;
-8. associer chaque réponse à un degré de certitude.
+8. associer chaque réponse à un degré de certitude ;
+9. distinguer ordre croissant et ordre décroissant, et contrôler le sens d’un déplacement sur une droite graduée.
 
 ## 2.4 Limites du test initial
 
@@ -258,10 +289,10 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 ### Priorité A — à traiter obligatoirement
 
 * fractions ;
-* aires et périmètres ;
+* aires et périmètres (pour Sinda et Fares) ;
 * calcul littéral ;
-* géométrie pour Fares ;
-* nombres relatifs pour Sinda.
+* géométrie pour Fares et Ines ;
+* nombres relatifs pour Sinda et Ines.
 
 ### Priorité B — à consolider
 
@@ -273,8 +304,9 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 ### Priorité C — à entretenir
 
 * proportionnalité ;
-* statistiques pour Sinda ;
-* géométrie pour Sinda.
+* statistiques pour Sinda et Ines ;
+* géométrie pour Sinda ;
+* aires et périmètres pour Ines (approfondissement, figures composées).
 
 ### Priorité D — à situer
 
@@ -298,13 +330,13 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 
 # 5. Progression globale des cinq séances
 
-| Séance | Thème commun                  | Axe Sinda                                    | Axe Fares                                                  | Ouverture vers la Quatrième        |
-| ------ | ----------------------------- | -------------------------------------------- | ---------------------------------------------------------- | ---------------------------------- |
-| 1      | Nombres relatifs et fractions | Reconstruction des relatifs et des fractions | Consolidation des relatifs et reconstruction des fractions | Produit de relatifs                |
-| 2      | Aires, périmètres et unités   | Aire du triangle, transfert                  | Distinction aire/périmètre, rectangle et triangle          | Formules, agrandissement-réduction |
-| 3      | Calcul littéral               | Distributivité et réduction                  | Diagnostic puis installation                               | Équations                          |
-| 4      | Géométrie et raisonnement     | Approfondissement et démonstration           | Remédiation structurée                                     | Pythagore, translation             |
-| 5      | Réinvestissement et bilan     | Automatisation et transfert                  | Stabilisation et plan de reprise                           | Médiane, probabilités, équations   |
+| Séance | Thème commun                  | Axe Sinda                                    | Axe Fares                                                  | Axe Ines                                                       | Ouverture vers la Quatrième        |
+| ------ | ----------------------------- | -------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------- |
+| 1      | Nombres relatifs et fractions | Reconstruction des relatifs et des fractions | Consolidation des relatifs et reconstruction des fractions | Fractions équivalentes, puis ordre et déplacements des relatifs | Produit de relatifs                |
+| 2      | Aires, périmètres et unités   | Aire du triangle, transfert                  | Distinction aire/périmètre, rectangle et triangle          | Approfondissement sur figures composées ; contrôle des relatifs | Formules, agrandissement-réduction |
+| 3      | Calcul littéral               | Distributivité et réduction                  | Diagnostic puis installation                               | Réduction des constantes signées et distributivité               | Équations                          |
+| 4      | Géométrie et raisonnement     | Approfondissement et démonstration           | Remédiation structurée                                     | Somme des angles, centre de symétrie et parallélogrammes         | Pythagore, translation             |
+| 5      | Réinvestissement et bilan     | Automatisation et transfert                  | Stabilisation et plan de reprise                           | Problèmes mixtes et contrôle de la confiance                     | Médiane, probabilités, équations   |
 
 ---
 
@@ -672,6 +704,27 @@ Justification en une phrase : __________________
 * semaine 2 : angles et triangles ;
 * semaine 3 : fractions ;
 * semaine 4 : calcul littéral selon le diagnostic.
+
+## 8.3 Ines KEFI
+
+| Élément                       | Plan                                                                                                                                                            |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Objectif prioritaire 1**    | Reconstruire l’ordre et le sens des déplacements sur une droite graduée pour les relatifs                                                                      |
+| **Objectif prioritaire 2**    | Convertir intégralement une fraction (numérateur et dénominateur) avant d’opérer                                                                               |
+| **Objectif prioritaire 3**    | Installer la réduction de constantes signées                                                                                                                   |
+| **Objectif prioritaire 4**    | Ne pas ajouter d’hypothèse non fournie en géométrie ; distinguer parallélogramme et carré                                                                      |
+| **Points d’appui**            | Proportionnalité, aires et périmètres, statistiques                                                                                                            |
+| **Remédiations**              | Bandes fractionnaires et équivalences complètes ; droite graduée avec verbalisation gauche/droite ; cartes « donnée / propriété / conclusion » ; code couleur pour les constantes signées ; contre-exemples de parallélogrammes non carrés |
+| **Indicateurs**               | 4 soustractions de fractions consécutives sans oubli de conversion du numérateur ; 4 classements ou déplacements de relatifs justifiés à l’oral ; 3 raisonnements géométriques complets sans hypothèse ajoutée ; 3 réductions signées correctes ; aucune erreur répétée à certitude 4 |
+| **Approfondissement**         | Figures composées (aires et périmètres), où Ines peut être mobilisée en soutien par les pairs                                                                  |
+| **Conseil pour la Quatrième** | Avant de calculer, nommer la propriété utilisée et vérifier que toutes les données mobilisées figurent réellement dans l’énoncé                                |
+
+### Plan de travail après le stage
+
+* semaine 1 : fractions équivalentes et soustractions ;
+* semaine 2 : relatifs sur droite graduée ;
+* semaine 3 : calcul littéral et signes ;
+* semaine 4 : géométrie raisonnée et problème mixte.
 
 ---
 
@@ -1235,17 +1288,18 @@ Un point de contrôle est conseillé trois à quatre semaines après la rentrée
 
 La lecture collective conduit à ne pas reprendre mécaniquement le parcours individuel imprimé dans chacun des bilans.
 
-Les deux parcours initiaux diffèrent :
+Les trois parcours initiaux diffèrent :
 
 * Sinda devait prioritairement reprendre les relatifs, les fractions, les aires et le calcul littéral ;
-* Fares devait prioritairement reprendre la géométrie, les aires, les fractions et situer le calcul littéral.  
+* Fares devait prioritairement reprendre la géométrie, les aires, les fractions et situer le calcul littéral ;
+* Ines devait prioritairement reprendre les relatifs, les fractions et la géométrie, et installer le calcul littéral, en s’appuyant sur des aires/périmètres et des statistiques déjà solides.
 
 Le programme collectif retient donc :
 
 1. **fractions et relatifs**, avec différenciation ;
-2. **aires et périmètres**, besoin commun ;
+2. **aires et périmètres**, besoin commun pour Sinda et Fares, approfondissement pour Ines ;
 3. **calcul littéral**, domaine indispensable à la Quatrième ;
-4. **géométrie**, avec remédiation pour Fares et approfondissement pour Sinda ;
+4. **géométrie**, avec remédiation pour Fares, confrontation ciblée pour Ines et approfondissement pour Sinda ;
 5. **synthèse, évaluation et transition vers la Quatrième**.
 
 Cette organisation évite deux écueils :
