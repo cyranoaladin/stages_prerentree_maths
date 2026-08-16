@@ -60,3 +60,4 @@ Explique pourquoi la réponse est plausible.
 | Selim Mansouri | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |
 | Amine Mansouri | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |
 | Fares Laajili | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |
+| Elyes KEFI | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | |

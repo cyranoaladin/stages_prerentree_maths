@@ -163,7 +163,7 @@ $$0{,}60\times0{,}40+0{,}40\times0{,}10=0{,}28.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

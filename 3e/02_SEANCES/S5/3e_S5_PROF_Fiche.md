@@ -26,6 +26,13 @@
 - **Selim Mansouri** : Statistiques et bilan
 - **Amine Mansouri** : Statistiques et calibration
 - **Fares Laajili** : Synthèse approfondie
+- **Elyes KEFI** : Statistiques (priorité) ; probabilités et synthèse en maîtrise
+  - *Tâche de départ :* confrontation sur une série où une valeur avait été oubliée dans la somme, avant de recalculer la moyenne.
+  - *Niveau de parcours :* reconstruction ciblée sur l’exhaustivité du relevé de données ; maîtrise attendue en probabilités et synthèse.
+  - *Aide maximale prévue :* tableau « valeurs / somme / effectif / moyenne » avec contrôle entre minimum et maximum.
+  - *Critère de réussite :* 3 moyennes simples ou pondérées calculées avec toutes les valeurs de la série.
+  - *Tâche de transfert :* problème de synthèse mêlant deux domaines retravaillés pendant le stage.
+  - *Décision :* réussite rapide → probabilités en deux étapes ; blocage → reprendre avec le tableau structuré valeurs/somme/effectif avant de recalculer.
 
 ## Déroulé validé du programme
 
@@ -63,6 +70,7 @@
 | **Selim** | Consolidation de la moyenne pondérée ; probabilité simple ; transfert dans un graphique |
 | **Amine** | Réussite expliquée à l’oral ; médiane et étendue ; travail spécifique sur la confiance  |
 | **Fares** | Comparaison moyenne–médiane ; probabilités en deux étapes ; lecture critique de données |
+| **Elyes** | Reconstruction de la moyenne à partir d’une série incomplète ; probabilités en deux étapes |
 
 ### Trace écrite attendue
 

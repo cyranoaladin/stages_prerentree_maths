@@ -26,6 +26,13 @@
 - **Selim Mansouri** : Trigonométrie diagnostiquée puis remédiée
 - **Amine Mansouri** : Trigonométrie
 - **Fares Laajili** : Trigonométrie et rapports
+- **Elyes KEFI** : Trigonométrie en transfert et extension sinus/tangente
+  - *Tâche de départ :* problème de cosinus en autonomie, puis extension vers sinus et tangente — domaine déjà maîtrisé.
+  - *Niveau de parcours :* transfert et extension.
+  - *Aide maximale prévue :* aucune ; carte « donnée / propriété / conclusion » en secours.
+  - *Critère de réussite :* choix correct du rapport trigonométrique (cosinus, sinus ou tangente) et calcul juste sur un problème nouveau.
+  - *Tâche de transfert :* problème nécessitant de choisir entre cosinus, sinus et tangente.
+  - *Décision :* réussite rapide → triangles semblables et anticipation raisonnée ; blocage → reprendre l’identification des côtés par rapport à l’angle de référence.
 
 ## Déroulé validé du programme
 
@@ -64,6 +71,7 @@
 | **Selim** | Diagnostic initial ; vocabulaire guidé ; calculs simples de cosinus ; pas de sinus/tangente tant que les côtés ne sont pas stabilisés |
 | **Amine** | Reprise orale des deux questions laissées vides ; cosinus avec figures codées ; calibration de la confiance                           |
 | **Fares** | Conflit explicite entre opposé/hypoténuse et adjacent/hypoténuse ; introduction du sinus et de la tangente après correction           |
+| **Elyes** | Cosinus en autonomie, puis extension sinus/tangente ; triangles semblables en approfondissement |
 
 ### Trace écrite attendue
 

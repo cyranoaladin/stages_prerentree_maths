@@ -186,7 +186,7 @@ $$x^2-6x+10=(x-3)^2+1>0.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

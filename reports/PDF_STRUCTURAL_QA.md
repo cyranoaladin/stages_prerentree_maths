@@ -1,37 +1,36 @@
 # QA structurelle PDF — 2026-08-16
 
-Contrôle exhaustif (pas d'échantillonnage) des **216 PDF générés** : 138 documents unitaires dans
-`dist/pdf/` (4 niveaux × [élèves, enseignants, évaluations, supports, nominatifs-prives]) et 78 packs
+Contrôle exhaustif (pas d'échantillonnage) des **237 PDF générés** : 151 documents unitaires dans
+`dist/pdf/` (4 niveaux × [élèves, enseignants, évaluations, supports, nominatifs-prives]) et 86 packs
 combinés dans `dist/packs/` (par niveau, par séance, par élève). Les PDF sources d'origine
 (`04_NOMINATIFS/*/bilan-nexus-*.pdf`, `03_EVALUATIONS/*_Test_Initial.pdf`) ne sont pas des PDF générés et
 sont exclus de ce contrôle — ils sont copiés sans altération (voir `MANIFEST_PRIVATE.csv`).
 
 ## Outils utilisés
 
-Réellement exécutés en ligne de commande sur chacun des 216 fichiers, pas de simulation :
+Réellement exécutés en ligne de commande sur chacun des 237 fichiers, pas de simulation :
 
 - `qpdf 11.9.0 --check` — intégrité structurelle du PDF.
 - `pdfinfo 24.02.0` — format de page, nombre de pages, chiffrement.
 - `pdffonts 24.02.0` — incorporation des polices.
 - `pdftotext 24.02.0` — extractibilité du texte et recherche de fuite de corrigé.
 - Contrôle Python additionnel : `tools/build.py::is_a4_page` (tolérance 2 pt) et recherche de PII
-  croisée entre élèves dans les packs `nominatifs-prives`.
+  croisée entre les 13 élèves dans les packs `nominatifs-prives`.
 
-Script conservé sous `tmp/pdf_qa/structural_qa.py` (hors dépôt de production, résultat détaillé dans
-`tmp/pdf_qa/structural_results.csv`).
+Script conservé sous `tools/build.py qa` et `tools/ci_gates.py`.
 
 ## Résultats globaux
 
 ```text
-PDF contrôlés         : 216 (138 unitaires + 78 packs)
-Pages totales          : 2622
+PDF contrôlés         : 237 (151 unitaires + 86 packs)
+Pages totales          : 2868
 qpdf --check échecs    : 0
 Format non-A4           : 0
 PDF chiffrés            : 0
 Polices non incorporées : 0
 Texte non extractible   : 0
-Fuite de corrigé (côté élève, 34 PDF eleves + 12 packs eleves contrôlés) : 0
-PII croisée (22 dossiers/packs nominatifs-prives contrôlés)              : 0
+Fuite de corrigé (côté élève) : 0
+PII croisée (26 dossiers/packs nominatifs-prives contrôlés) : 0
 PDF_STRUCTURAL_FAILURE_COUNT = 0
 ```
 

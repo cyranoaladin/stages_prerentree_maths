@@ -3,7 +3,7 @@
 ## Périmètre et gel
 
 - Racine auditée : `Nexus_Reussite_Documentation_Stages_Maths_2026`.
-- Dépôt Git parent : `/home/alaeddine/Documents/Nexus_Reussite`, initialement sur `master` et déjà sale hors du paquet.
+- Dépôt Git parent : `Nexus_Reussite`, initialement sur `master` et déjà sale hors du paquet.
 - Branche locale créée : `refactor/documentation-stages-maths-2026` ; aucun envoi distant n'est autorisé ni effectué.
 - Le sous-paquet `1re_nsi/` est hors périmètre de la mission mathématiques et n'est pas modifié.
 

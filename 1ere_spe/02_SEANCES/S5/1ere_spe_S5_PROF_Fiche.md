@@ -175,7 +175,7 @@ $$v_n=200\times1{,}05^n.$$
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

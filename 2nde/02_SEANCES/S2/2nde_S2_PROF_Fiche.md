@@ -162,7 +162,7 @@ Construire géométriquement $(x-4)^2$ et faire identifier :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. $x^2+x-12$
 2. $x^2-10x+25$

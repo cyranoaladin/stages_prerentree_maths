@@ -195,7 +195,7 @@ Consigne :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. (-17)
 2. (81) et (-27)

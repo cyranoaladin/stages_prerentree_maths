@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "nexus-students-v1",
+  "scope": "stages_maths_2026",
+  "students": [
+    {
+      "id": "sinda-chikhaoui",
+      "displayName": "Sinda Chikhaoui",
+      "aliases": ["Sinda Chikhaoui", "SINDA CHIKHAOUI"],
+      "level": "4e",
+      "directory": "4e/04_NOMINATIFS/Sinda_Chikhaoui",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_chikhaoui_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_chikhaoui_maths.pdf"
+    },
+    {
+      "id": "fares-darghouth",
+      "displayName": "Fares Darghouth",
+      "aliases": ["Fares Darghouth", "FARES DARGHOUTH"],
+      "level": "4e",
+      "directory": "4e/04_NOMINATIFS/Fares_Darghouth",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_fares_darghouth_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_fares_darghouth_maths.pdf"
+    },
+    {
+      "id": "ines-kefi",
+      "displayName": "Ines KEFI",
+      "aliases": ["Ines Kefi", "INES KEFI", "Ines KEFI"],
+      "level": "4e",
+      "directory": "4e/04_NOMINATIFS/Ines_Kefi",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_ines_kefi_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_ines_kefi_maths.pdf"
+    },
+    {
+      "id": "sarah-bargaoui",
+      "displayName": "Sarah Bargaoui",
+      "aliases": ["Sarah Bargaoui", "SARAH BARGAOUI"],
+      "level": "3e",
+      "directory": "3e/04_NOMINATIFS/Sarah_Bargaoui",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_bargaoui_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_bargaoui_maths.pdf"
+    },
+    {
+      "id": "selim-mansouri",
+      "displayName": "Selim Mansouri",
+      "aliases": ["Selim Mansouri", "SELIM MANSOURI"],
+      "level": "3e",
+      "directory": "3e/04_NOMINATIFS/Selim_Mansouri",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_selim_mansouri_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_selim_mansouri_maths.pdf"
+    },
+    {
+      "id": "amine-mansouri",
+      "displayName": "Amine Mansouri",
+      "aliases": ["Amine Mansouri", "AMINE MANSOURI"],
+      "level": "3e",
+      "directory": "3e/04_NOMINATIFS/Amine_Mansouri",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_amine_mansouri_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_amine_mansouri_maths.pdf"
+    },
+    {
+      "id": "fares-laajili",
+      "displayName": "Fares Laajili",
+      "aliases": ["Fares Laajili", "FARES LAAJILI"],
+      "level": "3e",
+      "directory": "3e/04_NOMINATIFS/Fares_Laajili",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_laajili_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_laajili_maths.pdf"
+    },
+    {
+      "id": "elyes-kefi",
+      "displayName": "Elyes KEFI",
+      "aliases": ["Elyes Kefi", "ELYES KEFI", "Elyes KEFI"],
+      "level": "3e",
+      "directory": "3e/04_NOMINATIFS/Elyes_Kefi",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_elyes_kefi_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_elyes_kefi_maths.pdf"
+    },
+    {
+      "id": "noa-maniaci",
+      "displayName": "Noa Maniaci",
+      "aliases": ["Noa Maniaci", "NOA MANIACI"],
+      "level": "2nde",
+      "directory": "2nde/04_NOMINATIFS/Noa_Maniaci",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_noa_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_noa_maths.pdf"
+    },
+    {
+      "id": "ahmed-bakir",
+      "displayName": "Ahmed Bakir",
+      "aliases": ["Ahmed Bakir", "AHMED BAKIR"],
+      "level": "2nde",
+      "directory": "2nde/04_NOMINATIFS/Ahmed_Bakir",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_bakir_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_bakir_maths.pdf"
+    },
+    {
+      "id": "donia-khadhrani",
+      "displayName": "Donia Khadhrani",
+      "aliases": ["Donia Khadhrani", "DONIA KHADHRANI"],
+      "level": "1ere_spe",
+      "directory": "1ere_spe/04_NOMINATIFS/Donia_Khadhrani",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_donia_khadhrani_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_donia_khadhrani_maths.pdf"
+    },
+    {
+      "id": "malek-khadhrani",
+      "displayName": "Malek Khadhrani",
+      "aliases": ["Malek Khadhrani", "MALEK KHADHRANI"],
+      "level": "1ere_spe",
+      "directory": "1ere_spe/04_NOMINATIFS/Malek_Khadhrani",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_malek_khadhrani_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_malek_khadhrani_maths.pdf"
+    },
+    {
+      "id": "ahmad-beldi",
+      "displayName": "Ahmad Beldi",
+      "aliases": ["Ahmad Beldi", "AHMAD BELDI"],
+      "level": "1ere_spe",
+      "directory": "1ere_spe/04_NOMINATIFS/Ahmad_Beldi",
+      "active": true,
+      "sourceStudentReport": "bilan-nexus-eleve_beldi_maths.pdf",
+      "sourceParentReport": "bilan-nexus-parents_beldi_maths.pdf"
+    }
+  ]
+}

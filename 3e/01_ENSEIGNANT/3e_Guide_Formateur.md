@@ -35,6 +35,7 @@ Ce guide transforme le programme validé en protocole d’animation directement 
 - **Selim Mansouri** : Puissances solides ; signes, distributivité, proportionnalité et Pythagore à rectifier ; fractions, équations et trigonométrie à diagnostiquer.
 - **Amine Mansouri** : Nombreuses réussites accompagnées d’une confiance très faible ; calcul littéral à installer ; fractions et trigonométrie à situer.
 - **Fares Laajili** : Six domaines solides ; multiplication de fractions, Pythagore et cosinus à rectifier.
+- **Elyes KEFI** : Six domaines solides (relatifs, puissances, équations, proportionnalité, géométrie, trigonométrie) ; fractions, calcul littéral et statistiques à rectifier.
 
 ## Vue d’ensemble des séances
 
@@ -85,7 +86,8 @@ Le groupe documenté est **très hétérogène** :
 * **Fares Laajili** dispose d’un socle globalement solide, mais conserve trois conceptions erronées fortement installées ;
 * **Amine Mansouri** réussit la majorité des questions traitées, mais déclare presque systématiquement une confiance très faible ;
 * **Sarah Bargaoui** possède un bon socle numérique, mais rencontre plusieurs difficultés de transfert et de modélisation ;
-* **Selim Mansouri** présente le plus grand nombre de notions à reconstruire ou à diagnostiquer.
+* **Selim Mansouri** présente le plus grand nombre de notions à reconstruire ou à diagnostiquer ;
+* **Elyes KEFI** dispose du socle le plus large du groupe (six domaines solides) et de la calibration la plus assurée (82 %), mais conserve trois erreurs procédurales précises en fractions, calcul littéral et statistiques.
 
 Il serait donc inefficace de faire cinq séances uniformes correspondant simplement à cinq « chapitres ». Le stage est organisé autour :
 
@@ -108,7 +110,7 @@ Dix heures ne permettent pas de reprendre exhaustivement toute une année de Qua
 * **Discipline** : mathématiques.
 * **Durée totale** : 10 heures.
 * **Organisation** : 5 séances de 2 heures.
-* **Effectif actuellement documenté** : 4 élèves.
+* **Effectif actuellement documenté** : 5 élèves.
 * **Répartition pédagogique visée** :
 
   * 80 minutes environ de travail commun par séance ;
@@ -128,12 +130,13 @@ Le test de positionnement comporte :
 
 Il évalue les nombres relatifs, les fractions, les puissances, le calcul littéral, les équations, la proportionnalité, le théorème de Pythagore, la trigonométrie et les statistiques. 
 
-Les quatre dossiers individuels analysés sont ceux de :
+Les cinq dossiers individuels analysés sont ceux de :
 
 * Sarah Bargaoui ;
 * Selim Mansouri ;
 * Amine Mansouri ;
-* Fares Laajili.
+* Fares Laajili ;
+* Elyes KEFI.
 
 ## 1.3 Informations encore manquantes
 
@@ -141,8 +144,8 @@ Les éléments suivants doivent être confirmés avant la première séance :
 
 | Information à confirmer                                  | Incidence pédagogique                                                                                       |
 | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Effectif définitif                                       | Le programme suppose actuellement un groupe de quatre élèves                                                |
-| Présence éventuelle d’un cinquième élève                 | Peut modifier les priorités collectives                                                                     |
+| Effectif définitif                                       | Le programme suppose actuellement un groupe de cinq élèves                                                  |
+| Présence éventuelle d’un sixième élève                   | Peut modifier les priorités collectives                                                                     |
 | Compte rendu des entretiens oraux post-test              | Indispensable pour distinguer erreur de raisonnement, erreur de calcul et réponse donnée sans procédure     |
 | Durée réelle de passation                                | Les bilans indiquent « durée non mesurée — saisie papier »                                                  |
 | PAP, PPRE ou besoins éducatifs particuliers              | Conditionne la quantité d’écrit, la durée des exercices et les supports                                     |
@@ -156,7 +159,7 @@ Les éléments suivants doivent être confirmés avant la première séance :
 
 Le programme est construit en supposant :
 
-* quatre élèves présents ;
+* cinq élèves présents ;
 * un seul enseignant ;
 * une salle équipée d’un tableau ;
 * un accès à des règles, équerres, compas, rapporteurs et calculatrices ;
@@ -215,29 +218,31 @@ Les ressources officielles insistent notamment sur une progression explicite, su
 | **Selim Mansouri** |              14/18 |                           58 % | 1 domaine solide, 1 à consolider, 4 à rectifier, 3 à situer      |
 | **Amine Mansouri** |              15/18 |                            9 % | 6 domaines à consolider, 1 à installer, 2 à situer               |
 | **Fares Laajili**  |              17/18 |                           84 % | 6 domaines solides, 3 conceptions erronées à rectifier           |
+| **Elyes KEFI**     |              18/18 |                           82 % | 6 domaines solides, 3 à rectifier en priorité (fractions, calcul littéral, statistiques) |
 
-Ces catégories sont celles des bilans Nexus. Sarah dispose d’appuis solides en nombres relatifs, fractions et puissances. Selim n’a qu’un domaine clairement stabilisé, les puissances. Amine réussit beaucoup de questions mais se déclare presque toujours incertain. Fares réussit la plupart des domaines, mais ses erreurs en fractions, géométrie et trigonométrie sont associées à une confiance importante.    
+Ces catégories sont celles des bilans Nexus. Sarah dispose d’appuis solides en nombres relatifs, fractions et puissances. Selim n’a qu’un domaine clairement stabilisé, les puissances. Amine réussit beaucoup de questions mais se déclare presque toujours incertain. Fares réussit la plupart des domaines, mais ses erreurs en fractions, géométrie et trigonométrie sont associées à une confiance importante. Elyes présente le socle le plus large et la calibration la plus assurée du groupe, mais trois erreurs procédurales précises restent à corriger avant qu’il ne les automatise.    
 
 ## 3.2 Diagnostic détaillé par domaine
 
-| Domaine                   | Sarah                                                                | Selim                                                                       | Amine                                                     | Fares                                                                   | Décision collective                                              |
-| ------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Nombres relatifs**      | Solide                                                               | Erreur de signe dans un produit de deux négatifs, avec confiance 3          | Réponses justes, mais confiance 1                         | Solide                                                                  | Rituel commun ; remédiation ciblée pour Selim                    |
-| **Fractions**             | Solide sur les deux questions                                        | Soustraction réussie ; multiplication non traitée                           | Soustraction réussie ; multiplication non traitée         | Multiplie les numérateurs mais additionne les dénominateurs             | Diagnostic et reconstruction en séance 1                         |
-| **Puissances**            | Solide                                                               | Solide                                                                      | Réponses justes avec confiance 1                          | Solide                                                                  | Entretien par rituels ; anticipation de la notation scientifique |
-| **Calcul littéral**       | Erreur de signe dans la réduction                                    | Distributivité appliquée au premier terme seulement ; réduction non traitée | Développement juste ; erreur de signe dans les constantes | Solide                                                                  | Priorité collective de séance 2                                  |
-| **Équations**             | Équation simple réussie ; erreur lors du regroupement des constantes | Une équation réussie ; une non traitée                                      | Deux réponses justes mais confiance 1                     | Solide                                                                  | Consolidation et diagnostic en séance 2                          |
-| **Proportionnalité**      | Une réussite peu assurée ; une erreur de durée                       | Erreur fortement assurée sur le retour à l’unité                            | Réponses justes mais peu assurées                         | Solide                                                                  | Reconstruction courte en séance 2                                |
-| **Géométrie – Pythagore** | Hypoténuse trouvée ; longueur manquante calculée par addition        | Additionne ou soustrait directement les longueurs                           | Deux réponses justes avec confiance 1                     | Additionne ou soustrait les longueurs, dont une erreur avec certitude 4 | Priorité collective de séance 3                                  |
-| **Trigonométrie**         | Rapport correct mais deviné ; angle $45^\circ$ au lieu de $60^\circ$ | Rapport correct ; deuxième question non traitée                             | Deux questions non traitées                               | Confond cosinus et sinus avec certitude 4                               | Séance 4 entièrement consacrée au domaine                        |
-| **Statistiques**          | Donne la somme au lieu de la moyenne ; moyenne pondérée juste        | Deux réponses justes, dont une hésitante                                    | Réponses justes mais confiance faible                     | Solide                                                                  | Consolidation courte et transfert en séance 5                    |
+| Domaine                   | Sarah                                                                | Selim                                                                       | Amine                                                     | Fares                                                                   | Elyes                                                                        | Décision collective                                              |
+| ------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| **Nombres relatifs**      | Solide                                                               | Erreur de signe dans un produit de deux négatifs, avec confiance 3          | Réponses justes, mais confiance 1                         | Solide                                                                  | Solide — produits, quotients et priorités correctement maîtrisés               | Rituel commun ; remédiation ciblée pour Selim                    |
+| **Fractions**             | Solide sur les deux questions                                        | Soustraction réussie ; multiplication non traitée                           | Soustraction réussie ; multiplication non traitée         | Multiplie les numérateurs mais additionne les dénominateurs             | Répond (8/27) à (2/3×9/4) au lieu de (3/2) : produits croisés inversés          | Diagnostic et reconstruction en séance 1, y compris pour Elyes   |
+| **Puissances**            | Solide                                                               | Solide                                                                      | Réponses justes avec confiance 1                          | Solide                                                                  | Solide — calcul et produit de puissances de même base réussis                  | Entretien par rituels ; anticipation de la notation scientifique |
+| **Calcul littéral**       | Erreur de signe dans la réduction                                    | Distributivité appliquée au premier terme seulement ; réduction non traitée | Développement juste ; erreur de signe dans les constantes | Solide                                                                  | Distributivité correcte ; traite (-7+3) comme (-10) au lieu de (-4)            | Priorité collective de séance 2, y compris pour Elyes            |
+| **Équations**             | Équation simple réussie ; erreur lors du regroupement des constantes | Une équation réussie ; une non traitée                                      | Deux réponses justes mais confiance 1                     | Solide                                                                  | Solide — deux équations du premier degré correctement résolues                 | Consolidation et diagnostic en séance 2                          |
+| **Proportionnalité**      | Une réussite peu assurée ; une erreur de durée                       | Erreur fortement assurée sur le retour à l’unité                            | Réponses justes mais peu assurées                         | Solide                                                                  | Solide — prix unitaire et vitesse correctement mobilisés                       | Reconstruction courte en séance 2                                |
+| **Géométrie – Pythagore** | Hypoténuse trouvée ; longueur manquante calculée par addition        | Additionne ou soustrait directement les longueurs                           | Deux réponses justes avec confiance 1                     | Additionne ou soustrait les longueurs, dont une erreur avec certitude 4 | Solide — Pythagore correctement utilisé dans les deux configurations           | Priorité collective de séance 3 ; Elyes en approfondissement/transfert |
+| **Trigonométrie**         | Rapport correct mais deviné ; angle $45^\circ$ au lieu de $60^\circ$ | Rapport correct ; deuxième question non traitée                             | Deux questions non traitées                               | Confond cosinus et sinus avec certitude 4                               | Solide — cosinus et calcul d’angle correctement maîtrisés                      | Séance 4 entièrement consacrée au domaine ; Elyes en extension sinus/tangente |
+| **Statistiques**          | Donne la somme au lieu de la moyenne ; moyenne pondérée juste        | Deux réponses justes, dont une hésitante                                    | Réponses justes mais confiance faible                     | Solide                                                                  | Oublie une valeur dans la somme lors du calcul d’une moyenne simple            | Consolidation courte et transfert en séance 5, y compris pour Elyes |
 
 Les détails question par question confirment plusieurs conceptions précises :
 
 * Sarah répond (6x-10) au lieu de (6x-4), (x=3) au lieu de (x=5), (450) km au lieu de (375) km, (18) cm au lieu de (12) cm et (44) au lieu de la moyenne (11). 
 * Selim traite $(-2)\times(-3)$ comme (-6), écrit (6x-5) pour (3(2x-5)), calcule (24) dinars au lieu de (15) et utilise l’addition ou la soustraction directe des longueurs dans les deux questions de Pythagore. 
 * Amine donne de nombreuses réponses justes avec une confiance 1 sur 4 ; il écrit néanmoins (6x+4) au lieu de (6x-4) et ne traite pas la multiplication de fractions ni les deux questions de trigonométrie. 
-* Fares écrit (18/7) pour $2/3\times9/4$, additionne les longueurs dans Pythagore et choisit le côté opposé sur l’hypoténuse pour définir le cosinus. 
+* Fares écrit (18/7) pour $2/3\times9/4$, additionne les longueurs dans Pythagore et choisit le côté opposé sur l’hypoténuse pour définir le cosinus.
+* Elyes écrit (8/27) pour $2/3\times9/4$ (produits croisés inversés), traite (-7+3) comme (-10) au lieu de (-4), et oublie une valeur dans la somme lors du calcul d’une moyenne simple.
 
 ## 3.3 Obstacles didactiques principaux
 
@@ -301,6 +306,27 @@ Amine réussit la quasi-totalité des questions qu’il traite, mais déclare g�
 
 Aucune de ces hypothèses ne doit être retenue sans entretien oral. Le stage doit vérifier ses procédures avant de conclure qu’il « maîtrise sans le savoir ».
 
+### F. Erreurs procédurales isolées sur un profil par ailleurs solide (Elyes)
+
+Contrairement aux obstacles A à E, qui traversent plusieurs profils fragiles, Elyes présente un socle large (six domaines solides sur neuf) associé à une calibration assurée (82 %). Ses trois erreurs sont ponctuelles et procédurales, non conceptuelles :
+
+1. **Multiplication de fractions**
+
+   * conception repérée : (2/3×9/4) répondu (8/27), soit un calcul en croix inversé, proche d’une procédure de division appliquée par erreur à une multiplication ;
+   * obstacle : confusion entre la procédure de multiplication (numérateurs entre eux, dénominateurs entre eux) et celle de division.
+
+2. **Réduction de constantes signées**
+
+   * conception repérée : (-7+3) traité comme (-10) au lieu de (-4) ;
+   * obstacle : addition de deux nombres de signes différents traitée comme une addition de même signe, avec conservation du signe du premier terme et sommation des valeurs absolues.
+
+3. **Moyenne simple**
+
+   * conception repérée : une valeur de la série oubliée dans la somme avant division par l’effectif ;
+   * obstacle : absence de contrôle d’exhaustivité du relevé de données avant le calcul.
+
+Ces trois points sont clairement isolés dans un profil solide : ils doivent être confrontés puis reconstruits rapidement, sans réenseignement massif, en s’appuyant sur ses points d’appui pour le reste du programme.
+
 ## 3.4 Besoins communs
 
 Les priorités communes sont :
@@ -312,7 +338,9 @@ Les priorités communes sont :
 5. trigonométrie ;
 6. lecture et interprétation d’une situation ;
 7. distinction entre calcul, justification et conclusion ;
-8. calibration de la confiance.
+8. calibration de la confiance ;
+9. multiplication de fractions (numérateurs entre eux, dénominateurs entre eux) ;
+10. exhaustivité du relevé de données avant un calcul de moyenne.
 
 ## 3.5 Limites du test initial
 
@@ -413,8 +441,9 @@ Ces notions ne seront pas présentées comme « déjà maîtrisées ». Elles se
 * erreur de signe dans un produit ;
 * usage de l’addition ou de la soustraction des longueurs à la place de Pythagore ;
 * confusion sinus/cosinus ;
-* multiplication erronée des fractions ;
-* fausse proportionnalité ou mauvais passage à l’unité.
+* multiplication erronée des fractions (Selim, Amine, Fares, et Elyes par produits croisés inversés) ;
+* fausse proportionnalité ou mauvais passage à l’unité ;
+* oubli d’une valeur dans une somme avant calcul d’une moyenne (Elyes).
 
 ### Priorité 2 — notions non traitées ou insuffisamment situées
 
@@ -456,11 +485,11 @@ Ces notions ne seront pas présentées comme « déjà maîtrisées ». Elles se
 
 | Séance | Tronc commun                                     | Différenciation majeure                                                                    | Transition vers la Troisième              |
 | ------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------- |
-| 1      | Relatifs, fractions, puissances                  | Reconstruction pour Selim et Fares ; calibration pour Amine ; approfondissement pour Sarah | Notation scientifique, exposants négatifs |
-| 2      | Calcul littéral, équations, proportionnalité     | Distributivité et signes ; équations à plusieurs niveaux ; fonctions pour les plus avancés | Fonction linéaire, double distributivité  |
-| 3      | Pythagore, Thalès, justification                 | Reconstruction géométrique pour Selim et Fares ; consolidation pour Sarah et Amine         | Réciproque, papillon de Thalès            |
-| 4      | Cosinus et triangle rectangle                    | Installation ou rectification selon les profils                                            | Sinus, tangente, triangles semblables     |
-| 5      | Statistiques, probabilités, problème de synthèse | Remédiation sur la moyenne ; extension histogrammes et probabilités composées              | Étendue, histogramme, arbre simple        |
+| 1      | Relatifs, fractions, puissances                  | Reconstruction pour Selim et Fares ; calibration pour Amine ; approfondissement pour Sarah ; priorité fractions pour Elyes, relatifs/puissances en approfondissement | Notation scientifique, exposants négatifs |
+| 2      | Calcul littéral, équations, proportionnalité     | Distributivité et signes ; équations à plusieurs niveaux ; fonctions pour les plus avancés ; priorité calcul littéral pour Elyes, équations/proportionnalité en transfert | Fonction linéaire, double distributivité  |
+| 3      | Pythagore, Thalès, justification                 | Reconstruction géométrique pour Selim et Fares ; consolidation pour Sarah et Amine ; entretien et approfondissement pour Elyes (sans réenseignement massif) | Réciproque, papillon de Thalès            |
+| 4      | Cosinus et triangle rectangle                    | Installation ou rectification selon les profils ; entretien, problèmes de transfert et extension sinus/tangente pour Elyes | Sinus, tangente, triangles semblables     |
+| 5      | Statistiques, probabilités, problème de synthèse | Remédiation sur la moyenne ; extension histogrammes et probabilités composées ; priorité statistiques pour Elyes, probabilités/synthèse en maîtrise | Étendue, histogramme, arbre simple        |
 
 ---
 

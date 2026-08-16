@@ -1,0 +1,13 @@
+# Dépendances Python verrouillées pour le build reproductible.
+# Généré depuis l'environnement de build validé (Python 3.12).
+# Installation : python3 -m pip install -r requirements.lock
+weasyprint==68.1
+pypdf==6.11.0
+pytest==9.0.2
+cssselect2==0.9.0
+tinycss2==1.5.1
+fonttools==4.61.1
+pillow==12.3.0
+pydyf==0.12.1
+pypdfium2==5.11.0
+pyphen==0.17.2

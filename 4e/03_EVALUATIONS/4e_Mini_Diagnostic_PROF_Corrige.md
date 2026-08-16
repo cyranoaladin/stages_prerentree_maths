@@ -19,7 +19,7 @@ Durée maximale : 12 minutes.
 
 8. Décrire ce que ferait une boucle « répéter 4 fois : avancer de 50, tourner de 90° ».
 
-### Correction
+## Correction
 
 1. (17)
 2. (3/4)

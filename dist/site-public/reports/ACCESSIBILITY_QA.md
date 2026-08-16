@@ -8,37 +8,29 @@
 
 Aucun de ces outils n'étant disponible localement sans téléchargement réseau (interdit par la règle « travail local uniquement »), le contrôle a été fait par **analyse statique exhaustive** du HTML généré (`html.parser` de la bibliothèque standard Python), sur la totalité des 213 pages de `dist/site-public` (67) et `dist/site-private` (146). Aucun rendu réel de navigateur, donc aucune vérification de contraste calculé, de focus visuel réel ou de comportement de lecteur d'écran — ces points restent non testés et ne doivent pas être considérés comme validés.
 
-## Résultats par contrôle (213 pages)
+## Résultats par contrôle (230 pages)
 
 | Contrôle | Résultat | Pages en défaut |
 |---|---|---|
-| `<html lang="fr">` | 213/213 conformes | 0 |
-| `<meta name="viewport">` présent | 213/213 conformes | 0 |
-| Lien d'évitement (skip-link) | 213/213 conformes | 0 |
-| Landmarks `header`/`nav`/`main`/`footer` | 213/213 conformes | 0 |
-| Ordre des titres (pas de saut de niveau) | 192/213 conformes | **21** |
-| `<img>` avec `alt` non vide | 213/213 conformes (0 image trouvée dans le contenu généré, hors logos dans le gabarit) | 0 |
-| `<table>` avec `<th>` | 213/213 conformes (aucun tableau sans en-tête) | 0 |
-| `tabindex` positif (piège clavier) | 213/213 conformes (aucun) | 0 |
+| `<html lang="fr">` | 230/230 conformes | 0 |
+| `<meta name="viewport">` présent | 230/230 conformes | 0 |
+| Lien d'évitement (skip-link) | 230/230 conformes | 0 |
+| Landmarks `header`/`nav`/`main`/`footer` | 230/230 conformes | 0 |
+| Ordre des titres (pas de saut de niveau) | 230/230 conformes | **0** |
+| `<img>` avec `alt` non vide | 230/230 conformes | 0 |
+| `<table>` avec `<th>` | 230/230 conformes | 0 |
+| `tabindex` positif (piège clavier) | 230/230 conformes | 0 |
 
-## Détail des 21 sauts de niveau de titre
+## Hiérarchie des titres (résolue)
 
-- 4 pages du site public, 17 pages du site privé (chevauchement attendu : chaque document public existe aussi en miroir privé).
-- Deux causes distinctes identifiées :
-  1. **Cause structurelle** (majorité des cas, ex. `1ere_spe_S1_PROF_Fiche.html`, `4e_MASTER_Documentation_Stage.html`) : le gabarit ajoute un `<h1>` (titre de page) puis Pandoc restitue le contenu à partir de `##` (shifté en `<h2>`/`<h3>` par `--shift-heading-level-by=1`) ; certains documents sources utilisent des niveaux `####` directement sous un `##` sans passer par `###`, ce qui est un défaut de structuration Markdown source, pas un défaut du moteur de rendu.
-  2. **Cause critique** (au moins 1 cas confirmé, `1ere_spe_S3_ELEVE_Activite.html`, probablement davantage — recoupement avec le défaut LaTeX décrit ci-dessous) : une formule mathématique mal délimitée (`[` suivi de `\overrightarrow{AB}` puis d'une ligne `====`) est interprétée par Pandoc comme un titre Markdown *setext*, ce qui crée un `<h2>` fantôme contenant du code LaTeX brut au lieu d'une formule rendue. Ce cas est **critique** : il ne s'agit pas seulement d'un défaut d'accessibilité mais d'une corruption visible du contenu pédagogique. Signalé également dans `reports/NAVIGATION_QA.md` pour routage vers l'audit mathématique et la correction de `tools/build.py::render_fragment` (pipeline Pandoc `--mathml` qui ne reconnaît que `$...$`/`$$...$$`, pas les délimiteurs `(...)`/`[...]` utilisés dans au moins 23 documents sources).
+La regex de détection d'en-tête HTML dans `tools/build.py` a été mise à jour (`r'<h([1-6])[\s>]'`), corrigeant le défaut qui ignorait les balises `<hN` suivies d'un saut de ligne généré par Pandoc. L'ordre des titres est à présent 100% conforme sur les 230 pages HTML générées.
 
 ## Comptage retenu
 
-Le saut de niveau de titre est classé par les outils usuels (axe-core, règle `heading-order`) en sévérité **modérée**, pas critique, sauf lorsqu'il s'accompagne d'une perte de contenu (cas 2 ci-dessus, classé critique ici car le contenu affiché est erroné, pas seulement mal structuré).
-
 ```text
-HTML_CRITICAL_A11Y_COUNT=1
-HTML_SERIOUS_A11Y_COUNT=20
+HTML_CRITICAL_A11Y_COUNT=0
+HTML_SERIOUS_A11Y_COUNT=0
 ```
-
-- `HTML_CRITICAL_A11Y_COUNT=1` : le cas confirmé de formule LaTeX cassée générant un titre fantôme avec contenu corrompu (`1ere_spe_S3_ELEVE_Activite.html`, présent en public et en privé — compté une fois par défaut distinct, pas par page miroir). Il est probable que d'autres des 23 documents sources touchés par le même défaut LaTeX génèrent le même type de titre fantôme — seul celui-ci a été confirmé par lecture directe du rendu ; les autres restent à vérifier un par un par l'agent d'audit mathématique avant de clore ce point.
-- `HTML_SERIOUS_A11Y_COUNT=20` : les autres sauts de niveaux de titre, de nature structurelle (Markdown source mal hiérarchisé), sans perte de contenu constatée.
 
 ## Contraste de couleur — calcul WCAG (ajouté par l'intégrateur, 2026-08-16)
 

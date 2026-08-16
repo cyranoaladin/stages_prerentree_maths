@@ -136,7 +136,7 @@ Sur le même triangle, changer l’angle colorié. Faire constater que :
 
 ## Corrigé rapide à garder sous la main
 
-#### Corrections
+### Corrections
 
 1. Moyenne $6{,}6$, médiane (5), étendue (9)
 2. (2/5)

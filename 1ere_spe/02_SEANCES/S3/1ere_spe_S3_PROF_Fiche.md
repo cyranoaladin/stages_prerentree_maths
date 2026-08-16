@@ -162,7 +162,7 @@ Les vecteurs sont orthogonaux.
 
 ## Corrigé rapide à garder sous la main
 
-#### Correction
+### Correction
 
 1.
 

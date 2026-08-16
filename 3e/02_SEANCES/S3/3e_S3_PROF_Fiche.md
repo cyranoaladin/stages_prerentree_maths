@@ -26,6 +26,13 @@
 - **Selim Mansouri** : Pythagore
 - **Amine Mansouri** : Géométrie justifiée
 - **Fares Laajili** : Pythagore/réciproque
+- **Elyes KEFI** : Pythagore et Thalès en approfondissement ; mini-rappel statistique
+  - *Tâche de départ :* problème de Pythagore en autonomie dès le départ, sans étayage — domaine déjà maîtrisé.
+  - *Niveau de parcours :* entretien et approfondissement, sans réenseignement massif.
+  - *Aide maximale prévue :* aucune aide attendue au départ ; carte A seulement en secours.
+  - *Critère de réussite :* problème de Pythagore ou de Thalès résolu et justifié sans étayage.
+  - *Tâche de transfert :* configuration de Thalès en papillon, ou problème mixte Pythagore/aire.
+  - *Décision :* réussite rapide → mobiliser Elyes en soutien par les pairs ou proposer Thalès en papillon ; blocage → reprendre brièvement la relation fondamentale avant de le relancer en autonomie.
 
 ## Déroulé validé du programme
 
@@ -64,6 +71,7 @@
 | **Selim** | Construction avec carrés ; identification systématique de l’hypoténuse ; exercices sans calcul complexe au départ |
 | **Amine** | Démonstration orale puis écrite ; réciproque et Thalès si ses procédures sont confirmées                          |
 | **Fares** | Confrontation directe de ses réponses (14) et (8) ; réciproque ; triangles semblables en approfondissement        |
+| **Elyes** | Problème de Pythagore en autonomie ; Thalès en configuration papillon ; soutien par les pairs si réussite rapide |
 
 ### Trace écrite attendue
 

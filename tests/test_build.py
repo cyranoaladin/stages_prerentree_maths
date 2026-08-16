@@ -3,6 +3,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from tests.helpers import write_minimal_registry
 from tools.build import build_catalog, classify_document, is_a4_page, output_pdf_name, public_documents
 
 
@@ -35,6 +36,7 @@ def test_catalog_excludes_canonical_sources_and_private_names_from_public_site(t
     (tmp_path / "4e/05_SOURCES/stage_prerentree_quatrieme_maths.md").write_text("# Source")
     (tmp_path / "4e/01_ENSEIGNANT").mkdir(parents=True)
     (tmp_path / "4e/01_ENSEIGNANT/4e_Guide_Formateur.md").write_text("Sinda Chikhaoui")
+    write_minimal_registry(tmp_path, [{"id": "sinda-chikhaoui", "displayName": "Sinda Chikhaoui", "aliases": []}])
 
     catalog = build_catalog(tmp_path)
 

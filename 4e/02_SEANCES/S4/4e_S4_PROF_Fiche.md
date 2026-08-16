@@ -24,6 +24,13 @@
 
 - **Sinda Chikhaoui** : Approfondissement géométrique
 - **Fares Darghouth** : Géométrie - remédiation guidée
+- **Ines KEFI** : Géométrie - confrontation ciblée (hypothèses non fournies, centre de symétrie)
+  - *Tâche de départ :* reprise de l’exercice « angle manquant » et de l’exercice « centre de symétrie », avec consigne explicite de ne citer que les données fournies par l’énoncé.
+  - *Niveau de parcours :* confrontation ciblée, intermédiaire entre la remédiation guidée de Fares et l’approfondissement de Sinda.
+  - *Aide maximale prévue :* jusqu’à la carte « donnée / propriété / conclusion ».
+  - *Critère de réussite :* 3 raisonnements géométriques complets sans hypothèse ajoutée ; un contre-exemple correct de parallélogramme non carré possédant un centre de symétrie.
+  - *Tâche de transfert :* problème de géométrie mêlant somme des angles et symétrie centrale.
+  - *Décision :* réussite rapide → raisonnement démonstratif plus long, niveau approfondissement ; blocage → carte « donnée / propriété / conclusion » guidée pas à pas.
 
 ## Déroulé validé du programme
 
@@ -35,6 +42,7 @@
 
 * remédier aux difficultés géométriques de Fares ;
 * entretenir et approfondir les acquis de Sinda ;
+* confronter les hypothèses non fournies et le centre de symétrie chez Ines ;
 * distinguer une donnée, une propriété et une conclusion ;
 * rédiger un raisonnement simple ;
 * préparer la transition vers Pythagore et la translation.

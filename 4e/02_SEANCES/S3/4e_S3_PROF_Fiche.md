@@ -24,6 +24,13 @@
 
 - **Sinda Chikhaoui** : Distributivité et réduction
 - **Fares Darghouth** : Calcul littéral - diagnostic puis parcours
+- **Ines KEFI** : Calcul littéral - installation (réduction des constantes signées)
+  - *Tâche de départ :* confrontation sur (2-6) : identifier (-4) et non (-8), avant tout exercice de réduction.
+  - *Niveau de parcours :* installation — la distributivité est déjà disponible, l’erreur porte sur le signe des constantes.
+  - *Aide maximale prévue :* jusqu’à la carte B (code couleur pour les constantes positives et négatives).
+  - *Critère de réussite :* 3 réductions d’expressions avec constantes signées correctes, sans erreur répétée à certitude 4.
+  - *Tâche de transfert :* développer puis réduire une expression à deux termes, contrôler par substitution d’une valeur.
+  - *Décision :* réussite rapide → première équation simple en autonomie ; blocage → refaire (2-6) avec les jetons de couleur avant de reprendre la réduction.
 
 ## Déroulé validé du programme
 
@@ -35,6 +42,7 @@
 
 * diagnostiquer le niveau réel de Fares ;
 * stabiliser les acquis de base chez Sinda ;
+* installer le calcul littéral chez Ines (réduction des constantes signées) ;
 * comprendre les différents rôles de la lettre ;
 * substituer une valeur ;
 * réduire des termes semblables ;

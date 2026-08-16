@@ -26,6 +26,13 @@
 - **Selim Mansouri** : Signes et fractions
 - **Amine Mansouri** : Explication numérique
 - **Fares Laajili** : Fractions ciblées
+- **Elyes KEFI** : Fractions (priorité) ; relatifs et puissances en approfondissement
+  - *Tâche de départ :* confrontation individuelle sur (2/3×9/4) : identifier (3/2), pas (8/27), avant tout exercice de fractions.
+  - *Niveau de parcours :* reconstruction ciblée sur la multiplication de fractions ; approfondissement sur relatifs et puissances, déjà solides.
+  - *Aide maximale prévue :* carte B (représentation d’aire pour la multiplication de fractions).
+  - *Critère de réussite :* 5 produits ou quotients de fractions corrects, dont deux avec simplification.
+  - *Tâche de transfert :* produit de fractions dans un problème contextualisé.
+  - *Décision :* réussite rapide → problème de fractions plus complexe et anticipation de la notation scientifique ; blocage → reprendre avec la représentation d’aire guidée.
 
 ## Déroulé validé du programme
 
@@ -39,6 +46,7 @@
 * rectifier l’erreur de signe de Selim ;
 * confronter la règle erronée de multiplication de fractions de Fares ;
 * situer la multiplication de fractions chez Amine et Selim ;
+* confronter les produits croisés inversés d’Elyes en multiplication de fractions ;
 * entretenir les puissances ;
 * commencer le travail sur la confiance.
 
@@ -64,6 +72,7 @@
 | **Selim** | Parcours Consolidation guidé : signes des produits, priorités, multiplication de fractions, verbalisation de chaque étape                    |
 | **Amine** | Diagnostic oral : expliquer deux réponses justes avant d’augmenter la difficulté ; multiplication de fractions ; calibration de la certitude |
 | **Fares** | Conflit cognitif sur (18/7) ; comparaison avec une représentation d’aire ; division de fractions et justification en approfondissement       |
+| **Elyes** | Confrontation directe sur (2/3×9/4) avec représentation d’aire ; division de fractions et notation scientifique en approfondissement |
 
 ### Trace écrite attendue
 

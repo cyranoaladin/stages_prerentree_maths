@@ -9,25 +9,57 @@ import hashlib
 import html
 import json
 import os
+import sys
 from pathlib import Path
 import re
 import shutil
 import subprocess
 import xml.etree.ElementTree as ET
-from datetime import date
+from datetime import date, datetime, timezone
 
 from pypdf import PdfReader, PdfWriter
 from weasyprint import HTML
+
+if __package__ in (None, ""):
+    # Allow `python3 tools/build.py ...` (no package context) as well as
+    # `from tools.build import ...` (tests, `python3 -m tools.build`).
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from tools.student_registry import (
+    RegistryError,
+    Student,
+    all_names,
+    load_students,
+    normalize_name,
+    text_contains_name,
+)
 
 LEVELS = ("4e", "3e", "2nde", "1ere_spe")
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 VERSION = "2026.1"
-STUDENT_NAMES = (
-    "Sinda Chikhaoui", "Fares Darghouth", "Sarah Bargaoui", "Selim Mansouri",
-    "Amine Mansouri", "Fares Laajili", "Noa Maniaci", "Ahmed Bakir",
-    "Donia Khadhrani", "Malek Khadhrani", "Ahmad Beldi",
-)
+
+
+def build_date() -> str:
+    """Deterministic build date so two clean builds of the same commit produce
+    byte-identical HTML/PDF output regardless of wall-clock execution time."""
+    override = os.environ.get("SOURCE_DATE_EPOCH")
+    if override:
+        return datetime.fromtimestamp(int(override), tz=timezone.utc).date().isoformat()
+    try:
+        result = subprocess.run(
+            ["git", "log", "-1", "--format=%cI"], cwd=ROOT,
+            capture_output=True, text=True, check=True,
+        )
+        stamp = result.stdout.strip()
+        if stamp:
+            return stamp[:10]
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+    return date.today().isoformat()
+
+
+BUILD_DATE = build_date()
 
 
 def classify_document(path: Path) -> dict[str, object]:
@@ -91,6 +123,7 @@ def output_pdf_name(document: dict[str, object]) -> str:
 
 def build_catalog(root: Path = ROOT) -> list[dict[str, object]]:
     """Return every operational Markdown file, never a canonical source."""
+    student_names = all_names(load_students(root, validate_filesystem=False))
     catalog: list[dict[str, object]] = []
     for level in LEVELS:
         level_root = root / level
@@ -102,7 +135,7 @@ def build_catalog(root: Path = ROOT) -> list[dict[str, object]]:
             relative = path.relative_to(root)
             document = classify_document(relative)
             text = path.read_text(encoding="utf-8", errors="replace")
-            contains_pii = any(name in text for name in STUDENT_NAMES)
+            contains_pii = any(text_contains_name(text, name) for name in student_names)
             if contains_pii:
                 document["confidential"] = True
                 if document["audience"] != "nominatif_prive":
@@ -252,7 +285,7 @@ def page_shell(title: str, content: str, css_href: str, js_href: str, breadcrumb
   <header class="site-header"><a class="brand" href="{html.escape(relative_link_placeholder())}">Nexus Réussite</a><span class="badge">{html.escape(badge)}</span>{pdf_action}<button class="print-button" type="button" onclick="window.print()">Imprimer</button></header>
   <nav class="breadcrumbs" aria-label="Fil d’Ariane">{breadcrumbs}</nav>
   <main id="contenu"><h1>{safe_title}</h1>{confidentiality}{content}</main>
-  <footer>Version {VERSION} · Génération locale {date.today().isoformat()} · Nexus Réussite</footer>
+  <footer>Version {VERSION} · Génération locale {BUILD_DATE} · Nexus Réussite</footer>
 </body>
 </html>'''
 
@@ -366,7 +399,6 @@ def write_catalog(catalog: list[dict[str, object]]) -> None:
         item["html_public"] = document_html_path(document, False).relative_to(ROOT).as_posix() if not document["confidential"] else None
         item["html_private"] = document_html_path(document, True).relative_to(ROOT).as_posix()
         item["pdf"] = document_pdf_path(document).relative_to(ROOT).as_posix()
-        item["validation_status"] = "pending_qa"
         enriched.append(item)
     destination.write_text(json.dumps(enriched, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -449,6 +481,7 @@ def build_packs(catalog: list[dict[str, object]] | None = None, clean: bool = Tr
     destination = DIST / "packs"
     if clean:
         shutil.rmtree(destination, ignore_errors=True)
+    students = load_students(ROOT, validate_filesystem=False)
     paths: list[Path] = []
     for level in LEVELS:
         documents = [item for item in catalog if item["level"] == level]
@@ -469,11 +502,12 @@ def build_packs(catalog: list[dict[str, object]] | None = None, clean: bool = Tr
             if pack_writer(pack, selection):
                 paths.append(pack)
         private = [item for item in documents if item["confidential"]]
-        for student in sorted({Path(str(item["source"])).parts[2] for item in private if "04_NOMINATIFS" in Path(str(item["source"])).parts}):
-            selection = [item for item in private if f"04_NOMINATIFS/{student}/" in str(item["source"])]
-            display = student.replace("_", "_")
+        level_students = [student for student in students if student.level == level and student.active]
+        for student in level_students:
+            slug = Path(student.directory).name
+            selection = [item for item in private if f"04_NOMINATIFS/{slug}/" in str(item["source"])]
             for suffix, chosen in (("PACK_TRAVAIL_PERSONNALISE", [item for item in selection if not is_teacher(item)]), ("DOSSIER_ENSEIGNANT_CONFIDENTIEL", selection)):
-                pack = destination / "nominatifs-prives" / f"{level}_{display}_{suffix}.pdf"
+                pack = destination / "nominatifs-prives" / f"{level}_{slug}_{suffix}.pdf"
                 if pack_writer(pack, chosen):
                     paths.append(pack)
     return paths
@@ -527,12 +561,21 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
     generated_pdf = list((DIST / "pdf").rglob("*.pdf")) + list((DIST / "packs").rglob("*.pdf"))
     external = 0
     html_errors: list[str] = []
+    heading_order_errors: list[str] = []
     for path in generated_html:
         text = path.read_text(encoding="utf-8", errors="replace")
         if '<html lang="fr">' not in text or '<main id="contenu">' not in text or 'skip-link' not in text:
             html_errors.append(path.relative_to(ROOT).as_posix())
         external += len(re.findall(r'<(?:script|link|img)[^>]+(?:src|href)=["\']https?://', text, flags=re.I))
-    names = STUDENT_NAMES
+        levels = [int(match) for match in re.findall(r'<h([1-6])[\s>]', text, flags=re.I)]
+        previous = None
+        for level in levels:
+            if previous is not None and level > previous + 1:
+                heading_order_errors.append(path.relative_to(ROOT).as_posix())
+                break
+            previous = level
+    students = load_students(ROOT, validate_filesystem=False)
+    directory_to_student = {student.directory: student for student in students}
     student_leaks = 0
     cross_student = 0
     for document in catalog:
@@ -541,9 +584,15 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
         if document["audience"] == "eleve" and re.search(r'(?i)\b(corrig[ée]|réponses? attendues?|barème)\b', text):
             student_leaks += 1
         if "04_NOMINATIFS" in source.parts:
-            owner = source.parts[source.parts.index("04_NOMINATIFS") + 1].replace("_", " ")
-            if any(name in text for name in names if name != owner):
-                cross_student += 1
+            directory = "/".join(source.relative_to(ROOT).parts[:3])
+            owner = directory_to_student.get(directory)
+            owner_id = owner.id if owner else None
+            for student in students:
+                if student.id == owner_id:
+                    continue
+                if any(text_contains_name(text, name) for name in student.names):
+                    cross_student += 1
+                    break
     session_errors = 0
     for level in LEVELS:
         for path in (ROOT / level / "02_SEANCES").glob("S*/*_PROF_Fiche.md"):
@@ -564,7 +613,7 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
         "generated_html": len(generated_html), "generated_pdf": len(generated_pdf), "pages": page_count,
         "external_resources": external, "html_errors": len(html_errors), "student_correction_leaks": student_leaks,
         "cross_student_pii_leaks": cross_student, "session_duration_errors": session_errors,
-        "pdf_structural_failures": len(pdf_failures),
+        "pdf_structural_failures": len(pdf_failures), "heading_order_errors": len(heading_order_errors),
     }
     # Automated counters only. This file is safe to overwrite on every build.
     # NAVIGATION_QA.md, ACCESSIBILITY_QA.md, MATH_CONTENT_AUDIT.md and PDF_STRUCTURAL_QA.md
@@ -579,10 +628,34 @@ def qa(catalog: list[dict[str, object]] | None = None) -> dict[str, int]:
         f"- Échecs d'ouverture/chiffrement/vide PDF : {len(pdf_failures)}\n"
         f"- Fiches professeur à 120 minutes : {20 - session_errors}/20\n"
         f"- Fuites de corrigé côté élève détectées : {student_leaks}\n"
-        f"- Fuites de PII inter-élèves détectées : {cross_student}\n\n"
+        f"- Fuites de PII inter-élèves détectées : {cross_student}\n"
+        f"- Sauts de niveaux de titre (heading-order) : {len(heading_order_errors)}\n\n"
         "Pour l'audit détaillé (méthode, preuves, sévérité), voir NAVIGATION_QA.md, ACCESSIBILITY_QA.md, "
         "MATH_CONTENT_AUDIT.md et PDF_STRUCTURAL_QA.md dans ce même dossier.\n",
         encoding="utf-8",
+    )
+    # content/catalog.json intentionally carries no validation_status field: a generated
+    # artifact should not self-declare its own QA state. QA_STATUS.json is the single,
+    # deterministic, hash-linked source of truth for whether a given catalog passed QA.
+    catalog_path = ROOT / "content/catalog.json"
+    automated_failure_keys = (
+        "html_errors", "student_correction_leaks", "cross_student_pii_leaks",
+        "session_duration_errors", "pdf_structural_failures", "heading_order_errors",
+    )
+    automated_status = "validated" if all(counts[key] == 0 for key in automated_failure_keys) else "failed"
+    qa_status = {
+        "schemaVersion": "nexus-qa-status-v1",
+        "catalogSha256": sha256(catalog_path) if catalog_path.exists() else None,
+        "automatedStatus": automated_status,
+        "counters": counts,
+        "note": (
+            "automatedStatus couvre uniquement les vérifications automatisées de ce fichier. "
+            "Le statut de livraison définitif (visuel, mathématique, navigation) est documenté "
+            "dans reports/FINAL_DELIVERY_REPORT.md."
+        ),
+    }
+    (reports / "QA_STATUS.json").write_text(
+        json.dumps(qa_status, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     return counts
 
@@ -591,6 +664,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("audit", "html", "pdf", "packs", "qa", "all"))
     args = parser.parse_args()
+    try:
+        load_students(ROOT, validate_filesystem=True)
+    except RegistryError as error:
+        raise SystemExit(f"Build interrompu : {error}") from error
     catalog = build_catalog()
     if args.command == "audit":
         write_catalog(catalog)

@@ -18,6 +18,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Sinda Chikhaoui | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | |
 | Fares Darghouth | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | 0-1-2-3-4 | |
+| Ines KEFI | | | | | | | | | | | | 
 
 
 ## Séance 1 - Observations
@@ -28,6 +29,7 @@
 |---|---:|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | | |
 | Fares Darghouth | | | | | | |
+| Ines KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -39,6 +41,7 @@
 |---|---:|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | | |
 | Fares Darghouth | | | | | | |
+| Ines KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -50,6 +53,7 @@
 |---|---:|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | | |
 | Fares Darghouth | | | | | | |
+| Ines KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -61,6 +65,7 @@
 |---|---:|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | | |
 | Fares Darghouth | | | | | | |
+| Ines KEFI | | | | | | | 
 
 <div class="page-break"></div>
 
@@ -72,6 +77,7 @@
 |---|---:|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | | |
 | Fares Darghouth | | | | | | |
+| Ines KEFI | | | | | | | 
 
 
 ## Bilan de fin de stage
@@ -80,6 +86,7 @@
 |---|---|---|---|---|---|
 | Sinda Chikhaoui | | | | | |
 | Fares Darghouth | | | | | |
+| Ines KEFI | | | | | | 
 
 ## Grille source du programme
 

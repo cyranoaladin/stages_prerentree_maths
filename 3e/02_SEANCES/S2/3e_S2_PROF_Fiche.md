@@ -26,6 +26,13 @@
 - **Selim Mansouri** : Distributivité/proportionnalité
 - **Amine Mansouri** : Calcul littéral et équations
 - **Fares Laajili** : Algèbre en approfondissement
+- **Elyes KEFI** : Calcul littéral (priorité) ; équations et proportionnalité en transfert
+  - *Tâche de départ :* confrontation sur (-7+3) : identifier (-4), pas (-10), avant tout exercice de réduction.
+  - *Niveau de parcours :* installation de la réduction des constantes signées ; transfert sur équations et proportionnalité, déjà solides.
+  - *Aide maximale prévue :* code couleur pour séparer termes en x et constantes signées.
+  - *Critère de réussite :* 4 réductions d’expressions avec constantes signées correctes.
+  - *Tâche de transfert :* équation ou problème de proportionnalité nécessitant une réduction préalable.
+  - *Décision :* réussite rapide → problème mêlant équation et proportionnalité ; blocage → refaire (-7+3) avec les jetons de couleur avant de reprendre.
 
 ## Déroulé validé du programme
 
@@ -64,6 +71,7 @@
 | **Selim** | Modèle d’aire pour la distributivité ; réduction très guidée ; passage à l’unité explicite ; diagnostic de la deuxième équation |
 | **Amine** | Réduction avec signes ; justification orale ; équations plus complexes si les procédures sont réellement maîtrisées             |
 | **Fares** | Factorisation simple, équations avec parenthèses, introduction de (f(x)=ax+b) et double distributivité en prolongement          |
+| **Elyes** | Confrontation directe sur (-7+3) avec code couleur des constantes signées ; équation ou proportionnalité en transfert |
 
 ### Trace écrite attendue
 

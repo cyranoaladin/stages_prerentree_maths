@@ -24,6 +24,13 @@
 
 - **Sinda Chikhaoui** : Aire du triangle et figures composées
 - **Fares Darghouth** : Aire/périmètre - reconstruction
+- **Ines KEFI** : Aires et périmètres - approfondissement (figures composées)
+  - *Tâche de départ :* problème de figure composée (rectangle + triangle) en autonomie dès le départ, sans étayage initial.
+  - *Niveau de parcours :* approfondissement — domaine déjà solide, à la différence de Sinda et Fares en reconstruction.
+  - *Aide maximale prévue :* aucune aide attendue au départ ; carte A seulement en secours.
+  - *Critère de réussite :* aire et périmètre d’une figure composée corrects, unité indiquée, sans oubli de la division par deux pour la partie triangulaire.
+  - *Tâche de transfert :* agrandissement ou réduction d’une figure composée, avec justification du facteur utilisé.
+  - *Décision :* réussite rapide → mobiliser Ines en soutien par les pairs sur ce point précis ; blocage → reprendre brièvement la décomposition rectangle/triangle avant de la relancer en autonomie.
 
 ## Déroulé validé du programme
 
