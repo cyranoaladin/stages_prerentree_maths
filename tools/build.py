@@ -438,6 +438,80 @@ def add_pdf_metadata(path: Path, document: dict[str, object]) -> None:
         writer.write(stream)
 
 
+def sanitize_pdf_local_file_links(path: Path) -> int:
+    """Remove non-portable local file:// link annotations from a PDF.
+
+    WeasyPrint resolves relative HTML links against the local HTML base URL
+    when producing PDF annotations.  This can expose absolute workstation
+    paths such as file:///home/... in generated PDFs.
+
+    Only URI actions whose target starts with ``file:`` are removed.
+    Web URIs, internal destinations, metadata, pages and other annotations
+    are preserved.
+
+    Returns the number of removed annotations.
+    """
+    reader = PdfReader(path)
+    writer = PdfWriter()
+
+    # Clone the complete document so metadata, document root, page tree,
+    # outlines and other document-level structures are retained.
+    writer.clone_document_from_reader(reader)
+
+    removed = 0
+
+    for page in writer.pages:
+        annots = page.get("/Annots")
+        if not annots:
+            continue
+
+        annots_array = annots.get_object()
+        kept = []
+
+        for ref in list(annots_array):
+            annot = ref.get_object()
+
+            remove = False
+
+            if annot.get("/Subtype") == "/Link":
+                action = annot.get("/A")
+
+                if action:
+                    action = action.get_object()
+
+                    if action.get("/S") == "/URI":
+                        uri = str(action.get("/URI", ""))
+
+                        if uri.lower().startswith("file:"):
+                            remove = True
+
+            if remove:
+                removed += 1
+            else:
+                kept.append(ref)
+
+        annots_array.clear()
+        annots_array.extend(kept)
+
+        if not annots_array:
+            del page["/Annots"]
+
+    # Write beside the original file and atomically replace it only after
+    # pypdf has successfully completed the rewrite.
+    temporary = path.with_name(f".{path.name}.sanitize.tmp")
+
+    try:
+        with temporary.open("wb") as stream:
+            writer.write(stream)
+
+        temporary.replace(path)
+
+    finally:
+        temporary.unlink(missing_ok=True)
+
+    return removed
+
+
 def build_pdf(catalog: list[dict[str, object]] | None = None, clean: bool = True) -> list[Path]:
     catalog = catalog or build_html()
     if clean:
@@ -449,6 +523,7 @@ def build_pdf(catalog: list[dict[str, object]] | None = None, clean: bool = True
         pdf_path.parent.mkdir(parents=True, exist_ok=True)
         HTML(filename=str(html_path), base_url=str(html_path.parent)).write_pdf(str(pdf_path))
         add_pdf_metadata(pdf_path, document)
+        sanitize_pdf_local_file_links(pdf_path)
         paths.append(pdf_path)
     return paths
 
