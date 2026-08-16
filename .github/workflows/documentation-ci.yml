@@ -40,7 +40,18 @@ jobs:
         run: |
           git status --porcelain
           git diff --exit-code -- content/catalog.json reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json 'dist/site-public' 'dist/site-private' 'dist/reports'
-          git diff -I ',[0-9a-f]\{64\},' --exit-code -- MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv
+          python3 -c '
+          import csv, subprocess, pathlib
+          def check_manifest(fpath):
+              res = subprocess.run(["git", "show", f"HEAD:{fpath}"], capture_output=True, text=True, check=True)
+              committed = [(r[0], r[2]) for r in csv.reader(res.stdout.splitlines()) if r]
+              current = [(r[0], r[2]) for r in csv.reader(pathlib.Path(fpath).read_text(encoding="utf-8").splitlines()) if r]
+              if committed != current:
+                  raise SystemExit(f"Manifest structure mismatch in {fpath}!")
+              print(f"Manifest {fpath} structure matches baseline ({len(current)} rows).")
+          check_manifest("MANIFEST_PUBLIC.csv")
+          check_manifest("MANIFEST_PRIVATE.csv")
+          '
 
       - name: Structural QA check on all generated PDFs
         run: |
