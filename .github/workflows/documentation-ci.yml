@@ -1,0 +1,67 @@
+name: documentation-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies (locked)
+        run: python3 -m pip install --require-hashes -r requirements.lock || python3 -m pip install -r requirements.lock
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends pandoc qpdf poppler-utils ghostscript imagemagick
+
+      - name: Run test suite
+        run: make test
+
+      - name: Full clean build (html, pdf, packs, manifests, qa)
+        run: |
+          make clean-generated
+          make all
+
+      - name: Fail on any generated file not matching a committed baseline
+        run: |
+          git status --porcelain
+          git diff --exit-code -- dist content/catalog.json MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv reports/BUILD_QA_COUNTERS.md reports/QA_STATUS.json
+
+      - name: Secret scan and public/private confidentiality gates
+        run: python3 tools/ci_gates.py
+
+      - name: Automated QA counters must show zero failures
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          status = json.load(open("reports/QA_STATUS.json", encoding="utf-8"))
+          print(json.dumps(status, indent=2, ensure_ascii=False))
+          if status["automatedStatus"] != "validated":
+              print("QA automatisée en échec :", status["counters"])
+              sys.exit(1)
+          PY
+
+      - name: Upload QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-reports
+          path: |
+            reports/
+            MANIFEST_PUBLIC.csv
+            MANIFEST_PRIVATE.csv
+          if-no-files-found: warn

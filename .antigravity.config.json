@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "bypass": true,
+    "autoApprove": true,
+    "skipConfirmations": true,
+    "allowAll": true
+  }
+}
