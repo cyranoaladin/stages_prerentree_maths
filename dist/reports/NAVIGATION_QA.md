@@ -1,5 +1,16 @@
 # QA navigation et expérience utilisateur — 2026-08-16
 
+**Mise à jour de l'intégrateur (même jour, après ce contrôle initial)** : les deux causes listées ci-dessous
+ont été corrigées et re-vérifiées sur le build final — `tools/build.py:256` corrigé (`../../site-private/`),
+`reports/FINAL_DELIVERY_REPORT.md` écrit. Un nouveau contrôle de liens sur le build final (224 pages,
+78 + 146 après la scission des documents de remédiation en ERR-008) confirme **BROKEN_LINK_COUNT = 0**.
+Le constat transverse sur la syntaxe mathématique `(...)`/`[...]` a également été traité dans son
+intégralité, avec un défaut plus grave découvert ensuite par inspection visuelle (WeasyPrint et le rendu
+MathML) — voir `reports/SOURCE_ERRATA.md` ERR-006 à ERR-009 pour l'historique complet. Le corps du rapport
+ci-dessous est conservé tel quel, comme trace de l'audit initial et de son raisonnement.
+
+---
+
 Portée : `dist/site-public` (67 pages HTML) et `dist/site-private` (146 pages HTML), générés par `python3 tools/build.py all` après la correction du bug de classification des buckets dans `tools/build.py`. Contrôle automatisé par script Python (`html.parser`), pas d'échantillonnage — toutes les pages des deux sites ont été analysées.
 
 ## Constat transverse prioritaire (hors périmètre de ce rapport, à router vers l'audit mathématique)

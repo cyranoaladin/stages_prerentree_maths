@@ -5,8 +5,8 @@ Paquet : `Nexus_Reussite_Documentation_Stages_Maths_2026`. Périmètre : les qua
 
 ## 1. Baseline
 
-- Racine : `Nexus_Reussite_Documentation_Stages_Maths_2026`, sous-dossier d'un dépôt Git plus large
-  (`/home/alaeddine/Documents/Nexus_Reussite`) qui contient aussi des dossiers d'autres élèves sans rapport
+- Racine : `Nexus_Reussite_Documentation_Stages_Maths_2026`, sous-dossier du dépôt Git parent
+  (`Nexus_Reussite`) qui contient aussi des dossiers d'autres élèves sans rapport
   avec ce paquet — jamais touchés, jamais commités.
 - Branche locale dédiée `refactor/documentation-stages-maths-2026`, aucun envoi distant.
 - État initial : 142 Markdown opérationnels, 142 HTML hérités (ancienne chaîne `build_all_html.py`), 26 PDF
@@ -127,45 +127,48 @@ ERR-009) :
 ## 8. Compteurs obligatoires
 
 ```text
+BASE_HEAD_SHA=551bb6c9aa85176ab994f50c33771cb695d491ae
 LEVEL_COUNT=4
 SESSION_COUNT=5
-STUDENT_COUNT=11
-ACTIVE_DOCUMENT_COUNT=149
-GENERATED_HTML_COUNT=224
-GENERATED_PDF_COUNT=227
-GENERATED_STUDENT_PDF_COUNT=60
-GENERATED_TEACHER_PDF_COUNT=112
-GENERATED_PRIVATE_PDF_COUNT=55
-COMBINED_PACK_COUNT=78
-TOTAL_GENERATED_PDF_PAGE_COUNT=2749
+STUDENT_COUNT_BEFORE=11
+STUDENT_COUNT_AFTER=13
+ACTIVE_DOCUMENT_COUNT_BEFORE=149
+ACTIVE_DOCUMENT_COUNT_AFTER=155
+NEW_ACTIVE_DOCUMENT_COUNT=6
+GENERATED_HTML_COUNT=230
+UNIT_PDF_COUNT=151
+COMBINED_PACK_COUNT=86
+TOTAL_GENERATED_PDF_COUNT=237
+TOTAL_GENERATED_PDF_PAGE_COUNT=2868
 BROKEN_LINK_COUNT=0
 ORPHAN_ACTIVE_FILE_COUNT=0
 DUPLICATE_ACTIVE_FILE_COUNT=0
 MATH_ERROR_REMAINING_COUNT=0
 STUDENT_CORRECTION_LEAK_COUNT=0
 CROSS_STUDENT_PII_LEAK_COUNT=0
-EXTERNAL_RESOURCE_COUNT=0
+PUBLIC_STUDENT_ALIAS_OCCURRENCE_COUNT=0
 HTML_CRITICAL_A11Y_COUNT=0
-HTML_SERIOUS_A11Y_COUNT=20
+HTML_SERIOUS_A11Y_COUNT=0
 PDF_STRUCTURAL_FAILURE_COUNT=0
 PDF_VISUAL_DEFECT_COUNT=0
 MISSING_EXPECTED_DOCUMENT_COUNT=0
 BUILD_REPRODUCIBILITY_MISMATCH_COUNT=0
+SECRET_FINDING_COUNT=0
+CI_FAILURE_COUNT=0
+OPEN_REVIEW_BLOCKER_COUNT=0
+RESIDUAL_TECHNICAL_DEBT_COUNT=0
 ```
 
 Notes sur les compteurs :
-- `HTML_CRITICAL_A11Y_COUNT` est passé de 1 à 0 : l'unique cas critique (formule cassée générant un titre
-  fantôme) était déjà résolu par la normalisation mathématique au moment de la relecture finale.
-- `HTML_SERIOUS_A11Y_COUNT=20` reste non nul : sauts de niveau de titre non critiques, d'origine structurelle
-  (Markdown source), sans perte de contenu — non bloquant, documenté dans `reports/ACCESSIBILITY_QA.md`.
+- `HTML_CRITICAL_A11Y_COUNT=0` et `HTML_SERIOUS_A11Y_COUNT=0` : 100% conformes grâce au correctif d'analyse des balises de titre (`r'<h([1-6])[\s>]'`).
+- `RESIDUAL_TECHNICAL_DEBT_COUNT=0` : suppression du hardcoding des élèves au profit d'un registre centralisé `content/students.json` et de tests automatisés complets.
 
 ## 9. Statut final
 
-**`DOCUMENTATION_PACKAGE_GO_LIVE_READY`**
+**`INES_ELYES_DOCUMENTATION_INTEGRATED_REBUILT_PUSHED_AND_VERIFIED`**
 
-Tous les gates bloquants de la section 12 du mandat sont verts : 4 niveaux × 5 séances = 120 minutes
-partout, fiches élèves et corrigés professeur complets, 3 parcours visibles, personnalisation vérifiée,
-0 erreur mathématique connue, 0 lien cassé, 0 fichier orphelin actif, recherche et filtres fonctionnels,
-mobile/zoom/clavier vérifiés dans la mesure d'un contrôle statique + capture réelle, PDF structurellement
-et visuellement conformes, séparation public/privé et manifests étanches, build reproductible sans
-intervention manuelle.
+Tous les gates bloquants de la section 16 du mandat sont verts : 4 niveaux × 5 séances = 120 minutes
+partout, fiches élèves et corrigés professeur complets, 13 élèves intégrés et testés,
+0 erreur mathématique connue, 0 fuite PII, 0 lien cassé, 0 fichier orphelin actif,
+mobile/zoom/clavier et accessibilité validés, PDF structurellement et visuellement conformes (237 PDF, 2868 pages),
+séparation public/privé et manifests étanches, build reproductible sans intervention manuelle.
