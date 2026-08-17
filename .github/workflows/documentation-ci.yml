@@ -21,7 +21,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python dependencies (locked)
-        run: python3 -m pip install -r requirements.lock
+        run: python3 -m pip install --require-hashes -r requirements.lock
 
       - name: Install system dependencies
         run: |

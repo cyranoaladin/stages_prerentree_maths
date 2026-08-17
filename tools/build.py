@@ -15,7 +15,6 @@ import re
 import shutil
 import subprocess
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
 
 from pypdf import PdfReader, PdfWriter
 from weasyprint import HTML
@@ -38,28 +37,6 @@ LEVELS = ("4e", "3e", "2nde", "1ere_spe")
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 VERSION = "2026.1"
-
-
-def build_date() -> str:
-    """Deterministic build date so two clean builds of the same commit produce
-    byte-identical HTML/PDF output regardless of wall-clock execution time."""
-    override = os.environ.get("SOURCE_DATE_EPOCH")
-    if override:
-        return datetime.fromtimestamp(int(override), tz=timezone.utc).date().isoformat()
-    try:
-        result = subprocess.run(
-            ["git", "log", "-1", "--format=%cI"], cwd=ROOT,
-            capture_output=True, text=True, check=True,
-        )
-        stamp = result.stdout.strip()
-        if stamp:
-            return stamp[:10]
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        pass
-    return date.today().isoformat()
-
-
-BUILD_DATE = build_date()
 
 
 def extract_human_title(path: Path, root: Path = ROOT) -> str:
@@ -308,7 +285,7 @@ def page_shell(title: str, content: str, css_href: str, js_href: str, breadcrumb
   <header class="site-header"><a class="brand" href="{html.escape(relative_link_placeholder())}">Nexus Réussite</a><span class="badge">{html.escape(badge)}</span>{pdf_action}<button class="print-button" type="button" onclick="window.print()">Imprimer</button></header>
   <nav class="breadcrumbs" aria-label="Fil d’Ariane">{breadcrumbs}</nav>
   <main id="contenu">{main_header}{confidentiality}{content}</main>
-  <footer>Version {VERSION} · Génération locale {BUILD_DATE} · Nexus Réussite</footer>
+  <footer>Version {VERSION} · Nexus Réussite</footer>
 </body>
 </html>'''
 
@@ -463,7 +440,7 @@ def build_html(catalog: list[dict[str, object]] | None = None, clean: bool = Tru
 def add_pdf_metadata(path: Path, document: dict[str, object]) -> None:
     reader = PdfReader(path)
     writer = PdfWriter()
-    writer.append(reader)
+    writer.clone_document_from_reader(reader)
     writer.add_metadata({
         "/Title": str(document["title"]), "/Author": "Nexus Réussite", "/Subject": f"{document['level']} — {document['audience']}",
         "/Keywords": f"Nexus Réussite, mathématiques, {document['level']}, {document['type']}", "/Lang": "fr-FR",
@@ -646,7 +623,7 @@ def write_manifests() -> tuple[Path, Path]:
     private = ROOT / "MANIFEST_PRIVATE.csv"
     for destination, roots in ((public, [DIST / "site-public", DIST / "pdf", DIST / "packs" / "eleves", DIST / "packs" / "enseignants"]), (private, [DIST / "site-private", DIST / "pdf", DIST / "packs" / "nominatifs-prives"])):
         with destination.open("w", newline="", encoding="utf-8") as stream:
-            writer = csv.writer(stream)
+            writer = csv.writer(stream, lineterminator="\n")
             writer.writerow(["path", "sha256", "confidential"])
             for root in roots:
                 if not root.exists():
