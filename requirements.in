@@ -2,3 +2,6 @@
 weasyprint==68.1
 pypdf==6.11.0
 pytest==9.0.2
+# Validation des sorties JSON des analyseurs S5 (tests des suites S5_cloture
+# et S5_post_distribution_v3).
+jsonschema==4.26.0
