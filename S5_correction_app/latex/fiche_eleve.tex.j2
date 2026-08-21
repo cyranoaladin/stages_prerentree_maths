@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{nexus_bilan}
+\setnexusheader{\VAR{ h.level_label }}{Ma fiche de rentrée --- \VAR{ h.student_name }}
+\begin{document}
+
+\bilancover{Ma fiche de rentrée}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject }}{À garder dans le classeur, et à relire en septembre}
+
+\sectiontitle{Ce que je sais bien faire}
+\begin{successbox}
+\VAR{ blocks.sais_faire }
+\end{successbox}
+
+\BLOCK{ if blocks.decouverte }
+\sectiontitle{Ce que j'ai découvert}
+\begin{goalbox}
+\VAR{ blocks.decouverte }
+\end{goalbox}
+\BLOCK{ endif }
+
+\sectiontitle{Ce que je dois consolider}
+\VAR{ blocks.consolider }
+
+\sectiontitle{Mon objectif pour septembre}
+\begin{methodbox}
+\VAR{ blocks.objectif }
+\end{methodbox}
+
+\sectiontitle{Ma méthode}
+\VAR{ blocks.methode }
+
+\vspace{4mm}
+\begin{graybox}
+\textbf{Mes quatre semaines.} Je coche quand c'est fait.
+\par\vspace{1.5mm}
+\BLOCK{ for week in plan.weeks }
+$\square$ Semaine \VAR{ week.week } : \BLOCK{ if week.objectives }\BLOCK{ for o in week.objectives }\VAR{ o.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }\BLOCK{ else }réinvestissement libre\BLOCK{ endif }
+\par\vspace{1mm}
+\BLOCK{ endfor }
+\end{graybox}
+
+\end{document}

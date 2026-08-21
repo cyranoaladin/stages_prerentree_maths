@@ -1,0 +1,16 @@
+{
+  "schema": "nexus-s5-source-verification-v3",
+  "generated_on": "2026-08-21",
+  "source_mode": "live",
+  "manifest": "S5_cloture/_audit/source_evidence_manifest.json",
+  "reference_root": "Nexus_Reussite_Documentation_Stages_Maths_2026",
+  "sources_declared": 210,
+  "sources_verified": 210,
+  "sources_missing": [],
+  "sources_hash_mismatch": [],
+  "sources_malformed": [],
+  "standalone_bundle": false,
+  "limitation": null,
+  "verdict": "PASS",
+  "regle": "aucune source manquante n'est fabriquée ; une absence est déclarée."
+}

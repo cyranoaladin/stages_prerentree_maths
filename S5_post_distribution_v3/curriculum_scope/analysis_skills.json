@@ -1,0 +1,73 @@
+{
+  "schema": "nexus-s5-analysis-skills-v3",
+  "generated_on": "2026-08-21",
+  "objet": "alias analytiques créés pour ne plus fusionner, sous un même identifiant, une compétence de l'année N-1 et une notion de l'année N. Les skill_id d'origine sont conservés tels quels pour la compatibilité.",
+  "aliases": [
+    {
+      "analysis_skill_id": "M1RE_SUITES_RECURRENCE_BRIDGE",
+      "label": "Suite définie par récurrence, notation u_(n+1) (découverte de Première)",
+      "curriculum_scope": "bridge_n",
+      "original_skill_ids": [
+        "M1RE_POURC_02"
+      ],
+      "level_keys": [
+        "1ere_spe"
+      ]
+    },
+    {
+      "analysis_skill_id": "M3_LIT_DOUBLE_DISTRIB_BRIDGE",
+      "label": "Double distributivité (a+b)(c+d) — découverte de Troisième",
+      "curriculum_scope": "bridge_n",
+      "original_skill_ids": [
+        "M3E_LIT_01"
+      ],
+      "level_keys": [
+        "3e"
+      ]
+    },
+    {
+      "analysis_skill_id": "M3_TRIGO_COS_NM1",
+      "label": "Nommer les côtés d'un triangle rectangle et employer le cosinus (acquis de Quatrième)",
+      "curriculum_scope": "n_minus_1",
+      "original_skill_ids": [
+        "M3E_TRIG_01"
+      ],
+      "level_keys": [
+        "3e"
+      ]
+    },
+    {
+      "analysis_skill_id": "M3_TRIGO_SIN_BRIDGE",
+      "label": "Sinus et tangente : identification du rapport (programme de Troisième)",
+      "curriculum_scope": "bridge_n",
+      "original_skill_ids": [
+        "M3E_TRIG_01"
+      ],
+      "level_keys": [
+        "3e"
+      ]
+    },
+    {
+      "analysis_skill_id": "M4E_REL_PROD_BRIDGE",
+      "label": "Produit de deux relatifs et justification du signe (découverte de Quatrième)",
+      "curriculum_scope": "bridge_n",
+      "original_skill_ids": [
+        "M4E_REL_01"
+      ],
+      "level_keys": [
+        "4e"
+      ]
+    },
+    {
+      "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+      "label": "Algorithmes de recherche : séquentielle et dichotomique (programme de Première NSI)",
+      "curriculum_scope": "bridge_n",
+      "original_skill_ids": [
+        "NSI1_ALGO_01"
+      ],
+      "level_keys": [
+        "1re_nsi"
+      ]
+    }
+  ]
+}

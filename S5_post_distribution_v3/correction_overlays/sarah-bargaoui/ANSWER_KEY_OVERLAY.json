@@ -1,0 +1,799 @@
+{
+  "schema": "nexus-s5-answer-key-overlay-v3",
+  "generated_on": "2026-08-21",
+  "confidential": true,
+  "student_id": "sarah-bargaoui",
+  "level_key": "3e",
+  "subject": "Mathématiques",
+  "source_answer_key": "S5_cloture/3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/answer_key.json",
+  "source_answer_key_status": "conservé intact comme preuve de ce qui existait à la distribution",
+  "items": [
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$7$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_REL_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_REL_01",
+          "analysis_skill_id": "M3E_REL_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "résultat $7$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$\\dfrac{3}{2}$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_FRAC_02",
+          "analysis_skill_id": "M3E_FRAC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$\\frac{3}{2}$ ou $1{,}5$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$4x - 11$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_LIT_02",
+          "analysis_skill_id": "M3E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$4x-11$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x = 6$",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_EQ_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_EQ_01",
+          "analysis_skill_id": "M3E_EQ_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$x=6$ avec au moins une étape écrite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$5x - 7$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A5_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_LIT_02",
+          "analysis_skill_id": "M3E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$5x-7$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x = 5$",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_EQ_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_A6_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_EQ_01",
+          "analysis_skill_id": "M3E_EQ_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$x=5$ avec au moins une étape écrite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$AC = 16$ cm ; $AC < BC$ car l'hypoténuse est le plus grand côté.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.5,
+          "original_skill_id": "M3E_GEO_01",
+          "analysis_skill_id": "M3E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "relation correcte, théorème cité, $AC=16$ cm",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M3E_GEO_01",
+          "analysis_skill_id": "M3E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "contrôle de vraisemblance argumenté",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$AB$ : côté adjacent ; $BC$ : hypoténuse ; $\\cos\\widehat{B}=\\frac{5}{13}\\approx 0{,}3846$ donc $\\widehat{B}\\approx 67^\\circ$ ; il faudrait le sinus.",
+      "estimated_duration_minutes": 5.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_TRIG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M3E_TRIG_01",
+          "analysis_skill_id": "M3_TRIGO_COS_NM1",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "côtés correctement nommés et rapport correct",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "LECTURE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "nommer le côté adjacent et l'hypoténuse puis choisir le cosinus est un attendu de Quatrième."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M3E_TRIG_01",
+          "analysis_skill_id": "M3_TRIGO_COS_NM1",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "mesure de l'angle exacte au degré près",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "LECTURE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "calcul d'un angle à partir du cosinus : attendu de Quatrième."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B2_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.5,
+          "original_skill_id": "M3E_TRIG_01",
+          "analysis_skill_id": "M3_TRIGO_SIN_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "procedure",
+          "desc": "sinus identifié à la question 3",
+          "accepted_methods": [],
+          "interpretation_limits": [
+            "une non-réussite ne documente aucune fragilité sur la trigonométrie de Quatrième, mesurée aux critères 1 et 2 du même item"
+          ],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "LECTURE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "la question 3 demande le rapport liant le côté opposé et l'hypoténuse : le sinus, qui appartient au programme de Troisième et non à celui de Quatrième."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$140$ km/h ; moyenne pondérée $=\\frac{28+27}{5}=11$, comprise entre $9$ et $14$.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_STAT_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_PROP_01",
+          "analysis_skill_id": "M3E_PROP_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "vitesse exacte, conversion de 1 h 30 en 1,5 h visible",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B3_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.7,
+          "original_skill_id": "M3E_STAT_01",
+          "analysis_skill_id": "M3E_STAT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "moyenne pondérée exacte, somme des coefficients correcte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B3_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 0.3,
+          "original_skill_id": "M3E_STAT_01",
+          "analysis_skill_id": "M3E_STAT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "encadrement entre 9 et 14 écrit",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$210$ pages ; $AB = 7$ cm.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_PROP_01",
+          "analysis_skill_id": "M3E_PROP_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "nombre de pages exact, relation écrite avant les nombres",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_B4_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_GEO_01",
+          "analysis_skill_id": "M3E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$AB = 7$ cm, relation de Pythagore écrite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "original_points": 4,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$5$ m ; environ $16^\\circ$ ; pente $\\approx 29{,}2\\,\\% > 5\\,\\%$ : non conforme ; $C(5)=545$ TND, $120$ est la part fixe.",
+      "estimated_duration_minutes": 9.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_TRIG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_GEO_01",
+          "analysis_skill_id": "M3E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "longueur exacte, théorème cité",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_TRIG_01",
+          "analysis_skill_id": "M3_TRIGO_COS_NM1",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "angle exact au degré près, rapport correctement choisi",
+          "accepted_methods": [
+            "cosinus de l'angle au sol, à partir de la longueur au sol et de la rampe",
+            "tangente, à partir de la hauteur et de la longueur au sol",
+            "sinus, à partir de la hauteur et de la rampe"
+          ],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "la longueur de la rampe, c'est-à-dire l'hypoténuse, a été calculée à la question précédente : l'angle au sol s'obtient donc par le cosinus, acquis de Quatrième. Le contre-calcul de référence du dossier emploie lui-même arccos(4,8/5)."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_PROP_01",
+          "analysis_skill_id": "M3E_PROP_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "pente exprimée en pourcentage et conclusion explicite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C1_c4",
+          "criterion_rank": 4,
+          "subpart": "4",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_LIT_01",
+          "analysis_skill_id": "M3E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "$C(5)$ exact et rôle du terme constant correctement expliqué",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SARAH_BARGAOUI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$14x - 4$ ; contrôle : $5\\times(-1) + 4 + 11 = 10$ et $14 - 4 = 10$.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M3E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.5,
+          "original_skill_id": "M3E_LIT_01",
+          "analysis_skill_id": "M3E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "développement $5(2x-3)=10x-15$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C2_c2",
+          "criterion_rank": 2,
+          "subpart": "1",
+          "original_points": 0.5,
+          "original_skill_id": "M3E_LIT_02",
+          "analysis_skill_id": "M3E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "réduction en $14x-4$ exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "3E_SARAH_BARGAOUI_C2_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M3E_LIT_02",
+          "analysis_skill_id": "M3E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "contrôle pour $x=1$ mené sur les deux écritures",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    }
+  ]
+}

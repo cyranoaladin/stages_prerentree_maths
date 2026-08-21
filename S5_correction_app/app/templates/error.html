@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Erreur {{ code }} — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Erreur {{ code }}</h1>
+<div class="banner banner-danger">{{ detail }}</div>
+<p><a class="btn btn-primary" href="/">Revenir au tableau de bord</a></p>
+{% endblock %}

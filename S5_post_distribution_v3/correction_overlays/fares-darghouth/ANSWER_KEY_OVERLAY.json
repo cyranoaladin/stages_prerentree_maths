@@ -1,0 +1,801 @@
+{
+  "schema": "nexus-s5-answer-key-overlay-v3",
+  "generated_on": "2026-08-21",
+  "confidential": true,
+  "student_id": "fares-darghouth",
+  "level_key": "4e",
+  "subject": "Mathématiques",
+  "source_answer_key": "S5_cloture/4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/answer_key.json",
+  "source_answer_key_status": "conservé intact comme preuve de ce qui existait à la distribution",
+  "items": [
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$0$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_REL_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_REL_01",
+          "analysis_skill_id": "M4E_REL_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "résultat $0$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$\\dfrac{3}{8}$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_FRAC_02",
+          "analysis_skill_id": "M4E_FRAC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$\\frac{3}{8}$ ou une écriture équivalente correcte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$4x - 5$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_LIT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_LIT_02",
+          "analysis_skill_id": "M4E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$4x-5$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$53^\\circ$",
+      "estimated_duration_minutes": 1.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_GEO_01",
+          "analysis_skill_id": "M4E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$53^\\circ$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$40\\ \\text{cm}^2$",
+      "estimated_duration_minutes": 1.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A5_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_AIRE_01",
+          "analysis_skill_id": "M4E_AIRE_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$40\\ \\text{cm}^2$ avec l'unité correcte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$\\dfrac{15}{25}$ puis $\\dfrac{11}{25}$",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_A6_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M4E_FRAC_02",
+          "analysis_skill_id": "M4E_FRAC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux réponses exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "Aire $=84\\ \\text{m}^2$ ; périmètre $=38$ m ; prix $=84\\times 26=2\\,184$ TND.",
+      "estimated_duration_minutes": 4.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        },
+        "M4E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_AIRE_01",
+          "analysis_skill_id": "M4E_AIRE_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "aire et périmètre exacts, avec les unités correctes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_PROP_01",
+          "analysis_skill_id": "M4E_PROP_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "prix exact, obtenu à partir de l'aire et non du périmètre",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$5x-15$ ; puis $7x-8$ ; contrôle : les deux écritures donnent $6$ pour $x=2$.",
+      "estimated_duration_minutes": 5.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.5,
+          "original_skill_id": "M4E_LIT_01",
+          "analysis_skill_id": "M4E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "développement $5(x-3)=5x-15$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M4E_LIT_02",
+          "analysis_skill_id": "M4E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "réduction en $7x-8$ exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B2_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_LIT_02",
+          "analysis_skill_id": "M4E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "contrôle mené sur les deux écritures pour $x=2$, aboutissant à la même valeur",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$35\\,\\%$ ; somme $=110$, effectif $=8$, moyenne $=13{,}75$, comprise entre $11$ et $17$.",
+      "estimated_duration_minutes": 4.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_PROP_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_STAT_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_PROP_02",
+          "analysis_skill_id": "M4E_PROP_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "fréquence exacte en pourcentage",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONTROLE",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B3_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.7,
+          "original_skill_id": "M4E_STAT_01",
+          "analysis_skill_id": "M4E_STAT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "moyenne exacte, somme et effectif visibles",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONTROLE",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B3_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 0.3,
+          "original_skill_id": "M4E_STAT_01",
+          "analysis_skill_id": "M4E_STAT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "encadrement entre la plus petite et la plus grande valeur écrit",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONTROLE",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$87^\\circ$ ; c'est un parallélogramme, par exemple un rectangle de $6$ cm sur $3$ cm.",
+      "estimated_duration_minutes": 4.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_GEO_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_GEO_01",
+          "analysis_skill_id": "M4E_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "angle exact et rédaction en donnée-propriété-conclusion",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_B4_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_GEO_02",
+          "analysis_skill_id": "M4E_GEO_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "famille correcte et contre-exemple explicite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "original_points": 4,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$15\\ \\text{m}^2$ ; $5\\ \\text{m}^2$ ; $C(n)=19n+25$ ; $C(6)=139$ TND ; $C(10)=215>200$ : non.",
+      "estimated_duration_minutes": 9.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        },
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_AIRE_01",
+          "analysis_skill_id": "M4E_AIRE_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "aire à peindre exacte, soustraction de la fenêtre visible",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "NOTATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M4E_FRAC_02",
+          "analysis_skill_id": "M4E_FRAC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "aire de la sous-couche exacte, le tiers étant correctement pris",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "NOTATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.5,
+          "original_skill_id": "M4E_LIT_01",
+          "analysis_skill_id": "M4E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "expression $C(n)=19n+25$ correcte, substitution écrite et $C(6)$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "NOTATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C1_c4",
+          "criterion_rank": 4,
+          "subpart": "4",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_LIT_01",
+          "analysis_skill_id": "M4E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "décision justifiée par la comparaison de $C(10)$ au budget de 200 TND",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "LECTURE",
+            "NOTATION",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "4E_FARES_DARGHOUTH_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$22$ ; $4x+24$ ; $6x+24$",
+      "estimated_duration_minutes": 6.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.5,
+          "original_skill_id": "M4E_LIT_01",
+          "analysis_skill_id": "M4E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "substitution $3\\times 5+7=22$ exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M4E_LIT_01",
+          "analysis_skill_id": "M4E_LIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "développement $4(x+6)=4x+24$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "4E_FARES_DARGHOUTH_C2_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "M4E_LIT_02",
+          "analysis_skill_id": "M4E_LIT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "réduction en $6x+24$ exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    }
+  ]
+}

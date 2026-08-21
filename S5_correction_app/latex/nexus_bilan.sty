@@ -1,0 +1,94 @@
+%% nexus_bilan.sty — charte des bilans de fin de stage, Nexus Réussite.
+%%
+%% Style autonome : il ne dépend pas de nexusS5.sty, qui accompagne les documents
+%% distribués et n'est pas modifié. Les couleurs, les encadrés et la typographie
+%% reprennent la même identité, pour que les bilans ne détonnent pas à côté des livrets.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nexus_bilan}[2026/08/21 Nexus Reussite - style des bilans S5]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[french]{babel}
+\RequirePackage{lmodern}
+\RequirePackage{microtype}
+\RequirePackage[a4paper,margin=16mm,top=24mm,bottom=20mm,headheight=22pt,headsep=5mm]{geometry}
+\RequirePackage[table]{xcolor}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{tabularx,array,booktabs,longtable}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{lastpage}
+\RequirePackage{needspace}
+\RequirePackage{hyperref}
+\hypersetup{hidelinks}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.4pt}
+\setlist[itemize]{leftmargin=6mm,itemsep=1.2pt,topsep=2pt}
+\setlist[enumerate]{leftmargin=7mm,itemsep=1.6pt,topsep=2pt}
+\renewcommand{\arraystretch}{1.18}
+\sloppy
+\raggedbottom
+
+%% ---------------------------------------------------------------- couleurs
+\definecolor{Navy}{HTML}{0B2347}
+\definecolor{Blue}{HTML}{0E5AA7}
+\definecolor{Gold}{HTML}{C9A227}
+\definecolor{SoftGold}{HTML}{F7F1D8}
+\definecolor{SoftBlue}{HTML}{EDF4FB}
+\definecolor{SoftGray}{HTML}{F4F5F7}
+\definecolor{Red}{HTML}{9E2234}
+\definecolor{Green}{HTML}{167A68}
+\definecolor{TextGray}{HTML}{526170}
+\definecolor{LineGray}{HTML}{A9B0B7}
+\definecolor{Purple}{HTML}{6E4C9A}
+\definecolor{Orange}{HTML}{B86416}
+
+%% ------------------------------------------------------------- entête/pied
+\newcommand{\NexusHeadRight}{}
+\newcommand{\NexusFootLeft}{}
+\newcommand{\setnexusheader}[2]{\renewcommand{\NexusHeadRight}{#1}\renewcommand{\NexusFootLeft}{#2}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{NEXUS RÉUSSITE}}
+\rhead{\small\NexusHeadRight}
+\cfoot{\small \NexusFootLeft \quad | \quad page \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Gold}\leaders\hrule height \headrulewidth\hfill}}
+
+%% ---------------------------------------------------------------- encadrés
+\newtcolorbox{goalbox}{enhanced,breakable,colback=SoftGold,colframe=Gold,boxrule=0.7pt,arc=2mm,left=2.6mm,right=2.6mm,top=1.9mm,bottom=1.9mm}
+\newtcolorbox{methodbox}{enhanced,breakable,colback=SoftBlue,colframe=Navy,boxrule=0.7pt,arc=2mm,left=2.6mm,right=2.6mm,top=1.9mm,bottom=1.9mm}
+\newtcolorbox{successbox}{enhanced,breakable,colback=green!3,colframe=Green,boxrule=0.7pt,arc=2mm,left=2.6mm,right=2.6mm,top=1.9mm,bottom=1.9mm}
+\newtcolorbox{graybox}{enhanced,breakable,colback=SoftGray,colframe=TextGray,boxrule=0.65pt,arc=1.5mm,left=2.6mm,right=2.6mm,top=1.9mm,bottom=1.9mm}
+\newtcolorbox{warningbox}{enhanced,breakable,colback=orange!4,colframe=Orange,boxrule=0.7pt,arc=2mm,left=2.6mm,right=2.6mm,top=1.9mm,bottom=1.9mm}
+
+%% ------------------------------------------------------------------ titres
+\newcommand{\sectiontitle}[1]{\par\needspace{13mm}\vspace{1mm}{\color{Navy}\Large\bfseries #1}\par\vspace{1mm}{\color{Gold}\rule{\linewidth}{1.1pt}}\vspace{1.6mm}}
+\newcommand{\subsectiontitle}[1]{\par\needspace{8mm}\vspace{1mm}{\color{Blue}\large\bfseries #1}\par\vspace{0.9mm}}
+\newcommand{\minititle}[1]{\par\needspace{6mm}{\color{Purple}\normalsize\bfseries #1}\par\vspace{0.6mm}}
+
+%% ------------------------------------------------------------- page de garde
+\newcommand{\bilancover}[5]{%
+\begin{tcolorbox}[enhanced,colback=Navy,colframe=Navy,boxrule=0pt,arc=2.5mm,
+left=6mm,right=6mm,top=5mm,bottom=5mm]
+{\color{white}\Huge\bfseries #1}\par\vspace{2.5mm}
+{\color{SoftGold}\Large #2}\par\vspace{1.5mm}
+{\color{white}\large #3}\par\vspace{1mm}
+{\color{SoftBlue}\normalsize #4}\par\vspace{0.6mm}
+{\color{SoftBlue}\small #5}
+\end{tcolorbox}\par\vspace{3mm}}
+
+%% ------------------------------------------------------------------ badges
+\newcommand{\scopebadge}[1]{{\small\textbf{[#1]}}}
+\newcommand{\statutbadge}[2]{{\color{#1}\small\textbf{#2}}}
+
+%% ------------------------------------------------------ chiffre mis en avant
+\newcommand{\keyfigure}[3]{%
+\begin{tcolorbox}[enhanced,colback=SoftBlue,colframe=Navy,boxrule=0.7pt,arc=2mm,
+left=3mm,right=3mm,top=2mm,bottom=2mm]
+{\color{Navy}\normalsize\bfseries #1}\par\vspace{0.8mm}
+{\color{Navy}\LARGE\bfseries #2}\par\vspace{0.8mm}
+{\color{TextGray}\small #3}
+\end{tcolorbox}}

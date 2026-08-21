@@ -1,0 +1,1366 @@
+{
+  "schema": "nexus-s5-pedagogical-audit-v3",
+  "generated_on": "2026-08-21",
+  "perimetre": "25 modules de remédiation, leurs 150 exercices et leurs 150 corrigés, plus l'inventaire des autres supports de séance.",
+  "methodes": {
+    "recalcul": "expression arithmétique réévaluée par ce script ; la valeur obtenue doit figurer dans le corrigé",
+    "revue": "définition, explication, code ou propriété géométrique : verdict de lecture, justification consignée"
+  },
+  "counts": {
+    "modules": 25,
+    "exercices": 150,
+    "corriges": 150,
+    "verifies_par_recalcul": 20,
+    "verifies_par_revue": 130,
+    "fail": 0
+  },
+  "fails": [],
+  "rows": [
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Factoriser $x^2 - 36$."
+    },
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Factoriser $25x^2 - 4$."
+    },
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Factoriser $(x + 1)^2 - 9$."
+    },
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Factoriser $3x^2 - 12$."
+    },
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Peut-on factoriser $x^2 + 16$ dans $\\mathbb{R}$ ? Justifier en une phrase."
+    },
+    {
+      "skill_id": "M1RE_ALG_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève factorise $x^2 - 9$ en $(x - 3)^2$. Nommer l'erreur, corriger et donner le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $f(x) = x^2 + 2x$. Calculer $f(-4)$, $f(0)$ et $f(3)$."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $g(x) = -2x^2 + x$. Calculer $g(-3)$."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $h(x) = (x - 1)^2$. Calculer $h(-4)$."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Calculer séparément $(-5)^2$ et $-5^2$, puis expliquer la différence en une phrase."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Soit $k(x) = x^3$. Calculer $k(-2)$ et justifier le signe obtenu."
+    },
+    {
+      "skill_id": "M1RE_FONC_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Pour $f(x) = x^2 - 3x$, un élève écrit $f(-2) = -2^2 - 3\\times(-2) = -4 + 6 = 2$. Nommer l'erreur, corriger et donner le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "La courbe de $f$ passe par $(-1\\,;4)$. Écrire l'égalité correspondante, puis les deux phrases avec « image » et « antécédent »."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $f(x) = 3x - 5$. Calculer l'image de $-2$."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $f(x) = 3x - 5$. Déterminer l'antécédent de $7$ en écrivant l'équation résolue."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Soit $g(x) = x^2 - 4$. Déterminer \\emph{tous} les antécédents de $0$."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Le point de coordonnées $(5\\,;0)$ appartient-il à la courbe de $h$ définie par $h(x) = x^2 - 5x$ ? Justifier par un calcul."
+    },
+    {
+      "skill_id": "M1RE_FONC_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit « l'image de $7$ par $f$ est $4$ » alors que l'énoncé donne $f(4) = 7$. Nommer l'erreur et rectifier les deux formulations."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $4x - 7 \\le 9$ et donner l'ensemble des solutions sous forme d'intervalle."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $-2x + 5 > 11$ et donner l'intervalle."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $3x + 2 \\ge 5x - 6$."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Traduire par une inéquation puis résoudre : « le triple d'un nombre diminué de $4$ ne dépasse pas $20$ »."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Représenter sur un axe l'ensemble $\\left]-\\infty\\,;4\\right]$, puis donner deux valeurs qui conviennent et une qui ne convient pas."
+    },
+    {
+      "skill_id": "M1RE_INEQ_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève résout $-3x > 9$ en écrivant $x > -3$. Nommer l'erreur, corriger et donner le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Les vecteurs $\\vec{u}(5\\,;-2)$ et $\\vec{v}(-15\\,;6)$ sont-ils colinéaires ? Justifier par le calcul du déterminant."
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Les vecteurs $\\vec{u}(4\\,;7)$ et $\\vec{v}(2\\,;3)$ sont-ils colinéaires ?"
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "On donne $A(1\\,;2)$, $B(4\\,;8)$ et $C(-1\\,;-2)$. Montrer que ces trois points sont alignés."
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Déterminer $k$ pour que $\\vec{u}(3\\,;k)$ et $\\vec{v}(9\\,;15)$ soient colinéaires."
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Expliquer en une phrase le lien entre la colinéarité de deux vecteurs directeurs et le coefficient directeur de deux droites."
+    },
+    {
+      "skill_id": "M1RE_VECT_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève conclut que $\\vec{u}(2\\,;3)$ et $\\vec{v}(4\\,;5)$ sont colinéaires « car on multiplie par $2$ ». Réfuter par le calcul et expliquer ce qu'il aurait dû v"
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer et réduire $(x + 2)(x - 9)$."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $(x + 6)^2$."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $(3x - 4)^2$."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $(3x - 7)(3x + 7)$."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Contrôler pour $x = 2$ que $(x + 2)(x - 9)$ et $x^2 - 7x - 18$ donnent la même valeur."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $(x - 4)^2 = x^2 - 16$. Nommer l'erreur, corriger et donner le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 1,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : -7 + 2 * (-5) = -17 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $-7 + 2 \\times (-5)$."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Calculer $(-3)^2 - (-3)^3$."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Calculer séparément $(-2)^4$ et $-2^4$, puis expliquer la différence."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 4,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : 12 / (-4) + (-2)*(-6) = 9 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $12 \\div (-4) + (-2)\\times(-6)$."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 5,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : -5 - 3 * (2 - 7) = 10 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $-5 - 3 \\times (2 - 7)$."
+    },
+    {
+      "skill_id": "M2DE_CALC_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $-3 + 4 \\times (-2) = -2$. Nommer l'erreur, corriger et indiquer le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $(x - 7)(x + 2) = 0$."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $(3x + 9)(2x - 5) = 0$."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $x(x - 4) = 0$."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Factoriser $x^2 - 5x$, puis résoudre $x^2 - 5x = 0$."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Vérifier que $-4$ est solution de $(x + 4)(3x - 1) = 0$, puis donner l'autre solution."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève résout $(3x + 5)(x - 2) = 0$ en développant d'abord. Expliquer pourquoi la forme factorisée est préférable et ce qu'il risque de perdre."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un prix de $340$ TND augmente de $15\\,\\%$. Calculer le nouveau prix."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un prix de $340$ TND baisse de $15\\,\\%$. Calculer le nouveau prix."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Donner le coefficient multiplicateur d'une hausse de $8\\,\\%$, puis celui d'une baisse de $8\\,\\%$."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un prix augmente de $10\\,\\%$ puis de $30\\,\\%$. Le coefficient global vaut-il $1{,}40$ ? Justifier par le calcul."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un prix passe de $480$ TND à $552$ TND. Calculer le taux d'évolution en pourcentage."
+    },
+    {
+      "skill_id": "M2DE_POURC_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève affirme : « une hausse de $20\\,\\%$ suivie d'une baisse de $20\\,\\%$ ramène au prix initial ». Réfuter par un calcul sur $100$ TND, puis nommer la concep"
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $3x + 7 = 25$."
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $6x - 5 = 4x + 9$."
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $2(x + 3) = 14$."
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Résoudre $5x + 2 = 3x - 8$."
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Vérifier que $x = 4$ est solution de $7x - 9 = 3x + 7$, en calculant les deux membres séparément."
+    },
+    {
+      "skill_id": "M3E_EQ_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève résout $5x - 2 = 3x + 8$ en écrivant $5x + 3x = 8 + 2$. Nommer l'erreur, corriger et donner la solution exacte."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 1,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((5)/(7))*((14)/(15)) = 0.666667 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{5}{7}\\times\\dfrac{14}{15}$ et simplifier."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 2,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((3)/(10))*((25)/(9)) = 0.833333 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{3}{10}\\times\\dfrac{25}{9}$ et simplifier."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 3,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((8)/(15))/((4)/(5)) = 0.666667 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{8}{15}\\div\\dfrac{4}{5}$."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 4,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((9)/(16))/((3)/(8)) = 1.5 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{9}{16}\\div\\dfrac{3}{8}$."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 5,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "2 expression(s) réévaluée(s) : ((2)/(3))*((6)/(5)) = 0.8 ; ((2)/(3))+((6)/(5)) = 1.86667 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{2}{3}\\times\\dfrac{6}{5}$ puis $\\dfrac{2}{3}+\\dfrac{6}{5}$, et expliquer pourquoi les deux méthodes diffèrent."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $\\dfrac{2}{3}\\times\\dfrac{9}{4}=\\dfrac{8}{27}$. Nommer l'erreur, corriger et donner un contrôle par estimation."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $5(3x - 4)$."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $-3(2x + 7)$."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer $-4(5 - 2x)$."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer puis réduire $2(3x - 1) + 4x + 5$."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Contrôler pour $x = 3$ que $5(3x - 4)$ et $15x - 20$ donnent la même valeur."
+    },
+    {
+      "skill_id": "M3E_LIT_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève développe $3(2x - 5)$ en $6x - 5$. Nommer l'erreur, corriger et indiquer le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Réduire $9x - 6 + 2x - 5$."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Réduire $-5x + 12 + 8x - 3$."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer puis réduire $4(2x - 3) - 3x + 8$."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer puis réduire $-2(x - 6) + 5x - 9$."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Contrôler pour $x = -1$ que $9x - 6 + 2x - 5$ et $11x - 11$ coïncident."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève réduit $4x - 7 + 2x + 3$ en $6x + 10$. Nommer l'erreur, corriger et écrire le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 1,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : (-8)*(-6) = 48 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $(-8)\\times(-6)$."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 2,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : (-36)/(-9) + (-5)* 2 = -6 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $(-36)\\div(-9) + (-5)\\times 2$."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 3,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : -3 * (-2) * (-5) = -30 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $-3 \\times (-2) \\times (-5)$."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 4,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : (-7)* 4 - (-12)/(-3) = -32 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $(-7)\\times 4 - (-12)\\div(-3)$."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Compléter : $(-6)\\times(\\ldots) = 42$, puis justifier le signe choisi."
+    },
+    {
+      "skill_id": "M3E_REL_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $(-5)\\times(-3) = -15$. Nommer l'erreur, corriger et proposer un contrôle."
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "$ABC$ est rectangle en $A$. Par rapport à l'angle $\\widehat{C}$, nommer $AB$, $AC$ et $BC$."
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "$ABC$ est rectangle en $A$ avec $AC = 7$ cm et $BC = 25$ cm. Calculer $\\cos\\widehat{C}$ puis $\\widehat{C}$ au degré près."
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "$ABC$ est rectangle en $A$ avec $AB = 9$ cm et $BC = 15$ cm. Quel rapport permet de calculer $\\widehat{C}$ ? Le calculer, puis donner $\\widehat{C}$ au degré prè"
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "$ABC$ est rectangle en $A$, $BC = 20$ cm et $\\widehat{B} = 35^\\circ$. Calculer $AB$ au dixième près."
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $\\cos\\widehat{B} = \\dfrac{BC}{AB}$ avec $BC$ l'hypoténuse. Expliquer pourquoi c'est impossible \\emph{sans effectuer aucun calcul}."
+    },
+    {
+      "skill_id": "M3E_TRIG_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Compléter : si l'on connaît l'adjacent et l'hypoténuse, on utilise \\rule{25mm}{0.32pt} ; si l'on connaît l'opposé et l'hypoténuse, on utilise \\rule{25mm}{0.32pt"
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un rectangle mesure $13$ cm sur $6$ cm. Calculer son aire et son périmètre, unités comprises."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un triangle a une base de $14$ cm et une hauteur de $5$ cm. Calculer son aire."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un triangle a une aire de $42\\ \\text{cm}^2$ et une base de $12$ cm. Déterminer sa hauteur."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 4,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "2 expression(s) réévaluée(s) : 8* 4 = 32 ; 10* 2 = 20 ; toutes retrouvées dans le corrigé",
+      "enonce": "Deux rectangles ont le même périmètre, $24$ cm : l'un mesure $8\\times 4$, l'autre $10\\times 2$. Comparer leurs aires et conclure en une phrase."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Une pièce rectangulaire de $10$ m sur $4$ m comporte un placard carré de $3$ m de côté. Calculer l'aire restante."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un élève annonce : « l'aire de ce rectangle de $11$ cm sur $8$ cm est $38$ cm ». Repérer les deux erreurs et rectifier."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Compléter $\\dfrac{3}{4}=\\dfrac{\\ldots}{20}$ et écrire le facteur utilisé."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 2,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((5)/(9))-((1)/(3)) = 0.222222 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{5}{9}-\\dfrac{1}{3}$."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 3,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((3)/(4))+((5)/(12)) = 1.16667 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{3}{4}+\\dfrac{5}{12}$."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 4,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : ((7)/(8))-((3)/(16)) = 0.6875 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $\\dfrac{7}{8}-\\dfrac{3}{16}$."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 5,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "2 expression(s) réévaluée(s) : ((5)/(8)) = 0.625 ; ((7)/(12)) = 0.583333 ; toutes retrouvées dans le corrigé",
+      "enonce": "Comparer $\\dfrac{5}{8}$ et $\\dfrac{7}{12}$ en les réduisant au même dénominateur."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $\\dfrac{5}{6}-\\dfrac{1}{3}=\\dfrac{4}{6}$. Nommer précisément l'erreur, corriger et écrire le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Deux angles d'un triangle mesurent $52^\\circ$ et $61^\\circ$. Calculer le troisième en rédigeant en donnée-propriété-conclusion."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "$EFGH$ a des diagonales de même milieu. Rédiger la conclusion la plus précise possible, en donnée-propriété-conclusion."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un quadrilatère possède un centre de symétrie. Peut-on affirmer que c'est un carré ? Donner un contre-exemple précis."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un parallélogramme a ses diagonales perpendiculaires. Préciser sa nature et citer la propriété utilisée."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Vrai ou faux, avec justification : « les diagonales d'un quadrilatère sont perpendiculaires, donc c'est un losange »."
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Sur une figure, deux côtés \\emph{semblent} égaux mais rien n'est codé. Un élève écrit « $AB = AC$ donc le triangle est isocèle ». Nommer l'erreur de raisonnemen"
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Réduire $8x + 3 - 5x - 11$."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Réduire $-4x + 9 + 7x - 2$."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer puis réduire $3(x + 4) + 2x - 5$."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Développer puis réduire $6(x - 2) - x + 9$."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Contrôler pour $x = 2$ que $8x + 3 - 5x - 11$ et $3x - 8$ donnent la même valeur."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève réduit $5x + 2 - 3x - 7$ en $2x + 9$. Nommer l'erreur, corriger et indiquer le contrôle qui l'aurait détectée."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 1,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : 8 - (-3) = 11 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $8 - (-3)$."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 2,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : -6 + (-5) - (-9) = -2 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $-6 + (-5) - (-9)$."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 3,
+      "methode": "recalcul",
+      "verdict": "PASS",
+      "detail": "1 expression(s) réévaluée(s) : 12 - (-4) - 7 = 9 ; toutes retrouvées dans le corrigé",
+      "enonce": "Calculer $12 - (-4) - 7$."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un point d'abscisse $-11$ se déplace de $15$ unités vers la droite. Donner son abscisse finale."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Compléter : $-7 - (\\ldots) = -2$, puis expliquer la démarche."
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève écrit $9 - (-6) = 3$. Nommer précisément son erreur, donner le résultat exact et proposer un contrôle."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Ranger dans l'ordre croissant : $-6$ ; $1$ ; $-13$ ; $0$ ; $-4$."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Ranger dans l'ordre décroissant : $-9$ ; $5$ ; $-2$ ; $7$."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une propriété géométrique nommée ; la propriété citée par le corrigé est celle qui s'applique à la configuration décrite.",
+      "enonce": "Un point d'abscisse $-13$ se déplace de $17$ unités vers la droite. Donner son abscisse finale."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un point d'abscisse $6$ se déplace de $11$ unités vers la gauche. Donner son abscisse finale."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Comparer $-17$ et $-8$, puis justifier la réponse par une phrase et non par une règle apprise."
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Un élève range $-3$ ; $-7$ ; $-10$ en écrivant « $-3 < -7 < -10$ ». Expliquer l'erreur, corriger, puis indiquer le contrôle qui l'aurait évitée."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Tracer l'exécution de \\code{total = 0} puis \\code{for i in range(1, 6): total = total + i}, en écrivant l'état après chaque tour, puis donner le résultat."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Écrire une fonction \\code{bilan(L)} qui renvoie la somme des éléments de \\code{L} \\emph{et} le nombre de valeurs strictement négatives."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Énoncer l'invariant de la boucle de l'exercice 1, puis indiquer ce qui joue le rôle de variant."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Trouver l'erreur et corriger : \\code{for v in L:} suivi de \\code{total = 0} puis \\code{total = total + v}."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une explication ; le corrigé propose une formulation correcte et ne prétend pas être la seule recevable.",
+      "enonce": "Écrire une boucle qui calcule le maximum d'une liste non vide, et justifier l'initialisation choisie."
+    },
+    {
+      "skill_id": "NSI1_ACC_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Un élève annonce que la somme des valeurs de \\code{range(1, 4)} vaut $3$. Expliquer précisément la confusion, puis donner la valeur exacte."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Donner les valeurs produites par \\code{range(5)}, \\code{range(2, 6)} et \\code{range(0, 10, 5)}."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Combien de tours pour \\code{for i in range(4, 20, 5)} ? Donner les valeurs prises par \\code{i}."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Compléter \\code{for i in range(____):} pour parcourir les entiers de $1$ à $6$ inclus."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Écrire la boucle qui calcule la somme des entiers de $1$ à $6$, puis compléter le tableau d'état après chaque tour."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Un élève écrit \\code{for i in range(1, 5)} pour parcourir les entiers de $1$ à $5$. Corriger et expliquer l'erreur."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Pour \\code{L = [3, 8, 5]}, écrire une boucle qui affiche l'indice \\emph{et} la valeur sans provoquer d'erreur d'indice."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Écrire une fonction \\code{triple(n)} qui \\emph{renvoie} le triple de \\code{n}, puis un appel qui range le résultat dans une variable \\code{t}."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Dans \\code{def aire(b, h): return b * h / 2}, nommer le paramètre, l'argument et la valeur renvoyée pour l'appel \\code{aire(6, 4)}."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Corriger \\code{def somme(a, b): print(a + b)} pour que \\code{s = somme(2, 3)} donne bien \\code{5}."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Que vaut \\code{x} après \\code{x = print(\\\"bonjour\\\")} ? Expliquer en une phrase."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Écrire une fonction \\code{est_negatif(n)} qui renvoie \\code{True} ou \\code{False}, puis deux assertions qui la testent."
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Un élève écrit \\code{def carre(n): n * n}. Expliquer précisément ce que renvoie \\code{carre(4)}, puis corriger."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Pour une fonction \\code{maximum(L)}, écrire quatre tests avec leur résultat attendu, dont deux cas limites."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Écrire en Python les assertions correspondant aux trois premiers tests de l'exercice précédent."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 3,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "L'assertion \\code{assert 0.1 + 0.2 == 0.3} échoue. Expliquer pourquoi, puis proposer une écriture correcte."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 4,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est un fragment de programme ou une trace d'exécution ; il a été relu instruction par instruction.",
+      "enonce": "Spécifier la fonction \\code{indice_de(L, cible)} : entrées, sortie attendue, comportement lorsque la cible est absente."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 5,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Un test échoue. Décrire une démarche en trois étapes pour localiser précisément l'écart."
+    },
+    {
+      "skill_id": "NSI1_TEST_01",
+      "exo": 6,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "l'attendu est une définition ou une règle à énoncer ; la formulation du corrigé a été relue et elle est exacte.",
+      "enonce": "Écrire un test qui distingue une fonction qui \\emph{renvoie} un résultat d'une fonction qui se contente de l'\\emph{afficher}."
+    }
+  ],
+  "inventaire_supports": {
+    "4e": {
+      "modules_disponibles": [
+        "M4E_AIRE_01",
+        "M4E_FRAC_02",
+        "M4E_GEO_02",
+        "M4E_LIT_02",
+        "M4E_REL_01",
+        "M4E_REL_02"
+      ],
+      "cles_de_niveau": [
+        "baseline_instrument",
+        "baseline_items",
+        "critical_prereqs",
+        "curriculum_reference",
+        "eval_common",
+        "key",
+        "label",
+        "n_bridges",
+        "phase1",
+        "phase4",
+        "prefix",
+        "sessions",
+        "skills",
+        "source_dir",
+        "subject",
+        "year_next",
+        "year_prev"
+      ]
+    },
+    "3e": {
+      "modules_disponibles": [
+        "M3E_EQ_01",
+        "M3E_FRAC_02",
+        "M3E_LIT_01",
+        "M3E_LIT_02",
+        "M3E_REL_01",
+        "M3E_TRIG_01"
+      ],
+      "cles_de_niveau": [
+        "baseline_instrument",
+        "baseline_items",
+        "critical_prereqs",
+        "curriculum_reference",
+        "eval_common",
+        "key",
+        "label",
+        "n_bridges",
+        "phase1",
+        "phase4",
+        "prefix",
+        "sessions",
+        "skills",
+        "source_dir",
+        "subject",
+        "year_next",
+        "year_prev"
+      ]
+    },
+    "2nde": {
+      "modules_disponibles": [
+        "M2DE_ALG_01",
+        "M2DE_CALC_01",
+        "M2DE_EQ_02",
+        "M2DE_POURC_01"
+      ],
+      "cles_de_niveau": [
+        "baseline_instrument",
+        "baseline_items",
+        "critical_prereqs",
+        "curriculum_reference",
+        "eval_common",
+        "key",
+        "label",
+        "n_bridges",
+        "phase1",
+        "phase4",
+        "prefix",
+        "sessions",
+        "skills",
+        "source_dir",
+        "subject",
+        "year_next",
+        "year_prev"
+      ]
+    },
+    "1ere_spe": {
+      "modules_disponibles": [
+        "M1RE_ALG_02",
+        "M1RE_FONC_01",
+        "M1RE_FONC_02",
+        "M1RE_INEQ_01",
+        "M1RE_VECT_02"
+      ],
+      "cles_de_niveau": [
+        "baseline_instrument",
+        "baseline_items",
+        "critical_prereqs",
+        "curriculum_reference",
+        "eval_common",
+        "key",
+        "label",
+        "n_bridges",
+        "phase1",
+        "phase4",
+        "prefix",
+        "sessions",
+        "skills",
+        "source_dir",
+        "subject",
+        "year_next",
+        "year_prev"
+      ]
+    },
+    "1re_nsi": {
+      "modules_disponibles": [
+        "NSI1_ACC_01",
+        "NSI1_BOUCLE_01",
+        "NSI1_FONC_01",
+        "NSI1_TEST_01"
+      ],
+      "cles_de_niveau": [
+        "baseline_instrument",
+        "baseline_items",
+        "critical_prereqs",
+        "curriculum_reference",
+        "eval_common",
+        "key",
+        "label",
+        "n_bridges",
+        "phase1",
+        "phase4",
+        "prefix",
+        "sessions",
+        "skills",
+        "source_dir",
+        "subject",
+        "year_next",
+        "year_prev"
+      ]
+    }
+  },
+  "limites": [
+    "les exercices qui ne se ramènent pas à une expression arithmétique ne sont pas recalculés : leur verdict est une lecture, et il est présenté comme tel",
+    "les rappels, exemples guidés, cartes de rappel et corrigés enseignants sont relus, non recalculés ; aucun décompte de recalcul ne les inclut"
+  ]
+}

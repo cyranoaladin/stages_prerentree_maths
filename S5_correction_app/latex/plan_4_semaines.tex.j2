@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{nexus_bilan}
+\setnexusheader{\VAR{ h.level_label }}{Plan des quatre premières semaines --- \VAR{ h.student_name }}
+\begin{document}
+
+\bilancover{Plan des quatre premières semaines}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject } --- rentrée 2026-2027}{À conserver et à cocher au fur et à mesure}
+
+\begin{methodbox}
+\VAR{ blocks.cadre }
+\end{methodbox}
+
+\BLOCK{ for week in plan.weeks }
+\subsectiontitle{Semaine \VAR{ week.week } --- \VAR{ week.focus|esc }}
+\BLOCK{ if week.objectives }
+\begin{tabularx}{\linewidth}{|p{40mm}|X|p{30mm}|}
+\hline
+\rowcolor{SoftBlue} Ce qui est travaillé & Critère de réussite & Rythme \\ \hline
+\BLOCK{ for o in week.objectives }
+\VAR{ o.label|esc } & \VAR{ o.success_criterion|esc } & \VAR{ week.frequency|esc } \\ \hline
+\BLOCK{ endfor }
+\end{tabularx}
+\par\vspace{1mm}
+Type de travail : \VAR{ week.work_type|esc }, \VAR{ week.duration_minutes } minutes par séance.
+\BLOCK{ else }
+Aucune priorité restante : cette semaine peut être consacrée au réinvestissement libre.
+\BLOCK{ endif }
+\BLOCK{ if week.delayed_check }
+\begin{successbox}
+\textbf{\VAR{ week.delayed_check.titre|esc } --- \VAR{ week.delayed_check.duree_minutes } minutes.} \VAR{ week.delayed_check.format|esc }. Critère : \VAR{ week.delayed_check.critere|esc }.
+\par\vspace{0.8mm}
+Compétences à revérifier : \BLOCK{ for s in week.delayed_check.skills }\VAR{ s.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
+\end{successbox}
+\BLOCK{ endif }
+\BLOCK{ endfor }
+
+\BLOCK{ if plan.bridge_actions }
+\sectiontitle{Découvertes à poursuivre}
+\begin{graybox}
+Ces notions ont été rencontrées pour la première fois pendant la séance de clôture. Elles appartiennent au programme de l'année qui commence : elles seront enseignées en classe. Ce ne sont pas des lacunes.
+\end{graybox}
+\begin{itemize}
+\BLOCK{ for b in plan.bridge_actions }
+\item \textbf{\VAR{ b.label|esc }} --- \VAR{ b.action_label|esc }, \VAR{ b.quand|esc }.
+\BLOCK{ endfor }
+\end{itemize}
+\BLOCK{ endif }
+
+\sectiontitle{Suivi proposé}
+\VAR{ blocks.suivi }
+
+\begin{warningbox}
+\VAR{ a.delta_blocked_reason|esc }
+\end{warningbox}
+
+\end{document}

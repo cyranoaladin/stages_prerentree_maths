@@ -1,0 +1,285 @@
+{% extends "base.html" %}
+{% set nav = 'dashboard' %}
+{% block title %}{{ student.person.display_name }} — correction{% endblock %}
+{% block content %}
+
+<div class="sticky-bar">
+  <div>
+    <strong>{{ student.person.display_name }}</strong>
+    <span class="muted small">— {{ student.level_label }} · {{ assessment.subject }}</span>
+  </div>
+  <span class="badge st-{{ correction.status }}">{{ STATUS_LABELS.get(correction.status, correction.status) }}</span>
+  {% if correction.revision > 1 %}<span class="small muted">révision {{ correction.revision }}</span>{% endif %}
+  <div style="min-width:220px">
+    <div class="progress"><span id="progress-bar" style="width: {{ progress.percent }}%"></span></div>
+    <div class="small muted" id="progress-label">{{ progress.done }} / {{ progress.total }} critères renseignés — {{ progress.percent }} %</div>
+  </div>
+  <div class="save-state" id="save-state">Prêt.</div>
+  <div class="spacer"></div>
+  <a class="btn btn-sm" href="/">Tableau de bord</a>
+  {% if quick %}<a class="btn btn-sm" href="/eleve/{{ student.student_id }}">Mode complet</a>
+  {% else %}<a class="btn btn-sm" href="/eleve/{{ student.student_id }}?rapide=1">Correction rapide</a>{% endif %}
+  {% if locked %}
+  <button class="btn-sm btn-danger" data-action-url="/eleve/{{ student.student_id }}/rouvrir"
+          data-prompt="Pourquoi rouvrir cette correction validée ? (obligatoire, conservé dans l'historique)"
+          data-prompt-field="reason">Réouvrir</button>
+  {% else %}
+  <form method="post" action="/eleve/{{ student.student_id }}/valider" style="display:inline">
+    <button type="submit" class="btn-gold">Valider la correction</button>
+  </form>
+  {% endif %}
+</div>
+
+{% if locked %}
+<div class="banner banner-info"><strong>Correction verrouillée.</strong>
+  Pour la modifier, cliquez sur « Réouvrir » : une nouvelle révision sera créée et l'état actuel
+  sera conservé.</div>
+{% endif %}
+
+{% if problems and not locked %}
+<div class="banner banner-warning">
+  <strong>{{ problems|length }} point(s) à traiter avant de pouvoir valider.</strong>
+  <ul class="tight small">
+    {% for p in problems[:6] %}<li>{{ p.message }}</li>{% endfor %}
+    {% if problems|length > 6 %}<li>… et {{ problems|length - 6 }} autre(s).</li>{% endif %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="tabs no-print">
+  <button class="btn btn-sm" data-tab="pdf">Sujet</button>
+  <button class="btn btn-sm" data-tab="correction">Correction</button>
+</div>
+
+<div class="split">
+  <div class="pane pane-pdf">
+    <div class="pane-head">
+      <strong>Sujet distribué</strong>
+      <span class="small muted">document immuable — lecture seule</span>
+      <div class="spacer"></div>
+      <a class="btn btn-sm" href="/document/{{ student.student_id }}/travail" target="_blank" rel="noopener">Livret</a>
+      <a class="btn btn-sm" href="/document/{{ student.student_id }}/evaluation" target="_blank" rel="noopener">Ouvrir</a>
+    </div>
+    <iframe class="pdf-frame" src="/document/{{ student.student_id }}/evaluation#view=FitH"
+            title="Évaluation distribuée de {{ student.person.display_name }}"></iframe>
+  </div>
+
+  <div class="pane-grid">
+    {% if not quick %}
+    <details class="key" style="margin-bottom:12px">
+      <summary>Raccourcis clavier</summary>
+      <div class="key-body">
+        <span class="kbd">0</span>…<span class="kbd">9</span> score proposé ·
+        <span class="kbd">F</span> plein score · <span class="kbd">N</span> non répondu ·
+        <span class="kbd">E</span> codes d'erreur · <span class="kbd">O</span> observation ·
+        <span class="kbd">→</span> critère suivant · <span class="kbd">←</span> précédent.
+        Aucun raccourci ne supprime une saisie.
+      </div>
+    </details>
+    {% endif %}
+
+    {% for item in items %}
+    <div class="item-card" id="item-{{ item.ref }}"
+         {% if not locked %}data-obs-url="/eleve/{{ student.student_id }}/item/{{ item.item_id }}/observation"{% endif %}>
+      <div class="item-head">
+        <span class="ref">{{ item.ref }}</span>
+        <span class="pts">{{ item.max_points }} pt · partie {{ item.part }} ·
+          {{ 'noyau commun' if item.kind == 'commun' else 'item individualisé' }}</span>
+        <div class="spacer"></div>
+      </div>
+      {% if not quick %}
+      <div class="item-statement">{{ item.statement }}</div>
+      {% endif %}
+
+      {% for crit in item.criteria %}
+        {% for row in crit.rows %}
+        <div class="criterion {{ 'done' if row.scoring_status != 'PENDING' else 'pending' }}"
+             data-scoring-id="{{ row.scoring_id }}"
+             data-url="/eleve/{{ student.student_id }}/critere/{{ row.scoring_id }}">
+          <div class="crit-head">
+            <span class="badge {{ row.badge.css }}" title="{{ row.badge.label }}">{{ row.badge.icon }} {{ row.badge.code }}</span>
+            <span class="crit-desc">{{ row.description }}</span>
+            <span class="crit-meta">— maximum {{ row.max_score }} pt</span>
+            {% if row.is_virtual %}<span class="badge scope-mixed" title="sous-critère analytique d'un critère mixte">sous-critère</span>{% endif %}
+          </div>
+          <div class="crit-meta">
+            compétence <span class="mono">{{ row.analysis_skill_id }}</span> ·
+            preuve : {{ crit.evidence_type }}
+            {% if crit.evidence_quality == 'limited_by_prompt' %}
+            · <span class="badge scope-mixed">énoncé à interprétation limitée</span>{% endif %}
+          </div>
+
+          {% if crit.bridge_notice %}
+          <div class="bridge-note">{{ crit.bridge_notice }}</div>
+          {% endif %}
+
+          <div class="score-row" role="group" aria-label="score du critère">
+            {% for value in row.allowed %}
+            <button type="button" class="score-btn btn-sm {{ 'zero' if value.centi == 0 }} {{ 'full' if value.centi == row.max_score_centi }} {{ 'selected' if row.scoring_status == 'SCORED' and row.score_centi == value.centi }}"
+                    data-centi="{{ value.centi }}" aria-pressed="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == value.centi else 'false' }}"
+                    {% if locked %}disabled{% endif %}>{{ value.label }}</button>
+            {% endfor %}
+            <button type="button" class="status-btn btn-sm {{ 'selected' if row.scoring_status == 'NOT_ANSWERED' }}"
+                    data-status="NOT_ANSWERED" {% if locked %}disabled{% endif %}>non répondu</button>
+            <button type="button" class="status-btn btn-sm {{ 'selected' if row.scoring_status == 'UNCLASSIFIED' }}"
+                    data-status="UNCLASSIFIED" {% if locked %}disabled{% endif %}>zéro, cause non identifiée</button>
+          </div>
+
+          <div class="codes" role="group" aria-label="codes d'erreur">
+            {% for code, description in ERROR_CODES.items() %}
+            <span class="code-chip {{ 'on' if code in row.error_codes }}" data-code="{{ code }}"
+                  title="{{ description }}" tabindex="0" role="checkbox"
+                  aria-checked="{{ 'true' if code in row.error_codes else 'false' }}"
+                  aria-disabled="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == row.max_score_centi else 'false' }}">{{ code }}</span>
+            {% endfor %}
+          </div>
+
+          <label class="small muted" style="display:block">Observation sur ce critère
+            <textarea class="obs" rows="2" {% if locked %}disabled{% endif %}>{{ row.observation or '' }}</textarea>
+          </label>
+          <label class="small">
+            <input type="checkbox" class="alt-method" {% if row.accepted_alternative_method %}checked{% endif %}
+                   {% if locked %}disabled{% endif %}>
+            méthode différente du corrigé, mathématiquement correcte — ce n'est pas une erreur
+          </label>
+
+          {% if not quick %}
+          <details class="key">
+            <summary>Afficher le corrigé et le barème</summary>
+            <div class="key-body">
+              {% if item.expected_answer %}<p><strong>Réponse attendue.</strong> {{ item.expected_answer }}</p>{% endif %}
+              {% if item.significant_steps %}
+              <p><strong>Étapes significatives.</strong></p>
+              <ul class="tight">{% for step in item.significant_steps %}<li>{{ step }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.printed_prompt %}<p><strong>Consigne réellement imprimée.</strong> « {{ crit.printed_prompt }} »</p>{% endif %}
+              {% if crit.proof_levels %}
+              <p><strong>Niveau demandé.</strong> {{ crit.proof_levels.niveau_demande }}</p>
+              <p><strong>Preuve renforcée.</strong> {{ crit.proof_levels.preuve_renforcee }}</p>
+              {% endif %}
+              {% if crit.accepted_methods %}
+              <p><strong>Méthodes acceptées.</strong></p>
+              <ul class="tight">{% for m in crit.accepted_methods %}<li>{{ m }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.rejected and crit.rejected.general_justification %}
+              <p><strong>Refusé comme justification générale.</strong></p>
+              <ul class="tight">{% for m in crit.rejected.general_justification %}<li>{{ m }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.rejected and crit.rejected.detection %}
+              <p><strong>Refusé comme preuve de détection.</strong></p>
+              <ul class="tight">{% for m in crit.rejected.detection %}<li>{{ m }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.teacher_correction %}<p><strong>Correction enseignante.</strong> {{ crit.teacher_correction }}</p>{% endif %}
+              {% if crit.fairness_rules %}
+              <p><strong>Règles de correction.</strong></p>
+              <ul class="tight">{% for m in crit.fairness_rules %}<li>{{ m }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.interpretation_limits %}
+              <p><strong>Limites d'interprétation.</strong></p>
+              <ul class="tight">{% for m in crit.interpretation_limits %}<li>{{ m }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if item.likely_errors %}
+              <p><strong>Erreurs probables.</strong></p>
+              <ul class="tight">{% for e in item.likely_errors %}<li><strong>{{ e.code }}</strong> — {{ e.desc }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if crit.retention and crit.retention.recommended_delayed_check %}
+              <p class="banner banner-warning small" style="margin:6px 0 0">
+                Réussite immédiate après remédiation — consolidation durable à vérifier
+                par le mini-test différé de semaine 2.</p>
+              {% endif %}
+              <p class="small muted">{{ crit.scope_rationale }}</p>
+            </div>
+          </details>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% endfor %}
+
+      {% if item.non_scored %}
+      <div class="pane-body small">
+        <div class="banner banner-info small" style="margin:0">
+          <strong>Hors barème.</strong>
+          {% for n in item.non_scored %}
+          <div>{{ n.observation }} <span class="muted">{{ n.raison }} {{ n.consequence }}</span></div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if item.confidence_probe or item.observation %}
+      <div class="pane-body">
+        {% if item.confidence_probe %}
+        <div class="small"><strong>Certitude indiquée par l'élève</strong>
+          {% for n in [1, 2, 3, 4] %}
+          <label style="margin-left:8px"><input type="radio" name="confidence" value="{{ n }}"
+                 {% if item.confidence == n %}checked{% endif %} {% if locked %}disabled{% endif %}> {{ n }}</label>
+          {% endfor %}
+          <span class="muted">— n'entre pas dans la note</span>
+        </div>
+        {% endif %}
+        <label class="small muted" style="display:block;margin-top:6px">Observation sur l'item (non scorée)
+          <textarea class="item-obs" rows="2" {% if locked %}disabled{% endif %}>{{ item.observation or '' }}</textarea>
+        </label>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="pane" id="observations-generales">
+      <div class="pane-head"><strong>Observations générales de l'enseignant</strong>
+        <span class="small muted">facultatif — n'influence jamais les points</span></div>
+      <div class="pane-body">
+        <form id="general-form">
+          {% for key, label in general_fields %}
+          <label class="small muted" style="display:block;margin-bottom:6px">{{ label }}
+            <textarea name="{{ key }}" class="obs" rows="2" {% if locked %}disabled{% endif %}>{{ general.get(key, '') }}</textarea>
+          </label>
+          {% endfor %}
+          <label class="small">Durée réellement observée (minutes, facultatif)
+            <input type="number" name="observed_duration_minutes" min="0" max="600"
+                   value="{{ correction.observed_duration_minutes or '' }}" {% if locked %}disabled{% endif %}>
+          </label>
+          <p><button type="button" id="save-general" class="btn-primary" {% if locked %}disabled{% endif %}>Enregistrer les observations</button></p>
+        </form>
+      </div>
+    </div>
+
+    {% if not locked %}
+    <div class="sticky-bar" style="margin-top:12px">
+      <form method="post" action="/eleve/{{ student.student_id }}/valider">
+        <button type="submit" class="btn-gold">Valider la correction</button>
+      </form>
+      <span class="small muted">La validation vérifie la cohérence de la saisie avant de verrouiller.</span>
+    </div>
+    {% else %}
+    <div class="sticky-bar" style="margin-top:12px">
+      <a class="btn btn-primary" href="/eleve/{{ student.student_id }}/analyse">Voir l'analyse</a>
+      <a class="btn" href="/eleve/{{ student.student_id }}/bilan">Préparer le bilan</a>
+      <a class="btn btn-gold" href="/eleve/{{ student.student_id }}/suivant">Passer à l'élève suivant</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var button = document.getElementById("save-general");
+  if (!button) { return; }
+  button.addEventListener("click", function () {
+    var form = document.getElementById("general-form");
+    var payload = {};
+    form.querySelectorAll("textarea, input").forEach(function (field) {
+      if (field.name === "observed_duration_minutes") {
+        payload[field.name] = field.value ? parseInt(field.value, 10) : null;
+      } else if (field.name) { payload[field.name] = field.value; }
+    });
+    fetch("/eleve/{{ student.student_id }}/observations", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.json(); }).then(function (body) {
+      document.getElementById("save-state").textContent = "✓ Observations enregistrées à " + body.saved_at;
+    });
+  });
+});
+</script>
+{% endblock %}

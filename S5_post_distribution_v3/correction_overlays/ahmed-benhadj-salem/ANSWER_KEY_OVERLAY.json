@@ -1,0 +1,763 @@
+{
+  "schema": "nexus-s5-answer-key-overlay-v3",
+  "generated_on": "2026-08-21",
+  "confidential": true,
+  "student_id": "ahmed-benhadj-salem",
+  "level_key": "1re_nsi",
+  "subject": "NSI",
+  "source_answer_key": "S5_cloture/1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/answer_key.json",
+  "source_answer_key_status": "conservé intact comme preuve de ce qui existait à la distribution",
+  "items": [
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{8} ; \\code{2} ; \\code{5} ; dernier indice \\code{4}.",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_LIST_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_LIST_01",
+          "analysis_skill_id": "NSI1_LIST_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les quatre réponses exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{x > 8} ; \\code{(x <= 2) and (x != 0)}.",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_LOG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_LOG_01",
+          "analysis_skill_id": "NSI1_LOG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux négations exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{3, 7, 11} ; trois tours.",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_BOUCLE_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_BOUCLE_01",
+          "analysis_skill_id": "NSI1_BOUCLE_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "valeurs et nombre de tours exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{a} vaut \\code{10}, \\code{b} vaut \\code{6} : \\code{b} a reçu une copie de la valeur, il n'est pas lié à \\code{a}.",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_AFF_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_AFF_01",
+          "analysis_skill_id": "NSI1_AFF_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux valeurs exactes et une explication correcte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{total} vaut \\code{14} ; quatre tours.",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "post_only",
+      "retention": {
+        "NSI1_ACC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_ACC_01",
+          "analysis_skill_id": "NSI1_ACC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux valeurs exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{for} : le nombre de répétitions est connu. \\code{while} : il dépend d'une condition non connue à l'avance.",
+      "estimated_duration_minutes": 2.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_BOUCLE_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_BOUCLE_02",
+          "analysis_skill_id": "NSI1_BOUCLE_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "les deux choix exacts et justifiés",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{total} : 4, 13, 15, 22 ; \\code{n} : 1, 2, 3, 4. Finalement \\code{total = 22} (somme des valeurs) et \\code{n = 4} (nombre de valeurs parcourues).",
+      "estimated_duration_minutes": 4.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "post_only",
+      "retention": {
+        "NSI1_ACC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_ACC_01",
+          "analysis_skill_id": "NSI1_ACC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "tableau d'état complet et exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "NSI1_ACC_01",
+          "analysis_skill_id": "NSI1_ACC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "communication",
+          "desc": "valeurs finales exactes et rôle de chaque variable correctement énoncé",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{m} vaut \\code{None} car la fonction affiche sans renvoyer ; il faut remplacer \\code{print(...)} par \\code{return total / len(valeurs)} ; l'appel \\code{moyenne([])} provoque une division par zéro.",
+      "estimated_duration_minutes": 4.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_FONC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [
+        {
+          "observation": "le corrigé mentionne que moyenne([]) provoque une division par zéro.",
+          "raison": "la question imprimée ne demande ni le cas de la liste vide ni son traitement, et aucun critère du barème ne le rétribue.",
+          "consequence": "remarque orale seulement, hors score et hors profil d'erreurs."
+        }
+      ],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.25,
+          "original_skill_id": "NSI1_FONC_01",
+          "analysis_skill_id": "NSI1_FONC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "\\code{None} identifié et justifié par l'absence de \\code{return}",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "NSI1_FONC_01",
+          "analysis_skill_id": "NSI1_FONC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "correction par \\code{return} exacte et complète",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{temperature} se convertit en \\code{float} et \\code{humidite} en \\code{int} ; l'opérateur \\code{+} appliqué à deux chaînes les concatène et produit \\code{\"26.51\"} ; une métadonnée décrit le fichier lui-même — date de production, capteur d'origine, unité de mesure, encodage — alors qu'une donnée du tableau décrit un enregistrement.",
+      "estimated_duration_minutes": 6.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "NSI1_CSV_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "NSI1_TAB_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.75,
+          "original_skill_id": "NSI1_CSV_01",
+          "analysis_skill_id": "NSI1_CSV_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "colonnes et types de conversion exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "NSI1_CSV_01",
+          "analysis_skill_id": "NSI1_CSV_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "concaténation correctement expliquée par le type des opérandes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.75,
+          "original_skill_id": "NSI1_TAB_01",
+          "analysis_skill_id": "NSI1_TAB_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "communication",
+          "desc": "métadonnée pertinente et distinction avec une donnée du tableau",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "Par exemple \\code{moyenne([4, 6]) == 5.0} et \\code{moyenne([7]) == 7.0} ; cas limite : \\code{moyenne([])} doit lever une erreur explicite, ce que l'on teste par un bloc \\code{try / except}. Assertion du premier test : \\code{assert moyenne([4, 6]) == 5.0}. La comparaison stricte de flottants échoue car $0{,}1+0{,}2$ vaut $0{,}30000000000000004$ ; il faut employer \\code{math.isclose}.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "post_only",
+      "retention": {
+        "NSI1_TEST_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_TEST_01",
+          "analysis_skill_id": "NSI1_TEST_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "trois tests pertinents dont un cas limite conforme au contrat annoncé",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "METHODE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.4,
+          "original_skill_id": "NSI1_TEST_01",
+          "analysis_skill_id": "NSI1_TEST_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "assertion du premier test correctement écrite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "METHODE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.6,
+          "original_skill_id": "NSI1_TEST_01",
+          "analysis_skill_id": "NSI1_TEST_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "problème des flottants expliqué et écriture correcte proposée",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "METHODE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "original_points": 4,
+      "original_answer_preserved": true,
+      "original_expected_answer": "\\code{if mesures[i][\"id\"] == identifiant:} puis \\code{return i} ; les résultats sont \\code{2} et \\code{-1} ; test sur liste vide : \\code{chercher([], \"C01\")} doit renvoyer \\code{-1} ; la recherche dichotomique divise par deux la zone de recherche à chaque étape, à la condition que la liste soit triée.",
+      "estimated_duration_minutes": 7.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "not_comparable",
+      "retention": {
+        "NSI1_ALGO_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        },
+        "NSI1_TEST_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.5,
+          "original_skill_id": "NSI1_ALGO_01",
+          "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "transfert",
+          "desc": "les deux trous complétés correctement",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "SYNTAXE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "complétion de la boucle de recherche séquentielle, introduite en phase 4."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "NSI1_ALGO_01",
+          "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "procedure",
+          "desc": "les deux résultats exacts, dont la valeur d'absence",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "SYNTAXE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "lecture du contrat de la recherche séquentielle, dont la valeur d'absence."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "NSI1_TEST_01",
+          "analysis_skill_id": "NSI1_TEST_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "test sur liste vide, avec son résultat attendu",
+          "accepted_methods": [],
+          "interpretation_limits": [
+            "le support du test est un algorithme de passerelle ; ce critère mesure la pratique de test, pas la maîtrise de la recherche séquentielle"
+          ],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "SYNTAXE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "écrire un test avec son résultat attendu sur un cas limite est une compétence de test, travaillée en séances 3 et 4 et indépendante de l'algorithme support : la valeur attendue se lit directement dans le code imprimé, qui contient « return -1 »."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c4",
+          "criterion_rank": 4,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "NSI1_ALGO_01",
+          "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "communication",
+          "desc": "gain et précondition de la dichotomie correctement énoncés",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "ALGORITHME",
+            "CONCEPT",
+            "SYNTAXE",
+            "TRANSFERT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "gain et précondition de la dichotomie : attendus explicites de Première."
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$1\\,000$ comparaisons au maximum ; environ $10$ étapes en dichotomie. Invariant : si la cible figure dans la liste, elle se trouve dans la zone de recherche courante.",
+      "estimated_duration_minutes": 4.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "not_comparable",
+      "retention": {
+        "NSI1_ALGO_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "NSI1_ALGO_01",
+          "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "automatisme",
+          "desc": "les deux ordres de grandeur exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "coût comparé de la recherche séquentielle et de la dichotomie."
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "NSI1_ALGO_01",
+          "analysis_skill_id": "NSI1_ALGO_RECHERCHE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "communication",
+          "desc": "invariant correctement énoncé",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "énoncé d'un invariant de boucle : attendu de Première."
+        }
+      ]
+    }
+  ]
+}

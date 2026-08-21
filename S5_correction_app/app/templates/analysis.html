@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% set nav = 'dashboard' %}
+{% block title %}{{ student.person.display_name }} — analyse{% endblock %}
+{% block content %}
+
+<div class="sticky-bar no-print">
+  <div><strong>{{ student.person.display_name }}</strong>
+    <span class="muted small">— {{ student.level_label }} · {{ assessment.subject }} · révision {{ correction.revision }}</span></div>
+  <div class="spacer"></div>
+  <a class="btn btn-sm" href="/eleve/{{ student.student_id }}">Correction</a>
+  <a class="btn btn-sm" href="/eleve/{{ student.student_id }}/analyse.json">JSON</a>
+  <button class="btn-sm" onclick="window.print()">Imprimer</button>
+  <a class="btn btn-sm btn-gold" href="/eleve/{{ student.student_id }}/bilan">Préparer le bilan</a>
+</div>
+
+<h1>Analyse — {{ student.person.display_name }}</h1>
+
+<div class="cards">
+  <div class="card">
+    <div class="title">Score brut au sujet de clôture</div>
+    <div class="figure">{{ a.raw_assessment_score.sur_20 }} / 20</div>
+    <div class="note">{{ a.raw_assessment_score.avertissement }}</div>
+  </div>
+  <div class="card">
+    <div class="title">Consolidation des acquis N−1</div>
+    <div class="figure">{{ a.n_minus_1_consolidation.earned }} / {{ a.n_minus_1_consolidation.available }}</div>
+    <div class="bar"><div class="track"><div class="fill" style="width: {{ a.n_minus_1_consolidation.percentage or 0 }}%"></div></div>
+      <span class="small">{{ (a.n_minus_1_consolidation.percentage or 0)|nombre }} %</span></div>
+    <div class="note">Pourcentage descriptif du corpus de critères disponibles. Il se lit avec le détail par compétence, jamais seul.</div>
+  </div>
+  <div class="card">
+    <div class="title">Passerelles vers l'année N</div>
+    {% if a.bridge_n_readiness.available_centi %}
+    <div class="figure">{{ a.bridge_n_readiness.earned }} / {{ a.bridge_n_readiness.available }}</div>
+    <div class="bar"><div class="track"><div class="fill gold" style="width: {{ a.bridge_n_readiness.percentage or 0 }}%"></div></div>
+      <span class="small">{{ (a.bridge_n_readiness.percentage or 0)|nombre }} %</span></div>
+    {% else %}<div class="figure">—</div>{% endif %}
+    <div class="note">Observation de préparation, pas diagnostic de lacune.</div>
+  </div>
+</div>
+
+<h2>Compétences</h2>
+<table class="grid">
+<thead><tr><th>Compétence</th><th>Portée</th><th class="num">Score</th><th class="num">Critères</th>
+<th class="num">Items</th><th>Preuve</th><th>Force</th><th>Statut</th><th>Suite</th></tr></thead>
+<tbody>
+{% for s in a.skills %}
+<tr>
+  <td>{{ s.label }}{% if s.is_alias %} <span class="badge scope-mixed small" title="alias analytique créé pour ne pas fusionner deux notions">alias</span>{% endif %}
+      <div class="small mono muted">{{ s.analysis_skill_id }}</div></td>
+  <td><span class="badge {{ 'scope-n1' if s.curriculum_scope == 'n_minus_1' else 'scope-bridge' }}">
+      {{ 'N-1' if s.curriculum_scope == 'n_minus_1' else 'PASSERELLE N' }}</span></td>
+  <td class="num">{{ s.earned }} / {{ s.available }}</td>
+  <td class="num">{{ s.criteria|length }}</td>
+  <td class="num">{{ s.item_refs|length }}</td>
+  <td class="small">{{ s.evidence_types|join(', ') }}</td>
+  <td><span class="badge {{ 'st-VALIDATED' if s.evidence_strength in ('STRONG','MODERATE') else 'st-DRAFT' }}"
+            title="{{ s.evidence_strength_label }} — score {{ s.evidence_strength_score }}">{{ s.evidence_strength }}</span></td>
+  <td><strong>{{ s.status_label }}</strong><div class="small muted">{{ s.reading }}</div></td>
+  <td class="small">{% if s.priority_rank %}{{ s.priority_rank }}{% else %}{{ s.bridge_action }}{% endif %}
+      {% if s.recommended_delayed_check %}<div class="badge st-REVIEW_READY">contrôle différé</div>{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+<h2>Profil d'erreurs</h2>
+<p class="small muted">{{ a.error_profile.attribution }}. {{ error_total }} code(s) au total.</p>
+<div class="cards">
+  <div class="card">
+    <div class="title">Acquis N−1</div>
+    {% for code, count in a.error_profile.n_minus_1.items() %}
+    <div class="bar" style="margin:3px 0"><span class="mono" style="width:120px">{{ code }}</span>
+      <div class="track"><div class="fill" style="width: {{ (count * 100 / (error_total or 1))|round }}%"></div></div>
+      <span class="small">{{ count }}</span></div>
+    {% else %}<div class="note">Aucune erreur relevée.</div>{% endfor %}
+  </div>
+  <div class="card">
+    <div class="title">Passerelles vers N</div>
+    {% for code, count in a.error_profile.bridge_n.items() %}
+    <div class="bar" style="margin:3px 0"><span class="mono" style="width:120px">{{ code }}</span>
+      <div class="track"><div class="fill gold" style="width: {{ (count * 100 / (error_total or 1))|round }}%"></div></div>
+      <span class="small">{{ count }}</span></div>
+    {% else %}<div class="note">Aucune erreur relevée.</div>{% endfor %}
+  </div>
+</div>
+
+<h2>Ce qu'on peut conclure</h2>
+<div class="cards">
+  <div class="card"><div class="title">Conclusions suffisamment étayées</div>
+    <ul class="tight small">{% for c in a.conclusions.etayees %}<li>{{ c }}</li>{% else %}<li class="muted">Aucune.</li>{% endfor %}</ul></div>
+  <div class="card"><div class="title">Conclusions prudentes</div>
+    <ul class="tight small">{% for c in a.conclusions.prudentes %}<li>{{ c }}</li>{% else %}<li class="muted">Aucune.</li>{% endfor %}</ul></div>
+  <div class="card"><div class="title">Limites de l'analyse</div>
+    <ul class="tight small">{% for c in a.conclusions.limites %}<li>{{ c }}</li>{% endfor %}</ul></div>
+</div>
+
+{% if a.retention.skills %}
+<h2>Rétention à vérifier</h2>
+<div class="banner banner-warning">{{ a.retention.principe }}</div>
+<ul class="tight">
+{% for s in a.retention.skills %}<li><strong>{{ s.label }}</strong> — {{ s.status }}</li>{% endfor %}
+</ul>
+{% endif %}
+
+<h2>Plan des quatre premières semaines</h2>
+<table class="grid">
+<thead><tr><th>Semaine</th><th>Objet</th><th>Ce qui est travaillé</th><th>Rythme</th><th>Critère de réussite</th></tr></thead>
+<tbody>
+{% for week in plan.weeks %}
+<tr>
+  <td class="num"><strong>{{ week.week }}</strong></td>
+  <td class="small">{{ week.focus }}</td>
+  <td>{% for o in week.objectives %}<div>{{ o.label }} <span class="badge st-DRAFT">{{ o.priority_rank }}</span></div>
+      {% else %}<span class="muted">réinvestissement libre</span>{% endfor %}
+      {% if week.delayed_check %}<div class="badge st-REVIEW_READY">mini-test différé — {{ week.delayed_check.duree_minutes }} min</div>{% endif %}</td>
+  <td class="small">{{ week.frequency }}<div class="muted">{{ week.work_type }}</div></td>
+  <td class="small">{% if week.objectives %}{{ week.objectives[0].success_criterion }}{% else %}—{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% if plan.bridge_actions %}
+<h3>Découvertes à poursuivre</h3>
+<div class="banner banner-info small">Ces notions n'ont pas encore été enseignées en classe. Elles ne constituent pas un retard.</div>
+<ul class="tight">
+{% for b in plan.bridge_actions %}<li><strong>{{ b.label }}</strong> — {{ b.action_label }}, {{ b.quand }}.</li>{% endfor %}
+</ul>
+{% endif %}
+
+<h3>Suivi proposé</h3>
+<p>{{ plan.follow_up.proposed|capitalize }}. {{ plan.follow_up.justification }}</p>
+
+{% if a.neutralised %}
+<h3>Critères neutralisés</h3>
+<ul class="tight">{% for n in a.neutralised %}<li>{{ n.item_ref }} — {{ n.points }} pt — {{ n.raison }}</li>{% endfor %}</ul>
+{% endif %}
+
+<div class="banner banner-warning" style="margin-top:16px">
+  {{ a.delta_blocked_reason }}
+</div>
+<p class="small muted">Empreinte de l'analyse : <span class="mono">{{ a.analysis_sha256[:32] }}…</span></p>
+{% endblock %}

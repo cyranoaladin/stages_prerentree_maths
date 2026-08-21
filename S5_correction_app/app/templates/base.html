@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ APP_NAME }}{% endblock %}</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body data-quick="{{ '1' if quick|default(false) else '0' }}">
+<header class="topbar">
+  <div class="brand">NEXUS <span>RÉUSSITE</span></div>
+  <nav>
+    <a href="/" class="{{ 'active' if nav|default('') == 'dashboard' }}">Tableau de bord</a>
+    <a href="/groupe" class="{{ 'active' if nav|default('') == 'group' }}">Vue groupe</a>
+    <a href="/historique" class="{{ 'active' if nav|default('') == 'history' }}">Historique</a>
+    <a href="/admin" class="{{ 'active' if nav|default('') == 'admin' }}">Maintenance</a>
+  </nav>
+  <div class="spacer"></div>
+  <div class="version">S5 Correction &amp; Bilans {{ APP_VERSION }}</div>
+</header>
+<main>
+  {% if readonly %}
+  <div class="banner banner-danger"><strong>Lecture seule.</strong> {{ readonly_reason }}</div>
+  {% endif %}
+  {% if drift %}
+  <div class="banner banner-warning">
+    <strong>Le référentiel V3 a changé depuis l'import.</strong>
+    {{ drift|length }} fichier(s) source(s) ne correspondent plus à leur empreinte.
+    Rien n'a été resynchronisé automatiquement — voir <a href="/admin">Maintenance</a>.
+  </div>
+  {% endif %}
+  {% if pilot_mode %}
+  <div class="banner banner-info small">
+    <strong>Mode pilote.</strong> Le pipeline a été éprouvé sur des jeux synthétiques.
+    La première copie réellement corrigée vaut validation opérationnelle&nbsp;: voir
+    <span class="mono">docs/PILOT_REAL_COPY_VALIDATION.md</span>.
+  </div>
+  {% endif %}
+  {% block content %}{% endblock %}
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
