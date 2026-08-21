@@ -1,0 +1,702 @@
+{
+  "schema": "nexus-s5-delayed-check-v3",
+  "generated_on": "2026-08-21",
+  "semaine": 2,
+  "principe": "une réussite immédiate après remédiation n'est pas une consolidation durable ; seul un contrôle différé permet de trancher.",
+  "eleves": [
+    {
+      "student_id": "ahmad-beldi-maths",
+      "student_name": "Ahmad BELDI",
+      "level_key": "1ere_spe",
+      "level_label": "Entrée en Première générale — Spécialité mathématiques",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M1RE_ALG_02",
+          "label": "Factorisation, en particulier la différence de deux carrés",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A1",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M1RE_FONC_02",
+          "label": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A6",
+            "B2"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "donia-khadhrani",
+      "student_name": "Donia KHADHRANI",
+      "level_key": "1ere_spe",
+      "level_label": "Entrée en Première générale — Spécialité mathématiques",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M1RE_FONC_02",
+          "label": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "B2"
+          ]
+        },
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "label": "Inéquation du premier degré et écriture en intervalle",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A2",
+            "A6"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "malek-khadhrani",
+      "student_name": "Malek KHADHRANI",
+      "level_key": "1ere_spe",
+      "level_label": "Entrée en Première générale — Spécialité mathématiques",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M1RE_FONC_01",
+          "label": "Image d'un réel, substitution d'une valeur négative",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M1RE_VECT_02",
+          "label": "Colinéarité de deux vecteurs",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A6",
+            "B4",
+            "C1"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "ahmad-beldi-nsi",
+      "student_name": "Ahmad BELDI",
+      "level_key": "1re_nsi",
+      "level_label": "Entrée en Première — Numérique et sciences informatiques",
+      "subject": "NSI",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "NSI1_ALGO_01",
+          "label": "Recherche séquentielle et principe de la dichotomie",
+          "importance_n": "critique",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "C1",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "NSI1_BOUCLE_01",
+          "label": "range : valeurs produites, bornes et nombre d'itérations",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "A6"
+          ]
+        },
+        {
+          "skill_id": "NSI1_FONC_01",
+          "label": "Paramètre, argument, valeur renvoyée et None",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "B2"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "ahmed-benhadj-salem",
+      "student_name": "Ahmed BENHADJ SALEM",
+      "level_key": "1re_nsi",
+      "level_label": "Entrée en Première — Numérique et sciences informatiques",
+      "subject": "NSI",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "NSI1_ACC_01",
+          "label": "Accumulateur : somme, compteur, invariant de boucle",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "B1"
+          ]
+        },
+        {
+          "skill_id": "NSI1_ALGO_01",
+          "label": "Recherche séquentielle et principe de la dichotomie",
+          "importance_n": "critique",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "C1",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "NSI1_TEST_01",
+          "label": "Tests, assertions et cas limites",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "B4",
+            "C1"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "ahmed-bakir",
+      "student_name": "Ahmed BAKIR",
+      "level_key": "2nde",
+      "level_label": "Entrée en Seconde générale et technologique",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "label": "Double distributivité et identités remarquables",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A4",
+            "B4",
+            "C1"
+          ]
+        },
+        {
+          "skill_id": "M2DE_CALC_01",
+          "label": "Priorités opératoires, signes et puissance d'un relatif",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A1",
+            "A5"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "noa-maniaci",
+      "student_name": "Noa MANIACI",
+      "level_key": "2nde",
+      "level_label": "Entrée en Seconde générale et technologique",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M2DE_EQ_02",
+          "label": "Équation produit nul",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "B1",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "M2DE_POURC_01",
+          "label": "Pourcentages, coefficient multiplicateur, évolutions successives",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "B2",
+            "B4",
+            "C1"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "amine-mansouri",
+      "student_name": "Amine MANSOURI",
+      "level_key": "3e",
+      "level_label": "Entrée en Troisième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M3E_LIT_02",
+          "label": "Réduction d'une expression avec constantes signées",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "label": "Moyenne simple et moyenne pondérée",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "label": "Choix et emploi d'un rapport trigonométrique (cosinus, sinus)",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A6",
+            "B2",
+            "C1"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "elyes-kefi",
+      "student_name": "Elyes KEFI",
+      "level_key": "3e",
+      "level_label": "Entrée en Troisième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M3E_FRAC_02",
+          "label": "Produit et quotient de fractions, simplification",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A2",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "label": "Réduction d'une expression avec constantes signées",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "A6"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "label": "Moyenne simple et moyenne pondérée",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3",
+            "B4"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "fares-laajili",
+      "student_name": "Fares LAAJILI",
+      "level_key": "3e",
+      "level_label": "Entrée en Troisième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M3E_FRAC_02",
+          "label": "Produit et quotient de fractions, simplification",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A2",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "label": "Moyenne simple et moyenne pondérée",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "label": "Choix et emploi d'un rapport trigonométrique (cosinus, sinus)",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A6",
+            "B2",
+            "C1",
+            "C2"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "sarah-bargaoui",
+      "student_name": "Sarah BARGAOUI",
+      "level_key": "3e",
+      "level_label": "Entrée en Troisième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M3E_EQ_01",
+          "label": "Équation du premier degré, inconnue dans les deux membres",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A4",
+            "A6"
+          ]
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "label": "Réduction d'une expression avec constantes signées",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "A5",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "label": "Moyenne simple et moyenne pondérée",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "selim-mansouri",
+      "student_name": "Selim MANSOURI",
+      "level_key": "3e",
+      "level_label": "Entrée en Troisième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M3E_LIT_01",
+          "label": "Distributivité : développer k(ax+b)",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A6",
+            "C1",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "label": "Produit, quotient et priorités avec des nombres relatifs",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A1",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "label": "Moyenne simple et moyenne pondérée",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "fares-darghouth",
+      "student_name": "Fares DARGHOUTH",
+      "level_key": "4e",
+      "level_label": "Entrée en Quatrième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M4E_AIRE_01",
+          "label": "Aire et périmètre du rectangle et du triangle, unités",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "B1",
+            "C1"
+          ]
+        },
+        {
+          "skill_id": "M4E_GEO_02",
+          "label": "Symétrie centrale et caractérisation du parallélogramme",
+          "importance_n": "importante",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "B4"
+          ]
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "label": "Moyenne d'une série et contrôle de vraisemblance",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "ines-kefi",
+      "student_name": "Ines KEFI",
+      "level_key": "4e",
+      "level_label": "Entrée en Quatrième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M4E_FRAC_02",
+          "label": "Fractions équivalentes et réduction au même dénominateur",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A2",
+            "A6",
+            "C1"
+          ]
+        },
+        {
+          "skill_id": "M4E_REL_02",
+          "label": "Ordre des relatifs et déplacements sur une droite graduée",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A5",
+            "C2"
+          ]
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "label": "Moyenne d'une série et contrôle de vraisemblance",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "sinda-chikhaoui",
+      "student_name": "Sinda CHIKHAOUI",
+      "level_key": "4e",
+      "level_label": "Entrée en Quatrième",
+      "subject": "Mathématiques",
+      "semaine": 2,
+      "duree_minutes": 10,
+      "format": "deux items par compétence, parallèles à ceux de l'évaluation de clôture, sans aide et sans carte de rappel",
+      "critere_de_reussite": "réussite maintenue sur au moins un item par compétence",
+      "obligatoire": true,
+      "skills": [
+        {
+          "skill_id": "M4E_LIT_02",
+          "label": "Réduction d'une expression avec constantes signées",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A3",
+            "B2",
+            "B4"
+          ]
+        },
+        {
+          "skill_id": "M4E_REL_01",
+          "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+          "importance_n": "critique",
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+          "items_paralleles": [
+            "A1",
+            "A5"
+          ]
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "label": "Moyenne d'une série et contrôle de vraisemblance",
+          "importance_n": "importante",
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "raison": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+          "items_paralleles": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  ]
+}

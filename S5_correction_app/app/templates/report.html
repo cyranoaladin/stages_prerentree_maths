@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% set nav = 'dashboard' %}
+{% block title %}{{ student.person.display_name }} — bilan{% endblock %}
+{% block content %}
+
+<div class="sticky-bar no-print">
+  <div><strong>{{ student.person.display_name }}</strong>
+    <span class="muted small">— {{ student.level_label }} · {{ assessment.subject }}</span></div>
+  <div class="save-state" id="save-state">Prêt.</div>
+  <div class="spacer"></div>
+  <a class="btn btn-sm" href="/eleve/{{ student.student_id }}/analyse">Analyse</a>
+  <a class="btn btn-sm" href="/">Tableau de bord</a>
+</div>
+
+<h1>Bilan — {{ student.person.display_name }}</h1>
+<p class="lead">Les textes ci-dessous sont produits par le générateur déterministe, à partir des
+faits calculés. Vous pouvez les conserver, les modifier ou les régénérer. Une modification que
+vous approuvez ne sera jamais écrasée par une régénération.</p>
+
+<div class="sticky-bar no-print">
+  {% for kind, spec in report_types.items() %}
+  <a class="btn btn-sm {{ 'btn-primary' if kind == current_type }}"
+     href="/eleve/{{ student.student_id }}/bilan?type={{ kind }}">{{ spec.label }}
+     {% if reports.get(kind) and reports[kind].pdf_path %}<span class="badge st-VALIDATED">PDF</span>{% endif %}
+  </a>
+  {% endfor %}
+</div>
+
+{% if report %}
+<div class="sticky-bar no-print">
+  <span class="badge st-{{ 'REPORT_APPROVED' if report.status == 'APPROVED' else 'DRAFT' }}">
+    {{ 'approuvé' if report.status == 'APPROVED' else ('généré' if report.pdf_path else 'brouillon') }}
+  </span>
+  <span class="small muted">version {{ report.version }} · gabarit {{ report.template_version }}</span>
+  <div class="spacer"></div>
+  <button class="btn-sm" data-action-url="/eleve/{{ student.student_id }}/bilan/{{ current_type }}/regenerer"
+          data-confirm="Régénérer les textes ? Les blocs que vous avez modifiés seront conservés.">Régénérer les textes</button>
+  <button class="btn-sm btn-gold" data-action-url="/eleve/{{ student.student_id }}/bilan/{{ current_type }}/generer"
+          data-confirm="Compiler le PDF de ce document ?">Générer le PDF</button>
+  {% if report.pdf_path %}
+  <a class="btn btn-sm" href="/rapport/{{ report.report_id }}/pdf" target="_blank" rel="noopener">Ouvrir le PDF</a>
+  <a class="btn btn-sm" href="/rapport/{{ report.report_id }}/tex">Source LaTeX</a>
+  {% if report.status != 'APPROVED' %}
+  <button class="btn-sm btn-primary" data-action-url="/eleve/{{ student.student_id }}/bilan/{{ current_type }}/approuver"
+          data-confirm="Approuver cette version ? Elle ne sera plus modifiable ; une régénération créera une nouvelle version.">Approuver</button>
+  {% endif %}
+  {% endif %}
+</div>
+
+{% if report.pdf_sha256 %}
+<p class="small muted">Empreinte du PDF : <span class="mono">{{ report.pdf_sha256[:32] }}…</span>
+  — analyse <span class="mono">{{ report.analysis_sha256[:16] }}…</span></p>
+{% endif %}
+
+{% for block in report.blocks %}
+<div class="block" data-block-url="/eleve/{{ student.student_id }}/bilan/{{ current_type }}/bloc/{{ block.block_key }}">
+  <div class="block-head">
+    <span class="title">{{ block.title }}</span>
+    <span class="badge src-badge src-{{ block.source }}">
+      {% if block.source == 'human' %}modifié par vous{% elif block.source == 'llm_suggestion' %}proposition IA{% else %}texte déterministe{% endif %}
+    </span>
+    {% if block.approved %}<span class="badge st-VALIDATED">approuvé</span>{% endif %}
+  </div>
+  <div class="block-body">
+    <textarea rows="{{ 3 + (block.content|length // 110) }}"
+              {% if report.status == 'APPROVED' %}disabled{% endif %}>{{ block.content }}</textarea>
+    {% if report.status != 'APPROVED' %}
+    <p class="right"><button class="btn-sm block-save">Conserver ce texte</button></p>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+
+{% else %}
+<div class="banner banner-warning">Ce bilan n'a pas encore été préparé.</div>
+{% endif %}
+
+<div class="banner banner-info small">
+  <strong>Ce que le bilan n'affirmera jamais.</strong>
+  Aucune progression chiffrée — {{ a.delta_blocked_reason }}
+  Aucune notion de passerelle décrite comme « non acquise » ou comme une « lacune ».
+</div>
+{% endblock %}

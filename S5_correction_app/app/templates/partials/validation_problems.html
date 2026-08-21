@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Validation impossible — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Validation impossible</h1>
+<div class="banner banner-danger">
+  <strong>{{ problems|length }} point(s) à traiter avant de pouvoir valider.</strong>
+</div>
+<table class="grid">
+<thead><tr><th>Item</th><th>Ce qui manque ou ne va pas</th><th>Critère</th></tr></thead>
+<tbody>
+{% for p in problems %}
+<tr><td>{{ p.item_ref or '—' }}</td><td>{{ p.message }}</td>
+    <td class="mono small">{{ p.scoring_id or '' }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+<p style="margin-top:12px"><a class="btn btn-primary" href="/eleve/{{ assessment.student_id }}">Revenir à la correction</a></p>
+{% endblock %}

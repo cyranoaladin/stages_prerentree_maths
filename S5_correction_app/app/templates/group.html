@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set nav = 'group' %}
+{% block title %}Vue groupe — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Vue groupe</h1>
+<p class="lead">Ce tableau sert à organiser la rentrée, pas à classer les élèves. Les colonnes
+décrivent des corpus de critères différents d'un élève à l'autre : elles ne sont pas comparables
+entre elles.</p>
+<table class="grid">
+<thead><tr><th>Élève</th><th>Niveau</th><th>Matière</th><th class="num">Acquis N−1</th>
+<th class="num">Passerelles</th><th>Priorités</th><th>Bilan</th></tr></thead>
+<tbody>
+{% for row in rows %}
+<tr>
+  <td><a href="/eleve/{{ row.student_id }}">{{ row.display_name }}</a></td>
+  <td class="small">{{ row.level_label }}</td>
+  <td class="small">{{ row.subject }}</td>
+  <td class="num">{% if row.analysed %}{{ row.n1.earned }} / {{ row.n1.available }}{% else %}<span class="muted">—</span>{% endif %}</td>
+  <td class="num">{% if row.analysed and row.bridge.available_centi %}{{ row.bridge.earned }} / {{ row.bridge.available }}{% else %}<span class="muted">—</span>{% endif %}</td>
+  <td class="small">{{ row.priorities|join(' · ') or '—' }}</td>
+  <td class="small">{{ row.report }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}

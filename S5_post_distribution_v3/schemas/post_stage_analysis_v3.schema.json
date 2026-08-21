@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nexus-s5-post-distribution-analysis-v3",
+  "title": "Analyse post-distribution S5 — V3",
+  "type": "object",
+  "required": ["schema", "student_id", "level_key", "raw_assessment_score",
+               "n_minus_1_consolidation", "bridge_n_readiness", "skills", "criteria",
+               "error_profile", "retention", "delayed_checks", "action_plan_inputs",
+               "baseline_measure_available", "student_artifacts_modified", "warnings"],
+  "properties": {
+    "schema": {"const": "nexus-s5-post-distribution-analysis-v3"},
+    "generated_on": {"type": "string"},
+    "student_id": {"type": "string"},
+    "student_name": {"type": "string"},
+    "level_key": {"enum": ["4e", "3e", "2nde", "1ere_spe", "1re_nsi"]},
+    "level_label": {"type": "string"},
+    "subject": {"type": "string"},
+    "analysed_on": {"type": ["string", "null"]},
+    "status": {"const": "analysed"},
+    "scoring_model": {"type": "string"},
+    "curriculum_references": {"type": "object"},
+    "student_artifacts_modified": {"const": 0},
+    "baseline_measure_available": {"const": false},
+    "raw_assessment_score": {
+      "type": "object",
+      "required": ["label", "score", "max"],
+      "properties": {
+        "label": {"const": "score brut au sujet de clôture"},
+        "score": {"type": "number", "minimum": 0},
+        "max": {"type": "number", "const": 20},
+        "scored_max": {"type": "number"},
+        "note_sur_20": {"type": ["number", "null"]},
+        "avertissement": {"type": "string"},
+        "neutralised_points": {"type": "number"}
+      }
+    },
+    "n_minus_1_consolidation": {"$ref": "#/$defs/pool"},
+    "bridge_n_readiness": {"$ref": "#/$defs/pool"},
+    "criteria": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/criterion"}},
+    "skills": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/skill"}},
+    "error_profile": {
+      "type": "object",
+      "required": ["attribution", "n_minus_1", "bridge_n", "by_criterion"],
+      "properties": {
+        "attribution": {"type": "string"},
+        "n_minus_1": {"type": "object"},
+        "bridge_n": {"type": "object"},
+        "dominant_codes_n_minus_1": {"type": "array", "items": {"type": "string"}},
+        "by_criterion": {"type": "array"}
+      }
+    },
+    "retention": {"type": "object", "required": ["principe", "skills"]},
+    "delayed_checks": {"type": "object", "required": ["semaine", "obligatoire", "skills"]},
+    "action_plan_inputs": {
+      "type": "object",
+      "required": ["n_minus_1_priorities", "bridge_actions", "regle"],
+      "properties": {
+        "n_minus_1_priorities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["family", "analysis_skill_id", "priority_rank"],
+            "properties": {
+              "family": {"const": "n_minus_1"},
+              "priority_rank": {"enum": ["P1", "P2", "P3", "OK"]}
+            }
+          }
+        },
+        "bridge_actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["family", "analysis_skill_id", "action"],
+            "properties": {
+              "family": {"const": "bridge_n"},
+              "action": {"enum": ["BRIDGE_REVISIT", "DISCOVERY_TO_CONTINUE"]}
+            }
+          }
+        }
+      }
+    },
+    "confidence": {"type": "object"},
+    "timing": {
+      "type": "object",
+      "required": ["estimated_duration_minutes", "observed_duration_minutes"],
+      "properties": {
+        "estimated_duration_minutes": {"type": ["number", "null"]},
+        "observed_duration_minutes": {"type": ["number", "null"]}
+      }
+    },
+    "neutralised_criteria": {"type": "array"},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "pool": {
+      "type": "object",
+      "required": ["earned", "available", "percentage"],
+      "properties": {
+        "earned": {"type": "number", "minimum": 0},
+        "available": {"type": "number", "minimum": 0},
+        "percentage": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+        "criteria": {"type": "integer", "minimum": 0},
+        "nature": {"type": "string"}
+      }
+    },
+    "criterion": {
+      "type": "object",
+      "required": ["criterion_id", "scoring_id", "analysis_skill_id", "curriculum_scope",
+                   "score", "max_score", "error_codes"],
+      "properties": {
+        "criterion_id": {"type": "string"},
+        "scoring_id": {"type": "string"},
+        "virtual": {"type": "boolean"},
+        "curriculum_scope": {"enum": ["n_minus_1", "bridge_n"]},
+        "score": {"type": ["number", "null"], "minimum": 0},
+        "max_score": {"type": "number"},
+        "error_codes": {"type": "array", "items": {"type": "string"}},
+        "scoring_status": {"enum": ["scored", "neutralised"]},
+        "evidence_quality": {"enum": ["standard", "limited_by_prompt"]}
+      }
+    },
+    "skill": {
+      "type": "object",
+      "required": ["analysis_skill_id", "curriculum_scope", "score", "evidence_strength",
+                   "error_codes", "interpretation", "mastery_delta"],
+      "properties": {
+        "analysis_skill_id": {"type": "string"},
+        "label": {"type": ["string", "null"]},
+        "original_skill_ids": {"type": "array", "items": {"type": "string"}},
+        "is_analysis_alias": {"type": "boolean"},
+        "curriculum_scope": {"enum": ["n_minus_1", "bridge_n"]},
+        "score": {
+          "type": "object",
+          "required": ["earned", "available", "success_rate"],
+          "properties": {
+            "earned": {"type": "number"}, "available": {"type": "number"},
+            "success_rate": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        },
+        "evidence": {"type": "object"},
+        "evidence_strength": {"enum": ["insufficient", "low", "moderate", "strong"]},
+        "error_codes": {"type": "array", "items": {"type": "string"}},
+        "mastery_delta": {"type": "null"},
+        "delta_blocked_reason": {"type": "string"},
+        "recommended_delayed_check": {"type": "boolean"},
+        "interpretation": {
+          "type": "object",
+          "required": ["status", "reading", "authorised_wording", "forbidden_wording"],
+          "properties": {
+            "status": {"enum": ["acquis_observe", "en_cours_de_consolidation", "fragile",
+                                 "non_conclusif", "first_exposure", "not_yet_installed",
+                                 "bridge_to_revisit", "no_conclusion"]},
+            "authorised_wording": {"type": "array", "items": {"type": "string"}},
+            "forbidden_wording": {"type": "array", "items": {"type": "string"}},
+            "evidence_quality": {"enum": ["standard", "limited_by_prompt"]}
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"curriculum_scope": {"const": "bridge_n"}},
+                 "required": ["curriculum_scope"]},
+          "then": {"properties": {"interpretation": {"properties": {"status": {
+            "enum": ["first_exposure", "not_yet_installed", "bridge_to_revisit", "no_conclusion"]
+          }}}}}
+        },
+        {
+          "if": {"properties": {"curriculum_scope": {"const": "n_minus_1"}},
+                 "required": ["curriculum_scope"]},
+          "then": {"properties": {"interpretation": {"properties": {"status": {
+            "enum": ["acquis_observe", "en_cours_de_consolidation", "fragile", "non_conclusif"]
+          }}}}}
+        }
+      ]
+    }
+  }
+}

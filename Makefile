@@ -37,3 +37,28 @@ clean-generated:
 test:
 	pytest -q
 	python3 S5_cloture/tools/tests/test_analyze_s5.py
+
+# --- Nexus S5 — Correction & Bilans -----------------------------------------
+# Cibles ajoutées pour l'application de correction. Aucune cible existante n'est touchée.
+S5_APP := S5_correction_app
+
+.PHONY: s5-correction-install s5-correction-init s5-correction-run s5-correction-test \
+        s5-correction-qa s5-correction-backup
+
+s5-correction-install:
+	python3 -m pip install --user -r $(S5_APP)/requirements-correction.lock
+
+s5-correction-init:
+	cd $(S5_APP) && python3 tools/init_database.py
+
+s5-correction-run:
+	cd $(S5_APP) && python3 -m app.cli serve
+
+s5-correction-test:
+	cd $(S5_APP) && python3 -m pytest -q
+
+s5-correction-qa:
+	cd $(S5_APP) && python3 tools/verify_integrity.py && python3 -m pytest -q
+
+s5-correction-backup:
+	cd $(S5_APP) && python3 tools/backup.py

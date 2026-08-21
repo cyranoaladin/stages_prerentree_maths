@@ -1,0 +1,837 @@
+{
+  "schema": "nexus-s5-answer-key-overlay-v3",
+  "generated_on": "2026-08-21",
+  "confidential": true,
+  "student_id": "ahmad-beldi-maths",
+  "level_key": "1ere_spe",
+  "subject": "Mathématiques",
+  "source_answer_key": "S5_cloture/1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/answer_key.json",
+  "source_answer_key_status": "conservé intact comme preuve de ce qui existait à la distribution",
+  "items": [
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$(4x - 7)(4x + 7)$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_ALG_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_ALG_02",
+          "analysis_skill_id": "M1RE_ALG_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "factorisation exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x < 4$, soit $S = \\left]-\\infty\\,;4\\right[$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_INEQ_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_INEQ_01",
+          "analysis_skill_id": "M1RE_INEQ_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "solution et intervalle exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$15$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_FONC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_FONC_01",
+          "analysis_skill_id": "M1RE_FONC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$15$ exact avec la substitution visible",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$\\vec{AB}(-6\\,;6)$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_VECT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_VECT_01",
+          "analysis_skill_id": "M1RE_VECT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux coordonnées exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$(7x - 4)(7x + 4)$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_ALG_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A5_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_ALG_02",
+          "analysis_skill_id": "M1RE_ALG_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "factorisation exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$f(-4)=1$ ; $-4$ est un antécédent de $1$ par $f$.",
+      "estimated_duration_minutes": 1.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_FONC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_A6_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_FONC_02",
+          "analysis_skill_id": "M1RE_FONC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "communication",
+          "desc": "égalité et phrase exactes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "Racines $-2$ et $2$ ; $P(x)>0$ sur $\\left]-2\\,;2\\right[$ ; $P(x)\\leqslant 0$ sur $\\left]-\\infty\\,;-2\\right]\\cup\\left[2\\,;+\\infty\\right[$.",
+      "estimated_duration_minutes": 5.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_INEQ_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.75,
+          "original_skill_id": "M1RE_INEQ_02",
+          "analysis_skill_id": "M1RE_INEQ_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "racines exactes et tableau complet",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "M1RE_INEQ_02",
+          "analysis_skill_id": "M1RE_INEQ_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "ensemble solution exact, bornes correctement ouvertes",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.5,
+          "original_skill_id": "M1RE_INEQ_02",
+          "analysis_skill_id": "M1RE_INEQ_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "ensemble complémentaire exact, bornes fermées incluses",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$5$ est l'image de $-2$ par $f$ ; $-2$ est un antécédent de $5$. Pour $0<x<1$, $x^2<x$.",
+      "estimated_duration_minutes": 3.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_FONC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        },
+        "M1RE_FREF_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_FONC_02",
+          "analysis_skill_id": "M1RE_FONC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "communication",
+          "desc": "vocabulaire correct dans les deux sens : image et antécédent",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.6,
+          "original_skill_id": "M1RE_FREF_02",
+          "analysis_skill_id": "M1RE_FREF_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "argument valable pour tout $x$ de l'intervalle",
+          "accepted_methods": [],
+          "interpretation_limits": [
+            "cet item, seul, ne prouve pas une compétence de démonstration universelle"
+          ],
+          "fairness_rules": [
+            "aucun formalisme non demandé par la consigne imprimée ne conditionne l'attribution des points."
+          ],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "limited_by_prompt",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1.",
+          "printed_prompt": "Soit x un réel tel que 0 < x < 1. Comparer x^2 et x, puis justifier la réponse par un exemple numérique et par un argument valable pour tout x de cet intervalle.",
+          "proof_levels": {
+            "niveau_demande": "comparaison correcte (x^2 < x) et argument valable pour tout x : signe de x(x-1), ou multiplication de 0 < x < 1 par x > 0.",
+            "preuve_renforcee": "rédaction formelle du tableau de signes de x(x-1). Valorisée, jamais exigée."
+          }
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B2_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 0.4,
+          "original_skill_id": "M1RE_FREF_02",
+          "analysis_skill_id": "M1RE_FREF_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "exemple numérique cohérent",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$360$ TND puis $432$ TND ; coefficient global $0{,}9$, soit une baisse globale de $10\\,\\%$.",
+      "estimated_duration_minutes": 3.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_POURC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_POURC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_POURC_02",
+          "analysis_skill_id": "M1RE_POURC_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "les deux prix exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B3_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_POURC_01",
+          "analysis_skill_id": "M1RE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "coefficient global et taux global exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x^3 < x^2$ pour tout $x$ de $\\left]0\\,;1\\right[$ : $x^3-x^2=x^2(x-1)$ avec $x^2>0$ et $x-1<0$, donc la différence est strictement négative. Illustration : $x=0{,}5$ donne $0{,}125 < 0{,}25$. Et $P(A\\cup B)=\\frac12+\\frac13-\\frac16=\\frac23$.",
+      "estimated_duration_minutes": 3.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_FREF_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_PROBA_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.75,
+          "original_skill_id": "M1RE_FREF_02",
+          "analysis_skill_id": "M1RE_FREF_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "argument valable pour tout $x$ de l'intervalle : signe de $x^2(x-1)$, ou tout raisonnement général équivalent",
+          "accepted_methods": [],
+          "interpretation_limits": [
+            "cet item, seul, ne prouve pas une compétence de démonstration universelle : il porte sur un intervalle donné et sur deux puissances voisines"
+          ],
+          "fairness_rules": [
+            "la consigne imprimée demande « un argument valable pour tout x », non une démonstration formelle. Aucun élève n'est pénalisé pour l'absence d'un formalisme que la consigne ne réclame pas. L'exemple numérique est rétribué par son propre critère et ne peut pas tenir lieu d'argument général."
+          ],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "limited_by_prompt",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1.",
+          "printed_prompt": "Soit x un réel tel que 0 < x < 1. Comparer x^3 et x^2 : donner d'abord un argument valable pour tout x de cet intervalle, puis illustrer par un exemple numérique.",
+          "proof_levels": {
+            "niveau_demande": "comparaison correcte (x^3 < x^2) assortie d'un argument valable pour tout x de l'intervalle. Tout argument général correct convient : signe de x^2(x-1), multiplication de 0 < x < 1 par x^2 > 0, ou comparaison des facteurs.",
+            "preuve_renforcee": "rédaction formelle du signe de x^2(x-1) sur ]0 ; 1[. Elle est valorisée qualitativement en observation, jamais exigée pour accorder les points promis par la consigne imprimée."
+          }
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B4_c2",
+          "criterion_rank": 2,
+          "subpart": "1",
+          "original_points": 0.25,
+          "original_skill_id": "M1RE_FREF_02",
+          "analysis_skill_id": "M1RE_FREF_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "exemple numérique cohérent, présenté comme une illustration et non comme une preuve",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [
+            "tout exemple numérique cohérent appartenant à ]0 ; 1[ est crédité. Sa présentation comme illustration et non comme preuve est attendue mais n'est pas une condition d'attribution des points."
+          ],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "limited_by_prompt",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1.",
+          "printed_prompt": "…puis illustrer par un exemple numérique."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_B4_c3",
+          "criterion_rank": 3,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_PROBA_01",
+          "analysis_skill_id": "M1RE_PROBA_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$P(A\\cup B)$ exacte, formule visible",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "original_points": 4,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$m=2$ et $y=2x$ ; $C$ appartient à $(AB)$ ; $P(N\\cup C)=0{,}7$ et $P(\\overline{N})=0{,}6$ ; $u_{n+1}=1{,}04\\,u_n$ et $u_2\\approx 195$ TND.",
+      "estimated_duration_minutes": 8.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M1RE_DROIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_VECT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_PROBA_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_POURC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_DROIT_01",
+          "analysis_skill_id": "M1RE_DROIT_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "coefficient directeur et équation réduite exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_VECT_02",
+          "analysis_skill_id": "M1RE_VECT_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "appartenance justifiée par un calcul explicite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_PROBA_01",
+          "analysis_skill_id": "M1RE_PROBA_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "les deux probabilités exactes, intersection correctement retirée",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c4",
+          "criterion_rank": 4,
+          "subpart": "4",
+          "original_points": 1.0,
+          "original_skill_id": "M1RE_POURC_02",
+          "analysis_skill_id": "M1RE_POURC_02",
+          "curriculum_scope": "mixed",
+          "evidence_type": "transfert",
+          "desc": "relation de récurrence correcte et $u_2$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [
+            "le sous-critère de calcul est évalué à partir de la relation que l'élève a effectivement écrite : une relation fausse ne doit pas être pénalisée deux fois"
+          ],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "« Écrire la relation liant u_(n+1) et u_n, puis calculer u_2 » agrège en un seul critère une notation de Première et un calcul d'évolution successive de Seconde. Le critère imprimé est indivisible ; il est donc éclaté en sous-critères analytiques virtuels, à somme de points strictement égale.",
+          "virtual_subcriteria": [
+            {
+              "virtual_criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c4_v1",
+              "parent_criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c4",
+              "points": 0.5,
+              "curriculum_scope": "bridge_n",
+              "analysis_skill_id": "M1RE_SUITES_RECURRENCE_BRIDGE",
+              "desc": "relation de récurrence u_(n+1) = 1,04 x u_n correctement écrite",
+              "virtual": true
+            },
+            {
+              "virtual_criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c4_v2",
+              "parent_criterion_id": "1ERE_SPE_AHMAD_BELDI_C1_c4",
+              "points": 0.5,
+              "curriculum_scope": "n_minus_1",
+              "analysis_skill_id": "M1RE_POURC_02",
+              "desc": "u_2 obtenu par application répétée du coefficient multiplicateur, évalué à partir de la relation écrite par l'élève",
+              "virtual": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "1ERE_SPE_AHMAD_BELDI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$u_{n+1} = 1{,}05\\,u_n$ ; $u_2 = 300\\times 1{,}05^2 = 330{,}75 \\approx 331$ TND.",
+      "estimated_duration_minutes": 4.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "not_comparable",
+      "retention": {
+        "M1RE_POURC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M1RE_POURC_02",
+          "analysis_skill_id": "M1RE_SUITES_RECURRENCE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "procedure",
+          "desc": "relation de récurrence exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "l'écriture de u_(n+1) en fonction de u_n est la notation de suite introduite en phase 4 de la séance ; le manifeste marque déjà cet item « not_comparable »."
+        },
+        {
+          "criterion_id": "1ERE_SPE_AHMAD_BELDI_C2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "M1RE_POURC_02",
+          "analysis_skill_id": "M1RE_SUITES_RECURRENCE_BRIDGE",
+          "curriculum_scope": "bridge_n",
+          "evidence_type": "automatisme",
+          "desc": "$u_2$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [
+            "u_2 est évalué à partir de la relation que l'élève a écrite à la question précédente"
+          ],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "u_2 est ici demandé dans le cadre de la suite ; le classer en N-1 ferait retomber sur la consolidation de Seconde l'échec éventuel d'une notation nouvelle. Le coefficient multiplicateur reste mesuré en N-1 par les deux critères de l'item B3."
+        }
+      ]
+    }
+  ]
+}

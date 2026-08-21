@@ -220,6 +220,24 @@ FONCTIONS_PAR_ELEVE = {
 DRIVER = r'''
 import contextlib, importlib.util, io, json, sys, traceback
 copie, plan_json, sortie = sys.argv[1], sys.argv[2], sys.argv[3]
+SENTINELLE = "@@NEXUS_RESULTAT@@"
+LIMITE_OCTETS = 1 << 20
+
+
+def emettre(obj):
+    """Ecrit le resultat. sortie == "-" signifie : sur stdout, entre sentinelles.
+
+    Le mode conteneur emploie "-" : aucun repertoire hote accessible en ecriture
+    n'est alors monte dans le conteneur.
+    """
+    corps = json.dumps(obj)[:LIMITE_OCTETS]
+    if sortie == "-":
+        sys.stdout.write("\n" + SENTINELLE + corps + SENTINELLE + "\n")
+        sys.stdout.flush()
+    else:
+        open(sortie, "w", encoding="utf-8").write(corps)
+
+
 out = {"import_error": None, "results": []}
 buf = io.StringIO()
 spec = importlib.util.spec_from_file_location("copie_eleve", copie)
@@ -229,7 +247,7 @@ try:
         spec.loader.exec_module(mod)
 except Exception:
     out["import_error"] = traceback.format_exc(limit=3)
-    open(sortie, "w", encoding="utf-8").write(json.dumps(out))
+    emettre(out)
     sys.exit(0)
 for nom, cas_list in json.loads(plan_json):
     fn = getattr(mod, nom, None)
@@ -256,7 +274,7 @@ for nom, cas_list in json.loads(plan_json):
             rec["statut"] = "EXCEPTION"
             rec["exception"] = "%s: %s" % (type(exc).__name__, exc)
         out["results"].append(rec)
-open(sortie, "w", encoding="utf-8").write(json.dumps(out))
+emettre(out)
 '''
 
 
@@ -310,31 +328,35 @@ def run(copie, eleve, timeout, mode):
                                         "d'abord avec « docker pull %s », puis relancez."
                                         % (DOCKER_IMAGE, DOCKER_IMAGE),
                         "results": [], "isolation": "aucune (exécution refusée)"}
+            # Aucun répertoire hôte inscriptible n'est monté : le résultat sort par
+            # stdout, encadré par une sentinelle. Les deux seuls montages sont en
+            # lecture seule et portent sur un fichier chacun.
             cmd = [
                 "docker", "run", "--rm",
                 "--pull=never",                       # l'image doit être présente localement
                 "--network=none",                     # aucun accès réseau
                 "--read-only",                        # système de fichiers en lecture seule
-                "--tmpfs", "/tmp:rw,noexec,nosuid,size=32m",
+                "--tmpfs", "/tmp:rw,noexec,nosuid,nodev,size=16m",
                 "--user", "65534:65534",              # utilisateur non privilégié
-                "--memory=256m", "--pids-limit=64", "--cpus=0.5",
+                "--memory=256m", "--memory-swap=256m",
+                "--pids-limit=64", "--cpus=0.5",
+                "--ulimit", "fsize=8388608",          # 8 Mio par fichier écrit, au plus
+                "--ulimit", "nofile=64",
                 "--security-opt", "no-new-privileges",
                 "--cap-drop", "ALL",
-                "--env", "HOME=/tmp",                 # aucun HOME réel monté
+                "--env", "HOME=/tmp", "--env", "PYTHONDONTWRITEBYTECODE=1",
                 "-v", "%s:/travail/driver.py:ro" % driver,
                 "-v", "%s:/travail/copie.py:ro" % os.path.abspath(copie),
-                "-v", "%s:/sortie" % workdir,
                 "-w", "/travail",
                 DOCKER_IMAGE,
                 "python", "/travail/driver.py", "/travail/copie.py",
-                json.dumps(plan), "/sortie/resultat.json",
+                json.dumps(plan), "-",
             ]
-            # le conteneur tourne en utilisateur non privilégié : le répertoire de sortie,
-            # créé par mktemp pour cette seule exécution, doit lui être ouvert en écriture.
-            os.chmod(workdir, 0o777)
-            isolation = ("conteneur jetable : réseau désactivé, FS en lecture seule sauf /tmp, "
-                         "utilisateur non privilégié, 256 Mo, 64 processus, 0,5 CPU, "
-                         "aucune image téléchargée implicitement")
+            isolation = ("conteneur jetable : réseau désactivé, système de fichiers en lecture "
+                         "seule, /tmp en tmpfs borné à 16 Mio, aucun répertoire hôte inscriptible "
+                         "monté, résultat transmis par stdout entre sentinelles, utilisateur non "
+                         "privilégié, capacités abandonnées, 256 Mo sans swap, 64 processus, "
+                         "0,5 CPU, aucune image téléchargée implicitement")
         else:
             cmd = [sys.executable, driver, os.path.abspath(copie), json.dumps(plan), resultat]
             isolation = ("AUCUNE : sous-processus séparé avec délai maximal, mêmes droits que "
@@ -344,15 +366,28 @@ def run(copie, eleve, timeout, mode):
         except subprocess.TimeoutExpired:
             return {"import_error": "délai de %d s dépassé : boucle infinie probable" % timeout,
                     "results": [], "isolation": isolation}
-        if not os.path.exists(resultat):
-            return {"import_error": (proc.stderr or "aucun résultat produit").strip()[:2000],
-                    "results": [], "isolation": isolation}
-        with open(resultat, encoding="utf-8") as f:
-            body = f.read()
+        if mode == "conteneur":
+            marque = "@@NEXUS_RESULTAT@@"
+            morceaux = (proc.stdout or "").split(marque)
+            if len(morceaux) < 3:
+                return {"import_error": ((proc.stderr or "aucun résultat produit sur stdout")
+                                         .strip()[:2000]),
+                        "results": [], "isolation": isolation}
+            body = morceaux[1]
+        else:
+            if not os.path.exists(resultat):
+                return {"import_error": (proc.stderr or "aucun résultat produit").strip()[:2000],
+                        "results": [], "isolation": isolation}
+            with open(resultat, encoding="utf-8") as f:
+                body = f.read()
         if not body.strip():
             return {"import_error": (proc.stderr or "résultat vide").strip()[:2000],
                     "results": [], "isolation": isolation}
-        out = json.loads(body)
+        try:
+            out = json.loads(body)
+        except json.JSONDecodeError as exc:
+            return {"import_error": "résultat illisible (%s)" % exc,
+                    "results": [], "isolation": isolation}
         out["isolation"] = isolation
         return out
     finally:

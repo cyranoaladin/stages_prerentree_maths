@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nexus-s5-responses-v3",
+  "title": "Saisie de correction S5 — V3, critère par critère",
+  "type": "object",
+  "required": ["schema", "student_id", "status", "responses"],
+  "properties": {
+    "schema": {"const": "nexus-s5-responses-v3"},
+    "generated_on": {"type": "string"},
+    "student_id": {"type": "string", "minLength": 1},
+    "student_name": {"type": "string"},
+    "level_key": {"enum": ["4e", "3e", "2nde", "1ere_spe", "1re_nsi"]},
+    "subject": {"type": "string"},
+    "status": {"type": "string"},
+    "assessed_on": {"type": ["string", "null"]},
+    "estimated_duration_minutes": {"type": ["number", "null"]},
+    "observed_duration_minutes": {"type": ["number", "null"]},
+    "fixture_synthetique": {"type": "boolean"},
+    "source_of_truth": {"type": "string"},
+    "instructions": {"type": "object"},
+    "session_observations": {"type": "object"},
+    "responses": {
+      "type": "array", "minItems": 12,
+      "items": {"$ref": "#/$defs/item"}
+    }
+  },
+  "$defs": {
+    "scope": {"enum": ["n_minus_1", "bridge_n", "mixed"]},
+    "scoringStatus": {"enum": ["pending", "scored", "requires_human_allocation", "neutralised"]},
+    "errorCodes": {
+      "type": "array",
+      "items": {"enum": ["CONCEPT", "METHODE", "CALCUL", "LECTURE", "NOTATION", "JUSTIFICATION",
+                          "CONTROLE", "ALGORITHME", "SYNTAXE", "TRANSFERT", "ETOURDERIE"]}
+    },
+    "scoredRow": {
+      "type": "object",
+      "required": ["max_points", "score", "error_codes", "criterion_scoring_status"],
+      "properties": {
+        "max_points": {"type": "number", "exclusiveMinimum": 0},
+        "score": {"type": ["number", "null"], "minimum": 0},
+        "error_codes": {"$ref": "#/$defs/errorCodes"},
+        "observation": {"type": ["string", "null"]},
+        "accepted_alternative_method": {"type": "boolean"},
+        "criterion_scoring_status": {"$ref": "#/$defs/scoringStatus"}
+      }
+    },
+    "virtual": {
+      "allOf": [{"$ref": "#/$defs/scoredRow"}],
+      "type": "object",
+      "required": ["virtual_criterion_id", "analysis_skill_id", "curriculum_scope"],
+      "properties": {
+        "virtual_criterion_id": {"type": "string"},
+        "analysis_skill_id": {"type": "string"},
+        "curriculum_scope": {"enum": ["n_minus_1", "bridge_n"]},
+        "desc": {"type": "string"}
+      }
+    },
+    "criterion": {
+      "allOf": [{"$ref": "#/$defs/scoredRow"}],
+      "type": "object",
+      "required": ["criterion_id", "analysis_skill_id", "original_skill_id", "curriculum_scope",
+                   "evidence_type"],
+      "properties": {
+        "criterion_id": {"type": "string", "minLength": 1},
+        "analysis_skill_id": {"type": "string", "minLength": 1},
+        "original_skill_id": {"type": "string", "minLength": 1},
+        "curriculum_scope": {"$ref": "#/$defs/scope"},
+        "evidence_type": {"enum": ["automatisme", "procedure", "justification", "controle",
+                                    "transfert", "communication"]},
+        "subpart": {"type": "string"},
+        "desc": {"type": "string"},
+        "score_is_sum_of_virtual": {"type": "boolean"},
+        "virtual_subcriteria": {"type": "array", "minItems": 2,
+                                 "items": {"$ref": "#/$defs/virtual"}}
+      },
+      "if": {"properties": {"curriculum_scope": {"const": "mixed"}}, "required": ["curriculum_scope"]},
+      "then": {"required": ["virtual_subcriteria"]}
+    },
+    "item": {
+      "type": "object",
+      "required": ["item_id", "ref", "max_points", "criteria"],
+      "properties": {
+        "item_id": {"type": "string"},
+        "ref": {"type": "string"},
+        "part": {"enum": ["A", "B", "C"]},
+        "kind": {"enum": ["commun", "individuel"]},
+        "max_points": {"type": "number"},
+        "estimated_duration_minutes": {"type": ["number", "null"]},
+        "observed_duration_minutes": {"type": ["number", "null"]},
+        "confidence": {"type": ["integer", "null"], "minimum": 1, "maximum": 4},
+        "confidence_probe": {"type": "boolean"},
+        "teacher_observation_non_scored": {"type": "array", "items": {"type": "string"}},
+        "criteria": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/criterion"}}
+      }
+    }
+  }
+}

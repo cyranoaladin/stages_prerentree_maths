@@ -1,0 +1,48 @@
+{
+  "schema": "nexus-s5-non-regression-v3",
+  "generated_on": "2026-08-21",
+  "student_artifacts_changed": 0,
+  "checks": [
+    {
+      "controle": "empreintes des artefacts élèves",
+      "verdict": "PASS",
+      "detail": "student_artifacts_changed = 0, manquants = 0, ajoutés = 0"
+    },
+    {
+      "controle": "15 couples élève x matière",
+      "verdict": "PASS",
+      "detail": "15 couples trouvés"
+    },
+    {
+      "controle": "30 PDF élèves présents",
+      "verdict": "PASS",
+      "detail": "30 / 30 présents"
+    },
+    {
+      "controle": "30 sources LaTeX présentes",
+      "verdict": "PASS",
+      "detail": "30 / 30 présentes"
+    },
+    {
+      "controle": "identifiants d'items inchangés",
+      "verdict": "PASS",
+      "detail": "180 items ; écarts : aucun"
+    },
+    {
+      "controle": "identifiants et points des critères d'origine inchangés",
+      "verdict": "PASS",
+      "detail": "337 critères ; écarts : aucun"
+    },
+    {
+      "controle": "20 points bruts conservés par élève",
+      "verdict": "PASS",
+      "detail": "écarts : aucun"
+    },
+    {
+      "controle": "aucun corrigé dans les documents élèves",
+      "verdict": "PASS",
+      "detail": "fuites : aucune"
+    }
+  ],
+  "verdict": "PASS"
+}

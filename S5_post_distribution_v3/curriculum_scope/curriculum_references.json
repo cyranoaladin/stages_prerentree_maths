@@ -1,0 +1,136 @@
+{
+  "schema": "nexus-s5-curriculum-references-v3",
+  "generated_on": "2026-08-21",
+  "annee_scolaire": "2026-2027",
+  "avertissement": "aucun NOR n'est inventé. Lorsqu'un texte applicable n'est pas documenté dans le dossier, « nor » vaut null et « nor_documente » vaut false : l'absence est déclarée, elle n'est pas comblée.",
+  "levels": {
+    "4e": {
+      "grade_n": "Quatrième",
+      "grade_n_minus_1": "Cinquième",
+      "curriculum_current": {
+        "nor": "MENE2018714A",
+        "nor_documente": true,
+        "objet": "programme du cycle 4 (Cinquième, Quatrième, Troisième)",
+        "applicable_2026_2027": true,
+        "couvre": [
+          "n_minus_1",
+          "bridge_n"
+        ]
+      },
+      "curriculum_successor": {
+        "nor": "MENE2602912A",
+        "nor_documente": true,
+        "applicable_to_grade_2026_2027": false,
+        "note": "changement ultérieur pour la Quatrième : ne pas appliquer par anticipation"
+      }
+    },
+    "3e": {
+      "grade_n": "Troisième",
+      "grade_n_minus_1": "Quatrième",
+      "curriculum_current": {
+        "nor": "MENE2018714A",
+        "nor_documente": true,
+        "objet": "programme du cycle 4 (Cinquième, Quatrième, Troisième)",
+        "applicable_2026_2027": true,
+        "couvre": [
+          "n_minus_1",
+          "bridge_n"
+        ]
+      },
+      "curriculum_successor": {
+        "nor": "MENE2602912A",
+        "nor_documente": true,
+        "applicable_to_grade_2026_2027": false,
+        "note": "changement ultérieur pour la Troisième : ne pas appliquer par anticipation"
+      }
+    },
+    "2nde": {
+      "grade_n": "Seconde générale et technologique",
+      "grade_n_minus_1": "Troisième",
+      "curriculum_current": {
+        "nor": "MENE2602914A",
+        "nor_documente": true,
+        "objet": "programme de mathématiques de la classe de Seconde",
+        "applicable_2026_2027": true,
+        "couvre": [
+          "bridge_n"
+        ]
+      },
+      "curriculum_n_minus_1": {
+        "nor": "MENE2018714A",
+        "nor_documente": true,
+        "objet": "programme du cycle 4, dont la classe de Troisième",
+        "couvre": [
+          "n_minus_1"
+        ]
+      }
+    },
+    "1ere_spe": {
+      "grade_n": "Première générale — spécialité mathématiques",
+      "grade_n_minus_1": "Seconde générale et technologique",
+      "curriculum_current": {
+        "nor": "MENE2602917A",
+        "nor_documente": true,
+        "objet": "programme de la spécialité mathématiques en classe de Première",
+        "applicable_2026_2027": true,
+        "couvre": [
+          "bridge_n"
+        ]
+      },
+      "curriculum_n_minus_1": {
+        "nor": null,
+        "nor_documente": false,
+        "objet": "programme de mathématiques de la classe de Seconde suivi par ces élèves en 2025-2026",
+        "note": "le numéro NOR de ce texte n'est pas documenté dans le dossier de mission ; il n'est donc pas renseigné.",
+        "couvre": [
+          "n_minus_1"
+        ]
+      }
+    },
+    "1re_nsi": {
+      "grade_n": "Première générale — numérique et sciences informatiques",
+      "grade_n_minus_1": "Seconde générale et technologique",
+      "curriculum_current": {
+        "nor": "MENE1901633A",
+        "nor_documente": true,
+        "objet": "programme de la spécialité numérique et sciences informatiques en classe de Première",
+        "applicable_2026_2027": true,
+        "couvre": [
+          "bridge_n"
+        ]
+      },
+      "curriculum_n_minus_1": {
+        "nor": null,
+        "nor_documente": false,
+        "objet": "acquis de programmation antérieurs : algorithmique et programmation du cycle 4, sciences numériques et technologie en Seconde, et séances S1 à S4 du stage",
+        "note": "la NSI n'a pas de programme d'année N-1 ; les prérequis mobilisés sont de sources multiples, dont les numéros NOR ne sont pas documentés dans le dossier de mission.",
+        "couvre": [
+          "n_minus_1"
+        ]
+      }
+    }
+  },
+  "transitions_n_minus_1_vers_n": {
+    "4e": [
+      "somme et différence de relatifs (5e) -> produit et quotient de relatifs (4e)",
+      "expression littérale (5e) -> mise en équation et équation du premier degré (4e)"
+    ],
+    "3e": [
+      "distributivité simple k(ax+b) (4e) -> double distributivité (a+b)(c+d) (3e)",
+      "cosinus (4e) -> sinus et tangente (3e)",
+      "expressions littérales (4e) -> notion de fonction, image et antécédent (3e)"
+    ],
+    "2nde": [
+      "inégalités écrites en phrases (3e) -> notation en intervalle (2nde)",
+      "notion de fonction, image, antécédent et notation f(x), DÉJÀ au programme de Troisième -> approfondissements et notations propres à la Seconde"
+    ],
+    "1ere_spe": [
+      "évolutions successives et coefficient multiplicateur (2nde) -> suite géométrique définie par récurrence (1re)",
+      "coefficient directeur d'une droite (2nde) -> taux de variation moyen (1re)"
+    ],
+    "1re_nsi": [
+      "parcours de liste et contrat d'une fonction (acquis antérieurs) -> recherche séquentielle et dichotomique, précondition, coût, invariant (1re)"
+    ]
+  },
+  "mise_au_point_seconde": "la notion de fonction, l'image, l'antécédent et la notation f(x) appartiennent déjà à la progression de Troisième. Le livret de la séance 5 des élèves entrant en Seconde les présente globalement comme nouveaux : cette formulation est inexacte et ne peut plus être reprise dans les métadonnées ni dans les bilans. Seules certaines notations et certains approfondissements propres à la Seconde relèvent de bridge_n. Le livret distribué n'est pas modifié ; la mise au point figure dans teacher_guidance/CLARIFICATIONS_ORALES_S5.md."
+}

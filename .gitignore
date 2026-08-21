@@ -7,3 +7,16 @@ __pycache__/
 dist/pdf/
 dist/packs/
 dist/manifests/
+
+# --- Nexus S5 — Correction & Bilans -----------------------------------------
+# Les corrections réelles, les bilans et la base sont des données personnelles
+# d'élèves. Elles restent locales : le dépôt peut être public.
+S5_correction_app/runtime/
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+responses_reelles/
+copies_eleves/
+bilans_finaux/
+corrections_reelles/

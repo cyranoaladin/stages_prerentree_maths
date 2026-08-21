@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% set nav = 'admin' %}
+{% block title %}Maintenance — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Maintenance</h1>
+
+<h2>Immutabilité des documents distribués</h2>
+<div class="banner {{ 'banner-ok' if immutability_report.ok else 'banner-danger' }}">
+  <strong>{{ summary.verdict }}</strong> —
+  {{ summary.immutable_artifacts_verified }} / {{ summary.immutable_artifacts_total }} artefacts vérifiés,
+  {{ summary.immutable_artifacts_changed }} modifié(s),
+  {{ summary.immutable_artifacts_missing }} manquant(s).
+</div>
+{% if immutability_report.changed %}
+<table class="grid"><thead><tr><th>Fichier</th><th>Empreinte attendue</th><th>Empreinte observée</th></tr></thead>
+<tbody>{% for c in immutability_report.changed %}
+<tr><td class="small mono">{{ c.path }}</td><td class="small mono">{{ c.expected[:20] }}…</td><td class="small mono">{{ c.observed[:20] }}…</td></tr>
+{% endfor %}</tbody></table>
+{% endif %}
+
+<h2>Référentiel importé</h2>
+{% if drift %}
+<div class="banner banner-warning"><strong>{{ drift|length }} source(s) ont changé depuis l'import.</strong>
+  Aucune resynchronisation n'a été faite : c'est une décision à prendre, pas un automatisme.
+  Pour réimporter dans une base vierge, sauvegardez puis lancez
+  <span class="mono">python3 tools/init_database.py --force</span>.
+  <ul class="tight small">{% for d in drift %}<li class="mono">{{ d.source_path }} — {{ d.etat }}</li>{% endfor %}</ul>
+</div>
+{% else %}
+<div class="banner banner-ok">Les {{ sources|length }} fichiers sources importés sont inchangés.</div>
+{% endif %}
+
+<h2>Base de données</h2>
+<p class="small mono">{{ db_path }}</p>
+<p>
+  <button class="btn-primary" data-action-url="/admin/backup" data-confirm="Créer une sauvegarde maintenant ?">Sauvegarder maintenant</button>
+  <button class="btn" data-action-url="/admin/export-tout" data-confirm="Exporter toutes les corrections en JSON ?">Exporter toutes les corrections</button>
+  <button class="btn btn-gold" data-action-url="/admin/export-cloture" data-confirm="Construire l'export de clôture du stage ?">Exporter la clôture du stage</button>
+</p>
+<p class="small muted">Les sauvegardes contiennent la base, les manifestes et les rapports générés.
+Les documents distribués n'y sont pas recopiés : ils sont identifiés par leurs empreintes.</p>
+
+{% if backups %}
+<h3>Sauvegardes existantes</h3>
+<table class="grid"><thead><tr><th>Fichier</th><th class="num">Octets</th></tr></thead>
+<tbody>{% for b in backups[:12] %}<tr><td class="small mono">{{ b.name }}</td><td class="num small">{{ b.size }}</td></tr>{% endfor %}</tbody></table>
+{% endif %}
+
+<h2>Sources importées</h2>
+<table class="grid"><thead><tr><th>Nature</th><th>Fichier</th><th>Empreinte</th><th>Importé le</th></tr></thead>
+<tbody>{% for s in sources[:40] %}
+<tr><td class="small">{{ s.kind }}</td><td class="small mono">{{ s.source_path.split('/')[-1] }}</td>
+    <td class="small mono">{{ s.source_sha256[:16] }}…</td><td class="small">{{ s.imported_at|datetime_fr }}</td></tr>
+{% endfor %}</tbody></table>
+{% if sources|length > 40 %}<p class="small muted">… et {{ sources|length - 40 }} autres.</p>{% endif %}
+{% endblock %}

@@ -1,0 +1,776 @@
+{
+  "schema": "nexus-s5-answer-key-overlay-v3",
+  "generated_on": "2026-08-21",
+  "confidential": true,
+  "student_id": "ahmed-bakir",
+  "level_key": "2nde",
+  "subject": "Mathématiques",
+  "source_answer_key": "S5_cloture/2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/answer_key.json",
+  "source_answer_key_status": "conservé intact comme preuve de ce qui existait à la distribution",
+  "items": [
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$-13$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_CALC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_CALC_01",
+          "analysis_skill_id": "M2DE_CALC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$-13$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$\\dfrac{19}{24}$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_FRAC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_FRAC_01",
+          "analysis_skill_id": "M2DE_FRAC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$\\frac{19}{24}$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$10^{-1}$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_PUIS_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_PUIS_01",
+          "analysis_skill_id": "M2DE_PUIS_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$10^{-1}$ (ou $0{,}1$) exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x^2 - 10x + 25$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_ALG_01",
+          "analysis_skill_id": "M2DE_ALG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$x^2-10x+25$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$-35$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_CALC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A5_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_CALC_01",
+          "analysis_skill_id": "M2DE_CALC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "$-35$ exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "original_points": 1,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$2{,}05\\times 10^{-4}$",
+      "estimated_duration_minutes": 1.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_PUIS_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_A6_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_PUIS_01",
+          "analysis_skill_id": "M2DE_PUIS_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "écriture scientifique exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$x=5$ (vérification : $17=17$) ; $x=-3{,}5$ ou $x=3$ ; vérification de $x=3$ : $(2\\times 3+7)(3-3)=13\\times 0=0$.",
+      "estimated_duration_minutes": 5.25,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_EQ_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_EQ_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.75,
+          "original_skill_id": "M2DE_EQ_01",
+          "analysis_skill_id": "M2DE_EQ_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$x=5$ et vérification écrite",
+          "accepted_methods": [
+            "développer $(2x+7)(x-3)$ puis résoudre l'équation obtenue : la méthode est mathématiquement valide, seulement moins directe. Elle reçoit la totalité des points si les deux solutions sont exactes et si la propriété est nommée"
+          ],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "M2DE_EQ_02",
+          "analysis_skill_id": "M2DE_EQ_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "les deux solutions exactes et propriété nommée, quelle que soit la méthode",
+          "accepted_methods": [
+            "développer $(2x+7)(x-3)$ puis résoudre l'équation obtenue : la méthode est mathématiquement valide, seulement moins directe. Elle reçoit la totalité des points si les deux solutions sont exactes et si la propriété est nommée"
+          ],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.5,
+          "original_skill_id": "M2DE_EQ_02",
+          "analysis_skill_id": "M2DE_EQ_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "vérification de la solution entière conduite jusqu'au produit nul",
+          "accepted_methods": [
+            "développer $(2x+7)(x-3)$ puis résoudre l'équation obtenue : la méthode est mathématiquement valide, seulement moins directe. Elle reçoit la totalité des points si les deux solutions sont exactes et si la propriété est nommée"
+          ],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "JUSTIFICATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$280$ TND puis $246{,}40$ TND ; $1{,}12\\times 0{,}88=0{,}9856 \\neq 1$ : le prix final est inférieur de $1{,}44\\,\\%$.",
+      "estimated_duration_minutes": 3.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_POURC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_POURC_01",
+          "analysis_skill_id": "M2DE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "les deux prix intermédiaires exacts",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "M2DE_POURC_01",
+          "analysis_skill_id": "M2DE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "coefficient global calculé et conclusion argumentée",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "JUSTIFICATION",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$BC = 15$ cm ; $AN = 4$ cm ; $MN = 5$ cm ; périmètre de $AMN$ $= 3+4+5 = 12$ cm.",
+      "estimated_duration_minutes": 5.5,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_GEO_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B3_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 0.75,
+          "original_skill_id": "M2DE_GEO_01",
+          "analysis_skill_id": "M2DE_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$BC=15$ cm avec la relation écrite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "JUSTIFICATION",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B3_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.75,
+          "original_skill_id": "M2DE_GEO_02",
+          "analysis_skill_id": "M2DE_GEO_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "$AN$ et $MN$ exacts, théorème de Thalès cité",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "JUSTIFICATION",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B3_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 0.5,
+          "original_skill_id": "M2DE_GEO_02",
+          "analysis_skill_id": "M2DE_GEO_02",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "périmètre exact, avec l'unité",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "JUSTIFICATION",
+            "LECTURE",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$2x^2 + 7x - 15$ ; contrôle : $(-1)\\times 6 = -6$ et $2 + 7 - 15 = -6$.",
+      "estimated_duration_minutes": 3.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B4_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_ALG_01",
+          "analysis_skill_id": "M2DE_ALG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "procedure",
+          "desc": "développement complet et réduit",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "CONTROLE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_B4_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "M2DE_ALG_01",
+          "analysis_skill_id": "M2DE_ALG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "contrôle mené sur les deux écritures",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CALCUL",
+            "CONCEPT",
+            "CONTROLE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "original_points": 4,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$A(x)=x(x-1)=x^2-x$ ; $A(4)=12$ ; diagonale $=5$ m ; prix final $=1\\,264{,}38$ TND environ, supérieur car $0{,}85\\times 1{,}19=1{,}0115>1$.",
+      "estimated_duration_minutes": 8.75,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        },
+        "M2DE_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_POURC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C1_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1.0,
+          "original_skill_id": "M2DE_ALG_01",
+          "analysis_skill_id": "M2DE_ALG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "expression développée et réduite exacte",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C1_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 0.5,
+          "original_skill_id": "M2DE_ALG_01",
+          "analysis_skill_id": "M2DE_ALG_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "controle",
+          "desc": "$A(4)$ exact et vérifié par les deux voies",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C1_c3",
+          "criterion_rank": 3,
+          "subpart": "3",
+          "original_points": 1.0,
+          "original_skill_id": "M2DE_GEO_01",
+          "analysis_skill_id": "M2DE_GEO_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "diagonale exacte, théorème cité",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C1_c4",
+          "criterion_rank": 4,
+          "subpart": "4",
+          "original_points": 1.5,
+          "original_skill_id": "M2DE_POURC_01",
+          "analysis_skill_id": "M2DE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "transfert",
+          "desc": "prix final exact, coefficient global et conclusion argumentée",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "CONTROLE",
+            "METHODE",
+            "NOTATION"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    },
+    {
+      "item_id": "2NDE_AHMED_BAKIR_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "original_points": 2,
+      "original_answer_preserved": true,
+      "original_expected_answer": "$69$ TND ; $69\\times 0{,}85 = 58{,}65$ TND, donc le prix final est inférieur au prix initial.",
+      "estimated_duration_minutes": 4.0,
+      "observed_duration_minutes": null,
+      "comparison_status": "indicative_skill_comparison",
+      "retention": {
+        "M2DE_POURC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "teacher_observation_non_scored": [],
+      "criteria": [
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C2_c1",
+          "criterion_rank": 1,
+          "subpart": "1",
+          "original_points": 1,
+          "original_skill_id": "M2DE_POURC_01",
+          "analysis_skill_id": "M2DE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "automatisme",
+          "desc": "prix après hausse exact",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        },
+        {
+          "criterion_id": "2NDE_AHMED_BAKIR_C2_c2",
+          "criterion_rank": 2,
+          "subpart": "2",
+          "original_points": 1,
+          "original_skill_id": "M2DE_POURC_01",
+          "analysis_skill_id": "M2DE_POURC_01",
+          "curriculum_scope": "n_minus_1",
+          "evidence_type": "justification",
+          "desc": "réfutation appuyée sur un calcul explicite",
+          "accepted_methods": [],
+          "interpretation_limits": [],
+          "fairness_rules": [],
+          "error_codes_allowed": [
+            "CONCEPT",
+            "METHODE"
+          ],
+          "evidence_quality": "standard",
+          "scope_rationale": "aucune notion du programme de l'année N n'est requise pour traiter la question imprimée : le critère mesure un acquis de l'année N-1."
+        }
+      ]
+    }
+  ]
+}

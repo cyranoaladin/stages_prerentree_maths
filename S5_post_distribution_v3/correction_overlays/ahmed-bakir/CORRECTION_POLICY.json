@@ -1,0 +1,42 @@
+{
+  "schema": "nexus-s5-correction-policy-v3",
+  "generated_on": "2026-08-21",
+  "student_id": "ahmed-bakir",
+  "student_name": "Ahmed BAKIR",
+  "level_key": "2nde",
+  "level_label": "Entrée en Seconde générale et technologique",
+  "subject": "Mathématiques",
+  "document_status": "distribué ; figé ; non modifiable",
+  "scope": "cet overlay porte sur la correction et sur l'interprétation. Il ne modifie ni l'énoncé, ni les valeurs numériques, ni les points, ni les identifiants.",
+  "regles_generales": [
+    "une méthode mathématiquement correcte n'est jamais un code d'erreur, même si une autre méthode aurait été plus rapide : le fait est consigné en observation de stratégie, avec accepted_alternative_method = true",
+    "développer une équation-produit avant de la résoudre reste licite ; le code CONCEPT est interdit tant que le raisonnement de l'élève est valide",
+    "un code d'erreur n'est porté que sur le ou les critères effectivement échoués ; il n'est jamais propagé aux autres critères du même item",
+    "aucune justification non explicitement demandée par la consigne imprimée ne peut être exigée pour accorder les points"
+  ],
+  "regle_ambiguite": [
+    "retenir l'interprétation la plus favorable compatible avec la consigne imprimée",
+    "accepter toute méthode mathématiquement correcte",
+    "n'exiger aucune justification que la consigne ne demande pas explicitement",
+    "neutraliser le sous-critère si aucune correction équitable n'est possible",
+    "marquer alors evidence_quality = limited_by_prompt"
+  ],
+  "attribution_des_erreurs": "un code d'erreur se saisit au niveau du critère et ne concerne que ce critère. Aucune propagation automatique vers les autres critères de l'item, ni vers les autres compétences de l'item, n'est autorisée.",
+  "raw_assessment_score": {
+    "label": "score brut au sujet de clôture",
+    "max": 20,
+    "avertissement": "ce score n'est pas un diagnostic de consolidation N-1 : le sujet contient aussi des éléments de passerelle vers l'année suivante."
+  },
+  "curriculum_split": {
+    "n_minus_1_available_points": 20.0,
+    "bridge_n_available_points": 0,
+    "total_points": 20.0
+  },
+  "criteria_count": 22,
+  "mixed_criteria": [],
+  "criteria_with_limited_evidence_quality": [],
+  "teacher_observation_non_scored": [],
+  "estimated_duration_minutes": 37.0,
+  "observed_duration_minutes": null,
+  "duration_note": "l'évaluation ayant été distribuée, sa longueur n'est plus modifiée. La durée réellement observée sera saisie si une mesure pédagogiquement raisonnable est possible ; elle servira à calibrer les heuristiques, pas à juger l'élève."
+}

@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{nexus_bilan}
+\setnexusheader{\VAR{ h.level_label }}{Bilan de fin de stage --- \VAR{ h.student_name }}
+\begin{document}
+
+\bilancover{Bilan de fin de stage}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject } --- stage de pré-rentrée 2026-2027}{Cinq séances, dix heures de travail --- document remis aux responsables légaux}
+
+\BLOCK{ if blocks.synthese }
+\begin{goalbox}
+\VAR{ blocks.synthese }
+\end{goalbox}
+\BLOCK{ endif }
+
+\sectiontitle{Situation de départ}
+\VAR{ blocks.situation_depart }
+
+\sectiontitle{Travail réalisé pendant le stage}
+\VAR{ blocks.travail_realise }
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|>{\bfseries}p{34mm}|X|X|}
+\hline
+\rowcolor{SoftBlue} Domaine & Situation initiale documentée & Situation constatée en fin de stage \\ \hline
+\BLOCK{ for row in domain_table }
+\VAR{ row.domain } & \VAR{ row.initial } & \VAR{ row.final } \\ \hline
+\BLOCK{ endfor }
+\end{tabularx}
+\end{center}
+
+\newpage
+\sectiontitle{Ce que mesure l'évaluation de clôture}
+
+\keyfigure{Score brut au sujet de clôture}{\VAR{ a.raw_assessment_score.sur_20|esc } / 20}{Ce score décrit la copie. Il additionne des questions de deux natures différentes, présentées séparément ci-dessous.}
+
+\subsectiontitle{Score brut au sujet de clôture}
+\VAR{ blocks.score_brut }
+
+\subsectiontitle{Acquis de l'année précédente}
+\VAR{ blocks.consolidation }
+
+\subsectiontitle{Premières passerelles vers l'année à venir}
+\VAR{ blocks.passerelles }
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|X|r|r|}
+\hline
+\rowcolor{SoftBlue} & Points obtenus & Points du sujet \\ \hline
+Acquis de l'année précédente & \VAR{ a.n_minus_1_consolidation.earned|esc } & \VAR{ a.n_minus_1_consolidation.available|esc } \\ \hline
+Passerelles vers l'année à venir & \VAR{ a.bridge_n_readiness.earned|esc } & \VAR{ a.bridge_n_readiness.available|esc } \\ \hline
+\rowcolor{SoftGray} \textbf{Score brut au sujet de clôture} & \textbf{\VAR{ a.raw_assessment_score.earned|esc }} & \textbf{\VAR{ a.raw_assessment_score.max|esc }} \\ \hline
+\end{tabularx}
+\end{center}
+
+\newpage
+\sectiontitle{Points forts}
+\VAR{ blocks.points_forts }
+
+\sectiontitle{Points à consolider}
+\VAR{ blocks.points_consolider }
+
+\sectiontitle{Réussites à confirmer dans la durée}
+\VAR{ blocks.a_confirmer }
+
+\sectiontitle{Plan des quatre premières semaines}
+\VAR{ blocks.plan }
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|X|p{34mm}|}
+\hline
+\rowcolor{SoftBlue} Semaine & Ce qui est travaillé & Rythme \\ \hline
+\BLOCK{ for week in plan.weeks }
+\VAR{ week.week } & \BLOCK{ if week.objectives }\BLOCK{ for o in week.objectives }\VAR{ o.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }\BLOCK{ else }Réinvestissement libre\BLOCK{ endif }\BLOCK{ if week.delayed_check } --- \emph{mini-test différé de 10 minutes}\BLOCK{ endif } & \VAR{ week.frequency|esc } \\ \hline
+\BLOCK{ endfor }
+\end{tabularx}
+\end{center}
+
+\BLOCK{ if plan.bridge_actions }
+\begin{graybox}
+\textbf{Notions découvertes pendant la séance de clôture.} Elles seront enseignées et reprises en classe dès la rentrée. Elles ne constituent pas un retard :
+\BLOCK{ for b in plan.bridge_actions }\VAR{ b.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
+\end{graybox}
+\BLOCK{ endif }
+
+\sectiontitle{Recommandation de suivi}
+\VAR{ blocks.suivi }
+
+\begin{warningbox}
+\textbf{Ce que ce bilan ne dit pas.} \VAR{ blocks.limites }
+\end{warningbox}
+
+\vfill
+{\color{TextGray}\small Document établi le \VAR{ h.generated_on } par Nexus Réussite. Correction révision \VAR{ a.correction_revision }.}
+
+\end{document}

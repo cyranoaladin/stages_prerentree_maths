@@ -1,0 +1,184 @@
+{
+  "schema": "nexus-s5-canonical-post-distribution-v3",
+  "generated_on": "2026-08-21",
+  "principe": "on ne modifie pas ce que l'élève a reçu ; on améliore ce que nous pouvons légitimement conclure de ce qu'il a produit.",
+  "artefacts_eleves": {
+    "couples_eleve_matiere": 15,
+    "pdf_distribues": 30,
+    "sources_latex_gelees": 30,
+    "fichiers_geles": 60,
+    "student_artifacts_changed": 0
+  },
+  "bareme": {
+    "criteres_reels": 337,
+    "criteres_n_minus_1": 311,
+    "criteres_bridge_n": 23,
+    "criteres_mixtes": 3,
+    "sous_criteres_analytiques_virtuels": 6,
+    "criteres_a_interpretation_limitee": 9,
+    "points_bruts_par_eleve": 20
+  },
+  "repartition_par_eleve": {
+    "ahmad-beldi-maths": {
+      "niveau": "1ere_spe",
+      "criteres": 23,
+      "points_n_minus_1": 17.5,
+      "points_bridge_n": 2.5,
+      "criteres_mixtes": 1
+    },
+    "ahmad-beldi-nsi": {
+      "niveau": "1re_nsi",
+      "criteres": 21,
+      "points_n_minus_1": 14.75,
+      "points_bridge_n": 5.25,
+      "criteres_mixtes": 0
+    },
+    "ahmed-bakir": {
+      "niveau": "2nde",
+      "criteres": 22,
+      "points_n_minus_1": 20.0,
+      "points_bridge_n": 0.0,
+      "criteres_mixtes": 0
+    },
+    "ahmed-benhadj-salem": {
+      "niveau": "1re_nsi",
+      "criteres": 22,
+      "points_n_minus_1": 14.75,
+      "points_bridge_n": 5.25,
+      "criteres_mixtes": 0
+    },
+    "amine-mansouri": {
+      "niveau": "3e",
+      "criteres": 22,
+      "points_n_minus_1": 19.5,
+      "points_bridge_n": 0.5,
+      "criteres_mixtes": 0
+    },
+    "donia-khadhrani": {
+      "niveau": "1ere_spe",
+      "criteres": 23,
+      "points_n_minus_1": 19.5,
+      "points_bridge_n": 0.5,
+      "criteres_mixtes": 1
+    },
+    "elyes-kefi": {
+      "niveau": "3e",
+      "criteres": 23,
+      "points_n_minus_1": 18.5,
+      "points_bridge_n": 1.5,
+      "criteres_mixtes": 0
+    },
+    "fares-darghouth": {
+      "niveau": "4e",
+      "criteres": 23,
+      "points_n_minus_1": 20.0,
+      "points_bridge_n": 0.0,
+      "criteres_mixtes": 0
+    },
+    "fares-laajili": {
+      "niveau": "3e",
+      "criteres": 22,
+      "points_n_minus_1": 16.5,
+      "points_bridge_n": 3.5,
+      "criteres_mixtes": 0
+    },
+    "ines-kefi": {
+      "niveau": "4e",
+      "criteres": 22,
+      "points_n_minus_1": 19.0,
+      "points_bridge_n": 1.0,
+      "criteres_mixtes": 0
+    },
+    "malek-khadhrani": {
+      "niveau": "1ere_spe",
+      "criteres": 23,
+      "points_n_minus_1": 19.5,
+      "points_bridge_n": 0.5,
+      "criteres_mixtes": 1
+    },
+    "noa-maniaci": {
+      "niveau": "2nde",
+      "criteres": 23,
+      "points_n_minus_1": 20.0,
+      "points_bridge_n": 0.0,
+      "criteres_mixtes": 0
+    },
+    "sarah-bargaoui": {
+      "niveau": "3e",
+      "criteres": 23,
+      "points_n_minus_1": 19.5,
+      "points_bridge_n": 0.5,
+      "criteres_mixtes": 0
+    },
+    "selim-mansouri": {
+      "niveau": "3e",
+      "criteres": 22,
+      "points_n_minus_1": 18.5,
+      "points_bridge_n": 1.5,
+      "criteres_mixtes": 0
+    },
+    "sinda-chikhaoui": {
+      "niveau": "4e",
+      "criteres": 23,
+      "points_n_minus_1": 20.0,
+      "points_bridge_n": 0.0,
+      "criteres_mixtes": 0
+    }
+  },
+  "audit_pedagogique": {
+    "modules": 25,
+    "exercices": 150,
+    "corriges": 150,
+    "verifies_par_recalcul": 20,
+    "verifies_par_revue": 130,
+    "fail": 0
+  },
+  "tracabilite_des_sources": {
+    "mode": "live",
+    "sources_declarees": 210,
+    "sources_verifiees": 210,
+    "verdict": "PASS"
+  },
+  "non_regression": {
+    "verdict": "PASS",
+    "controles": [
+      {
+        "controle": "empreintes des artefacts élèves",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "15 couples élève x matière",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "30 PDF élèves présents",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "30 sources LaTeX présentes",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "identifiants d'items inchangés",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "identifiants et points des critères d'origine inchangés",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "20 points bruts conservés par élève",
+        "verdict": "PASS"
+      },
+      {
+        "controle": "aucun corrigé dans les documents élèves",
+        "verdict": "PASS"
+      }
+    ]
+  },
+  "interdits": {
+    "progression_chiffree": "impossible : aucune mesure initiale nominative appariée",
+    "mastery_delta": null,
+    "deficit_sur_passerelle": "interdit : un échec bridge_n ne produit ni P1, ni P2, ni « non acquis », ni « lacune »"
+  }
+}

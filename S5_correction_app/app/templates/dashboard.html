@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% set nav = 'dashboard' %}
+{% block title %}Tableau de bord S5 — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Tableau de bord S5</h1>
+<p class="lead">Quinze couples élève × matière. Les documents distribués ne sont jamais modifiés :
+l'application travaille autour d'eux.</p>
+
+<div class="counters">
+  <div class="counter"><div class="value">{{ counters.total }}</div><div class="label">évaluations</div></div>
+  <div class="counter"><div class="value">{{ counters.non_commencees }}</div><div class="label">non commencées</div></div>
+  <div class="counter"><div class="value">{{ counters.en_cours }}</div><div class="label">en cours</div></div>
+  <div class="counter"><div class="value">{{ counters.a_verifier }}</div><div class="label">à vérifier</div></div>
+  <div class="counter"><div class="value">{{ counters.validees }}</div><div class="label">validées</div></div>
+  <div class="counter"><div class="value">{{ counters.bilans_prets }}</div><div class="label">bilans générés</div></div>
+  <div class="counter"><div class="value">{{ counters.bilans_approuves }}</div><div class="label">bilans approuvés</div></div>
+</div>
+
+<form method="get" action="/" class="sticky-bar no-print">
+  <label>Niveau
+    <select name="niveau">
+      <option value="">tous</option>
+      {% for n in niveaux %}<option value="{{ n }}" {% if filtres.niveau == n %}selected{% endif %}>{{ n }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Matière
+    <select name="matiere">
+      <option value="">toutes</option>
+      {% for m in matieres %}<option value="{{ m }}" {% if filtres.matiere == m %}selected{% endif %}>{{ m }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>État
+    <select name="etat">
+      <option value="">tous</option>
+      {% for key, label in etats %}<option value="{{ key }}" {% if filtres.etat == key %}selected{% endif %}>{{ label }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Élève <input type="text" name="q" value="{{ filtres.q }}" placeholder="nom"></label>
+  <button type="submit" class="btn-primary">Filtrer</button>
+  <a class="btn" href="/">Réinitialiser</a>
+  <div class="spacer"></div>
+  <button type="button" class="btn-gold" data-action-url="/bilans/generer-tous"
+          data-confirm="Générer les bilans de toutes les corrections validées ? Les corrections non validées sont ignorées.">
+    Générer tous les bilans validés
+  </button>
+</form>
+
+<table class="grid">
+<thead>
+<tr><th>Élève</th><th>Niveau</th><th>Matière</th><th>Correction</th><th class="num">Critères</th>
+<th>Validation</th><th>Bilan</th><th></th></tr>
+</thead>
+<tbody>
+{% for row in rows %}
+<tr>
+  <td><strong>{{ row.display_name }}</strong></td>
+  <td class="small">{{ row.level_label }}</td>
+  <td class="small">{{ row.subject }}</td>
+  <td>
+    <span class="badge st-{{ row.status }}">{{ row.status_label }}</span>
+    {% if row.revision > 1 %}<span class="small muted">rév. {{ row.revision }}</span>{% endif %}
+  </td>
+  <td class="num nowrap">
+    {{ row.progress.done }} / {{ row.progress.total }}
+    <div class="progress" style="width:90px"><span style="width: {{ row.progress.percent }}%"></span></div>
+  </td>
+  <td>{% if row.status in ('VALIDATED','REPORT_READY','REPORT_APPROVED') %}
+      <span class="badge st-VALIDATED">validée</span>{% else %}<span class="muted">—</span>{% endif %}</td>
+  <td><span class="badge st-{{ row.report_state if row.report_state != 'NONE' else 'NOT_STARTED' }}">{{ row.report_label }}</span></td>
+  <td class="right nowrap">
+    <a class="btn btn-sm btn-primary" href="/eleve/{{ row.student_id }}">Corriger</a>
+    <a class="btn btn-sm" href="/eleve/{{ row.student_id }}?rapide=1">Rapide</a>
+    {% if row.status in ('VALIDATED','REPORT_READY','REPORT_APPROVED') %}
+    <a class="btn btn-sm" href="/eleve/{{ row.student_id }}/analyse">Analyse</a>
+    <a class="btn btn-sm" href="/eleve/{{ row.student_id }}/bilan">Bilan</a>
+    {% endif %}
+  </td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% if not rows %}<p class="muted">Aucun élève ne correspond à ces filtres.</p>{% endif %}
+<p class="small muted" style="margin-top:14px">
+  Pour quitter proprement&nbsp;: fermez cet onglet, puis arrêtez le serveur dans le terminal
+  avec <span class="kbd">Ctrl</span>&nbsp;+&nbsp;<span class="kbd">C</span>. Tout est enregistré
+  au fil de la saisie.
+</p>
+{% endblock %}
