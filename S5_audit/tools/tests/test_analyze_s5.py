@@ -14,10 +14,34 @@ sys.dont_write_bytecode = True  # aucune trace de cache dans la livraison
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
+sys.path.insert(0, HERE)
+
+import jsonschema              # noqa: E402
 
 import analyze_s5              # noqa: E402
-import make_fixture            # noqa: E402
-import jsonschema              # noqa: E402
+
+import importlib.util
+
+
+def _charger_voisin(nom, prefixe):
+    """Charge un module voisin par son chemin, sous un nom de module unique.
+
+    Trois fichiers ``make_fixture.py`` coexistent dans le dépôt (S5_cloture, sa copie
+    d'audit, et la couche post-distribution V3). Un import par nom laisserait
+    ``sys.modules`` en désigner un seul pour toute la session de tests, et les autres
+    suites recevraient silencieusement le mauvais module. Le charger par chemin, sous un
+    nom qualifié, supprime l'ambiguïté.
+    """
+    chemin = os.path.join(HERE, nom + ".py")
+    unique = prefixe + nom
+    spec = importlib.util.spec_from_file_location(unique, chemin)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[unique] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+make_fixture = _charger_voisin("make_fixture", "s5_cloture_tests_")
 
 FIXTURE = os.path.join(HERE, "fixture_synthetique")
 RESULTS = []

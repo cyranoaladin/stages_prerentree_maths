@@ -30,5 +30,10 @@ tablet-serve-private:
 clean-generated:
 	rm -rf dist content/catalog.json MANIFEST_PUBLIC.csv MANIFEST_PRIVATE.csv
 
+# La suite S5_cloture/tools/tests/test_analyze_s5.py emploie son propre harnais et ne
+# définit aucune fonction test_* : pytest l'importe sans en collecter le moindre cas.
+# Elle est donc lancée explicitement, sans quoi ses 48 vérifications ne s'exécuteraient
+# jamais — ce qui était le cas jusqu'ici.
 test:
 	pytest -q
+	python3 S5_cloture/tools/tests/test_analyze_s5.py
