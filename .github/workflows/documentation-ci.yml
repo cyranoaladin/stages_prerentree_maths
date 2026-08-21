@@ -70,6 +70,12 @@ jobs:
           print(f"Succès : les {len(pdfs)} PDF sont 100% valides structurellement.")
           '
 
+      - name: Terminale modules must derive from their committed sources
+        run: |
+          python3 tools/build_terminale.py --check
+          git diff --exit-code -- tle_spe tle_nsi content/students_terminale.json \
+            content/diagnostics_terminale.json content/items_terminale.json
+
       - name: Secret scan and public/private confidentiality gates
         run: python3 tools/ci_gates.py
 

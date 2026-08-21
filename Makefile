@@ -38,6 +38,29 @@ test:
 	pytest -q
 	python3 S5_cloture/tools/tests/test_analyze_s5.py
 
+# --- Stages de pré-rentrée Terminale (tle_spe, tle_nsi) ----------------------
+# Pipeline de documentation indépendant de tools/build.py, comme l'est déjà 1re_nsi.
+# Aucune cible existante n'est modifiée.
+#
+# terminale-extract n'est pas exécutée en intégration continue : le rendu du texte d'un PDF
+# dépend de la version de pypdf, et content/diagnostics_terminale.json est un artefact
+# committé et relu. La CI vérifie en revanche que les documents nominatifs dérivent bien de
+# cet artefact (terminale-check).
+
+.PHONY: terminale terminale-extract terminale-check terminale-test
+
+terminale:
+	python3 tools/build_terminale.py
+
+terminale-extract:
+	python3 tools/extract_bilans_terminale.py
+
+terminale-check:
+	python3 tools/build_terminale.py --check
+
+terminale-test:
+	pytest -q tests/test_terminale.py
+
 # --- Nexus S5 — Correction & Bilans -----------------------------------------
 # Cibles ajoutées pour l'application de correction. Aucune cible existante n'est touchée.
 S5_APP := S5_correction_app

@@ -1,5 +1,32 @@
 # Journal des modifications
 
+## 2026.2 — 2026-08-21
+
+- Ajout des stages de pré-rentrée **Terminale** : module `tle_spe` (spécialité
+  mathématiques) et module `tle_nsi` (numérique et sciences informatiques), pour une cohorte
+  de 8 élèves répartis en deux groupes selon la seconde spécialité conservée (NSI ou
+  physique-chimie).
+- Ajout de la documentation individualisée des élèves : un livret individuel, un plan de
+  remédiation élève et un corrigé enseignant par couple (élève, matière), soit 43 documents
+  nominatifs, plus les tableaux de bord et les index.
+- Les livrets sont dérivés des bilans de positionnement, item par item : chaque erreur y
+  figure avec son énoncé exact, la réponse donnée, la réponse attendue et l'origine de
+  l'erreur. Aucun contenu n'est extrapolé au-delà du bilan.
+- Ajout de `tools/extract_bilans_terminale.py`, qui fige les 14 bilans PDF en
+  `content/diagnostics_terminale.json`, et de `tools/build_terminale.py`, qui génère les
+  documents nominatifs à partir de ce fichier, du registre `content/students_terminale.json`
+  et de la banque d'items `content/items_terminale.json`.
+- La banque d'items relie chacune des 54 questions du positionnement à la compétence de
+  Première évaluée, au geste correct attendu, au chapitre de Terminale qu'elle conditionne
+  (BO spécial n° 8 du 25 juillet 2019) et à un exercice-variante corrigé.
+- Ajout de `tests/test_terminale.py` (29 tests) : cohérence des trois sources, réalité de
+  l'individualisation, confidentialité, et non-régression du pipeline mathématique existant.
+- Garde-fou d'extraction : `pypdf` antérieur à la 6.16 coupe les mots des bilans sans rien
+  signaler ; le script refuse désormais de s'exécuter sous ces versions, et la comparaison
+  des énoncés à la banque fait échouer les tests si une extraction dégradée était committée.
+- Les modules Terminale ne sont pas intégrés à `tools/build.py` : `LEVELS`,
+  `content/students.json` et les manifests du pipeline mathématique sont inchangés.
+
 ## 2026.1 — 2026-08-16
 
 - Ajout d’un catalogue documentaire et d’une chaîne de build Python unique.

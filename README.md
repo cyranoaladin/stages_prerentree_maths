@@ -28,6 +28,64 @@ Ouvrez ensuite `http://localhost:8000`. Le portail public est dans `dist/site-pu
 - `04_NOMINATIFS/` et `dist/site-private/` contiennent des données de mineurs : circulation locale strictement limitée.
 - Les PDF sources initiaux sont préservés et exclus des packs générés.
 - Le registre nominatif canonique du pipeline Mathématiques (13 élèves) est `content/students.json` ; `tools/build.py` ne contient plus aucun nom en dur.
+- Les stages Terminale ont leur propre registre, `content/students_terminale.json` : les deux ne se mélangent pas.
+
+## Stages de pré-rentrée Terminale
+
+Le dépôt contient deux modules de pré-rentrée pour l'entrée en Terminale, `tle_spe`
+(spécialité mathématiques) et `tle_nsi` (numérique et sciences informatiques). Comme
+`1re_nsi/`, ils forment un **pipeline de documentation distinct** : ils ne sont pas
+ramassés par `tools/build.py`, dont la constante `LEVELS` reste inchangée, et ils
+n'utilisent pas `content/students.json`.
+
+La cohorte compte huit élèves répartis en deux groupes selon la seconde spécialité
+conservée :
+
+| Groupe | Spécialités | Effectif | Modules suivis |
+|---|---|---:|---|
+| Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
+| Groupe 2 | Mathématiques et Physique-Chimie | 3 | `tle_spe` |
+
+Deux élèves suivent en outre l'option mathématiques expertes, traitée en module
+complémentaire.
+
+### Trois sources, et rien d'autre
+
+L'individualisation des livrets ne repose sur aucune saisie manuelle :
+
+| Fichier | Rôle |
+|---|---|
+| `content/students_terminale.json` | Registre nominatif de la cohorte : groupes, matières, bilans sources |
+| `content/diagnostics_terminale.json` | Diagnostics extraits des 14 bilans PDF, item par item |
+| `content/items_terminale.json` | Banque des 54 items : compétence évaluée, geste correct, lien avec le programme de Terminale, exercice-variante corrigé |
+
+Chaque livret reprend, pour son élève, l'énoncé exact de chaque item manqué, la réponse
+donnée, la réponse attendue et l'origine de l'erreur telle qu'établie par le bilan. Aucun
+contenu n'est extrapolé au-delà.
+
+### Commandes
+
+```bash
+make terminale         # régénère les documents nominatifs des deux modules
+make terminale-check   # échoue si un document committé est périmé
+make terminale-test    # suite de tests dédiée
+make terminale-extract # ré-extrait les diagnostics depuis les bilans PDF (voir ci-dessous)
+```
+
+`make terminale-extract` **n'est pas exécutée en intégration continue** : le rendu du texte
+d'un PDF dépend de la version de `pypdf`, et les versions antérieures à la 6.16 coupent les
+mots au milieu (« T erm inale ») sans rien signaler. `content/diagnostics_terminale.json`
+est donc un artefact committé et relu ; le script refuse de s'exécuter sous une version qui
+dégraderait l'extraction, et `tests/test_terminale.py` compare les 18 énoncés de chaque
+instrument à la banque, caractère pour caractère.
+
+### Confidentialité
+
+`tle_spe/04_NOMINATIFS/` et `tle_nsi/05_NOMINATIFS/` contiennent des données de mineurs.
+Dans ces deux modules, le **seul** document commun nominatif est le tableau de bord
+enseignant, qui porte aussi les liens vers les dossiers individuels : les index de module ne
+nomment personne. Les tests vérifient qu'aucun nom ne figure ailleurs, qu'aucun élève
+n'apparaît dans le dossier d'un autre, et qu'aucune feuille élève ne contient de corrigé.
 
 ## Module Première NSI
 
