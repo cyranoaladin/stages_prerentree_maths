@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Séance du Jour — Nexus Réussite</title>
+<style>
+  :root { --primary: #1e3a8a; --accent: #2563eb; --bg: #f1f5f9; }
+  body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg); color: #0f172a; touch-action: manipulation; }
+  header { background: var(--primary); color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+  header h1 { margin: 0; font-size: 1.4rem; }
+  .nav-btn { background: rgba(255,255,255,0.2); color: white; border: none; padding: 0.6rem 1rem; border-radius: 6px; font-weight: bold; text-decoration: none; }
+  .main-container { padding: 1.5rem; max-width: 1000px; margin: 0 auto; }
+  .section-title { font-size: 1.1rem; text-transform: uppercase; color: #475569; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+  .level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+  .level-btn { background: white; border: 2px solid #cbd5e1; border-radius: 12px; padding: 1.2rem; text-align: center; font-size: 1.2rem; font-weight: bold; color: var(--primary); cursor: pointer; transition: all 0.15s; }
+  .level-btn.active { border-color: var(--accent); background: #eff6ff; color: var(--accent); box-shadow: 0 4px 12px rgba(37,99,235,0.15); }
+  .doc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .doc-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+  .doc-card h3 { margin: 0 0 0.5rem 0; color: #1e293b; font-size: 1.2rem; }
+  .doc-card p { margin: 0 0 1rem 0; color: #64748b; font-size: 0.95rem; }
+  .action-btn { display: block; width: 100%; text-align: center; background: var(--accent); color: white; text-decoration: none; padding: 0.9rem; border-radius: 8px; font-weight: bold; font-size: 1.1rem; box-sizing: border-box; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📱 Mode Séance du Jour</h1>
+  <a class="nav-btn" href="index.html">🏠 Portail Général</a>
+</header>
+<div class="main-container">
+  <div class="section-title">Sélectionner le Niveau</div>
+  <div class="level-grid">
+    <div class="level-btn active" onclick="selectLevel('4e')">4e</div>
+    <div class="level-btn" onclick="selectLevel('3e')">3e</div>
+    <div class="level-btn" onclick="selectLevel('2nde')">2nde</div>
+    <div class="level-btn" onclick="selectLevel('1ere_spe')">1re Spé</div>
+    <div class="level-btn" onclick="selectLevel('1re_nsi')">1re NSI</div>
+  </div>
+
+  <div class="section-title" id="doc-section-title">Documents Séance 1 — 4e</div>
+  <div class="doc-grid" id="doc-grid">
+    <!-- Injected dynamically -->
+  </div>
+</div>
+
+<script>
+const docs = {
+  '4e': [
+    { title: "Activité Élève", type: "Élève", link: "site-private/4e/02_SEANCES/S1/4e_S1_ELEVE_Activite.html" },
+    { title: "Fiche Professeur", type: "Enseignant", link: "site-private/4e/02_SEANCES/S1/4e_S1_PROF_Fiche.html" },
+    { title: "Supports de Manipulation", type: "Supports", link: "site-private/4e/02_SEANCES/S1/4e_S1_SUPPORTS_Manipulation.html" },
+    { title: "Cartes d'Aide", type: "Aides", link: "site-private/4e/02_SEANCES/S1/4e_S1_AIDES_Cartes.html" }
+  ],
+  '3e': [
+    { title: "Activité Élève", type: "Élève", link: "site-private/3e/02_SEANCES/S1/3e_S1_ELEVE_Activite.html" },
+    { title: "Fiche Professeur", type: "Enseignant", link: "site-private/3e/02_SEANCES/S1/3e_S1_PROF_Fiche.html" },
+    { title: "Supports de Manipulation", type: "Supports", link: "site-private/3e/02_SEANCES/S1/3e_S1_SUPPORTS_Manipulation.html" },
+    { title: "Cartes d'Aide", type: "Aides", link: "site-private/3e/02_SEANCES/S1/3e_S1_AIDES_Cartes.html" }
+  ],
+  '2nde': [
+    { title: "Activité Élève", type: "Élève", link: "site-private/2nde/02_SEANCES/S1/2nde_S1_ELEVE_Activite.html" },
+    { title: "Fiche Professeur", type: "Enseignant", link: "site-private/2nde/02_SEANCES/S1/2nde_S1_PROF_Fiche.html" },
+    { title: "Supports de Manipulation", type: "Supports", link: "site-private/2nde/02_SEANCES/S1/2nde_S1_SUPPORTS_Manipulation.html" },
+    { title: "Cartes d'Aide", type: "Aides", link: "site-private/2nde/02_SEANCES/S1/2nde_S1_AIDES_Cartes.html" }
+  ],
+  '1ere_spe': [
+    { title: "Activité Élève", type: "Élève", link: "site-private/1ere_spe/02_SEANCES/S1/1ere_spe_S1_ELEVE_Activite.html" },
+    { title: "Fiche Professeur", type: "Enseignant", link: "site-private/1ere_spe/02_SEANCES/S1/1ere_spe_S1_PROF_Fiche.html" },
+    { title: "Supports de Manipulation", type: "Supports", link: "site-private/1ere_spe/02_SEANCES/S1/1ere_spe_S1_SUPPORTS_Manipulation.html" },
+    { title: "Cartes d'Aide", type: "Aides", link: "site-private/1ere_spe/02_SEANCES/S1/1ere_spe_S1_AIDES_Cartes.html" }
+  ],
+  '1re_nsi': [
+    { title: "Activité Élève", type: "Élève", link: "site-private/1re_nsi/02_SEANCES/S1/1re_nsi_S1_ELEVE_Activite.html" },
+    { title: "Fiche Professeur", type: "Enseignant", link: "site-private/1re_nsi/02_SEANCES/S1/1re_nsi_S1_PROF_Fiche.html" },
+    { title: "Supports Pratiques", type: "Supports", link: "site-private/1re_nsi/02_SEANCES/S1/1re_nsi_S1_SUPPORTS_Pratiques.html" },
+    { title: "Cartes d'Aide", type: "Aides", link: "site-private/1re_nsi/02_SEANCES/S1/1re_nsi_S1_AIDES_Cartes.html" }
+  ]
+};
+
+function selectLevel(lvl) {
+  document.querySelectorAll('.level-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('doc-section-title').innerText = 'Documents Séance 1 — ' + lvl;
+  const grid = document.getElementById('doc-grid');
+  grid.innerHTML = docs[lvl].map(d => `
+    <div class="doc-card">
+      <div>
+        <h3>${d.title}</h3>
+        <p>Public: ${d.type}</p>
+      </div>
+      <a class="action-btn" href="${d.link}">Ouvrir le document</a>
+    </div>
+  `).join('');
+}
+
+selectLevel('4e');
+</script>
+</body>
+</html>

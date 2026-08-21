@@ -1,5 +1,5 @@
-# 4e_S2_AIDES_Cartes
-## Séance 2 — Mesurer une surface ou un contour
+# 4e — Séance 2 : Mesurer une surface ou un contour
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

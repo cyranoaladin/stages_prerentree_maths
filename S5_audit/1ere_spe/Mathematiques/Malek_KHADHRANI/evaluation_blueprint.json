@@ -1,0 +1,114 @@
+{
+  "schema": "nexus-s5-evaluation-blueprint-v1",
+  "generated_on": "2026-08-20",
+  "student_id": "malek-khadhrani",
+  "level_key": "1ere_spe",
+  "subject": "Mathématiques",
+  "duration_minutes": 45,
+  "estimated_minutes": 37.25,
+  "estimation_model": "data/timing.py — lecture, traitement, rédaction, par niveau",
+  "margin_minutes": 7.75,
+  "total_points": 20,
+  "scale": "note sur 20 + maîtrise par compétence de 0 à 4",
+  "design_rules": {
+    "common_core_pct_target": "70 % environ",
+    "individual_pct_target": "30 % environ",
+    "common_core_pct_actual": 70.0,
+    "individual_pct_actual": 30.0,
+    "equity_note": "Le noyau commun est strictement identique pour tous les élèves du même niveau, ce qui rend les copies comparables."
+  },
+  "parts": [
+    {
+      "part": "A",
+      "title": "Automatismes et connaissances essentielles",
+      "minutes_budget": 10,
+      "points": 6,
+      "estimated_minutes": 6.75,
+      "items": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ]
+    },
+    {
+      "part": "B",
+      "title": "Application et raisonnement",
+      "minutes_budget": 20,
+      "points": 8,
+      "estimated_minutes": 18.0,
+      "items": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ]
+    },
+    {
+      "part": "C",
+      "title": "Transfert et synthèse",
+      "minutes_budget": 15,
+      "points": 6,
+      "estimated_minutes": 12.5,
+      "items": [
+        "C1",
+        "C2"
+      ]
+    }
+  ],
+  "points_per_skill": {
+    "M1RE_ALG_02": 1.0,
+    "M1RE_INEQ_01": 1.0,
+    "M1RE_FONC_01": 2.0,
+    "M1RE_VECT_01": 1.7,
+    "M1RE_VECT_02": 2.7,
+    "M1RE_INEQ_02": 2.0,
+    "M1RE_FONC_02": 1.0,
+    "M1RE_FREF_02": 1.0,
+    "M1RE_POURC_02": 2.0,
+    "M1RE_POURC_01": 1.0,
+    "M1RE_DROIT_01": 1.6,
+    "M1RE_PROBA_01": 1.0,
+    "M1RE_NUM_01": 1.0,
+    "M1RE_FREF_01": 1.0
+  },
+  "max_share_one_skill_pct": 13.5,
+  "points_per_skill_note": "les points d'un item mobilisant plusieurs compétences sont répartis à parts égales entre elles",
+  "comparability_summary": {
+    "comparable": 11,
+    "partiellement_comparable": 1,
+    "non_comparable_contenu_nouveau": 0,
+    "non_comparable_absence_baseline": 0
+  },
+  "comparison_status_summary": {
+    "item_level": 0,
+    "skill_level": 0,
+    "not_comparable": 0
+  },
+  "confidence_probes": [
+    "B2",
+    "C1"
+  ],
+  "error_codes": {
+    "CONCEPT": "La notion elle-même n'est pas disponible ou est remplacée par une règle fausse.",
+    "METHODE": "La méthode choisie ne convient pas à la tâche demandée.",
+    "CALCUL": "La méthode est correcte, l'exécution numérique ne l'est pas.",
+    "LECTURE": "Une donnée de l'énoncé est mal lue, oubliée ou ajoutée.",
+    "NOTATION": "Écriture, unité ou symbole incorrect alors que le raisonnement tient.",
+    "JUSTIFICATION": "Le résultat est exact mais la propriété ou la relation n'est pas nommée.",
+    "CONTROLE": "Aucun contrôle de vraisemblance n'est effectué alors qu'il était demandé.",
+    "ALGORITHME": "L'enchaînement des instructions ne produit pas l'effet attendu.",
+    "SYNTAXE": "Erreur d'écriture du langage, sans erreur de raisonnement.",
+    "TRANSFERT": "Les acquis existent mais ne sont pas mobilisés dans un contexte nouveau.",
+    "ETOURDERIE": "Écart isolé, non reproduit sur les items voisins de même compétence."
+  },
+  "mastery_scale": {
+    "0": "non maîtrisé",
+    "1": "très fragile",
+    "2": "partiellement maîtrisé",
+    "3": "maîtrisé",
+    "4": "maîtrise solide / transfert réussi"
+  }
+}

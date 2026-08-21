@@ -1,0 +1,390 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Dossier enseignant — confidentiel}{S5 — Donia KHADHRANI — usage enseignant}
+\begin{document}
+\nexuscover{SÉANCE 5 --- DOSSIER ENSEIGNANT}{Profil, déroulé, corrigés et barème}{Donia KHADHRANI}{Entrée en Première générale — Spécialité mathématiques}{Mathématiques --- Langage fonctionnel et inéquations}
+\begin{methodbox}\small\textbf{Programme de référence.} nouveau programme de la spécialité mathématiques de Première --- BO n° 14 du 2 avril 2026 MENE2602917A. Transition visée : acquis de Seconde 2025-2026 vers le nouveau programme de spécialité de Première applicable en 2026-2027.\end{methodbox}
+\begin{keybox}\textbf{DOCUMENT CONFIDENTIEL --- USAGE ENSEIGNANT.} Contient les corrigés, le barème et des données nominatives. Ne pas remettre à l'élève ni le laisser visible pendant la séance.\end{keybox}
+\sectiontitle{1. Profil synthétique}
+\begin{methodbox}
+\textbf{Diagnostic initial.} Diagnostic initial (18 items). Vecteurs solides ; calcul littéral et numérique à consolider ; inéquations, fonctions, fonctions de référence et pourcentages à installer ; droites et probabilités à rectifier.
+\end{methodbox}
+\subsectiontitle{Points d'appui documentés}
+\begin{itemize}\item Vecteurs\item Procédures disponibles en calcul littéral et numérique\end{itemize}
+\subsectiontitle{Difficultés documentées}
+\begin{itemize}\item Image/antécédent\item Fonctions de référence\item Inéquations\item Coefficient directeur\item Pourcentages\item Union de probabilités\end{itemize}
+\begin{warningbox}\textbf{Limite de la reconstruction.} Les tableaux d'observation séance par séance du dossier individuel sont vierges : il n'existe aucune preuve documentée entre le diagnostic initial et aujourd'hui. Tout statut porté ci-dessous décrit un \emph{état de départ}, jamais une acquisition constatée.\end{warningbox}
+\newpage\sectiontitle{2. Matrice de trajectoire --- état avant la séance 5}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{27mm} X >{\scriptsize}p{16mm} >{\scriptsize}p{20mm} >{\scriptsize\centering\arraybackslash}p{9mm}}
+\rowcolor{Navy}\color{white}\scriptsize skill\_id & \color{white}Compétence & \color{white}Travaillée en & \color{white}Statut avant S5 & \color{white}Prio. \\
+M1RE\_VECT\_01 & Coordonnées d'un vecteur défini par deux points & S3 & acquis & OK \\
+M1RE\_VECT\_02 & Colinéarité de deux vecteurs & S3 & acquis & OK \\
+M1RE\_DROIT\_01 & Coefficient directeur d'une droite & S3 & fragile & P1 \\
+M1RE\_FONC\_02 & $\bullet$ Langage des fonctions : image, antécédent, appartenance à la courbe & S2 & en voie & P1 \\
+M1RE\_INEQ\_01 & $\bullet$ Inéquation du premier degré et écriture en intervalle & S1 & en voie & P1 \\
+M1RE\_ALG\_01 & Développement et identités remarquables & S1 & en voie & P2 \\
+M1RE\_ALG\_02 & Factorisation, en particulier la différence de deux carrés & S1 & en voie & P2 \\
+M1RE\_DROIT\_02 & Lecture d'une équation réduite de droite & S3 & fragile & P2 \\
+M1RE\_FONC\_01 & Image d'un réel, substitution d'une valeur négative & S2 & en voie & P2 \\
+M1RE\_INEQ\_02 & Signe d'un produit et tableau de signes & S1 & en voie & P2 \\
+M1RE\_POURC\_01 & Taux d'évolution & S4 & en voie & P2 \\
+M1RE\_POURC\_02 & Coefficient multiplicateur et évolutions successives & S4 & en voie & P2 \\
+M1RE\_PROBA\_01 & Union, intersection et formule P(A$\cup$B) & S4 & fragile & P2 \\
+M1RE\_PROBA\_02 & Événement contraire & S4 & fragile & P2 \\
+M1RE\_FREF\_01 & Fonctions de référence : carré et inverse, variations & S2 & en voie & P3 \\
+M1RE\_FREF\_02 & Comparaison de x$^2$ et de x selon la position de x & S2 & en voie & P3 \\
+M1RE\_NUM\_01 & Calcul avec des puissances & S1 & en voie & P3 \\
+M1RE\_NUM\_02 & Simplification d'un radical & S1 & en voie & P3 \\
+\end{tabularx}
+\par\vspace{1mm}\small\textbf{Lecture de la colonne « Statut avant S5 » :} elle décrit l'état constaté au \emph{positionnement initial}, jamais une acquisition constatée depuis. « acquis » signifie « acquis au positionnement initial » ; « en voie » signifie « en voie d'acquisition ».
+\par\small$\bullet$ compétence ciblée par les phases 2 et 3 de la séance. La colonne « Prio. » est \emph{provisoire} : la priorité définitive est produite par \code{tools/analyze_s5.py} après la correction.
+\begin{warningbox}\textbf{Effet de récence.} Les compétences suivantes sont retravaillées pendant cette séance, puis évaluées moins d'une heure plus tard : \code{M1RE_FONC_02}, \code{M1RE_INEQ_01}. Une réussite y mesure une \emph{performance immédiate}, pas une consolidation durable. Le plan de rentrée prévoit pour elles un contrôle différé en semaine 1 ou 2 ; aucun bilan ne doit écrire « acquis durablement » sur cette seule preuve.\end{warningbox}
+\sectiontitle{3. Pourquoi ces activités, pour cet élève}
+\begin{goalbox}\textbf{Objectif de la séance :} Écrire ce qui est cherché puis la relation utilisée — conseil explicite du dossier — en commençant par le vocabulaire fonctionnel puis par les inéquations.\end{goalbox}
+\subsectiontitle{Axe prioritaire (phase 2, 25 min) --- Le langage des fonctions : image, antécédent, appartenance à la courbe}
+Le dossier signale un langage fonctionnel à rectifier ; ce vocabulaire est employé dans tous les chapitres de Première, en particulier en dérivation.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M1RE_FONC_02}.
+\subsectiontitle{Second axe (phase 3, 20 min) --- Inéquation du premier degré et écriture en intervalle}
+Les inéquations figurent parmi les domaines à installer d'après le dossier ; elles conditionnent les tableaux de signes du second degré.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M1RE_INEQ_01}.
+\subsectiontitle{Équilibre commun / individuel}
+Sur les 75 minutes : \textbf{51 min} (68\,\%) relèvent des objectifs communs du niveau et \textbf{24 min} (32\,\%) ciblent le profil individuel. Sur l'évaluation : \textbf{14 points} de noyau commun (70.0\,\%) et \textbf{6 points} individualisés (30.0\,\%).
+\newpage\sectiontitle{4. Déroulé minute par minute}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{18mm} p{34mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Phase & \color{white}Conduite & \color{white}Indicateur observable \\
+0--10 min & Réactiver les cinq blocs du stage (algèbre, fonctions, vecte & Individuel, sans carte de rappel pendant 7 minutes, puis 3 minutes de mise en commun. & Au moins 4 réponses exactes sur 5 ; la certitude est renseignée avant toute vérification. \\
+10--35 min & Le langage des fonctions : image, antécédent, appartenance à & Rappel bref, exemple guidé au tableau, puis exercices en autonomie. Aide donnée seulement après une tentative écrite. & Trois réussites consécutives sans aide sur la compétence visée. \\
+35--55 min & Inéquation du premier degré et écriture en intervalle & Pas d'exemple guidé : l'élève démarre seul. Intervention uniquement sur demande. & Deux réussites autonomes ; le contrôle est écrit sans qu'on le demande. \\
+55--70 min & De la Seconde à la Première : la suite et le taux de variati & Travail écrit, correction collective courte à la fin. Ne pas transformer ce temps en cours magistral. & L'élève relie explicitement un acquis de l'année écoulée à un attendu de l'année à venir. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le conte & Lecture des cinq règles, puis remise de l'évaluation. Aucune information sur son contenu. & Les deux engagements sont écrits. \\
+75--120 min & Évaluation finale & Individuel, sans document. Partie A environ 10 min, B environ 20 min, C environ 15 min. & Somme des durées cibles : 36 min, marge de 8 min. \\
+\end{tabularx}
+\newpage\sectiontitle{5. Corrigé du livret de travail}
+\subsectiontitle{Phase 1 --- réactivation}
+\begin{enumerate}
+\item \code{M1RE_ALG_02} --- $(3x)^2-5^2=\mathbf{(3x-5)(3x+5)}$. Contrôle : développer redonne $9x^2-25$.
+\item \code{M1RE_INEQ_01} --- $-4x\ge -10$ donc $x\le \frac52$ : $S=\left]-\infty\,;\tfrac52\right]$ (sens de l'inégalité changé).
+\item \code{M1RE_FONC_01} --- $f(-3)=(-3)^2-5\times(-3)=9+15=\mathbf{24}$.
+\item \code{M1RE_VECT_01} --- $\vec{AB}(3-(-2)\,;-1-5)=\mathbf{(5\,;-6)}$ ; coefficient directeur $=\frac{-6}{5}=\mathbf{-1{,}2}$.
+\item \code{M1RE_POURC_01} --- $\frac{210-250}{250}=-0{,}16$, soit une baisse de $\mathbf{16\,\%}$.
+\end{enumerate}
+\subsectiontitle{Phase 2 --- Le langage des fonctions : image, antécédent, appartenance à la courbe}
+\begin{enumerate}
+\item $f(-1)=4$ ; $4$ est l'image de $-1$ ; $-1$ est un antécédent de $4$.
+\item $f(-2)=-6-5=\mathbf{-11}$.
+\item $3x-5=7$ donne $3x=12$ donc $x=\mathbf{4}$.
+\item $x^2-4=0$ donne $(x-2)(x+2)=0$ : les antécédents sont $\mathbf{-2}$ et $\mathbf{2}$.
+\item $h(5)=25-25=0$ : oui, le point appartient à la courbe.
+\item Image et antécédent sont inversés. Formulations exactes : $7$ est l'image de $4$ ; $4$ est un antécédent de $7$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- image et antécédent échangés
+\item \textsc{METHODE} --- antécédent cherché par essais au lieu d'une équation
+\item \textsc{CONCEPT} --- un seul antécédent donné lorsqu'il en existe deux
+\end{itemize}
+\subsectiontitle{Phase 3 --- Inéquation du premier degré et écriture en intervalle}
+\begin{enumerate}
+\item $4x\le 16$ donc $x\le 4$ : $S=\left]-\infty\,;4\right]$.
+\item $-2x>6$ donc $x<-3$ : $S=\left]-\infty\,;-3\right[$.
+\item $-2x \ge -8$ donc $x\le 4$ : $S=\left]-\infty\,;4\right]$.
+\item $3x-4\le 20$ donne $x\le 8$ : $S=\left]-\infty\,;8\right]$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- sens de l'inégalité conservé après division par un négatif
+\item \textsc{NOTATION} --- crochet fermé sur une inégalité stricte ou sur l'infini
+\item \textsc{CONTROLE} --- aucune valeur testée dans l'inéquation initiale
+\end{itemize}
+\subsectiontitle{Phase 4 --- pont vers Première spécialité}
+
+\textbf{A.} 1. Coefficient $1{,}03$ ; $u_0=2000$. \quad 2. $u_{n+1}=1{,}03\,u_n$.
+3. $u_1=2060$ ; $u_2=2121{,}80$. \quad 4. \code{u = 1.03 * u} puis \code{print(n + 1, u)}.
+La ligne \code{print(0, u)} placée \emph{avant} la boucle affiche $u_0$ ; sans elle, le programme
+afficherait seulement $u_1$ à $u_5$, car l'affectation précède l'affichage à chaque tour.
+5. $u_3=2000\times 1{,}03^3\approx 2185{,}45 < 2200$ : non, le seuil n'est pas atteint en trois ans.
+
+\textbf{B.} 1. $\frac{f(3)-f(1)}{3-1}=\frac{9-1}{2}=4$.
+2. $\frac{2{,}25-1}{0{,}5}=2{,}5$ ; $\frac{1{,}21-1}{0{,}1}=2{,}1$.
+3. Les taux se rapprochent de $2$.
+4. Attendu : ce nombre décrira la pente de la tangente à la courbe au point d'abscisse $1$ ; c'est le nombre dérivé.
+
+\textbf{Observation à noter :} écrire $u_{n+1}=u_n+3$ est une erreur de \textsc{CONCEPT} (évolution additive
+au lieu d'une évolution multiplicative) ; inverser numérateur et dénominateur du taux de variation est une
+erreur de \textsc{METHODE}.
+
+\newpage\sectiontitle{6. Corrigé de l'évaluation et barème analytique}
+\begin{keybox}\textbf{Total : 20 points sur 20.} Noyau commun 14 pts (70.0\,\%), items individualisés 6 pts (30.0\,\%). Somme des durées cibles : 36 minutes.\end{keybox}
+\itemhead{A1 --- \code{M1RE_ALG_02} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $(4x - 7)(4x + 7)$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item reconnaître $a^2-b^2$ avec $a=4x$ et $b=7$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_ALG\_02 & procedure & factorisation exacte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $(4x-7)^2$ : différence de carrés confondue avec un carré parfait \\
+CALCUL & racine de $16x^2$ prise égale à $16x$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} outil direct du second degré et des études de signe
+\par\vspace{2mm}
+\itemhead{A2 --- \code{M1RE_INEQ_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $x < 4$, soit $S = \left]-\infty\,;4\right[$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $-3x > -12$\item division par $-3$ : le sens de l'inégalité change\item $x<4$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_INEQ\_01 & procedure & solution et intervalle exacts \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & sens de l'inégalité conservé après division par un négatif \\
+NOTATION & crochet fermé sur une inégalité stricte \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis des tableaux de signes du second degré
+\par\vspace{2mm}
+\itemhead{A3 --- \code{M1RE_FONC_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $15$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $g(-3)=2\times(-3)^2+(-3)$\item $=2\times 9-3=15$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_FONC\_01 & procedure & $15$ exact avec la substitution visible \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+NOTATION & parenthèses omises : $-3^2$ traité comme $-9$ \\
+CALCUL & $2\times 9$ mal évalué \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} substitution employée en permanence en dérivation et sur les suites
+\par\vspace{2mm}
+\itemhead{A4 --- \code{M1RE_VECT_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\vec{AB}(-6\,;6)$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $x_B-x_A=-2-4=-6$\item $y_B-y_A=5-(-1)=6$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_VECT\_01 & automatisme & les deux coordonnées exactes \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & soustraction effectuée dans l'ordre $A-B$ \\
+CALCUL & $5-(-1)$ traité comme $4$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis du produit scalaire et de la géométrie repérée
+\par\vspace{2mm}
+\itemhead{A5 --- \code{M1RE_FONC_02} --- item individualisé}{1}{1.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $x = 4$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $4x-3=13$\item $4x=16$ donc $x=4$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_FONC\_02 & procedure & $x=4$ avec l'équation écrite \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & image calculée à la place de l'antécédent \\
+METHODE & antécédent trouvé par essais sans équation \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} recherche d'antécédents, permanente en Première
+\par\vspace{2mm}
+\itemhead{A6 --- \code{M1RE_INEQ_01} --- item individualisé}{1}{1.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $x \le 4$, soit $S = \left]-\infty\,;4\right]$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $-5x \ge -20$\item division par $-5$ : le sens change\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_INEQ\_01 & procedure & solution et intervalle exacts \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & sens de l'inégalité conservé \\
+NOTATION & crochet ouvert en $4$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis des tableaux de signes du second degré
+\par\vspace{2mm}
+\itemhead{B1 --- \code{M1RE_INEQ_02} --- noyau commun}{2}{5.25}
+\begin{graybox}\small\textbf{Réponse attendue :} Racines $-2$ et $2$ ; $P(x)>0$ sur $\left]-2\,;2\right[$ ; $P(x)\leqslant 0$ sur $\left]-\infty\,;-2\right]\cup\left[2\,;+\infty\right[$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $3x+6=0 \Leftrightarrow x=-2$ ; $2-x=0 \Leftrightarrow x=2$\item $3x+6$ négatif avant $-2$, positif après ; $2-x$ positif avant $2$, négatif après\item produit positif entre les deux racines\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 0.75 & M1RE\_INEQ\_02 & procedure & racines exactes et tableau complet \\
+c2 & 0.75 & M1RE\_INEQ\_02 & automatisme & ensemble solution exact, bornes correctement ouvertes \\
+c3 & 0.5 & M1RE\_INEQ\_02 & automatisme & ensemble complémentaire exact, bornes fermées incluses \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & signe de $2-x$ traité comme celui de $x-2$ \\
+METHODE & tableau de signes non construit alors qu'il est explicitement demandé, le signe étant annoncé sans justification \\
+NOTATION & bornes incluses alors que l'inégalité est stricte \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} méthode reprise telle quelle pour le signe du trinôme
+\par\vspace{2mm}
+\itemhead{B2 --- \code{M1RE_FONC_02} --- noyau commun}{2}{3.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $5$ est l'image de $-2$ par $f$ ; $-2$ est un antécédent de $5$. Pour $0<x<1$, $x^2<x$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $f(-2)=5$\item exemple : $x=0{,}5$ donne $x^2=0{,}25<0{,}5$\item argument : $x^2-x=x(x-1)$ avec $x>0$ et $x-1<0$, donc $x^2-x<0$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_FONC\_02 & communication & vocabulaire correct dans les deux sens : image et antécédent \\
+c2 & 0.6 & M1RE\_FREF\_02 & justification & argument valable pour tout $x$ de l'intervalle \\
+c3 & 0.4 & M1RE\_FREF\_02 & procedure & exemple numérique cohérent \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & image et antécédent échangés \\
+CONCEPT & $x^2>x$ affirmé par généralisation du cas $x>1$ \\
+JUSTIFICATION & un seul exemple donné, sans argument général \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} langage fonctionnel utilisé dans tous les chapitres de Première
+\par\vspace{2mm}
+\itemhead{B3 --- \code{M1RE_POURC_02} --- noyau commun}{2}{3.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $360$ TND puis $432$ TND ; coefficient global $0{,}9$, soit une baisse globale de $10\,\%$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $480\times 0{,}75=360$\item $360\times 1{,}2=432$\item $0{,}75\times 1{,}2=0{,}9$ soit $-10\,\%$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_POURC\_02 & procedure & les deux prix exacts \\
+c2 & 1 & M1RE\_POURC\_01 & procedure & coefficient global et taux global exacts \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+METHODE & $-25\,\%$ et $+20\,\%$ additionnés en $-5\,\%$ \\
+CONCEPT & coefficient d'une baisse de $25\,\%$ pris égal à $0{,}25$ \\
+CALCUL & produit $0{,}75\times 1{,}2$ mal évalué alors que la méthode est correcte \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} base des suites géométriques et de l'évolution en pourcentage
+\par\vspace{2mm}
+\itemhead{B4 --- \code{M1RE_DROIT_01} --- item individualisé}{2}{5.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $m = -2$ ; $y = -2x + 3$ ; oui, les deux droites ont le même coefficient directeur.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $m = \frac{-1-7}{2-(-2)} = \frac{-8}{4} = -2$\item $7 = -2\times(-2)+p$ donne $p = 3$\item même coefficient directeur $\Rightarrow$ droites parallèles\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_DROIT\_01 & procedure & coefficient directeur exact \\
+c2 & 0.6 & M1RE\_DROIT\_01 & procedure & équation réduite exacte \\
+c3 & 0.4 & M1RE\_DROIT\_02 & justification & parallélisme justifié par l'égalité des coefficients directeurs \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & différences inversées dans le quotient \\
+CALCUL & ordonnée à l'origine non déterminée \\
+JUSTIFICATION & parallélisme affirmé sans critère \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} droites et vecteurs directeurs, base de la géométrie de Première
+\par\vspace{2mm}
+\itemhead{C1 --- \code{M1RE_DROIT_01} --- noyau commun}{4}{8.5}
+\begin{graybox}\small\textbf{Réponse attendue :} $m=2$ et $y=2x$ ; $C$ appartient à $(AB)$ ; $P(N\cup C)=0{,}7$ et $P(\overline{N})=0{,}6$ ; $u_{n+1}=1{,}04\,u_n$ et $u_2\approx 195$ TND.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $m=\frac{10-2}{5-1}=2$ ; $y=2x+p$ avec $2=2\times 1+p$ donc $p=0$\item $2\times(-3)=-6$ : les coordonnées de $C$ vérifient l'équation (ou $\vec{AB}(4\,;8)$ et $\vec{AC}(-4\,;-8)$ sont colinéaires)\item $P(N)=0{,}4$, $P(C)=0{,}5$, $P(N\cap C)=0{,}2$ donc $P(N\cup C)=0{,}4+0{,}5-0{,}2=0{,}7$\item $P(\overline{N})=1-0{,}4=0{,}6$\item $u_{n+1}=1{,}04\,u_n$ ; $u_2=180\times 1{,}04^2=194{,}688\approx 195$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_DROIT\_01 & transfert & coefficient directeur et équation réduite exacts \\
+c2 & 1 & M1RE\_VECT\_02 & justification & appartenance justifiée par un calcul explicite \\
+c3 & 1 & M1RE\_PROBA\_01 & transfert & les deux probabilités exactes, intersection correctement retirée \\
+c4 & 1 & M1RE\_POURC\_02 & transfert & relation de récurrence correcte et $u_2$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CALCUL & ordonnée à l'origine non déterminée, équation laissée en $y=2x+p$ \\
+CONCEPT & $P(N\cup C)$ obtenue en additionnant sans retirer l'intersection \\
+CONCEPT & $u_{n+1}=u_n+4$ : évolution additive au lieu de multiplicative \\
+JUSTIFICATION & appartenance de $C$ affirmée sans calcul \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} quatre entrées de Première mobilisées sur une même situation ; la question 4 s'appuie sur la phase 4 de la séance
+\par\vspace{2mm}
+\itemhead{C2 --- \code{M1RE_PROBA_01} --- item individualisé}{2}{3.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $P(A\cup B) = 0{,}6$ ; $P(\overline{A}) = 0{,}55$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $0{,}45+0{,}3-0{,}15=0{,}6$\item $1-0{,}45=0{,}55$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M1RE\_PROBA\_01 & procedure & $P(A\cup B)$ exacte, formule visible \\
+c2 & 1 & M1RE\_PROBA\_02 & procedure & probabilité de l'événement contraire exacte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & intersection non retirée \\
+CONCEPT & contraire confondu avec l'union \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis des probabilités conditionnelles de Première
+\par\vspace{2mm}
+\newpage\sectiontitle{7. Correspondance diagnostic initial $\leftrightarrow$ évaluation finale}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{25mm} >{\ttfamily\scriptsize}p{22mm} >{\ttfamily\scriptsize}p{16mm} X}
+\rowcolor{Navy}\color{white}Item & \color{white}\scriptsize skill\_id & \color{white}\scriptsize baseline & \color{white}\scriptsize comparaison & \color{white}Lecture \\
+A1 & M1RE\_ALG\_02 & 1S\_TI\_Q02 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A2 & M1RE\_INEQ\_01 & 1S\_TI\_Q03 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A3 & M1RE\_FONC\_01 & 1S\_TI\_Q05 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A4 & M1RE\_VECT\_01 & 1S\_TI\_Q09 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A5 & M1RE\_FONC\_02 & 1S\_TI\_Q06 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A6 & M1RE\_INEQ\_01 & 1S\_TI\_Q03 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B1 & M1RE\_INEQ\_02 & 1S\_TI\_Q04 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B2 & M1RE\_FONC\_02 & 1S\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B3 & M1RE\_POURC\_02 & 1S\_TI\_Q14 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B4 & M1RE\_DROIT\_01 & 1S\_TI\_Q11 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C1 & M1RE\_DROIT\_01 & 1S\_TI\_Q11+1S\_TI\_Q10... & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C2 & M1RE\_PROBA\_01 & 1S\_TI\_Q15 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+\end{tabularx}
+\begin{keybox}\textbf{Aucun écart chiffré ne sera calculé.} Les réponses de l'élève aux 18 questions du positionnement initial n'ont pas été conservées : le dossier n'en garde qu'un statut par domaine. Un statut qualitatif n'est pas une mesure : le convertir en score pour en soustraire un autre produirait un chiffre sans valeur. Le script d'analyse impose donc \code{mastery_delta = null} pour toutes les compétences, et se limite à une confrontation \emph{indicative} entre le statut initial et l'état final.\end{keybox}
+\sectiontitle{8. Clés d'interprétation après correction}
+\subsectiontitle{Échelle de maîtrise par compétence}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{10mm} X}
+\toprule Niveau & Signification \\ \midrule
+0 & non maîtrisé \\
+1 & très fragile \\
+2 & partiellement maîtrisé \\
+3 & maîtrisé \\
+4 & maîtrise solide / transfert réussi \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Croiser réussite et certitude}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{40mm} X}
+\toprule Situation & Conduite à tenir \\ \midrule
+Juste, certitude 3--4 & acquis disponible : faire transférer sur une situation nouvelle. \\
+Juste, certitude 1--2 & presque acquis : faire expliciter la procédure, puis réutiliser. \\
+Faux, certitude 1--2 & notion à installer ou procédure à reprendre pas à pas. \\
+Faux, certitude 3--4 & priorité absolue : confronter la conviction avant toute reprise technique. \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Distinguer les niveaux d'erreur}
+Une erreur de \textsc{CALCUL} isolée, non reproduite sur les items voisins de même compétence, ne vaut pas non-maîtrise conceptuelle. La chaîne à reconstituer est : \textbf{connaissance} $\rightarrow$ \textbf{choix de méthode} $\rightarrow$ \textbf{exécution} $\rightarrow$ \textbf{justification} $\rightarrow$ \textbf{contrôle}. Les codes d'erreur du barème situent l'écart sur cette chaîne.
+\sectiontitle{9. Points d'observation propres à cet élève}
+\begin{itemize}\item Indicateurs du dossier : quatre formulations fonctionnelles correctes, trois inéquations autonomes sur quatre, trois pentes correctes, union et complémentaire distingués.\item Vérifier que le sens de l'inégalité est explicitement discuté à chaque division par un nombre négatif.\item Les vecteurs étant solides, s'en servir comme appui pour le coefficient directeur.\end{itemize}
+\subsectiontitle{Grille de saisie de la séance}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{26mm} X X X}
+\toprule Phase & Aide maximale utilisée & Réussite autonome & Observation \\ \midrule
+Phase 1 & & & \\[6mm]
+Phase 2 & & & \\[6mm]
+Phase 3 & & & \\[6mm]
+Phase 4 & & & \\[6mm]
+\bottomrule\end{tabularx}
+\begin{warningbox}\textbf{Avant d'écrire quoi que ce soit sur les acquis de cet élève :} tant que l'évaluation n'est pas corrigée et analysée par \code{tools/analyze_s5.py}, aucune formulation du type « maîtrise désormais », « forte progression » ou « objectif atteint » ne doit être employée. Les formulations admises sont : « à vérifier lors de l'évaluation finale », « observé en séance, à confirmer », « hypothèse de consolidation ».\end{warningbox}
+\end{document}

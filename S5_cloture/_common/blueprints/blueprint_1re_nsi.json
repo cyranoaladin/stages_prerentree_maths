@@ -1,0 +1,379 @@
+{
+  "schema": "nexus-s5-level-blueprint-v1",
+  "generated_on": "2026-08-20",
+  "level_key": "1re_nsi",
+  "label": "Entrée en Première — Numérique et sciences informatiques",
+  "subject": "NSI",
+  "year_prev": "Seconde (SNT et algorithmique)",
+  "year_next": "Première NSI",
+  "curriculum_reference": {
+    "annee_scolaire_visee": "2026-2027",
+    "programme_applique_a_l_eleve": {
+      "cycle": "lycée général, spécialité numérique et sciences informatiques de Première",
+      "texte": "programme de Première NSI, toujours en vigueur en 2026",
+      "BO": "BO spécial n° 1 du 22 janvier 2019",
+      "NOR": "MENE1901633A",
+      "entree_en_vigueur": "rentrée 2019, non remplacé à la rentrée 2026",
+      "nouvelle_progression_applicable": false
+    },
+    "transition": "acquis de Seconde 2025-2026, notamment SNT et algorithmique, vers le programme de Première NSI de 2019",
+    "attendus_de_fin_annee_n_moins_1": "Seconde (SNT et algorithmique)",
+    "source_de_la_reference": "audit indépendant du 21 août 2026, section 9 ; à confirmer auprès du Bulletin officiel avant diffusion externe",
+    "verifie_par_un_humain": false
+  },
+  "baseline_instrument": {
+    "name": "Positionnement de pré-rentrée — NSI, entrée en Première",
+    "file": "1re_nsi/03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+    "items": 18,
+    "minutes": 25,
+    "format": "QCM 4 choix + certitude 1-4"
+  },
+  "sessions": {
+    "S1": "Variables, affectation et conditions",
+    "S2": "Boucles, compteurs et accumulateurs",
+    "S3": "Fonctions, contrats et tests",
+    "S4": "Listes, enregistrements et données CSV",
+    "S5": "Algorithmes et mini-projet de synthèse"
+  },
+  "skills": {
+    "NSI1_REP_01": {
+      "label": "Représentation binaire d'un entier et capacité sur n bits",
+      "domain": "Représentation des données",
+      "importance_n": "importante",
+      "baseline_items": [
+        "NSI_TI_Q01",
+        "NSI_TI_Q02"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "NSI1_AFF_01": {
+      "label": "Modèle d'affectation : la valeur est copiée, pas liée",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q03",
+        "NSI_TI_Q04"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "NSI1_LOG_01": {
+      "label": "Conditions composées et négation d'une condition",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q05",
+        "NSI_TI_Q06"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "NSI1_BOUCLE_01": {
+      "label": "range : valeurs produites, bornes et nombre d'itérations",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q07"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "NSI1_BOUCLE_02": {
+      "label": "Choisir entre une boucle for et une boucle while",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q08"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "NSI1_ACC_01": {
+      "label": "Accumulateur : somme, compteur, invariant de boucle",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [],
+      "sessions": [
+        "S2",
+        "S4"
+      ]
+    },
+    "NSI1_LIST_01": {
+      "label": "Indexation d'une liste, len et dernier indice valide",
+      "domain": "Types construits",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q09",
+        "NSI_TI_Q10"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "NSI1_MUT_01": {
+      "label": "Alias, copie et mutabilité d'une liste",
+      "domain": "Types construits",
+      "importance_n": "importante",
+      "baseline_items": [],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "NSI1_FONC_01": {
+      "label": "Paramètre, argument, valeur renvoyée et None",
+      "domain": "Programmation",
+      "importance_n": "critique",
+      "baseline_items": [
+        "NSI_TI_Q11",
+        "NSI_TI_Q12"
+      ],
+      "sessions": [
+        "S3"
+      ]
+    },
+    "NSI1_TEST_01": {
+      "label": "Tests, assertions et cas limites",
+      "domain": "Qualité du code",
+      "importance_n": "critique",
+      "baseline_items": [],
+      "sessions": [
+        "S3",
+        "S4"
+      ]
+    },
+    "NSI1_CSV_01": {
+      "label": "Chargement d'un fichier CSV et conversion des types",
+      "domain": "Données en tables",
+      "importance_n": "critique",
+      "baseline_items": [],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "NSI1_TAB_01": {
+      "label": "Enregistrement, attribut et métadonnée",
+      "domain": "Données en tables",
+      "importance_n": "importante",
+      "baseline_items": [
+        "NSI_TI_Q17",
+        "NSI_TI_Q18"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "NSI1_WEB_01": {
+      "label": "Rôle du CSS et modèle client-serveur",
+      "domain": "Web",
+      "importance_n": "utile",
+      "baseline_items": [
+        "NSI_TI_Q13",
+        "NSI_TI_Q14"
+      ],
+      "sessions": []
+    },
+    "NSI1_RES_01": {
+      "label": "Adresse IP et rôle d'un routeur",
+      "domain": "Réseaux",
+      "importance_n": "utile",
+      "baseline_items": [
+        "NSI_TI_Q15",
+        "NSI_TI_Q16"
+      ],
+      "sessions": []
+    },
+    "NSI1_ALGO_01": {
+      "label": "Recherche séquentielle et principe de la dichotomie",
+      "domain": "Algorithmique",
+      "importance_n": "critique",
+      "baseline_items": [],
+      "sessions": [
+        "S5"
+      ]
+    }
+  },
+  "baseline_items": {
+    "NSI_TI_Q01": "Valeur décimale de l'entier écrit 1011 en binaire ?",
+    "NSI_TI_Q02": "Sur huit bits, combien de valeurs entières différentes ?",
+    "NSI_TI_Q03": "a = 3, puis b = a, puis a = 5 : que vaut b à la fin ?",
+    "NSI_TI_Q04": "Que fait l'instruction x = x + 1 ?",
+    "NSI_TI_Q05": "L'expression (x > 0) and (x < 10) est vraie :",
+    "NSI_TI_Q06": "Quelle est la négation de la condition « x > 5 » ?",
+    "NSI_TI_Q07": "Combien de fois le corps de « for i in range(3) » s'exécute-t-il ?",
+    "NSI_TI_Q08": "Dans quel cas emploie-t-on une boucle while plutôt qu'une boucle for ?",
+    "NSI_TI_Q09": "Soit L = [4, 8, 15, 16]. Que vaut L[1] ?",
+    "NSI_TI_Q10": "Que vaut len([3, 7, 9]) ?",
+    "NSI_TI_Q11": "Dans « def carre(n): return n * n », que désigne n ?",
+    "NSI_TI_Q12": "Que renvoie une fonction Python sans instruction return ?",
+    "NSI_TI_Q13": "Dans une page web, quel est le rôle du CSS ?",
+    "NSI_TI_Q14": "Modèle client-serveur : que se passe-t-il lors de la consultation d'une page ?",
+    "NSI_TI_Q15": "À quoi sert une adresse IP ?",
+    "NSI_TI_Q16": "Quel est le rôle d'un routeur ?",
+    "NSI_TI_Q17": "Dans un fichier CSV décrivant des élèves, à quoi correspond une ligne ?",
+    "NSI_TI_Q18": "Que désigne-t-on par « métadonnée » ?"
+  },
+  "critical_prerequisites": [
+    "NSI1_AFF_01",
+    "NSI1_LOG_01",
+    "NSI1_BOUCLE_01",
+    "NSI1_BOUCLE_02",
+    "NSI1_ACC_01",
+    "NSI1_LIST_01",
+    "NSI1_FONC_01",
+    "NSI1_TEST_01",
+    "NSI1_CSV_01"
+  ],
+  "bridges_to_year_n": [
+    "recherche séquentielle : parcours complet, valeur sentinelle de retour",
+    "recherche dichotomique : précondition de tri, division de l'espace de recherche",
+    "spécifier une fonction avant de l'écrire, puis la tester"
+  ],
+  "session5_architecture": {
+    "work_minutes": 75,
+    "exam_minutes": 45,
+    "phases": [
+      {
+        "n": 1,
+        "title": "Réactivation et mise en route",
+        "minutes": 10,
+        "minutes_common": 10,
+        "minutes_individual": 0
+      },
+      {
+        "n": 2,
+        "title": "Consolidation ciblée — priorité 1",
+        "minutes": 25,
+        "minutes_common": 13,
+        "minutes_individual": 12
+      },
+      {
+        "n": 3,
+        "title": "Consolidation ciblée — priorité 2",
+        "minutes": 20,
+        "minutes_common": 10,
+        "minutes_individual": 10
+      },
+      {
+        "n": 4,
+        "title": "Réinvestissement et pont vers l'année suivante",
+        "minutes": 15,
+        "minutes_common": 13,
+        "minutes_individual": 2
+      },
+      {
+        "n": 5,
+        "title": "Préparation méthodologique à l'évaluation",
+        "minutes": 5,
+        "minutes_common": 5,
+        "minutes_individual": 0
+      }
+    ]
+  },
+  "exam_common_core": {
+    "A1": {
+      "skill_id": "NSI1_LIST_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "NSI_TI_Q09",
+      "comparability": "comparable"
+    },
+    "A2": {
+      "skill_id": "NSI1_LOG_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "NSI_TI_Q06",
+      "comparability": "comparable"
+    },
+    "A3": {
+      "skill_id": "NSI1_BOUCLE_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "NSI_TI_Q07",
+      "comparability": "comparable"
+    },
+    "A4": {
+      "skill_id": "NSI1_AFF_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "NSI_TI_Q03",
+      "comparability": "comparable"
+    },
+    "B1": {
+      "skill_id": "NSI1_ACC_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": null,
+      "comparability": "non_comparable_absence_baseline"
+    },
+    "B2": {
+      "skill_id": "NSI1_FONC_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "NSI_TI_Q12",
+      "comparability": "comparable"
+    },
+    "B3": {
+      "skill_id": "NSI1_CSV_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "NSI_TI_Q17",
+      "comparability": "comparable"
+    },
+    "C1": {
+      "skill_id": "NSI1_ALGO_01",
+      "points": 4,
+      "task": "transfert",
+      "difficulty": "transfert",
+      "baseline_item_id": null,
+      "comparability": "non_comparable_contenu_nouveau"
+    }
+  },
+  "phase1_items": [
+    {
+      "skill_id": "NSI1_LIST_01",
+      "text": "Pour \\code{L = [5, 2, 9, 4]}, donner \\code{L[0]}, \\code{L[-1]}, \\code{len(L)} et le dernier indice valide."
+    },
+    {
+      "skill_id": "NSI1_LOG_01",
+      "text": "Écrire la négation de \\code{(x >= 3) and (x <= 12)}."
+    },
+    {
+      "skill_id": "NSI1_BOUCLE_01",
+      "text": "Donner les valeurs produites par \\code{range(2, 11, 3)} et le nombre de tours de boucle."
+    },
+    {
+      "skill_id": "NSI1_AFF_01",
+      "text": "Après \\code{a = 4} puis \\code{b = a} puis \\code{a = 9}, que valent \\code{a} et \\code{b} ?"
+    },
+    {
+      "skill_id": "NSI1_FONC_01",
+      "text": "Que renvoie une fonction qui ne contient aucune instruction \\code{return} ? Que vaut alors la variable qui reçoit le résultat ?"
+    }
+  ],
+  "phase4": {
+    "title": "Chercher dans une liste : du parcours complet à la dichotomie",
+    "objective": "Découverte guidée : construire, à partir du parcours de liste déjà travaillé, deux algorithmes nouveaux du programme de Première — la recherche séquentielle et la recherche dichotomique, avec leur précondition et leur coût.",
+    "skills_prev": [
+      "NSI1_LIST_01",
+      "NSI1_BOUCLE_01",
+      "NSI1_FONC_01"
+    ],
+    "skills_next": [
+      "recherche séquentielle",
+      "recherche dichotomique"
+    ]
+  }
+}

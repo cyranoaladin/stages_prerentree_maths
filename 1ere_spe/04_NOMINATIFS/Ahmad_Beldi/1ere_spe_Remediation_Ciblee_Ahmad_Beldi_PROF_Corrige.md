@@ -1,5 +1,5 @@
-# Exercices de remédiation ciblés - Ahmad Beldi
-## Entrée en Première générale - Spécialité mathématiques
+# 1re Spécialité Mathématiques — Plan de remédiation ciblée — Ahmad Beldi (Corrigé enseignant)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

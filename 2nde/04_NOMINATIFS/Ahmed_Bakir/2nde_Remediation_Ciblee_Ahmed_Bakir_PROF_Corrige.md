@@ -1,5 +1,5 @@
-# Exercices de remédiation ciblés - Ahmed Bakir
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Plan de remédiation ciblée — Ahmed Bakir (Corrigé enseignant)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

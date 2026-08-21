@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Algorithmes et mini-projet de synthèse</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Corrigé, différenciation et pilotage</div>
 </div><div class="prof-only"></div>
-# Objectifs
+## Objectifs
 
 - écrire une recherche séquentielle ;
 - calculer extremum et moyenne ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - tracer une recherche dichotomique ;
 - livrer un projet documenté et testé ;
 
-# Déroulé minute par minute
+## Déroulé minute par minute
 
 - 0-10 quiz ;
 - 10-27 recherche/extremum ;
@@ -31,7 +31,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - 105-115 oral/tests ;
 - 115-120 bilan ;
 
-# Rituel prêt à l’emploi
+## Rituel prêt à l’emploi
 
 ## Question 1
 
@@ -115,7 +115,7 @@ Le pack `09_PACKS_CODE/1re_nsi_CODE_ENSEIGNANT.zip` contient la solution de réf
 Critères : exactitude, décomposition, tests, documentation, absence de duplication, gestion des cas limites et explication orale.
 
 
-# Consignes prêtes à dire
+## Consignes prêtes à dire
 
 - « Avant d’exécuter, écris ce que tu prévois. »
 - « Une réponse sans contrôle reste une hypothèse. »
@@ -123,7 +123,7 @@ Critères : exactitude, décomposition, tests, documentation, absence de duplica
 - « Ne change qu’une chose à la fois, puis relance les tests. »
 - « Explique le rôle de cette variable sans lire le code mot à mot. »
 
-# Points de vigilance
+## Points de vigilance
 
 - ne pas transformer l’activité en copie de code projeté ;
 - vérifier que les deux élèves alternent pilote et navigateur ;
@@ -131,7 +131,7 @@ Critères : exactitude, décomposition, tests, documentation, absence de duplica
 - demander un test sur les bornes ;
 - conserver le fichier final et le journal des erreurs.
 
-# Indicateurs de réussite
+## Indicateurs de réussite
 
 | Élève | Prévision exacte | Code exécutable | Tests pertinents | Explication | Aide maximale |
 |---|:---:|:---:|:---:|:---:|:---:|

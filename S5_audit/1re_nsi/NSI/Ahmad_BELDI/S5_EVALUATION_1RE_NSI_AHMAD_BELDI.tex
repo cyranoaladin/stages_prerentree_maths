@@ -1,0 +1,170 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Entrée en Première — Numérique et sciences informatiques — Stage de pré-rentrée}{Évaluation finale — Ahmad BELDI}
+\begin{document}
+\nexuscover{ÉVALUATION FINALE --- DIAGNOSTIC DE SORTIE}{Durée : 45 minutes}{Ahmad BELDI}{Entrée en Première — Numérique et sciences informatiques}{NSI --- à traiter individuellement}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{22mm} X >{\bfseries}p{16mm} X}
+\toprule Nom et prénom & \rule{62mm}{0.32pt} & Date & \rule{34mm}{0.32pt} \\ \bottomrule
+\end{tabularx}
+
+\begin{goalbox}
+\textbf{Ce document est un diagnostic de sortie, pas un classement.} Il mesure ce qui est
+désormais installé, ce qui reste fragile, et il sert à écrire le plan des quatre premières
+semaines de la rentrée.
+\end{goalbox}
+
+\begin{methodbox}
+\textbf{Consignes}
+\begin{itemize}
+\item Durée : \textbf{45 minutes}. Partie A : environ 10 min. Partie B : environ 20 min. Partie C : environ 15 min.
+\item Travailler seul, sans document et sans les cartes de rappel de la séance.
+\item Écrire la relation ou la propriété utilisée avant le calcul.
+\item Une question peut être laissée de côté puis reprise ; il vaut mieux la laisser vide que d'écrire au hasard.
+\item Trois lignes « Certitude » seulement : \conf\ , sur la même échelle qu'en début de stage.
+\end{itemize}
+\end{methodbox}
+
+\newpage
+\phasehead{Partie A --- Automatismes et connaissances essentielles}{environ 10 min}{Questions courtes. Écrire le résultat, sans rédaction longue.}
+\begin{enumerate}
+\needspace{22mm}
+\item[\textbf{A1.}] Pour \code{L = [7, 1, 8, 4, 2]}, donner \code{L[2]}, \code{L[-1]}, \code{len(L)} et le dernier indice valide.
+\worklines{2}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{A2.}] Écrire la négation de \code{x <= 8}, puis celle de \code{(x > 2) or (x == 0)}.
+\worklines{2}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{A3.}] Pour \code{for i in range(3, 12, 4):}, donner les valeurs prises par \code{i} et le nombre de tours.
+\worklines{2}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{A4.}] On exécute \code{a = 6}, puis \code{b = a}, puis \code{a = a + 4}. Donner \code{a} et \code{b}, puis expliquer en une phrase.
+\worklines{2}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{A5.}] On définit \code{def affiche(n): print(n * 2)}. Que vaut \code{r} après \code{r = affiche(3)} ? Expliquer en une phrase.
+\worklines{2}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{A6.}] Donner le nombre de tours de \code{for i in range(6)}, puis les valeurs prises par \code{i} dans \code{for i in range(2, 9)}.
+\worklines{2}
+\par\vspace{1.2mm}
+\end{enumerate}
+\certbox{Certitude sur l'ensemble de la partie A :}
+\needspace{68mm}\par\vspace{3mm}
+\phasehead{Partie B --- Application et raisonnement}{environ 20 min}{Écrire la relation, la propriété ou la règle avant le calcul, puis contrôler.}
+\begin{enumerate}
+\needspace{22mm}
+\item[\textbf{B1.}] On exécute le programme suivant.
+\begin{lstlisting}
+total = 0
+n = 0
+for v in [4, 9, 2, 7]:
+    total = total + v
+    n = n + 1
+\end{lstlisting}
+\begin{enumerate}
+\item Compléter le tableau d'état après chaque tour de boucle.
+\par\noindent\begin{tabularx}{\linewidth}{|>{\bfseries}p{16mm}|X|X|X|X|}
+\hline
+Après le tour & 1 & 2 & 3 & 4 \\ \hline
+\code{total} & & & & \\ \hline
+\code{n} & & & & \\ \hline
+\end{tabularx}
+\item Donner les valeurs finales, puis dire en une phrase ce que représente chacune des deux variables.
+\end{enumerate}
+\worklines{4}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{B2.}] On dispose de la fonction suivante.
+\begin{lstlisting}
+def moyenne(valeurs):
+    total = 0
+    for v in valeurs:
+        total = total + v
+    print(total / len(valeurs))
+\end{lstlisting}
+\begin{enumerate}
+\item On écrit \code{m = moyenne([4, 6])}. Que vaut \code{m} ? Justifier.
+\item Corriger la fonction pour qu'elle \emph{renvoie} la moyenne.
+\end{enumerate}
+\worklines{5}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{B3.}] On dispose de l'extrait de fichier suivant.
+\begin{lstlisting}[language={}]
+id,date,temperature,humidite,statut
+C07,2026-08-24,26.5,58,OK
+C08,2026-08-24,32.1,49,ALERTE
+\end{lstlisting}
+\begin{enumerate}
+\item Quelles colonnes doivent être converties avant tout calcul, et en quel type ?
+\item Expliquer pourquoi \code{"26.5" + "1"} ne donne pas $27{,}5$.
+\item Donner un exemple de \emph{métadonnée} associable à ce fichier, et dire en quoi elle
+diffère d'une donnée du tableau.
+\end{enumerate}
+\worklines{5}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{B4.}] On pose \code{L = [10, 4, 7]}.
+\begin{enumerate}
+\item Donner \code{L[0]}, \code{len(L)} et le dernier indice valide.
+\item On exécute ensuite \code{M = L} puis \code{M.append(9)}. Que contient \code{L} ? Expliquer précisément.
+\end{enumerate}
+\worklines{6}
+\par\vspace{1.2mm}
+\end{enumerate}
+\certbox{Certitude sur la question B2 :}
+\needspace{68mm}\par\vspace{3mm}
+\phasehead{Partie C --- Transfert et synthèse}{environ 15 min}{Reconnaître la notion utile, mobiliser plusieurs acquis, conclure par une phrase.}
+\begin{enumerate}
+\needspace{22mm}
+\item[\textbf{C1.}] \textbf{Rechercher un capteur.} On dispose d'une liste de dictionnaires
+\code{mesures}, chacun possédant au moins la clé \code{"id"}.
+\begin{lstlisting}
+def chercher(mesures, identifiant):
+    for i in range(len(mesures)):
+        if ____________________________:
+            return ____
+    return -1
+\end{lstlisting}
+\begin{enumerate}
+\item Compléter les deux trous.
+\item On pose \code{mesures = [{"id": "C01"}, {"id": "C02"}, {"id": "C03"}]}. Donner le résultat de
+\code{chercher(mesures, "C03")} et de \code{chercher(mesures, "C09")}, puis écrire un test portant sur
+une liste vide, avec son résultat attendu.
+\item La liste est désormais triée par identifiant. En une phrase, dire ce que permet alors la recherche
+dichotomique et à quelle condition.
+\end{enumerate}
+\worklines{8}
+\par\vspace{1.2mm}
+\needspace{22mm}
+\item[\textbf{C2.}] Compléter la fonction qui renvoie l'indice de la première valeur strictement négative
+d'une liste, ou $-1$ s'il n'y en a aucune.
+\begin{lstlisting}
+def premier_negatif(L):
+    for i in range(len(L)):
+        if ______________:
+            return ____
+    return ____
+\end{lstlisting}
+Donner ensuite le résultat de \code{premier_negatif([4, 7, -2, -5])}.
+\worklines{6}
+\par\vspace{1.2mm}
+\end{enumerate}
+\certbox{Certitude sur la question C1 :}
+\brouillon{\dimexpr\textheight/3\relax}
+\newpage
+\sectiontitle{Après l'évaluation --- à remplir en deux minutes}
+\begin{methodbox}Ces trois lignes ne sont pas notées. Elles servent à construire le plan des quatre premières semaines de la rentrée.\end{methodbox}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{62mm} X}
+\toprule
+La question que j'ai trouvée la plus sûre & \rule{85mm}{0.32pt} \\
+La question sur laquelle j'ai le plus hésité & \rule{85mm}{0.32pt} \\
+Une notion que je veux revoir dès la première semaine & \rule{85mm}{0.32pt} \\
+\bottomrule\end{tabularx}
+\vfill
+\begin{graybox}\small Ce document est un diagnostic de sortie. Il sera analysé compétence par compétence, puis comparé au positionnement passé en début de stage lorsque cette comparaison est légitime.\end{graybox}
+\end{document}

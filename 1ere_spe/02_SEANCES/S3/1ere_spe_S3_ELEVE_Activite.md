@@ -1,5 +1,5 @@
-# 1ere_spe_S3_ELEVE_Activite
-## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
+# 1re Spécialité Mathématiques — Séance 3 : Vecteurs, droites et transition vers le produit scalaire
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

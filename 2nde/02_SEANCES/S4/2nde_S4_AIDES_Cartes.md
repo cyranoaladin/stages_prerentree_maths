@@ -1,5 +1,5 @@
-# 2nde_S4_AIDES_Cartes
-## Séance 4 — Choisir le bon théorème
+# 2nde — Séance 4 : Choisir le bon théorème
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

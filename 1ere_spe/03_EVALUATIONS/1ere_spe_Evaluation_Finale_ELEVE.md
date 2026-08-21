@@ -1,5 +1,5 @@
-# 1ere_spe_Evaluation_Finale_ELEVE
-## Évaluation finale
+# 1re Spécialité Mathématiques — Évaluation finale (Élève)
+## Sujet de synthèse
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

@@ -1,5 +1,5 @@
-# Dossier individuel - Fares Laajili
-## Entrée en Troisième - Mathématiques
+# 3e — Dossier individuel — Fares Laajili
+## Synthèse et profil élève
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

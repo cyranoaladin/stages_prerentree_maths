@@ -1,0 +1,1341 @@
+{
+  "schema": "nexus-s5-evaluation-manifest-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "noa-maniaci",
+  "level_key": "2nde",
+  "subject": "Mathématiques",
+  "items": [
+    {
+      "item_id": "2NDE_NOA_MANIACI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M2DE_CALC_01",
+      "skills_extra": [],
+      "skill_label": "Priorités opératoires, signes et puissance d'un relatif",
+      "objective": "Priorités opératoires, signes et puissance d'un relatif",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $-4 + 5\\times(-3) - (-6)$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.35
+        },
+        "features": {
+          "caracteres_enonce": 29,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$-13$",
+      "significant_steps": [
+        "$5\\times(-3)=-15$",
+        "$-4-15+6=-13$"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "calcul de gauche à droite : $(-4+5)\\times(-3)$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$-(-6)$ traité comme $-6$"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A1_c1",
+          "points": 1,
+          "skill_id": "M2DE_CALC_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$-13$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_CALC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q01",
+      "baseline_item_text": "Calculer −3 + 4 × (−2).",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_CALC_01",
+          "baseline_items": [
+            "2N_TI_Q01",
+            "2N_TI_Q02"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "socle du calcul algébrique et de l'étude de signes en Seconde",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M2DE_FRAC_01",
+      "skills_extra": [],
+      "skill_label": "Somme et quotient de fractions",
+      "objective": "Somme et quotient de fractions",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $\\dfrac{3}{8} + \\dfrac{5}{12}$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.03,
+          "traitement": 0.6,
+          "redaction": 0.35
+        },
+        "features": {
+          "caracteres_enonce": 21,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\dfrac{19}{24}$",
+      "significant_steps": [
+        "dénominateur commun $24$",
+        "$\\frac{9}{24}+\\frac{10}{24}=\\frac{19}{24}$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "numérateurs et dénominateurs additionnés séparément"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "facteur de conversion appliqué au seul dénominateur"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A2_c1",
+          "points": 1,
+          "skill_id": "M2DE_FRAC_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac{19}{24}$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_FRAC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q03",
+      "baseline_item_text": "Calculer 2/3 + 1/4.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_FRAC_01",
+          "baseline_items": [
+            "2N_TI_Q03",
+            "2N_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "calcul exact exigé en Seconde, y compris avec des lettres",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M2DE_PUIS_01",
+      "skills_extra": [],
+      "skill_label": "Puissances de 10, exposants négatifs, écriture scientifique",
+      "objective": "Puissances de 10, exposants négatifs, écriture scientifique",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Simplifier $\\dfrac{10^{5}\\times 10^{-2}}{10^{4}}$ et donner le résultat sous la forme d'une puissance de $10$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.11,
+          "traitement": 0.6,
+          "redaction": 0.35
+        },
+        "features": {
+          "caracteres_enonce": 86,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$10^{-1}$",
+      "significant_steps": [
+        "$10^{5}\\times 10^{-2}=10^{3}$",
+        "$10^{3}\\div 10^{4}=10^{-1}$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "exposants multipliés au lieu d'être additionnés"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "signe de l'exposant négatif perdu"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A3_c1",
+          "points": 1,
+          "skill_id": "M2DE_PUIS_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$10^{-1}$ (ou $0{,}1$) exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_PUIS_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q05",
+      "baseline_item_text": "Simplifier 10³ × 10⁻⁵.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_PUIS_01",
+          "baseline_items": [
+            "2N_TI_Q05",
+            "2N_TI_Q06"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "notation scientifique utilisée en physique et en statistiques dès septembre",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M2DE_ALG_01",
+      "skills_extra": [],
+      "skill_label": "Double distributivité et identités remarquables",
+      "objective": "Double distributivité et identités remarquables",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Développer $(x - 5)^2$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.03,
+          "traitement": 0.6,
+          "redaction": 0.35
+        },
+        "features": {
+          "caracteres_enonce": 22,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x^2 - 10x + 25$",
+      "significant_steps": [
+        "$(a-b)^2=a^2-2ab+b^2$",
+        "$x^2-2\\times 5x+25$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "double produit oublié : $x^2+25$"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "signe du double produit erroné"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A4_c1",
+          "points": 1,
+          "skill_id": "M2DE_ALG_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$x^2-10x+25$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q08",
+      "baseline_item_text": "Développer (x − 4)².",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "baseline_items": [
+            "2N_TI_Q07",
+            "2N_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "identité indispensable à la forme canonique et à la factorisation",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M2DE_EQ_02",
+      "skills_extra": [],
+      "skill_label": "Équation produit nul",
+      "objective": "Équation produit nul",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Résoudre $(4x - 12)(x + 6) = 0$.",
+      "target_minutes": 1.25,
+      "time_estimate": {
+        "minutes": 1.25,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.7
+        },
+        "features": {
+          "caracteres_enonce": 31,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x = 3$ ou $x = -6$",
+      "significant_steps": [
+        "produit nul : $4x-12=0$ ou $x+6=0$",
+        "$x=3$ ou $x=-6$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "une seule solution donnée"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "erreur sur $4x=12$ ou sur le signe de $-6$"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A5_c1",
+          "points": 1,
+          "skill_id": "M2DE_EQ_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "les deux solutions exactes, quelle que soit la méthode employée"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [
+        "développer puis résoudre l'équation obtenue : méthode plus longue mais mathématiquement valide ; elle reçoit la totalité des points si les deux solutions sont trouvées"
+      ],
+      "retention": {
+        "M2DE_EQ_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q10",
+      "baseline_item_text": "Résoudre (x − 2)(x + 5) = 0.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_EQ_02",
+          "baseline_items": [
+            "2N_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "outil direct des équations du second degré",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M2DE_PUIS_01",
+      "skills_extra": [],
+      "skill_label": "Puissances de 10, exposants négatifs, écriture scientifique",
+      "objective": "Puissances de 10, exposants négatifs, écriture scientifique",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Simplifier $10^{-4}\\times 10^{7}$ et donner le résultat sous la forme d'une puissance de $10$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.11,
+          "traitement": 0.6,
+          "redaction": 0.35
+        },
+        "features": {
+          "caracteres_enonce": 81,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$10^{3}$",
+      "significant_steps": [
+        "exposants additionnés : $-4+7=3$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "exposants multipliés"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "signe de l'exposant négatif perdu"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_A6_c1",
+          "points": 1,
+          "skill_id": "M2DE_PUIS_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$10^3$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_PUIS_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q05",
+      "baseline_item_text": "Simplifier 10³ × 10⁻⁵.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_PUIS_01",
+          "baseline_items": [
+            "2N_TI_Q05",
+            "2N_TI_Q06"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "notation scientifique et ordres de grandeur",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M2DE_EQ_01",
+      "skills_extra": [
+        "M2DE_EQ_02"
+      ],
+      "skill_label": "Équation du premier degré, inconnue dans les deux membres",
+      "objective": "Équation du premier degré, inconnue dans les deux membres",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "\\begin{enumerate}\n\\item Résoudre $5x - 8 = 2x + 7$, puis vérifier la solution.\n\\item Résoudre $(2x + 7)(x - 3) = 0$ en indiquant la propriété utilisée.\n\\item Vérifier la solution entière de cette seconde équation.\n\\end{enumerate}",
+      "target_minutes": 5.25,
+      "time_estimate": {
+        "minutes": 5.25,
+        "breakdown": {
+          "lecture": 0.23,
+          "traitement": 3.45,
+          "redaction": 1.66
+        },
+        "features": {
+          "caracteres_enonce": 174,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$x=5$ (vérification : $17=17$) ; $x=-3{,}5$ ou $x=3$ ; vérification de $x=3$ : $(2\\times 3+7)(3-3)=13\\times 0=0$.",
+      "significant_steps": [
+        "$5x-2x=7+8$ donc $3x=15$ et $x=5$",
+        "vérification : $5\\times 5-8=17$ et $2\\times 5+7=17$",
+        "produit nul : $2x+7=0$ ou $x-3=0$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "une seule solution donnée pour l'équation produit"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "propriété du produit nul non nommée alors qu'elle est demandée"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "vérification demandée à la question 1 mais non effectuée"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "CONTROLE",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B1_c1",
+          "points": 0.75,
+          "skill_id": "M2DE_EQ_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$x=5$ et vérification écrite"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B1_c2",
+          "points": 0.75,
+          "skill_id": "M2DE_EQ_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "les deux solutions exactes et propriété nommée, quelle que soit la méthode"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B1_c3",
+          "points": 0.5,
+          "skill_id": "M2DE_EQ_02",
+          "evidence_type": "controle",
+          "subpart": "3",
+          "desc": "vérification de la solution entière conduite jusqu'au produit nul"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [
+        "développer $(2x+7)(x-3)$ puis résoudre l'équation obtenue : la méthode est mathématiquement valide, seulement moins directe. Elle reçoit la totalité des points si les deux solutions sont exactes et si la propriété est nommée"
+      ],
+      "retention": {
+        "M2DE_EQ_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_EQ_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q10",
+      "baseline_item_text": "Résoudre (x − 2)(x + 5) = 0.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_EQ_01",
+          "baseline_items": [
+            "2N_TI_Q09"
+          ]
+        },
+        {
+          "skill_id": "M2DE_EQ_02",
+          "baseline_items": [
+            "2N_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "outil de base pour les équations du second degré et les études de signe",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M2DE_POURC_01",
+      "skills_extra": [],
+      "skill_label": "Pourcentages, coefficient multiplicateur, évolutions successives",
+      "objective": "Pourcentages, coefficient multiplicateur, évolutions successives",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Un article coûte $250$ TND. Son prix augmente de $12\\,\\%$, puis le nouveau prix baisse de $12\\,\\%$.\n\\begin{enumerate}\n\\item Calculer le prix après chaque étape.\n\\item Le prix final est-il égal au prix initial ? Justifier à l'aide du coefficient multiplicateur global.\n\\end{enumerate}",
+      "target_minutes": 3.75,
+      "time_estimate": {
+        "minutes": 3.75,
+        "breakdown": {
+          "lecture": 0.31,
+          "traitement": 2.3,
+          "redaction": 1.22
+        },
+        "features": {
+          "caracteres_enonce": 229,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$280$ TND puis $246{,}40$ TND ; $1{,}12\\times 0{,}88=0{,}9856 \\neq 1$ : le prix final est inférieur de $1{,}44\\,\\%$.",
+      "significant_steps": [
+        "$250\\times 1{,}12=280$",
+        "$280\\times 0{,}88=246{,}40$",
+        "coefficient global $1{,}12\\times 0{,}88=0{,}9856$, soit une baisse de $1{,}44\\,\\%$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "les deux pourcentages compensés : réponse « prix identique »"
+        },
+        {
+          "code": "METHODE",
+          "desc": "coefficients additionnés au lieu d'être multipliés"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "conclusion donnée sans le coefficient global"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B2_c1",
+          "points": 1,
+          "skill_id": "M2DE_POURC_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux prix intermédiaires exacts"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B2_c2",
+          "points": 1,
+          "skill_id": "M2DE_POURC_01",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "coefficient global calculé et conclusion argumentée"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "automatisme",
+        "justification"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_POURC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q12",
+      "baseline_item_text": "Un prix baisse de 20 %, puis augmente de 20 % : que vaut le prix final ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_POURC_01",
+          "baseline_items": [
+            "2N_TI_Q11",
+            "2N_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "évolutions successives réutilisées en Seconde puis en Première",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M2DE_GEO_01",
+      "skills_extra": [
+        "M2DE_GEO_02"
+      ],
+      "skill_label": "Théorème de Pythagore, direct et réciproque",
+      "objective": "Théorème de Pythagore, direct et réciproque",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Le triangle $ABC$ est rectangle en $A$, avec $AB = 9$ cm et $AC = 12$ cm.\nLe point $M$ appartient à $[AB]$ et le point $N$ à $[AC]$, avec $(MN)$ parallèle à $(BC)$ et $AM = 3$ cm.\n\\begin{enumerate}\n\\item Calculer $BC$.\n\\item Calculer $AN$ et $MN$ en citant le théorème utilisé.\n\\item En déduire le périmètre du triangle $AMN$.\n\\end{enumerate}",
+      "target_minutes": 5.5,
+      "time_estimate": {
+        "minutes": 5.5,
+        "breakdown": {
+          "lecture": 0.35,
+          "traitement": 3.45,
+          "redaction": 1.66
+        },
+        "features": {
+          "caracteres_enonce": 264,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$BC = 15$ cm ; $AN = 4$ cm ; $MN = 5$ cm ; périmètre de $AMN$ $= 3+4+5 = 12$ cm.",
+      "significant_steps": [
+        "$BC^2=81+144=225$ donc $BC=15$",
+        "Thalès : $\\frac{AM}{AB}=\\frac{AN}{AC}=\\frac{MN}{BC}=\\frac{3}{9}=\\frac{1}{3}$",
+        "$AN=12\\times\\frac13=4$ ; $MN=15\\times\\frac13=5$"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "rapport de réduction inversé ($3$ au lieu de $\\frac13$)"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "théorème de Thalès non cité"
+        },
+        {
+          "code": "LECTURE",
+          "desc": "$AM$ confondu avec $MB$"
+        }
+      ],
+      "error_codes": [
+        "JUSTIFICATION",
+        "LECTURE",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B3_c1",
+          "points": 0.75,
+          "skill_id": "M2DE_GEO_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$BC=15$ cm avec la relation écrite"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B3_c2",
+          "points": 0.75,
+          "skill_id": "M2DE_GEO_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "$AN$ et $MN$ exacts, théorème de Thalès cité"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B3_c3",
+          "points": 0.5,
+          "skill_id": "M2DE_GEO_02",
+          "evidence_type": "procedure",
+          "subpart": "3",
+          "desc": "périmètre exact, avec l'unité"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_GEO_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q15",
+      "baseline_item_text": "Configuration de Thalès : AM = 2, AB = 6, AN = 3, calculer AC.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_GEO_01",
+          "baseline_items": [
+            "2N_TI_Q13",
+            "2N_TI_Q14"
+          ]
+        },
+        {
+          "skill_id": "M2DE_GEO_02",
+          "baseline_items": [
+            "2N_TI_Q15",
+            "2N_TI_Q16"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "configurations réinvesties en géométrie repérée et en vecteurs",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "M2DE_POURC_01",
+      "skills_extra": [],
+      "skill_label": "Pourcentages, coefficient multiplicateur, évolutions successives",
+      "objective": "Pourcentages, coefficient multiplicateur, évolutions successives",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Un prix de $150$ TND augmente de $20\\,\\%$, puis le nouveau prix baisse de $25\\,\\%$.\n\\begin{enumerate}\n\\item Calculer le prix après chaque étape.\n\\item Donner le coefficient multiplicateur global, puis le taux d'évolution global en pourcentage.\n\\end{enumerate}",
+      "target_minutes": 3.75,
+      "time_estimate": {
+        "minutes": 3.75,
+        "breakdown": {
+          "lecture": 0.27,
+          "traitement": 2.3,
+          "redaction": 1.22
+        },
+        "features": {
+          "caracteres_enonce": 205,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 6,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$180$ TND puis $135$ TND ; coefficient global $0{,}9$, soit une baisse de $10\\,\\%$.",
+      "significant_steps": [
+        "$150\\times 1{,}2 = 180$",
+        "$180\\times 0{,}75 = 135$",
+        "$1{,}2\\times 0{,}75 = 0{,}9$"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "pourcentages additionnés en $-5\\,\\%$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "baisse appliquée au prix initial"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "produit $1{,}2\\times 0{,}75$ mal évalué alors que la méthode est correcte"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B4_c1",
+          "points": 1,
+          "skill_id": "M2DE_POURC_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux prix exacts"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_B4_c2",
+          "points": 1,
+          "skill_id": "M2DE_POURC_01",
+          "evidence_type": "automatisme",
+          "subpart": "2",
+          "desc": "coefficient global et taux global exacts"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_POURC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q12",
+      "baseline_item_text": "Un prix baisse de 20 %, puis augmente de 20 % : que vaut le prix final ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_POURC_01",
+          "baseline_items": [
+            "2N_TI_Q11",
+            "2N_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "évolutions successives, revues dès le chapitre des pourcentages de Seconde",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "M2DE_ALG_01",
+      "skills_extra": [
+        "M2DE_GEO_01",
+        "M2DE_POURC_01"
+      ],
+      "skill_label": "Double distributivité et identités remarquables",
+      "objective": "Double distributivité et identités remarquables",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\textbf{L'écran d'affichage.} Un écran rectangulaire a pour largeur $x$ mètres et pour\nhauteur $x - 1$ mètres, avec $x > 1$.\n\\begin{enumerate}\n\\item Écrire l'aire $A(x)$ de l'écran, puis la développer et la réduire.\n\\item Calculer $A(4)$, puis vérifier ce résultat par le calcul direct de l'aire d'un écran de $4$ m sur $3$ m.\n\\item Calculer la longueur de la diagonale de cet écran de $4$ m sur $3$ m, en citant le théorème utilisé.\n\\item L'écran est affiché $1\\,250$ TND. Une remise de $15\\,\\%$ est accordée, puis une taxe de $19\\,\\%$ s'applique\nsur le prix remisé. Calculer le prix final, puis dire s'il est supérieur ou inférieur au prix affiché.\nJustifier à l'aide du coefficient multiplicateur global.\n\\end{enumerate}",
+      "target_minutes": 8.75,
+      "time_estimate": {
+        "minutes": 8.75,
+        "breakdown": {
+          "lecture": 0.84,
+          "traitement": 5.8,
+          "redaction": 2.1
+        },
+        "features": {
+          "caracteres_enonce": 630,
+          "lignes_de_code": 0,
+          "sous_questions": 4,
+          "lignes_offertes": 12,
+          "lignes_retenues": 6.0
+        },
+        "model": "contenu-v2"
+      },
+      "points": 4,
+      "expected_answer": "$A(x)=x(x-1)=x^2-x$ ; $A(4)=12$ ; diagonale $=5$ m ; prix final $=1\\,264{,}38$ TND environ, supérieur car $0{,}85\\times 1{,}19=1{,}0115>1$.",
+      "significant_steps": [
+        "$A(x)=x(x-1)=x^2-x$",
+        "$A(4)=16-4=12$ et $4\\times 3=12$ : les deux voies concordent",
+        "$d^2=4^2+3^2=25$ donc $d=5$ m",
+        "$1250\\times 0{,}85=1062{,}50$ puis $\\times 1{,}19 = 1264{,}375$",
+        "$0{,}85\\times 1{,}19=1{,}0115>1$ : hausse de $1{,}15\\,\\%$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$A(x)$ écrit $x^2-1$ : distributivité appliquée au carré"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "aucune des deux voies n'est utilisée pour vérifier $A(4)$"
+        },
+        {
+          "code": "METHODE",
+          "desc": "$-15\\,\\%$ et $+19\\,\\%$ additionnés en $+4\\,\\%$"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "unité monétaire absente de la conclusion"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "CONTROLE",
+        "METHODE",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C1_c1",
+          "points": 1.0,
+          "skill_id": "M2DE_ALG_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "expression développée et réduite exacte"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C1_c2",
+          "points": 0.5,
+          "skill_id": "M2DE_ALG_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "$A(4)$ exact et vérifié par les deux voies"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C1_c3",
+          "points": 1.0,
+          "skill_id": "M2DE_GEO_01",
+          "evidence_type": "transfert",
+          "subpart": "3",
+          "desc": "diagonale exacte, théorème cité"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C1_c4",
+          "points": 1.5,
+          "skill_id": "M2DE_POURC_01",
+          "evidence_type": "transfert",
+          "subpart": "4",
+          "desc": "prix final exact, coefficient global et conclusion argumentée"
+        }
+      ],
+      "criteria_total_points": 4.0,
+      "evidence_types": [
+        "controle",
+        "transfert"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_POURC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "baseline_items": [
+            "2N_TI_Q07",
+            "2N_TI_Q08"
+          ]
+        },
+        {
+          "skill_id": "M2DE_GEO_01",
+          "baseline_items": [
+            "2N_TI_Q13",
+            "2N_TI_Q14"
+          ]
+        },
+        {
+          "skill_id": "M2DE_POURC_01",
+          "baseline_items": [
+            "2N_TI_Q11",
+            "2N_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "partiellement_comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "modéliser, contrôler par deux voies, décider : conduite attendue en Seconde",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "2NDE_NOA_MANIACI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "M2DE_EQ_02",
+      "skills_extra": [
+        "M2DE_ALG_01"
+      ],
+      "skill_label": "Équation produit nul",
+      "objective": "Équation produit nul",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\begin{enumerate}\n\\item Factoriser $x^2 - 7x$.\n\\item Résoudre $x^2 - 7x = 0$.\n\\item Vérifier chacune des solutions trouvées.\n\\end{enumerate}",
+      "target_minutes": 6.25,
+      "time_estimate": {
+        "minutes": 6.25,
+        "breakdown": {
+          "lecture": 0.11,
+          "traitement": 4.35,
+          "redaction": 1.66
+        },
+        "features": {
+          "caracteres_enonce": 86,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$x(x-7)$ ; $x=0$ ou $x=7$ ; vérification : $0-0=0$ et $49-49=0$.",
+      "significant_steps": [
+        "facteur commun $x$",
+        "produit nul",
+        "substitution des deux valeurs"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "division des deux membres par $x$, perdant la solution $0$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$x^2 = 7x$ simplifié en $x = 7$"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C2_c1",
+          "points": 0.5,
+          "skill_id": "M2DE_ALG_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "factorisation $x(x-7)$ exacte"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C2_c2",
+          "points": 0.5,
+          "skill_id": "M2DE_EQ_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "les deux solutions exactes"
+        },
+        {
+          "criterion_id": "2NDE_NOA_MANIACI_C2_c3",
+          "points": 1.0,
+          "skill_id": "M2DE_EQ_02",
+          "evidence_type": "controle",
+          "subpart": "3",
+          "desc": "vérification des deux solutions"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M2DE_ALG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M2DE_EQ_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "2N_TI_Q10",
+      "baseline_item_text": "Résoudre (x − 2)(x + 5) = 0.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "baseline_items": [
+            "2N_TI_Q07",
+            "2N_TI_Q08"
+          ]
+        },
+        {
+          "skill_id": "M2DE_EQ_02",
+          "baseline_items": [
+            "2N_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "factoriser pour résoudre : méthode centrale du second degré",
+      "confidence_probe": false
+    }
+  ]
+}

@@ -1,0 +1,1243 @@
+{
+  "schema": "nexus-s5-evaluation-manifest-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "ahmed-benhadj-salem",
+  "level_key": "1re_nsi",
+  "subject": "NSI",
+  "items": [
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "NSI1_LIST_01",
+      "skills_extra": [],
+      "skill_label": "Indexation d'une liste, len et dernier indice valide",
+      "objective": "Indexation d'une liste, len et dernier indice valide",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Pour \\code{L = [7, 1, 8, 4, 2]}, donner \\code{L[2]}, \\code{L[-1]}, \\code{len(L)} et le dernier indice valide.",
+      "target_minutes": 1.5,
+      "time_estimate": {
+        "minutes": 1.5,
+        "breakdown": {
+          "lecture": 0.12,
+          "traitement": 0.6,
+          "redaction": 0.76
+        },
+        "features": {
+          "caracteres_enonce": 84,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{8} ; \\code{2} ; \\code{5} ; dernier indice \\code{4}.",
+      "significant_steps": [
+        "les indices vont de $0$ à $\\text{len}(L)-1$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "dernier indice donné égal à \\code{len(L)}"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "indexation supposée commencer à 1"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1_c1",
+          "points": 1,
+          "skill_id": "NSI1_LIST_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les quatre réponses exactes"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_LIST_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q09",
+      "baseline_item_text": "Soit L = [4, 8, 15, 16]. Que vaut L[1] ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_LIST_01",
+          "baseline_items": [
+            "NSI_TI_Q09",
+            "NSI_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "prérequis de tout parcours de tableau en Première",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "NSI1_LOG_01",
+      "skills_extra": [],
+      "skill_label": "Conditions composées et négation d'une condition",
+      "objective": "Conditions composées et négation d'une condition",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Écrire la négation de \\code{x <= 8}, puis celle de \\code{(x > 2) or (x == 0)}.",
+      "target_minutes": 1.5,
+      "time_estimate": {
+        "minutes": 1.5,
+        "breakdown": {
+          "lecture": 0.09,
+          "traitement": 0.6,
+          "redaction": 0.76
+        },
+        "features": {
+          "caracteres_enonce": 66,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{x > 8} ; \\code{(x <= 2) and (x != 0)}.",
+      "significant_steps": [
+        "négation d'une comparaison",
+        "négation d'un \\code{or} : un \\code{and} de négations"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "\\code{x < 8} donné comme négation de \\code{x <= 8}"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "\\code{or} conservé dans la négation"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2_c1",
+          "points": 1,
+          "skill_id": "NSI1_LOG_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux négations exactes"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_LOG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q06",
+      "baseline_item_text": "Quelle est la négation de la condition « x > 5 » ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_LOG_01",
+          "baseline_items": [
+            "NSI_TI_Q05",
+            "NSI_TI_Q06"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "conditions de sortie de boucle et tests de bornes",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "NSI1_BOUCLE_01",
+      "skills_extra": [],
+      "skill_label": "range : valeurs produites, bornes et nombre d'itérations",
+      "objective": "range : valeurs produites, bornes et nombre d'itérations",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Pour \\code{for i in range(3, 12, 4):}, donner les valeurs prises par \\code{i} et le nombre de tours.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.12,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 87,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{3, 7, 11} ; trois tours.",
+      "significant_steps": [
+        "départ à 3, pas de 4, borne 12 exclue"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "borne supérieure comptée comme atteinte"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "pas confondu avec le nombre de tours"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3_c1",
+          "points": 1,
+          "skill_id": "NSI1_BOUCLE_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "valeurs et nombre de tours exacts"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_BOUCLE_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q07",
+      "baseline_item_text": "Combien de fois le corps de « for i in range(3) » s'exécute-t-il ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_BOUCLE_01",
+          "baseline_items": [
+            "NSI_TI_Q07"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "contrôle des bornes dans tout algorithme de parcours",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "NSI1_AFF_01",
+      "skills_extra": [],
+      "skill_label": "Modèle d'affectation : la valeur est copiée, pas liée",
+      "objective": "Modèle d'affectation : la valeur est copiée, pas liée",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "On exécute \\code{a = 6}, puis \\code{b = a}, puis \\code{a = a + 4}. Donner \\code{a} et \\code{b}, puis expliquer en une phrase.",
+      "target_minutes": 1.5,
+      "time_estimate": {
+        "minutes": 1.5,
+        "breakdown": {
+          "lecture": 0.13,
+          "traitement": 0.6,
+          "redaction": 0.76
+        },
+        "features": {
+          "caracteres_enonce": 94,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{a} vaut \\code{10}, \\code{b} vaut \\code{6} : \\code{b} a reçu une copie de la valeur, il n'est pas lié à \\code{a}.",
+      "significant_steps": [
+        "\\code{b = a} copie la valeur 6",
+        "\\code{a = a + 4} réaffecte seulement \\code{a}"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "\\code{b} supposé suivre les changements de \\code{a}"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "valeurs exactes mais explication absente"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4_c1",
+          "points": 1,
+          "skill_id": "NSI1_AFF_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux valeurs exactes et une explication correcte"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_AFF_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q03",
+      "baseline_item_text": "a = 3, puis b = a, puis a = 5 : que vaut b à la fin ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_AFF_01",
+          "baseline_items": [
+            "NSI_TI_Q03",
+            "NSI_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "modèle mental indispensable avant d'aborder les objets mutables",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "NSI1_ACC_01",
+      "skills_extra": [],
+      "skill_label": "Accumulateur : somme, compteur, invariant de boucle",
+      "objective": "Accumulateur : somme, compteur, invariant de boucle",
+      "prerequisites": [
+        "S2",
+        "S4"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "On exécute \\code{total = 0} puis \\code{for i in range(2, 6): total = total + i}. Donner la valeur finale de \\code{total} et le nombre de tours de boucle.",
+      "target_minutes": 1.5,
+      "time_estimate": {
+        "minutes": 1.5,
+        "breakdown": {
+          "lecture": 0.19,
+          "traitement": 0.6,
+          "redaction": 0.76
+        },
+        "features": {
+          "caracteres_enonce": 133,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{total} vaut \\code{14} ; quatre tours.",
+      "significant_steps": [
+        "valeurs parcourues : 2, 3, 4, 5",
+        "$2+3+4+5=14$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "somme confondue avec le nombre d'itérations (réponse 4)"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "borne 6 incluse"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5_c1",
+          "points": 1,
+          "skill_id": "NSI1_ACC_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux valeurs exactes"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_ACC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [],
+      "comparability": "non_comparable_absence_baseline",
+      "comparison_status": "post_only",
+      "linked_sessions": [
+        "S2",
+        "S4"
+      ],
+      "role_for_september": "l'accumulateur est au cœur de tout traitement de données",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "NSI1_BOUCLE_02",
+      "skills_extra": [],
+      "skill_label": "Choisir entre une boucle for et une boucle while",
+      "objective": "Choisir entre une boucle for et une boucle while",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Indiquer \\code{for} ou \\code{while} et justifier en quelques mots :\n\\begin{enumerate}\n\\item parcourir toutes les lignes d'un fichier déjà chargé en mémoire ;\n\\item redemander une saisie tant qu'elle est invalide.\n\\end{enumerate}",
+      "target_minutes": 2.5,
+      "time_estimate": {
+        "minutes": 2.5,
+        "breakdown": {
+          "lecture": 0.24,
+          "traitement": 1.2,
+          "redaction": 1.14
+        },
+        "features": {
+          "caracteres_enonce": 168,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 3,
+          "lignes_retenues": 3
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "\\code{for} : le nombre de répétitions est connu. \\code{while} : il dépend d'une condition non connue à l'avance.",
+      "significant_steps": [
+        "critère : le nombre de répétitions est-il connu avant d'entrer dans la boucle ?"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "critère fondé sur le type de données et non sur la connaissance du nombre de tours"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "choix exact sans justification"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6_c1",
+          "points": 1,
+          "skill_id": "NSI1_BOUCLE_02",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "les deux choix exacts et justifiés"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "justification"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_BOUCLE_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q08",
+      "baseline_item_text": "Dans quel cas emploie-t-on une boucle while plutôt qu'une boucle for ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_BOUCLE_02",
+          "baseline_items": [
+            "NSI_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "choix de la structure de contrôle, évalué à l'épreuve pratique",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "NSI1_ACC_01",
+      "skills_extra": [],
+      "skill_label": "Accumulateur : somme, compteur, invariant de boucle",
+      "objective": "Accumulateur : somme, compteur, invariant de boucle",
+      "prerequisites": [
+        "S2",
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On exécute le programme suivant.\n\\begin{lstlisting}\ntotal = 0\nn = 0\nfor v in [4, 9, 2, 7]:\n    total = total + v\n    n = n + 1\n\\end{lstlisting}\n\\begin{enumerate}\n\\item Compléter le tableau d'état après chaque tour de boucle.\n\\par\\noindent\\begin{tabularx}{\\linewidth}{|>{\\bfseries}p{16mm}|X|X|X|X|}\n\\hline\nAprès le tour & 1 & 2 & 3 & 4 \\\\ \\hline\n\\code{total} & & & & \\\\ \\hline\n\\code{n} & & & & \\\\ \\hline\n\\end{tabularx}\n\\item Donner les valeurs finales, puis dire en une phrase ce que représente chacune des deux variables.\n\\end{enumerate}",
+      "target_minutes": 4.5,
+      "time_estimate": {
+        "minutes": 4.5,
+        "breakdown": {
+          "lecture": 0.94,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 237,
+          "lignes_de_code": 5,
+          "sous_questions": 2,
+          "lignes_offertes": 4,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "\\code{total} : 4, 13, 15, 22 ; \\code{n} : 1, 2, 3, 4. Finalement \\code{total = 22} (somme des valeurs) et \\code{n = 4} (nombre de valeurs parcourues).",
+      "significant_steps": [
+        "accumulation successive des valeurs",
+        "comptage indépendant du contenu"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "somme confondue avec le nombre d'itérations"
+        },
+        {
+          "code": "ALGORITHME",
+          "desc": "accumulateur réinitialisé à chaque tour"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "tableau exact mais rôle des variables non explicité"
+        }
+      ],
+      "error_codes": [
+        "ALGORITHME",
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c1",
+          "points": 1,
+          "skill_id": "NSI1_ACC_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "tableau d'état complet et exact"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c2",
+          "points": 1,
+          "skill_id": "NSI1_ACC_01",
+          "evidence_type": "communication",
+          "subpart": "2",
+          "desc": "valeurs finales exactes et rôle de chaque variable correctement énoncé"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "communication",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_ACC_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [],
+      "comparability": "non_comparable_absence_baseline",
+      "comparison_status": "post_only",
+      "linked_sessions": [
+        "S2",
+        "S4"
+      ],
+      "role_for_september": "tout traitement de données de Première repose sur un accumulateur correct",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "NSI1_FONC_01",
+      "skills_extra": [],
+      "skill_label": "Paramètre, argument, valeur renvoyée et None",
+      "objective": "Paramètre, argument, valeur renvoyée et None",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On dispose de la fonction suivante.\n\\begin{lstlisting}\ndef moyenne(valeurs):\n    total = 0\n    for v in valeurs:\n        total = total + v\n    print(total / len(valeurs))\n\\end{lstlisting}\n\\begin{enumerate}\n\\item On écrit \\code{m = moyenne([4, 6])}. Que vaut \\code{m} ? Justifier.\n\\item Corriger la fonction pour qu'elle \\emph{renvoie} la moyenne.\n\\end{enumerate}",
+      "target_minutes": 4.5,
+      "time_estimate": {
+        "minutes": 4.5,
+        "breakdown": {
+          "lecture": 0.81,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 144,
+          "lignes_de_code": 5,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "\\code{m} vaut \\code{None} car la fonction affiche sans renvoyer ; il faut remplacer \\code{print(...)} par \\code{return total / len(valeurs)} ; l'appel \\code{moyenne([])} provoque une division par zéro.",
+      "significant_steps": [
+        "absence de \\code{return} : la fonction renvoie \\code{None}",
+        "correction par \\code{return}",
+        "cas limite de la liste vide : \\code{len(valeurs)} vaut 0"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "\\code{m} supposé recevoir la valeur affichée"
+        },
+        {
+          "code": "ALGORITHME",
+          "desc": "\\code{print} conservé en plus du \\code{return} sans que la question soit traitée"
+        },
+        {
+          "code": "TRANSFERT",
+          "desc": "aucun cas limite identifié"
+        }
+      ],
+      "error_codes": [
+        "ALGORITHME",
+        "CONCEPT",
+        "TRANSFERT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c1",
+          "points": 1.25,
+          "skill_id": "NSI1_FONC_01",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "\\code{None} identifié et justifié par l'absence de \\code{return}"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c2",
+          "points": 0.75,
+          "skill_id": "NSI1_FONC_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "correction par \\code{return} exacte et complète"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_FONC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q12",
+      "baseline_item_text": "Que renvoie une fonction Python sans instruction return ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_FONC_01",
+          "baseline_items": [
+            "NSI_TI_Q11",
+            "NSI_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "contrat d'une fonction : entrée, sortie, cas limites",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "NSI1_CSV_01",
+      "skills_extra": [
+        "NSI1_TAB_01"
+      ],
+      "skill_label": "Chargement d'un fichier CSV et conversion des types",
+      "objective": "Chargement d'un fichier CSV et conversion des types",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On dispose de l'extrait de fichier suivant.\n\\begin{lstlisting}[language={}]\nid,date,temperature,humidite,statut\nC07,2026-08-24,26.5,58,OK\nC08,2026-08-24,32.1,49,ALERTE\n\\end{lstlisting}\n\\begin{enumerate}\n\\item Quelles colonnes doivent être converties avant tout calcul, et en quel type ?\n\\item Expliquer pourquoi \\code{\"26.5\" + \"1\"} ne donne pas $27{,}5$.\n\\item Donner un exemple de \\emph{métadonnée} associable à ce fichier, et dire en quoi elle\ndiffère d'une donnée du tableau.\n\\end{enumerate}",
+      "target_minutes": 6.0,
+      "time_estimate": {
+        "minutes": 6.0,
+        "breakdown": {
+          "lecture": 0.77,
+          "traitement": 3.45,
+          "redaction": 1.8
+        },
+        "features": {
+          "caracteres_enonce": 286,
+          "lignes_de_code": 3,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "\\code{temperature} se convertit en \\code{float} et \\code{humidite} en \\code{int} ; l'opérateur \\code{+} appliqué à deux chaînes les concatène et produit \\code{\"26.51\"} ; une métadonnée décrit le fichier lui-même — date de production, capteur d'origine, unité de mesure, encodage — alors qu'une donnée du tableau décrit un enregistrement.",
+      "significant_steps": [
+        "conversion obligatoire avant tout calcul",
+        "\\code{+} entre deux chaînes est une concaténation",
+        "une métadonnée porte sur le fichier, une donnée sur un enregistrement"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "conversion jugée inutile parce que la valeur « ressemble » à un nombre"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "métadonnée confondue avec une donnée du tableau"
+        },
+        {
+          "code": "ALGORITHME",
+          "desc": "concaténation attribuée à une erreur du langage plutôt qu'au type des opérandes"
+        }
+      ],
+      "error_codes": [
+        "ALGORITHME",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c1",
+          "points": 0.75,
+          "skill_id": "NSI1_CSV_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "colonnes et types de conversion exacts"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c2",
+          "points": 0.5,
+          "skill_id": "NSI1_CSV_01",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "concaténation correctement expliquée par le type des opérandes"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c3",
+          "points": 0.75,
+          "skill_id": "NSI1_TAB_01",
+          "evidence_type": "communication",
+          "subpart": "3",
+          "desc": "métadonnée pertinente et distinction avec une donnée du tableau"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "communication",
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_CSV_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "NSI1_TAB_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "NSI_TI_Q17",
+      "baseline_item_text": "Dans un fichier CSV décrivant des élèves, à quoi correspond une ligne ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "NSI1_TAB_01",
+          "baseline_items": [
+            "NSI_TI_Q17",
+            "NSI_TI_Q18"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "traitement de données en tables, chapitre entier de Première",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "NSI1_TEST_01",
+      "skills_extra": [],
+      "skill_label": "Tests, assertions et cas limites",
+      "objective": "Tests, assertions et cas limites",
+      "prerequisites": [
+        "S3",
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Soit une fonction \\code{moyenne(L)} qui renvoie la moyenne des nombres d'une liste.\n\\begin{enumerate}\n\\item Écrire trois tests avec leur résultat attendu, dont un cas limite, puis écrire en Python\nl'assertion correspondant au premier d'entre eux.\n\\item Expliquer pourquoi l'assertion \\code{assert moyenne([0.1, 0.2]) == 0.15} peut échouer,\net proposer une écriture correcte.\n\\end{enumerate}",
+      "target_minutes": 4.0,
+      "time_estimate": {
+        "minutes": 4.0,
+        "breakdown": {
+          "lecture": 0.47,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 330,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 6,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "Par exemple \\code{moyenne([4, 6]) == 5.0} et \\code{moyenne([7]) == 7.0} ; cas limite : \\code{moyenne([])} doit lever une erreur explicite, ce que l'on teste par un bloc \\code{try / except}. Assertion du premier test : \\code{assert moyenne([4, 6]) == 5.0}. La comparaison stricte de flottants échoue car $0{,}1+0{,}2$ vaut $0{,}30000000000000004$ ; il faut employer \\code{math.isclose}.",
+      "significant_steps": [
+        "un test = une entrée et un résultat attendu écrits à l'avance",
+        "cas limite : liste vide",
+        "représentation binaire approchée des flottants"
+      ],
+      "likely_errors": [
+        {
+          "code": "TRANSFERT",
+          "desc": "aucun cas limite parmi les trois tests"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "égalité stricte jugée fiable sur des flottants"
+        },
+        {
+          "code": "ALGORITHME",
+          "desc": "le cas de la liste vide est testé comme renvoyant une valeur alors que le contrat annonce une erreur"
+        },
+        {
+          "code": "METHODE",
+          "desc": "résultat attendu écrit après exécution"
+        }
+      ],
+      "error_codes": [
+        "ALGORITHME",
+        "CONCEPT",
+        "METHODE",
+        "TRANSFERT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c1",
+          "points": 1,
+          "skill_id": "NSI1_TEST_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "trois tests pertinents dont un cas limite conforme au contrat annoncé"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c2",
+          "points": 0.4,
+          "skill_id": "NSI1_TEST_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "assertion du premier test correctement écrite"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c3",
+          "points": 0.6,
+          "skill_id": "NSI1_TEST_01",
+          "evidence_type": "justification",
+          "subpart": "3",
+          "desc": "problème des flottants expliqué et écriture correcte proposée"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_TEST_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [],
+      "comparability": "non_comparable_absence_baseline",
+      "comparison_status": "post_only",
+      "linked_sessions": [
+        "S3",
+        "S4"
+      ],
+      "role_for_september": "la pratique de test conditionne l'autonomie en épreuve pratique",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "NSI1_ALGO_01",
+      "skills_extra": [
+        "NSI1_TEST_01"
+      ],
+      "skill_label": "Recherche séquentielle et principe de la dichotomie",
+      "objective": "Recherche séquentielle et principe de la dichotomie",
+      "prerequisites": [
+        "S5"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\textbf{Rechercher un capteur.} On dispose d'une liste de dictionnaires\n\\code{mesures}, chacun possédant au moins la clé \\code{\"id\"}.\n\\begin{lstlisting}\ndef chercher(mesures, identifiant):\n    for i in range(len(mesures)):\n        if ____________________________:\n            return ____\n    return -1\n\\end{lstlisting}\n\\begin{enumerate}\n\\item Compléter les deux trous.\n\\item On pose \\code{mesures = [{\"id\": \"C01\"}, {\"id\": \"C02\"}, {\"id\": \"C03\"}]}. Donner le résultat de\n\\code{chercher(mesures, \"C03\")} et de \\code{chercher(mesures, \"C09\")}, puis écrire un test portant sur\nune liste vide, avec son résultat attendu.\n\\item La liste est désormais triée par identifiant. En une phrase, dire ce que permet alors la recherche\ndichotomique et à quelle condition.\n\\end{enumerate}",
+      "target_minutes": 7.5,
+      "time_estimate": {
+        "minutes": 7.5,
+        "breakdown": {
+          "lecture": 1.3,
+          "traitement": 4.35,
+          "redaction": 1.8
+        },
+        "features": {
+          "caracteres_enonce": 492,
+          "lignes_de_code": 5,
+          "sous_questions": 3,
+          "lignes_offertes": 8,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 4,
+      "expected_answer": "\\code{if mesures[i][\"id\"] == identifiant:} puis \\code{return i} ; les résultats sont \\code{2} et \\code{-1} ; test sur liste vide : \\code{chercher([], \"C01\")} doit renvoyer \\code{-1} ; la recherche dichotomique divise par deux la zone de recherche à chaque étape, à la condition que la liste soit triée.",
+      "significant_steps": [
+        "accès à la clé d'un dictionnaire à l'intérieur d'une liste",
+        "parcours complet puis valeur sentinelle $-1$",
+        "cas limite : liste vide",
+        "précondition de tri, coût logarithmique"
+      ],
+      "likely_errors": [
+        {
+          "code": "SYNTAXE",
+          "desc": "\\code{mesures[i].id} au lieu de \\code{mesures[i][\"id\"]}"
+        },
+        {
+          "code": "ALGORITHME",
+          "desc": "\\code{return i} placé hors de la condition, la boucle s'arrête au premier tour"
+        },
+        {
+          "code": "TRANSFERT",
+          "desc": "aucun cas limite proposé parmi les deux tests"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "dichotomie appliquée sans mentionner la précondition de tri"
+        }
+      ],
+      "error_codes": [
+        "ALGORITHME",
+        "CONCEPT",
+        "SYNTAXE",
+        "TRANSFERT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c1",
+          "points": 1.5,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "les deux trous complétés correctement"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c2",
+          "points": 0.75,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "les deux résultats exacts, dont la valeur d'absence"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c3",
+          "points": 0.75,
+          "skill_id": "NSI1_TEST_01",
+          "evidence_type": "transfert",
+          "subpart": "2",
+          "desc": "test sur liste vide, avec son résultat attendu"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c4",
+          "points": 1.0,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "communication",
+          "subpart": "3",
+          "desc": "gain et précondition de la dichotomie correctement énoncés"
+        }
+      ],
+      "criteria_total_points": 4.0,
+      "evidence_types": [
+        "communication",
+        "procedure",
+        "transfert"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_ALGO_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        },
+        "NSI1_TEST_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [],
+      "comparability": "non_comparable_contenu_nouveau",
+      "comparison_status": "not_comparable",
+      "linked_sessions": [
+        "S5"
+      ],
+      "role_for_september": "premier algorithme du programme de Première ; travaillé en phase 4 de cette même séance",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "NSI1_ALGO_01",
+      "skills_extra": [],
+      "skill_label": "Recherche séquentielle et principe de la dichotomie",
+      "objective": "Recherche séquentielle et principe de la dichotomie",
+      "prerequisites": [
+        "S5"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "Une liste triée contient $1\\,000$ éléments.\n\\begin{enumerate}\n\\item Donner le nombre maximal de comparaisons d'une recherche séquentielle, puis l'ordre de grandeur\ndu nombre d'étapes d'une recherche dichotomique.\n\\item Énoncer un invariant de la boucle de la recherche dichotomique.\n\\end{enumerate}",
+      "target_minutes": 4.5,
+      "time_estimate": {
+        "minutes": 4.5,
+        "breakdown": {
+          "lecture": 0.36,
+          "traitement": 2.9,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 250,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 4,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$1\\,000$ comparaisons au maximum ; environ $10$ étapes en dichotomie. Invariant : si la cible figure dans la liste, elle se trouve dans la zone de recherche courante.",
+      "significant_steps": [
+        "la zone est divisée par 2 à chaque étape : $2^{10} = 1024$",
+        "l'invariant garantit qu'aucune élimination ne perd la cible"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "coût dichotomique estimé à 500"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "invariant énoncé comme une propriété de fin de boucle"
+        },
+        {
+          "code": "METHODE",
+          "desc": "ordre de grandeur annoncé sans expliciter la division répétée par 2"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c1",
+          "points": 1,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux ordres de grandeur exacts"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c2",
+          "points": 1,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "communication",
+          "subpart": "2",
+          "desc": "invariant correctement énoncé"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "automatisme",
+        "communication"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "NSI1_ALGO_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [],
+      "comparability": "non_comparable_contenu_nouveau",
+      "comparison_status": "not_comparable",
+      "linked_sessions": [
+        "S5"
+      ],
+      "role_for_september": "coût et correction d'un algorithme, attendus explicites du programme de Première",
+      "confidence_probe": false
+    }
+  ]
+}

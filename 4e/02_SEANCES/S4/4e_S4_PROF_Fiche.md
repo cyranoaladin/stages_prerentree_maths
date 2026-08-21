@@ -1,5 +1,5 @@
-# 4e_S4_PROF_Fiche
-## Séance 4 — Voir, raisonner, démontrer
+# 4e — Séance 4 : Voir, raisonner, démontrer
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

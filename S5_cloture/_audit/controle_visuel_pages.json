@@ -1,0 +1,3407 @@
+{
+  "schema": "nexus-s5-controle-visuel-pages-v1",
+  "resolution_ppp": 100,
+  "seuils": {
+    "page_blanche": 0.003,
+    "page_aeree": 0.015,
+    "page_saturee": 0.45,
+    "bande_de_bord_mm": 6.0
+  },
+  "documents": 45,
+  "pages_analysees": 364,
+  "pages_bloquantes": 0,
+  "pages_tres_aerees": 16,
+  "detail_bloquant": [],
+  "detail_aere": [
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01331
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00694
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01324
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00722
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 6,
+      "ink_ratio": 0.01043
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 2,
+      "ink_ratio": 0.00896
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 6,
+      "ink_ratio": 0.00676
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 10,
+      "ink_ratio": 0.00757
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00746
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.00959
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.00857
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 11,
+      "ink_ratio": 0.00794
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01131
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 5,
+      "ink_ratio": 0.01478
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.01444
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.00598
+    }
+  ],
+  "detail_pages": [
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03121,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.03048,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02697,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0285,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02635,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01331,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02171,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08906,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04158,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02565,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03449,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.0528,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.0439,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04419,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08856,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04908,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.04362,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04944,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04547,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 7,
+      "ink_ratio": 0.05387,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 8,
+      "ink_ratio": 0.04537,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04985,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00694,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 11,
+      "ink_ratio": 0.08194,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "page": 12,
+      "ink_ratio": 0.0415,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03173,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.03046,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02716,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.02551,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02655,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01324,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02189,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08976,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04079,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02484,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03994,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05657,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04802,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04524,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08816,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0493,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.04222,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04963,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04593,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 7,
+      "ink_ratio": 0.0418,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05339,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04624,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00722,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 11,
+      "ink_ratio": 0.08149,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "page": 12,
+      "ink_ratio": 0.04211,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03178,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.03043,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02714,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.02374,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02652,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.0169,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02188,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.0901,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04462,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03124,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03925,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05314,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04439,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04383,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08993,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04924,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 4,
+      "ink_ratio": 0.04455,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 5,
+      "ink_ratio": 0.0496,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04645,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04911,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 8,
+      "ink_ratio": 0.04963,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 9,
+      "ink_ratio": 0.05738,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08144,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "page": 11,
+      "ink_ratio": 0.04173,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03401,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.03202,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02901,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.02601,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02453,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01987,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02176,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.09127,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04343,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0248,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0338,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05039,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.06381,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08499,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 2,
+      "ink_ratio": 0.0878,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04864,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 4,
+      "ink_ratio": 0.05141,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04839,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04213,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 7,
+      "ink_ratio": 0.056,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05988,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04345,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 10,
+      "ink_ratio": 0.07443,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "page": 11,
+      "ink_ratio": 0.04209,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 1,
+      "ink_ratio": 0.03494,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 2,
+      "ink_ratio": 0.03336,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 3,
+      "ink_ratio": 0.02934,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 4,
+      "ink_ratio": 0.02833,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 5,
+      "ink_ratio": 0.03396,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 6,
+      "ink_ratio": 0.01043,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 7,
+      "ink_ratio": 0.02208,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 1,
+      "ink_ratio": 0.08706,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 2,
+      "ink_ratio": 0.04583,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 3,
+      "ink_ratio": 0.02629,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 4,
+      "ink_ratio": 0.0391,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 5,
+      "ink_ratio": 0.03327,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 6,
+      "ink_ratio": 0.05932,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 7,
+      "ink_ratio": 0.04407,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 1,
+      "ink_ratio": 0.07936,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 2,
+      "ink_ratio": 0.00896,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 3,
+      "ink_ratio": 0.08733,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 4,
+      "ink_ratio": 0.04903,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 5,
+      "ink_ratio": 0.05953,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 6,
+      "ink_ratio": 0.00676,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 7,
+      "ink_ratio": 0.04868,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 8,
+      "ink_ratio": 0.04381,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 9,
+      "ink_ratio": 0.05759,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 10,
+      "ink_ratio": 0.06416,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 11,
+      "ink_ratio": 0.05594,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 12,
+      "ink_ratio": 0.07638,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "page": 13,
+      "ink_ratio": 0.04182,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 1,
+      "ink_ratio": 0.03083,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 2,
+      "ink_ratio": 0.02676,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 3,
+      "ink_ratio": 0.02894,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 4,
+      "ink_ratio": 0.03781,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 5,
+      "ink_ratio": 0.01859,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "page": 6,
+      "ink_ratio": 0.02157,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 1,
+      "ink_ratio": 0.08787,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 2,
+      "ink_ratio": 0.0346,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 3,
+      "ink_ratio": 0.03426,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 4,
+      "ink_ratio": 0.04258,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 5,
+      "ink_ratio": 0.04654,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "page": 6,
+      "ink_ratio": 0.023,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 1,
+      "ink_ratio": 0.04542,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 2,
+      "ink_ratio": 0.07962,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 3,
+      "ink_ratio": 0.04899,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 4,
+      "ink_ratio": 0.03625,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 5,
+      "ink_ratio": 0.04644,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 6,
+      "ink_ratio": 0.04563,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 7,
+      "ink_ratio": 0.0566,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 8,
+      "ink_ratio": 0.05396,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 9,
+      "ink_ratio": 0.0435,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 10,
+      "ink_ratio": 0.00757,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 11,
+      "ink_ratio": 0.08119,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "page": 12,
+      "ink_ratio": 0.0417,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03073,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02749,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02883,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 4,
+      "ink_ratio": 0.01694,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02707,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01511,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02145,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08635,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04238,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02412,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03584,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05026,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04401,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04647,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08055,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0484,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03537,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04645,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04824,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 7,
+      "ink_ratio": 0.05197,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05496,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04675,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 10,
+      "ink_ratio": 0.00746,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 11,
+      "ink_ratio": 0.08112,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "page": 12,
+      "ink_ratio": 0.03671,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03024,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02802,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03224,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.01718,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.026,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01591,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02127,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08614,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04095,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04131,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.02747,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04973,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04565,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04642,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08225,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0492,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03539,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04644,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04197,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04732,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 8,
+      "ink_ratio": 0.04642,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04935,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08116,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "page": 11,
+      "ink_ratio": 0.03886,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.02972,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02573,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03202,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0193,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.03292,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.00959,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02105,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08407,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.0441,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02554,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.02958,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04959,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04553,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08027,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.00857,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0813,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.04856,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.03361,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.0463,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04242,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 8,
+      "ink_ratio": 0.04492,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04841,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 10,
+      "ink_ratio": 0.05858,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 11,
+      "ink_ratio": 0.00794,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 12,
+      "ink_ratio": 0.08164,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "page": 13,
+      "ink_ratio": 0.04184,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 1,
+      "ink_ratio": 0.02986,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02784,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03208,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 4,
+      "ink_ratio": 0.01549,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02584,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01702,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "page": 7,
+      "ink_ratio": 0.0211,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08452,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04413,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02557,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03558,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04738,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04697,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04333,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08266,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0488,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0364,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04636,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04357,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04049,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05355,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 9,
+      "ink_ratio": 0.05214,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08109,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "page": 11,
+      "ink_ratio": 0.03713,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03015,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02191,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03222,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03856,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.01622,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.02126,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08786,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04095,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.0393,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0387,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.03771,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.03594,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04654,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08483,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04915,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03372,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04642,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04302,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04897,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05122,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 9,
+      "ink_ratio": 0.05121,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08117,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "page": 11,
+      "ink_ratio": 0.03676,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03009,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02196,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03221,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03789,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.01603,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.02125,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08678,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04385,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03425,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03995,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05226,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01131,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04584,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 2,
+      "ink_ratio": 0.0821,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04917,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03382,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 5,
+      "ink_ratio": 0.0464,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04091,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04639,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 8,
+      "ink_ratio": 0.04539,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04863,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08174,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "page": 11,
+      "ink_ratio": 0.04178,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 1,
+      "ink_ratio": 0.03029,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 2,
+      "ink_ratio": 0.02769,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 3,
+      "ink_ratio": 0.02893,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 4,
+      "ink_ratio": 0.03671,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 5,
+      "ink_ratio": 0.01478,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "page": 6,
+      "ink_ratio": 0.02133,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 1,
+      "ink_ratio": 0.0852,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 2,
+      "ink_ratio": 0.04812,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 3,
+      "ink_ratio": 0.03026,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 4,
+      "ink_ratio": 0.03804,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 5,
+      "ink_ratio": 0.05603,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "page": 6,
+      "ink_ratio": 0.04345,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 1,
+      "ink_ratio": 0.04581,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 2,
+      "ink_ratio": 0.08507,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 3,
+      "ink_ratio": 0.04911,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 4,
+      "ink_ratio": 0.04427,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 5,
+      "ink_ratio": 0.04744,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 6,
+      "ink_ratio": 0.04178,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 7,
+      "ink_ratio": 0.0433,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 8,
+      "ink_ratio": 0.04756,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 9,
+      "ink_ratio": 0.05128,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 10,
+      "ink_ratio": 0.08137,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "page": 11,
+      "ink_ratio": 0.03715,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.02967,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02677,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02871,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0168,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.02467,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.01501,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "page": 7,
+      "ink_ratio": 0.0211,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08755,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.03926,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02546,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.03178,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04727,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.03588,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 1,
+      "ink_ratio": 0.0909,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08647,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04903,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0383,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04716,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 6,
+      "ink_ratio": 0.04277,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04835,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 8,
+      "ink_ratio": 0.05143,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 9,
+      "ink_ratio": 0.04969,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 10,
+      "ink_ratio": 0.0811,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "page": 11,
+      "ink_ratio": 0.03708,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.03024,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.02594,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.02893,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.01444,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.0357,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.00598,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": [
+        "page très aérée"
+      ]
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 7,
+      "ink_ratio": 0.02132,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.08606,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.04061,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.03483,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.04918,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.05604,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 1,
+      "ink_ratio": 0.04602,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 2,
+      "ink_ratio": 0.08349,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 3,
+      "ink_ratio": 0.04926,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 4,
+      "ink_ratio": 0.0349,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 5,
+      "ink_ratio": 0.04741,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 6,
+      "ink_ratio": 0.03991,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 7,
+      "ink_ratio": 0.04305,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 8,
+      "ink_ratio": 0.0454,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 9,
+      "ink_ratio": 0.05847,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 10,
+      "ink_ratio": 0.08126,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    },
+    {
+      "pdf": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "page": 11,
+      "ink_ratio": 0.04205,
+      "edge_ink": 0,
+      "width": 827,
+      "height": 1170,
+      "defauts": []
+    }
+  ]
+}

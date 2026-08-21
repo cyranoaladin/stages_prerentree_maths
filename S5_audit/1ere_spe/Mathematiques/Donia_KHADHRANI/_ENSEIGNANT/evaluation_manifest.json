@@ -1,0 +1,1349 @@
+{
+  "schema": "nexus-s5-evaluation-manifest-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "donia-khadhrani",
+  "level_key": "1ere_spe",
+  "subject": "Mathématiques",
+  "items": [
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M1RE_ALG_02",
+      "skills_extra": [],
+      "skill_label": "Factorisation, en particulier la différence de deux carrés",
+      "objective": "Factorisation, en particulier la différence de deux carrés",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Factoriser $16x^2 - 49$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.03,
+          "traitement": 0.6,
+          "redaction": 0.33
+        },
+        "features": {
+          "caracteres_enonce": 23,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$(4x - 7)(4x + 7)$",
+      "significant_steps": [
+        "reconnaître $a^2-b^2$ avec $a=4x$ et $b=7$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$(4x-7)^2$ : différence de carrés confondue avec un carré parfait"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "racine de $16x^2$ prise égale à $16x$"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A1_c1",
+          "points": 1,
+          "skill_id": "M1RE_ALG_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "factorisation exacte"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_ALG_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q02",
+      "baseline_item_text": "Factoriser x² − 9.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_ALG_02",
+          "baseline_items": [
+            "1S_TI_Q02"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "outil direct du second degré et des études de signe",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M1RE_INEQ_01",
+      "skills_extra": [],
+      "skill_label": "Inéquation du premier degré et écriture en intervalle",
+      "objective": "Inéquation du premier degré et écriture en intervalle",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Résoudre $-3x + 12 > 0$ et donner l'ensemble des solutions sous forme d'intervalle.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.1,
+          "traitement": 0.6,
+          "redaction": 0.33
+        },
+        "features": {
+          "caracteres_enonce": 81,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x < 4$, soit $S = \\left]-\\infty\\,;4\\right[$",
+      "significant_steps": [
+        "$-3x > -12$",
+        "division par $-3$ : le sens de l'inégalité change",
+        "$x<4$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "sens de l'inégalité conservé après division par un négatif"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "crochet fermé sur une inégalité stricte"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A2_c1",
+          "points": 1,
+          "skill_id": "M1RE_INEQ_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "solution et intervalle exacts"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_INEQ_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q03",
+      "baseline_item_text": "Résoudre −2x + 6 ≥ 0.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "baseline_items": [
+            "1S_TI_Q03"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis des tableaux de signes du second degré",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M1RE_FONC_01",
+      "skills_extra": [],
+      "skill_label": "Image d'un réel, substitution d'une valeur négative",
+      "objective": "Image d'un réel, substitution d'une valeur négative",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Soit $g(x) = 2x^2 + x$. Calculer $g(-3)$ en écrivant la substitution complète.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.09,
+          "traitement": 0.6,
+          "redaction": 0.33
+        },
+        "features": {
+          "caracteres_enonce": 75,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$15$",
+      "significant_steps": [
+        "$g(-3)=2\\times(-3)^2+(-3)$",
+        "$=2\\times 9-3=15$"
+      ],
+      "likely_errors": [
+        {
+          "code": "NOTATION",
+          "desc": "parenthèses omises : $-3^2$ traité comme $-9$"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "$2\\times 9$ mal évalué"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A3_c1",
+          "points": 1,
+          "skill_id": "M1RE_FONC_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$15$ exact avec la substitution visible"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_FONC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q05",
+      "baseline_item_text": "f(x) = x² − 3x : que vaut f(−2) ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_FONC_01",
+          "baseline_items": [
+            "1S_TI_Q05"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "substitution employée en permanence en dérivation et sur les suites",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M1RE_VECT_01",
+      "skills_extra": [],
+      "skill_label": "Coordonnées d'un vecteur défini par deux points",
+      "objective": "Coordonnées d'un vecteur défini par deux points",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "On donne $A(4\\,;-1)$ et $B(-2\\,;5)$. Déterminer les coordonnées de $\\vec{AB}$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.09,
+          "traitement": 0.6,
+          "redaction": 0.33
+        },
+        "features": {
+          "caracteres_enonce": 68,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\vec{AB}(-6\\,;6)$",
+      "significant_steps": [
+        "$x_B-x_A=-2-4=-6$",
+        "$y_B-y_A=5-(-1)=6$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "soustraction effectuée dans l'ordre $A-B$"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "$5-(-1)$ traité comme $4$"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A4_c1",
+          "points": 1,
+          "skill_id": "M1RE_VECT_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux coordonnées exactes"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_VECT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q09",
+      "baseline_item_text": "A(1 ; 2) et B(4 ; −3) : coordonnées du vecteur AB ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_VECT_01",
+          "baseline_items": [
+            "1S_TI_Q09"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "prérequis du produit scalaire et de la géométrie repérée",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M1RE_FONC_02",
+      "skills_extra": [],
+      "skill_label": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+      "objective": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Soit $f(x) = 4x - 3$. Déterminer l'antécédent de $13$ en écrivant l'équation résolue.",
+      "target_minutes": 1.25,
+      "time_estimate": {
+        "minutes": 1.25,
+        "breakdown": {
+          "lecture": 0.1,
+          "traitement": 0.6,
+          "redaction": 0.66
+        },
+        "features": {
+          "caracteres_enonce": 82,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x = 4$",
+      "significant_steps": [
+        "$4x-3=13$",
+        "$4x=16$ donc $x=4$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "image calculée à la place de l'antécédent"
+        },
+        {
+          "code": "METHODE",
+          "desc": "antécédent trouvé par essais sans équation"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A5_c1",
+          "points": 1,
+          "skill_id": "M1RE_FONC_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$x=4$ avec l'équation écrite"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_FONC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q06",
+      "baseline_item_text": "La courbe de f passe par (3 ; 7). On peut affirmer que :",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_FONC_02",
+          "baseline_items": [
+            "1S_TI_Q06"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "recherche d'antécédents, permanente en Première",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M1RE_INEQ_01",
+      "skills_extra": [],
+      "skill_label": "Inéquation du premier degré et écriture en intervalle",
+      "objective": "Inéquation du premier degré et écriture en intervalle",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Résoudre $-5x + 20 \\ge 0$ et donner l'ensemble des solutions sous forme d'intervalle.",
+      "target_minutes": 1.25,
+      "time_estimate": {
+        "minutes": 1.25,
+        "breakdown": {
+          "lecture": 0.1,
+          "traitement": 0.6,
+          "redaction": 0.66
+        },
+        "features": {
+          "caracteres_enonce": 79,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x \\le 4$, soit $S = \\left]-\\infty\\,;4\\right]$",
+      "significant_steps": [
+        "$-5x \\ge -20$",
+        "division par $-5$ : le sens change"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "sens de l'inégalité conservé"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "crochet ouvert en $4$"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_A6_c1",
+          "points": 1,
+          "skill_id": "M1RE_INEQ_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "solution et intervalle exacts"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_INEQ_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q03",
+      "baseline_item_text": "Résoudre −2x + 6 ≥ 0.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "baseline_items": [
+            "1S_TI_Q03"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis des tableaux de signes du second degré",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M1RE_INEQ_02",
+      "skills_extra": [],
+      "skill_label": "Signe d'un produit et tableau de signes",
+      "objective": "Signe d'un produit et tableau de signes",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On considère le produit $P(x) = (3x + 6)(2 - x)$.\n\\begin{enumerate}\n\\item Déterminer les valeurs de $x$ qui annulent chaque facteur.\n\\item Construire un tableau de signes, puis donner l'ensemble des $x$ pour lesquels $P(x) > 0$.\n\\item En déduire, à partir du même tableau, l'ensemble des $x$ pour lesquels $P(x) \\leqslant 0$.\n\\end{enumerate}",
+      "target_minutes": 5.25,
+      "time_estimate": {
+        "minutes": 5.25,
+        "breakdown": {
+          "lecture": 0.34,
+          "traitement": 3.45,
+          "redaction": 1.57
+        },
+        "features": {
+          "caracteres_enonce": 270,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 6,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "Racines $-2$ et $2$ ; $P(x)>0$ sur $\\left]-2\\,;2\\right[$ ; $P(x)\\leqslant 0$ sur $\\left]-\\infty\\,;-2\\right]\\cup\\left[2\\,;+\\infty\\right[$.",
+      "significant_steps": [
+        "$3x+6=0 \\Leftrightarrow x=-2$ ; $2-x=0 \\Leftrightarrow x=2$",
+        "$3x+6$ négatif avant $-2$, positif après ; $2-x$ positif avant $2$, négatif après",
+        "produit positif entre les deux racines"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "signe de $2-x$ traité comme celui de $x-2$"
+        },
+        {
+          "code": "METHODE",
+          "desc": "tableau de signes non construit alors qu'il est explicitement demandé, le signe étant annoncé sans justification"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "bornes incluses alors que l'inégalité est stricte"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B1_c1",
+          "points": 0.75,
+          "skill_id": "M1RE_INEQ_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "racines exactes et tableau complet"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B1_c2",
+          "points": 0.75,
+          "skill_id": "M1RE_INEQ_02",
+          "evidence_type": "automatisme",
+          "subpart": "2",
+          "desc": "ensemble solution exact, bornes correctement ouvertes"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B1_c3",
+          "points": 0.5,
+          "skill_id": "M1RE_INEQ_02",
+          "evidence_type": "automatisme",
+          "subpart": "3",
+          "desc": "ensemble complémentaire exact, bornes fermées incluses"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "automatisme",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_INEQ_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q04",
+      "baseline_item_text": "Pour quelles valeurs de x le produit (2x − 6)(x + 1) est-il strictement négatif ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_INEQ_02",
+          "baseline_items": [
+            "1S_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "méthode reprise telle quelle pour le signe du trinôme",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M1RE_FONC_02",
+      "skills_extra": [
+        "M1RE_FREF_02"
+      ],
+      "skill_label": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+      "objective": "Langage des fonctions : image, antécédent, appartenance à la courbe",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "\\begin{enumerate}\n\\item La courbe représentative d'une fonction $f$ passe par le point de coordonnées $(-2\\,;5)$.\nTraduire cette information en employant les mots « image » et « antécédent ».\n\\item Soit $x$ un réel tel que $0 < x < 1$. Comparer $x^2$ et $x$, puis justifier la réponse\npar un exemple numérique et par un argument valable pour tout $x$ de cet intervalle.\n\\end{enumerate}",
+      "target_minutes": 3.75,
+      "time_estimate": {
+        "minutes": 3.75,
+        "breakdown": {
+          "lecture": 0.41,
+          "traitement": 2.3,
+          "redaction": 1.16
+        },
+        "features": {
+          "caracteres_enonce": 328,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 6,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$5$ est l'image de $-2$ par $f$ ; $-2$ est un antécédent de $5$. Pour $0<x<1$, $x^2<x$.",
+      "significant_steps": [
+        "$f(-2)=5$",
+        "exemple : $x=0{,}5$ donne $x^2=0{,}25<0{,}5$",
+        "argument : $x^2-x=x(x-1)$ avec $x>0$ et $x-1<0$, donc $x^2-x<0$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "image et antécédent échangés"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$x^2>x$ affirmé par généralisation du cas $x>1$"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "un seul exemple donné, sans argument général"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B2_c1",
+          "points": 1.0,
+          "skill_id": "M1RE_FONC_02",
+          "evidence_type": "communication",
+          "subpart": "1",
+          "desc": "vocabulaire correct dans les deux sens : image et antécédent"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B2_c2",
+          "points": 0.6,
+          "skill_id": "M1RE_FREF_02",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "argument valable pour tout $x$ de l'intervalle"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B2_c3",
+          "points": 0.4,
+          "skill_id": "M1RE_FREF_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "exemple numérique cohérent"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "communication",
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_FONC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        },
+        "M1RE_FREF_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q08",
+      "baseline_item_text": "Soit x tel que 0 < x < 1. Que peut-on affirmer ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_FONC_02",
+          "baseline_items": [
+            "1S_TI_Q06"
+          ]
+        },
+        {
+          "skill_id": "M1RE_FREF_02",
+          "baseline_items": [
+            "1S_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "langage fonctionnel utilisé dans tous les chapitres de Première",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M1RE_POURC_02",
+      "skills_extra": [
+        "M1RE_POURC_01"
+      ],
+      "skill_label": "Coefficient multiplicateur et évolutions successives",
+      "objective": "Coefficient multiplicateur et évolutions successives",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Un abonnement coûte $480$ TND. Son prix baisse de $25\\,\\%$, puis le nouveau prix\naugmente de $20\\,\\%$.\n\\begin{enumerate}\n\\item Calculer le prix après chaque étape.\n\\item Donner le coefficient multiplicateur global, puis le taux d'évolution global en pourcentage.\n\\end{enumerate}",
+      "target_minutes": 3.75,
+      "time_estimate": {
+        "minutes": 3.75,
+        "breakdown": {
+          "lecture": 0.28,
+          "traitement": 2.3,
+          "redaction": 1.16
+        },
+        "features": {
+          "caracteres_enonce": 224,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$360$ TND puis $432$ TND ; coefficient global $0{,}9$, soit une baisse globale de $10\\,\\%$.",
+      "significant_steps": [
+        "$480\\times 0{,}75=360$",
+        "$360\\times 1{,}2=432$",
+        "$0{,}75\\times 1{,}2=0{,}9$ soit $-10\\,\\%$"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "$-25\\,\\%$ et $+20\\,\\%$ additionnés en $-5\\,\\%$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "coefficient d'une baisse de $25\\,\\%$ pris égal à $0{,}25$"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "produit $0{,}75\\times 1{,}2$ mal évalué alors que la méthode est correcte"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B3_c1",
+          "points": 1.0,
+          "skill_id": "M1RE_POURC_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "les deux prix exacts"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B3_c2",
+          "points": 1.0,
+          "skill_id": "M1RE_POURC_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "coefficient global et taux global exacts"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_POURC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_POURC_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q14",
+      "baseline_item_text": "Coefficient multiplicateur d'une baisse de 15 % ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_POURC_02",
+          "baseline_items": [
+            "1S_TI_Q14"
+          ]
+        },
+        {
+          "skill_id": "M1RE_POURC_01",
+          "baseline_items": [
+            "1S_TI_Q13"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "base des suites géométriques et de l'évolution en pourcentage",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "M1RE_DROIT_01",
+      "skills_extra": [
+        "M1RE_DROIT_02"
+      ],
+      "skill_label": "Coefficient directeur d'une droite",
+      "objective": "Coefficient directeur d'une droite",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On donne $A(-2\\,;7)$ et $B(2\\,;-1)$.\n\\begin{enumerate}\n\\item Calculer le coefficient directeur de la droite $(AB)$.\n\\item Déterminer une équation réduite de $(AB)$.\n\\item La droite d'équation $y = -2x + 9$ est-elle parallèle à $(AB)$ ? Justifier.\n\\end{enumerate}",
+      "target_minutes": 5.25,
+      "time_estimate": {
+        "minutes": 5.25,
+        "breakdown": {
+          "lecture": 0.25,
+          "traitement": 3.45,
+          "redaction": 1.57
+        },
+        "features": {
+          "caracteres_enonce": 201,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 7,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$m = -2$ ; $y = -2x + 3$ ; oui, les deux droites ont le même coefficient directeur.",
+      "significant_steps": [
+        "$m = \\frac{-1-7}{2-(-2)} = \\frac{-8}{4} = -2$",
+        "$7 = -2\\times(-2)+p$ donne $p = 3$",
+        "même coefficient directeur $\\Rightarrow$ droites parallèles"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "différences inversées dans le quotient"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "ordonnée à l'origine non déterminée"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "parallélisme affirmé sans critère"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B4_c1",
+          "points": 1.0,
+          "skill_id": "M1RE_DROIT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "coefficient directeur exact"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B4_c2",
+          "points": 0.6,
+          "skill_id": "M1RE_DROIT_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "équation réduite exacte"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_B4_c3",
+          "points": 0.4,
+          "skill_id": "M1RE_DROIT_02",
+          "evidence_type": "justification",
+          "subpart": "3",
+          "desc": "parallélisme justifié par l'égalité des coefficients directeurs"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_DROIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_DROIT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q11",
+      "baseline_item_text": "Coefficient directeur de la droite passant par A(1 ; 3) et B(4 ; 9) ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_DROIT_01",
+          "baseline_items": [
+            "1S_TI_Q11"
+          ]
+        },
+        {
+          "skill_id": "M1RE_DROIT_02",
+          "baseline_items": [
+            "1S_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "droites et vecteurs directeurs, base de la géométrie de Première",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "M1RE_DROIT_01",
+      "skills_extra": [
+        "M1RE_VECT_02",
+        "M1RE_PROBA_01",
+        "M1RE_POURC_02"
+      ],
+      "skill_label": "Coefficient directeur d'une droite",
+      "objective": "Coefficient directeur d'une droite",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\textbf{Le club sportif.} Dans un repère du plan, on donne $A(1\\,;2)$ et $B(5\\,;10)$.\n\\begin{enumerate}\n\\item Déterminer le coefficient directeur de la droite $(AB)$, puis une équation réduite de $(AB)$.\n\\item Le point $C(-3\\,;-6)$ appartient-il à $(AB)$ ? Justifier par un calcul, en indiquant la méthode choisie.\n\\item Le club compte $60$ membres : $24$ pratiquent la natation, $30$ la course, et $12$ pratiquent les deux.\nOn choisit un membre au hasard. Calculer la probabilité qu'il pratique la natation ou la course,\npuis la probabilité qu'il ne pratique pas la natation.\n\\item La cotisation, de $180$ TND, augmente de $4\\,\\%$ par an. On note $u_0 = 180$. Écrire la relation liant\n$u_{n+1}$ et $u_n$, puis calculer $u_2$ arrondi au dinar.\n\\end{enumerate}",
+      "target_minutes": 8.5,
+      "time_estimate": {
+        "minutes": 8.5,
+        "breakdown": {
+          "lecture": 0.83,
+          "traitement": 5.8,
+          "redaction": 1.98
+        },
+        "features": {
+          "caracteres_enonce": 661,
+          "lignes_de_code": 0,
+          "sous_questions": 4,
+          "lignes_offertes": 12,
+          "lignes_retenues": 6.0
+        },
+        "model": "contenu-v2"
+      },
+      "points": 4,
+      "expected_answer": "$m=2$ et $y=2x$ ; $C$ appartient à $(AB)$ ; $P(N\\cup C)=0{,}7$ et $P(\\overline{N})=0{,}6$ ; $u_{n+1}=1{,}04\\,u_n$ et $u_2\\approx 195$ TND.",
+      "significant_steps": [
+        "$m=\\frac{10-2}{5-1}=2$ ; $y=2x+p$ avec $2=2\\times 1+p$ donc $p=0$",
+        "$2\\times(-3)=-6$ : les coordonnées de $C$ vérifient l'équation (ou $\\vec{AB}(4\\,;8)$ et $\\vec{AC}(-4\\,;-8)$ sont colinéaires)",
+        "$P(N)=0{,}4$, $P(C)=0{,}5$, $P(N\\cap C)=0{,}2$ donc $P(N\\cup C)=0{,}4+0{,}5-0{,}2=0{,}7$",
+        "$P(\\overline{N})=1-0{,}4=0{,}6$",
+        "$u_{n+1}=1{,}04\\,u_n$ ; $u_2=180\\times 1{,}04^2=194{,}688\\approx 195$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CALCUL",
+          "desc": "ordonnée à l'origine non déterminée, équation laissée en $y=2x+p$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$P(N\\cup C)$ obtenue en additionnant sans retirer l'intersection"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$u_{n+1}=u_n+4$ : évolution additive au lieu de multiplicative"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "appartenance de $C$ affirmée sans calcul"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C1_c1",
+          "points": 1.0,
+          "skill_id": "M1RE_DROIT_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "coefficient directeur et équation réduite exacts"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C1_c2",
+          "points": 1.0,
+          "skill_id": "M1RE_VECT_02",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "appartenance justifiée par un calcul explicite"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C1_c3",
+          "points": 1.0,
+          "skill_id": "M1RE_PROBA_01",
+          "evidence_type": "transfert",
+          "subpart": "3",
+          "desc": "les deux probabilités exactes, intersection correctement retirée"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C1_c4",
+          "points": 1.0,
+          "skill_id": "M1RE_POURC_02",
+          "evidence_type": "transfert",
+          "subpart": "4",
+          "desc": "relation de récurrence correcte et $u_2$ exact"
+        }
+      ],
+      "criteria_total_points": 4.0,
+      "evidence_types": [
+        "justification",
+        "transfert"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_DROIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_VECT_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_PROBA_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_POURC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_DROIT_01",
+          "baseline_items": [
+            "1S_TI_Q11"
+          ]
+        },
+        {
+          "skill_id": "M1RE_VECT_02",
+          "baseline_items": [
+            "1S_TI_Q10"
+          ]
+        },
+        {
+          "skill_id": "M1RE_PROBA_01",
+          "baseline_items": [
+            "1S_TI_Q15"
+          ]
+        },
+        {
+          "skill_id": "M1RE_POURC_02",
+          "baseline_items": [
+            "1S_TI_Q14"
+          ]
+        }
+      ],
+      "comparability": "partiellement_comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "quatre entrées de Première mobilisées sur une même situation ; la question 4 s'appuie sur la phase 4 de la séance",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "1ERE_SPE_DONIA_KHADHRANI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "M1RE_PROBA_01",
+      "skills_extra": [
+        "M1RE_PROBA_02"
+      ],
+      "skill_label": "Union, intersection et formule P(A∪B)",
+      "objective": "Union, intersection et formule P(A∪B)",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "transfert",
+      "difficulty": "standard",
+      "statement": "On donne $P(A) = 0{,}45$, $P(B) = 0{,}3$ et $P(A\\cap B) = 0{,}15$.\n\\begin{enumerate}\n\\item Calculer $P(A\\cup B)$.\n\\item Calculer la probabilité de l'événement contraire de $A$.\n\\end{enumerate}",
+      "target_minutes": 3.75,
+      "time_estimate": {
+        "minutes": 3.75,
+        "breakdown": {
+          "lecture": 0.17,
+          "traitement": 2.5,
+          "redaction": 1.16
+        },
+        "features": {
+          "caracteres_enonce": 132,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$P(A\\cup B) = 0{,}6$ ; $P(\\overline{A}) = 0{,}55$.",
+      "significant_steps": [
+        "$0{,}45+0{,}3-0{,}15=0{,}6$",
+        "$1-0{,}45=0{,}55$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "intersection non retirée"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "contraire confondu avec l'union"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C2_c1",
+          "points": 1.0,
+          "skill_id": "M1RE_PROBA_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$P(A\\cup B)$ exacte, formule visible"
+        },
+        {
+          "criterion_id": "1ERE_SPE_DONIA_KHADHRANI_C2_c2",
+          "points": 1.0,
+          "skill_id": "M1RE_PROBA_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "probabilité de l'événement contraire exacte"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M1RE_PROBA_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M1RE_PROBA_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "1S_TI_Q15",
+      "baseline_item_text": "Dé équilibré, A « nombre pair » et B « nombre supérieur à … » : union/intersection.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M1RE_PROBA_01",
+          "baseline_items": [
+            "1S_TI_Q15"
+          ]
+        },
+        {
+          "skill_id": "M1RE_PROBA_02",
+          "baseline_items": [
+            "1S_TI_Q16"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "prérequis des probabilités conditionnelles de Première",
+      "confidence_probe": false
+    }
+  ]
+}

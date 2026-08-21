@@ -1,5 +1,5 @@
-# 2nde_S3_PROF_Fiche
-## Séance 3 — Modéliser une situation
+# 2nde — Séance 3 : Modéliser une situation
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

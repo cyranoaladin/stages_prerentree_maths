@@ -1,5 +1,5 @@
-# 3e_S5_AIDES_Cartes
-## Séance 5 — Lire les données et mobiliser l’ensemble des acquis
+# 3e — Séance 5 : Lire les données et mobiliser l’ensemble des acquis
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

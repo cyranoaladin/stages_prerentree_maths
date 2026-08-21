@@ -1,5 +1,5 @@
-# 2nde_Evaluation_Finale_PROF_Corrige
-## Évaluation finale - Corrigé et exploitation
+# 2nde — Évaluation finale (Corrigé & Barème)
+## Corrigé et barème d’évaluation
 
 ## Annexe G — Évaluation finale
 

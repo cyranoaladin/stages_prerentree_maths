@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-16",
+  "scope": ["4e", "3e", "2nde", "1ere_spe"],
+  "file_count": 310,
+  "total_bytes": 32086239,
+  "by_level": {
+    "4e": {"markdown": 34, "html": 34, "pdf": 5},
+    "3e": {"markdown": 38, "html": 38, "pdf": 9},
+    "2nde": {"markdown": 34, "html": 34, "pdf": 5},
+    "1ere_spe": {"markdown": 36, "html": 36, "pdf": 7}
+  },
+  "nominative_file_count": 66,
+  "empty_file_count": 0,
+  "exact_duplicate_active_file_count": 0,
+  "internal_links_checked": 186,
+  "broken_link_count": 0,
+  "html_structure_error_count": 142,
+  "generated_pdf_count": 0
+}

@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Algorithmes et mini-projet de synthèse</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Nom : ........................................................</div>
 </div><div class="student-only"></div>
-# Mes objectifs
+## Mes objectifs
 
 - [ ] écrire une recherche séquentielle ;
 - [ ] calculer extremum et moyenne ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - [ ] tracer une recherche dichotomique ;
 - [ ] livrer un projet documenté et testé ;
 
-# Rituel sans ordinateur
+## Rituel sans ordinateur
 
 ## Question 1
 
@@ -103,11 +103,11 @@ Dans une liste triée, compare à l’élément central et élimine la moitié r
 - expliquer la complexité intuitive et un invariant.
 
 
-# Plan de code ou pseudo-code
+## Plan de code ou pseudo-code
 
 <div class="answer-lg"></div>
 
-# Tests prévus avant exécution
+## Tests prévus avant exécution
 
 | Test | Entrée | Résultat attendu | Résultat obtenu | Validé |
 |---:|---|---|---|:---:|
@@ -116,7 +116,7 @@ Dans une liste triée, compare à l’élément central et élimine la moitié r
 | 3 |  |  |  | ☐ |
 | 4 |  |  |  | ☐ |
 
-# Journal de débogage
+## Journal de débogage
 
 | Symptôme observé | Hypothèse | Modification testée | Résultat |
 |---|---|---|---|
@@ -124,11 +124,11 @@ Dans une liste triée, compare à l’élément central et élimine la moitié r
 |  |  |  |  |
 |  |  |  |  |
 
-# Trace écrite personnelle
+## Trace écrite personnelle
 
 <div class="answer-lg"></div>
 
-# Exit ticket
+## Exit ticket
 
 1. Une construction Python que je sais utiliser :
 

@@ -5,7 +5,7 @@ Ce paquet local rassemble les stages d’entrée en `4e`, `3e`, `2nde` et `1ere_
 ## Démarrer
 
 ```bash
-python3 -m pip install -r requirements.lock
+python3 -m pip install --require-hashes -r requirements.lock
 make all
 make serve
 ```
@@ -14,7 +14,11 @@ Ouvrez ensuite `http://localhost:8000`. Le portail public est dans `dist/site-pu
 
 ## Dépendances
 
-- **Python** : dépendances verrouillées dans `requirements.lock` (WeasyPrint, pypdf, pytest, ...).
+- **Python** :
+  - `requirements.in` contient les dépendances directes du projet ;
+  - `requirements.constraints` fixe les versions transitives de l’environnement validé ;
+  - `requirements.lock` est généré avec `pip-compile`, contient l’ensemble des dépendances transitives verrouillées et leurs hashes SHA-256 ;
+  - l’installation de production/CI doit utiliser `python3 -m pip install --require-hashes -r requirements.lock`.
 - **Système** : Pandoc, qpdf, Poppler (`pdftotext`), Ghostscript ou ImageMagick (`convert`/`identify`) pour l’inspection visuelle des PDF.
 - Aucune police n’est téléchargée à distance : le build fonctionne hors ligne.
 
@@ -23,7 +27,7 @@ Ouvrez ensuite `http://localhost:8000`. Le portail public est dans `dist/site-pu
 - `05_SOURCES/` contient les programmes canoniques : le build ne les modifie pas.
 - `04_NOMINATIFS/` et `dist/site-private/` contiennent des données de mineurs : circulation locale strictement limitée.
 - Les PDF sources initiaux sont préservés et exclus des packs générés.
-- Le registre nominatif canonique (13 élèves) est `content/students.json` ; `tools/build.py` ne contient plus aucun nom en dur.
+- Le registre nominatif canonique du pipeline Mathématiques (13 élèves) est `content/students.json` ; `tools/build.py` ne contient plus aucun nom en dur.
 
 ## Module Première NSI
 

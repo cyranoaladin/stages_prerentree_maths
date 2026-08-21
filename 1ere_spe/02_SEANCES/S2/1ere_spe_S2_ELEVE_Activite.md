@@ -1,5 +1,5 @@
-# 1ere_spe_S2_ELEVE_Activite
-## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
+# 1re Spécialité Mathématiques — Séance 2 : Fonctions, fonctions de référence et première approche de la dérivation
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

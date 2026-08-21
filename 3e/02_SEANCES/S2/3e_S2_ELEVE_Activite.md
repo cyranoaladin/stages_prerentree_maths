@@ -1,5 +1,5 @@
-# 3e_S2_ELEVE_Activite
-## Séance 2 — Passer du calcul à l’algèbre
+# 3e — Séance 2 : Passer du calcul à l’algèbre
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

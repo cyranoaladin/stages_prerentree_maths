@@ -1,5 +1,5 @@
-# 3e_S4_AIDES_Cartes
-## Séance 4 — Choisir un rapport trigonométrique
+# 3e — Séance 4 : Choisir un rapport trigonométrique
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

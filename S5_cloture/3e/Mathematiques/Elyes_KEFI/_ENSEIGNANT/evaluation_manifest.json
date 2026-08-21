@@ -1,0 +1,1316 @@
+{
+  "schema": "nexus-s5-evaluation-manifest-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "elyes-kefi",
+  "level_key": "3e",
+  "subject": "Mathématiques",
+  "items": [
+    {
+      "item_id": "3E_ELYES_KEFI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M3E_REL_01",
+      "skills_extra": [],
+      "skill_label": "Produit, quotient et priorités avec des nombres relatifs",
+      "objective": "Produit, quotient et priorités avec des nombres relatifs",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $(-15) \\div 3 + (-2)\\times(-6)$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.05,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 30,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$7$",
+      "significant_steps": [
+        "$(-15)\\div 3=-5$",
+        "$(-2)\\times(-6)=12$",
+        "$-5+12=7$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "règle des signes non appliquée sur le produit ($-12$)"
+        },
+        {
+          "code": "METHODE",
+          "desc": "opérations effectuées de gauche à droite sans priorité"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A1_c1",
+          "points": 1,
+          "skill_id": "M3E_REL_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "résultat $7$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_REL_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q02",
+      "baseline_item_text": "Calculer (−12) ÷ 4 + (−2) × (−3).",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_REL_01",
+          "baseline_items": [
+            "3E_TI_Q01",
+            "3E_TI_Q02"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "socle de tout calcul algébrique de Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M3E_FRAC_02",
+      "skills_extra": [],
+      "skill_label": "Produit et quotient de fractions, simplification",
+      "objective": "Produit et quotient de fractions, simplification",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $\\dfrac{4}{5}\\times\\dfrac{15}{8}$ et donner le résultat simplifié.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.08,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 50,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\dfrac{3}{2}$",
+      "significant_steps": [
+        "$\\frac{4\\times 15}{5\\times 8}=\\frac{60}{40}$",
+        "simplification par $20$ : $\\frac{3}{2}$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "produit en croix : $\\frac{4\\times 8}{5\\times 15}$"
+        },
+        {
+          "code": "METHODE",
+          "desc": "réduction au même dénominateur avant un produit"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A2_c1",
+          "points": 1,
+          "skill_id": "M3E_FRAC_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac{3}{2}$ ou $1{,}5$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_FRAC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q04",
+      "baseline_item_text": "Calculer 2/3 × 9/4.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_FRAC_02",
+          "baseline_items": [
+            "3E_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "calcul fractionnaire exigé en permanence en Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M3E_LIT_02",
+      "skills_extra": [],
+      "skill_label": "Réduction d'une expression avec constantes signées",
+      "objective": "Réduction d'une expression avec constantes signées",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Réduire $9x - 4 - 5x - 7$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 25,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$4x - 11$",
+      "significant_steps": [
+        "$9x-5x=4x$",
+        "$-4-7=-11$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$-4-7$ traité comme $-3$ ou $+11$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$4x$ et $-11$ regroupés"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A3_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$4x-11$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q08",
+      "baseline_item_text": "Réduire l'expression 4x − 7 + 2x + 3.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_LIT_02",
+          "baseline_items": [
+            "3E_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "prérequis de la factorisation et des identités remarquables",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M3E_EQ_01",
+      "skills_extra": [],
+      "skill_label": "Équation du premier degré, inconnue dans les deux membres",
+      "objective": "Équation du premier degré, inconnue dans les deux membres",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+      "target_minutes": 1.5,
+      "time_estimate": {
+        "minutes": 1.5,
+        "breakdown": {
+          "lecture": 0.06,
+          "traitement": 0.6,
+          "redaction": 0.76
+        },
+        "features": {
+          "caracteres_enonce": 37,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 2,
+          "lignes_retenues": 2
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$x = 6$",
+      "significant_steps": [
+        "$4x-2x=9+3$",
+        "$2x=12$",
+        "$x=6$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "signe non changé lors du passage d'un membre à l'autre"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "$2x=12$ mal résolu alors que le regroupement est correct"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A4_c1",
+          "points": 1,
+          "skill_id": "M3E_EQ_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$x=6$ avec au moins une étape écrite"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_EQ_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q10",
+      "baseline_item_text": "Résoudre l'équation 5x − 2 = 3x + 8.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_EQ_01",
+          "baseline_items": [
+            "3E_TI_Q09",
+            "3E_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "prérequis des équations produit et des systèmes",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M3E_FRAC_02",
+      "skills_extra": [],
+      "skill_label": "Produit et quotient de fractions, simplification",
+      "objective": "Produit et quotient de fractions, simplification",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $\\dfrac{7}{9}\\times\\dfrac{3}{14}$ et simplifier.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.05,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 32,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\dfrac{1}{6}$",
+      "significant_steps": [
+        "$\\frac{21}{126}$",
+        "simplification par $21$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "termes croisés"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "simplification incomplète"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A5_c1",
+          "points": 1,
+          "skill_id": "M3E_FRAC_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac16$ ou une écriture équivalente exacte"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_FRAC_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q04",
+      "baseline_item_text": "Calculer 2/3 × 9/4.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_FRAC_02",
+          "baseline_items": [
+            "3E_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "calcul fractionnaire exigé en permanence en Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M3E_LIT_02",
+      "skills_extra": [],
+      "skill_label": "Réduction d'une expression avec constantes signées",
+      "objective": "Réduction d'une expression avec constantes signées",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Réduire $8x - 9 + 3x + 4$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.38
+        },
+        "features": {
+          "caracteres_enonce": 25,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$11x - 5$",
+      "significant_steps": [
+        "$8x+3x=11x$",
+        "$-9+4=-5$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$-9+4$ traité comme $-13$"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_A6_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$11x-5$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q08",
+      "baseline_item_text": "Réduire l'expression 4x − 7 + 2x + 3.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_LIT_02",
+          "baseline_items": [
+            "3E_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "prérequis de la factorisation en Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M3E_GEO_01",
+      "skills_extra": [],
+      "skill_label": "Théorème de Pythagore : calcul d'une longueur",
+      "objective": "Théorème de Pythagore : calcul d'une longueur",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Le triangle $ABC$ est rectangle en $A$. On donne $BC = 20$ cm et $AB = 12$ cm.\n\\begin{enumerate}\n\\item Calculer $AC$ en citant le théorème utilisé et en écrivant la relation avant les nombres.\n\\item Vérifier la vraisemblance du résultat : $AC$ doit-elle être plus petite ou plus grande que $BC$ ? Pourquoi ?\n\\end{enumerate}",
+      "target_minutes": 4.0,
+      "time_estimate": {
+        "minutes": 4.0,
+        "breakdown": {
+          "lecture": 0.41,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 264,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$AC = 16$ cm ; $AC < BC$ car l'hypoténuse est le plus grand côté.",
+      "significant_steps": [
+        "$BC^2 = AB^2 + AC^2$",
+        "$400 = 144 + AC^2$",
+        "$AC^2 = 256$ donc $AC = 16$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$20^2 + 12^2$ additionnés : l'hypoténuse n'est pas identifiée"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "théorème non cité"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "racine carrée de 256 erronée"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "JUSTIFICATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_B1_c1",
+          "points": 1.5,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "relation correcte, théorème cité, $AC=16$ cm"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B1_c2",
+          "points": 0.5,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "contrôle de vraisemblance argumenté"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "justification"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q14",
+      "baseline_item_text": "ABC rectangle en A, BC = 13 cm, AB = 5 cm : longueur AC ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_GEO_01",
+          "baseline_items": [
+            "3E_TI_Q13",
+            "3E_TI_Q14"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "base de Thalès, de la trigonométrie et du repérage en Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M3E_TRIG_01",
+      "skills_extra": [],
+      "skill_label": "Choix et emploi d'un rapport trigonométrique (cosinus, sinus)",
+      "objective": "Choix et emploi d'un rapport trigonométrique (cosinus, sinus)",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Le triangle $ABC$ est rectangle en $A$. On donne $AB = 5$ cm et $BC = 13$ cm.\n\\begin{enumerate}\n\\item Par rapport à l'angle $\\widehat{B}$, nommer chacun des côtés $AB$ et $BC$.\n\\item En déduire $\\cos\\widehat{B}$, puis la mesure de $\\widehat{B}$ arrondie au degré.\n\\item Si l'on connaissait le côté opposé à $\\widehat{B}$ et l'hypoténuse, quel rapport faudrait-il utiliser ?\n\\end{enumerate}",
+      "target_minutes": 5.75,
+      "time_estimate": {
+        "minutes": 5.75,
+        "breakdown": {
+          "lecture": 0.43,
+          "traitement": 3.45,
+          "redaction": 1.8
+        },
+        "features": {
+          "caracteres_enonce": 277,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$AB$ : côté adjacent ; $BC$ : hypoténuse ; $\\cos\\widehat{B}=\\frac{5}{13}\\approx 0{,}3846$ donc $\\widehat{B}\\approx 67^\\circ$ ; il faudrait le sinus.",
+      "significant_steps": [
+        "identification des côtés relativement à l'angle $\\widehat{B}$",
+        "$\\cos\\widehat{B}=\\frac{\\text{adjacent}}{\\text{hypoténuse}}=\\frac{5}{13}$",
+        "$\\widehat{B}=\\arccos(5/13)\\approx 67^\\circ$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "cosinus et sinus échangés"
+        },
+        {
+          "code": "LECTURE",
+          "desc": "côté adjacent identifié par rapport au mauvais angle"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "arrondi ou emploi de la calculatrice en radians"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT",
+        "LECTURE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_B2_c1",
+          "points": 1,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "côtés correctement nommés et rapport correct"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B2_c2",
+          "points": 0.5,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "automatisme",
+          "subpart": "2",
+          "desc": "mesure de l'angle exacte au degré près"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B2_c3",
+          "points": 0.5,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "procedure",
+          "subpart": "3",
+          "desc": "sinus identifié à la question 3"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "automatisme",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_TRIG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q16",
+      "baseline_item_text": "Côté adjacent 4 cm, hypoténuse 8 cm : mesure de l'angle B ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_TRIG_01",
+          "baseline_items": [
+            "3E_TI_Q15",
+            "3E_TI_Q16"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "trigonométrie réinvestie dès les premiers chapitres de Troisième",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M3E_PROP_01",
+      "skills_extra": [
+        "M3E_STAT_01"
+      ],
+      "skill_label": "Proportionnalité : quatrième proportionnelle et vitesse",
+      "objective": "Proportionnalité : quatrième proportionnelle et vitesse",
+      "prerequisites": [
+        "S2",
+        "S5"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "\\begin{enumerate}\n\\item Un train parcourt $210$ km en $1$ h $30$ min à vitesse constante. Calculer sa vitesse moyenne en km/h.\n\\item Un élève obtient $14$ (coefficient $2$) et $9$ (coefficient $3$). Calculer sa moyenne pondérée, puis vérifier\nqu'elle est comprise entre $9$ et $14$.\n\\end{enumerate}",
+      "target_minutes": 4.0,
+      "time_estimate": {
+        "minutes": 4.0,
+        "breakdown": {
+          "lecture": 0.36,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 237,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$140$ km/h ; moyenne pondérée $=\\frac{28+27}{5}=11$, comprise entre $9$ et $14$.",
+      "significant_steps": [
+        "$1$ h $30$ min $=1{,}5$ h ; $210 \\div 1{,}5 = 140$",
+        "$14\\times 2 + 9\\times 3 = 55$ ; $55 \\div 5 = 11$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$1$ h $30$ converti en $1{,}30$ h"
+        },
+        {
+          "code": "METHODE",
+          "desc": "moyenne pondérée calculée comme une moyenne simple ($11{,}5$)"
+        },
+        {
+          "code": "LECTURE",
+          "desc": "division par 2 au lieu de la somme des coefficients"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "LECTURE",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_B3_c1",
+          "points": 1.0,
+          "skill_id": "M3E_PROP_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "vitesse exacte, conversion de 1 h 30 en 1,5 h visible"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B3_c2",
+          "points": 0.7,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "moyenne pondérée exacte, somme des coefficients correcte"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B3_c3",
+          "points": 0.3,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "encadrement entre 9 et 14 écrit"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_STAT_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q18",
+      "baseline_item_text": "12 (coefficient 1) et 8 (coefficient 3) : moyenne pondérée ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_PROP_01",
+          "baseline_items": [
+            "3E_TI_Q11",
+            "3E_TI_Q12"
+          ]
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "baseline_items": [
+            "3E_TI_Q17",
+            "3E_TI_Q18"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2",
+        "S5"
+      ],
+      "role_for_september": "grandeurs quotients et statistiques, réinvesties toute l'année",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "M3E_STAT_01",
+      "skills_extra": [],
+      "skill_label": "Moyenne simple et moyenne pondérée",
+      "objective": "Moyenne simple et moyenne pondérée",
+      "prerequisites": [
+        "S5"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "On considère la série $5$ ; $12$ ; $8$ ; $15$ ; $10$.\n\\begin{enumerate}\n\\item Calculer la moyenne en faisant apparaître la somme et l'effectif.\n\\item Un élève oublie la valeur $5$ et annonce $11{,}25$. Indiquer un contrôle qui aurait \\emph{détecté} cet oubli,\net expliquer pourquoi l'encadrement de la moyenne entre la plus petite et la plus grande valeur ne l'aurait pas détecté.\n\\end{enumerate}",
+      "target_minutes": 4.25,
+      "time_estimate": {
+        "minutes": 4.25,
+        "breakdown": {
+          "lecture": 0.51,
+          "traitement": 2.3,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 331,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 6,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "Somme $=50$, effectif $=5$, moyenne $=10$. Contrôle détecteur : recompter l'effectif ($5$ valeurs et non $4$) ou recalculer la somme ($50$ et non $45$) en la confrontant à la liste de l'énoncé. L'encadrement ne détecte rien ici, car $11{,}25$ appartient bien à l'intervalle $[5\\,;15]$ : c'est un contrôle de vraisemblance, pas un détecteur d'omission.",
+      "significant_steps": [
+        "$5+12+8+15+10=50$",
+        "$50\\div 5=10$",
+        "contrôle détecteur : recomptage de l'effectif, ou recalcul de la somme confronté à la liste source",
+        "$5 \\leqslant 11{,}25 \\leqslant 15$ : l'encadrement est vérifié malgré l'erreur, il ne peut donc pas la révéler"
+      ],
+      "likely_errors": [
+        {
+          "code": "LECTURE",
+          "desc": "une valeur oubliée dans la somme"
+        },
+        {
+          "code": "METHODE",
+          "desc": "division par un effectif erroné"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "l'encadrement est proposé comme détecteur alors qu'il est vérifié par la valeur erronée"
+        }
+      ],
+      "error_codes": [
+        "CONTROLE",
+        "LECTURE",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_B4_c1",
+          "points": 1,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "moyenne exacte, somme et effectif visibles"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B4_c2",
+          "points": 0.5,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "contrôle proposé effectivement capable de détecter l'oubli : recomptage de l'effectif, recalcul de la somme ou confrontation à la liste source"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_B4_c3",
+          "points": 0.5,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "controle",
+          "subpart": "3",
+          "desc": "explication correcte de la non-détection par l'encadrement"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_STAT_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "baseline_item_id": "3E_TI_Q17",
+      "baseline_item_text": "Moyenne de la série 8 ; 12 ; 10 ; 14.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_STAT_01",
+          "baseline_items": [
+            "3E_TI_Q17",
+            "3E_TI_Q18"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S5"
+      ],
+      "role_for_september": "moyenne, médiane et étendue : premier chapitre statistique de Troisième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "M3E_GEO_01",
+      "skills_extra": [
+        "M3E_TRIG_01",
+        "M3E_PROP_01",
+        "M3E_LIT_01"
+      ],
+      "skill_label": "Théorème de Pythagore : calcul d'une longueur",
+      "objective": "Théorème de Pythagore : calcul d'une longueur",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\textbf{La rampe d'accès.} Une rampe d'accès s'appuie sur une longueur au sol de $4{,}8$ m\net atteint une hauteur de $1{,}4$ m. Le triangle formé est rectangle.\n\\begin{enumerate}\n\\item Calculer la longueur de la rampe en citant le théorème utilisé.\n\\item Calculer la mesure de l'angle formé par la rampe et le sol, arrondie au degré.\n\\item La réglementation impose une pente d'au plus $5\\,\\%$, la pente étant le quotient de la hauteur par la\nlongueur au sol. Calculer la pente en pourcentage, puis conclure.\n\\item Le coût de fabrication est donné par $C(x) = 85x + 120$ TND, où $x$ est la longueur de la rampe en mètres.\nCalculer $C$ pour la rampe étudiée et expliquer ce que représente le nombre $120$.\n\\end{enumerate}",
+      "target_minutes": 9.0,
+      "time_estimate": {
+        "minutes": 9.0,
+        "breakdown": {
+          "lecture": 0.98,
+          "traitement": 5.8,
+          "redaction": 2.28
+        },
+        "features": {
+          "caracteres_enonce": 638,
+          "lignes_de_code": 0,
+          "sous_questions": 4,
+          "lignes_offertes": 12,
+          "lignes_retenues": 6.0
+        },
+        "model": "contenu-v2"
+      },
+      "points": 4,
+      "expected_answer": "$5$ m ; environ $16^\\circ$ ; pente $\\approx 29{,}2\\,\\% > 5\\,\\%$ : non conforme ; $C(5)=545$ TND, $120$ est la part fixe.",
+      "significant_steps": [
+        "$4{,}8^2+1{,}4^2=23{,}04+1{,}96=25$ donc longueur $=5$ m",
+        "$\\cos\\alpha = \\frac{4{,}8}{5}=0{,}96$ donc $\\alpha\\approx 16^\\circ$",
+        "$1{,}4 \\div 4{,}8 \\approx 0{,}2917 = 29{,}2\\,\\%$, très supérieur à $5\\,\\%$",
+        "$C(5)=85\\times 5+120=425+120=545$ TND ; $120$ ne dépend pas de la longueur"
+      ],
+      "likely_errors": [
+        {
+          "code": "TRANSFERT",
+          "desc": "la pente est confondue avec l'angle en degrés"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "cosinus appliqué avec l'hypoténuse au numérateur"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "conclusion sur la conformité absente ou non chiffrée"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$120$ interprété comme un coût par mètre"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION",
+        "TRANSFERT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_C1_c1",
+          "points": 1.0,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "longueur exacte, théorème cité"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_C1_c2",
+          "points": 1.0,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "transfert",
+          "subpart": "2",
+          "desc": "angle exact au degré près, rapport correctement choisi"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_C1_c3",
+          "points": 1.0,
+          "skill_id": "M3E_PROP_01",
+          "evidence_type": "transfert",
+          "subpart": "3",
+          "desc": "pente exprimée en pourcentage et conclusion explicite"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_C1_c4",
+          "points": 1.0,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "transfert",
+          "subpart": "4",
+          "desc": "$C(5)$ exact et rôle du terme constant correctement expliqué"
+        }
+      ],
+      "criteria_total_points": 4.0,
+      "evidence_types": [
+        "transfert"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_TRIG_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M3E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_GEO_01",
+          "baseline_items": [
+            "3E_TI_Q13",
+            "3E_TI_Q14"
+          ]
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "baseline_items": [
+            "3E_TI_Q15",
+            "3E_TI_Q16"
+          ]
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "baseline_items": [
+            "3E_TI_Q11",
+            "3E_TI_Q12"
+          ]
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "baseline_items": [
+            "3E_TI_Q07"
+          ]
+        }
+      ],
+      "comparability": "partiellement_comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "tâche complexe type brevet : plusieurs domaines, une décision à justifier",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "3E_ELYES_KEFI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "M3E_LIT_01",
+      "skills_extra": [],
+      "skill_label": "Distributivité : développer k(ax+b)",
+      "objective": "Distributivité : développer k(ax+b)",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\begin{enumerate}\n\\item Développer et réduire $(x + 4)(x + 3)$.\n\\item Contrôler le résultat pour $x = 2$.\n\\end{enumerate}",
+      "target_minutes": 4.25,
+      "time_estimate": {
+        "minutes": 4.25,
+        "breakdown": {
+          "lecture": 0.11,
+          "traitement": 2.9,
+          "redaction": 1.33
+        },
+        "features": {
+          "caracteres_enonce": 73,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$x^2 + 7x + 12$ ; contrôle : $6\\times 5 = 30$ et $4 + 14 + 12 = 30$.",
+      "significant_steps": [
+        "quatre produits : $x^2 + 3x + 4x + 12$",
+        "réduction : $x^2+7x+12$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "deux produits seulement : $x^2+12$"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "contrôle effectué sur une seule écriture"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "CONTROLE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "3E_ELYES_KEFI_C2_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "développement complet et réduit"
+        },
+        {
+          "criterion_id": "3E_ELYES_KEFI_C2_c2",
+          "points": 1,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "contrôle mené sur les deux écritures"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M3E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M3E_LIT_01",
+          "baseline_items": [
+            "3E_TI_Q07"
+          ]
+        }
+      ],
+      "comparability": "non_comparable_contenu_nouveau",
+      "comparison_status": "not_comparable",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "double distributivité introduite en phase 4 de cette séance ; premier attendu algébrique de Troisième",
+      "confidence_probe": false
+    }
+  ]
+}

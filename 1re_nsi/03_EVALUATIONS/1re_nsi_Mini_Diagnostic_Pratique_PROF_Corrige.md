@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="prof-only"></div>
 
-# Réponses
+## Réponses
 
 1. `a = 10`, `b = 5`.
 2. `range(2,6)` produit 2,3,4,5 ; `s = 14`.
@@ -32,7 +32,7 @@ assert compte_superieurs([1, 5, 8], 4) == 2
 assert compte_superieurs([], 4) == 0
 ```
 
-# Lecture pédagogique
+## Lecture pédagogique
 
 | Élément | Indice d’une difficulté |
 |---|---|

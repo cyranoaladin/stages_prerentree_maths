@@ -1,5 +1,5 @@
-# 1ere_spe_S5_PROF_Fiche
-## Séance 5 — Suites numériques, Python et évaluation de synthèse
+# 1re Spécialité Mathématiques — Séance 5 : Suites numériques, Python et évaluation de synthèse
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

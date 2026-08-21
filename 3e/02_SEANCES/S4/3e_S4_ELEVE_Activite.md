@@ -1,5 +1,5 @@
-# 3e_S4_ELEVE_Activite
-## Séance 4 — Choisir un rapport trigonométrique
+# 3e — Séance 4 : Choisir un rapport trigonométrique
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

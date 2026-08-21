@@ -1,5 +1,5 @@
-# 3e_Guide_Formateur
-## Entrée en Troisième - Mathématiques
+# 3e — Guide du formateur
+## Protocole d’animation et repères pédagogiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
@@ -102,7 +102,7 @@ Dix heures ne permettent pas de reprendre exhaustivement toute une année de Qua
 
 ---
 
-# 1. Cadre, données disponibles et informations manquantes
+## 1. Cadre, données disponibles et informations manquantes
 
 ## 1.1 Niveau et format
 
@@ -170,7 +170,7 @@ Le programme est construit en supposant :
 
 ---
 
-# 2. Référentiel officiel applicable en 2026-2027
+## 2. Référentiel officiel applicable en 2026-2027
 
 ## 2.1 Programme applicable en Troisième
 
@@ -208,7 +208,7 @@ Les ressources officielles insistent notamment sur une progression explicite, su
 
 ---
 
-# 3. Diagnostic synthétique du groupe
+## 3. Diagnostic synthétique du groupe
 
 ## 3.1 Vue d’ensemble des quatre profils
 
@@ -374,7 +374,7 @@ Les pourcentages du bilan doivent donc être lus comme des **signaux de position
 
 ---
 
-# 4. Prérequis de Quatrième et transition vers la Troisième
+## 4. Prérequis de Quatrième et transition vers la Troisième
 
 Le tableau suivant constitue une synthèse pédagogique du programme de cycle 4 de 2020, des repères annuels et des attendus de fin d’année encore applicables aux élèves concernés. ([Ministère de l'Education nationale][4])
 
@@ -413,7 +413,7 @@ Ces notions ne seront pas présentées comme « déjà maîtrisées ». Elles se
 
 ---
 
-# 5. Objectifs du stage
+## 5. Objectifs du stage
 
 ## 5.1 Objectifs généraux
 
@@ -481,7 +481,7 @@ Ces notions ne seront pas présentées comme « déjà maîtrisées ». Elles se
 
 ---
 
-# 6. Progression globale des cinq séances
+## 6. Progression globale des cinq séances
 
 | Séance | Tronc commun                                     | Différenciation majeure                                                                    | Transition vers la Troisième              |
 | ------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------ | ----------------------------------------- |

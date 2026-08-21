@@ -1,0 +1,1015 @@
+{
+  "schema": "nexus-s5-scientific-item-audit-v2",
+  "genere_le": "2026-08-21",
+  "items_uniques": 100,
+  "contre_resolutions_declarees": 100,
+  "items_sans_contre_resolution": [],
+  "contre_resolutions_orphelines": [],
+  "methode_calcul": 93,
+  "methode_revue": 7,
+  "pass": 100,
+  "warn": 0,
+  "fail": 0,
+  "items": [
+    {
+      "key": "1ere_spe / A1",
+      "ref": "A1",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_ALG_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "16x^2-49 factorisé"
+    },
+    {
+      "key": "1ere_spe / A2",
+      "ref": "A2",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_INEQ_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "-3x+12>0 recalculé"
+    },
+    {
+      "key": "1ere_spe / A3",
+      "ref": "A3",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_FONC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "g(-3) pour 2x^2+x"
+    },
+    {
+      "key": "1ere_spe / A4",
+      "ref": "A4",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_VECT_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "coordonnées de AB"
+    },
+    {
+      "key": "1ere_spe / B1",
+      "ref": "B1",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_INEQ_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "racines de (3x+6)(2-x) et signe"
+    },
+    {
+      "key": "1ere_spe / B2",
+      "ref": "B2",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_FONC_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "image, antécédent et comparaison sur ]0;1["
+    },
+    {
+      "key": "1ere_spe / B3",
+      "ref": "B3",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_POURC_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "évolutions successives recalculées"
+    },
+    {
+      "key": "1ere_spe / C1",
+      "ref": "C1",
+      "portee": "1ere_spe",
+      "skill_id": "M1RE_DROIT_01",
+      "points": 4,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "droite, probabilités et suite"
+    },
+    {
+      "key": "1re_nsi / A1",
+      "ref": "A1",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_LIST_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "L[2], L[-1], len(L) et dernier indice"
+    },
+    {
+      "key": "1re_nsi / A2",
+      "ref": "A2",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_LOG_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "négations recalculées"
+    },
+    {
+      "key": "1re_nsi / A3",
+      "ref": "A3",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_BOUCLE_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "range(3,12,4) recalculé"
+    },
+    {
+      "key": "1re_nsi / A4",
+      "ref": "A4",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_AFF_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "a=6, b=a, a=a+4"
+    },
+    {
+      "key": "1re_nsi / B1",
+      "ref": "B1",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_ACC_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "accumulateur tracé"
+    },
+    {
+      "key": "1re_nsi / B2",
+      "ref": "B2",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_FONC_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "fonction sans return"
+    },
+    {
+      "key": "1re_nsi / B3",
+      "ref": "B3",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_CSV_01",
+      "points": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "types de conversion float/int conformes aux colonnes ; la concaténation de deux chaînes par + est le comportement documenté de Python ; l'exemple de métadonnée proposé (date de production, capteur, unité, encodage) décrit bien le fichier et non un enregistrement."
+    },
+    {
+      "key": "1re_nsi / C1",
+      "ref": "C1",
+      "portee": "1re_nsi",
+      "skill_id": "NSI1_ALGO_01",
+      "points": 4,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "recherche séquentielle sur liste de dictionnaires"
+    },
+    {
+      "key": "2nde / A1",
+      "ref": "A1",
+      "portee": "2nde",
+      "skill_id": "M2DE_CALC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "-4+5(-3)-(-6) recalculé"
+    },
+    {
+      "key": "2nde / A2",
+      "ref": "A2",
+      "portee": "2nde",
+      "skill_id": "M2DE_FRAC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "3/8 + 5/12 recalculé"
+    },
+    {
+      "key": "2nde / A3",
+      "ref": "A3",
+      "portee": "2nde",
+      "skill_id": "M2DE_PUIS_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "10^5 x 10^-2 / 10^4"
+    },
+    {
+      "key": "2nde / A4",
+      "ref": "A4",
+      "portee": "2nde",
+      "skill_id": "M2DE_ALG_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(x-5)^2 développé"
+    },
+    {
+      "key": "2nde / B1",
+      "ref": "B1",
+      "portee": "2nde",
+      "skill_id": "M2DE_EQ_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "équation, produit nul et vérification"
+    },
+    {
+      "key": "2nde / B2",
+      "ref": "B2",
+      "portee": "2nde",
+      "skill_id": "M2DE_POURC_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "évolutions successives recalculées"
+    },
+    {
+      "key": "2nde / B3",
+      "ref": "B3",
+      "portee": "2nde",
+      "skill_id": "M2DE_GEO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "Pythagore, Thalès et périmètre"
+    },
+    {
+      "key": "2nde / C1",
+      "ref": "C1",
+      "portee": "2nde",
+      "skill_id": "M2DE_ALG_01",
+      "points": 4,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "aire, diagonale et coefficient global"
+    },
+    {
+      "key": "3e / A1",
+      "ref": "A1",
+      "portee": "3e",
+      "skill_id": "M3E_REL_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(-15)/3 + (-2)(-6) recalculé"
+    },
+    {
+      "key": "3e / A2",
+      "ref": "A2",
+      "portee": "3e",
+      "skill_id": "M3E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "4/5 x 15/8 recalculé"
+    },
+    {
+      "key": "3e / A3",
+      "ref": "A3",
+      "portee": "3e",
+      "skill_id": "M3E_LIT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "9x-4-5x-7 recalculé"
+    },
+    {
+      "key": "3e / A4",
+      "ref": "A4",
+      "portee": "3e",
+      "skill_id": "M3E_EQ_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "4x-3=2x+9 recalculé"
+    },
+    {
+      "key": "3e / B1",
+      "ref": "B1",
+      "portee": "3e",
+      "skill_id": "M3E_GEO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "AC = racine(20^2-12^2)"
+    },
+    {
+      "key": "3e / B2",
+      "ref": "B2",
+      "portee": "3e",
+      "skill_id": "M3E_TRIG_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "cos B = 5/13 et angle arrondi"
+    },
+    {
+      "key": "3e / B3",
+      "ref": "B3",
+      "portee": "3e",
+      "skill_id": "M3E_PROP_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "vitesse et moyenne pondérée recalculées"
+    },
+    {
+      "key": "3e / C1",
+      "ref": "C1",
+      "portee": "3e",
+      "skill_id": "M3E_GEO_01",
+      "points": 4,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "hypoténuse, angle, pente et coût"
+    },
+    {
+      "key": "4e / A1",
+      "ref": "A1",
+      "portee": "4e",
+      "skill_id": "M4E_REL_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(-8)+3-(-5) recalculé"
+    },
+    {
+      "key": "4e / A2",
+      "ref": "A2",
+      "portee": "4e",
+      "skill_id": "M4E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "5/8 - 1/4 recalculé"
+    },
+    {
+      "key": "4e / A3",
+      "ref": "A3",
+      "portee": "4e",
+      "skill_id": "M4E_LIT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "7x+4-3x-9 : coefficients recalculés"
+    },
+    {
+      "key": "4e / A4",
+      "ref": "A4",
+      "portee": "4e",
+      "skill_id": "M4E_GEO_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "angles aigus complémentaires"
+    },
+    {
+      "key": "4e / B1",
+      "ref": "B1",
+      "portee": "4e",
+      "skill_id": "M4E_AIRE_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "aire, périmètre et prix recalculés"
+    },
+    {
+      "key": "4e / B2",
+      "ref": "B2",
+      "portee": "4e",
+      "skill_id": "M4E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "développement, réduction et contrôle en x=2"
+    },
+    {
+      "key": "4e / B3",
+      "ref": "B3",
+      "portee": "4e",
+      "skill_id": "M4E_STAT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "fréquence, somme, moyenne et encadrement"
+    },
+    {
+      "key": "4e / C1",
+      "ref": "C1",
+      "portee": "4e",
+      "skill_id": "M4E_AIRE_01",
+      "points": 4,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "aires, expression, C(6) et décision"
+    },
+    {
+      "key": "ahmad-beldi-maths / A5",
+      "ref": "A5",
+      "portee": "ahmad-beldi-maths",
+      "skill_id": "M1RE_ALG_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "49x^2-16 factorisé"
+    },
+    {
+      "key": "ahmad-beldi-maths / A6",
+      "ref": "A6",
+      "portee": "ahmad-beldi-maths",
+      "skill_id": "M1RE_FONC_02",
+      "points": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "un point de coordonnées (-4 ; 1) sur la courbe se traduit par f(-4)=1 ; -4 est donc un antécédent de 1, ce que la réponse énonce correctement."
+    },
+    {
+      "key": "ahmad-beldi-maths / B4",
+      "ref": "B4",
+      "portee": "ahmad-beldi-maths",
+      "skill_id": "M1RE_FREF_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "argument général sur le signe de x^2(x-1), illustration numérique et P(A u B)"
+    },
+    {
+      "key": "ahmad-beldi-maths / C2",
+      "ref": "C2",
+      "portee": "ahmad-beldi-maths",
+      "skill_id": "M1RE_POURC_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "suite géométrique de raison 1,05"
+    },
+    {
+      "key": "ahmad-beldi-nsi / A5",
+      "ref": "A5",
+      "portee": "ahmad-beldi-nsi",
+      "skill_id": "NSI1_FONC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "fonction qui affiche sans renvoyer"
+    },
+    {
+      "key": "ahmad-beldi-nsi / A6",
+      "ref": "A6",
+      "portee": "ahmad-beldi-nsi",
+      "skill_id": "NSI1_BOUCLE_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "range(6) et range(2,9) recalculés"
+    },
+    {
+      "key": "ahmad-beldi-nsi / B4",
+      "ref": "B4",
+      "portee": "ahmad-beldi-nsi",
+      "skill_id": "NSI1_LIST_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "indexation et alias de liste"
+    },
+    {
+      "key": "ahmad-beldi-nsi / C2",
+      "ref": "C2",
+      "portee": "ahmad-beldi-nsi",
+      "skill_id": "NSI1_ALGO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "première valeur négative"
+    },
+    {
+      "key": "ahmed-bakir / A5",
+      "ref": "A5",
+      "portee": "ahmed-bakir",
+      "skill_id": "M2DE_CALC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(-3)^3 + 2(-4) recalculé"
+    },
+    {
+      "key": "ahmed-bakir / A6",
+      "ref": "A6",
+      "portee": "ahmed-bakir",
+      "skill_id": "M2DE_PUIS_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "notation scientifique de 0,000205"
+    },
+    {
+      "key": "ahmed-bakir / B4",
+      "ref": "B4",
+      "portee": "ahmed-bakir",
+      "skill_id": "M2DE_ALG_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(2x-3)(x+5) développé et contrôlé en x=1"
+    },
+    {
+      "key": "ahmed-bakir / C2",
+      "ref": "C2",
+      "portee": "ahmed-bakir",
+      "skill_id": "M2DE_POURC_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "hausse de 15 % puis baisse de 15 %"
+    },
+    {
+      "key": "ahmed-benhadj-salem / A5",
+      "ref": "A5",
+      "portee": "ahmed-benhadj-salem",
+      "skill_id": "NSI1_ACC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "accumulateur sur range(2,6)"
+    },
+    {
+      "key": "ahmed-benhadj-salem / A6",
+      "ref": "A6",
+      "portee": "ahmed-benhadj-salem",
+      "skill_id": "NSI1_BOUCLE_02",
+      "points": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "le critère de choix entre for et while est bien la connaissance préalable du nombre de répétitions ; les deux situations sont classées conformément à ce critère."
+    },
+    {
+      "key": "ahmed-benhadj-salem / B4",
+      "ref": "B4",
+      "portee": "ahmed-benhadj-salem",
+      "skill_id": "NSI1_TEST_01",
+      "points": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "les trois tests proposés sont cohérents avec le contrat annoncé, dont le cas limite de la liste vide qui doit lever une erreur ; l'explication du problème des flottants est exacte et la solution proposée, math.isclose, est la solution usuelle."
+    },
+    {
+      "key": "ahmed-benhadj-salem / C2",
+      "ref": "C2",
+      "portee": "ahmed-benhadj-salem",
+      "skill_id": "NSI1_ALGO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "coût séquentiel maximal et ordre de grandeur dichotomique : 2^10 = 1024 >= 1000"
+    },
+    {
+      "key": "amine-mansouri / A5",
+      "ref": "A5",
+      "portee": "amine-mansouri",
+      "skill_id": "M3E_LIT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "6x+5-9x-8 recalculé"
+    },
+    {
+      "key": "amine-mansouri / A6",
+      "ref": "A6",
+      "portee": "amine-mansouri",
+      "skill_id": "M3E_TRIG_01",
+      "points": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "AB est bien le côté adjacent à l'angle B et BC l'hypoténuse dans un triangle rectangle en A : le rapport AB/BC est le cosinus de B."
+    },
+    {
+      "key": "amine-mansouri / B4",
+      "ref": "B4",
+      "portee": "amine-mansouri",
+      "skill_id": "M3E_GEO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "AC = racine(17^2-15^2) et contrôle de vraisemblance"
+    },
+    {
+      "key": "amine-mansouri / C2",
+      "ref": "C2",
+      "portee": "amine-mansouri",
+      "skill_id": "M3E_FRAC_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "4/9 x 3/8 recalculé"
+    },
+    {
+      "key": "donia-khadhrani / A5",
+      "ref": "A5",
+      "portee": "donia-khadhrani",
+      "skill_id": "M1RE_FONC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "4x-3=13 recalculé"
+    },
+    {
+      "key": "donia-khadhrani / A6",
+      "ref": "A6",
+      "portee": "donia-khadhrani",
+      "skill_id": "M1RE_INEQ_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "-5x+20>=0 recalculé"
+    },
+    {
+      "key": "donia-khadhrani / B4",
+      "ref": "B4",
+      "portee": "donia-khadhrani",
+      "skill_id": "M1RE_DROIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "coefficient directeur, ordonnée à l'origine, parallélisme"
+    },
+    {
+      "key": "donia-khadhrani / C2",
+      "ref": "C2",
+      "portee": "donia-khadhrani",
+      "skill_id": "M1RE_PROBA_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "P(A u B) et P(non A) recalculées"
+    },
+    {
+      "key": "elyes-kefi / A5",
+      "ref": "A5",
+      "portee": "elyes-kefi",
+      "skill_id": "M3E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "7/9 x 3/14 recalculé"
+    },
+    {
+      "key": "elyes-kefi / A6",
+      "ref": "A6",
+      "portee": "elyes-kefi",
+      "skill_id": "M3E_LIT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "8x-9+3x+4 recalculé"
+    },
+    {
+      "key": "elyes-kefi / B4",
+      "ref": "B4",
+      "portee": "elyes-kefi",
+      "skill_id": "M3E_STAT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "somme, effectif, moyenne, et démonstration que l'encadrement ne détecte pas l'omission"
+    },
+    {
+      "key": "elyes-kefi / C2",
+      "ref": "C2",
+      "portee": "elyes-kefi",
+      "skill_id": "M3E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(x+4)(x+3) développé et contrôlé en x=2"
+    },
+    {
+      "key": "fares-darghouth / A5",
+      "ref": "A5",
+      "portee": "fares-darghouth",
+      "skill_id": "M4E_AIRE_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "aire du triangle 16 x 5 / 2"
+    },
+    {
+      "key": "fares-darghouth / A6",
+      "ref": "A6",
+      "portee": "fares-darghouth",
+      "skill_id": "M4E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "fraction équivalente et différence"
+    },
+    {
+      "key": "fares-darghouth / B4",
+      "ref": "B4",
+      "portee": "fares-darghouth",
+      "skill_id": "M4E_GEO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "somme des angles du triangle"
+    },
+    {
+      "key": "fares-darghouth / C2",
+      "ref": "C2",
+      "portee": "fares-darghouth",
+      "skill_id": "M4E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "substitution, développement, réduction"
+    },
+    {
+      "key": "fares-laajili / A5",
+      "ref": "A5",
+      "portee": "fares-laajili",
+      "skill_id": "M3E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "6/25 : 3/10 recalculé"
+    },
+    {
+      "key": "fares-laajili / A6",
+      "ref": "A6",
+      "portee": "fares-laajili",
+      "skill_id": "M3E_TRIG_01",
+      "points": 1,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "connaissant le côté opposé à C et l'hypoténuse, le rapport qui les met en jeu est bien le sinus ; la définition donnée est exacte."
+    },
+    {
+      "key": "fares-laajili / B4",
+      "ref": "B4",
+      "portee": "fares-laajili",
+      "skill_id": "M3E_GEO_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "BC = racine(20^2+21^2) et analyse de l'erreur"
+    },
+    {
+      "key": "fares-laajili / C2",
+      "ref": "C2",
+      "portee": "fares-laajili",
+      "skill_id": "M3E_TRIG_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "sin B = 10/26 et angle arrondi"
+    },
+    {
+      "key": "ines-kefi / A5",
+      "ref": "A5",
+      "portee": "ines-kefi",
+      "skill_id": "M4E_REL_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "ordre croissant recalculé"
+    },
+    {
+      "key": "ines-kefi / A6",
+      "ref": "A6",
+      "portee": "ines-kefi",
+      "skill_id": "M4E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "2/3 = 10/15, facteur 5"
+    },
+    {
+      "key": "ines-kefi / B4",
+      "ref": "B4",
+      "portee": "ines-kefi",
+      "skill_id": "M4E_GEO_02",
+      "points": 2,
+      "methode": "revue",
+      "verdict": "PASS",
+      "detail": "des diagonales de même milieu caractérisent le parallélogramme ; le contre-exemple du rectangle non carré réfute correctement la conclusion « carré »."
+    },
+    {
+      "key": "ines-kefi / C2",
+      "ref": "C2",
+      "portee": "ines-kefi",
+      "skill_id": "M4E_REL_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "déplacements et produit de relatifs"
+    },
+    {
+      "key": "malek-khadhrani / A5",
+      "ref": "A5",
+      "portee": "malek-khadhrani",
+      "skill_id": "M1RE_FONC_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "f(-4) pour x^2-6x"
+    },
+    {
+      "key": "malek-khadhrani / A6",
+      "ref": "A6",
+      "portee": "malek-khadhrani",
+      "skill_id": "M1RE_VECT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "déterminant de (6;-4) et (-9;6)"
+    },
+    {
+      "key": "malek-khadhrani / B4",
+      "ref": "B4",
+      "portee": "malek-khadhrani",
+      "skill_id": "M1RE_VECT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "vecteurs, alignement, coefficient directeur"
+    },
+    {
+      "key": "malek-khadhrani / C2",
+      "ref": "C2",
+      "portee": "malek-khadhrani",
+      "skill_id": "M1RE_NUM_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "puissance et contre-exemple sur 1/x"
+    },
+    {
+      "key": "noa-maniaci / A5",
+      "ref": "A5",
+      "portee": "noa-maniaci",
+      "skill_id": "M2DE_EQ_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(4x-12)(x+6)=0 recalculé"
+    },
+    {
+      "key": "noa-maniaci / A6",
+      "ref": "A6",
+      "portee": "noa-maniaci",
+      "skill_id": "M2DE_PUIS_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "10^-4 x 10^7 recalculé"
+    },
+    {
+      "key": "noa-maniaci / B4",
+      "ref": "B4",
+      "portee": "noa-maniaci",
+      "skill_id": "M2DE_POURC_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "évolutions successives recalculées"
+    },
+    {
+      "key": "noa-maniaci / C2",
+      "ref": "C2",
+      "portee": "noa-maniaci",
+      "skill_id": "M2DE_EQ_02",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "factorisation et équation produit nul"
+    },
+    {
+      "key": "sarah-bargaoui / A5",
+      "ref": "A5",
+      "portee": "sarah-bargaoui",
+      "skill_id": "M3E_LIT_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "8x+6-3x-13 recalculé"
+    },
+    {
+      "key": "sarah-bargaoui / A6",
+      "ref": "A6",
+      "portee": "sarah-bargaoui",
+      "skill_id": "M3E_EQ_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "5x-8=17 recalculé"
+    },
+    {
+      "key": "sarah-bargaoui / B4",
+      "ref": "B4",
+      "portee": "sarah-bargaoui",
+      "skill_id": "M3E_PROP_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "proportionnalité et Pythagore recalculés"
+    },
+    {
+      "key": "sarah-bargaoui / C2",
+      "ref": "C2",
+      "portee": "sarah-bargaoui",
+      "skill_id": "M3E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "développement, réduction et contrôle en x=1"
+    },
+    {
+      "key": "selim-mansouri / A5",
+      "ref": "A5",
+      "portee": "selim-mansouri",
+      "skill_id": "M3E_REL_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(-7)(-4)+(-20)/5 recalculé"
+    },
+    {
+      "key": "selim-mansouri / A6",
+      "ref": "A6",
+      "portee": "selim-mansouri",
+      "skill_id": "M3E_LIT_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "-5(3x-2) développé"
+    },
+    {
+      "key": "selim-mansouri / B4",
+      "ref": "B4",
+      "portee": "selim-mansouri",
+      "skill_id": "M3E_PROP_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "retour à l'unité et Pythagore"
+    },
+    {
+      "key": "selim-mansouri / C2",
+      "ref": "C2",
+      "portee": "selim-mansouri",
+      "skill_id": "M3E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "(x+2)(x+5) développé et contrôlé en x=1"
+    },
+    {
+      "key": "sinda-chikhaoui / A5",
+      "ref": "A5",
+      "portee": "sinda-chikhaoui",
+      "skill_id": "M4E_REL_01",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "7-(-6)-4 recalculé"
+    },
+    {
+      "key": "sinda-chikhaoui / A6",
+      "ref": "A6",
+      "portee": "sinda-chikhaoui",
+      "skill_id": "M4E_FRAC_02",
+      "points": 1,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "3/4 - 5/12 recalculé"
+    },
+    {
+      "key": "sinda-chikhaoui / B4",
+      "ref": "B4",
+      "portee": "sinda-chikhaoui",
+      "skill_id": "M4E_LIT_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "développement, réduction, contrôle en x=0"
+    },
+    {
+      "key": "sinda-chikhaoui / C2",
+      "ref": "C2",
+      "portee": "sinda-chikhaoui",
+      "skill_id": "M4E_AIRE_01",
+      "points": 2,
+      "methode": "calcul",
+      "verdict": "PASS",
+      "detail": "base du triangle et justification par duplication"
+    }
+  ]
+}

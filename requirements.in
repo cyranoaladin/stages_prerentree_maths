@@ -1,0 +1,4 @@
+# Dépendances Python directes du projet.
+weasyprint==68.1
+pypdf==6.11.0
+pytest==9.0.2

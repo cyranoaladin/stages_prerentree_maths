@@ -1,5 +1,5 @@
-# 2nde_S3_AIDES_Cartes
-## Séance 3 — Modéliser une situation
+# 2nde — Séance 3 : Modéliser une situation
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

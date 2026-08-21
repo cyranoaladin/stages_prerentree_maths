@@ -1,0 +1,1560 @@
+{
+  "schema": "nexus-s5-post-stage-analysis-v2",
+  "student_id": "eleve-synthetique-test",
+  "student_name": "ELEVE SYNTHETIQUE",
+  "level_key": "4e",
+  "subject": "Mathématiques",
+  "analysed_on": "2026-08-28",
+  "status": "analysed",
+  "scoring_model": "par critère : chaque critère porte une compétence unique",
+  "baseline_measure_available": false,
+  "score": {
+    "total_points": 12.0,
+    "max_points": 20,
+    "note_sur_20": 12.0,
+    "success_rate": 0.6,
+    "by_part": {
+      "A": {
+        "points": 4.0,
+        "max_points": 6,
+        "success_rate": 0.6667
+      },
+      "B": {
+        "points": 5.0,
+        "max_points": 8,
+        "success_rate": 0.625
+      },
+      "C": {
+        "points": 3.0,
+        "max_points": 6,
+        "success_rate": 0.5
+      }
+    },
+    "common_core_points": 10.0,
+    "individual_points": 2.0
+  },
+  "items": [
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_REL_01",
+      "skills": [
+        "M4E_REL_01"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 1.0,
+      "max_points": 1,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A1_c1",
+          "skill_id": "M4E_REL_01",
+          "evidence_type": "automatisme",
+          "points": 1.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_FRAC_02",
+      "skills": [
+        "M4E_FRAC_02"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 1.0,
+      "max_points": 1,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A2_c1",
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "automatisme",
+          "points": 1.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_LIT_02",
+      "skills": [
+        "M4E_LIT_02"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 1.0,
+      "max_points": 1,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A3_c1",
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "automatisme",
+          "points": 1.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_GEO_01",
+      "skills": [
+        "M4E_GEO_01"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 0.0,
+      "max_points": 1,
+      "success_rate": 0.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A4_c1",
+          "skill_id": "M4E_GEO_01",
+          "evidence_type": "automatisme",
+          "points": 0.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [
+        "METHODE"
+      ],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M4E_REL_02",
+      "skills": [
+        "M4E_REL_02"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 1.0,
+      "max_points": 1,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A5_c1",
+          "skill_id": "M4E_REL_02",
+          "evidence_type": "procedure",
+          "points": 1.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M4E_FRAC_02",
+      "skills": [
+        "M4E_FRAC_02"
+      ],
+      "difficulty": "socle",
+      "task_type": "automatisme",
+      "points": 0.0,
+      "max_points": 1,
+      "success_rate": 0.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_A6_c1",
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "procedure",
+          "points": 0.0,
+          "max_points": 1
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_AIRE_01",
+      "skills": [
+        "M4E_AIRE_01",
+        "M4E_PROP_01"
+      ],
+      "difficulty": "standard",
+      "task_type": "application",
+      "points": 2.0,
+      "max_points": 2,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B1_c1",
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "procedure",
+          "points": 1.0,
+          "max_points": 1.0
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B1_c2",
+          "skill_id": "M4E_PROP_01",
+          "evidence_type": "procedure",
+          "points": 1.0,
+          "max_points": 1.0
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_LIT_01",
+      "skills": [
+        "M4E_LIT_01",
+        "M4E_LIT_02"
+      ],
+      "difficulty": "standard",
+      "task_type": "application",
+      "points": 0.0,
+      "max_points": 2,
+      "success_rate": 0.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c1",
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "procedure",
+          "points": 0.0,
+          "max_points": 0.5
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c2",
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "procedure",
+          "points": 0.0,
+          "max_points": 0.5
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c3",
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "controle",
+          "points": 0.0,
+          "max_points": 1.0
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "confidence": 4,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_STAT_01",
+      "skills": [
+        "M4E_PROP_02",
+        "M4E_STAT_01"
+      ],
+      "difficulty": "standard",
+      "task_type": "application",
+      "points": 2.0,
+      "max_points": 2,
+      "success_rate": 1.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c1",
+          "skill_id": "M4E_PROP_02",
+          "evidence_type": "procedure",
+          "points": 1.0,
+          "max_points": 1.0
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c2",
+          "skill_id": "M4E_STAT_01",
+          "evidence_type": "procedure",
+          "points": 0.7,
+          "max_points": 0.7
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c3",
+          "skill_id": "M4E_STAT_01",
+          "evidence_type": "controle",
+          "points": 0.3,
+          "max_points": 0.3
+        }
+      ],
+      "error_codes": [],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "M4E_GEO_02",
+      "skills": [
+        "M4E_GEO_02"
+      ],
+      "difficulty": "standard",
+      "task_type": "application",
+      "points": 1.0,
+      "max_points": 2,
+      "success_rate": 0.5,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_B4_c1",
+          "skill_id": "M4E_GEO_02",
+          "evidence_type": "procedure",
+          "points": 1.0,
+          "max_points": 2
+        }
+      ],
+      "error_codes": [
+        "JUSTIFICATION"
+      ],
+      "confidence": null,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "M4E_AIRE_01",
+      "skills": [
+        "M4E_AIRE_01",
+        "M4E_FRAC_02",
+        "M4E_LIT_01"
+      ],
+      "difficulty": "transfert",
+      "task_type": "transfert",
+      "points": 3.0,
+      "max_points": 4,
+      "success_rate": 0.75,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c1",
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "transfert",
+          "points": 1.0,
+          "max_points": 1.0
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c2",
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "procedure",
+          "points": 0.5,
+          "max_points": 0.5
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c3",
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "transfert",
+          "points": 1.5,
+          "max_points": 1.5
+        },
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c4",
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "transfert",
+          "points": 0.0,
+          "max_points": 1.0
+        }
+      ],
+      "error_codes": [
+        "CALCUL"
+      ],
+      "confidence": 2,
+      "comparison_status": "indicative_skill_comparison"
+    },
+    {
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "M4E_STAT_01",
+      "skills": [
+        "M4E_STAT_01"
+      ],
+      "difficulty": "transfert",
+      "task_type": "transfert",
+      "points": 0.0,
+      "max_points": 2,
+      "success_rate": 0.0,
+      "criteria": [
+        {
+          "criterion_id": "4E_ELEVE_SYNTHETIQUE_C2_c1",
+          "skill_id": "M4E_STAT_01",
+          "evidence_type": "procedure",
+          "points": 0.0,
+          "max_points": 2
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "LECTURE"
+      ],
+      "confidence": null,
+      "comparison_status": "post_only"
+    }
+  ],
+  "criteria": [
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A1_c1",
+      "item_ref": "A1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A1",
+      "skill_id": "M4E_REL_01",
+      "evidence_type": "automatisme",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A2_c1",
+      "item_ref": "A2",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A2",
+      "skill_id": "M4E_FRAC_02",
+      "evidence_type": "automatisme",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A3_c1",
+      "item_ref": "A3",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A3",
+      "skill_id": "M4E_LIT_02",
+      "evidence_type": "automatisme",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A4_c1",
+      "item_ref": "A4",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A4",
+      "skill_id": "M4E_GEO_01",
+      "evidence_type": "automatisme",
+      "subpart": "1",
+      "points": 0.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A5_c1",
+      "item_ref": "A5",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A5",
+      "skill_id": "M4E_REL_02",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "individuel"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_A6_c1",
+      "item_ref": "A6",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_A6",
+      "skill_id": "M4E_FRAC_02",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 0.0,
+      "max_points": 1,
+      "difficulty": "socle",
+      "part": "A",
+      "kind": "individuel"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B1_c1",
+      "item_ref": "B1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B1",
+      "skill_id": "M4E_AIRE_01",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1.0,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B1_c2",
+      "item_ref": "B1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B1",
+      "skill_id": "M4E_PROP_01",
+      "evidence_type": "procedure",
+      "subpart": "2",
+      "points": 1.0,
+      "max_points": 1.0,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c1",
+      "item_ref": "B2",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B2",
+      "skill_id": "M4E_LIT_01",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 0.0,
+      "max_points": 0.5,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c2",
+      "item_ref": "B2",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B2",
+      "skill_id": "M4E_LIT_02",
+      "evidence_type": "procedure",
+      "subpart": "2",
+      "points": 0.0,
+      "max_points": 0.5,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B2_c3",
+      "item_ref": "B2",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B2",
+      "skill_id": "M4E_LIT_02",
+      "evidence_type": "controle",
+      "subpart": "3",
+      "points": 0.0,
+      "max_points": 1.0,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c1",
+      "item_ref": "B3",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B3",
+      "skill_id": "M4E_PROP_02",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1.0,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c2",
+      "item_ref": "B3",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B3",
+      "skill_id": "M4E_STAT_01",
+      "evidence_type": "procedure",
+      "subpart": "2",
+      "points": 0.7,
+      "max_points": 0.7,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B3_c3",
+      "item_ref": "B3",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B3",
+      "skill_id": "M4E_STAT_01",
+      "evidence_type": "controle",
+      "subpart": "2",
+      "points": 0.3,
+      "max_points": 0.3,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_B4_c1",
+      "item_ref": "B4",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_B4",
+      "skill_id": "M4E_GEO_02",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 2,
+      "difficulty": "standard",
+      "part": "B",
+      "kind": "individuel"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c1",
+      "item_ref": "C1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C1",
+      "skill_id": "M4E_AIRE_01",
+      "evidence_type": "transfert",
+      "subpart": "1",
+      "points": 1.0,
+      "max_points": 1.0,
+      "difficulty": "transfert",
+      "part": "C",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c2",
+      "item_ref": "C1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C1",
+      "skill_id": "M4E_FRAC_02",
+      "evidence_type": "procedure",
+      "subpart": "2",
+      "points": 0.5,
+      "max_points": 0.5,
+      "difficulty": "transfert",
+      "part": "C",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c3",
+      "item_ref": "C1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C1",
+      "skill_id": "M4E_LIT_01",
+      "evidence_type": "transfert",
+      "subpart": "3",
+      "points": 1.5,
+      "max_points": 1.5,
+      "difficulty": "transfert",
+      "part": "C",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_C1_c4",
+      "item_ref": "C1",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C1",
+      "skill_id": "M4E_LIT_01",
+      "evidence_type": "transfert",
+      "subpart": "4",
+      "points": 0.0,
+      "max_points": 1.0,
+      "difficulty": "transfert",
+      "part": "C",
+      "kind": "commun"
+    },
+    {
+      "criterion_id": "4E_ELEVE_SYNTHETIQUE_C2_c1",
+      "item_ref": "C2",
+      "item_id": "4E_ELEVE_SYNTHETIQUE_C2",
+      "skill_id": "M4E_STAT_01",
+      "evidence_type": "procedure",
+      "subpart": "1",
+      "points": 0.0,
+      "max_points": 2,
+      "difficulty": "transfert",
+      "part": "C",
+      "kind": "individuel"
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "M4E_AIRE_01",
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "domain": "Grandeurs et mesures",
+      "importance_n": "critique",
+      "items": [
+        "B1",
+        "C1"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B1_c1",
+        "4E_ELEVE_SYNTHETIQUE_C1_c1"
+      ],
+      "evidence_types": [
+        "procedure",
+        "transfert"
+      ],
+      "points": 2.0,
+      "max_points": 2.0,
+      "success_rate": 1.0,
+      "baseline_status_qualitative": "acquis",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 4,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "forte",
+      "evidence_strength_score": 4,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": [
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "items": [
+        "A2",
+        "A6",
+        "C1"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_A2_c1",
+        "4E_ELEVE_SYNTHETIQUE_A6_c1",
+        "4E_ELEVE_SYNTHETIQUE_C1_c2"
+      ],
+      "evidence_types": [
+        "automatisme",
+        "procedure"
+      ],
+      "points": 1.5,
+      "max_points": 2.5,
+      "success_rate": 0.6,
+      "baseline_status_qualitative": "fragile",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 2,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "evidence_strength_score": 3,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": true,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "immediate_after_remediation",
+      "retention_status": "not_yet_verified",
+      "recommended_delayed_check": true,
+      "retention_reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+      "errors": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_GEO_01",
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "domain": "Géométrie",
+      "importance_n": "critique",
+      "items": [
+        "A4"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_A4_c1"
+      ],
+      "evidence_types": [
+        "automatisme"
+      ],
+      "points": 0.0,
+      "max_points": 1.0,
+      "success_rate": 0.0,
+      "baseline_status_qualitative": "acquis",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 0,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": 0,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": [
+        "METHODE"
+      ]
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "label": "Symétrie centrale et caractérisation du parallélogramme",
+      "domain": "Géométrie",
+      "importance_n": "importante",
+      "items": [
+        "B4"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B4_c1"
+      ],
+      "evidence_types": [
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 2.0,
+      "success_rate": 0.5,
+      "baseline_status_qualitative": "acquis",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 2,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": 1,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": [
+        "JUSTIFICATION"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_01",
+      "label": "Distributivité simple : développer k(a+b)",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "items": [
+        "B2",
+        "C1"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B2_c1",
+        "4E_ELEVE_SYNTHETIQUE_C1_c3",
+        "4E_ELEVE_SYNTHETIQUE_C1_c4"
+      ],
+      "evidence_types": [
+        "procedure",
+        "transfert"
+      ],
+      "points": 1.5,
+      "max_points": 3.0,
+      "success_rate": 0.5,
+      "baseline_status_qualitative": "en_voie_acquisition",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 2,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "forte",
+      "evidence_strength_score": 4,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "label": "Réduction d'une expression avec constantes signées",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "items": [
+        "A3",
+        "B2"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_A3_c1",
+        "4E_ELEVE_SYNTHETIQUE_B2_c2",
+        "4E_ELEVE_SYNTHETIQUE_B2_c3"
+      ],
+      "evidence_types": [
+        "automatisme",
+        "controle",
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 2.5,
+      "success_rate": 0.4,
+      "baseline_status_qualitative": "en_voie_acquisition",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 1,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "evidence_strength_score": 3,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": [
+        "CONCEPT"
+      ]
+    },
+    {
+      "skill_id": "M4E_PROP_01",
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "domain": "Proportionnalité",
+      "importance_n": "critique",
+      "items": [
+        "B1"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B1_c2"
+      ],
+      "evidence_types": [
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 1.0,
+      "success_rate": 1.0,
+      "baseline_status_qualitative": "acquis",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 3,
+      "post_mastery_capped_by_transfer": true,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": 0,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": []
+    },
+    {
+      "skill_id": "M4E_PROP_02",
+      "label": "Pourcentage d'une quantité, fréquence",
+      "domain": "Proportionnalité",
+      "importance_n": "importante",
+      "items": [
+        "B3"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B3_c1"
+      ],
+      "evidence_types": [
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 1.0,
+      "success_rate": 1.0,
+      "baseline_status_qualitative": "acquis",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 3,
+      "post_mastery_capped_by_transfer": true,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": 0,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": []
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "domain": "Nombres relatifs",
+      "importance_n": "critique",
+      "items": [
+        "A1"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_A1_c1"
+      ],
+      "evidence_types": [
+        "automatisme"
+      ],
+      "points": 1.0,
+      "max_points": 1.0,
+      "success_rate": 1.0,
+      "baseline_status_qualitative": "fragile",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 3,
+      "post_mastery_capped_by_transfer": true,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": 0,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": false,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "no_remediation_in_session",
+      "retention_status": "not_measured",
+      "recommended_delayed_check": false,
+      "retention_reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence",
+      "errors": []
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "domain": "Nombres relatifs",
+      "importance_n": "critique",
+      "items": [
+        "A5"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_A5_c1"
+      ],
+      "evidence_types": [
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 1.0,
+      "success_rate": 1.0,
+      "baseline_status_qualitative": "fragile",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 3,
+      "post_mastery_capped_by_transfer": true,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "evidence_strength_score": -1,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": true,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "immediate_after_remediation",
+      "retention_status": "not_yet_verified",
+      "recommended_delayed_check": true,
+      "retention_reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard",
+      "errors": []
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "domain": "Statistiques",
+      "importance_n": "importante",
+      "items": [
+        "B3",
+        "C2"
+      ],
+      "criteria": [
+        "4E_ELEVE_SYNTHETIQUE_B3_c2",
+        "4E_ELEVE_SYNTHETIQUE_B3_c3",
+        "4E_ELEVE_SYNTHETIQUE_C2_c1"
+      ],
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "points": 1.0,
+      "max_points": 3.0,
+      "success_rate": 0.3333,
+      "baseline_status_qualitative": "non_evalue",
+      "baseline_mastery": null,
+      "baseline_measure_available": false,
+      "post_mastery": 1,
+      "post_mastery_capped_by_transfer": false,
+      "mastery_delta": null,
+      "delta_blocked_reason": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "evidence_strength_score": 2,
+      "evidence_strength_detail": [
+        {
+          "critere": "au moins deux critères indépendants",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux items distincts",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "au moins deux points en jeu",
+          "verifie": true,
+          "poids": 1
+        },
+        {
+          "critere": "évaluée sur une tâche de transfert",
+          "verifie": false,
+          "poids": 1
+        },
+        {
+          "critere": "mesurée juste après remédiation",
+          "verifie": true,
+          "poids": -1
+        }
+      ],
+      "post_test_context": "first_worked_in_session_5",
+      "retention_status": "not_yet_verified",
+      "recommended_delayed_check": true,
+      "retention_reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement",
+      "errors": [
+        "CONCEPT",
+        "LECTURE"
+      ]
+    }
+  ],
+  "confidence": {
+    "confidence_before_reported": "50 %",
+    "confidence_before": null,
+    "confidence_after": 3.0,
+    "calibration_cells": {
+      "juste_confiance_haute": 0,
+      "juste_confiance_basse": 1,
+      "faux_confiance_basse": 0,
+      "faux_confiance_haute": 1,
+      "partiel_non_classe": 0
+    },
+    "note": "la certitude n'entre pas dans la note ; elle sert à distinguer ce qui est su de ce qui est cru. Un item réussi partiellement (entre 25 et 75 %) n'est classé ni en juste ni en faux."
+  },
+  "errors": {
+    "error_profile_before": null,
+    "error_profile_after": {
+      "METHODE": 1,
+      "CONCEPT": 3,
+      "JUSTIFICATION": 1,
+      "CALCUL": 1,
+      "LECTURE": 1
+    },
+    "dominant_codes": [
+      "CONCEPT",
+      "METHODE",
+      "JUSTIFICATION"
+    ]
+  },
+  "priorities": [
+    {
+      "skill_id": "M4E_GEO_01",
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "priority_rank": "P1",
+      "reason": "maîtrise 0 sur 4, taux de réussite 0 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 0,
+      "success_rate": 0.0,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "METHODE"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "label": "Réduction d'une expression avec constantes signées",
+      "priority_rank": "P1",
+      "reason": "maîtrise 1 sur 4, taux de réussite 40 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 1,
+      "success_rate": 0.4,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT"
+      ]
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "priority_rank": "P2",
+      "reason": "maîtrise 1 sur 4, taux de réussite 33 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 1,
+      "success_rate": 0.3333,
+      "importance_n": "importante",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "LECTURE"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_01",
+      "label": "Distributivité simple : développer k(a+b)",
+      "priority_rank": "P2",
+      "reason": "maîtrise 2 sur 4, taux de réussite 50 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.5,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "priority_rank": "P2",
+      "reason": "maîtrise 2 sur 4, taux de réussite 60 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.6,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "label": "Symétrie centrale et caractérisation du parallélogramme",
+      "priority_rank": "P3",
+      "reason": "maîtrise 2 sur 4, taux de réussite 50 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.5,
+      "importance_n": "importante",
+      "dominant_error_codes": [
+        "JUSTIFICATION"
+      ]
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "priority_rank": "OK",
+      "reason": "maîtrise 4 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 4,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_PROP_01",
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_PROP_02",
+      "label": "Pourcentage d'une quantité, fréquence",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "importante",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    }
+  ],
+  "warnings": [
+    "aucun écart de maîtrise n'est calculé : aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève.",
+    "force de preuve faible pour : M4E_GEO_01, M4E_GEO_02, M4E_PROP_01, M4E_PROP_02, M4E_REL_01, M4E_REL_02. Ces niveaux de maîtrise sont indicatifs et ne doivent pas fonder une conclusion isolée.",
+    "compétences évaluées moins d'une heure après leur remédiation : M4E_FRAC_02, M4E_REL_02, M4E_STAT_01. La réussite y mesure une performance immédiate ; la rétention reste à vérifier par un contrôle différé en semaine 1 ou 2."
+  ]
+}

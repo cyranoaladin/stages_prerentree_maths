@@ -1,5 +1,5 @@
-# 4e_S5_ELEVE_Activite
-## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
+# 4e — Séance 5 : Réinvestir, mesurer les progrès et préparer septembre
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

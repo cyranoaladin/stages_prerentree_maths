@@ -1,5 +1,5 @@
-# 1ere_spe_S1_AIDES_Cartes
-## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
+# 1re Spécialité Mathématiques — Séance 1 : Calcul algébrique, inéquations et transition vers le second degré
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

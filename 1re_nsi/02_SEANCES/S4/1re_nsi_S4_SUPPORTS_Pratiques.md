@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Listes, tuples, dictionnaires et tables CSV</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Fiches de manipulation, traçage et projet</div>
 </div><div class="student-only"></div>
-# Support 1 - bande d’indices
+## Support 1 - bande d’indices
 
 Pour `L = [4, 8, 15, 16]` :
 
@@ -23,14 +23,14 @@ Pour `L = [4, 8, 15, 16]` :
 - dernier indice : 3 ;
 - dernier élément : `L[-1]`.
 
-# Support 2 - alias ou copie ?
+## Support 2 - alias ou copie ?
 
 <div class="cut-card"><h3>Alias</h3><pre><code>a = [1, 2]
 b = a</code></pre><p>Deux noms, un seul objet.</p></div>
 <div class="cut-card"><h3>Copie superficielle</h3><pre><code>a = [1, 2]
 b = a.copy()</code></pre><p>Deux listes distinctes au premier niveau.</p></div>
 
-# Support 3 - fiche enregistrement
+## Support 3 - fiche enregistrement
 
 | Clé | Valeur | Type attendu | Valide ? |
 |---|---|---|:---:|
@@ -40,7 +40,7 @@ b = a.copy()</code></pre><p>Deux listes distinctes au premier niveau.</p></div>
 | `humidite` |  | `int` |  |
 | `statut` |  | `OK` ou `ALERTE` |  |
 
-# Support 4 - mini-table CSV
+## Support 4 - mini-table CSV
 
 ```text
 id,date,temperature,humidite,statut

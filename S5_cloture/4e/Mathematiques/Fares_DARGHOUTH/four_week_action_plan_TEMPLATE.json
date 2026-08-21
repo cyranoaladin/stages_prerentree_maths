@@ -1,0 +1,63 @@
+{
+  "schema": "nexus-s5-four-week-plan-v1",
+  "generated_on": "2026-08-20",
+  "student_id": "fares-darghouth",
+  "level_key": "4e",
+  "subject": "Mathématiques",
+  "status": "awaiting_assessment",
+  "source_of_truth": "tools/analyze_s5.py — le plan ne se remplit qu'à partir des priorités calculées",
+  "design_rules": [
+    "deux ou trois compétences prioritaires par semaine, jamais plus",
+    "objectif mesurable, non « revoir ses cours »",
+    "durée compatible avec une rentrée scolaire",
+    "un critère explicite d'atteinte de l'objectif",
+    "un exercice de contrôle identifiable"
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "skills": [],
+      "objective": null,
+      "work_type": null,
+      "frequency": null,
+      "duration_minutes": null,
+      "success_criterion": null,
+      "control_exercise": null
+    },
+    {
+      "week": 2,
+      "skills": [],
+      "objective": null,
+      "work_type": null,
+      "frequency": null,
+      "duration_minutes": null,
+      "success_criterion": null,
+      "control_exercise": null
+    },
+    {
+      "week": 3,
+      "skills": [],
+      "objective": null,
+      "work_type": null,
+      "frequency": null,
+      "duration_minutes": null,
+      "success_criterion": null,
+      "control_exercise": null
+    },
+    {
+      "week": 4,
+      "skills": [],
+      "objective": null,
+      "work_type": null,
+      "frequency": null,
+      "duration_minutes": null,
+      "success_criterion": null,
+      "control_exercise": null
+    }
+  ],
+  "follow_up_recommendation": {
+    "proposed": null,
+    "justification": null,
+    "note": "à ne renseigner que si les données calculées le justifient"
+  }
+}

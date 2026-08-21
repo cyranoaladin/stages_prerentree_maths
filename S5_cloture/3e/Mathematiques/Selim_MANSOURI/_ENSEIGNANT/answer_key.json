@@ -1,0 +1,401 @@
+{
+  "schema": "nexus-s5-answer-key-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "selim-mansouri",
+  "total_points": 20,
+  "answers": [
+    {
+      "item_id": "3E_SELIM_MANSOURI_A1",
+      "ref": "A1",
+      "skill_id": "M3E_REL_01",
+      "skills": [
+        "M3E_REL_01"
+      ],
+      "points": 1,
+      "expected_answer": "$7$",
+      "steps": [
+        "$(-15)\\div 3=-5$",
+        "$(-2)\\times(-6)=12$",
+        "$-5+12=7$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A1_c1",
+          "points": 1,
+          "skill_id": "M3E_REL_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "résultat $7$ exact"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_A2",
+      "ref": "A2",
+      "skill_id": "M3E_FRAC_02",
+      "skills": [
+        "M3E_FRAC_02"
+      ],
+      "points": 1,
+      "expected_answer": "$\\dfrac{3}{2}$",
+      "steps": [
+        "$\\frac{4\\times 15}{5\\times 8}=\\frac{60}{40}$",
+        "simplification par $20$ : $\\frac{3}{2}$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A2_c1",
+          "points": 1,
+          "skill_id": "M3E_FRAC_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac{3}{2}$ ou $1{,}5$ exact"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_A3",
+      "ref": "A3",
+      "skill_id": "M3E_LIT_02",
+      "skills": [
+        "M3E_LIT_02"
+      ],
+      "points": 1,
+      "expected_answer": "$4x - 11$",
+      "steps": [
+        "$9x-5x=4x$",
+        "$-4-7=-11$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A3_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$4x-11$ exact"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_A4",
+      "ref": "A4",
+      "skill_id": "M3E_EQ_01",
+      "skills": [
+        "M3E_EQ_01"
+      ],
+      "points": 1,
+      "expected_answer": "$x = 6$",
+      "steps": [
+        "$4x-2x=9+3$",
+        "$2x=12$",
+        "$x=6$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A4_c1",
+          "points": 1,
+          "skill_id": "M3E_EQ_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "$x=6$ avec au moins une étape écrite"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_A5",
+      "ref": "A5",
+      "skill_id": "M3E_REL_01",
+      "skills": [
+        "M3E_REL_01"
+      ],
+      "points": 1,
+      "expected_answer": "$24$",
+      "steps": [
+        "$(-7)\\times(-4)=28$",
+        "$(-20)\\div 5=-4$",
+        "$28-4=24$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A5_c1",
+          "points": 1,
+          "skill_id": "M3E_REL_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$24$ exact"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_A6",
+      "ref": "A6",
+      "skill_id": "M3E_LIT_01",
+      "skills": [
+        "M3E_LIT_01"
+      ],
+      "points": 1,
+      "expected_answer": "$-15x + 10$",
+      "steps": [
+        "$-5\\times 3x = -15x$",
+        "$-5\\times(-2)=+10$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_A6_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$-15x+10$ exact"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_B1",
+      "ref": "B1",
+      "skill_id": "M3E_GEO_01",
+      "skills": [
+        "M3E_GEO_01"
+      ],
+      "points": 2,
+      "expected_answer": "$AC = 16$ cm ; $AC < BC$ car l'hypoténuse est le plus grand côté.",
+      "steps": [
+        "$BC^2 = AB^2 + AC^2$",
+        "$400 = 144 + AC^2$",
+        "$AC^2 = 256$ donc $AC = 16$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B1_c1",
+          "points": 1.5,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "relation correcte, théorème cité, $AC=16$ cm"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B1_c2",
+          "points": 0.5,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "contrôle de vraisemblance argumenté"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_B2",
+      "ref": "B2",
+      "skill_id": "M3E_TRIG_01",
+      "skills": [
+        "M3E_TRIG_01"
+      ],
+      "points": 2,
+      "expected_answer": "$AB$ : côté adjacent ; $BC$ : hypoténuse ; $\\cos\\widehat{B}=\\frac{5}{13}\\approx 0{,}3846$ donc $\\widehat{B}\\approx 67^\\circ$ ; il faudrait le sinus.",
+      "steps": [
+        "identification des côtés relativement à l'angle $\\widehat{B}$",
+        "$\\cos\\widehat{B}=\\frac{\\text{adjacent}}{\\text{hypoténuse}}=\\frac{5}{13}$",
+        "$\\widehat{B}=\\arccos(5/13)\\approx 67^\\circ$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B2_c1",
+          "points": 1,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "côtés correctement nommés et rapport correct"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B2_c2",
+          "points": 0.5,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "automatisme",
+          "subpart": "2",
+          "desc": "mesure de l'angle exacte au degré près"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B2_c3",
+          "points": 0.5,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "procedure",
+          "subpart": "3",
+          "desc": "sinus identifié à la question 3"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_B3",
+      "ref": "B3",
+      "skill_id": "M3E_PROP_01",
+      "skills": [
+        "M3E_PROP_01",
+        "M3E_STAT_01"
+      ],
+      "points": 2,
+      "expected_answer": "$140$ km/h ; moyenne pondérée $=\\frac{28+27}{5}=11$, comprise entre $9$ et $14$.",
+      "steps": [
+        "$1$ h $30$ min $=1{,}5$ h ; $210 \\div 1{,}5 = 140$",
+        "$14\\times 2 + 9\\times 3 = 55$ ; $55 \\div 5 = 11$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B3_c1",
+          "points": 1.0,
+          "skill_id": "M3E_PROP_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "vitesse exacte, conversion de 1 h 30 en 1,5 h visible"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B3_c2",
+          "points": 0.7,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "moyenne pondérée exacte, somme des coefficients correcte"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B3_c3",
+          "points": 0.3,
+          "skill_id": "M3E_STAT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "encadrement entre 9 et 14 écrit"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_B4",
+      "ref": "B4",
+      "skill_id": "M3E_PROP_01",
+      "skills": [
+        "M3E_PROP_01",
+        "M3E_GEO_01"
+      ],
+      "points": 2,
+      "expected_answer": "$3$ TND l'unité, donc $33$ TND ; $BC = 20$ cm.",
+      "steps": [
+        "$21 \\div 7 = 3$ puis $3\\times 11 = 33$",
+        "$BC^2 = 144 + 256 = 400$ donc $BC = 20$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B4_c1",
+          "points": 1.0,
+          "skill_id": "M3E_PROP_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "prix exact, prix unitaire explicité"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_B4_c2",
+          "points": 1.0,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "$BC = 20$ cm avec la relation écrite"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_C1",
+      "ref": "C1",
+      "skill_id": "M3E_GEO_01",
+      "skills": [
+        "M3E_GEO_01",
+        "M3E_TRIG_01",
+        "M3E_PROP_01",
+        "M3E_LIT_01"
+      ],
+      "points": 4,
+      "expected_answer": "$5$ m ; environ $16^\\circ$ ; pente $\\approx 29{,}2\\,\\% > 5\\,\\%$ : non conforme ; $C(5)=545$ TND, $120$ est la part fixe.",
+      "steps": [
+        "$4{,}8^2+1{,}4^2=23{,}04+1{,}96=25$ donc longueur $=5$ m",
+        "$\\cos\\alpha = \\frac{4{,}8}{5}=0{,}96$ donc $\\alpha\\approx 16^\\circ$",
+        "$1{,}4 \\div 4{,}8 \\approx 0{,}2917 = 29{,}2\\,\\%$, très supérieur à $5\\,\\%$",
+        "$C(5)=85\\times 5+120=425+120=545$ TND ; $120$ ne dépend pas de la longueur"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C1_c1",
+          "points": 1.0,
+          "skill_id": "M3E_GEO_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "longueur exacte, théorème cité"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C1_c2",
+          "points": 1.0,
+          "skill_id": "M3E_TRIG_01",
+          "evidence_type": "transfert",
+          "subpart": "2",
+          "desc": "angle exact au degré près, rapport correctement choisi"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C1_c3",
+          "points": 1.0,
+          "skill_id": "M3E_PROP_01",
+          "evidence_type": "transfert",
+          "subpart": "3",
+          "desc": "pente exprimée en pourcentage et conclusion explicite"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C1_c4",
+          "points": 1.0,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "transfert",
+          "subpart": "4",
+          "desc": "$C(5)$ exact et rôle du terme constant correctement expliqué"
+        }
+      ]
+    },
+    {
+      "item_id": "3E_SELIM_MANSOURI_C2",
+      "ref": "C2",
+      "skill_id": "M3E_LIT_01",
+      "skills": [
+        "M3E_LIT_01"
+      ],
+      "points": 2,
+      "expected_answer": "$x^2 + 7x + 10$ ; contrôle : $3\\times 6 = 18$ et $1 + 7 + 10 = 18$.",
+      "steps": [
+        "quatre produits : $x^2 + 5x + 2x + 10$",
+        "réduction : $x^2 + 7x + 10$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C2_c1",
+          "points": 1,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "développement complet et réduit"
+        },
+        {
+          "criterion_id": "3E_SELIM_MANSOURI_C2_c2",
+          "points": 1,
+          "skill_id": "M3E_LIT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "contrôle mené sur les deux écritures"
+        }
+      ]
+    }
+  ]
+}

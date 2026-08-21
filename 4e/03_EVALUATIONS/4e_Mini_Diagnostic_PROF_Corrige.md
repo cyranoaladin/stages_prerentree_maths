@@ -1,7 +1,7 @@
-# 4e_Mini_Diagnostic_PROF_Corrige
-## Mini-diagnostic complémentaire - Corrigé et exploitation
+# 4e — Diagnostic initial (Corrigé enseignant)
+## Corrigé et conseils d’exploitation
 
-# 13. Mini-diagnostic complémentaire — séance 1
+## 13. Mini-diagnostic complémentaire — séance 1
 
 Durée maximale : 12 minutes.
 

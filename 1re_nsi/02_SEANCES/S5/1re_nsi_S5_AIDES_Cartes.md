@@ -20,7 +20,7 @@ Donner une seule carte à la fois. L’élève inscrit la carte maximale utilis�
 <div class="cut-card"><h3>D - Tests</h3><p>Teste présent, absent, premier, dernier et vide.</p></div>
 <div class="cut-card"><h3>E - Expliquer</h3><p>Prépare une phrase sur la correction, la terminaison et le coût.</p></div></div>
 
-# Ticket des aides
+## Ticket des aides
 
 | Exercice | Aucune | A | B | C | D | E | Réussi ensuite |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

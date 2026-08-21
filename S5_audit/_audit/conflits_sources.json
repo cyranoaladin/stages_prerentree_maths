@@ -1,0 +1,157 @@
+{
+  "schema": "nexus-s5-conflits-v1",
+  "genere_le": "2026-08-20",
+  "nb_conflits": 10,
+  "conflits": [
+    {
+      "id": "CONF-01",
+      "objet": "Architecture temporelle de la séance 5",
+      "information_a": {
+        "contenu": "La fiche professeur de la séance 5 de chaque niveau prévoit 30 minutes d'évaluation finale (16 items) à l'intérieur des 120 minutes, suivies d'une auto-correction guidée.",
+        "source": "<niveau>/02_SEANCES/S5/<niveau>_S5_PROF_Fiche.md"
+      },
+      "information_b": {
+        "contenu": "Le cahier des charges de la présente mission impose 1 h 15 de travail pédagogique puis 45 minutes d'évaluation finale individuelle, dans deux documents séparés.",
+        "source": "Instruction de mission du 20 août 2026."
+      },
+      "decision": "Appliquer 75 min + 45 min dans S5_cloture. Les fiches S5 existantes ne sont pas modifiées.",
+      "justification": "Instruction la plus récente et la plus spécifique (hiérarchie des sources, §4 du cahier des charges). La séance de niveau reste utilisable telle quelle pour un groupe ; S5_cloture fournit la version individualisée et instrumentée.",
+      "impact": "Le déroulé minute par minute des dossiers enseignants de S5_cloture diffère de celui des fiches PROF de niveau."
+    },
+    {
+      "id": "CONF-02",
+      "objet": "Évaluation finale de niveau contre évaluation finale individualisée",
+      "information_a": {
+        "contenu": "Une évaluation finale commune existe déjà par niveau : 16 items identiques pour tous les élèves du niveau, sans barème sur 20 explicite dans la version élève.",
+        "source": "<niveau>/03_EVALUATIONS/<niveau>_Evaluation_Finale_ELEVE.md"
+      },
+      "information_b": {
+        "contenu": "Le cahier des charges impose un noyau commun d'environ 70 % et environ 30 % d'items individualisés, avec double lecture note sur 20 et maîtrise par compétence.",
+        "source": "Instruction de mission, §8, §9 et §12."
+      },
+      "decision": "Produire dans S5_cloture une évaluation distincte de 12 items (14 points communs, 6 points individualisés, total 20), sans toucher à l'évaluation finale de niveau.",
+      "justification": "Les deux instruments ont des fonctions différentes : l'un est sommatif et collectif, l'autre est un diagnostic de sortie exploitable élève par élève. Conserver les deux évite toute perte d'information.",
+      "impact": "Deux évaluations coexistent pour un même niveau. L'INDEX précise laquelle relève de la clôture S5."
+    },
+    {
+      "id": "CONF-03",
+      "objet": "Livrets S4/S5 personnalisés déjà produits pour trois élèves de Quatrième",
+      "information_a": {
+        "contenu": "Des livrets personnalisés S4 et S5 existent en PDF pour Ines Kefi, Sinda Chikhaoui et Fares Darghouth. Leur architecture intègre le bilan de fin de stage à l'intérieur du livret élève et n'applique pas le découpage 75/45.",
+        "source": "Bilans/4e_Ines_Kefi_LIVRETS_S4_S5_PERSONNALISES.pdf ; Bilans/4e_Sinda_Chikhaoui_LIVRETS_S4_S5_PERSONNALISES.pdf ; Nexus_4e_Fares_Darghouth_S4_S5_PDF/4e_S5_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      },
+      "information_b": {
+        "contenu": "Le cahier des charges exige un livret de travail sans corrigé et une évaluation dans un document séparé, afin que l'élève ne voie pas l'évaluation pendant la phase de consolidation.",
+        "source": "Instruction de mission, §16 et §17."
+      },
+      "decision": "Ne rien écraser. Produire la version conforme dans S5_cloture, et relever les énoncés déjà utilisés dans ces livrets afin de ne pas les reprendre.",
+      "justification": "Les documents existants sont des sources ; les écraser détruirait la traçabilité. Le contenu des trois livrets a été extrait et confronté aux items produits (§39 : pas de répétition exacte).",
+      "impact": "Ces trois élèves disposeront de deux versions de S5. L'INDEX et le QA_REPORT signalent laquelle est conforme au présent cahier des charges."
+    },
+    {
+      "id": "CONF-04",
+      "objet": "Périmètre : le registre content/students.json ne couvre pas la NSI",
+      "information_a": {
+        "contenu": "content/students.json recense 13 élèves, tous en mathématiques.",
+        "source": "content/students.json"
+      },
+      "information_b": {
+        "contenu": "Deux dossiers individuels complets existent pour le stage de Première NSI (Ahmad BELDI, Ahmed BENHADJ SALEM), avec diagnostic, remédiation et séances S1 à S5.",
+        "source": "1re_nsi/05_NOMINATIFS/"
+      },
+      "decision": "Le périmètre S5 retenu est de 15 couples élève × matière : les 13 élèves de mathématiques et les 2 élèves de NSI.",
+      "justification": "Hiérarchie des sources : le dossier individuel nominatif prime sur un registre général. Aucun élève n'est inventé ; les deux élèves de NSI sont attestés par leurs dossiers.",
+      "impact": "Ahmad BELDI apparaît deux fois, avec deux dossiers S5 distincts (mathématiques et NSI)."
+    },
+    {
+      "id": "CONF-05",
+      "objet": "Deux positionnements pour Ahmed BENHADJ SALEM",
+      "information_a": {
+        "contenu": "Positionnement de niveau Première NSI : 18 questions traitées sur 18, programmation à 55,6 %.",
+        "source": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Premiere_NSI.pdf"
+      },
+      "information_b": {
+        "contenu": "Positionnement de niveau Terminale NSI : six domaines solides sur sept, avec la même erreur d'accumulateur.",
+        "source": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/SOURCE_Bilan_Eleve_Ahmed_BENHADJ_SALEM_Terminale_NSI.pdf"
+      },
+      "decision": "Retenir le positionnement Première comme référence de comparaison initiale ; utiliser le positionnement Terminale uniquement comme confirmation de l'erreur d'accumulateur.",
+      "justification": "Le stage suivi est « Entrée en Première NSI ». Comparer un post-test de fin de stage à un positionnement de niveau Terminale n'aurait aucune validité.",
+      "impact": "Les deltas de maîtrise ne seront calculés que sur les items du positionnement Première."
+    },
+    {
+      "id": "CONF-06",
+      "objet": "Un bilan de Français existe pour Elyes Kefi, sans stage de Français dans le dépôt",
+      "information_a": {
+        "contenu": "Bilans/bilan-nexus-parents_elyes_kefi_francais.pdf est un compte rendu de positionnement en Français (cinq domaines, un à consolider, un à installer, trois à rectifier).",
+        "source": "Bilans/bilan-nexus-parents_elyes_kefi_francais.pdf"
+      },
+      "information_b": {
+        "contenu": "Le dossier nominatif de l'élève ne contient qu'un parcours de mathématiques ; aucun répertoire de stage de Français n'existe dans le dépôt.",
+        "source": "3e/04_NOMINATIFS/Elyes_Kefi/"
+      },
+      "decision": "Hors périmètre S5. Aucun dossier S5 de Français n'est produit ; l'élément est signalé pour validation humaine.",
+      "justification": "Il n'existe ni séances S1 à S4 ni objectifs de niveau en Français : produire une S5 reviendrait à fabriquer une trajectoire inexistante (§2 du cahier des charges).",
+      "impact": "À vérifier avec l'équipe : s'agit-il d'un stage de Français réellement suivi ? Le cas échéant, une mission distincte est nécessaire."
+    },
+    {
+      "id": "CONF-07",
+      "objet": "Dossier Sarra ESSANAA présent dans le répertoire",
+      "information_a": {
+        "contenu": "Quatre documents concernent Sarra ESSANAA : audit réglementaire, diagnostic 2 h, dossier Bac 2027 et note d'accompagnement.",
+        "source": "Nexus_Reussite_Dossier_Sarra_ESSANAA_2027_AUDITE/"
+      },
+      "information_b": {
+        "contenu": "Ces documents relèvent de la « Cellule Candidat Libre » et portent sur une inscription au baccalauréat 2027 ; ils ne comportent ni diagnostic de pré-rentrée au format du stage, ni séances S1 à S4.",
+        "source": "Nexus_Reussite_Dossier_Sarra_ESSANAA_2027_AUDITE/Audit_Nexus_Reussite_Sarra_ESSANAA_2027.pdf"
+      },
+      "decision": "Hors périmètre. Aucune séance S5 n'est produite pour cette personne.",
+      "justification": "Il ne s'agit pas d'un stage de pré-rentrée à cinq séances. Produire une S5 supposerait de fabriquer un diagnostic et une trajectoire inexistants.",
+      "impact": "Aucun. Consigné pour mémoire."
+    },
+    {
+      "id": "CONF-08",
+      "objet": "Absence de dossiers personnalisés S2 à S5 en Première spécialité",
+      "information_a": {
+        "contenu": "Les niveaux 4e, 3e, 2nde et 1re NSI disposent de dossiers élèves personnalisés pour S2, S3 et S4.",
+        "source": "Nexus_*_S2_*/, Nexus_*_S3_*/, Bilans/"
+      },
+      "information_b": {
+        "contenu": "Aucun document personnalisé S2 à S5 n'existe pour Ahmad Beldi, Donia Khadhrani et Malek Khadhrani en Première spécialité.",
+        "source": "1ere_spe/04_NOMINATIFS/"
+      },
+      "decision": "Reconstruire la trajectoire de ces trois élèves à partir des séances de niveau et du plan de remédiation individuel uniquement, et le signaler explicitement dans chaque dossier enseignant.",
+      "justification": "Ne pas supposer l'existence d'un document absent (§2). La personnalisation de la S5 repose donc sur le diagnostic initial et la remédiation, sans preuve intermédiaire.",
+      "impact": "Pour ces trois élèves, la reconstruction de trajectoire est moins étayée que pour les douze autres."
+    },
+    {
+      "id": "CONF-09",
+      "objet": "Absence de preuve documentée entre le diagnostic initial et la séance 5",
+      "information_a": {
+        "contenu": "Les dossiers individuels prévoient un tableau d'observation par séance (procédure choisie, exactitude, justification, contrôle, certitude) et une case « preuve recueillie ».",
+        "source": "<niveau>/04_NOMINATIFS/<élève>/<niveau>_Dossier_Individuel_<élève>.md"
+      },
+      "information_b": {
+        "contenu": "Ces tableaux sont vierges dans tous les dossiers consultés : aucune observation de séance n'a été saisie.",
+        "source": "Inspection des 15 dossiers individuels, 20 août 2026."
+      },
+      "decision": "Le statut de chaque compétence avant la S5 est fondé sur le seul diagnostic initial, avec la mention explicite « preuve postérieure non documentée ».",
+      "justification": "§28 du cahier des charges : ne jamais confondre travaillé et acquis, ni affirmer une progression non attestée.",
+      "impact": "Aucun delta ne peut être calculé avant la passation de l'évaluation finale. Les dossiers enseignants portent cette mention."
+    },
+    {
+      "id": "CONF-10",
+      "objet": "Casse des noms d'élèves",
+      "information_a": {
+        "contenu": "content/students.json écrit « Ines KEFI », « Elyes KEFI », mais « Ahmad Beldi », « Sinda Chikhaoui ».",
+        "source": "content/students.json"
+      },
+      "information_b": {
+        "contenu": "Les dossiers individuels les plus récents emploient la forme « Ines KEFI » et « Elyes KEFI » ; les autres dossiers emploient la casse ordinaire.",
+        "source": "<niveau>/04_NOMINATIFS/"
+      },
+      "decision": "Uniformiser dans S5_cloture : prénom en casse ordinaire, nom de famille en capitales, pour les quinze dossiers.",
+      "justification": "Homogénéité de forme exigée au §41. Les identifiants stables restent ceux de content/students.json lorsqu'ils existent.",
+      "impact": "Les noms de répertoires de S5_cloture diffèrent de ceux des répertoires historiques ; la correspondance est donnée dans l'inventaire."
+    }
+  ]
+}

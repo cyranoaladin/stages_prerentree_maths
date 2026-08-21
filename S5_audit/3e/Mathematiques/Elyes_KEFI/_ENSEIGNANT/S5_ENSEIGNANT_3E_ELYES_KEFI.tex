@@ -1,0 +1,392 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Dossier enseignant — confidentiel}{S5 — Elyes KEFI — usage enseignant}
+\begin{document}
+\nexuscover{SÉANCE 5 --- DOSSIER ENSEIGNANT}{Profil, déroulé, corrigés et barème}{Elyes KEFI}{Entrée en Troisième}{Mathématiques --- Consolidation ciblée et calibration}
+\begin{methodbox}\small\textbf{Programme de référence.} programme de cycle 4 en vigueur pour la classe de Troisième en 2026-2027. Transition visée : acquis de Quatrième 2025-2026 vers la Troisième 2026-2027. \textbf{Attention :} le nouveau programme de cycle 4 publié en 2026 s'applique progressivement : Cinquième en 2026-2027, Quatrième en 2027-2028, Troisième en 2028-2029. Les élèves entrant en Troisième à la rentrée 2026 ne relèvent donc PAS de la nouvelle progression.\end{methodbox}
+\begin{keybox}\textbf{DOCUMENT CONFIDENTIEL --- USAGE ENSEIGNANT.} Contient les corrigés, le barème et des données nominatives. Ne pas remettre à l'élève ni le laisser visible pendant la séance.\end{keybox}
+\sectiontitle{1. Profil synthétique}
+\begin{methodbox}
+\textbf{Diagnostic initial.} 18 questions traitées sur 18. Six domaines solides et trois domaines à rectifier en priorité. Calibration réussite-confiance : \textbf{82 \%}.
+\par Date du bilan : 16 août 2026.
+\end{methodbox}
+\subsectiontitle{Points d'appui documentés}
+\begin{itemize}\item Nombres relatifs\item Puissances\item Équations\item Proportionnalité\item Géométrie\item Trigonométrie\end{itemize}
+\subsectiontitle{Difficultés documentées}
+\begin{itemize}\item Fractions : multiplication des numérateurs et des dénominateurs dans le bon ordre.\item Calcul littéral : addition des constantes signées lors d'une réduction.\item Statistiques : prise en compte de toutes les valeurs avant la division.\end{itemize}
+\subsectiontitle{Lecture détaillée du diagnostic}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{32mm} p{28mm} X}
+\rowcolor{Navy}\color{white}Domaine & \color{white}Statut initial & \color{white}Observation issue du bilan \\
+Nombres relatifs & Solide & Produits, quotients et priorités correctement maîtrisés. \\
+Fractions & À rectifier & Pour 2/3 $\times$ 9/4, croisement inversé donnant 8/27 au lieu de 3/2. \\
+Puissances & Solide & Calcul et produit de puissances de même base réussis. \\
+Calcul littéral & À rectifier & Distributivité correcte ; réduction erronée : $-$7 + 3 traité comme $-$10. \\
+Équations & Solide & Deux équations du premier degré correctement résolues. \\
+Proportionnalité & Solide & Prix unitaire et vitesse correctement mobilisés. \\
+Géométrie & Solide & Pythagore utilisé correctement dans les deux configurations. \\
+Trigonométrie & Solide & Cosinus et calcul d'angle correctement maîtrisés. \\
+Statistiques & À rectifier & Une valeur oubliée dans la somme lors du calcul de la moyenne simple. \\
+\end{tabularx}
+\begin{warningbox}\textbf{Limite de la reconstruction.} Les tableaux d'observation séance par séance du dossier individuel sont vierges : il n'existe aucune preuve documentée entre le diagnostic initial et aujourd'hui. Tout statut porté ci-dessous décrit un \emph{état de départ}, jamais une acquisition constatée.\end{warningbox}
+\newpage\sectiontitle{2. Matrice de trajectoire --- état avant la séance 5}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{27mm} X >{\scriptsize}p{16mm} >{\scriptsize}p{20mm} >{\scriptsize\centering\arraybackslash}p{9mm}}
+\rowcolor{Navy}\color{white}\scriptsize skill\_id & \color{white}Compétence & \color{white}Travaillée en & \color{white}Statut avant S5 & \color{white}Prio. \\
+M3E\_EQ\_01 & Équation du premier degré, inconnue dans les deux membres & S2 & acquis & OK \\
+M3E\_GEO\_01 & Théorème de Pythagore : calcul d'une longueur & S3 & acquis & OK \\
+M3E\_LIT\_01 & Distributivité : développer k(ax+b) & S2 & acquis & OK \\
+M3E\_PROP\_01 & Proportionnalité : quatrième proportionnelle et vitesse & S2, S5 & acquis & OK \\
+M3E\_PUIS\_01 & Puissances : calcul et produit de puissances de même base & S1 & acquis & OK \\
+M3E\_REL\_01 & Produit, quotient et priorités avec des nombres relatifs & S1 & acquis & OK \\
+M3E\_TRIG\_01 & Choix et emploi d'un rapport trigonométrique (cosinus, sinus) & S4 & acquis & OK \\
+M3E\_FRAC\_02 & $\bullet$ Produit et quotient de fractions, simplification & S1 & fragile & P1 \\
+M3E\_LIT\_02 & $\bullet$ Réduction d'une expression avec constantes signées & S2 & fragile & P1 \\
+M3E\_FRAC\_01 & Somme et différence de fractions & S1 & non évalué & P2 \\
+M3E\_STAT\_01 & Moyenne simple et moyenne pondérée & S5 & fragile & P2 \\
+\end{tabularx}
+\par\vspace{1mm}\small\textbf{Lecture de la colonne « Statut avant S5 » :} elle décrit l'état constaté au \emph{positionnement initial}, jamais une acquisition constatée depuis. « acquis » signifie « acquis au positionnement initial » ; « en voie » signifie « en voie d'acquisition ».
+\par\small$\bullet$ compétence ciblée par les phases 2 et 3 de la séance. La colonne « Prio. » est \emph{provisoire} : la priorité définitive est produite par \code{tools/analyze_s5.py} après la correction.
+\begin{warningbox}\textbf{Effet de récence.} Les compétences suivantes sont retravaillées pendant cette séance, puis évaluées moins d'une heure plus tard : \code{M3E_FRAC_02}, \code{M3E_LIT_02}, \code{M3E_STAT_01}. Une réussite y mesure une \emph{performance immédiate}, pas une consolidation durable. Le plan de rentrée prévoit pour elles un contrôle différé en semaine 1 ou 2 ; aucun bilan ne doit écrire « acquis durablement » sur cette seule preuve.\end{warningbox}
+\sectiontitle{3. Pourquoi ces activités, pour cet élève}
+\begin{goalbox}\textbf{Objectif de la séance :} Séparer définitivement la procédure du produit de fractions de celle de la somme, et faire porter le signe sur la constante lors d'une réduction.\end{goalbox}
+\subsectiontitle{Axe prioritaire (phase 2, 25 min) --- Produit et quotient de fractions}
+Erreur documentée : croisement des termes lors d'un produit. La procédure du produit est confondue avec celle de la somme.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M3E_FRAC_02}.
+\subsectiontitle{Second axe (phase 3, 20 min) --- Réduire une expression avec des constantes signées}
+Erreur documentée sur l'addition des constantes signées lors d'une réduction ; prérequis direct de la factorisation et des identités remarquables de Troisième.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M3E_LIT_02}.
+\subsectiontitle{Équilibre commun / individuel}
+Sur les 75 minutes : \textbf{51 min} (68\,\%) relèvent des objectifs communs du niveau et \textbf{24 min} (32\,\%) ciblent le profil individuel. Sur l'évaluation : \textbf{14 points} de noyau commun (70.0\,\%) et \textbf{6 points} individualisés (30.0\,\%).
+\newpage\sectiontitle{4. Déroulé minute par minute}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{18mm} p{34mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Phase & \color{white}Conduite & \color{white}Indicateur observable \\
+0--10 min & Réactiver les cinq domaines du stage et repérer immédiatemen & Individuel, sans carte de rappel pendant 7 minutes, puis 3 minutes de mise en commun. & Au moins 4 réponses exactes sur 5 ; la certitude est renseignée avant toute vérification. \\
+10--35 min & Produit et quotient de fractions & Rappel bref, exemple guidé au tableau, puis exercices en autonomie. Aide donnée seulement après une tentative écrite. & Trois réussites consécutives sans aide sur la compétence visée. \\
+35--55 min & Réduire une expression avec des constantes signées & Pas d'exemple guidé : l'élève démarre seul. Intervention uniquement sur demande. & Deux réussites autonomes ; le contrôle est écrit sans qu'on le demande. \\
+55--70 min & De la Quatrième à la Troisième : le double produit et l'entr & Travail écrit, correction collective courte à la fin. Ne pas transformer ce temps en cours magistral. & L'élève relie explicitement un acquis de l'année écoulée à un attendu de l'année à venir. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le conte & Lecture des cinq règles, puis remise de l'évaluation. Aucune information sur son contenu. & Les deux engagements sont écrits. \\
+75--120 min & Évaluation finale & Individuel, sans document. Partie A environ 10 min, B environ 20 min, C environ 15 min. & Somme des durées cibles : 37 min, marge de 7 min. \\
+\end{tabularx}
+\newpage\sectiontitle{5. Corrigé du livret de travail}
+\subsectiontitle{Phase 1 --- réactivation}
+\begin{enumerate}
+\item \code{M3E_REL_01} --- $24 + (-15) = \mathbf{9}$. Contrôle : deux facteurs de même signe donnent un produit positif.
+\item \code{M3E_FRAC_02} --- $\frac{3\times 8}{4\times 9}=\frac{24}{36}=\mathbf{\frac{2}{3}}$ (ou simplification avant le produit).
+\item \code{M3E_LIT_02} --- $8x-6$. Contrôle : $5-8+3+2=2$ et $8\times 1-6=2$.
+\item \code{M3E_GEO_01} --- Pythagore : $BC^2=9^2+12^2=81+144=225$, donc $BC=\mathbf{15}$ cm.
+\item \code{M3E_STAT_01} --- $\frac{40}{4}=\mathbf{10}$ ; $7 < 10 < 13$ : contrôle concluant.
+\end{enumerate}
+\subsectiontitle{Phase 2 --- Produit et quotient de fractions}
+\begin{enumerate}
+\item $\frac{70}{105}=\mathbf{\frac{2}{3}}$.
+\item $\frac{75}{90}=\mathbf{\frac{5}{6}}$.
+\item $\frac{8}{15}\times\frac{5}{4}=\frac{40}{60}=\mathbf{\frac{2}{3}}$.
+\item $\frac{9}{16}\times\frac{8}{3}=\frac{72}{48}=\mathbf{\frac{3}{2}}$.
+\item $\frac{12}{15}=\frac45$ ; $\frac{10}{15}+\frac{18}{15}=\frac{28}{15}$. Le produit n'exige aucun dénominateur commun, la somme si.
+\item Il a croisé les termes. Résultat exact : $\frac{18}{12}=\mathbf{\frac{3}{2}}$. Contrôle : $\frac23$ est inférieur à $1$ et $\frac94$ supérieur à $2$, donc le produit vaut environ $1{,}5$ — certainement pas $0{,}3$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- termes croisés lors du produit
+\item \textsc{METHODE} --- réduction au même dénominateur appliquée à un produit
+\item \textsc{CALCUL} --- simplification incomplète
+\end{itemize}
+\subsectiontitle{Phase 3 --- Réduire une expression avec des constantes signées}
+\begin{enumerate}
+\item $\mathbf{11x-11}$.
+\item $\mathbf{3x+9}$.
+\item $8x-12-3x+8=\mathbf{5x-4}$.
+\item $-2x+12+5x-9=\mathbf{3x+3}$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- signe de la constante négligé
+\item \textsc{CONCEPT} --- termes en $x$ et constantes regroupés ensemble
+\item \textsc{CONTROLE} --- aucune substitution de vérification
+\end{itemize}
+\subsectiontitle{Phase 4 --- pont vers Troisième}
+
+\textbf{A.} 1. $(x+3)(x+2)$. \quad 2. $x^2 + 2x + 3x + 6 = x^2 + 5x + 6$.
+3. $x=4$ : $(4+3)(4+2)=7\times 6=42$ et $16+20+6=42$. \quad 4. $(x+5)(x+1)=x^2+x+5x+5=x^2+6x+5$.
+
+\textbf{B.} 1. $f(x)=2x-3$. \quad 2. $f(5)=7$ : $7$ est l'\textbf{image} de $5$ ; $f(-2)=-7$.
+3. $2x-3=9$ donc $2x=12$ et $x=6$ : $6$ est un \textbf{antécédent} de $9$.
+4. Tableau : $-7$ ; $-3$ ; $-1$ ; $3$ ; $7$.
+
+\textbf{Observation à noter :} confondre image et antécédent est une erreur de \textsc{CONCEPT} ;
+chercher l'antécédent par essais successifs sans écrire l'équation est une erreur de \textsc{METHODE}.
+
+\newpage\sectiontitle{6. Corrigé de l'évaluation et barème analytique}
+\begin{keybox}\textbf{Total : 20 points sur 20.} Noyau commun 14 pts (70.0\,\%), items individualisés 6 pts (30.0\,\%). Somme des durées cibles : 37 minutes.\end{keybox}
+\itemhead{A1 --- \code{M3E_REL_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $7$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $(-15)\div 3=-5$\item $(-2)\times(-6)=12$\item $-5+12=7$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_REL\_01 & automatisme & résultat $7$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & règle des signes non appliquée sur le produit ($-12$) \\
+METHODE & opérations effectuées de gauche à droite sans priorité \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} socle de tout calcul algébrique de Troisième
+\par\vspace{2mm}
+\itemhead{A2 --- \code{M3E_FRAC_02} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\dfrac{3}{2}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $\frac{4\times 15}{5\times 8}=\frac{60}{40}$\item simplification par $20$ : $\frac{3}{2}$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_FRAC\_02 & automatisme & $\frac{3}{2}$ ou $1{,}5$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & produit en croix : $\frac{4\times 8}{5\times 15}$ \\
+METHODE & réduction au même dénominateur avant un produit \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} calcul fractionnaire exigé en permanence en Troisième
+\par\vspace{2mm}
+\itemhead{A3 --- \code{M3E_LIT_02} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $4x - 11$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $9x-5x=4x$\item $-4-7=-11$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_LIT\_02 & automatisme & $4x-11$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $-4-7$ traité comme $-3$ ou $+11$ \\
+CONCEPT & $4x$ et $-11$ regroupés \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis de la factorisation et des identités remarquables
+\par\vspace{2mm}
+\itemhead{A4 --- \code{M3E_EQ_01} --- noyau commun}{1}{1.5}
+\begin{graybox}\small\textbf{Réponse attendue :} $x = 6$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $4x-2x=9+3$\item $2x=12$\item $x=6$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_EQ\_01 & procedure & $x=6$ avec au moins une étape écrite \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & signe non changé lors du passage d'un membre à l'autre \\
+CALCUL & $2x=12$ mal résolu alors que le regroupement est correct \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis des équations produit et des systèmes
+\par\vspace{2mm}
+\itemhead{A5 --- \code{M3E_FRAC_02} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\dfrac{1}{6}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $\frac{21}{126}$\item simplification par $21$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_FRAC\_02 & automatisme & $\frac16$ ou une écriture équivalente exacte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & termes croisés \\
+CALCUL & simplification incomplète \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} calcul fractionnaire exigé en permanence en Troisième
+\par\vspace{2mm}
+\itemhead{A6 --- \code{M3E_LIT_02} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $11x - 5$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $8x+3x=11x$\item $-9+4=-5$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_LIT\_02 & automatisme & $11x-5$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $-9+4$ traité comme $-13$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis de la factorisation en Troisième
+\par\vspace{2mm}
+\itemhead{B1 --- \code{M3E_GEO_01} --- noyau commun}{2}{4}
+\begin{graybox}\small\textbf{Réponse attendue :} $AC = 16$ cm ; $AC < BC$ car l'hypoténuse est le plus grand côté.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $BC^2 = AB^2 + AC^2$\item $400 = 144 + AC^2$\item $AC^2 = 256$ donc $AC = 16$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1.5 & M3E\_GEO\_01 & justification & relation correcte, théorème cité, $AC=16$ cm \\
+c2 & 0.5 & M3E\_GEO\_01 & controle & contrôle de vraisemblance argumenté \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $20^2 + 12^2$ additionnés : l'hypoténuse n'est pas identifiée \\
+JUSTIFICATION & théorème non cité \\
+CALCUL & racine carrée de 256 erronée \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} base de Thalès, de la trigonométrie et du repérage en Troisième
+\par\vspace{2mm}
+\itemhead{B2 --- \code{M3E_TRIG_01} --- noyau commun}{2}{5.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $AB$ : côté adjacent ; $BC$ : hypoténuse ; $\cos\widehat{B}=\frac{5}{13}\approx 0{,}3846$ donc $\widehat{B}\approx 67^\circ$ ; il faudrait le sinus.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item identification des côtés relativement à l'angle $\widehat{B}$\item $\cos\widehat{B}=\frac{\text{adjacent}}{\text{hypoténuse}}=\frac{5}{13}$\item $\widehat{B}=\arccos(5/13)\approx 67^\circ$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_TRIG\_01 & procedure & côtés correctement nommés et rapport correct \\
+c2 & 0.5 & M3E\_TRIG\_01 & automatisme & mesure de l'angle exacte au degré près \\
+c3 & 0.5 & M3E\_TRIG\_01 & procedure & sinus identifié à la question 3 \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & cosinus et sinus échangés \\
+LECTURE & côté adjacent identifié par rapport au mauvais angle \\
+CALCUL & arrondi ou emploi de la calculatrice en radians \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} trigonométrie réinvestie dès les premiers chapitres de Troisième
+\par\vspace{2mm}
+\itemhead{B3 --- \code{M3E_PROP_01} --- noyau commun}{2}{4}
+\begin{graybox}\small\textbf{Réponse attendue :} $140$ km/h ; moyenne pondérée $=\frac{28+27}{5}=11$, comprise entre $9$ et $14$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $1$ h $30$ min $=1{,}5$ h ; $210 \div 1{,}5 = 140$\item $14\times 2 + 9\times 3 = 55$ ; $55 \div 5 = 11$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_PROP\_01 & procedure & vitesse exacte, conversion de 1 h 30 en 1,5 h visible \\
+c2 & 0.7 & M3E\_STAT\_01 & procedure & moyenne pondérée exacte, somme des coefficients correcte \\
+c3 & 0.3 & M3E\_STAT\_01 & controle & encadrement entre 9 et 14 écrit \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $1$ h $30$ converti en $1{,}30$ h \\
+METHODE & moyenne pondérée calculée comme une moyenne simple ($11{,}5$) \\
+LECTURE & division par 2 au lieu de la somme des coefficients \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} grandeurs quotients et statistiques, réinvesties toute l'année
+\par\vspace{2mm}
+\itemhead{B4 --- \code{M3E_STAT_01} --- item individualisé}{2}{4.25}
+\begin{graybox}\small\textbf{Réponse attendue :} Somme $=50$, effectif $=5$, moyenne $=10$. Contrôle détecteur : recompter l'effectif ($5$ valeurs et non $4$) ou recalculer la somme ($50$ et non $45$) en la confrontant à la liste de l'énoncé. L'encadrement ne détecte rien ici, car $11{,}25$ appartient bien à l'intervalle $[5\,;15]$ : c'est un contrôle de vraisemblance, pas un détecteur d'omission.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $5+12+8+15+10=50$\item $50\div 5=10$\item contrôle détecteur : recomptage de l'effectif, ou recalcul de la somme confronté à la liste source\item $5 \leqslant 11{,}25 \leqslant 15$ : l'encadrement est vérifié malgré l'erreur, il ne peut donc pas la révéler\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_STAT\_01 & procedure & moyenne exacte, somme et effectif visibles \\
+c2 & 0.5 & M3E\_STAT\_01 & controle & contrôle proposé effectivement capable de détecter l'oubli : recomptage de l'effectif, recalcul de la somme ou confrontation à la liste source \\
+c3 & 0.5 & M3E\_STAT\_01 & controle & explication correcte de la non-détection par l'encadrement \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+LECTURE & une valeur oubliée dans la somme \\
+METHODE & division par un effectif erroné \\
+CONTROLE & l'encadrement est proposé comme détecteur alors qu'il est vérifié par la valeur erronée \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} moyenne, médiane et étendue : premier chapitre statistique de Troisième
+\par\vspace{2mm}
+\itemhead{C1 --- \code{M3E_GEO_01} --- noyau commun}{4}{9}
+\begin{graybox}\small\textbf{Réponse attendue :} $5$ m ; environ $16^\circ$ ; pente $\approx 29{,}2\,\% > 5\,\%$ : non conforme ; $C(5)=545$ TND, $120$ est la part fixe.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $4{,}8^2+1{,}4^2=23{,}04+1{,}96=25$ donc longueur $=5$ m\item $\cos\alpha = \frac{4{,}8}{5}=0{,}96$ donc $\alpha\approx 16^\circ$\item $1{,}4 \div 4{,}8 \approx 0{,}2917 = 29{,}2\,\%$, très supérieur à $5\,\%$\item $C(5)=85\times 5+120=425+120=545$ TND ; $120$ ne dépend pas de la longueur\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_GEO\_01 & transfert & longueur exacte, théorème cité \\
+c2 & 1 & M3E\_TRIG\_01 & transfert & angle exact au degré près, rapport correctement choisi \\
+c3 & 1 & M3E\_PROP\_01 & transfert & pente exprimée en pourcentage et conclusion explicite \\
+c4 & 1 & M3E\_LIT\_01 & transfert & $C(5)$ exact et rôle du terme constant correctement expliqué \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+TRANSFERT & la pente est confondue avec l'angle en degrés \\
+CONCEPT & cosinus appliqué avec l'hypoténuse au numérateur \\
+JUSTIFICATION & conclusion sur la conformité absente ou non chiffrée \\
+CONCEPT & $120$ interprété comme un coût par mètre \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} tâche complexe type brevet : plusieurs domaines, une décision à justifier
+\par\vspace{2mm}
+\itemhead{C2 --- \code{M3E_LIT_01} --- item individualisé}{2}{4.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $x^2 + 7x + 12$ ; contrôle : $6\times 5 = 30$ et $4 + 14 + 12 = 30$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item quatre produits : $x^2 + 3x + 4x + 12$\item réduction : $x^2+7x+12$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M3E\_LIT\_01 & procedure & développement complet et réduit \\
+c2 & 1 & M3E\_LIT\_01 & controle & contrôle mené sur les deux écritures \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & deux produits seulement : $x^2+12$ \\
+CONTROLE & contrôle effectué sur une seule écriture \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} double distributivité introduite en phase 4 de cette séance ; premier attendu algébrique de Troisième
+\par\vspace{2mm}
+\newpage\sectiontitle{7. Correspondance diagnostic initial $\leftrightarrow$ évaluation finale}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{25mm} >{\ttfamily\scriptsize}p{22mm} >{\ttfamily\scriptsize}p{16mm} X}
+\rowcolor{Navy}\color{white}Item & \color{white}\scriptsize skill\_id & \color{white}\scriptsize baseline & \color{white}\scriptsize comparaison & \color{white}Lecture \\
+A1 & M3E\_REL\_01 & 3E\_TI\_Q02 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A2 & M3E\_FRAC\_02 & 3E\_TI\_Q04 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A3 & M3E\_LIT\_02 & 3E\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A4 & M3E\_EQ\_01 & 3E\_TI\_Q10 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A5 & M3E\_FRAC\_02 & 3E\_TI\_Q04 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A6 & M3E\_LIT\_02 & 3E\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B1 & M3E\_GEO\_01 & 3E\_TI\_Q14 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B2 & M3E\_TRIG\_01 & 3E\_TI\_Q16 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B3 & M3E\_PROP\_01 & 3E\_TI\_Q18 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B4 & M3E\_STAT\_01 & 3E\_TI\_Q17 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C1 & M3E\_GEO\_01 & 3E\_TI\_Q13+3E\_TI\_Q15... & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C2 & M3E\_LIT\_01 & 3E\_TI\_Q07... & not\_comparable & non comparable : contenu introduit pendant la séance 5 elle-même \\
+\end{tabularx}
+\begin{keybox}\textbf{Aucun écart chiffré ne sera calculé.} Les réponses de l'élève aux 18 questions du positionnement initial n'ont pas été conservées : le dossier n'en garde qu'un statut par domaine. Un statut qualitatif n'est pas une mesure : le convertir en score pour en soustraire un autre produirait un chiffre sans valeur. Le script d'analyse impose donc \code{mastery_delta = null} pour toutes les compétences, et se limite à une confrontation \emph{indicative} entre le statut initial et l'état final.\end{keybox}
+\sectiontitle{8. Clés d'interprétation après correction}
+\subsectiontitle{Échelle de maîtrise par compétence}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{10mm} X}
+\toprule Niveau & Signification \\ \midrule
+0 & non maîtrisé \\
+1 & très fragile \\
+2 & partiellement maîtrisé \\
+3 & maîtrisé \\
+4 & maîtrise solide / transfert réussi \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Croiser réussite et certitude}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{40mm} X}
+\toprule Situation & Conduite à tenir \\ \midrule
+Juste, certitude 3--4 & acquis disponible : faire transférer sur une situation nouvelle. \\
+Juste, certitude 1--2 & presque acquis : faire expliciter la procédure, puis réutiliser. \\
+Faux, certitude 1--2 & notion à installer ou procédure à reprendre pas à pas. \\
+Faux, certitude 3--4 & priorité absolue : confronter la conviction avant toute reprise technique. \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Distinguer les niveaux d'erreur}
+Une erreur de \textsc{CALCUL} isolée, non reproduite sur les items voisins de même compétence, ne vaut pas non-maîtrise conceptuelle. La chaîne à reconstituer est : \textbf{connaissance} $\rightarrow$ \textbf{choix de méthode} $\rightarrow$ \textbf{exécution} $\rightarrow$ \textbf{justification} $\rightarrow$ \textbf{contrôle}. Les codes d'erreur du barème situent l'écart sur cette chaîne.
+\sectiontitle{9. Points d'observation propres à cet élève}
+\begin{itemize}\item Le dossier signale une rapidité d'exécution : exiger le contrôle structurel avant la réponse (facteurs pour les fractions, signes pour les constantes, inventaire des valeurs pour les statistiques).\item Calibration de départ documentée à 82 \% : surveiller toute erreur donnée avec certitude 4.\item Vérifier que l'effectif est recompté avant toute division dans un calcul de moyenne.\end{itemize}
+\subsectiontitle{Grille de saisie de la séance}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{26mm} X X X}
+\toprule Phase & Aide maximale utilisée & Réussite autonome & Observation \\ \midrule
+Phase 1 & & & \\[6mm]
+Phase 2 & & & \\[6mm]
+Phase 3 & & & \\[6mm]
+Phase 4 & & & \\[6mm]
+\bottomrule\end{tabularx}
+\begin{warningbox}\textbf{Avant d'écrire quoi que ce soit sur les acquis de cet élève :} tant que l'évaluation n'est pas corrigée et analysée par \code{tools/analyze_s5.py}, aucune formulation du type « maîtrise désormais », « forte progression » ou « objectif atteint » ne doit être employée. Les formulations admises sont : « à vérifier lors de l'évaluation finale », « observé en séance, à confirmer », « hypothèse de consolidation ».\end{warningbox}
+\end{document}

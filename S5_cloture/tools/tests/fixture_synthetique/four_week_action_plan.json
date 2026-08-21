@@ -1,0 +1,199 @@
+{
+  "schema": "nexus-s5-four-week-plan-v2",
+  "delayed_retention_check": {
+    "semaine": 2,
+    "objet": "vérifier que les réussites obtenues immédiatement après remédiation se sont maintenues à distance",
+    "skills": [
+      "M4E_FRAC_02",
+      "M4E_REL_02",
+      "M4E_STAT_01"
+    ],
+    "format": "mini-test de 10 minutes, deux items par compétence, items parallèles à ceux de l'évaluation finale",
+    "critere": "réussite maintenue sans aide sur au moins un item par compétence",
+    "obligatoire": true
+  },
+  "progression_chiffree_possible": false,
+  "student_id": "eleve-synthetique-test",
+  "level_key": "4e",
+  "subject": "Mathématiques",
+  "status": "generated_from_analysis",
+  "source": "post_stage_analysis.json",
+  "note_sur_20": 12.0,
+  "weeks": [
+    {
+      "week": 1,
+      "skills": [
+        "M4E_GEO_01",
+        "M4E_LIT_02"
+      ],
+      "labels": [
+        "Somme des angles d'un triangle, triangle rectangle",
+        "Réduction d'une expression avec constantes signées"
+      ],
+      "objective": "atteindre le niveau de maîtrise 3 sur : Somme des angles d'un triangle, triangle rectangle ; Réduction d'une expression avec constantes signées",
+      "work_type": "reprise guidée puis exercices gradués",
+      "frequency": "3 séances de travail",
+      "duration_minutes": 15,
+      "success_criterion": "trois réussites consécutives sans aide, chacune assortie du contrôle écrit",
+      "control_exercise": {
+        "type": "item parallèle",
+        "reference_items": [
+          "A3",
+          "A4",
+          "B2"
+        ],
+        "baseline_reference": [
+          "4E_TI_Q08",
+          "4E_TI_Q09",
+          "4E_TI_Q10"
+        ]
+      },
+      "derived_from": [
+        {
+          "skill_id": "M4E_GEO_01",
+          "priority_rank": "P1",
+          "post_mastery": 0,
+          "success_rate": 0.0,
+          "dominant_error_codes": [
+            "METHODE"
+          ]
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "priority_rank": "P1",
+          "post_mastery": 1,
+          "success_rate": 0.4,
+          "dominant_error_codes": [
+            "CONCEPT"
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "skills": [
+        "M4E_STAT_01",
+        "M4E_LIT_01"
+      ],
+      "labels": [
+        "Moyenne d'une série et contrôle de vraisemblance",
+        "Distributivité simple : développer k(a+b)"
+      ],
+      "objective": "atteindre le niveau de maîtrise 3 sur : Moyenne d'une série et contrôle de vraisemblance ; Distributivité simple : développer k(a+b)",
+      "work_type": "reprise guidée puis exercices gradués",
+      "frequency": "3 séances de travail",
+      "duration_minutes": 15,
+      "success_criterion": "trois réussites consécutives sans aide, chacune assortie du contrôle écrit",
+      "control_exercise": {
+        "type": "item parallèle",
+        "reference_items": [
+          "B2",
+          "B3",
+          "C1",
+          "C2"
+        ],
+        "baseline_reference": [
+          "4E_TI_Q07",
+          "4E_TI_Q15"
+        ]
+      },
+      "derived_from": [
+        {
+          "skill_id": "M4E_STAT_01",
+          "priority_rank": "P2",
+          "post_mastery": 1,
+          "success_rate": 0.3333,
+          "dominant_error_codes": [
+            "CONCEPT",
+            "LECTURE"
+          ]
+        },
+        {
+          "skill_id": "M4E_LIT_01",
+          "priority_rank": "P2",
+          "post_mastery": 2,
+          "success_rate": 0.5,
+          "dominant_error_codes": [
+            "CONCEPT",
+            "CALCUL"
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "skills": [
+        "M4E_FRAC_02",
+        "M4E_GEO_02"
+      ],
+      "labels": [
+        "Fractions équivalentes et réduction au même dénominateur",
+        "Symétrie centrale et caractérisation du parallélogramme"
+      ],
+      "objective": "atteindre le niveau de maîtrise 3 sur : Fractions équivalentes et réduction au même dénominateur ; Symétrie centrale et caractérisation du parallélogramme",
+      "work_type": "réactivation espacée et problème mixte",
+      "frequency": "3 séances de travail",
+      "duration_minutes": 20,
+      "success_criterion": "trois réussites consécutives sans aide, chacune assortie du contrôle écrit",
+      "control_exercise": {
+        "type": "item parallèle",
+        "reference_items": [
+          "A2",
+          "A6",
+          "B4",
+          "C1"
+        ],
+        "baseline_reference": [
+          "4E_TI_Q04",
+          "4E_TI_Q13",
+          "4E_TI_Q14"
+        ]
+      },
+      "derived_from": [
+        {
+          "skill_id": "M4E_FRAC_02",
+          "priority_rank": "P2",
+          "post_mastery": 2,
+          "success_rate": 0.6,
+          "dominant_error_codes": [
+            "CONCEPT",
+            "CALCUL"
+          ]
+        },
+        {
+          "skill_id": "M4E_GEO_02",
+          "priority_rank": "P3",
+          "post_mastery": 2,
+          "success_rate": 0.5,
+          "dominant_error_codes": [
+            "JUSTIFICATION"
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "skills": [],
+      "objective": null,
+      "work_type": "problème mixte de réinvestissement",
+      "frequency": "1 fois",
+      "duration_minutes": 25,
+      "success_criterion": "aucune priorité restante : consolidation libre",
+      "control_exercise": null,
+      "derived_from": []
+    }
+  ],
+  "follow_up_recommendation": {
+    "proposed": "points de contrôle ciblés recommandés",
+    "justification": "2 compétences classées P1 ; taux de réussite global de 60 %.",
+    "data_basis": [
+      "score.success_rate",
+      "priorities[].priority_rank"
+    ]
+  },
+  "warnings": [
+    "aucun écart de maîtrise n'est calculé : aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève.",
+    "force de preuve faible pour : M4E_GEO_01, M4E_GEO_02, M4E_PROP_01, M4E_PROP_02, M4E_REL_01, M4E_REL_02. Ces niveaux de maîtrise sont indicatifs et ne doivent pas fonder une conclusion isolée.",
+    "compétences évaluées moins d'une heure après leur remédiation : M4E_FRAC_02, M4E_REL_02, M4E_STAT_01. La réussite y mesure une performance immédiate ; la rétention reste à vérifier par un contrôle différé en semaine 1 ou 2."
+  ]
+}

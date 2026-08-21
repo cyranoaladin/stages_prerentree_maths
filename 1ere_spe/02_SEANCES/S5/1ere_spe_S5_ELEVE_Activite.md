@@ -1,5 +1,5 @@
-# 1ere_spe_S5_ELEVE_Activite
-## Séance 5 — Suites numériques, Python et évaluation de synthèse
+# 1re Spécialité Mathématiques — Séance 5 : Suites numériques, Python et évaluation de synthèse
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

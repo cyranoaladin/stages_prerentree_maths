@@ -1,5 +1,5 @@
-# 2nde_S1_AIDES_Cartes
-## Séance 1 — Réparer le moteur de calcul
+# 2nde — Séance 1 : Réparer le moteur de calcul
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

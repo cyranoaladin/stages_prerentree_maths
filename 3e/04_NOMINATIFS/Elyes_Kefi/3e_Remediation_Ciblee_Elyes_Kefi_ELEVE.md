@@ -1,5 +1,5 @@
-# Exercices de remédiation ciblés - Elyes KEFI
-## Entrée en Troisième - Mathématiques
+# 3e — Plan de remédiation ciblée — Elyes Kefi (Élève)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - VERSION ELEVE SANS CORRIGE**
 

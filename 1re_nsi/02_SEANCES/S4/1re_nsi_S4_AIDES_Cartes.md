@@ -20,7 +20,7 @@ Donner une seule carte à la fois. L’élève inscrit la carte maximale utilis�
 <div class="cut-card"><h3>D - CSV</h3><p>Les valeurs lues sont des chaînes : convertis int/float avant de calculer.</p></div>
 <div class="cut-card"><h3>E - Cohérence</h3><p>Cherche valeurs manquantes, types invalides et identifiants dupliqués.</p></div></div>
 
-# Ticket des aides
+## Ticket des aides
 
 | Exercice | Aucune | A | B | C | D | E | Réussi ensuite |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

@@ -1,5 +1,5 @@
-# 3e_S1_SUPPORTS_Manipulation
-## Séance 1 — Sécuriser le moteur numérique
+# 3e — Séance 1 : Sécuriser le moteur numérique
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

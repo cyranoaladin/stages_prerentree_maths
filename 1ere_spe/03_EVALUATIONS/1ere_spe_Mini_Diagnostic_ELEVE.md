@@ -1,5 +1,5 @@
-# 1ere_spe_Mini_Diagnostic_ELEVE
-## Mini-diagnostic complémentaire
+# 1re Spécialité Mathématiques — Diagnostic initial (Élève)
+## Test de positionnement
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

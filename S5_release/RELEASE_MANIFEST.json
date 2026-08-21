@@ -1,0 +1,1085 @@
+{
+  "schema": "nexus-s5-release-manifest-v1",
+  "genere_le": "2026-08-21",
+  "paquets": {
+    "S5_release": {
+      "objet": "exploitation des séances et des résultats",
+      "fichiers": 211
+    },
+    "S5_audit": {
+      "objet": "preuves, sources et journaux",
+      "fichiers": 332
+    }
+  },
+  "regles_de_separation": {
+    "exclus_des_deux": [
+      "caches Python",
+      "fichiers auxiliaires LaTeX"
+    ],
+    "reserves_a_l_audit": [
+      "sources .tex",
+      "journaux .log",
+      "_build_logs/",
+      "_audit/",
+      "tools/tests/",
+      "SCIENTIFIC_AUDIT.md"
+    ]
+  },
+  "fichiers_release": [
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_EVALUATION_1ERE_SPE_AHMAD_BELDI.pdf",
+      "sha256": "f916946d34cf667ed2a3ae959c6ceadcce6c8fdaeb75747a64b29ef14b7c988e",
+      "octets": 263391
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/S5_TRAVAIL_1ERE_SPE_AHMAD_BELDI.pdf",
+      "sha256": "bcdda1c5b13ea1fdaf1a77d4f8a4390f48b9f12f82a09d5717b506a2e2550032",
+      "octets": 349299
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/README.md",
+      "sha256": "e688a078db81621969f85ab7338758a42dc452ad292eadb3dbdc657cd8b397ff",
+      "octets": 1124
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_AHMAD_BELDI.pdf",
+      "sha256": "632e1f39c60f98a5334cfe96c1e3fdbe6572b05c0b5cfcb8f25508893e551126",
+      "octets": 457874
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/answer_key.json",
+      "sha256": "e719969037b29df2bda77d6797587ec76f262c8b784c12c16a636e635d3215ba",
+      "octets": 12908
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "64b3ca7d9182b0ee8f2e3de27883df879269050f2207c406515f2464d3a04134",
+      "octets": 44550
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/evaluation_blueprint.json",
+      "sha256": "4cb0b82bf6a1cc3c1fef95967e6221416a4c5d6a4753a2ccd6bf5e735b596ef0",
+      "octets": 3513
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "9359564e0dbb480e44d0ffeaa7704c2cc69b789b8354cc8bf468946a3ecfb4f9",
+      "octets": 1680
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/responses_TEMPLATE.json",
+      "sha256": "8487887f99b7998f9b043f4ee816f986bd42637fe802d8080272005d48e51471",
+      "octets": 12137
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Ahmad_BELDI/student_learning_profile.json",
+      "sha256": "de01c42ed41a017dc3bdc050b1acb54c2644a8e7fe31e9120d902cf29e3b545c",
+      "octets": 44332
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_EVALUATION_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "sha256": "136c4fa59edf07a8597f01028c9b7f777b122c666aa8d4deef17f91893873646",
+      "octets": 254079
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/S5_TRAVAIL_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "sha256": "c3bf31bd0666efad0b86628170896e89ae6e0c87fa00d5a2f979d0c2cca96c11",
+      "octets": 347951
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/README.md",
+      "sha256": "5410bf8423131dd94bd16ea761aab2743d32f454aac36d1a2846a9d687165b97",
+      "octets": 1126
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_DONIA_KHADHRANI.pdf",
+      "sha256": "5bbcebe7666dd62146d83281990876a01d15167e7eed7dd2e7148b1b1fae1ab7",
+      "octets": 457744
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/answer_key.json",
+      "sha256": "e4c4d0f1f788a2e1bb821632d277ea0e1c8c5ced586fc37b05ca8c060c2cd4a8",
+      "octets": 12689
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "bea77b076c33066dd3e7a6145b0e1c9b22f98d6f3d270fdbbb87405ecee3967d",
+      "octets": 44712
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/evaluation_blueprint.json",
+      "sha256": "bdcdb88f5f2ab2ed838c0fa19d3e042e330106b2a8925b1159681ca6c12163ea",
+      "octets": 3563
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "d2919f543051543f8b5dd3faa2181c4930b4b42178e2922310bd254ab5d1d6cd",
+      "octets": 1678
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/responses_TEMPLATE.json",
+      "sha256": "5750fd3007822a40663d3ceab7663878566e75fe2d61deb890a340e7cc6984fc",
+      "octets": 12240
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Donia_KHADHRANI/student_learning_profile.json",
+      "sha256": "5c00bec4207d2641e7d271a2762058c9688769cc464585600aa26667020e03b5",
+      "octets": 44779
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_EVALUATION_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "sha256": "1fb9a08245761f0608c257524edda426c97295bfc24b4c56cebdfaf2258370c7",
+      "octets": 259011
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/S5_TRAVAIL_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "sha256": "381c2b796349ffe92e4bd4b280762a0bfacd1e51f1c9ec6b0268e121c4fa09ca",
+      "octets": 364205
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/README.md",
+      "sha256": "f818dc87d99a7fbd63ac2202ad5d5cfd08396492dfa79c9fa45a90e38170282b",
+      "octets": 1126
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/S5_ENSEIGNANT_1ERE_SPE_MALEK_KHADHRANI.pdf",
+      "sha256": "5b01abcd5faa17c30257cddb220eca3c23646a20515c43c6ce6c5511a34948ca",
+      "octets": 458682
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/answer_key.json",
+      "sha256": "63ebce7201876bf432716aa7c373cc0e70b9b7c0013fbadfc8b0e53452971d0e",
+      "octets": 13207
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "6de40b2f6b3d30a7d08fe2a4a6c08088ca7c66fc236479a2da84c8963f0fa1e9",
+      "octets": 45955
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/evaluation_blueprint.json",
+      "sha256": "4542737ecb9ca07f418c49e4bae59958b53a3595046fed6a250e648b4a4ad915",
+      "octets": 3560
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "874611c8df692e67d36c10feb28455bfdc9575719d02252c3a5a2c69e19fca46",
+      "octets": 1678
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/responses_TEMPLATE.json",
+      "sha256": "064645bf9a38761e786c8a72eb6075d542789d853e9334bad5c85bd39ba60bcc",
+      "octets": 12392
+    },
+    {
+      "chemin": "1ere_spe/Mathematiques/Malek_KHADHRANI/student_learning_profile.json",
+      "sha256": "0771f92cb90b0257818dfd1b212b8ba243efbdf879ee7d5a981a1cacd3dd615c",
+      "octets": 44844
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/S5_EVALUATION_1RE_NSI_AHMAD_BELDI.pdf",
+      "sha256": "35319b00971afbc246906310eb0f76665c4266467a966104d986dbfb7e017b2d",
+      "octets": 319044
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/S5_TRAVAIL_1RE_NSI_AHMAD_BELDI.pdf",
+      "sha256": "eacc20d3b936e33310da95cc2f7b5fbd441a7cb67820b2b108f85227f769cf2d",
+      "octets": 331090
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/README.md",
+      "sha256": "dce137d34ac94611bed0486f5bb195b5969bcad25c4a874532b9d3a373d94919",
+      "octets": 1109
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMAD_BELDI.pdf",
+      "sha256": "41835dba72955a9208b5e0876ba2643cd6ac0d16d26aea7f3e78a0cae8a86118",
+      "octets": 405981
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/answer_key.json",
+      "sha256": "1b0f92bb32d5ac9e12632482485a61d05868e90c65d66fff405883f2d34609f6",
+      "octets": 12726
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "8fa9c9a79e8e65c57bc0aa1eb2ef6216963d380df68cf96a840ebee28b9aa276",
+      "octets": 43351
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/evaluation_blueprint.json",
+      "sha256": "cdf30da395269a37a409d2bd8881b371b37044959dd7bdaadc745c623d4d4c94",
+      "octets": 3469
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "bfe7be0533205d85dae3cfa9222eb24f0c88b2907157dbfdcf92347afb49f3ee",
+      "octets": 1666
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/responses_TEMPLATE.json",
+      "sha256": "cc4e048f187bff605388dae7fae79d7b4e4fb03df3428997064bdf6647fbea11",
+      "octets": 11500
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmad_BELDI/student_learning_profile.json",
+      "sha256": "e5d4841de806c70d318fa2b75116eff8a828119fbbb7a0bb27fa5ee89cc2a22a",
+      "octets": 41299
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_EVALUATION_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "sha256": "985bb9e4294bde51580b7775a91dc37a200ba276e387a2d35ffa30d5048a3b20",
+      "octets": 316023
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/S5_TRAVAIL_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "sha256": "279d37188ba0f4331ee83315a7202fcb14f30c6bfa5f3db720eda9cda03b0df1",
+      "octets": 328388
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/README.md",
+      "sha256": "dbbf495d24e43c9d9ce79f04f27b799beaec163aa2ef34dc04b40546f033e21f",
+      "octets": 1121
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/S5_ENSEIGNANT_1RE_NSI_AHMED_BENHADJ_SALEM.pdf",
+      "sha256": "3bfddd142719ba8941e1c917c7de4457067d9a92e5f1e04874c7f419a140a12c",
+      "octets": 429236
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/answer_key.json",
+      "sha256": "accc6b422d0541b2ccc42d5c8de88518e56800bc19918ab57f7f2bf4d7181553",
+      "octets": 13688
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "1d783f422696a5a4b8873bdfa56636bbc8b81a73386abd93c0c58a4050caccee",
+      "octets": 44123
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/evaluation_blueprint.json",
+      "sha256": "9593faae3c71d789300757a474e451ac7cf2f9998630b977a3f3bbd5225ce2e3",
+      "octets": 3474
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/four_week_action_plan_TEMPLATE.json",
+      "sha256": "eb0b5144cf8528f3097301d12bb4631fe533921a1b74d5aa30275ae192f0ef62",
+      "octets": 1670
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/responses_TEMPLATE.json",
+      "sha256": "a603abe77f9c6ecd0132d99d27a04cb378cbcd85fc63b1cac5c548e46271dc2b",
+      "octets": 12063
+    },
+    {
+      "chemin": "1re_nsi/NSI/Ahmed_BENHADJ_SALEM/student_learning_profile.json",
+      "sha256": "10829a05c198a4c875756cc12aedf9af0208c5a8a8d483ed02b14c9586112fc9",
+      "octets": 41771
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/S5_EVALUATION_2NDE_AHMED_BAKIR.pdf",
+      "sha256": "d2a659724f0747617e2d1be21c5fb9760b0d4a0e62d570fabf74bd4f89c20b41",
+      "octets": 249076
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/S5_TRAVAIL_2NDE_AHMED_BAKIR.pdf",
+      "sha256": "db6af3feb32a106f748ff57a9670b0e656af78ee9549ed94393f2778085fdb7d",
+      "octets": 268854
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/README.md",
+      "sha256": "6252e7434e07f8343ede47998646ff5b87f614eed20018a0121e0ee783f73d7c",
+      "octets": 1101
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_AHMED_BAKIR.pdf",
+      "sha256": "1773e23de60d9c6fdd70282bf2fffd3fcd67ba663b7eb2c57fec4d9064ba0cac",
+      "octets": 462232
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/answer_key.json",
+      "sha256": "e226cfdd2d2eb040e92e8f76fc14306fd129dc9843c5fd22e3a7f6cb24369d64",
+      "octets": 12030
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "1e78203a0f2a1fe4b7c2546c49bf166eb032de3cc93bc491522f06f3d30e2efc",
+      "octets": 42492
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/evaluation_blueprint.json",
+      "sha256": "2454395f52f2f945ab25bcd7037f7355f8e82d79ed11c86c770febe9f4d4773d",
+      "octets": 3422
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/four_week_action_plan_TEMPLATE.json",
+      "sha256": "3014dd06f6ed10580352de60754af0ad4f98163a1e4515068426a3bda9e503ff",
+      "octets": 1670
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/responses_TEMPLATE.json",
+      "sha256": "3c49101c13b0bddcfe22504fd4052af914a524cdef8d8611ec06447bdd11f4c9",
+      "octets": 11473
+    },
+    {
+      "chemin": "2nde/Mathematiques/Ahmed_BAKIR/student_learning_profile.json",
+      "sha256": "ba2c2bb14933e2b92f6ff73795696ae3a59786288109cddf5944319508f95293",
+      "octets": 36587
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/S5_EVALUATION_2NDE_NOA_MANIACI.pdf",
+      "sha256": "d3fb3837054a1147ef6a1cece9b1073c097fc719bb1e9d5467e5a0f201b6fdf5",
+      "octets": 249438
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/S5_TRAVAIL_2NDE_NOA_MANIACI.pdf",
+      "sha256": "16f7890876f7e07b1a7be0d25f38f45c1804da49ee3c413ea11a57029b267de5",
+      "octets": 275739
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/README.md",
+      "sha256": "fb1e2a10afcc57feab0f0563bb65d8f3dc408206a088b3979f530d88bc351c0c",
+      "octets": 1101
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/S5_ENSEIGNANT_2NDE_NOA_MANIACI.pdf",
+      "sha256": "174d921f5793475593186ff2074e3d01e18c604b21d65f4200048c071e717b77",
+      "octets": 464536
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/answer_key.json",
+      "sha256": "e0e381257de7d51641dbb90e618d128222e339b3d09e93e1c32170a3151b1c9d",
+      "octets": 12436
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "4ecf01c7bf391105f5d40c6d198d081fd84c47cdf9689a9576fcc2729c383130",
+      "octets": 43268
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/evaluation_blueprint.json",
+      "sha256": "afbdd41fa43a6fb2eda9d44efd28e5f6d5a3fba4b1498b23d91f2c9222dded48",
+      "octets": 3422
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "6cbca6b92f41a643860c710ef620794cce8d7831ff43881b85da2f7f847b50fb",
+      "octets": 1670
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/responses_TEMPLATE.json",
+      "sha256": "ba11cd18c4eb59bdddf1feb62162d15514aca0d7fc40acccbe942b5bbc84f023",
+      "octets": 11781
+    },
+    {
+      "chemin": "2nde/Mathematiques/Noa_MANIACI/student_learning_profile.json",
+      "sha256": "9d953a39158e8edbbbece9fea3b6d1813d591e971574007831eea4fafad2e6fd",
+      "octets": 36944
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/S5_EVALUATION_3E_AMINE_MANSOURI.pdf",
+      "sha256": "85e1a86a8055fb4e7c78ba4621c462c78d0aa9b91afe40a5d36cce6da758e970",
+      "octets": 229652
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/S5_TRAVAIL_3E_AMINE_MANSOURI.pdf",
+      "sha256": "ead661ebb97475af87dc8c76d707caa49d7a7ca906113513a0fb30ac8f8705db",
+      "octets": 256096
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/README.md",
+      "sha256": "ce742429bb7b353a005ebae7382ceb024794b9f4bcb24e18c779f502a1209224",
+      "octets": 1082
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_AMINE_MANSOURI.pdf",
+      "sha256": "ee79e1524b048b246e275c068f694820295688dc5f7a1faa7e447877e5c3b49d",
+      "octets": 459131
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/answer_key.json",
+      "sha256": "2723aa0751c3052fa6233f758430e915c34e75e141b6d11accab74e6e71dd9e7",
+      "octets": 11700
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "78752b52cf264db4d3a60c05ac1bc877841aa3c85db6673a67afad3eb1716cf6",
+      "octets": 42441
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/evaluation_blueprint.json",
+      "sha256": "9f4537ab2b6e36240e93826d0a924891b96b842e13d2119a7cbc9742b1c85510",
+      "octets": 3411
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "ac17cfa0db9824acdb8133637c4ee0d7d7870494e1199b04e41c371bff075e67",
+      "octets": 1671
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/responses_TEMPLATE.json",
+      "sha256": "fa832c5d942237a9ca30aad39cb389ac449a780f0e669feb81daf1576cf2232a",
+      "octets": 11498
+    },
+    {
+      "chemin": "3e/Mathematiques/Amine_MANSOURI/student_learning_profile.json",
+      "sha256": "21316d6f2aec1db90053fbffa8c7ba405afac69ae2313b24889ccf6be0aefe63",
+      "octets": 37343
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/S5_EVALUATION_3E_ELYES_KEFI.pdf",
+      "sha256": "a6d8b927ade2988abcc4a062a62e10e46b497eaaa5eb1f1021c5612fef76eb3c",
+      "octets": 241115
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/S5_TRAVAIL_3E_ELYES_KEFI.pdf",
+      "sha256": "715f297e6363812f8565dd9ede3b18b55e62df09991d3c195e8fa394eea428da",
+      "octets": 271988
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/README.md",
+      "sha256": "bf26296fb121b106f805865e912b501d9562c7573973257bb18f228d377796b2",
+      "octets": 1074
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_3E_ELYES_KEFI.pdf",
+      "sha256": "97bd62ab4d70f1552dd9eb5a42b9d2619b365682b2275aae14212c2973750995",
+      "octets": 478787
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/answer_key.json",
+      "sha256": "2036c1b5a8e5bca6a1c0b81ab152a370854371f64ece6bcb33f5d135e43ec043",
+      "octets": 12347
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "867f3d277cf6b30cf378e8464d91aae1b0444fd63fd2ac5ba66a38a93ce51541",
+      "octets": 42652
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/evaluation_blueprint.json",
+      "sha256": "259d915aacaee65295cdb73f16be18db2787b0cb27112fdac150cf9f87c88f69",
+      "octets": 3407
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "d07dd38380df061eb0dea7197a4633e0bdad4fbe99006ceaa6a1cdb49c502f2b",
+      "octets": 1667
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/responses_TEMPLATE.json",
+      "sha256": "ddfeaa04baef1cfa4e7f15c63f34af2687258f2bd164734b4a7e21d9e6567a4f",
+      "octets": 11763
+    },
+    {
+      "chemin": "3e/Mathematiques/Elyes_KEFI/student_learning_profile.json",
+      "sha256": "cb4d70d9dff460afaaf705499e573055597a94e3b9ac6d7781dd6ec62094dad3",
+      "octets": 38671
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/S5_EVALUATION_3E_FARES_LAAJILI.pdf",
+      "sha256": "76885bd7b40b83bc583ac9ef5de77977267519de74e43dc66e0aaecf454b1df2",
+      "octets": 245152
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/S5_TRAVAIL_3E_FARES_LAAJILI.pdf",
+      "sha256": "3d7112662a19bc427a6111893e0f266a5ae5467dbe424cbd908af4bd24dc7ffa",
+      "octets": 279661
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/README.md",
+      "sha256": "48959b8aa0b6293c47b5b73ba45924494e5a11e5a1fa9257762cfc57501a330e",
+      "octets": 1080
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/S5_ENSEIGNANT_3E_FARES_LAAJILI.pdf",
+      "sha256": "3cb36fc196b1c52634619f5c116b415f4fb92fa59b47f10bfe3c83339af2ba3b",
+      "octets": 463289
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/answer_key.json",
+      "sha256": "59089af5ca63b6d36766c8e7ba66135c51689a81627b0757c84adbc551b8b1bd",
+      "octets": 11898
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "6e9bd0c669038d8828e12e821baf15d017006b5b6a7b3ad3d8e104fb112aa232",
+      "octets": 42357
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/evaluation_blueprint.json",
+      "sha256": "62315c79969ca158eb5153d2b981d4e5602b58cd8a9fe2baad6e5f6fc66a6241",
+      "octets": 3410
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "d2532edf9487aa1efc1213655ba6b4e2955a6247a8293786ebd2c4af55427c4c",
+      "octets": 1670
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/responses_TEMPLATE.json",
+      "sha256": "9e85bf8a33c794415e5a561efffc6e994b2e71a8ce825330460049af3dea9c17",
+      "octets": 11468
+    },
+    {
+      "chemin": "3e/Mathematiques/Fares_LAAJILI/student_learning_profile.json",
+      "sha256": "d478cb87caffebc704605868c825987c2009d7a14654b95426590a74aafa411e",
+      "octets": 37013
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/S5_EVALUATION_3E_SARAH_BARGAOUI.pdf",
+      "sha256": "c3544a2c96638bce1b033b6bcf3316004f006727b5f4580b276c628daab793ed",
+      "octets": 228736
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/S5_TRAVAIL_3E_SARAH_BARGAOUI.pdf",
+      "sha256": "0ee1b8a94c8a87c2766e70c6a673d8777636b79ba483a66ee9ea15036bab1b15",
+      "octets": 248896
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/README.md",
+      "sha256": "325a6f1e3c6b1d1706dc0581fd7ca646f381b98b35c77934cda58d6b25e6df50",
+      "octets": 1082
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SARAH_BARGAOUI.pdf",
+      "sha256": "74b8b24f326cc06679b01707368cee59465e02277b4700b3379442acfcc7c282",
+      "octets": 459078
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/answer_key.json",
+      "sha256": "aa7f513be5b6a0bc679b846cf6c80c829497a7afbdbd87915f322ece198e82cf",
+      "octets": 11837
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "b3603b0d7c39fe9bfd1bc067f06238d8d5ea0447f08166594e77abba08bc5464",
+      "octets": 43091
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/evaluation_blueprint.json",
+      "sha256": "00c92cfdea520d7f2b2ea84e618e5647cf2960d1d50e29f4ee012c1777967ff6",
+      "octets": 3411
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "aee03bc9908ce9dddcba51c74ade47eec02cb3974113dc644202a37a5bea3e96",
+      "octets": 1671
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/responses_TEMPLATE.json",
+      "sha256": "1d11e87b230708ac08842077acaace2baca3c32f7a294c0e78932aca02a47c55",
+      "octets": 11834
+    },
+    {
+      "chemin": "3e/Mathematiques/Sarah_BARGAOUI/student_learning_profile.json",
+      "sha256": "242e9fe5c7ea5caedbc85b3d43623631d3ea53e2a2b20f1c9cde29efb71a2f27",
+      "octets": 37834
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/S5_EVALUATION_3E_SELIM_MANSOURI.pdf",
+      "sha256": "ff799f62197e31093e997bd4e5a2e10ee3127e0eff4d15d27fa8db0f003b2511",
+      "octets": 228647
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/S5_TRAVAIL_3E_SELIM_MANSOURI.pdf",
+      "sha256": "6eb72d8c0c871f5383fe6056cab38190298045302ab9a0776cce29003a43fd8e",
+      "octets": 248622
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/README.md",
+      "sha256": "8acbaf88275f48f287374eb8a54fa54a19dffbc6e0d332d46135cf287d4af35c",
+      "octets": 1082
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/S5_ENSEIGNANT_3E_SELIM_MANSOURI.pdf",
+      "sha256": "43c26bc6cf8c1e1c0e55050ab561889d5d834a3f9072d3d2c26f995c1ffed4b5",
+      "octets": 458184
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/answer_key.json",
+      "sha256": "a42b458bb8338a10c98a48f11649096a25e0818e327e91b0b242f45078493a71",
+      "octets": 11604
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "1423f9bb681f05e6be92d86fd73a0a2a35ce2bf804a332d08386140647be7d5b",
+      "octets": 42310
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/evaluation_blueprint.json",
+      "sha256": "69d78a6456fd9afe758b0f6354ece7641fbba3b97a65f89f8adbf99ba8cf42ab",
+      "octets": 3410
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "8ecd0898cc5caf215747c9e2a7143aafbcce7af4e01eb2db91ad6a27403bfddc",
+      "octets": 1671
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/responses_TEMPLATE.json",
+      "sha256": "ffc3bcb5104ec000a32ee12d233455e8705c75b7d60480c3ae0cf583a4b0fb90",
+      "octets": 11468
+    },
+    {
+      "chemin": "3e/Mathematiques/Selim_MANSOURI/student_learning_profile.json",
+      "sha256": "02bd8fc5a27df0f134fd3a32844170942da642cd80f17042e9ecadb223863cfe",
+      "octets": 37413
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/S5_EVALUATION_4E_FARES_DARGHOUTH.pdf",
+      "sha256": "dea4d42108266183a1ee37519a362442cc6ff28978fe8f18168f1a13cc70c945",
+      "octets": 229280
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/S5_TRAVAIL_4E_FARES_DARGHOUTH.pdf",
+      "sha256": "c9b0f2fb2204fb5d6a1054416f7ad451a02eacab4388babd8aef7e2d162b9607",
+      "octets": 269520
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/README.md",
+      "sha256": "e1c88cdc1a89caed2e92311629ee0e1d209b991d3f5c08d4940b503c090e1f24",
+      "octets": 1084
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/S5_ENSEIGNANT_4E_FARES_DARGHOUTH.pdf",
+      "sha256": "d06ad2b7322b1de70acbbac5ada39a81eeabdaa2a2baf0b7867d773e5f4f7eeb",
+      "octets": 451432
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/answer_key.json",
+      "sha256": "5c71f4ddcc14dba30ce9f8a82cea87d11c7c6c54d9b9943a07aa1de39913718d",
+      "octets": 11998
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "ef08499f4bdce923abe81f23cc9f053c926e589565b674fcd66e0f0ecb23261b",
+      "octets": 43607
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/evaluation_blueprint.json",
+      "sha256": "6f336c65cb7859d03eb55d5c1d5ef7d700992fc98a808c419d224c526d627a7d",
+      "octets": 3437
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/four_week_action_plan_TEMPLATE.json",
+      "sha256": "cf6a71a33bc59c1654b7243610ea9c3a8f028f756f35d209be90ec333776b63e",
+      "octets": 1672
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/responses_TEMPLATE.json",
+      "sha256": "50fd3c900c7c9b97dc3905e284a83291e4a43a7e8741ab1022eadc72bc9315ec",
+      "octets": 12027
+    },
+    {
+      "chemin": "4e/Mathematiques/Fares_DARGHOUTH/student_learning_profile.json",
+      "sha256": "285b0d7e200e7ca3f9f4787cf3d137ca4cbd941ddfd7a6bfc06132ccf07a1d94",
+      "octets": 39157
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/S5_EVALUATION_4E_INES_KEFI.pdf",
+      "sha256": "ca261c4d93f81cbf9e1ae663e74bc8c6773cb6dba026361049b68c97bea991c0",
+      "octets": 230088
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/S5_TRAVAIL_4E_INES_KEFI.pdf",
+      "sha256": "ea805d742cdc16dd1a7673433b1fb8ebaa3d7ee0627c6d00aed4228a6686bdf7",
+      "octets": 257584
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/README.md",
+      "sha256": "3eeee902cd136687d69d89a9a436a16256ab708a20a6c303964a68dad4dca2ab",
+      "octets": 1072
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/S5_ENSEIGNANT_4E_INES_KEFI.pdf",
+      "sha256": "0396a89d4126f11d89f6e49925bdca2c2a37e2db63e5417abb44c80dda0af407",
+      "octets": 455553
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/answer_key.json",
+      "sha256": "1966cfffba2d23a3e9bf08238ada5b54ae7653e5e805e026cc392466b36f0869",
+      "octets": 11761
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "ff7f3fc155672b9c31cfd3ca9209ec414489f2a6d6ff805a545a0f7ff7d0ff71",
+      "octets": 42795
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/evaluation_blueprint.json",
+      "sha256": "f6354c2c8b22d7ad81bc326584fc35d982425d4a9e2177e6e7c1bfa8295d24fd",
+      "octets": 3454
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "2d519e1354629a52ddd51ef84c53e9af7c19405f2c73150291a73dae41409018",
+      "octets": 1666
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/responses_TEMPLATE.json",
+      "sha256": "ef58f1e6685fce3dfbd14d55399791119a8a39c0f143db0f64719e99b3b3396e",
+      "octets": 11542
+    },
+    {
+      "chemin": "4e/Mathematiques/Ines_KEFI/student_learning_profile.json",
+      "sha256": "e5154f3706cd9925897dc3fd4fc641fd1c6258e00db37fc8310a6a02350bc1aa",
+      "octets": 39939
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_EVALUATION_4E_SINDA_CHIKHAOUI.pdf",
+      "sha256": "8d690c5fe41c398516ce0b7138d200ab8afd79b0dd5400335278508ed9cf2087",
+      "octets": 243954
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/S5_TRAVAIL_4E_SINDA_CHIKHAOUI.pdf",
+      "sha256": "03f9dad68b217d02311f58c504ff1cf68e69ea1be0d55559b629ff2791398725",
+      "octets": 249850
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/README.md",
+      "sha256": "12a3e71ecf920da70326d607d39673abbfe1bdff298ecab13984f134898d5052",
+      "octets": 1084
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/S5_ENSEIGNANT_4E_SINDA_CHIKHAOUI.pdf",
+      "sha256": "03aace729c8dd6582e555bc90c0dd672c26793bd6209a2ad2fdde5a11f9e1240",
+      "octets": 449112
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/answer_key.json",
+      "sha256": "3921e3ea090786eec4ee0158f8ae607e1af2db4fdd76896c9b6d23b3156e29c3",
+      "octets": 12470
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/_ENSEIGNANT/evaluation_manifest.json",
+      "sha256": "0341242e90e2490b934dfc4041c996135a2e198e925070ccbf14bf2b6d0e731d",
+      "octets": 43538
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/evaluation_blueprint.json",
+      "sha256": "860bbc5ea29c70646f6322af575071c9cae9fb3f4763af9f78141d8d5d472d2e",
+      "octets": 3413
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/four_week_action_plan_TEMPLATE.json",
+      "sha256": "952470a5c6c959509ae615128a20be3bff78220ec200c0f9d046e84c8412c03b",
+      "octets": 1672
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/post_stage_analysis_schema.json",
+      "sha256": "81aeabc2cff0644a5c5979ff404844ce22fa8c129b50ee2ba7bd57e76d4d7b7c",
+      "octets": 13866
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/responses_TEMPLATE.json",
+      "sha256": "c8cf239291ac54a450f37a8579bef0b697ecc8e3da8aa40621e0cfc78fc2337c",
+      "octets": 12160
+    },
+    {
+      "chemin": "4e/Mathematiques/Sinda_CHIKHAOUI/student_learning_profile.json",
+      "sha256": "0a93827e1a69e0f3d2af6183615afda850f8376f2b108506b09733a89319d95a",
+      "octets": 38679
+    },
+    {
+      "chemin": "CANONICAL_DELIVERY.json",
+      "sha256": "e91525cfbad5bf34ce2e73fe7c7603a03580b4855d6e1415f3659310dd0d9f59",
+      "octets": 18246
+    },
+    {
+      "chemin": "INDEX_S5.md",
+      "sha256": "73bdafae1fca388e1f9b4043e01b8804be67bec8e6f82fbec32f70233fb2669b",
+      "octets": 8593
+    },
+    {
+      "chemin": "QA_REPORT.md",
+      "sha256": "9b78f1bee5c34d2bad7fb150c4ce85ad05e002b24f9cd8ca798373e711507581",
+      "octets": 83664
+    },
+    {
+      "chemin": "QA_REPORT_V2.md",
+      "sha256": "a719c9d9d1a4677fe5f3a92117a0e2401e9e7015e8e69a1d12319284bba8b390",
+      "octets": 13529
+    },
+    {
+      "chemin": "README.md",
+      "sha256": "8e840a72aecca560036a684a2f772b44b5f67f665a41672c352240e44e4efd73",
+      "octets": 6075
+    },
+    {
+      "chemin": "SCIENTIFIC_AUDIT.md",
+      "sha256": "ee380c12341b53c8b982fc73814d48ec057f5b3b910626b1d76f9193660e7814",
+      "octets": 16267
+    },
+    {
+      "chemin": "_common/blueprints/blueprint_1ere_spe.json",
+      "sha256": "a87146e8f09af507a5a565b6813ae1600f407e16404ee00134a3a0f030620689",
+      "octets": 12143
+    },
+    {
+      "chemin": "_common/blueprints/blueprint_1re_nsi.json",
+      "sha256": "941e5c0b0eeeb494313278150a807f9afdfffe8788ef129a79da27076996fd60",
+      "octets": 11510
+    },
+    {
+      "chemin": "_common/blueprints/blueprint_2nde.json",
+      "sha256": "d4f8995b0e18faf8826dfdfd665bb60e09e7fa00e38e3164bb2fe651909b0c63",
+      "octets": 9840
+    },
+    {
+      "chemin": "_common/blueprints/blueprint_3e.json",
+      "sha256": "2bb6f1949aa3cd88bc98e19b6313c8b97685dc59b601b420041394bcea140823",
+      "octets": 10324
+    },
+    {
+      "chemin": "_common/blueprints/blueprint_4e.json",
+      "sha256": "de0f243cf7484571f8aa378f19792d07c2840fa953587074cbda34b9354f1614",
+      "octets": 10733
+    },
+    {
+      "chemin": "_common/nexusS5.sty",
+      "sha256": "5e4c50797fa3a2b427a9afe44fde487c1bd206babce3d180e0b4d9b8c90a531a",
+      "octets": 7439
+    },
+    {
+      "chemin": "_teacher_private/BILAN_TEMPLATE_PARENTS.md",
+      "sha256": "bdbe5997fc3f8a8fd90be2cedee66d14935c8d205bdef34b9b16a6440c788428",
+      "octets": 2845
+    },
+    {
+      "chemin": "_teacher_private/bilan_template.json",
+      "sha256": "590749e4aac4776a059ba0ddaffbc96ec70940bf94ae021c40a93e8e1884f612",
+      "octets": 5302
+    },
+    {
+      "chemin": "_teacher_private/tests_s5_nsi.py",
+      "sha256": "0b952f3f8215ff2ede3c523b64097a28abc47a20c74009dd551392ef52c78645",
+      "octets": 25563
+    },
+    {
+      "chemin": "tools/analyze_s5.py",
+      "sha256": "228a3514791cae5ed33b7555c8dfb9377681c752d1f61171f1fc5301f21f4c28",
+      "octets": 31040
+    },
+    {
+      "chemin": "tools/audit_docimologie.py",
+      "sha256": "92e8dbc8c89797ad19bfdc45ebad33632bb97ff8dbe96e9e9db566c357c15246",
+      "octets": 16995
+    },
+    {
+      "chemin": "tools/build_audit.py",
+      "sha256": "184d5cbf705d155da394b7dd6c7a23f0c5dc4e48f534fb762e538684587f0c90",
+      "octets": 25513
+    },
+    {
+      "chemin": "tools/build_manifests.py",
+      "sha256": "228d3452307db13675306e2beaa7810a0d969ed6e01f632c8b3d09269a41089c",
+      "octets": 8291
+    },
+    {
+      "chemin": "tools/build_pdf.sh",
+      "sha256": "18486a845ec54f8d3acc869d4a3346d25f498be7decfa0a81345314810a2412f",
+      "octets": 900
+    },
+    {
+      "chemin": "tools/build_qa_v2.py",
+      "sha256": "6552e46465023d29dc1d717a799145cea89aa3db3b6657ed5068bc456b3bf2c2",
+      "octets": 19948
+    },
+    {
+      "chemin": "tools/build_reports.py",
+      "sha256": "2aa97a80c4bde7816310dcdd3ebf33322e4837daeb8b42382541b6e437614c59",
+      "octets": 34920
+    },
+    {
+      "chemin": "tools/build_reports_final.py",
+      "sha256": "c80143d407e41a24cc9aa708a32552408722b1938ba96202f221b90e55620221",
+      "octets": 11949
+    },
+    {
+      "chemin": "tools/build_reports_part2.py",
+      "sha256": "4ab941ca4a65f3e05f1e8561dc71cd2265af93da87a97baff6d9caf3d4227f8b",
+      "octets": 13085
+    },
+    {
+      "chemin": "tools/core.py",
+      "sha256": "7a1a40920c31c5b029e0fa39bc7a851c096d3e696fca8c57ad18f2675e92b3f8",
+      "octets": 15921
+    },
+    {
+      "chemin": "tools/data/__init__.py",
+      "sha256": "39c44c043fbd12c1e89f0b4de4a8e97ccc7eece986300fe2932008514083240e",
+      "octets": 112
+    },
+    {
+      "chemin": "tools/data/common.py",
+      "sha256": "fdeedac3c09f8bc5e4998e55e82c3c80844124a677362d429a137b77cf88b5d6",
+      "octets": 6578
+    },
+    {
+      "chemin": "tools/data/criteria_map.py",
+      "sha256": "4fb09e7460c29bc1764f0770dd3df426678d9f73a4cfd79c5d1c175cd9f04e5a",
+      "octets": 14084
+    },
+    {
+      "chemin": "tools/data/levels.py",
+      "sha256": "921e695b78e5d4baa2df701b6c2e7d2550a17b89346740899057317de56461b7",
+      "octets": 590
+    },
+    {
+      "chemin": "tools/data/lvl_1ere_spe.py",
+      "sha256": "de23822f6a15c80858ae0a5f64ce87456c656abcfa4f839813371226e1d40804",
+      "octets": 25803
+    },
+    {
+      "chemin": "tools/data/lvl_1re_nsi.py",
+      "sha256": "f913583229d9ff8a1cc40b37c23269e1cc65d916913c380d7b017059652acb6a",
+      "octets": 27010
+    },
+    {
+      "chemin": "tools/data/lvl_2nde.py",
+      "sha256": "0276e21d3fffd6c059cda36dbabb7960ec3cef1ee8b7fc7d487d2f1e3bdea75c",
+      "octets": 22968
+    },
+    {
+      "chemin": "tools/data/lvl_3e.py",
+      "sha256": "b081cf8ae35a7bd575120fad1ac9e27b90d19b147bc5a0d46eeb23196e84d6b1",
+      "octets": 22990
+    },
+    {
+      "chemin": "tools/data/lvl_4e.py",
+      "sha256": "047c549cf32c72d573c7816655fa0870292018ab287bd22270a4b23b9b3b76f4",
+      "octets": 22724
+    },
+    {
+      "chemin": "tools/data/modules_maths.py",
+      "sha256": "77ac401cdf29a84a2571314bae70612963ee0d41b627992695c13611242d6d8a",
+      "octets": 61816
+    },
+    {
+      "chemin": "tools/data/modules_nsi.py",
+      "sha256": "acaee5a73c26ad47e6df49c24a1574da0626afea6cb0e36b5132ac2903087192",
+      "octets": 14568
+    },
+    {
+      "chemin": "tools/data/students.py",
+      "sha256": "f74ac872322d6be929bc83dbc4116cc6f51bd48d79b200360f4ce1a4190b3dfb",
+      "octets": 112400
+    },
+    {
+      "chemin": "tools/data/timing.py",
+      "sha256": "77c6adf24f928fb6f57db58457c068587685b562aeabdbb83e4055e17d611632",
+      "octets": 4383
+    },
+    {
+      "chemin": "tools/data/verifications.py",
+      "sha256": "b0707cfe2de2dfeec775eae3f87e1af55ebb6d356d44144f94a5a3e1b6a9b51a",
+      "octets": 13354
+    },
+    {
+      "chemin": "tools/generate_s5.py",
+      "sha256": "2f87d4c7705270377c179c17ad646ea3ed604cab109734f63cb104babfa4308f",
+      "octets": 58564
+    },
+    {
+      "chemin": "tools/make_release.py",
+      "sha256": "077ef31216e6ebe3f8ee19f08309fe9a9034eb59c88419eb57a73c0af0557e45",
+      "octets": 4681
+    },
+    {
+      "chemin": "tools/raster_check.py",
+      "sha256": "690ef95175e236cd28936f8907ea1805df137f68cb4050a03efcb518df6ff491",
+      "octets": 4374
+    },
+    {
+      "chemin": "tools/render_bilan.py",
+      "sha256": "c7caf3b88f902fe3256a21fe85ad6742147b027b0ffbc1448fc75239d71cefbf",
+      "octets": 12540
+    },
+    {
+      "chemin": "tools/review_personnalisation.py",
+      "sha256": "c71d5cff3cfd38c8e5a5048864b2bbdb2793168f9f185c3f3a2327b91e078afd",
+      "octets": 17075
+    },
+    {
+      "chemin": "tools/validate_s5.py",
+      "sha256": "18dd86d71630a7eed712709f31d643f3bdb14dceb041ffd8949b4333c60d98f9",
+      "octets": 24734
+    },
+    {
+      "chemin": "tools/verify_items.py",
+      "sha256": "ac93291586b6ed0be0f9e5c9228317e9bc4f088823600634ee770eb566405b28",
+      "octets": 11894
+    }
+  ]
+}

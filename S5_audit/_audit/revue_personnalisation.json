@@ -1,0 +1,1796 @@
+{
+  "schema": "nexus-s5-revue-personnalisation-v1",
+  "genere_le": "2026-08-20",
+  "methode": {
+    "collision_exacte": "énoncé normalisé (LaTeX retiré, minuscules, sans espaces ni ponctuation) retrouvé tel quel dans le corpus déjà remis à l'élève",
+    "signature_numerique": "même multiensemble de nombres qu'une ligne du corpus : indice de reprise, à confirmer par lecture humaine",
+    "proximite": "indice de Jaccard sur les 6-grammes des énoncés de deux livrets du même niveau"
+  },
+  "seuils": {
+    "part_individualisee_min_pct": 25.0,
+    "part_individualisee_max_pct": 40.0,
+    "proximite_alerte": 0.75
+  },
+  "eleves": [
+    {
+      "student_id": "fares-darghouth",
+      "name": "Fares DARGHOUTH",
+      "level_key": "4e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "4e/04_NOMINATIFS/Fares_Darghouth/4e_Dossier_Individuel_Fares_Darghouth.md",
+        "4e/04_NOMINATIFS/Fares_Darghouth/4e_Remediation_Ciblee_Fares_Darghouth_ELEVE.md",
+        "4e/04_NOMINATIFS/Fares_Darghouth/4e_Remediation_Ciblee_Fares_Darghouth_PROF_Corrige.md",
+        "Nexus_4e_S2_PDF_ELEVES/4e_S2_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/4e_S4_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_4e_Fares_Darghouth_S4_S5_PDF/4e_S5_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 28,
+      "corpus_caracteres": 247183,
+      "priorites": {
+        "P1": "M4E_AIRE_01",
+        "P2": "M4E_GEO_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M4E_AIRE_01",
+          "mots_retrouves": [
+            "périmètre"
+          ],
+          "justification_dossier": "Confusion aire / périmètre documentée au diagnostic initial ; indicateur de réussite fixé au dossier : quatre exercices aire/périmètre consécutifs corrects."
+        },
+        "p2": {
+          "skill_id": "M4E_GEO_02",
+          "mots_retrouves": [
+            "symétrie",
+            "centrale"
+          ],
+          "justification_dossier": "Le diagnostic montre une hypothèse ajoutée sans justification et une confusion entre parallélogramme et carré ; le travail porte sur la structure du raisonnement autant que sur la propriété."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calculer avec du sens (relatifs, fractions)",
+        "S2": "Mesurer une surface ou un contour (aires et périmètres)",
+        "S3": "Donner du sens aux lettres (calcul littéral)",
+        "S4": "Voir, raisonner, démontrer (géométrie)",
+        "competences_travaillees_visees_en_s5": {
+          "M4E_AIRE_01": [
+            "S2"
+          ],
+          "M4E_GEO_02": [
+            "S4"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M4E_AIRE_01 (Distinguer et calculer une aire et un périmètre)",
+          "phase 3 : module M4E_GEO_02 (Symétrie centrale, parallélogramme et raisonnement donnée-propriété-conclusion)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "sinda-chikhaoui",
+          "jaccard": 0.484,
+          "memes_priorites": false
+        },
+        {
+          "autre": "ines-kefi",
+          "jaccard": 0.26,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": []
+    },
+    {
+      "student_id": "ines-kefi",
+      "name": "Ines KEFI",
+      "level_key": "4e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "4e/04_NOMINATIFS/Ines_Kefi/4e_Dossier_Individuel_Ines_Kefi.md",
+        "4e/04_NOMINATIFS/Ines_Kefi/4e_Remediation_Ciblee_Ines_Kefi_ELEVE.md",
+        "4e/04_NOMINATIFS/Ines_Kefi/4e_Remediation_Ciblee_Ines_Kefi_PROF_Corrige.md",
+        "Nexus_4e_S2_PDF_ELEVES/4e_S2_Ines_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Ines_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/4e_Ines_Kefi_LIVRETS_S4_S5_PERSONNALISES.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 245629,
+      "priorites": {
+        "P1": "M4E_REL_02",
+        "P2": "M4E_FRAC_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M4E_REL_02",
+          "mots_retrouves": [
+            "ordre",
+            "nombres",
+            "relatifs",
+            "déplacements",
+            "droite",
+            "graduée"
+          ],
+          "justification_dossier": "Deux réponses fausses données avec une certitude maximale au diagnostic initial : la conviction doit être confrontée avant toute reprise technique."
+        },
+        "p2": {
+          "skill_id": "M4E_FRAC_02",
+          "mots_retrouves": [
+            "fractions",
+            "réduction",
+            "dénominateur"
+          ],
+          "justification_dossier": "Erreur documentée : le dénominateur est converti mais le numérateur ne l'est pas. C'est une erreur de concept sur l'égalité de deux fractions, non une erreur de calcul."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calculer avec du sens (relatifs, fractions)",
+        "S2": "Mesurer une surface ou un contour (aires et périmètres)",
+        "S3": "Donner du sens aux lettres (calcul littéral)",
+        "S4": "Voir, raisonner, démontrer (géométrie)",
+        "competences_travaillees_visees_en_s5": {
+          "M4E_REL_02": [
+            "S1"
+          ],
+          "M4E_FRAC_02": [
+            "S1"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M4E_REL_02 (Ordre des nombres relatifs et déplacements sur une droite graduée)",
+          "phase 3 : module M4E_FRAC_02 (Fractions équivalentes et réduction au même dénominateur)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "sinda-chikhaoui",
+          "jaccard": 0.287,
+          "memes_priorites": false
+        },
+        {
+          "autre": "fares-darghouth",
+          "jaccard": 0.26,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": []
+    },
+    {
+      "student_id": "sinda-chikhaoui",
+      "name": "Sinda CHIKHAOUI",
+      "level_key": "4e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Dossier_Individuel_Sinda_Chikhaoui.md",
+        "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Remediation_Ciblee_Sinda_Chikhaoui_ELEVE.md",
+        "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Remediation_Ciblee_Sinda_Chikhaoui_PROF_Corrige.md",
+        "Nexus_4e_S2_PDF_ELEVES/4e_S2_Sinda_Chikhaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Sinda_Chikhaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/4e_Sinda_Chikhaoui_LIVRETS_S4_S5_PERSONNALISES.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 236660,
+      "priorites": {
+        "P1": "M4E_REL_01",
+        "P2": "M4E_LIT_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M4E_REL_01",
+          "mots_retrouves": [
+            "soustraction",
+            "négatif"
+          ],
+          "justification_dossier": "Erreur documentée au diagnostic initial sur la soustraction d'un négatif ; compétence critique pour aborder le produit de relatifs en Quatrième."
+        },
+        "p2": {
+          "skill_id": "M4E_LIT_02",
+          "mots_retrouves": [
+            "constantes"
+          ],
+          "justification_dossier": "Erreur documentée sur la réduction des constantes signées ; compétence critique pour l'équation du premier degré travaillée dès septembre."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calculer avec du sens (relatifs, fractions)",
+        "S2": "Mesurer une surface ou un contour (aires et périmètres)",
+        "S3": "Donner du sens aux lettres (calcul littéral)",
+        "S4": "Voir, raisonner, démontrer (géométrie)",
+        "competences_travaillees_visees_en_s5": {
+          "M4E_REL_01": [
+            "S1"
+          ],
+          "M4E_LIT_02": [
+            "S3"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M4E_REL_01 (Somme, différence et soustraction d'un nombre négatif)",
+          "phase 3 : module M4E_LIT_02 (Réduire une expression en respectant le signe des constantes)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "fares-darghouth",
+          "jaccard": 0.484,
+          "memes_priorites": false
+        },
+        {
+          "autre": "ines-kefi",
+          "jaccard": 0.287,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": []
+    },
+    {
+      "student_id": "amine-mansouri",
+      "name": "Amine MANSOURI",
+      "level_key": "3e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "3e/04_NOMINATIFS/Amine_Mansouri/3e_Dossier_Individuel_Amine_Mansouri.md",
+        "3e/04_NOMINATIFS/Amine_Mansouri/3e_Remediation_Ciblee_Amine_Mansouri_ELEVE.md",
+        "3e/04_NOMINATIFS/Amine_Mansouri/3e_Remediation_Ciblee_Amine_Mansouri_PROF_Corrige.md",
+        "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/3e_S4_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 248010,
+      "priorites": {
+        "P1": "M3E_LIT_02",
+        "P2": "M3E_TRIG_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M3E_LIT_02",
+          "mots_retrouves": [
+            "réduire"
+          ],
+          "justification_dossier": "Erreur documentée sur l'addition des constantes signées lors d'une réduction ; prérequis direct de la factorisation et des identités remarquables de Troisième."
+        },
+        "p2": {
+          "skill_id": "M3E_TRIG_01",
+          "mots_retrouves": [],
+          "justification_dossier": "Le dossier signale une trigonométrie à installer ou une confusion cosinus/sinus ; l'erreur est un défaut d'identification des côtés, non un défaut de calcul."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+        "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+        "S3": "Construire et justifier (Pythagore, Thalès)",
+        "S4": "Choisir un rapport trigonométrique",
+        "competences_travaillees_visees_en_s5": {
+          "M3E_LIT_02": [
+            "S2"
+          ],
+          "M3E_TRIG_01": [
+            "S4"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M3E_LIT_02 (Réduire une expression avec des constantes signées)",
+          "phase 3 : module M3E_TRIG_01 (Identifier les côtés puis choisir le rapport trigonométrique)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "eval.A4",
+          "kind": "evaluation",
+          "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+          "corpus_line": "| **Elyes** | Confrontation directe sur (2/3×9/4) avec représentation d’aire ; division de fractions et notation scienti",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'équation 4x - 3 = 2x + 9 partage le multiensemble {2, 3, 4, 9} avec un produit de fractions du dossier de remédiation. Les deux tâches n'ont aucun rapport : ni la compétence, ni la consigne, ni la procédure."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "elyes-kefi",
+          "jaccard": 0.336,
+          "memes_priorites": false
+        },
+        {
+          "autre": "selim-mansouri",
+          "jaccard": 0.33,
+          "memes_priorites": false
+        },
+        {
+          "autre": "sarah-bargaoui",
+          "jaccard": 0.197,
+          "memes_priorites": false
+        },
+        {
+          "autre": "fares-laajili",
+          "jaccard": 0.169,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "elyes-kefi",
+      "name": "Elyes KEFI",
+      "level_key": "3e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "3e/04_NOMINATIFS/Elyes_Kefi/3e_Dossier_Individuel_Elyes_Kefi.md",
+        "3e/04_NOMINATIFS/Elyes_Kefi/3e_Remediation_Ciblee_Elyes_Kefi_ELEVE.md",
+        "3e/04_NOMINATIFS/Elyes_Kefi/3e_Remediation_Ciblee_Elyes_Kefi_PROF_Corrige.md",
+        "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/3e_S4_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 253185,
+      "priorites": {
+        "P1": "M3E_FRAC_02",
+        "P2": "M3E_LIT_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M3E_FRAC_02",
+          "mots_retrouves": [
+            "produit",
+            "quotient",
+            "fractions"
+          ],
+          "justification_dossier": "Erreur documentée : croisement des termes lors d'un produit. La procédure du produit est confondue avec celle de la somme."
+        },
+        "p2": {
+          "skill_id": "M3E_LIT_02",
+          "mots_retrouves": [
+            "constantes",
+            "signées"
+          ],
+          "justification_dossier": "Erreur documentée sur l'addition des constantes signées lors d'une réduction ; prérequis direct de la factorisation et des identités remarquables de Troisième."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+        "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+        "S3": "Construire et justifier (Pythagore, Thalès)",
+        "S4": "Choisir un rapport trigonométrique",
+        "competences_travaillees_visees_en_s5": {
+          "M3E_FRAC_02": [
+            "S1"
+          ],
+          "M3E_LIT_02": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M3E_FRAC_02 (Produit et quotient de fractions)",
+          "phase 3 : module M3E_LIT_02 (Réduire une expression avec des constantes signées)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "eval.A4",
+          "kind": "evaluation",
+          "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+          "corpus_line": "**Énoncé :** Calculer 2/3 × 9/4.",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'équation 4x - 3 = 2x + 9 partage le multiensemble {2, 3, 4, 9} avec un produit de fractions du dossier de remédiation. Les deux tâches n'ont aucun rapport : ni la compétence, ni la consigne, ni la procédure."
+          }
+        },
+        {
+          "ref": "eval.C2",
+          "kind": "evaluation",
+          "statement": "\\begin{enumerate}\n\\item Développer et réduire $(x + 4)(x + 3)$.\n\\item Contrôler le résultat pour $x = 2$.\n\\end{enumerate",
+          "corpus_line": "4. Une urne contient 3 boules rouges et 2 bleues. Calculer la probabilité de ne pas obtenir une rouge.",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "coïncidence de nombres avec un énoncé de probabilités (urne). Tâches sans rapport : développement d'un produit de deux sommes contre calcul de probabilité."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "amine-mansouri",
+          "jaccard": 0.336,
+          "memes_priorites": false
+        },
+        {
+          "autre": "selim-mansouri",
+          "jaccard": 0.33,
+          "memes_priorites": false
+        },
+        {
+          "autre": "fares-laajili",
+          "jaccard": 0.19,
+          "memes_priorites": false
+        },
+        {
+          "autre": "sarah-bargaoui",
+          "jaccard": 0.138,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "2 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "fares-laajili",
+      "name": "Fares LAAJILI",
+      "level_key": "3e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "3e/04_NOMINATIFS/Fares_Laajili/3e_Dossier_Individuel_Fares_Laajili.md",
+        "3e/04_NOMINATIFS/Fares_Laajili/3e_Remediation_Ciblee_Fares_Laajili_ELEVE.md",
+        "3e/04_NOMINATIFS/Fares_Laajili/3e_Remediation_Ciblee_Fares_Laajili_PROF_Corrige.md",
+        "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/3e_S4_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 246888,
+      "priorites": {
+        "P1": "M3E_FRAC_02",
+        "P2": "M3E_TRIG_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M3E_FRAC_02",
+          "mots_retrouves": [
+            "produit",
+            "fractions"
+          ],
+          "justification_dossier": "Erreur documentée : croisement des termes lors d'un produit. La procédure du produit est confondue avec celle de la somme."
+        },
+        "p2": {
+          "skill_id": "M3E_TRIG_01",
+          "mots_retrouves": [],
+          "justification_dossier": "Le dossier signale une trigonométrie à installer ou une confusion cosinus/sinus ; l'erreur est un défaut d'identification des côtés, non un défaut de calcul."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+        "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+        "S3": "Construire et justifier (Pythagore, Thalès)",
+        "S4": "Choisir un rapport trigonométrique",
+        "competences_travaillees_visees_en_s5": {
+          "M3E_FRAC_02": [
+            "S1"
+          ],
+          "M3E_TRIG_01": [
+            "S4"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M3E_FRAC_02 (Produit et quotient de fractions)",
+          "phase 3 : module M3E_TRIG_01 (Identifier les côtés puis choisir le rapport trigonométrique)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "eval.A4",
+          "kind": "evaluation",
+          "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+          "corpus_line": "| **Elyes** | Confrontation directe sur (2/3×9/4) avec représentation d’aire ; division de fractions et notation scienti",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'équation 4x - 3 = 2x + 9 partage le multiensemble {2, 3, 4, 9} avec un produit de fractions du dossier de remédiation. Les deux tâches n'ont aucun rapport : ni la compétence, ni la consigne, ni la procédure."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "sarah-bargaoui",
+          "jaccard": 0.315,
+          "memes_priorites": false
+        },
+        {
+          "autre": "selim-mansouri",
+          "jaccard": 0.298,
+          "memes_priorites": false
+        },
+        {
+          "autre": "elyes-kefi",
+          "jaccard": 0.19,
+          "memes_priorites": false
+        },
+        {
+          "autre": "amine-mansouri",
+          "jaccard": 0.169,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "sarah-bargaoui",
+      "name": "Sarah BARGAOUI",
+      "level_key": "3e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Dossier_Individuel_Sarah_Bargaoui.md",
+        "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Remediation_Ciblee_Sarah_Bargaoui_ELEVE.md",
+        "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Remediation_Ciblee_Sarah_Bargaoui_PROF_Corrige.md",
+        "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/3e_S4_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 247861,
+      "priorites": {
+        "P1": "M3E_LIT_02",
+        "P2": "M3E_EQ_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M3E_LIT_02",
+          "mots_retrouves": [],
+          "justification_dossier": "Erreur documentée sur l'addition des constantes signées lors d'une réduction ; prérequis direct de la factorisation et des identités remarquables de Troisième."
+        },
+        "p2": {
+          "skill_id": "M3E_EQ_01",
+          "mots_retrouves": [
+            "équation"
+          ],
+          "justification_dossier": "Les équations figurent parmi les domaines à installer d'après le dossier individuel ; elles conditionnent la mise en équation des problèmes de Troisième."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+        "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+        "S3": "Construire et justifier (Pythagore, Thalès)",
+        "S4": "Choisir un rapport trigonométrique",
+        "competences_travaillees_visees_en_s5": {
+          "M3E_LIT_02": [
+            "S2"
+          ],
+          "M3E_EQ_01": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M3E_LIT_02 (Réduire une expression avec des constantes signées)",
+          "phase 3 : module M3E_EQ_01 (Résoudre une équation du premier degré et vérifier la solution)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "eval.A4",
+          "kind": "evaluation",
+          "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+          "corpus_line": "| **Elyes** | Confrontation directe sur (2/3×9/4) avec représentation d’aire ; division de fractions et notation scienti",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'équation 4x - 3 = 2x + 9 partage le multiensemble {2, 3, 4, 9} avec un produit de fractions du dossier de remédiation. Les deux tâches n'ont aucun rapport : ni la compétence, ni la consigne, ni la procédure."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "selim-mansouri",
+          "jaccard": 0.321,
+          "memes_priorites": false
+        },
+        {
+          "autre": "fares-laajili",
+          "jaccard": 0.315,
+          "memes_priorites": false
+        },
+        {
+          "autre": "amine-mansouri",
+          "jaccard": 0.197,
+          "memes_priorites": false
+        },
+        {
+          "autre": "elyes-kefi",
+          "jaccard": 0.138,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "selim-mansouri",
+      "name": "Selim MANSOURI",
+      "level_key": "3e",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "3e/04_NOMINATIFS/Selim_Mansouri/3e_Dossier_Individuel_Selim_Mansouri.md",
+        "3e/04_NOMINATIFS/Selim_Mansouri/3e_Remediation_Ciblee_Selim_Mansouri_ELEVE.md",
+        "3e/04_NOMINATIFS/Selim_Mansouri/3e_Remediation_Ciblee_Selim_Mansouri_PROF_Corrige.md",
+        "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/3e_S4_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 247012,
+      "priorites": {
+        "P1": "M3E_REL_01",
+        "P2": "M3E_LIT_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M3E_REL_01",
+          "mots_retrouves": [
+            "produit"
+          ],
+          "justification_dossier": "Le signe d'un produit figure parmi les priorités du dossier individuel ; c'est le socle de tout le calcul littéral de Troisième."
+        },
+        "p2": {
+          "skill_id": "M3E_LIT_01",
+          "mots_retrouves": [
+            "distributivité"
+          ],
+          "justification_dossier": "La distributivité figure parmi les priorités du dossier ; l'erreur porte sur la propagation du signe au second terme."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+        "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+        "S3": "Construire et justifier (Pythagore, Thalès)",
+        "S4": "Choisir un rapport trigonométrique",
+        "competences_travaillees_visees_en_s5": {
+          "M3E_REL_01": [
+            "S1"
+          ],
+          "M3E_LIT_01": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M3E_REL_01 (Produit, quotient et priorités avec des nombres relatifs)",
+          "phase 3 : module M3E_LIT_01 (Développer avec la distributivité, y compris avec un facteur négatif)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "eval.A4",
+          "kind": "evaluation",
+          "statement": "Résoudre l'équation $4x - 3 = 2x + 9$.",
+          "corpus_line": "| **Elyes** | Confrontation directe sur (2/3×9/4) avec représentation d’aire ; division de fractions et notation scienti",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'équation 4x - 3 = 2x + 9 partage le multiensemble {2, 3, 4, 9} avec un produit de fractions du dossier de remédiation. Les deux tâches n'ont aucun rapport : ni la compétence, ni la consigne, ni la procédure."
+          }
+        },
+        {
+          "ref": "eval.C2",
+          "kind": "evaluation",
+          "statement": "\\begin{enumerate}\n\\item Développer et réduire $(x + 2)(x + 5)$.\n\\item Contrôler le résultat pour $x = 1$.\n\\end{enumerate",
+          "corpus_line": "* la formule $f(x)=1{,}5x+2$ ;",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "coïncidence de nombres avec l'expression f(x) = 1,5x + 2 d'une fiche de niveau. Tâches sans rapport."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "amine-mansouri",
+          "jaccard": 0.33,
+          "memes_priorites": false
+        },
+        {
+          "autre": "elyes-kefi",
+          "jaccard": 0.33,
+          "memes_priorites": false
+        },
+        {
+          "autre": "sarah-bargaoui",
+          "jaccard": 0.321,
+          "memes_priorites": false
+        },
+        {
+          "autre": "fares-laajili",
+          "jaccard": 0.298,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "2 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "ahmed-bakir",
+      "name": "Ahmed BAKIR",
+      "level_key": "2nde",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Dossier_Individuel_Ahmed_Bakir.md",
+        "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Remediation_Ciblee_Ahmed_Bakir_ELEVE.md",
+        "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Remediation_Ciblee_Ahmed_Bakir_PROF_Corrige.md",
+        "Nexus_2nde_S2_Dossiers_Eleves_PDF/2nde_S2_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_2nde_S3_Dossiers_Eleves_PDF/2nde_S3_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/2nde_S4_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 217374,
+      "priorites": {
+        "P1": "M2DE_CALC_01",
+        "P2": "M2DE_ALG_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M2DE_CALC_01",
+          "mots_retrouves": [
+            "priorités",
+            "signes",
+            "puissance"
+          ],
+          "justification_dossier": "Le diagnostic signale des certitudes erronées sur les priorités et les signes ; ces automatismes conditionnent tout le calcul algébrique de Seconde."
+        },
+        "p2": {
+          "skill_id": "M2DE_ALG_01",
+          "mots_retrouves": [
+            "identités",
+            "remarquables"
+          ],
+          "justification_dossier": "Les identités remarquables figurent parmi les priorités du dossier ; elles sont l'outil de base des chapitres d'algèbre de Seconde."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Réparer le moteur de calcul (priorités, fractions, puissances)",
+        "S2": "Construire l'algèbre du lycée (développement, factorisation, équations)",
+        "S3": "Modéliser une situation (pourcentages, fonctions)",
+        "S4": "Choisir le bon théorème (Pythagore, Thalès, trigonométrie)",
+        "competences_travaillees_visees_en_s5": {
+          "M2DE_CALC_01": [
+            "S1"
+          ],
+          "M2DE_ALG_01": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M2DE_CALC_01 (Priorités opératoires, signes et puissance d'un nombre négatif)",
+          "phase 3 : module M2DE_ALG_01 (Double distributivité et identités remarquables)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "phase3.3",
+          "kind": "travail",
+          "statement": "Développer $(3x - 4)^2$.",
+          "corpus_line": "Développer puis réduire (2x − 3)(x + 4). Écris d’abord les quatre produits et entoure les deux termes",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "l'alerte provient de l'exposant 2 de (3x - 4)², compté comme un nombre : le multiensemble {2, 3, 4} coïncide avec celui d'un double produit de la séance 2. Les tâches diffèrent : identité remarquable ici, double distributivité de deux binômes distincts là. Aucune valeur reprise."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "noa-maniaci",
+          "jaccard": 0.108,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "noa-maniaci",
+      "name": "Noa MANIACI",
+      "level_key": "2nde",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Dossier_Individuel_Noa_Maniaci.md",
+        "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Remediation_Ciblee_Noa_Maniaci_ELEVE.md",
+        "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Remediation_Ciblee_Noa_Maniaci_PROF_Corrige.md",
+        "Nexus_2nde_S2_Dossiers_Eleves_PDF/2nde_S2_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_2nde_S3_Dossiers_Eleves_PDF/2nde_S3_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/2nde_S4_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 27,
+      "corpus_caracteres": 209128,
+      "priorites": {
+        "P1": "M2DE_EQ_02",
+        "P2": "M2DE_POURC_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M2DE_EQ_02",
+          "mots_retrouves": [
+            "équation",
+            "produit"
+          ],
+          "justification_dossier": "Le dossier place les équations parmi les domaines à installer ; l'équation produit nul est l'outil qui prépare le second degré."
+        },
+        "p2": {
+          "skill_id": "M2DE_POURC_01",
+          "mots_retrouves": [
+            "évolutions",
+            "successives"
+          ],
+          "justification_dossier": "Le diagnostic montre que deux évolutions successives sont traitées comme une somme de pourcentages ; c'est une erreur de concept persistante jusqu'en Première."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Réparer le moteur de calcul (priorités, fractions, puissances)",
+        "S2": "Construire l'algèbre du lycée (développement, factorisation, équations)",
+        "S3": "Modéliser une situation (pourcentages, fonctions)",
+        "S4": "Choisir le bon théorème (Pythagore, Thalès, trigonométrie)",
+        "competences_travaillees_visees_en_s5": {
+          "M2DE_EQ_02": [
+            "S2"
+          ],
+          "M2DE_POURC_01": [
+            "S3"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M2DE_EQ_02 (Équation produit nul)",
+          "phase 3 : module M2DE_POURC_01 (Coefficient multiplicateur et évolutions successives)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "ahmed-bakir",
+          "jaccard": 0.108,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": []
+    },
+    {
+      "student_id": "ahmad-beldi-maths",
+      "name": "Ahmad BELDI",
+      "level_key": "1ere_spe",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Dossier_Individuel_Ahmad_Beldi.md",
+        "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_ELEVE.md",
+        "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_PROF_Corrige.md"
+      ],
+      "nb_sources_lues": 24,
+      "corpus_caracteres": 171068,
+      "priorites": {
+        "P1": "M1RE_ALG_02",
+        "P2": "M1RE_FONC_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M1RE_ALG_02",
+          "mots_retrouves": [
+            "différence",
+            "carrés"
+          ],
+          "justification_dossier": "La factorisation figure parmi les priorités du dossier ; c'est l'outil direct de l'étude du signe d'un trinôme en Première."
+        },
+        "p2": {
+          "skill_id": "M1RE_FONC_02",
+          "mots_retrouves": [
+            "langage",
+            "fonctions",
+            "image",
+            "antécédent"
+          ],
+          "justification_dossier": "Le dossier signale un langage fonctionnel à rectifier ; ce vocabulaire est employé dans tous les chapitres de Première, en particulier en dérivation."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calcul algébrique, inéquations et transition vers le second degré",
+        "S2": "Fonctions, fonctions de référence et première approche de la dérivation",
+        "S3": "Vecteurs, droites et transition vers le produit scalaire",
+        "S4": "Pourcentages, événements et probabilités conditionnelles",
+        "competences_travaillees_visees_en_s5": {
+          "M1RE_ALG_02": [
+            "S1"
+          ],
+          "M1RE_FONC_02": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M1RE_ALG_02 (Factoriser, en particulier une différence de deux carrés)",
+          "phase 3 : module M1RE_FONC_02 (Le langage des fonctions : image, antécédent, appartenance à la courbe)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "donia-khadhrani",
+          "jaccard": 0.312,
+          "memes_priorites": false
+        },
+        {
+          "autre": "malek-khadhrani",
+          "jaccard": 0.174,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "WARNING",
+      "notes": [
+        "aucun livret personnalisé S2 à S4 n'existe pour cet élève : la trajectoire est reconstruite à partir du diagnostic et de la remédiation seuls"
+      ]
+    },
+    {
+      "student_id": "donia-khadhrani",
+      "name": "Donia KHADHRANI",
+      "level_key": "1ere_spe",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Dossier_Individuel_Donia_Khadhrani.md",
+        "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_ELEVE.md",
+        "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_PROF_Corrige.md"
+      ],
+      "nb_sources_lues": 24,
+      "corpus_caracteres": 171142,
+      "priorites": {
+        "P1": "M1RE_FONC_02",
+        "P2": "M1RE_INEQ_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M1RE_FONC_02",
+          "mots_retrouves": [
+            "fonctions",
+            "image",
+            "antécédent"
+          ],
+          "justification_dossier": "Le dossier signale un langage fonctionnel à rectifier ; ce vocabulaire est employé dans tous les chapitres de Première, en particulier en dérivation."
+        },
+        "p2": {
+          "skill_id": "M1RE_INEQ_01",
+          "mots_retrouves": [
+            "inéquation"
+          ],
+          "justification_dossier": "Les inéquations figurent parmi les domaines à installer d'après le dossier ; elles conditionnent les tableaux de signes du second degré."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calcul algébrique, inéquations et transition vers le second degré",
+        "S2": "Fonctions, fonctions de référence et première approche de la dérivation",
+        "S3": "Vecteurs, droites et transition vers le produit scalaire",
+        "S4": "Pourcentages, événements et probabilités conditionnelles",
+        "competences_travaillees_visees_en_s5": {
+          "M1RE_FONC_02": [
+            "S2"
+          ],
+          "M1RE_INEQ_01": [
+            "S1"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M1RE_FONC_02 (Le langage des fonctions : image, antécédent, appartenance à la courbe)",
+          "phase 3 : module M1RE_INEQ_01 (Inéquation du premier degré et écriture en intervalle)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [],
+      "proximite_meme_niveau": [
+        {
+          "autre": "malek-khadhrani",
+          "jaccard": 0.331,
+          "memes_priorites": false
+        },
+        {
+          "autre": "ahmad-beldi-maths",
+          "jaccard": 0.312,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "WARNING",
+      "notes": [
+        "aucun livret personnalisé S2 à S4 n'existe pour cet élève : la trajectoire est reconstruite à partir du diagnostic et de la remédiation seuls"
+      ]
+    },
+    {
+      "student_id": "malek-khadhrani",
+      "name": "Malek KHADHRANI",
+      "level_key": "1ere_spe",
+      "subject": "Mathématiques",
+      "sources_individuelles": [
+        "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Dossier_Individuel_Malek_Khadhrani.md",
+        "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_ELEVE.md",
+        "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_PROF_Corrige.md"
+      ],
+      "nb_sources_lues": 24,
+      "corpus_caracteres": 170957,
+      "priorites": {
+        "P1": "M1RE_FONC_01",
+        "P2": "M1RE_VECT_02"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "M1RE_FONC_01",
+          "mots_retrouves": [
+            "image",
+            "négative"
+          ],
+          "justification_dossier": "Erreur documentée sur la substitution d'un nombre négatif ; l'omission des parenthèses est une erreur d'écriture qui produit systématiquement un résultat faux."
+        },
+        "p2": {
+          "skill_id": "M1RE_VECT_02",
+          "mots_retrouves": [
+            "colinéarité",
+            "vecteurs"
+          ],
+          "justification_dossier": "La colinéarité figure parmi les priorités du dossier ; c'est le critère utilisé toute l'année pour l'alignement, le parallélisme et l'équation de droite."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Calcul algébrique, inéquations et transition vers le second degré",
+        "S2": "Fonctions, fonctions de référence et première approche de la dérivation",
+        "S3": "Vecteurs, droites et transition vers le produit scalaire",
+        "S4": "Pourcentages, événements et probabilités conditionnelles",
+        "competences_travaillees_visees_en_s5": {
+          "M1RE_FONC_01": [
+            "S2"
+          ],
+          "M1RE_VECT_02": [
+            "S3"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module M1RE_FONC_01 (Calculer une image, en particulier pour une valeur négative)",
+          "phase 3 : module M1RE_VECT_02 (Colinéarité de deux vecteurs et alignement de trois points)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "phase2.2",
+          "kind": "travail",
+          "statement": "Soit $g(x) = -2x^2 + x$. Calculer $g(-3)$.",
+          "corpus_line": "2. Calculer f(-2) pour f(x)=x²-3x.",
+          "adjudication": {
+            "verdict": "reprise délibérée, tâche différente",
+            "justification": "la fonction et la valeur diffèrent (g(x) = -2x² + x en -3 contre f(x) = x² - 3x en -2). L'énoncé du plan de remédiation est réutilisé plus loin dans le module, en analyse d'erreur : c'est précisément l'erreur de substitution négative documentée au dossier de cet élève. Format nouveau, réactivation espacée."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "donia-khadhrani",
+          "jaccard": 0.331,
+          "memes_priorites": false
+        },
+        {
+          "autre": "ahmad-beldi-maths",
+          "jaccard": 0.174,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "WARNING",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées",
+        "aucun livret personnalisé S2 à S4 n'existe pour cet élève : la trajectoire est reconstruite à partir du diagnostic et de la remédiation seuls"
+      ]
+    },
+    {
+      "student_id": "ahmad-beldi-nsi",
+      "name": "Ahmad BELDI",
+      "level_key": "1re_nsi",
+      "subject": "NSI",
+      "sources_individuelles": [
+        "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Dossier_Individuel_Ahmad_BELDI.md",
+        "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_ELEVE.md",
+        "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_PROF_Corrige.md",
+        "Nexus_1re_NSI_S2_PDF_ELEVES/1re_NSI_S2_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_1re_NSI_S3_Dossiers_Eleves_PDF/1re_NSI_S3_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/1re_NSI_S4_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/1re_NSI_S4_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.tex"
+      ],
+      "nb_sources_lues": 28,
+      "corpus_caracteres": 211828,
+      "priorites": {
+        "P1": "NSI1_FONC_01",
+        "P2": "NSI1_BOUCLE_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "NSI1_FONC_01",
+          "mots_retrouves": [
+            "paramètre",
+            "valeur",
+            "renvoyée"
+          ],
+          "justification_dossier": "Le dossier individuel place la compétence « Fonctions » au niveau 1 en début de stage et documente la conception « un paramètre n'est pas la valeur renvoyée » ; sans return, aucune composition de fonc"
+        },
+        "p2": {
+          "skill_id": "NSI1_BOUCLE_01",
+          "mots_retrouves": [
+            "range"
+          ],
+          "justification_dossier": "Compétence « Boucles » au niveau 1 au diagnostic, avec la conception « range(3) produit trois valeurs » à stabiliser ; toute erreur de borne fausse silencieusement un traitement de données."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Variables, affectation et conditions",
+        "S2": "Boucles, compteurs et accumulateurs",
+        "S3": "Fonctions, contrats et tests",
+        "S4": "Listes, enregistrements et données CSV",
+        "competences_travaillees_visees_en_s5": {
+          "NSI1_FONC_01": [
+            "S3"
+          ],
+          "NSI1_BOUCLE_01": [
+            "S2"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module NSI1_FONC_01 (Paramètre, argument, valeur renvoyée et None)",
+          "phase 3 : module NSI1_BOUCLE_01 (range, bornes et nombre d'itérations)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "phase2.3",
+          "kind": "travail",
+          "statement": "Corriger \\code{def somme(a, b): print(a + b)} pour que \\code{s = somme(2, 3)} donne bien \\code{5}.",
+          "corpus_line": "2. Pour point = (3, 5), compléter : x, y = point donne x =                      et y =          .",
+          "adjudication": {
+            "verdict": "faux positif",
+            "justification": "coïncidence des nombres 2, 3 et 5 avec un exercice de décomposition de tuple de la séance 4. Tâches sans rapport."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "ahmed-benhadj-salem",
+          "jaccard": 0.141,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    },
+    {
+      "student_id": "ahmed-benhadj-salem",
+      "name": "Ahmed BENHADJ SALEM",
+      "level_key": "1re_nsi",
+      "subject": "NSI",
+      "sources_individuelles": [
+        "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.md",
+        "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_ELEVE.md",
+        "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_PROF_Corrige.md",
+        "Nexus_1re_NSI_S2_PDF_ELEVES/1re_NSI_S2_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Nexus_1re_NSI_S3_Dossiers_Eleves_PDF/1re_NSI_S3_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+        "Bilans/1re_NSI_S4_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf"
+      ],
+      "nb_sources_lues": 28,
+      "corpus_caracteres": 190929,
+      "priorites": {
+        "P1": "NSI1_ACC_01",
+        "P2": "NSI1_TEST_01"
+      },
+      "priorites_documentees": {
+        "p1": {
+          "skill_id": "NSI1_ACC_01",
+          "mots_retrouves": [
+            "accumulateurs",
+            "somme"
+          ],
+          "justification_dossier": "Erreur documentée et persistante dans les deux bilans de positionnement : la somme d'une suite de valeurs est confondue avec le nombre d'itérations. La compétence conditionne tout traitement de donnée"
+        },
+        "p2": {
+          "skill_id": "NSI1_TEST_01",
+          "mots_retrouves": [
+            "tests",
+            "limites"
+          ],
+          "justification_dossier": "Compétence « Tests » au niveau 1 au diagnostic, la plus basse du profil malgré des connaissances théoriques étendues ; c'est le levier principal de fiabilité pour un parcours en autonomie."
+        }
+      },
+      "ancrage_s1_s4": {
+        "S1": "Variables, affectation et conditions",
+        "S2": "Boucles, compteurs et accumulateurs",
+        "S3": "Fonctions, contrats et tests",
+        "S4": "Listes, enregistrements et données CSV",
+        "competences_travaillees_visees_en_s5": {
+          "NSI1_ACC_01": [
+            "S2",
+            "S4"
+          ],
+          "NSI1_TEST_01": [
+            "S3",
+            "S4"
+          ]
+        }
+      },
+      "commun_au_niveau": {
+        "travail_minutes": 51,
+        "travail_pct": 68.0,
+        "evaluation_points": 14,
+        "evaluation_pct": 70.0,
+        "elements": [
+          "phase 1 (réactivation, identique au niveau)",
+          "phase 4 (pont vers l'année suivante, identique au niveau)",
+          "phase 5 (méthodologie, identique au niveau)",
+          "items A1-A4, B1-B3 et C1 de l'évaluation"
+        ]
+      },
+      "individualise": {
+        "travail_minutes": 24,
+        "travail_pct": 32.0,
+        "evaluation_points": 6,
+        "evaluation_pct": 30.0,
+        "elements": [
+          "phase 2 : module NSI1_ACC_01 (Accumulateurs : somme, compteur, invariant et variant)",
+          "phase 3 : module NSI1_TEST_01 (Tests, assertions et cas limites)",
+          "items A5, A6, B4 et C2 de l'évaluation"
+        ]
+      },
+      "collisions_exactes": [],
+      "collisions_signature_numerique": [
+        {
+          "ref": "phase3.3",
+          "kind": "travail",
+          "statement": "L'assertion \\code{assert 0.1 + 0.2 == 0.3} échoue. Expliquer pourquoi, puis proposer une écriture correcte.",
+          "corpus_line": "- utiliser `math.isclose(0.1+0.2, 0.3)` ;",
+          "adjudication": {
+            "verdict": "reprise délibérée, tâche différente",
+            "justification": "le plan de remédiation demandait de lire math.isclose et de tester 0.1 + 0.2 ; la séance 5 demande d'expliquer pourquoi l'assertion échoue puis de proposer une écriture correcte. La compétence Tests est relevée au niveau 1, le plus bas du profil : la réactivation espacée est justifiée."
+          }
+        }
+      ],
+      "proximite_meme_niveau": [
+        {
+          "autre": "ahmad-beldi-nsi",
+          "jaccard": 0.141,
+          "memes_priorites": false
+        }
+      ],
+      "verdict": "PASS",
+      "notes": [
+        "1 alerte(s) de signature numérique, toutes relues et adjugées"
+      ]
+    }
+  ],
+  "paires_meme_niveau": [
+    {
+      "a": "fares-darghouth",
+      "b": "sinda-chikhaoui",
+      "jaccard": 0.484,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M4E_AIRE_01",
+        "M4E_GEO_02"
+      ],
+      "priorites_b": [
+        "M4E_REL_01",
+        "M4E_LIT_02"
+      ]
+    },
+    {
+      "a": "amine-mansouri",
+      "b": "elyes-kefi",
+      "jaccard": 0.336,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_LIT_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_FRAC_02",
+        "M3E_LIT_02"
+      ]
+    },
+    {
+      "a": "donia-khadhrani",
+      "b": "malek-khadhrani",
+      "jaccard": 0.331,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M1RE_FONC_02",
+        "M1RE_INEQ_01"
+      ],
+      "priorites_b": [
+        "M1RE_FONC_01",
+        "M1RE_VECT_02"
+      ]
+    },
+    {
+      "a": "amine-mansouri",
+      "b": "selim-mansouri",
+      "jaccard": 0.33,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_LIT_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_REL_01",
+        "M3E_LIT_01"
+      ]
+    },
+    {
+      "a": "elyes-kefi",
+      "b": "selim-mansouri",
+      "jaccard": 0.33,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_FRAC_02",
+        "M3E_LIT_02"
+      ],
+      "priorites_b": [
+        "M3E_REL_01",
+        "M3E_LIT_01"
+      ]
+    },
+    {
+      "a": "sarah-bargaoui",
+      "b": "selim-mansouri",
+      "jaccard": 0.321,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_LIT_02",
+        "M3E_EQ_01"
+      ],
+      "priorites_b": [
+        "M3E_REL_01",
+        "M3E_LIT_01"
+      ]
+    },
+    {
+      "a": "fares-laajili",
+      "b": "sarah-bargaoui",
+      "jaccard": 0.315,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_FRAC_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_LIT_02",
+        "M3E_EQ_01"
+      ]
+    },
+    {
+      "a": "ahmad-beldi-maths",
+      "b": "donia-khadhrani",
+      "jaccard": 0.312,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M1RE_ALG_02",
+        "M1RE_FONC_02"
+      ],
+      "priorites_b": [
+        "M1RE_FONC_02",
+        "M1RE_INEQ_01"
+      ]
+    },
+    {
+      "a": "fares-laajili",
+      "b": "selim-mansouri",
+      "jaccard": 0.298,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_FRAC_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_REL_01",
+        "M3E_LIT_01"
+      ]
+    },
+    {
+      "a": "ines-kefi",
+      "b": "sinda-chikhaoui",
+      "jaccard": 0.287,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M4E_REL_02",
+        "M4E_FRAC_02"
+      ],
+      "priorites_b": [
+        "M4E_REL_01",
+        "M4E_LIT_02"
+      ]
+    },
+    {
+      "a": "fares-darghouth",
+      "b": "ines-kefi",
+      "jaccard": 0.26,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M4E_AIRE_01",
+        "M4E_GEO_02"
+      ],
+      "priorites_b": [
+        "M4E_REL_02",
+        "M4E_FRAC_02"
+      ]
+    },
+    {
+      "a": "amine-mansouri",
+      "b": "sarah-bargaoui",
+      "jaccard": 0.197,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_LIT_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_LIT_02",
+        "M3E_EQ_01"
+      ]
+    },
+    {
+      "a": "elyes-kefi",
+      "b": "fares-laajili",
+      "jaccard": 0.19,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_FRAC_02",
+        "M3E_LIT_02"
+      ],
+      "priorites_b": [
+        "M3E_FRAC_02",
+        "M3E_TRIG_01"
+      ]
+    },
+    {
+      "a": "ahmad-beldi-maths",
+      "b": "malek-khadhrani",
+      "jaccard": 0.174,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M1RE_ALG_02",
+        "M1RE_FONC_02"
+      ],
+      "priorites_b": [
+        "M1RE_FONC_01",
+        "M1RE_VECT_02"
+      ]
+    },
+    {
+      "a": "amine-mansouri",
+      "b": "fares-laajili",
+      "jaccard": 0.169,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_LIT_02",
+        "M3E_TRIG_01"
+      ],
+      "priorites_b": [
+        "M3E_FRAC_02",
+        "M3E_TRIG_01"
+      ]
+    },
+    {
+      "a": "ahmad-beldi-nsi",
+      "b": "ahmed-benhadj-salem",
+      "jaccard": 0.141,
+      "memes_priorites": false,
+      "priorites_a": [
+        "NSI1_FONC_01",
+        "NSI1_BOUCLE_01"
+      ],
+      "priorites_b": [
+        "NSI1_ACC_01",
+        "NSI1_TEST_01"
+      ]
+    },
+    {
+      "a": "elyes-kefi",
+      "b": "sarah-bargaoui",
+      "jaccard": 0.138,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M3E_FRAC_02",
+        "M3E_LIT_02"
+      ],
+      "priorites_b": [
+        "M3E_LIT_02",
+        "M3E_EQ_01"
+      ]
+    },
+    {
+      "a": "ahmed-bakir",
+      "b": "noa-maniaci",
+      "jaccard": 0.108,
+      "memes_priorites": false,
+      "priorites_a": [
+        "M2DE_CALC_01",
+        "M2DE_ALG_01"
+      ],
+      "priorites_b": [
+        "M2DE_EQ_02",
+        "M2DE_POURC_01"
+      ]
+    }
+  ]
+}

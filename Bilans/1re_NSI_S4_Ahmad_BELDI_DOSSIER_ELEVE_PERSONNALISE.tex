@@ -1,0 +1,583 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=14.5mm,top=17mm,bottom=16mm,headheight=25pt]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{tabularx,array,booktabs,longtable,multirow}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{pgffor}
+\usepackage{hyperref}
+\usepackage{needspace}
+\usepackage{upquote}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.3pt}
+\setlist[itemize]{leftmargin=6mm,itemsep=1.1pt,topsep=2pt}
+\setlist[enumerate]{leftmargin=7mm,itemsep=1.6pt,topsep=2pt}
+\renewcommand{\arraystretch}{1.17}
+\sloppy
+\raggedbottom
+
+\definecolor{Navy}{HTML}{0B2347}
+\definecolor{Blue}{HTML}{0E5AA7}
+\definecolor{Gold}{HTML}{C9A227}
+\definecolor{SoftGold}{HTML}{F7F1D8}
+\definecolor{SoftBlue}{HTML}{EDF4FB}
+\definecolor{SoftGray}{HTML}{F4F5F7}
+\definecolor{Red}{HTML}{9E2234}
+\definecolor{Green}{HTML}{167A68}
+\definecolor{TextGray}{HTML}{526170}
+\definecolor{CodeBg}{HTML}{F2F4F7}
+\definecolor{LineGray}{HTML}{A9B0B7}
+\definecolor{Purple}{HTML}{6E4C9A}
+\definecolor{Orange}{HTML}{B86416}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{NEXUS RÉUSSITE}}
+\rhead{Première NSI - Stage de pré-rentrée}
+\cfoot{\small Séance 4/5 - \StudentName \quad | \quad page \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Gold}\leaders\hrule height \headrulewidth\hfill}}
+
+\newtcolorbox{goalbox}{enhanced,breakable,colback=SoftGold,colframe=Gold,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{methodbox}{enhanced,breakable,colback=SoftBlue,colframe=Navy,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{successbox}{enhanced,breakable,colback=green!3,colframe=Green,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{graybox}{enhanced,breakable,colback=SoftGray,colframe=TextGray,boxrule=0.65pt,arc=1.5mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{codegoalbox}{enhanced,breakable,colback=purple!3,colframe=Purple,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{warningbox}{enhanced,breakable,colback=orange!4,colframe=Orange,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+
+\newcommand{\sectiontitle}[1]{\par\needspace{13mm}\vspace{1mm}{\color{Navy}\Large\bfseries #1}\par\vspace{1mm}{\color{Gold}\rule{\linewidth}{1.1pt}}\vspace{1.5mm}}
+\newcommand{\subsectiontitle}[1]{\par\needspace{8mm}\vspace{1mm}{\color{Blue}\large\bfseries #1}\par\vspace{0.8mm}}
+\newcommand{\minititle}[1]{\par\needspace{6mm}{\color{Purple}\normalsize\bfseries #1}\par\vspace{0.6mm}}
+\newcommand{\conf}{\(\square\,1\quad\square\,2\quad\square\,3\quad\square\,4\)}
+\newcommand{\worklines}[1]{\par\vspace{0.8mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.32pt}\par\vspace{3.1mm}}}
+\newcommand{\shortlines}[1]{\par\vspace{0.5mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.3pt}\par\vspace{2.1mm}}}
+\newcommand{\cb}{\(\square\)}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\certline}{\textbf{Certitude :} \conf\hfill\textbf{Contrôle :} \rule{40mm}{0.32pt}}
+\newcommand{\answerbox}[1]{\begin{tcolorbox}[colback=white,colframe=LineGray,boxrule=0.45pt,arc=1mm,height=#1,left=2mm,right=2mm,top=1mm,bottom=1mm]\end{tcolorbox}}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{CodeBg},
+  frame=single,
+  rulecolor=\color{gray!35},
+  numbers=none,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  tabsize=4,
+  breaklines=true,
+  xleftmargin=1mm,
+  framexleftmargin=1mm,
+  aboveskip=1.5mm,
+  belowskip=1.5mm,
+  keywordstyle=\color{Blue}\bfseries,
+  commentstyle=\color{Green!80!black},
+  stringstyle=\color{Red!85!black}
+}
+
+\newcommand{\StudentName}{Ahmad BELDI}
+\newcommand{\aidstrip}{%
+\begin{graybox}\small
+\textbf{Aides graduées - une seule à la fois :}
+A - placer les indices sous les valeurs ;
+B - écrire \code{len(L)-1} avant le dernier accès ;
+C - demander si l'opération modifie la liste ;
+D - écrire les cinq clés de l'enregistrement ;
+E - convertir \code{temperature} et \code{humidite} avant tout calcul.
+\end{graybox}}
+
+\begin{document}
+
+\begin{center}
+\IfFileExists{nexus_logo.png}{\includegraphics[width=44mm]{nexus_logo.png}\\[1.5mm]}{}
+{\color{Gold}\large\bfseries PRÉ-RENTRÉE 2026-2027}\\[1.5mm]
+{\color{Navy}\fontsize{21}{24}\selectfont\bfseries SÉANCE 4 - LISTES, ENREGISTREMENTS ET DONNÉES CSV}\\[1.5mm]
+{\large Dossier personnalisé - \textbf{Ahmad BELDI} - durée : \textbf{2 heures}}\\[1mm]
+{\color{Blue}\bfseries Parcours : Fondations guidées}
+\end{center}
+
+\begin{goalbox}
+\textbf{Objectif personnel de la séance 4 :} stabiliser définitivement l'\textbf{indexation} et \code{len}, puis utiliser une liste de dictionnaires pour charger et analyser le fichier \code{mesures_capteurs.csv}.
+
+\medskip
+\textbf{Production à conserver :} le fichier \code{S4_structures_csv_Ahmad.py}, avec cinq accès corrects, un chargement CSV typé, un filtre d'alertes, une moyenne et des tests simples.
+\end{goalbox}
+
+\begin{methodbox}
+\textbf{Le fil des quatre séances}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries\color{Navy}}p{17mm} X X}
+S1 & suivre l'état des variables et choisir une condition ; & aujourd'hui, chaque ligne CSV deviendra un état structuré ;\\
+S2 & parcourir une liste avec une boucle ; & aujourd'hui, la boucle parcourra des enregistrements ;\\
+S3 & écrire des fonctions qui renvoient une valeur ; & aujourd'hui, chaque traitement sera placé dans une fonction ;\\
+S4 & accéder, copier, enregistrer, importer et filtrer. & preuve finale : un analyseur de table exécutable.\\
+\end{tabularx}
+\end{methodbox}
+
+\sectiontitle{1. Feuille de route des 120 minutes}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{22mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Travail & \color{white}Preuve attendue \\
+0--10 min & Rituel : indices, longueur et dernier élément. & Cinq accès exacts. \\
+10--28 min & Chaînes, tuples, listes et parcours. & Tableau comparatif complété. \\
+28--45 min & Mutation, alias et copie. & Liste d'origine préservée. \\
+45--65 min & Dictionnaire : construire une mesure. & Enregistrement de cinq clés. \\
+65--70 min & Pause. & -- \\
+70--88 min & Lire le CSV et convertir les types. & Liste de dictionnaires typés. \\
+88--100 min & Filtrer et calculer une moyenne. & Nouvelle liste + résultat contrôlé. \\
+100--112 min & Trier, détecter un doublon, contrôler. & Trois contrôles exécutés. \\
+112--120 min & Cartes de rappel et exit ticket. & Explication individuelle. \\
+\end{tabularx}
+\begin{successbox}
+\textbf{Critères de réussite :} au moins cinq accès sans erreur ; distinction claire entre \code{len(L)} et le dernier indice ; aucune mutation involontaire ; valeurs numériques converties avant calcul ; filtre produisant une nouvelle liste ; une erreur de code expliquée précisément.
+\end{successbox}
+
+\newpage
+\sectiontitle{2. Rituel : indices et longueur - 10 min}
+\textbf{Consigne :} travailler sans ordinateur pendant 7 minutes. Exécuter ensuite uniquement pour contrôler.
+
+\begin{center}
+\begin{tikzpicture}[x=2.2cm,y=1.05cm]
+\foreach \x/\v in {0/4,1/8,2/15,3/16}{
+  \draw[fill=SoftBlue] (\x,0) rectangle ++(1,0.8);
+  \node at (\x+0.5,0.4) {\Large\textbf{\v}};
+  \node[below,TextGray] at (\x+0.5,0) {indice \x};
+}
+\end{tikzpicture}
+\end{center}
+
+Pour \code{L = [4, 8, 15, 16]}, compléter sans exécuter.
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{43mm} X >{\bfseries}p{34mm} X}
+\toprule
+Expression & Valeur & Expression & Valeur \\
+\midrule
+\code{L[0]} & & \code{L[2]} & \\
+\code{L[-1]} & & \code{len(L)} & \\
+Dernier indice & & \code{L[len(L)-1]} & \\
+\bottomrule
+\end{tabularx}
+
+\subsectiontitle{Erreur à diagnostiquer}
+Un élève écrit : \code{dernier = L[len(L)]}.
+\begin{enumerate}
+\item Quelle valeur pense-t-il demander ? \rule{55mm}{0.32pt}
+\item Quel est le problème exact ? \worklines{1}
+\item Écrire la correction : \rule{55mm}{0.32pt}
+\end{enumerate}
+
+\begin{methodbox}
+\textbf{Repère à mémoriser :} une liste de longueur \(n\) possède les indices \(0,1,\ldots,n-1\). La longueur compte les éléments ; elle n'est pas un indice valide.
+\end{methodbox}
+
+\subsectiontitle{Checkpoint personnel}
+Nombre d'accès corrects sur les cinq accès essentiels : \rule{12mm}{0.32pt} / 5.
+
+\certline
+\aidstrip
+
+\newpage
+\sectiontitle{3. Chaîne, tuple ou liste ? - 18 min}
+\begin{methodbox}
+Ces trois structures sont \textbf{ordonnées} et s'indexent. La différence essentielle porte sur la \textbf{mutation} : une liste peut être modifiée ; une chaîne et un tuple ne le peuvent pas.
+\end{methodbox}
+
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{28mm} X X X}
+\rowcolor{Navy}\color{white}Structure & \color{white}Exemple & \color{white}Accès & \color{white}Modification directe ? \\
+Chaîne & \code{"CAPTEUR"} & \code{mot[0]} & \\
+Tuple & \code{(3, 5)} & \code{point[1]} & \\
+Liste & \code{[28.4, 31.2, -1.5]} & \code{temperatures[-1]} & \\
+\end{tabularx}
+
+\subsectiontitle{A. Accéder et décomposer}
+\begin{enumerate}
+\item Pour \code{mot = "CAPTEUR"}, écrire \code{mot[0]}, \code{mot[3]} et \code{len(mot)}.
+\shortlines{1}
+\item Pour \code{point = (3, 5)}, compléter : \code{x, y = point} donne \(x=\rule{12mm}{0.32pt}\) et \(y=\rule{12mm}{0.32pt}\).
+\item Pour \code{temperatures = [28.4, 31.2, -1.5]}, écrire le dernier élément de deux manières différentes.
+\shortlines{1}
+\end{enumerate}
+
+\subsectiontitle{B. Construire une nouvelle liste sans toucher à l'ancienne}
+On veut doubler chaque valeur de \code{valeurs}.
+\begin{lstlisting}
+valeurs = [3, 7, 9]
+doubles = []
+for valeur in valeurs:
+    ______________________________
+\end{lstlisting}
+\begin{enumerate}
+\item Compléter une seule instruction dans la boucle.
+\item Écrire la valeur finale de \code{doubles} : \rule{65mm}{0.32pt}
+\item Vérifier que \code{valeurs} est restée inchangée : \rule{55mm}{0.32pt}
+\end{enumerate}
+
+\begin{successbox}
+\textbf{Preuve attendue :} je peux expliquer pourquoi le programme construit une nouvelle liste et ne remplace aucun élément de la liste source.
+\end{successbox}
+\aidstrip
+
+\newpage
+\sectiontitle{4. Mutation, alias et copie - 17 min}
+\subsectiontitle{A. Deux noms pour une seule liste}
+Prévoir avant d'exécuter.
+\begin{lstlisting}
+a = [1, 2]
+b = a
+b.append(3)
+print("a =", a)
+print("b =", b)
+\end{lstlisting}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{47mm} X}
+\toprule
+Question & Réponse avant exécution \\
+\midrule
+Valeur affichée pour \code{a} & \\
+Valeur affichée pour \code{b} & \\
+Nombre réel d'objets liste & \\
+Pourquoi \code{a} change-t-elle ? & \\
+\bottomrule
+\end{tabularx}
+
+\begin{center}
+\begin{tikzpicture}
+\node[draw=Navy,rounded corners,fill=SoftBlue,minimum width=18mm] (a) at (-1.8,1.2) {nom \code{a}};
+\node[draw=Navy,rounded corners,fill=SoftBlue,minimum width=18mm] (b) at (1.8,1.2) {nom \code{b}};
+\node[draw=Gold,rounded corners,fill=SoftGold,minimum width=52mm] (l) at (0,-0.2) {un seul objet liste \code{[1, 2, 3]}};
+\draw[->,thick,Blue] (a) -- (l);
+\draw[->,thick,Blue] (b) -- (l);
+\end{tikzpicture}
+\end{center}
+
+\subsectiontitle{B. Créer une liste indépendante}
+Compléter la fonction du fichier \code{S4_structures_csv_Ahmad.py}.
+\begin{lstlisting}
+def ajouter_sans_modifier(valeurs, nouvelle):
+    copie = ______________________
+    ______________________________
+    return _______________________
+\end{lstlisting}
+
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{12mm} X X X}
+\toprule
+N° & Appel & Résultat attendu & Liste source après appel \\
+\midrule
+1 & \code{ajouter_sans_modifier([1, 2], 3)} & & \\
+2 & \code{ajouter_sans_modifier([], 5)} & & \\
+3 & \code{ajouter_sans_modifier([-1], -2)} & & \\
+\bottomrule
+\end{tabularx}
+
+\begin{warningbox}
+\textbf{Contrôle obligatoire :} après l'appel, imprimer la liste source et la liste renvoyée. Si les deux ont été modifiées, la copie n'est pas correcte.
+\end{warningbox}
+\aidstrip
+
+\newpage
+\sectiontitle{5. Un dictionnaire pour représenter une mesure - 20 min}
+\begin{methodbox}
+Une liste repère une valeur par sa \textbf{position}. Un dictionnaire repère une valeur par une \textbf{clé}. Une ligne du fichier de capteurs sera représentée par un dictionnaire de cinq clés.
+\end{methodbox}
+
+\subsectiontitle{A. Construire l'enregistrement}
+Compléter avec les données : identifiant \code{C01}, date \code{2026-08-24}, température \code{28.4}, humidité \code{60}, statut \code{OK}.
+\begin{lstlisting}
+mesure = {
+    "id": ______________________,
+    "date": ____________________,
+    "temperature": ____________,
+    "humidite": _______________,
+    "statut": __________________
+}
+\end{lstlisting}
+
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{32mm} X X X}
+\toprule
+Clé & Valeur écrite & Type attendu & Contrôle avec \code{type} \\
+\midrule
+\code{id} & & \code{str} & \\
+\code{date} & & \code{str} & \\
+\code{temperature} & & \code{float} & \\
+\code{humidite} & & \code{int} & \\
+\code{statut} & & \code{str} & \\
+\bottomrule
+\end{tabularx}
+
+\subsectiontitle{B. Accéder par une clé}
+\begin{enumerate}
+\item Écrire l'expression qui lit la température : \rule{67mm}{0.32pt}
+\item Écrire l'expression qui remplace le statut par \code{"ALERTE"} : \rule{47mm}{0.32pt}
+\item Compléter le parcours :
+\end{enumerate}
+\begin{lstlisting}
+for cle, valeur in mesure.__________():
+    print(cle, valeur)
+\end{lstlisting}
+
+\subsectiontitle{C. Réutiliser les fonctions de S3}
+Compléter dans le fichier Python :
+\begin{lstlisting}
+def creer_mesure(identifiant, date, temperature, humidite, statut):
+    # renvoyer un dictionnaire de cinq cles
+    ____________________________________________
+\end{lstlisting}
+
+\begin{successbox}
+\textbf{Preuve attendue :} l'appel \code{creer_mesure(...)} renvoie un dictionnaire ; aucune valeur n'est seulement affichée à la place d'être renvoyée.
+\end{successbox}
+\aidstrip
+
+\newpage
+\sectiontitle{6. Lire une table CSV et convertir les types - 18 min}
+\textbf{Fichier à ouvrir :} \code{mesures_capteurs.csv}. Ne pas le renommer.
+
+\begin{lstlisting}[language={}]
+id,date,temperature,humidite,statut
+C01,2026-08-24,28.4,60,OK
+C02,2026-08-24,31.2,52,ALERTE
+C03,2026-08-24,-1.5,80,ALERTE
+\end{lstlisting}
+
+\subsectiontitle{A. Lire la structure avant de coder}
+\begin{enumerate}
+\item Combien de colonnes possède la table ? \rule{15mm}{0.32pt}
+\item Quelles colonnes doivent être converties avant un calcul ? \rule{75mm}{0.32pt}
+\item Pourquoi \code{"28.4" + "1"} ne calcule-t-il pas \(29{,}4\) ? \worklines{1}
+\end{enumerate}
+
+\subsectiontitle{B. Compléter le chargeur}
+\begin{lstlisting}
+def charger_mesures(chemin):
+    mesures = []
+    with open(chemin, newline="", encoding="utf-8") as fichier:
+        lecteur = csv.________________(fichier)
+        for ligne in lecteur:
+            mesure = creer_mesure(
+                ligne["id"],
+                ligne["date"],
+                __________(ligne["temperature"]),
+                __________(ligne["humidite"]),
+                ligne["statut"]
+            )
+            mesures.____________(mesure)
+    return mesures
+\end{lstlisting}
+
+\subsectiontitle{C. Contrôles immédiatement après le chargement}
+Compléter avant d'exécuter.
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries\ttfamily\small}p{66mm} X X}
+\toprule
+Contrôle & Résultat attendu & Obtenu \\
+\midrule
+\code{type(mesures)} & & \\
+\code{type(mesures[0])} & & \\
+\code{type(mesures[0]["temperature"])} & & \\
+\code{type(mesures[0]["humidite"])} & & \\
+\bottomrule
+\end{tabularx}
+\aidstrip
+
+\newpage
+\sectiontitle{7. Filtrer les alertes et calculer une moyenne - 12 min}
+\subsectiontitle{A. Filtrer sans modifier la table source}
+\begin{lstlisting}
+def filtrer_alertes(mesures):
+    alertes = []
+    for mesure in mesures:
+        if __________________________________________:
+            _________________________________________
+    return alertes
+\end{lstlisting}
+
+\begin{enumerate}
+\item Écrire la condition à tester.
+\item Ajouter l'enregistrement à la nouvelle liste.
+\item Avant d'exécuter, relever dans le CSV les identifiants attendus : \rule{65mm}{0.32pt}
+\end{enumerate}
+
+\subsectiontitle{B. Réutiliser l'accumulateur de S2}
+\begin{lstlisting}
+def moyenne_temperature(mesures):
+    if len(mesures) == 0:
+        return None
+    total = 0
+    for mesure in mesures:
+        total += ______________________________
+    return total / ____________________________
+\end{lstlisting}
+
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{14mm} X X X}
+\toprule
+N° & Test à préparer & Résultat attendu & Validé \\
+\midrule
+1 & \code{moyenne_temperature([])} & & \cb \\
+2 & Nombre de lignes chargées & & \cb \\
+3 & Nombre d'alertes & & \cb \\
+4 & Moyenne comprise entre minimum et maximum & oui / non & \cb \\
+\bottomrule
+\end{tabularx}
+
+\begin{methodbox}
+\textbf{Contrôle de vraisemblance :} une moyenne des températures doit être comprise entre la plus petite et la plus grande température du fichier. Ce contrôle ne remplace pas le calcul, mais il détecte certains résultats impossibles.
+\end{methodbox}
+
+\aidstrip
+
+\newpage
+\sectiontitle{8. Trier, repérer un doublon et contrôler - 12 min}
+\subsectiontitle{A. Trier sans apprendre encore un algorithme de tri}
+La séance 5 étudiera les algorithmes. Aujourd'hui, on utilise l'outil Python \code{sorted} et une fonction-clé déjà fournie.
+\begin{lstlisting}
+def cle_temperature(mesure):
+    return mesure["temperature"]
+
+mesures_triees = sorted(mesures, key=cle_temperature)
+\end{lstlisting}
+
+\begin{enumerate}
+\item L'instruction modifie-t-elle \code{mesures} ou construit-elle une nouvelle liste ? \rule{48mm}{0.32pt}
+\item Après exécution, noter l'identifiant de la première mesure triée : \rule{34mm}{0.32pt}
+\item Noter l'identifiant de la dernière : \rule{42mm}{0.32pt}
+\end{enumerate}
+
+\subsectiontitle{B. Détecter un identifiant répété}
+Compléter avec les identifiants : \code{["C01", "C02", "C01", "C03"]}.
+\begin{lstlisting}
+identifiants = ["C01", "C02", "C01", "C03"]
+vus = []
+doublons = []
+for identifiant in identifiants:
+    if identifiant in vus:
+        ______________________________
+    else:
+        ______________________________
+\end{lstlisting}
+
+Identifiant dupliqué détecté : \rule{35mm}{0.32pt}
+
+\subsectiontitle{C. Tableau de cohérence}
+Pour chaque anomalie, écrire le contrôle à réaliser.
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{52mm} X}
+\toprule
+Anomalie possible & Contrôle précis \\
+\midrule
+Une clé \code{temperature} manque & \\
+La valeur \code{"abc"} apparaît en température & \\
+Le statut vaut \code{"INCONNU"} & \\
+Le même identifiant apparaît deux fois & \\
+\bottomrule
+\end{tabularx}
+\aidstrip
+
+\newpage
+\sectiontitle{9. Atelier d'intégration : produire l'analyseur - 18 min}
+\begin{codegoalbox}
+\textbf{Fichier de travail :} \code{S4_structures_csv_Ahmad.py}. Exécuter les étapes dans l'ordre ; ne pas passer à la suivante tant que la preuve demandée n'est pas obtenue.
+\end{codegoalbox}
+
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} X X}
+\toprule
+Étape & Action exacte & Preuve à conserver \\
+\midrule
+1 & Terminer \code{ajouter_sans_modifier}. & source et résultat imprimés séparément ;\\
+2 & Terminer \code{creer_mesure}. & cinq clés et types affichés ;\\
+3 & Terminer \code{charger_mesures}. & première et dernière ligne lues ;\\
+4 & Terminer \code{filtrer_alertes}. & liste d'identifiants obtenue ;\\
+5 & Terminer \code{moyenne_temperature}. & cas vide + fichier réel ;\\
+6 & Trier avec \code{sorted}. & ordre source inchangé ;\\
+7 & Écrire au moins six tests. & six validations conservées.\\
+\bottomrule
+\end{tabularx}
+
+\subsectiontitle{Matrice de tests à remplir avant le code définitif}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} X X X}
+\toprule
+N° & Entrée / action & Résultat attendu & Validé \\
+\midrule
+1 & Copie + ajout sur \code{[1,2]} & & \cb \\
+2 & Accès au dernier élément & & \cb \\
+3 & Chargement du fichier CSV & & \cb \\
+4 & Type de la température & & \cb \\
+5 & Filtre des alertes & & \cb \\
+6 & Cas vide de la moyenne & & \cb \\
+\bottomrule
+\end{tabularx}
+
+\subsectiontitle{Journal de débogage}
+\par\noindent\begin{tabularx}{\linewidth}{X X X X}
+\toprule
+Symptôme & Hypothèse & Une modification & Résultat \\
+\midrule
+& & & \\[8mm]
+& & & \\[8mm]
+\bottomrule
+\end{tabularx}
+
+\begin{warningbox}
+\textbf{Règle :} un test qui échoue n'est pas effacé. Il sert à localiser le premier écart entre le résultat prévu et le résultat obtenu.
+\end{warningbox}
+
+\newpage
+\sectiontitle{10. Cartes de rappel, exit ticket et bilan - 8 min}
+\begin{center}
+\par\noindent\begin{tabularx}{\linewidth}{X X}
+\begin{tcolorbox}[colback=SoftBlue,colframe=Navy,title=Carte A - Index]
+Premier indice : \code{0}. Dernier indice : \code{len(L)-1}. Dernier élément : \code{L[-1]}.
+\end{tcolorbox}
+&
+\begin{tcolorbox}[colback=SoftGold,colframe=Gold,title=Carte B - Alias]
+\code{b = a} ne copie pas une liste : deux noms désignent le même objet. Pour une copie simple : \code{a.copy()}.
+\end{tcolorbox}
+\\
+\begin{tcolorbox}[colback=green!3,colframe=Green,title=Carte C - Dictionnaire]
+Une valeur se lit par sa clé : \code{mesure["temperature"]}. Parcours : \code{mesure.items()}.
+\end{tcolorbox}
+&
+\begin{tcolorbox}[colback=purple!3,colframe=Purple,title=Carte D - CSV]
+\code{DictReader} produit d'abord des chaînes. Convertir avec \code{float} et \code{int} avant les calculs.
+\end{tcolorbox}
+\\
+\end{tabularx}
+\end{center}
+
+\subsectiontitle{Exit ticket - sans aide}
+\begin{enumerate}
+\item Une liste contient \(n\) éléments. Quel est son dernier indice ? \rule{46mm}{0.32pt}
+\item Prédire \code{a} après \code{a=[1]; b=a; b.append(2)}. \rule{45mm}{0.32pt}
+\item Écrire l'accès à l'humidité d'un dictionnaire \code{mesure}. \rule{43mm}{0.32pt}
+\item Pourquoi faut-il convertir la température lue dans un CSV ? \worklines{1}
+\item Citer un contrôle que tu garderas pour la séance 5. \worklines{1}
+\end{enumerate}
+
+\subsectiontitle{Ma preuve de progression}
+\par\noindent\begin{tabularx}{\linewidth}{X c c c c}
+\toprule
+Je peux... & Pas encore & Avec aide & Seul & Expliquer \\
+\midrule
+utiliser indices et \code{len} & \cb & \cb & \cb & \cb \\
+distinguer alias et copie & \cb & \cb & \cb & \cb \\
+construire un dictionnaire & \cb & \cb & \cb & \cb \\
+charger et convertir un CSV & \cb & \cb & \cb & \cb \\
+filtrer sans modifier la source & \cb & \cb & \cb & \cb \\
+\bottomrule
+\end{tabularx}
+
+\begin{successbox}
+\textbf{Fichier à conserver pour S5 :} \code{S4_structures_csv_Ahmad.py} et \code{mesures_capteurs.csv}. La partie fiable de ce programme servira de base au mini-projet final.
+\end{successbox}
+
+\end{document}

@@ -1,18 +1,22 @@
 {
   "schemaVersion": "nexus-qa-status-v1",
-  "catalogSha256": "9499399907a3d17646220938dbe9fc6f74b9499344294e8a67937b86caea8297",
+  "catalogSha256": "f104fba421997ea1b70a183ebc10d7b6140da777684d465411e3426c6776e60c",
   "automatedStatus": "validated",
   "counters": {
     "generated_html": 230,
     "generated_pdf": 237,
-    "pages": 2868,
+    "pages": 2924,
     "external_resources": 0,
     "html_errors": 0,
     "student_correction_leaks": 0,
     "cross_student_pii_leaks": 0,
     "session_duration_errors": 0,
     "pdf_structural_failures": 0,
-    "heading_order_errors": 0
+    "pdf_local_uri_leaks": 0,
+    "heading_order_errors": 0,
+    "title_technical_errors": 0,
+    "h1_count_errors": 0,
+    "unaccented_title_errors": 0
   },
   "note": "automatedStatus couvre uniquement les vérifications automatisées de ce fichier. Le statut de livraison définitif (visuel, mathématique, navigation) est documenté dans reports/FINAL_DELIVERY_REPORT.md."
 }

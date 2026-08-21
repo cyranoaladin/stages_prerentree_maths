@@ -4,7 +4,7 @@ lang: fr-FR
 ---
 
 
-# QCM blanc - Candidat individuel Première NSI
+## QCM blanc - Candidat individuel Première NSI
 
 **Durée : 2 heures - 42 questions - 7 parties - calculatrice interdite.**
 
@@ -13,7 +13,7 @@ Une seule réponse est correcte. Le format d’entraînement reprend l’évalua
 <div class="callout red"><strong>Différence avec le test de positionnement Nexus :</strong> dans ce QCM blanc, une réponse fausse n’enlève pas de point. Après une première passe prudente, il est rationnel de répondre à toutes les questions.</div>
 
 
-# Partie - Données de base
+## Partie - Données de base
 
 ## Question 1
 
@@ -70,7 +70,7 @@ Unicode sert principalement à :
 - ☐ D. router des paquets
 
 
-# Partie - Types construits
+## Partie - Types construits
 
 ## Question 7
 
@@ -127,7 +127,7 @@ Après `a=[1,2] ; b=a ; b.append(3)`, a vaut :
 - ☐ D. erreur
 
 
-# Partie - Tables
+## Partie - Tables
 
 ## Question 13
 
@@ -184,7 +184,7 @@ Une métadonnée est :
 - ☐ D. une copie de sauvegarde
 
 
-# Partie - Web
+## Partie - Web
 
 ## Question 19
 
@@ -241,7 +241,7 @@ Un gestionnaire d’événement est exécuté :
 - ☐ D. par le routeur
 
 
-# Partie - Architecture
+## Partie - Architecture
 
 ## Question 25
 
@@ -298,7 +298,7 @@ Sous Unix, la commande `ls` sert à :
 - ☐ D. afficher une adresse IP
 
 
-# Partie - Programmation
+## Partie - Programmation
 
 ## Question 31
 
@@ -355,7 +355,7 @@ Un bon jeu de tests :
 - ☐ D. remplace la spécification
 
 
-# Partie - Algorithmique
+## Partie - Algorithmique
 
 ## Question 37
 

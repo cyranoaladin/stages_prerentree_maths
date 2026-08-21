@@ -1,0 +1,1349 @@
+{
+  "schema": "nexus-s5-evaluation-manifest-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "sinda-chikhaoui",
+  "level_key": "4e",
+  "subject": "Mathématiques",
+  "items": [
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A1",
+      "ref": "A1",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_REL_01",
+      "skills_extra": [],
+      "skill_label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "objective": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $(-8) + 3 - (-5)$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.05,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 26,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$0$",
+      "significant_steps": [
+        "$-8+3=-5$",
+        "$-5-(-5)=-5+5=0$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "soustraire un négatif traité comme une soustraction (résultat $-10$)"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "erreur isolée sur $-8+3$"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A1_c1",
+          "points": 1,
+          "skill_id": "M4E_REL_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "résultat $0$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_REL_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q02",
+      "baseline_item_text": "Calculer 3 − (−4) + (−6).",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_REL_01",
+          "baseline_items": [
+            "4E_TI_Q01",
+            "4E_TI_Q02"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis direct du produit de relatifs en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A2",
+      "ref": "A2",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_FRAC_02",
+      "skills_extra": [],
+      "skill_label": "Fractions équivalentes et réduction au même dénominateur",
+      "objective": "Fractions équivalentes et réduction au même dénominateur",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $\\dfrac{5}{8} - \\dfrac{1}{4}$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 20,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\dfrac{3}{8}$",
+      "significant_steps": [
+        "$\\frac{1}{4}=\\frac{2}{8}$",
+        "$\\frac{5}{8}-\\frac{2}{8}=\\frac{3}{8}$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "dénominateur converti sans convertir le numérateur (réponse $\\frac{4}{8}$)"
+        },
+        {
+          "code": "METHODE",
+          "desc": "soustraction terme à terme des numérateurs et des dénominateurs"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A2_c1",
+          "points": 1,
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac{3}{8}$ ou une écriture équivalente correcte"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q04",
+      "baseline_item_text": "Calculer 5/6 − 1/3.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_FRAC_02",
+          "baseline_items": [
+            "4E_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis du produit et du quotient de fractions en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A3",
+      "ref": "A3",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_LIT_02",
+      "skills_extra": [],
+      "skill_label": "Réduction d'une expression avec constantes signées",
+      "objective": "Réduction d'une expression avec constantes signées",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Réduire $7x + 4 - 3x - 9$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.05,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 25,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$4x - 5$",
+      "significant_steps": [
+        "termes en $x$ : $7x-3x=4x$",
+        "constantes : $4-9=-5$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "constantes additionnées sans tenir compte des signes ($+13$ ou $-13$)"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$4x$ et $-5$ additionnés en $-x$"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A3_c1",
+          "points": 1,
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$4x-5$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q08",
+      "baseline_item_text": "Réduire l'expression 5x + 2 + 3x − 6.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_LIT_02",
+          "baseline_items": [
+            "4E_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "prérequis de l'équation du premier degré",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A4",
+      "ref": "A4",
+      "part": "A",
+      "kind": "commun",
+      "skill_id": "M4E_GEO_01",
+      "skills_extra": [],
+      "skill_label": "Somme des angles d'un triangle, triangle rectangle",
+      "objective": "Somme des angles d'un triangle, triangle rectangle",
+      "prerequisites": [
+        "S4"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Dans un triangle rectangle, un angle aigu mesure $37^\\circ$. Calculer l'autre angle aigu.",
+      "target_minutes": 1.25,
+      "time_estimate": {
+        "minutes": 1.25,
+        "breakdown": {
+          "lecture": 0.15,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 82,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$53^\\circ$",
+      "significant_steps": [
+        "les deux angles aigus sont complémentaires",
+        "$90-37=53$"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "$180-37=143$ : l'angle droit n'est pas retiré"
+        },
+        {
+          "code": "LECTURE",
+          "desc": "angle droit compté comme un angle aigu"
+        }
+      ],
+      "error_codes": [
+        "LECTURE",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A4_c1",
+          "points": 1,
+          "skill_id": "M4E_GEO_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$53^\\circ$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_GEO_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q10",
+      "baseline_item_text": "Triangle rectangle dont un angle aigu mesure 35° : que vaut l'autre angle aigu ?",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_GEO_01",
+          "baseline_items": [
+            "4E_TI_Q09",
+            "4E_TI_Q10"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S4"
+      ],
+      "role_for_september": "prérequis de la trigonométrie et de Pythagore en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A5",
+      "ref": "A5",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M4E_REL_01",
+      "skills_extra": [],
+      "skill_label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "objective": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $7 - (-6) - 4$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 23,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$9$",
+      "significant_steps": [
+        "$7+6=13$",
+        "$13-4=9$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "$-(-6)$ traité comme $-6$ (résultat $-3$)"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A5_c1",
+          "points": 1,
+          "skill_id": "M4E_REL_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$9$ exact"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_REL_01": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q02",
+      "baseline_item_text": "Calculer 3 − (−4) + (−6).",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_REL_01",
+          "baseline_items": [
+            "4E_TI_Q01",
+            "4E_TI_Q02"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis du produit de relatifs en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_A6",
+      "ref": "A6",
+      "part": "A",
+      "kind": "individuel",
+      "skill_id": "M4E_FRAC_02",
+      "skills_extra": [],
+      "skill_label": "Fractions équivalentes et réduction au même dénominateur",
+      "objective": "Fractions équivalentes et réduction au même dénominateur",
+      "prerequisites": [
+        "S1"
+      ],
+      "task_type": "automatisme",
+      "difficulty": "socle",
+      "statement": "Calculer $\\dfrac{3}{4} - \\dfrac{5}{12}$.",
+      "target_minutes": 1.0,
+      "time_estimate": {
+        "minutes": 1.0,
+        "breakdown": {
+          "lecture": 0.04,
+          "traitement": 0.6,
+          "redaction": 0.42
+        },
+        "features": {
+          "caracteres_enonce": 21,
+          "lignes_de_code": 0,
+          "sous_questions": 1,
+          "lignes_offertes": 1,
+          "lignes_retenues": 1
+        },
+        "model": "contenu-v2"
+      },
+      "points": 1,
+      "expected_answer": "$\\dfrac{1}{3}$",
+      "significant_steps": [
+        "$\\frac{3}{4}=\\frac{9}{12}$",
+        "$\\frac{9}{12}-\\frac{5}{12}=\\frac{4}{12}=\\frac13$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "conversion partielle de $\\frac34$"
+        },
+        {
+          "code": "CALCUL",
+          "desc": "simplification finale non effectuée (acceptée si $\\frac{4}{12}$ est exact)"
+        }
+      ],
+      "error_codes": [
+        "CALCUL",
+        "CONCEPT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_A6_c1",
+          "points": 1,
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "$\\frac{4}{12}$ ou $\\frac13$"
+        }
+      ],
+      "criteria_total_points": 1,
+      "evidence_types": [
+        "automatisme"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q04",
+      "baseline_item_text": "Calculer 5/6 − 1/3.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_FRAC_02",
+          "baseline_items": [
+            "4E_TI_Q04"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S1"
+      ],
+      "role_for_september": "prérequis du produit de fractions en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_B1",
+      "ref": "B1",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_AIRE_01",
+      "skills_extra": [
+        "M4E_PROP_01"
+      ],
+      "skill_label": "Aire et périmètre du rectangle et du triangle, unités",
+      "objective": "Aire et périmètre du rectangle et du triangle, unités",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Une terrasse rectangulaire mesure $12$ m de long et $7$ m de large.\n\\begin{enumerate}\n\\item Calculer son aire et son périmètre, en écrivant les unités.\n\\item Le carrelage coûte $26$ TND le mètre carré. Calculer le prix du carrelage de la terrasse.\n\\end{enumerate}",
+      "target_minutes": 4.25,
+      "time_estimate": {
+        "minutes": 4.25,
+        "breakdown": {
+          "lecture": 0.38,
+          "traitement": 2.3,
+          "redaction": 1.47
+        },
+        "features": {
+          "caracteres_enonce": 211,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "Aire $=84\\ \\text{m}^2$ ; périmètre $=38$ m ; prix $=84\\times 26=2\\,184$ TND.",
+      "significant_steps": [
+        "$12\\times 7=84\\ \\text{m}^2$",
+        "$2\\times(12+7)=38$ m",
+        "le prix se calcule sur l'aire, pas sur le périmètre : $84\\times 26=2184$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "aire et périmètre échangés"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "unité absente ou $\\text{m}$ au lieu de $\\text{m}^2$"
+        },
+        {
+          "code": "METHODE",
+          "desc": "prix calculé à partir du périmètre"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "METHODE",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B1_c1",
+          "points": 1.0,
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "aire et périmètre exacts, avec les unités correctes"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B1_c2",
+          "points": 1.0,
+          "skill_id": "M4E_PROP_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "prix exact, obtenu à partir de l'aire et non du périmètre"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_PROP_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q11",
+      "baseline_item_text": "Aire d'un rectangle de longueur 8 cm et de largeur 5 cm.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_AIRE_01",
+          "baseline_items": [
+            "4E_TI_Q11",
+            "4E_TI_Q12"
+          ]
+        },
+        {
+          "skill_id": "M4E_PROP_01",
+          "baseline_items": [
+            "4E_TI_Q05"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "grandeurs composées et coût proportionnel, réutilisés toute l'année",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_B2",
+      "ref": "B2",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_LIT_01",
+      "skills_extra": [
+        "M4E_LIT_02"
+      ],
+      "skill_label": "Distributivité simple : développer k(a+b)",
+      "objective": "Distributivité simple : développer k(a+b)",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "\\begin{enumerate}\n\\item Développer $5(x - 3)$.\n\\item Réduire ensuite $5(x - 3) + 2x + 7$.\n\\item Contrôler le résultat obtenu pour $x = 2$, en calculant séparément les deux écritures.\n\\end{enumerate}",
+      "target_minutes": 5.75,
+      "time_estimate": {
+        "minutes": 5.75,
+        "breakdown": {
+          "lecture": 0.26,
+          "traitement": 3.45,
+          "redaction": 1.99
+        },
+        "features": {
+          "caracteres_enonce": 143,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$5x-15$ ; puis $7x-8$ ; contrôle : les deux écritures donnent $6$ pour $x=2$.",
+      "significant_steps": [
+        "$5(x-3)=5x-15$",
+        "$5x-15+2x+7=7x-8$",
+        "$x=2$ : $5\\times(2-3)+2\\times 2+7=-5+4+7=6$ et $7\\times 2-8=6$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "distributivité incomplète : $5x-3$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "constantes signées : $-15+7$ traité comme $-22$"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "contrôle annoncé mais une seule écriture évaluée"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "CONTROLE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B2_c1",
+          "points": 0.5,
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "développement $5(x-3)=5x-15$ exact"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B2_c2",
+          "points": 0.5,
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "réduction en $7x-8$ exacte"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B2_c3",
+          "points": 1.0,
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "controle",
+          "subpart": "3",
+          "desc": "contrôle mené sur les deux écritures pour $x=2$, aboutissant à la même valeur"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q07",
+      "baseline_item_text": "Développer 4(x + 3).",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_LIT_01",
+          "baseline_items": [
+            "4E_TI_Q07"
+          ]
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "baseline_items": [
+            "4E_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "double distributivité et mise en équation en Quatrième",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_B3",
+      "ref": "B3",
+      "part": "B",
+      "kind": "commun",
+      "skill_id": "M4E_STAT_01",
+      "skills_extra": [
+        "M4E_PROP_02"
+      ],
+      "skill_label": "Moyenne d'une série et contrôle de vraisemblance",
+      "objective": "Moyenne d'une série et contrôle de vraisemblance",
+      "prerequisites": [
+        "S5"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "Un club compte $40$ membres ; $14$ d'entre eux pratiquent la natation.\n\\begin{enumerate}\n\\item Calculer la fréquence des nageurs, en pourcentage.\n\\item Les âges d'un groupe sont $11$ ; $12$ ; $12$ ; $13$ ; $15$ ; $15$ ; $15$ ; $17$.\nCalculer la moyenne, puis vérifier qu'elle est comprise entre la plus petite et la plus grande valeur.\n\\end{enumerate}",
+      "target_minutes": 4.25,
+      "time_estimate": {
+        "minutes": 4.25,
+        "breakdown": {
+          "lecture": 0.52,
+          "traitement": 2.3,
+          "redaction": 1.47
+        },
+        "features": {
+          "caracteres_enonce": 286,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$35\\,\\%$ ; somme $=110$, effectif $=8$, moyenne $=13{,}75$, comprise entre $11$ et $17$.",
+      "significant_steps": [
+        "$14\\div 40=0{,}35=35\\,\\%$",
+        "somme $=110$ ; $110\\div 8=13{,}75$",
+        "$11 < 13{,}75 < 17$ : le contrôle est concluant"
+      ],
+      "likely_errors": [
+        {
+          "code": "LECTURE",
+          "desc": "une valeur oubliée dans la somme"
+        },
+        {
+          "code": "METHODE",
+          "desc": "division par le nombre de valeurs distinctes et non par l'effectif"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "encadrement non effectué"
+        }
+      ],
+      "error_codes": [
+        "CONTROLE",
+        "LECTURE",
+        "METHODE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B3_c1",
+          "points": 1.0,
+          "skill_id": "M4E_PROP_02",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "fréquence exacte en pourcentage"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B3_c2",
+          "points": 0.7,
+          "skill_id": "M4E_STAT_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "moyenne exacte, somme et effectif visibles"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B3_c3",
+          "points": 0.3,
+          "skill_id": "M4E_STAT_01",
+          "evidence_type": "controle",
+          "subpart": "2",
+          "desc": "encadrement entre la plus petite et la plus grande valeur écrit"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_PROP_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_STAT_01": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q15",
+      "baseline_item_text": "Moyenne de la série 6 ; 9 ; 12 ; 9.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_PROP_02",
+          "baseline_items": [
+            "4E_TI_Q06",
+            "4E_TI_Q16"
+          ]
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "baseline_items": [
+            "4E_TI_Q15"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S5"
+      ],
+      "role_for_september": "moyenne pondérée et médiane en Quatrième",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_B4",
+      "ref": "B4",
+      "part": "B",
+      "kind": "individuel",
+      "skill_id": "M4E_LIT_01",
+      "skills_extra": [
+        "M4E_LIT_02"
+      ],
+      "skill_label": "Distributivité simple : développer k(a+b)",
+      "objective": "Distributivité simple : développer k(a+b)",
+      "prerequisites": [
+        "S3"
+      ],
+      "task_type": "application",
+      "difficulty": "standard",
+      "statement": "\\begin{enumerate}\n\\item Développer $6(x - 2)$.\n\\item Réduire ensuite $6(x - 2) + 3x + 5$.\n\\item Contrôler le résultat pour $x = 0$.\n\\end{enumerate}",
+      "target_minutes": 5.5,
+      "time_estimate": {
+        "minutes": 5.5,
+        "breakdown": {
+          "lecture": 0.17,
+          "traitement": 3.45,
+          "redaction": 1.99
+        },
+        "features": {
+          "caracteres_enonce": 92,
+          "lignes_de_code": 0,
+          "sous_questions": 3,
+          "lignes_offertes": 5,
+          "lignes_retenues": 4.75
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "$6x-12$ ; puis $9x-7$ ; contrôle : les deux écritures valent $-7$ pour $x=0$.",
+      "significant_steps": [
+        "$6(x-2)=6x-12$",
+        "$6x-12+3x+5=9x-7$",
+        "$x=0$ : $-12+5=-7$"
+      ],
+      "likely_errors": [
+        {
+          "code": "CONCEPT",
+          "desc": "distributivité incomplète : $6x-2$"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$-12+5$ traité comme $-17$"
+        },
+        {
+          "code": "CONTROLE",
+          "desc": "contrôle effectué sur une seule écriture"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "CONTROLE"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B4_c1",
+          "points": 0.5,
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "développement $6(x-2)=6x-12$ exact"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B4_c2",
+          "points": 0.5,
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "réduction en $9x-7$ exacte"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_B4_c3",
+          "points": 1.0,
+          "skill_id": "M4E_LIT_02",
+          "evidence_type": "controle",
+          "subpart": "3",
+          "desc": "contrôle pour $x=0$ mené sur les deux écritures"
+        }
+      ],
+      "criteria_total_points": 2.0,
+      "evidence_types": [
+        "controle",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_02": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q08",
+      "baseline_item_text": "Réduire l'expression 5x + 2 + 3x − 6.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_LIT_01",
+          "baseline_items": [
+            "4E_TI_Q07"
+          ]
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "baseline_items": [
+            "4E_TI_Q08"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S3"
+      ],
+      "role_for_september": "prérequis de l'équation du premier degré",
+      "confidence_probe": false
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_C1",
+      "ref": "C1",
+      "part": "C",
+      "kind": "commun",
+      "skill_id": "M4E_AIRE_01",
+      "skills_extra": [
+        "M4E_FRAC_02",
+        "M4E_LIT_01"
+      ],
+      "skill_label": "Aire et périmètre du rectangle et du triangle, unités",
+      "objective": "Aire et périmètre du rectangle et du triangle, unités",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "\\textbf{L'atelier de peinture.} Un mur rectangulaire mesure $6$ m de long et $3$ m de haut.\nUne fenêtre rectangulaire de $2$ m sur $1{,}5$ m ne doit pas être peinte.\n\\begin{enumerate}\n\\item Calculer l'aire de la surface réellement à peindre.\n\\item Le tiers de cette surface reçoit d'abord une sous-couche. Calculer l'aire concernée.\n\\item La peinture coûte $19$ TND le pot et le magasin ajoute un forfait de livraison de $25$ TND.\nÉcrire l'expression $C(n)$ du coût total pour $n$ pots, puis calculer $C(6)$ en montrant la substitution.\n\\item Le budget est de $200$ TND. Peut-on acheter $10$ pots ? Répondre par un calcul, puis conclure par une phrase.\n\\end{enumerate}",
+      "target_minutes": 9.25,
+      "time_estimate": {
+        "minutes": 9.25,
+        "breakdown": {
+          "lecture": 1.05,
+          "traitement": 5.8,
+          "redaction": 2.52
+        },
+        "features": {
+          "caracteres_enonce": 579,
+          "lignes_de_code": 0,
+          "sous_questions": 4,
+          "lignes_offertes": 10,
+          "lignes_retenues": 6.0
+        },
+        "model": "contenu-v2"
+      },
+      "points": 4,
+      "expected_answer": "$15\\ \\text{m}^2$ ; $5\\ \\text{m}^2$ ; $C(n)=19n+25$ ; $C(6)=139$ TND ; $C(10)=215>200$ : non.",
+      "significant_steps": [
+        "$6\\times 3=18$ et $2\\times 1{,}5=3$, donc $18-3=15\\ \\text{m}^2$",
+        "$15\\div 3=5\\ \\text{m}^2$",
+        "$C(n)=19n+25$",
+        "$C(6)=19\\times 6+25=114+25=139$ TND",
+        "$C(10)=190+25=215$ ; $215>200$ donc dix pots dépassent le budget"
+      ],
+      "likely_errors": [
+        {
+          "code": "TRANSFERT",
+          "desc": "aire de la fenêtre non retirée"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "$C(n)$ écrit $44n$ : forfait et coût unitaire confondus"
+        },
+        {
+          "code": "LECTURE",
+          "desc": "réponse donnée sans comparer $215$ et $200$"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "unités absentes dans la conclusion"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "LECTURE",
+        "NOTATION",
+        "TRANSFERT"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C1_c1",
+          "points": 1.0,
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "aire à peindre exacte, soustraction de la fenêtre visible"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C1_c2",
+          "points": 0.5,
+          "skill_id": "M4E_FRAC_02",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "aire de la sous-couche exacte, le tiers étant correctement pris"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C1_c3",
+          "points": 1.5,
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "transfert",
+          "subpart": "3",
+          "desc": "expression $C(n)=19n+25$ correcte, substitution écrite et $C(6)$ exact"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C1_c4",
+          "points": 1.0,
+          "skill_id": "M4E_LIT_01",
+          "evidence_type": "transfert",
+          "subpart": "4",
+          "desc": "décision justifiée par la comparaison de $C(10)$ au budget de 200 TND"
+        }
+      ],
+      "criteria_total_points": 4.0,
+      "evidence_types": [
+        "procedure",
+        "transfert"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_FRAC_02": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        },
+        "M4E_LIT_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": null,
+      "baseline_item_text": null,
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_AIRE_01",
+          "baseline_items": [
+            "4E_TI_Q11",
+            "4E_TI_Q12"
+          ]
+        },
+        {
+          "skill_id": "M4E_FRAC_02",
+          "baseline_items": [
+            "4E_TI_Q04"
+          ]
+        },
+        {
+          "skill_id": "M4E_LIT_01",
+          "baseline_items": [
+            "4E_TI_Q07"
+          ]
+        }
+      ],
+      "comparability": "partiellement_comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "tâche complexe de rentrée : lire, choisir, calculer, décider",
+      "confidence_probe": true
+    },
+    {
+      "item_id": "4E_SINDA_CHIKHAOUI_C2",
+      "ref": "C2",
+      "part": "C",
+      "kind": "individuel",
+      "skill_id": "M4E_AIRE_01",
+      "skills_extra": [],
+      "skill_label": "Aire et périmètre du rectangle et du triangle, unités",
+      "objective": "Aire et périmètre du rectangle et du triangle, unités",
+      "prerequisites": [
+        "S2"
+      ],
+      "task_type": "transfert",
+      "difficulty": "transfert",
+      "statement": "Un triangle a une aire de $54\\ \\text{cm}^2$ et une hauteur relative de $9$ cm.\n\\begin{enumerate}\n\\item Déterminer sa base.\n\\item Expliquer pourquoi l'aire d'un triangle vaut la moitié du produit de sa base par sa hauteur.\n\\end{enumerate}",
+      "target_minutes": 4.75,
+      "time_estimate": {
+        "minutes": 4.75,
+        "breakdown": {
+          "lecture": 0.33,
+          "traitement": 2.9,
+          "redaction": 1.47
+        },
+        "features": {
+          "caracteres_enonce": 179,
+          "lignes_de_code": 0,
+          "sous_questions": 2,
+          "lignes_offertes": 5,
+          "lignes_retenues": 3.5
+        },
+        "model": "contenu-v2"
+      },
+      "points": 2,
+      "expected_answer": "Base $=12$ cm. En dupliquant le triangle par un demi-tour autour du milieu d'un côté, on obtient un \\textbf{parallélogramme} de même base et de même hauteur, d'aire $\\text{base}\\times\\text{hauteur}$ ; le triangle en est exactement la moitié.",
+      "significant_steps": [
+        "$b = 54\\times 2 \\div 9 = 12$ cm",
+        "deux triangles superposables pavent un parallélogramme de même base et de même hauteur",
+        "l'aire de ce parallélogramme vaut $\\text{base}\\times\\text{hauteur}$, donc celle du triangle en est la moitié"
+      ],
+      "likely_errors": [
+        {
+          "code": "METHODE",
+          "desc": "division par 2 oubliée dans la relation inverse"
+        },
+        {
+          "code": "NOTATION",
+          "desc": "unité de longueur absente"
+        },
+        {
+          "code": "CONCEPT",
+          "desc": "la duplication est présentée comme produisant un rectangle : elle produit en général un parallélogramme"
+        },
+        {
+          "code": "JUSTIFICATION",
+          "desc": "formule récitée sans explication géométrique"
+        }
+      ],
+      "error_codes": [
+        "CONCEPT",
+        "JUSTIFICATION",
+        "METHODE",
+        "NOTATION"
+      ],
+      "grading_criteria": [
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C2_c1",
+          "points": 1,
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "base exacte avec unité"
+        },
+        {
+          "criterion_id": "4E_SINDA_CHIKHAOUI_C2_c2",
+          "points": 1,
+          "skill_id": "M4E_AIRE_01",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "explication géométrique correcte : duplication en parallélogramme de même base et même hauteur. Une explication par découpage-recollement aboutissant à un rectangle de même base et même hauteur est également acceptée si elle est correctement conduite"
+        }
+      ],
+      "criteria_total_points": 2,
+      "evidence_types": [
+        "justification",
+        "procedure"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "retention": {
+        "M4E_AIRE_01": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      "baseline_item_id": "4E_TI_Q12",
+      "baseline_item_text": "Aire d'un triangle de base 6 cm et de hauteur 4 cm.",
+      "baseline_skill_refs": [
+        {
+          "skill_id": "M4E_AIRE_01",
+          "baseline_items": [
+            "4E_TI_Q11",
+            "4E_TI_Q12"
+          ]
+        }
+      ],
+      "comparability": "comparable",
+      "comparison_status": "indicative_skill_comparison",
+      "linked_sessions": [
+        "S2"
+      ],
+      "role_for_september": "grandeurs et relations inverses, réinvesties toute l'année",
+      "confidence_probe": false
+    }
+  ]
+}

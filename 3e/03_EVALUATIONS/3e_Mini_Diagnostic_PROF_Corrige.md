@@ -1,7 +1,7 @@
-# 3e_Mini_Diagnostic_PROF_Corrige
-## Mini-diagnostic complémentaire - Corrigé et exploitation
+# 3e — Diagnostic initial (Corrigé enseignant)
+## Corrigé et conseils d’exploitation
 
-# 14. Mini-diagnostic complémentaire
+## 14. Mini-diagnostic complémentaire
 
 Durée indicative : **15 minutes**, sans calculatrice.
 Chaque réponse est accompagnée d’une certitude de 1 à 4.

@@ -1,0 +1,86 @@
+{
+  "schema": "nexus-s5-bilan-template-v1",
+  "titre": "Bilan de fin de stage — compte rendu aux responsables légaux",
+  "principe": "Toute phrase chiffrée est liée à une clé de bilan_facts.json, produite par tools/analyze_s5.py. Aucune donnée quantitative ne peut être écrite autrement.",
+  "couches": {
+    "1_donnees_brutes": "responses_<date>.json (points, certitudes, codes d'erreur saisis)",
+    "2_calcul_deterministe": "tools/analyze_s5.py -> post_stage_analysis.json + bilan_facts.json",
+    "3_interpretation": "lecture des priorités et du profil d'erreurs par l'enseignant",
+    "4_redaction": "le présent gabarit, rempli à partir de la couche 2 uniquement pour les chiffres"
+  },
+  "formulations_interdites": [
+    "a fait d'énormes progrès",
+    "excellent élève",
+    "élève motivé",
+    "niveau faible",
+    "manque de travail",
+    "profil scientifique",
+    "difficultés de concentration",
+    "toute formulation relevant d'un diagnostic psychologique ou d'une étiquette"
+  ],
+  "formulations_admises_sans_donnee": [
+    "compétence à revoir dès la première semaine",
+    "notion travaillée pendant le stage, à confirmer en classe",
+    "point d'appui utilisable pour aborder les notions nouvelles"
+  ],
+  "regles": [
+    "aucune progression n'est mentionnée pour une compétence figurant dans facts.not_comparable",
+    "une progression n'est écrite que si mastery_delta > 0 et comparison_status = item_level",
+    "un écart d'un seul point d'échelle est présenté comme une tendance, jamais comme un acquis",
+    "les compétences dont measurement_reliability vaut fragile sont présentées avec la mention correspondante",
+    "aucune recommandation de suivi n'est écrite si follow_up_recommendation.proposed indique qu'aucune n'est justifiée"
+  ],
+  "sections": [
+    {"n": 1, "titre": "Situation de départ",
+     "sources": ["profil.baseline.summary", "profil.baseline.strengths", "profil.baseline.priorities"],
+     "chiffres_autorises": ["profil.baseline.confidence_calibration"],
+     "consigne": "Reprendre le diagnostic initial, sans le réinterpréter."},
+    {"n": 2, "titre": "Travail réalisé pendant les dix heures",
+     "sources": ["profil.trajectory.S1..S4", "profil.session5.activities"],
+     "chiffres_autorises": [],
+     "consigne": "Énumérer ce qui a été travaillé. Ne pas écrire que ces notions sont acquises."},
+    {"n": 3, "titre": "Progression objectivée",
+     "sources": ["facts.progression_documented", "facts.maintained", "facts.not_comparable"],
+     "chiffres_autorises": ["facts.progression_documented[].baseline_mastery", "facts.progression_documented[].post_mastery"],
+     "consigne": "Ne mentionner que les compétences dont la progression est calculée. Citer explicitement le nombre de compétences pour lesquelles aucune comparaison n'est possible."},
+    {"n": 4, "titre": "Points forts actuels",
+     "sources": ["facts.skills_demonstrated"],
+     "chiffres_autorises": ["facts.skills_demonstrated[].post_mastery"],
+     "consigne": "Une compétence n'est un point fort que si post_mastery >= 3."},
+    {"n": 5, "titre": "Acquis consolidés pendant le stage",
+     "sources": ["facts.progression_documented"],
+     "chiffres_autorises": [],
+     "consigne": "Section vide et signalée comme telle si aucune progression n'est calculable."},
+    {"n": 6, "titre": "Points restant fragiles",
+     "sources": ["facts.skills_fragile", "facts.dominant_error_codes"],
+     "chiffres_autorises": ["facts.skills_fragile[].post_mastery"],
+     "consigne": "Hiérarchiser selon priorities. Décrire l'erreur observée, jamais l'élève."},
+    {"n": 7, "titre": "Préparation à l'entrée dans l'année",
+     "sources": ["facts.note_sur_20", "facts.success_rate_pct", "facts.priorities"],
+     "chiffres_autorises": ["facts.note_sur_20", "facts.success_rate_pct"],
+     "consigne": "Formulation qualitative, argumentée et prudente. Ne pas transformer la note en pronostic."},
+    {"n": 8, "titre": "Priorités de rentrée",
+     "sources": ["facts.priorities"],
+     "chiffres_autorises": [],
+     "consigne": "Reprendre les compétences classées P1 puis P2, dans l'ordre produit par le script."},
+    {"n": 9, "titre": "Plan des quatre premières semaines",
+     "sources": ["four_week_action_plan.json"],
+     "chiffres_autorises": ["weeks[].duration_minutes", "weeks[].frequency"],
+     "consigne": "Recopier le plan calculé. Deux ou trois compétences par semaine au maximum."},
+    {"n": 10, "titre": "Recommandation de suivi",
+     "sources": ["four_week_action_plan.follow_up_recommendation"],
+     "chiffres_autorises": ["follow_up_recommendation.justification"],
+     "consigne": "N'écrire une recommandation que si les données la justifient, en citant la justification produite."}
+  ],
+  "version_enseignant": {
+    "titre": "Synthèse enseignant",
+    "sections_supplementaires": [
+      "tableau complet compétence par compétence (skill_id, baseline, post, delta, comparison_status, fiabilité)",
+      "profil d'erreurs complet",
+      "cellules de calibration réussite-confiance",
+      "avertissements produits par le script",
+      "items à revoir avec l'élève lors de la reprise orale"
+    ],
+    "diffusion": "usage interne ; ne pas transmettre aux responsables légaux"
+  }
+}

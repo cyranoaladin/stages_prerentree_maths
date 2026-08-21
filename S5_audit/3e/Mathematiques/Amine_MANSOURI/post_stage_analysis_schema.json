@@ -1,0 +1,596 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nexus-s5-post-stage-analysis-v2",
+  "title": "Diagnostic de sortie — sortie de tools/analyze_s5.py",
+  "type": "object",
+  "required": [
+    "schema",
+    "student_id",
+    "level_key",
+    "status",
+    "scoring_model",
+    "baseline_measure_available",
+    "score",
+    "items",
+    "criteria",
+    "skills",
+    "confidence",
+    "errors",
+    "priorities",
+    "warnings"
+  ],
+  "properties": {
+    "schema": {
+      "const": "nexus-s5-post-stage-analysis-v2"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "level_key": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "analysed_on": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "awaiting_assessment",
+        "analysed"
+      ]
+    },
+    "scoring_model": {
+      "type": "string",
+      "description": "les scores par compétence proviennent des critères, jamais d'une répartition uniforme"
+    },
+    "baseline_measure_available": {
+      "type": "boolean",
+      "description": "faux tant que les réponses item par item du diagnostic initial ne sont pas conservées"
+    },
+    "score": {
+      "type": "object",
+      "required": [
+        "total_points",
+        "max_points",
+        "note_sur_20",
+        "success_rate",
+        "by_part",
+        "common_core_points",
+        "individual_points"
+      ],
+      "properties": {
+        "total_points": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max_points": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "note_sur_20": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "success_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "by_part": {
+          "type": "object"
+        },
+        "common_core_points": {
+          "type": "number"
+        },
+        "individual_points": {
+          "type": "number"
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "item_id",
+          "ref",
+          "part",
+          "kind",
+          "skill_id",
+          "skills",
+          "points",
+          "max_points",
+          "criteria",
+          "comparison_status"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "part": {
+            "enum": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "commun",
+              "individuel"
+            ]
+          },
+          "skill_id": {
+            "type": "string"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "difficulty": {
+            "enum": [
+              "socle",
+              "standard",
+              "transfert"
+            ]
+          },
+          "task_type": {
+            "type": "string"
+          },
+          "points": {
+            "type": "number",
+            "minimum": 0
+          },
+          "max_points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "success_rate": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "criteria": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "criterion_id",
+                "skill_id",
+                "evidence_type",
+                "points",
+                "max_points"
+              ],
+              "properties": {
+                "criterion_id": {
+                  "type": "string"
+                },
+                "item_ref": {
+                  "type": "string"
+                },
+                "item_id": {
+                  "type": "string"
+                },
+                "skill_id": {
+                  "type": "string"
+                },
+                "evidence_type": {
+                  "enum": [
+                    "automatisme",
+                    "procedure",
+                    "justification",
+                    "controle",
+                    "transfert",
+                    "communication"
+                  ]
+                },
+                "subpart": {
+                  "type": "string"
+                },
+                "points": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "max_points": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "difficulty": {
+                  "type": "string"
+                },
+                "part": {
+                  "type": "string"
+                },
+                "kind": {
+                  "enum": [
+                    "commun",
+                    "individuel"
+                  ]
+                }
+              }
+            }
+          },
+          "error_codes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 4
+          },
+          "comparison_status": {
+            "enum": [
+              "parallel_measures",
+              "indicative_skill_comparison",
+              "post_only",
+              "not_comparable"
+            ]
+          }
+        }
+      }
+    },
+    "criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "criterion_id",
+          "skill_id",
+          "evidence_type",
+          "points",
+          "max_points"
+        ],
+        "properties": {
+          "criterion_id": {
+            "type": "string"
+          },
+          "item_ref": {
+            "type": "string"
+          },
+          "item_id": {
+            "type": "string"
+          },
+          "skill_id": {
+            "type": "string"
+          },
+          "evidence_type": {
+            "enum": [
+              "automatisme",
+              "procedure",
+              "justification",
+              "controle",
+              "transfert",
+              "communication"
+            ]
+          },
+          "subpart": {
+            "type": "string"
+          },
+          "points": {
+            "type": "number",
+            "minimum": 0
+          },
+          "max_points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "difficulty": {
+            "type": "string"
+          },
+          "part": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "commun",
+              "individuel"
+            ]
+          }
+        }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "skill_id",
+          "label",
+          "importance_n",
+          "points",
+          "max_points",
+          "success_rate",
+          "baseline_status_qualitative",
+          "baseline_mastery",
+          "baseline_measure_available",
+          "post_mastery",
+          "mastery_delta",
+          "delta_blocked_reason",
+          "comparison_status",
+          "evidence_strength",
+          "post_test_context",
+          "retention_status",
+          "recommended_delayed_check"
+        ],
+        "properties": {
+          "skill_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "domain": {
+            "type": "string"
+          },
+          "importance_n": {
+            "enum": [
+              "critique",
+              "importante",
+              "utile"
+            ]
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_types": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "automatisme",
+                "procedure",
+                "justification",
+                "controle",
+                "transfert",
+                "communication"
+              ]
+            }
+          },
+          "points": {
+            "type": "number",
+            "minimum": 0
+          },
+          "max_points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "success_rate": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "baseline_status_qualitative": {
+            "enum": [
+              "acquis",
+              "en_voie_acquisition",
+              "fragile",
+              "non_evalue",
+              "non_travaille"
+            ]
+          },
+          "baseline_mastery": {
+            "type": "null",
+            "description": "toujours null : un statut qualitatif de domaine n'est pas une mesure et ne peut pas être converti en score"
+          },
+          "baseline_measure_available": {
+            "const": false
+          },
+          "post_mastery": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4
+          },
+          "post_mastery_capped_by_transfer": {
+            "type": "boolean"
+          },
+          "mastery_delta": {
+            "type": "null",
+            "description": "toujours null tant qu'aucune mesure initiale nominative appariée n'existe"
+          },
+          "delta_blocked_reason": {
+            "type": "string"
+          },
+          "comparison_status": {
+            "enum": [
+              "parallel_measures",
+              "indicative_skill_comparison",
+              "post_only",
+              "not_comparable"
+            ]
+          },
+          "evidence_strength": {
+            "enum": [
+              "faible",
+              "moyenne",
+              "forte"
+            ]
+          },
+          "evidence_strength_score": {
+            "type": "integer"
+          },
+          "evidence_strength_detail": {
+            "type": "array"
+          },
+          "post_test_context": {
+            "enum": [
+              "immediate_after_remediation",
+              "first_worked_in_session_5",
+              "introduced_in_session_5",
+              "no_remediation_in_session"
+            ]
+          },
+          "retention_status": {
+            "enum": [
+              "not_yet_verified",
+              "not_measured",
+              "verified"
+            ]
+          },
+          "recommended_delayed_check": {
+            "type": "boolean"
+          },
+          "retention_reason": {
+            "type": "string"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "required": [
+        "confidence_before",
+        "confidence_after",
+        "calibration_cells"
+      ],
+      "properties": {
+        "confidence_before_reported": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence_before": {
+          "type": "null"
+        },
+        "confidence_after": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "calibration_cells": {
+          "type": "object",
+          "required": [
+            "juste_confiance_haute",
+            "juste_confiance_basse",
+            "faux_confiance_basse",
+            "faux_confiance_haute",
+            "partiel_non_classe"
+          ],
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "errors": {
+      "type": "object",
+      "required": [
+        "error_profile_after",
+        "dominant_codes"
+      ],
+      "properties": {
+        "error_profile_before": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "error_profile_after": {
+          "type": "object"
+        },
+        "dominant_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "priorities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "skill_id",
+          "priority_rank",
+          "reason"
+        ],
+        "properties": {
+          "skill_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "priority_rank": {
+            "enum": [
+              "P1",
+              "P2",
+              "P3",
+              "OK"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "post_mastery": {
+            "type": "integer"
+          },
+          "success_rate": {
+            "type": "number"
+          },
+          "importance_n": {
+            "type": "string"
+          },
+          "dominant_error_codes": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-# 3e_Mini_Diagnostic_ELEVE
-## Mini-diagnostic complémentaire
+# 3e — Diagnostic initial (Élève)
+## Test de positionnement
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................
@@ -11,7 +11,7 @@
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 14. Mini-diagnostic complémentaire
+## 14. Mini-diagnostic complémentaire
 
 Durée indicative : **15 minutes**, sans calculatrice.
 Chaque réponse est accompagnée d’une certitude de 1 à 4.

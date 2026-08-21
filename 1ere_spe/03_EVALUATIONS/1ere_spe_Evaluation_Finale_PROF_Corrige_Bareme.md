@@ -1,5 +1,5 @@
-# 1ere_spe_Evaluation_Finale_PROF_Corrige
-## Évaluation finale - Corrigé et exploitation
+# 1re Spécialité Mathématiques — Évaluation finale (Corrigé & Barème)
+## Corrigé et barème d’évaluation
 
 ## Annexe G — Évaluation finale proposée
 

@@ -1,5 +1,5 @@
-# 1ere_spe_S1_ELEVE_Activite
-## Séance 1 — Calcul algébrique, inéquations et transition vers le second degré
+# 1re Spécialité Mathématiques — Séance 1 : Calcul algébrique, inéquations et transition vers le second degré
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

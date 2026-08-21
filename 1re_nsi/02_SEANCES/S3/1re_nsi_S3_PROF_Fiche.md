@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Fonctions, contrats, tests et débogage</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Corrigé, différenciation et pilotage</div>
 </div><div class="prof-only"></div>
-# Objectifs
+## Objectifs
 
 - distinguer paramètre et argument ;
 - distinguer print, return et None ;
@@ -19,7 +19,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - documenter une fonction ;
 - écrire des assertions de test ;
 
-# Déroulé minute par minute
+## Déroulé minute par minute
 
 - 0-10 rituel ;
 - 10-30 paramètres/arguments ;
@@ -30,7 +30,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - 100-112 tests/débogage ;
 - 112-120 revue/exit ;
 
-# Rituel prêt à l’emploi
+## Rituel prêt à l’emploi
 
 ## Question 1
 
@@ -126,7 +126,7 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 - une fonction de moyenne doit préciser le comportement sur une liste vide.
 
 
-# Consignes prêtes à dire
+## Consignes prêtes à dire
 
 - « Avant d’exécuter, écris ce que tu prévois. »
 - « Une réponse sans contrôle reste une hypothèse. »
@@ -134,7 +134,7 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 - « Ne change qu’une chose à la fois, puis relance les tests. »
 - « Explique le rôle de cette variable sans lire le code mot à mot. »
 
-# Points de vigilance
+## Points de vigilance
 
 - ne pas transformer l’activité en copie de code projeté ;
 - vérifier que les deux élèves alternent pilote et navigateur ;
@@ -142,7 +142,7 @@ Pour une fonction `maximum_deux(a, b)`, proposer :
 - demander un test sur les bornes ;
 - conserver le fichier final et le journal des erreurs.
 
-# Indicateurs de réussite
+## Indicateurs de réussite
 
 | Élève | Prévision exacte | Code exécutable | Tests pertinents | Explication | Aide maximale |
 |---|:---:|:---:|:---:|:---:|:---:|

@@ -1,5 +1,5 @@
-# 4e_S3_ELEVE_Activite
-## Séance 3 — Donner du sens aux lettres
+# 4e — Séance 3 : Donner du sens aux lettres
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

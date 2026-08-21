@@ -1,0 +1,216 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Entrée en Première — Numérique et sciences informatiques — Stage de pré-rentrée}{Séance 5/5 — Ahmed BENHADJ SALEM}
+\begin{document}
+\nexuscover{SÉANCE 5 --- RÉINVESTIR, CONSOLIDER, PRÉPARER LA RENTRÉE}{Livret de travail}{Ahmed BENHADJ SALEM}{Projet autonome — parcours candidat individuel}{Entrée en Première — Numérique et sciences informatiques --- NSI --- 1\,h\,15 de travail, puis 45 minutes d'évaluation dans un document séparé}
+\begin{goalbox}
+\textbf{Objectif personnel de cette séance.} Fiabiliser les accumulateurs — erreur documentée dans les deux bilans — et installer une pratique de test systématique, compétence la plus basse du profil, décisive pour un parcours en autonomie.
+\par\medskip
+\textbf{Ce livret couvre uniquement les 75 premières minutes.} L'évaluation finale est remise ensuite, dans un document distinct.
+\end{goalbox}
+\begin{methodbox}
+\textbf{Le fil des cinq séances}
+\begin{itemize}[leftmargin=13mm,labelsep=3mm,itemsep=1.5pt]
+\item[\textbf{\color{Navy}S1}] Variables, affectation et conditions ;
+\item[\textbf{\color{Navy}S2}] Boucles, compteurs et accumulateurs ;
+\item[\textbf{\color{Navy}S3}] Fonctions, contrats et tests ;
+\item[\textbf{\color{Navy}S4}] Listes, enregistrements et données CSV ;
+\item[\textbf{\color{Navy}S5}] aujourd'hui : réactiver, consolider deux axes personnels, faire le pont vers la Première NSI, puis mesurer.
+\end{itemize}
+\end{methodbox}
+\sectiontitle{Feuille de route des 75 minutes}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{20mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Travail & \color{white}Preuve attendue \\
+0--10 min & Réactiver sans ordinateur les cinq constructions travaillées de la séance 1 à la séance 4. & Cinq réponses écrites et le contrôle utilisé. \\
+10--35 min & Accumulateurs : somme, compteur, invariant et variant & Trois réussites autonomes sur l'axe prioritaire. \\
+35--55 min & Tests, assertions et cas limites & Deux réussites autonomes sur le second axe. \\
+55--70 min & Chercher dans une liste : du parcours complet à la dichotomie & Une production reliant un acquis de Seconde (SNT et algorithmique) à un attendu de Première NSI. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le contenu de l'évaluation. & Deux engagements écrits avant l'évaluation. \\
+\end{tabularx}
+\begin{graybox}\small\textbf{Règle de la séance.} J'écris ma réponse \emph{et} le contrôle qui la rend défendable. Une réponse sans contrôle reste une hypothèse. La ligne « Certitude » se remplit \emph{avant} toute vérification.\end{graybox}
+\par\vspace{2mm}
+\phasehead{Phase 1 --- Réactivation}{0--10 min}{Réactiver sans ordinateur les cinq constructions travaillées de la séance 1 à la séance 4.}
+Sept minutes sans machine. L'ordinateur ne sert ensuite qu'à \emph{contrôler}, jamais à trouver la réponse.
+\begin{enumerate}
+\item Pour \code{L = [5, 2, 9, 4]}, donner \code{L[0]}, \code{L[-1]}, \code{len(L)} et le dernier indice valide.
+\shortlines{2}
+\item Écrire la négation de \code{(x >= 3) and (x <= 12)}.
+\shortlines{2}
+\item Donner les valeurs produites par \code{range(2, 11, 3)} et le nombre de tours de boucle.
+\shortlines{2}
+\item Après \code{a = 4} puis \code{b = a} puis \code{a = 9}, que valent \code{a} et \code{b} ?
+\shortlines{2}
+\item Que renvoie une fonction qui ne contient aucune instruction \code{return} ? Que vaut alors la variable qui reçoit le résultat ?
+\shortlines{2}
+\end{enumerate}
+\certline
+\aideline
+\needspace{62mm}\par\vspace{3mm}
+\phasehead{Phase 2 --- Consolidation, axe prioritaire}{10--35 min}{Accumulateurs : somme, compteur, invariant et variant}
+\begin{methodbox}
+\textbf{Deux variables, deux rôles distincts.} Un \textbf{accumulateur} de somme cumule des valeurs ;
+un \textbf{compteur} compte des tours, indépendamment du contenu. Tous deux s'initialisent
+\textbf{avant} la boucle, jamais à l'intérieur.
+\par\smallskip
+\textbf{Invariant :} propriété vraie avant et après chaque tour, par exemple « \code{total} contient la somme
+des valeurs déjà parcourues ». \textbf{Variant :} quantité entière positive qui décroît et garantit l'arrêt.
+\end{methodbox}
+\begin{graybox}
+\textbf{Exemple guidé.} Somme des valeurs de \code{range(1, 4)}.
+\begin{lstlisting}
+total = 0
+for i in range(1, 4):
+    total = total + i
+\end{lstlisting}
+\begin{enumerate}
+\item Les valeurs parcourues sont $1$, $2$, $3$ : trois tours.
+\item États successifs de \code{total} : $1$, puis $3$, puis $6$.
+\item Le résultat est $6$, et non $3$ : $3$ est le \emph{nombre} de tours, pas la somme.
+\item Invariant : après $k$ tours, \code{total} contient la somme des $k$ premières valeurs.
+\end{enumerate}
+\end{graybox}
+\subsectiontitle{À toi}
+\begin{enumerate}
+\needspace{18mm}
+\item Tracer l'exécution de \code{total = 0} puis \code{for i in range(1, 6): total = total + i}, en écrivant l'état après chaque tour, puis donner le résultat.
+\worklines{5}
+\needspace{18mm}
+\item Écrire une fonction \code{bilan(L)} qui renvoie la somme des éléments de \code{L} \emph{et} le nombre de valeurs strictement négatives.
+\worklines{7}
+\needspace{18mm}
+\item Énoncer l'invariant de la boucle de l'exercice 1, puis indiquer ce qui joue le rôle de variant.
+\worklines{4}
+\needspace{18mm}
+\item Trouver l'erreur et corriger : \code{for v in L:} suivi de \code{total = 0} puis \code{total = total + v}.
+\worklines{4}
+\needspace{18mm}
+\item Écrire une boucle qui calcule le maximum d'une liste non vide, et justifier l'initialisation choisie.
+\worklines{6}
+\needspace{18mm}
+\item Un élève annonce que la somme des valeurs de \code{range(1, 4)} vaut $3$. Expliquer précisément la confusion, puis donner la valeur exacte.
+\worklines{4}
+\end{enumerate}
+\begin{successbox}\textbf{Critère de réussite de cette phase :} deux accumulateurs corrects écrits en autonomie, avec un invariant énoncé et un tableau d'état exact.\end{successbox}
+\certline
+\needspace{62mm}\par\vspace{3mm}
+\phasehead{Phase 3 --- Consolidation, second axe}{35--55 min}{Tests, assertions et cas limites}
+\begin{methodbox}
+\textbf{Un test, c'est une entrée et un résultat attendu, écrits avant l'exécution.}
+Une \textbf{assertion} vérifie ce couple : \code{assert f(4) == 16}.
+\par\smallskip
+\textbf{Cas limites à examiner systématiquement :} structure vide, un seul élément, valeur absente,
+première et dernière position, valeur nulle ou négative.
+\textbf{Règle :} un test qui échoue n'est pas effacé ; il localise le premier écart.
+\end{methodbox}
+\subsectiontitle{À toi}
+\begin{enumerate}
+\needspace{18mm}
+\item Pour une fonction \code{maximum(L)}, écrire quatre tests avec leur résultat attendu, dont deux cas limites.
+\worklines{7}
+\needspace{18mm}
+\item Écrire en Python les assertions correspondant aux trois premiers tests de l'exercice précédent.
+\worklines{5}
+\needspace{18mm}
+\item L'assertion \code{assert 0.1 + 0.2 == 0.3} échoue. Expliquer pourquoi, puis proposer une écriture correcte.
+\worklines{5}
+\needspace{18mm}
+\item Spécifier la fonction \code{indice_de(L, cible)} : entrées, sortie attendue, comportement lorsque la cible est absente.
+\worklines{6}
+\end{enumerate}
+\begin{successbox}\textbf{Critère de réussite de cette phase :} un jeu de tests couvrant au moins un cas ordinaire et deux cas limites, écrit avant toute exécution.\end{successbox}
+\certline
+\needspace{62mm}\par\vspace{3mm}
+\phasehead{Phase 4 --- Réinvestissement}{55--70 min}{Découverte guidée : construire, à partir du parcours de liste déjà travaillé, deux algorithmes nouveaux du programme de Première — la recherche séquentielle et la recherche dichotomique, avec leur précondition et leur coût.}
+
+\begin{methodbox}
+\textbf{Ce qui change en Première NSI.} Un parcours de liste n'est plus une fin en soi : il devient un
+\textbf{algorithme}, c'est-à-dire une procédure dont on sait dire ce qu'elle renvoie, dans quels cas, et à
+quel coût.
+\par\smallskip
+\textbf{Ce qui est réinvesti} : la boucle, l'indexation, le test et le contrat d'une fonction, travaillés de
+la séance 1 à la séance 4. \textbf{Ce qui est nouveau} : les \textbf{algorithmes de recherche} eux-mêmes,
+leur précondition et leur coût, qui appartiennent au programme de Première.
+\end{methodbox}
+\begin{warningbox}\small
+\textbf{Cette phase introduit des notions de l'année à venir.} Ce que tu produis ici ne sera donc
+\emph{pas} comparé à ton positionnement de début de stage : il ne s'agit pas de mesurer un progrès,
+mais de préparer les premières séances de septembre.
+\end{warningbox}
+
+
+\subsectiontitle{A. La recherche séquentielle — 8 min}
+\begin{lstlisting}
+def indice_de(L, cible):
+    for i in range(len(L)):
+        if ____________________:
+            return ____
+    return -1
+\end{lstlisting}
+\begin{enumerate}
+\item Compléter les deux trous. \quad Pourquoi renvoie-t-on $-1$ et non $0$ lorsque la cible est absente ?
+\shortlines{1}
+\item Tracer l'exécution pour \code{L = [7, 3, 9, 3]} et \code{cible = 3}.
+\par\noindent\begin{tabularx}{\linewidth}{|>{\bfseries}p{16mm}|X|X|X|}
+\hline
+Tour & \code{i} & \code{L[i]} & Condition vraie ? \\ \hline
+1 & & & \\ \hline
+2 & & & \\ \hline
+\end{tabularx}
+\item Que renvoie l'appel ? \rule{25mm}{0.32pt} \quad Et \code{indice_de([7, 3, 9, 3], 5)} ? \rule{25mm}{0.32pt}
+\item Combien de comparaisons au maximum pour une liste de $100$ éléments ? \rule{25mm}{0.32pt}
+\end{enumerate}
+
+\subsectiontitle{B. Et si la liste était triée ? — 7 min}
+On cherche $41$ dans la liste triée \code{[3, 8, 12, 19, 25, 33, 41, 50]}, dont les indices vont de $0$ à $7$.
+\begin{graybox}\small
+\textbf{Convention retenue pour tout l'exercice :} la zone de recherche est délimitée par deux indices
+\code{g} et \code{d} ; l'indice du milieu est \code{m = (g + d) // 2}, c'est-à-dire le quotient entier.
+Une autre convention donnerait un autre décompte : c'est pourquoi on la fixe avant de commencer.
+\end{graybox}
+\begin{enumerate}
+\item Premier tour : \code{g = 0} et \code{d = 7}. Calculer \code{m}, comparer \code{L[m]} à $41$, puis dire
+quelle moitié est éliminée.
+\shortlines{1}
+\item Poursuivre en notant \code{g}, \code{d} et \code{m} à chaque tour. Combien de comparaisons ont été
+nécessaires ? \rule{22mm}{0.32pt}
+\item Compléter : à chaque étape, la zone de recherche est divisée par \rule{15mm}{0.32pt}.
+\item Écrire la \textbf{précondition} indispensable à cet algorithme. \rule{75mm}{0.32pt}
+\item Un élève applique cette méthode à une liste non triée et trouve « absent » alors que la valeur y figure.
+Expliquer précisément l'origine de l'erreur.
+\worklines{2}
+\end{enumerate}
+
+\begin{successbox}
+\textbf{Preuve attendue :} la valeur de retour en cas d'absence est justifiée ; la précondition de tri est
+énoncée avant tout jugement sur l'efficacité.
+\end{successbox}
+
+\needspace{62mm}\par\vspace{3mm}
+\phasehead{Phase 5 --- Avant l'évaluation}{70--75 min}{Cadrage méthodologique. Aucun contenu de l'évaluation n'est annoncé.}
+
+\begin{methodbox}
+\textbf{Cinq règles, et rien d'autre.} Ce cadrage ne porte sur aucun contenu de l'évaluation.
+\begin{enumerate}
+\item \textbf{Gérer le temps.} Trois parties : environ 10 min, 20 min et 15 min. Un regard sur l'horloge à la fin de chaque partie suffit.
+\item \textbf{Justifier.} Écrire la relation, la propriété ou la règle avant le calcul. Un résultat seul ne montre pas ce que tu sais.
+\item \textbf{Contrôler.} Avant de passer à la suite : ordre de grandeur, substitution, unité, ou vérification par une seconde voie.
+\item \textbf{Lire jusqu'au bout.} Souligner la question réellement posée et les données effectivement fournies.
+\item \textbf{Passer et revenir.} Une question laissée de côté puis reprise vaut mieux qu'une réponse écrite au hasard.
+\end{enumerate}
+\end{methodbox}
+
+\begin{graybox}
+\textbf{La certitude.} Elle est demandée à trois moments seulement, comme au test de positionnement de début de stage :
+\conf\ . Elle n'entre pas dans la note. Elle sert à distinguer ce que tu sais de ce que tu crois savoir.
+\end{graybox}
+
+\subsectiontitle{Mon engagement d'avant-évaluation}
+\par\vspace{1mm}
+\noindent\textbf{Le contrôle que j'écrirai systématiquement :}\ \rule{\dimexpr\linewidth-76mm\relax}{0.32pt}
+\par\vspace{3mm}
+\noindent\textbf{La question que je traiterai en dernier :}\ \rule{\dimexpr\linewidth-68mm\relax}{0.32pt}
+\par\vspace{1mm}
+
+\begin{warningbox}\textbf{Fin du livret de travail.} L'évaluation finale est un document séparé, remis par l'enseignant à l'issue de ces 75 minutes.\end{warningbox}
+\end{document}

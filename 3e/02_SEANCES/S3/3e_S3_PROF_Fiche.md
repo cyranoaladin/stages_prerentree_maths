@@ -1,5 +1,5 @@
-# 3e_S3_PROF_Fiche
-## Séance 3 — Construire et justifier
+# 3e — Séance 3 : Construire et justifier
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

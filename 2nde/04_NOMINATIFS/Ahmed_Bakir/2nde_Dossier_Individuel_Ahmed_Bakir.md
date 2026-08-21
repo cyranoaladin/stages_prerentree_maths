@@ -1,5 +1,5 @@
-# Dossier individuel - Ahmed Bakir
-## Entrée en Seconde générale et technologique - Mathématiques
+# 2nde — Dossier individuel — Ahmed Bakir
+## Synthèse et profil élève
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

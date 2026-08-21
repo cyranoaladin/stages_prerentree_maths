@@ -1,0 +1,335 @@
+{
+  "schema": "nexus-s5-level-blueprint-v1",
+  "generated_on": "2026-08-20",
+  "level_key": "2nde",
+  "label": "Entrée en Seconde générale et technologique",
+  "subject": "Mathématiques",
+  "year_prev": "Troisième",
+  "year_next": "Seconde",
+  "curriculum_reference": {
+    "annee_scolaire_visee": "2026-2027",
+    "programme_applique_a_l_eleve": {
+      "cycle": "lycée général et technologique, classe de Seconde",
+      "texte": "nouveau programme de mathématiques de Seconde",
+      "BO": "BO n° 14 du 2 avril 2026",
+      "NOR": "MENE2602914A",
+      "entree_en_vigueur": "rentrée 2026-2027",
+      "nouvelle_progression_applicable": true
+    },
+    "transition": "acquis de Troisième 2025-2026, relevant du programme de cycle 4 alors en vigueur, vers le nouveau programme de Seconde applicable dès 2026-2027",
+    "attendus_de_fin_annee_n_moins_1": "Troisième",
+    "source_de_la_reference": "audit indépendant du 21 août 2026, section 9 ; à confirmer auprès du Bulletin officiel avant diffusion externe",
+    "verifie_par_un_humain": false
+  },
+  "baseline_instrument": {
+    "name": "Positionnement de pré-rentrée — Mathématiques, entrée en Seconde",
+    "file": "2nde/03_EVALUATIONS/2nde_Test_Initial.pdf",
+    "items": 18,
+    "minutes": 25,
+    "format": "QCM 4 choix + certitude 1-4"
+  },
+  "sessions": {
+    "S1": "Réparer le moteur de calcul (priorités, fractions, puissances)",
+    "S2": "Construire l'algèbre du lycée (développement, factorisation, équations)",
+    "S3": "Modéliser une situation (pourcentages, fonctions)",
+    "S4": "Choisir le bon théorème (Pythagore, Thalès, trigonométrie)",
+    "S5": "Relier, contrôler et expliquer (statistiques, probabilités, algorithmique)"
+  },
+  "skills": {
+    "M2DE_CALC_01": {
+      "label": "Priorités opératoires, signes et puissance d'un relatif",
+      "domain": "Calcul numérique",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q01",
+        "2N_TI_Q02"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M2DE_FRAC_01": {
+      "label": "Somme et quotient de fractions",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q03",
+        "2N_TI_Q04"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M2DE_PUIS_01": {
+      "label": "Puissances de 10, exposants négatifs, écriture scientifique",
+      "domain": "Puissances",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q05",
+        "2N_TI_Q06"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M2DE_ALG_01": {
+      "label": "Double distributivité et identités remarquables",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q07",
+        "2N_TI_Q08"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M2DE_EQ_01": {
+      "label": "Équation du premier degré, inconnue dans les deux membres",
+      "domain": "Équations",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q09"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M2DE_EQ_02": {
+      "label": "Équation produit nul",
+      "domain": "Équations",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q10"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M2DE_POURC_01": {
+      "label": "Pourcentages, coefficient multiplicateur, évolutions successives",
+      "domain": "Proportionnalité",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q11",
+        "2N_TI_Q12"
+      ],
+      "sessions": [
+        "S3"
+      ]
+    },
+    "M2DE_GEO_01": {
+      "label": "Théorème de Pythagore, direct et réciproque",
+      "domain": "Géométrie",
+      "importance_n": "critique",
+      "baseline_items": [
+        "2N_TI_Q13",
+        "2N_TI_Q14"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "M2DE_GEO_02": {
+      "label": "Théorème de Thalès et agrandissement-réduction",
+      "domain": "Géométrie",
+      "importance_n": "importante",
+      "baseline_items": [
+        "2N_TI_Q15",
+        "2N_TI_Q16"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "M2DE_TRIG_01": {
+      "label": "Rapports trigonométriques dans le triangle rectangle",
+      "domain": "Trigonométrie",
+      "importance_n": "importante",
+      "baseline_items": [
+        "2N_TI_Q17",
+        "2N_TI_Q18"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    }
+  },
+  "baseline_items": {
+    "2N_TI_Q01": "Calculer −3 + 4 × (−2).",
+    "2N_TI_Q02": "Calculer (−2)³.",
+    "2N_TI_Q03": "Calculer 2/3 + 1/4.",
+    "2N_TI_Q04": "Calculer (3/4) ÷ (2/5).",
+    "2N_TI_Q05": "Simplifier 10³ × 10⁻⁵.",
+    "2N_TI_Q06": "Écriture scientifique de 0,00034.",
+    "2N_TI_Q07": "Développer et réduire (x + 3)(x − 5).",
+    "2N_TI_Q08": "Développer (x − 4)².",
+    "2N_TI_Q09": "Résoudre 3x − 7 = 2x + 5.",
+    "2N_TI_Q10": "Résoudre (x − 2)(x + 5) = 0.",
+    "2N_TI_Q11": "Un article coûte 80 dinars et augmente de 15 % : nouveau prix ?",
+    "2N_TI_Q12": "Un prix baisse de 20 %, puis augmente de 20 % : que vaut le prix final ?",
+    "2N_TI_Q13": "ABC rectangle en A, AB = 3 cm, AC = 4 cm : longueur BC ?",
+    "2N_TI_Q14": "Un triangle a pour côtés 6, 8 et 10 cm : que peut-on affirmer ?",
+    "2N_TI_Q15": "Configuration de Thalès : AM = 2, AB = 6, AN = 3, calculer AC.",
+    "2N_TI_Q16": "Agrandissement de rapport 3 : par combien l'aire est-elle multipliée ?",
+    "2N_TI_Q17": "Dans ABC rectangle en A, le cosinus de l'angle B est égal à :",
+    "2N_TI_Q18": "Hypoténuse 10 cm, angle aigu 30° : longueur du côté opposé ?"
+  },
+  "critical_prerequisites": [
+    "M2DE_CALC_01",
+    "M2DE_FRAC_01",
+    "M2DE_PUIS_01",
+    "M2DE_ALG_01",
+    "M2DE_EQ_01",
+    "M2DE_EQ_02",
+    "M2DE_POURC_01",
+    "M2DE_GEO_01"
+  ],
+  "bridges_to_year_n": [
+    "intervalles de réels et ensembles de nombres",
+    "notion de fonction : image, antécédent, tableau de valeurs, courbe",
+    "repérage dans le plan et algorithmique en Python"
+  ],
+  "session5_architecture": {
+    "work_minutes": 75,
+    "exam_minutes": 45,
+    "phases": [
+      {
+        "n": 1,
+        "title": "Réactivation et mise en route",
+        "minutes": 10,
+        "minutes_common": 10,
+        "minutes_individual": 0
+      },
+      {
+        "n": 2,
+        "title": "Consolidation ciblée — priorité 1",
+        "minutes": 25,
+        "minutes_common": 13,
+        "minutes_individual": 12
+      },
+      {
+        "n": 3,
+        "title": "Consolidation ciblée — priorité 2",
+        "minutes": 20,
+        "minutes_common": 10,
+        "minutes_individual": 10
+      },
+      {
+        "n": 4,
+        "title": "Réinvestissement et pont vers l'année suivante",
+        "minutes": 15,
+        "minutes_common": 13,
+        "minutes_individual": 2
+      },
+      {
+        "n": 5,
+        "title": "Préparation méthodologique à l'évaluation",
+        "minutes": 5,
+        "minutes_common": 5,
+        "minutes_individual": 0
+      }
+    ]
+  },
+  "exam_common_core": {
+    "A1": {
+      "skill_id": "M2DE_CALC_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "2N_TI_Q01",
+      "comparability": "comparable"
+    },
+    "A2": {
+      "skill_id": "M2DE_FRAC_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "2N_TI_Q03",
+      "comparability": "comparable"
+    },
+    "A3": {
+      "skill_id": "M2DE_PUIS_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "2N_TI_Q05",
+      "comparability": "comparable"
+    },
+    "A4": {
+      "skill_id": "M2DE_ALG_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "2N_TI_Q08",
+      "comparability": "comparable"
+    },
+    "B1": {
+      "skill_id": "M2DE_EQ_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "2N_TI_Q10",
+      "comparability": "comparable"
+    },
+    "B2": {
+      "skill_id": "M2DE_POURC_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "2N_TI_Q12",
+      "comparability": "comparable"
+    },
+    "B3": {
+      "skill_id": "M2DE_GEO_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "2N_TI_Q15",
+      "comparability": "comparable"
+    },
+    "C1": {
+      "skill_id": "M2DE_ALG_01",
+      "points": 4,
+      "task": "transfert",
+      "difficulty": "transfert",
+      "baseline_item_id": null,
+      "comparability": "partiellement_comparable"
+    }
+  },
+  "phase1_items": [
+    {
+      "skill_id": "M2DE_CALC_01",
+      "text": "Calculer $-5 + 3\\times(-4) - (-2)$."
+    },
+    {
+      "skill_id": "M2DE_FRAC_01",
+      "text": "Calculer $\\dfrac{5}{6}\\div\\dfrac{10}{9}$ et simplifier."
+    },
+    {
+      "skill_id": "M2DE_ALG_01",
+      "text": "Développer et réduire $(x-3)(x+7)$."
+    },
+    {
+      "skill_id": "M2DE_EQ_02",
+      "text": "Résoudre $(3x-6)(x+4)=0$."
+    },
+    {
+      "skill_id": "M2DE_PUIS_01",
+      "text": "Écrire $0{,}00058$ en notation scientifique."
+    }
+  ],
+  "phase4": {
+    "title": "De la Troisième à la Seconde : intervalles et langage des fonctions",
+    "objective": "Découverte guidée : construire, à partir du calcul et des équations déjà travaillés, deux notations nouvelles de Seconde — l'intervalle et le langage des fonctions.",
+    "skills_prev": [
+      "M2DE_EQ_01",
+      "M2DE_ALG_01",
+      "M2DE_CALC_01"
+    ],
+    "skills_next": [
+      "intervalles de réels",
+      "image, antécédent, tableau de valeurs"
+    ]
+  }
+}

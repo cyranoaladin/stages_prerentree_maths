@@ -1,5 +1,5 @@
-# 4e_S1_ELEVE_Activite
-## Séance 1 — Calculer avec du sens
+# 4e — Séance 1 : Calculer avec du sens
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

@@ -20,7 +20,7 @@ Donner une seule carte à la fois. L’élève inscrit la carte maximale utilis�
 <div class="cut-card"><h3>D - Condition</h3><p>Teste séparément chaque comparaison avant de combiner avec and/or.</p></div>
 <div class="cut-card"><h3>E - Vérifier</h3><p>Teste les valeurs limites et trace le programme sans ordinateur.</p></div></div>
 
-# Ticket des aides
+## Ticket des aides
 
 | Exercice | Aucune | A | B | C | D | E | Réussi ensuite |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

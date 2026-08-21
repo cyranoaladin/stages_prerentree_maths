@@ -13,37 +13,37 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="student-only"></div>
 
-# Logique et conditions
+## Logique et conditions
 
 1. Nier `x > 5` puis `x >= 5`.
 2. Nier `(x > 0) and (x < 10)`.
 3. Écrire un jeu de tests sur les bornes.
 
-# Choix de boucle
+## Choix de boucle
 
 4. Justifier `for` pour parcourir un fichier déjà chargé.
 5. Justifier `while` pour demander une saisie valide.
 6. Donner un variant de boucle.
 
-# Taille et indices
+## Taille et indices
 
 7. Pour une liste de longueur `n`, donner premier et dernier indice.
 8. Écrire une boucle sûre utilisant les indices.
 9. Corriger un accès `L[len(L)]`.
 
-# Accumulateurs
+## Accumulateurs
 
 10. Tracer la somme de `range(1,4)`.
 11. Calculer simultanément somme et nombre de valeurs positives.
 12. Expliquer l’invariant de somme.
 
-# Fonctions et tests
+## Fonctions et tests
 
 13. Expliquer la différence `print` / `return` / `None`.
 14. Écrire une fonction de moyenne avec contrat.
 15. Écrire cinq tests, dont liste vide.
 16. Lire `math.isclose` et tester `0.1+0.2`.
 
-# Défi chronométré
+## Défi chronométré
 
 En 15 minutes, écrire et tester une fonction qui renvoie le deuxième plus grand élément distinct d’une liste, ou `None` s’il n’existe pas.

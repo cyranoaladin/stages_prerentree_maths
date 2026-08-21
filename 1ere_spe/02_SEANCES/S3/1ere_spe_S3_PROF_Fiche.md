@@ -1,5 +1,5 @@
-# 1ere_spe_S3_PROF_Fiche
-## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
+# 1re Spécialité Mathématiques — Séance 3 : Vecteurs, droites et transition vers le produit scalaire
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

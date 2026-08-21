@@ -1,5 +1,5 @@
-# Corrigé enseignant - Remédiation ciblée - Elyes KEFI
-## Entrée en Troisième - Mathématiques
+# 3e — Plan de remédiation ciblée — Elyes Kefi (Corrigé enseignant)
+## Parcours personnalisé
 
 > **DOCUMENT CONFIDENTIEL - ENSEIGNANT**
 

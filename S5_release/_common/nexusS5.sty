@@ -1,0 +1,150 @@
+%% nexusS5.sty — charte graphique Nexus Réussite pour la séance S5 de clôture.
+%% Dérivée sans modification de fond de la charte la plus récente du projet :
+%%   Bilans/1re_NSI_S4_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.tex
+%% Aucune identité graphique nouvelle n'est introduite : mêmes couleurs, mêmes
+%% encadrés, mêmes titres, mêmes réglages typographiques.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nexusS5}[2026/08/20 Nexus Reussite - style S5 cloture]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[french]{babel}
+\RequirePackage{lmodern}
+\RequirePackage{microtype}
+\RequirePackage[a4paper,margin=15mm,top=23mm,bottom=19mm,headheight=22pt,headsep=5mm]{geometry}
+\RequirePackage[table]{xcolor}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{tabularx,array,booktabs,longtable,multirow}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{graphicx}
+\RequirePackage{lastpage}
+\RequirePackage{listings}
+\RequirePackage{pgffor}
+\RequirePackage{hyperref}
+\RequirePackage{needspace}
+\RequirePackage{upquote}
+\RequirePackage{tikz}
+\usetikzlibrary{positioning,calc}
+\hypersetup{hidelinks}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.3pt}
+\setlist[itemize]{leftmargin=6mm,itemsep=1.1pt,topsep=2pt}
+\setlist[enumerate]{leftmargin=7mm,itemsep=1.6pt,topsep=2pt}
+\renewcommand{\arraystretch}{1.17}
+\sloppy
+\raggedbottom
+
+%% ---------------------------------------------------------------- couleurs
+\definecolor{Navy}{HTML}{0B2347}
+\definecolor{Blue}{HTML}{0E5AA7}
+\definecolor{Gold}{HTML}{C9A227}
+\definecolor{SoftGold}{HTML}{F7F1D8}
+\definecolor{SoftBlue}{HTML}{EDF4FB}
+\definecolor{SoftGray}{HTML}{F4F5F7}
+\definecolor{Red}{HTML}{9E2234}
+\definecolor{Green}{HTML}{167A68}
+\definecolor{TextGray}{HTML}{526170}
+\definecolor{CodeBg}{HTML}{F2F4F7}
+\definecolor{LineGray}{HTML}{A9B0B7}
+\definecolor{Purple}{HTML}{6E4C9A}
+\definecolor{Orange}{HTML}{B86416}
+
+%% ------------------------------------------------------------- entête/pied
+\newcommand{\NexusHeadRight}{}
+\newcommand{\NexusFootLeft}{}
+\newcommand{\setnexusheader}[2]{\renewcommand{\NexusHeadRight}{#1}\renewcommand{\NexusFootLeft}{#2}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{NEXUS RÉUSSITE}}
+\rhead{\small\NexusHeadRight}
+\cfoot{\small \NexusFootLeft \quad | \quad page \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Gold}\leaders\hrule height \headrulewidth\hfill}}
+
+%% ---------------------------------------------------------------- encadrés
+\newtcolorbox{goalbox}{enhanced,breakable,colback=SoftGold,colframe=Gold,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{methodbox}{enhanced,breakable,colback=SoftBlue,colframe=Navy,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{successbox}{enhanced,breakable,colback=green!3,colframe=Green,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{graybox}{enhanced,breakable,colback=SoftGray,colframe=TextGray,boxrule=0.65pt,arc=1.5mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{codegoalbox}{enhanced,breakable,colback=purple!3,colframe=Purple,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{warningbox}{enhanced,breakable,colback=orange!4,colframe=Orange,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{keybox}{enhanced,breakable,colback=Red!3,colframe=Red,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+
+%% ------------------------------------------------------------------ titres
+\newcommand{\sectiontitle}[1]{\par\needspace{13mm}\vspace{1mm}{\color{Navy}\Large\bfseries #1}\par\vspace{1mm}{\color{Gold}\rule{\linewidth}{1.1pt}}\vspace{1.5mm}}
+\newcommand{\subsectiontitle}[1]{\par\needspace{8mm}\vspace{1mm}{\color{Blue}\large\bfseries #1}\par\vspace{0.8mm}}
+\newcommand{\minititle}[1]{\par\needspace{6mm}{\color{Purple}\normalsize\bfseries #1}\par\vspace{0.6mm}}
+
+%% ------------------------------------------------- outils de réponse élève
+\newcommand{\conf}{\(\square\,1\quad\square\,2\quad\square\,3\quad\square\,4\)}
+\newcommand{\worklines}[1]{\par\vspace{0.8mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.32pt}\par\vspace{5.0mm}}}
+\newcommand{\shortlines}[1]{\par\vspace{0.5mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.3pt}\par\vspace{3.4mm}}}
+\newcommand{\cb}{\(\square\)}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+%% Ligne « certitude + contrôle » : mise en colonnes, jamais un \hfill dans un
+%% paragraphe (qui ne s'étire pas de façon fiable à l'intérieur d'un tcolorbox).
+%% Deux lignes distinctes : aucun alignement horizontal fragile.
+\newcommand{\certline}{%
+\par\vspace{1.2mm}\noindent\textbf{Certitude (1 à 4) :}\quad\conf
+\par\vspace{0.8mm}\noindent\textbf{Le contrôle que j'ai utilisé :} \rule{\dimexpr\linewidth-48mm\relax}{0.32pt}
+\par\vspace{0.8mm}}
+%% Encadré de certitude, avec un libellé explicite.
+\newcommand{\certbox}[1]{%
+\begin{graybox}
+\textbf{#1}\quad\conf
+\par\vspace{1mm}
+\textbf{Le contrôle que j'ai utilisé :} \rule{\dimexpr\linewidth-52mm\relax}{0.32pt}
+\end{graybox}}
+%% Ligne d'aide graduée utilisée pendant une phase de travail.
+\newcommand{\aideline}{%
+\begin{graybox}\small
+\textbf{Aide maximale utilisée :}\quad \cb\ aucune \quad \cb\ comprendre \quad
+\cb\ identifier \quad \cb\ choisir la méthode \quad \cb\ démarrer
+\end{graybox}}
+%% Espace de brouillon nettement délimité.
+\newcommand{\brouillon}[1]{%
+\par\vspace{1.5mm}\begin{tcolorbox}[enhanced,colback=white,colframe=LineGray,boxrule=0.45pt,
+arc=1mm,height=#1,left=2mm,right=2mm,top=1mm,bottom=1mm,
+title={\small\color{TextGray}Espace de brouillon --- non relevé},
+colbacktitle=SoftGray,coltitle=TextGray,fonttitle=\small\bfseries]\end{tcolorbox}}
+\newcommand{\answerbox}[1]{\begin{tcolorbox}[colback=white,colframe=LineGray,boxrule=0.45pt,arc=1mm,height=#1,left=2mm,right=2mm,top=1mm,bottom=1mm]\end{tcolorbox}}
+\newcommand{\phasehead}[3]{\par\needspace{16mm}{\color{Navy}\Large\bfseries #1}\hfill{\color{Blue}\normalsize\bfseries #2}\par\vspace{1mm}{\color{Gold}\rule{\linewidth}{1.1pt}}\vspace{1mm}\par{\color{TextGray}\small\textit{#3}}\par\vspace{1.5mm}}
+\newcommand{\itemhead}[3]{\par\needspace{10mm}{\color{Blue}\bfseries #1}\hfill{\color{TextGray}\small #2 pt --- #3 min}\par\vspace{0.6mm}}
+
+%% ------------------------------------------------------------------ Python
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{CodeBg},
+  frame=single,
+  rulecolor=\color{gray!35},
+  numbers=none,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  tabsize=4,
+  breaklines=true,
+  xleftmargin=1mm,
+  framexleftmargin=1mm,
+  aboveskip=1.5mm,
+  belowskip=1.5mm,
+  keywordstyle=\color{Blue}\bfseries,
+  commentstyle=\color{Green!80!black},
+  stringstyle=\color{Red!85!black}
+}
+\lstnewenvironment{pycode}{}{}
+
+%% ---------------------------------------------------------------- couverture
+\newcommand{\nexuscover}[5]{%
+\begin{center}
+\IfFileExists{nexus_logo.png}{\includegraphics[width=44mm]{nexus_logo.png}\\[1.5mm]}{}
+{\color{Gold}\large\bfseries PRÉ-RENTRÉE 2026-2027}\\[1.5mm]
+{\color{Navy}\fontsize{20}{23}\selectfont\bfseries #1}\\[1.5mm]
+{\large #2 --- \textbf{#3}}\\[1mm]
+{\color{Blue}\bfseries #4}\\[0.5mm]
+{\color{TextGray}\small #5}
+\end{center}}
+\endinput

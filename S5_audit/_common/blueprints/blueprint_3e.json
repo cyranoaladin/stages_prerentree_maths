@@ -1,0 +1,345 @@
+{
+  "schema": "nexus-s5-level-blueprint-v1",
+  "generated_on": "2026-08-20",
+  "level_key": "3e",
+  "label": "Entrée en Troisième",
+  "subject": "Mathématiques",
+  "year_prev": "Quatrième",
+  "year_next": "Troisième",
+  "curriculum_reference": {
+    "annee_scolaire_visee": "2026-2027",
+    "programme_applique_a_l_eleve": {
+      "cycle": "cycle 4",
+      "texte": "programme de cycle 4 en vigueur pour la classe de Troisième en 2026-2027",
+      "remarque": "le nouveau programme de cycle 4 publié en 2026 s'applique progressivement : Cinquième en 2026-2027, Quatrième en 2027-2028, Troisième en 2028-2029. Les élèves entrant en Troisième à la rentrée 2026 ne relèvent donc PAS de la nouvelle progression.",
+      "nouvelle_progression_applicable": false,
+      "annee_d_application_pour_ce_niveau": "2028-2029"
+    },
+    "transition": "acquis de Quatrième 2025-2026 vers la Troisième 2026-2027",
+    "attendus_de_fin_annee_n_moins_1": "Quatrième",
+    "source_de_la_reference": "audit indépendant du 21 août 2026, section 9 ; à confirmer auprès du Bulletin officiel avant diffusion externe",
+    "verifie_par_un_humain": false
+  },
+  "baseline_instrument": {
+    "name": "Positionnement de pré-rentrée — Mathématiques, entrée en Troisième",
+    "file": "3e/03_EVALUATIONS/3e_Test_Initial.pdf",
+    "items": 18,
+    "minutes": 25,
+    "format": "QCM 4 choix + certitude 1-4"
+  },
+  "sessions": {
+    "S1": "Sécuriser le moteur numérique (nombres, fractions, puissances)",
+    "S2": "Passer du calcul à l'algèbre (calcul littéral, équations)",
+    "S3": "Construire et justifier (Pythagore, Thalès)",
+    "S4": "Choisir un rapport trigonométrique",
+    "S5": "Lire les données et mobiliser l'ensemble des acquis"
+  },
+  "skills": {
+    "M3E_REL_01": {
+      "label": "Produit, quotient et priorités avec des nombres relatifs",
+      "domain": "Nombres relatifs",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q01",
+        "3E_TI_Q02"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M3E_FRAC_01": {
+      "label": "Somme et différence de fractions",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q03"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M3E_FRAC_02": {
+      "label": "Produit et quotient de fractions, simplification",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q04"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M3E_PUIS_01": {
+      "label": "Puissances : calcul et produit de puissances de même base",
+      "domain": "Puissances",
+      "importance_n": "importante",
+      "baseline_items": [
+        "3E_TI_Q05",
+        "3E_TI_Q06"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M3E_LIT_01": {
+      "label": "Distributivité : développer k(ax+b)",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q07"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M3E_LIT_02": {
+      "label": "Réduction d'une expression avec constantes signées",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q08"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M3E_EQ_01": {
+      "label": "Équation du premier degré, inconnue dans les deux membres",
+      "domain": "Équations",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q09",
+        "3E_TI_Q10"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M3E_PROP_01": {
+      "label": "Proportionnalité : quatrième proportionnelle et vitesse",
+      "domain": "Proportionnalité",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q11",
+        "3E_TI_Q12"
+      ],
+      "sessions": [
+        "S2",
+        "S5"
+      ]
+    },
+    "M3E_GEO_01": {
+      "label": "Théorème de Pythagore : calcul d'une longueur",
+      "domain": "Géométrie",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q13",
+        "3E_TI_Q14"
+      ],
+      "sessions": [
+        "S3"
+      ]
+    },
+    "M3E_TRIG_01": {
+      "label": "Choix et emploi d'un rapport trigonométrique (cosinus, sinus)",
+      "domain": "Trigonométrie",
+      "importance_n": "critique",
+      "baseline_items": [
+        "3E_TI_Q15",
+        "3E_TI_Q16"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "M3E_STAT_01": {
+      "label": "Moyenne simple et moyenne pondérée",
+      "domain": "Statistiques",
+      "importance_n": "importante",
+      "baseline_items": [
+        "3E_TI_Q17",
+        "3E_TI_Q18"
+      ],
+      "sessions": [
+        "S5"
+      ]
+    }
+  },
+  "baseline_items": {
+    "3E_TI_Q01": "Calculer (−5) × (−3).",
+    "3E_TI_Q02": "Calculer (−12) ÷ 4 + (−2) × (−3).",
+    "3E_TI_Q03": "Calculer 3/5 − 1/2.",
+    "3E_TI_Q04": "Calculer 2/3 × 9/4.",
+    "3E_TI_Q05": "Calculer 2⁵.",
+    "3E_TI_Q06": "Écrire 3⁴ × 3² sous la forme d'une seule puissance.",
+    "3E_TI_Q07": "Développer 3(2x − 5).",
+    "3E_TI_Q08": "Réduire l'expression 4x − 7 + 2x + 3.",
+    "3E_TI_Q09": "Résoudre l'équation 2x + 3 = 11.",
+    "3E_TI_Q10": "Résoudre l'équation 5x − 2 = 3x + 8.",
+    "3E_TI_Q11": "4 stylos identiques coûtent 6 dinars. Combien coûtent 10 stylos ?",
+    "3E_TI_Q12": "Une voiture parcourt 150 km en 2 h : quelle distance en 5 h ?",
+    "3E_TI_Q13": "ABC rectangle en A, AB = 6 cm, AC = 8 cm : longueur BC ?",
+    "3E_TI_Q14": "ABC rectangle en A, BC = 13 cm, AB = 5 cm : longueur AC ?",
+    "3E_TI_Q15": "Dans ABC rectangle en A, le cosinus de l'angle B est égal à :",
+    "3E_TI_Q16": "Côté adjacent 4 cm, hypoténuse 8 cm : mesure de l'angle B ?",
+    "3E_TI_Q17": "Moyenne de la série 8 ; 12 ; 10 ; 14.",
+    "3E_TI_Q18": "12 (coefficient 1) et 8 (coefficient 3) : moyenne pondérée ?"
+  },
+  "critical_prerequisites": [
+    "M3E_REL_01",
+    "M3E_FRAC_02",
+    "M3E_LIT_01",
+    "M3E_LIT_02",
+    "M3E_EQ_01",
+    "M3E_PROP_01",
+    "M3E_GEO_01",
+    "M3E_TRIG_01"
+  ],
+  "bridges_to_year_n": [
+    "double distributivité (a+b)(c+d) et amorce des identités remarquables",
+    "notion de fonction : image, antécédent, tableau de valeurs",
+    "théorème de Thalès et agrandissement-réduction"
+  ],
+  "session5_architecture": {
+    "work_minutes": 75,
+    "exam_minutes": 45,
+    "phases": [
+      {
+        "n": 1,
+        "title": "Réactivation et mise en route",
+        "minutes": 10,
+        "minutes_common": 10,
+        "minutes_individual": 0
+      },
+      {
+        "n": 2,
+        "title": "Consolidation ciblée — priorité 1",
+        "minutes": 25,
+        "minutes_common": 13,
+        "minutes_individual": 12
+      },
+      {
+        "n": 3,
+        "title": "Consolidation ciblée — priorité 2",
+        "minutes": 20,
+        "minutes_common": 10,
+        "minutes_individual": 10
+      },
+      {
+        "n": 4,
+        "title": "Réinvestissement et pont vers l'année suivante",
+        "minutes": 15,
+        "minutes_common": 13,
+        "minutes_individual": 2
+      },
+      {
+        "n": 5,
+        "title": "Préparation méthodologique à l'évaluation",
+        "minutes": 5,
+        "minutes_common": 5,
+        "minutes_individual": 0
+      }
+    ]
+  },
+  "exam_common_core": {
+    "A1": {
+      "skill_id": "M3E_REL_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "3E_TI_Q02",
+      "comparability": "comparable"
+    },
+    "A2": {
+      "skill_id": "M3E_FRAC_02",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "3E_TI_Q04",
+      "comparability": "comparable"
+    },
+    "A3": {
+      "skill_id": "M3E_LIT_02",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "3E_TI_Q08",
+      "comparability": "comparable"
+    },
+    "A4": {
+      "skill_id": "M3E_EQ_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "3E_TI_Q10",
+      "comparability": "comparable"
+    },
+    "B1": {
+      "skill_id": "M3E_GEO_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "3E_TI_Q14",
+      "comparability": "comparable"
+    },
+    "B2": {
+      "skill_id": "M3E_TRIG_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "3E_TI_Q16",
+      "comparability": "comparable"
+    },
+    "B3": {
+      "skill_id": "M3E_PROP_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "3E_TI_Q18",
+      "comparability": "comparable"
+    },
+    "C1": {
+      "skill_id": "M3E_GEO_01",
+      "points": 4,
+      "task": "transfert",
+      "difficulty": "transfert",
+      "baseline_item_id": null,
+      "comparability": "partiellement_comparable"
+    }
+  },
+  "phase1_items": [
+    {
+      "skill_id": "M3E_REL_01",
+      "text": "Calculer $(-6)\\times(-4) + (-3)\\times 5$."
+    },
+    {
+      "skill_id": "M3E_FRAC_02",
+      "text": "Calculer $\\dfrac{3}{4}\\times\\dfrac{8}{9}$ et donner le résultat simplifié."
+    },
+    {
+      "skill_id": "M3E_LIT_02",
+      "text": "Réduire $5x - 8 + 3x + 2$, puis contrôler pour $x = 1$."
+    },
+    {
+      "skill_id": "M3E_GEO_01",
+      "text": "$ABC$ est rectangle en $A$ avec $AB = 9$ cm et $AC = 12$ cm. Calculer $BC$ en citant le théorème."
+    },
+    {
+      "skill_id": "M3E_STAT_01",
+      "text": "Calculer la moyenne de la série $7$ ; $11$ ; $9$ ; $13$, puis vérifier qu'elle est comprise entre le minimum et le maximum."
+    }
+  ],
+  "phase4": {
+    "title": "De la Quatrième à la Troisième : le double produit et l'entrée dans les fonctions",
+    "objective": "Découverte guidée : construire, à partir de la distributivité et des équations déjà travaillées, deux notions nouvelles de Troisième — le double produit et le vocabulaire des fonctions.",
+    "skills_prev": [
+      "M3E_LIT_01",
+      "M3E_LIT_02",
+      "M3E_EQ_01"
+    ],
+    "skills_next": [
+      "double distributivité",
+      "image et antécédent d'une fonction"
+    ]
+  }
+}

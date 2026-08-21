@@ -1,7 +1,7 @@
-# 4e_Evaluation_Finale_PROF_Corrige
-## Évaluation finale - Corrigé et exploitation
+# 4e — Évaluation finale (Corrigé & Barème)
+## Corrigé et barème d’évaluation
 
-# 14. Évaluation finale proposée
+## 14. Évaluation finale proposée
 
 Chaque question comporte une certitude de 1 à 4.
 

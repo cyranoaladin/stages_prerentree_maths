@@ -1,5 +1,5 @@
-# 4e_Guide_Formateur
-## Entrée en Quatrième - Mathématiques
+# 4e — Guide du formateur
+## Protocole d’animation et repères pédagogiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
@@ -133,7 +133,7 @@ Le programme est conçu :
 
 ---
 
-# 1. Référentiel officiel applicable en 2026-2027
+## 1. Référentiel officiel applicable en 2026-2027
 
 ## 1.1 Point réglementaire important
 
@@ -155,7 +155,7 @@ Les repères annuels de progression et les attendus de fin d’année Éduscol c
 
 ---
 
-# 2. Diagnostic synthétique du groupe
+## 2. Diagnostic synthétique du groupe
 
 ## 2.1 Diagnostic par domaine
 
@@ -306,7 +306,7 @@ Un mini-diagnostic complémentaire est donc prévu au début de la première sé
 
 ---
 
-# 3. Prérequis de Cinquième et transition vers la Quatrième
+## 3. Prérequis de Cinquième et transition vers la Quatrième
 
 ## 3.1 Tableau N-1 → N
 
@@ -336,7 +336,7 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 
 ---
 
-# 4. Objectifs du stage
+## 4. Objectifs du stage
 
 ## 4.1 Objectifs généraux
 
@@ -399,7 +399,7 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 
 ---
 
-# 5. Progression globale des cinq séances
+## 5. Progression globale des cinq séances
 
 | Séance | Thème commun                  | Axe Sinda                                    | Axe Fares                                                  | Axe Ines                                                       | Ouverture vers la Quatrième        |
 | ------ | ----------------------------- | -------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------- |

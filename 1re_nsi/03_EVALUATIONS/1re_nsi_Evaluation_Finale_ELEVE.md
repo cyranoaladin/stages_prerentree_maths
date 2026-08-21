@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="student-only"></div>
 
-# Partie A - connaissances et traçage - 8 points
+## Partie A - connaissances et traçage - 8 points
 
 1. Expliquer la différence entre `=` et `==`.
 2. Donner la négation de `(x >= 0) and (x < 10)`.
@@ -38,7 +38,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <tr><td>8</td><td style="height:13mm"></td></tr>
 </table>
 
-# Partie B - pratique - 12 points
+## Partie B - pratique - 12 points
 
 Écrire un programme comprenant les fonctions suivantes :
 
@@ -63,7 +63,7 @@ Contraintes :
 - documenter les préconditions ;
 - traiter l’identifiant absent.
 
-# Extension
+## Extension
 
 Expliquer comment adapter `indice_capteur` à une recherche dichotomique lorsque les identifiants sont triés.
 

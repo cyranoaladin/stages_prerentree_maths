@@ -1,8 +1,8 @@
-# Index - Entrée en Troisième - Mathématiques
-
+# Index — 3e
+## Documents du niveau
 ## Documents généraux
-- [3e_Guide_Formateur](../01_ENSEIGNANT/3e_Guide_Formateur.html)
-- [3e_Tableau_Bord_Enseignant](../01_ENSEIGNANT/3e_Tableau_Bord_Enseignant.html)
+- [Guide du formateur](../01_ENSEIGNANT/3e_Guide_Formateur.html)
+- [Tableau de bord enseignant](../01_ENSEIGNANT/3e_Tableau_Bord_Enseignant.html)
 ## Séances
 ### Séance 1
 - [Fiche professeur](../02_SEANCES/S1/3e_S1_PROF_Fiche.html)

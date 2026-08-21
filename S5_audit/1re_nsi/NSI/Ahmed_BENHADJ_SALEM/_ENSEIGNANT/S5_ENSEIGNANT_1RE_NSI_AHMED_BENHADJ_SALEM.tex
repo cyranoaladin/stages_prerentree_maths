@@ -1,0 +1,407 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Dossier enseignant — confidentiel}{S5 — Ahmed BENHADJ SALEM — usage enseignant}
+\begin{document}
+\nexuscover{SÉANCE 5 --- DOSSIER ENSEIGNANT}{Profil, déroulé, corrigés et barème}{Ahmed BENHADJ SALEM}{Entrée en Première — Numérique et sciences informatiques}{NSI --- Projet autonome — parcours candidat individuel}
+\begin{methodbox}\small\textbf{Programme de référence.} programme de Première NSI, toujours en vigueur en 2026 --- BO spécial n° 1 du 22 janvier 2019 MENE1901633A. Transition visée : acquis de Seconde 2025-2026, notamment SNT et algorithmique, vers le programme de Première NSI de 2019.\end{methodbox}
+\begin{keybox}\textbf{DOCUMENT CONFIDENTIEL --- USAGE ENSEIGNANT.} Contient les corrigés, le barème et des données nominatives. Ne pas remettre à l'élève ni le laisser visible pendant la séance.\end{keybox}
+\sectiontitle{1. Profil synthétique}
+\begin{methodbox}
+\textbf{Diagnostic initial.} 18 questions traitées sur 18 (positionnement Première). Représentation binaire, Web, réseaux et données en tables solides ; programmation à 55,6 \%, priorité à rectifier. Erreur persistante sur un accumulateur : la somme 1+2+3 est confondue avec le nombre d'itérations.
+\end{methodbox}
+\subsectiontitle{Points d'appui documentés}
+\begin{itemize}\item Représentation binaire\item Web\item Réseaux\item Données en tables\item Algorithmique et types construits théoriquement disponibles\end{itemize}
+\subsectiontitle{Difficultés documentées}
+\begin{itemize}\item Négation d'une condition\item Choix for / while\item len et indices\item None et valeur renvoyée\item Accumulateurs\item Tests et cas limites\end{itemize}
+\subsectiontitle{Lecture détaillée du diagnostic}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{32mm} p{28mm} X}
+\rowcolor{Navy}\color{white}Domaine & \color{white}Statut initial & \color{white}Observation issue du bilan \\
+Logique & Niveau initial 2 & Compétence relevée au niveau 2 dans le tableau de suivi du dossier. \\
+Boucles & Niveau initial 2 & Compétence relevée au niveau 2. \\
+Accumulateurs & Niveau initial 2 & Erreur persistante documentée dans les deux bilans. \\
+Fonctions & Niveau initial 3 & Compétence relevée au niveau 3. \\
+Tests & Niveau initial 1 & Compétence la plus basse du profil. \\
+Structures & Niveau initial 3 & Compétence relevée au niveau 3. \\
+CSV & Niveau initial 3 & Compétence relevée au niveau 3. \\
+Autonomie & Niveau initial 2 & Compétence relevée au niveau 2. \\
+Oral & Niveau initial 2 & Compétence relevée au niveau 2. \\
+\end{tabularx}
+\begin{warningbox}\textbf{Limite de la reconstruction.} Les tableaux d'observation séance par séance du dossier individuel sont vierges : il n'existe aucune preuve documentée entre le diagnostic initial et aujourd'hui. Tout statut porté ci-dessous décrit un \emph{état de départ}, jamais une acquisition constatée.\end{warningbox}
+\newpage\sectiontitle{2. Matrice de trajectoire --- état avant la séance 5}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{27mm} X >{\scriptsize}p{16mm} >{\scriptsize}p{20mm} >{\scriptsize\centering\arraybackslash}p{9mm}}
+\rowcolor{Navy}\color{white}\scriptsize skill\_id & \color{white}Compétence & \color{white}Travaillée en & \color{white}Statut avant S5 & \color{white}Prio. \\
+NSI1\_REP\_01 & Représentation binaire d'un entier et capacité sur n bits & S1 & acquis & OK \\
+NSI1\_RES\_01 & Adresse IP et rôle d'un routeur & --- & acquis & OK \\
+NSI1\_TAB\_01 & Enregistrement, attribut et métadonnée & S4 & acquis & OK \\
+NSI1\_WEB\_01 & Rôle du CSS et modèle client-serveur & --- & acquis & OK \\
+NSI1\_ACC\_01 & $\bullet$ Accumulateur : somme, compteur, invariant de boucle & S2, S4 & fragile & P1 \\
+NSI1\_AFF\_01 & Modèle d'affectation : la valeur est copiée, pas liée & S1 & fragile & P1 \\
+NSI1\_BOUCLE\_01 & range : valeurs produites, bornes et nombre d'itérations & S2 & fragile & P1 \\
+NSI1\_BOUCLE\_02 & Choisir entre une boucle for et une boucle while & S2 & fragile & P1 \\
+NSI1\_LIST\_01 & Indexation d'une liste, len et dernier indice valide & S4 & fragile & P1 \\
+NSI1\_LOG\_01 & Conditions composées et négation d'une condition & S1 & fragile & P1 \\
+NSI1\_TEST\_01 & $\bullet$ Tests, assertions et cas limites & S3, S4 & fragile & P1 \\
+NSI1\_CSV\_01 & Chargement d'un fichier CSV et conversion des types & S4 & en voie & P2 \\
+NSI1\_FONC\_01 & Paramètre, argument, valeur renvoyée et None & S3 & en voie & P2 \\
+NSI1\_ALGO\_01 & Recherche séquentielle et principe de la dichotomie & S5 & non travaillé & P3 \\
+NSI1\_MUT\_01 & Alias, copie et mutabilité d'une liste & S4 & en voie & P3 \\
+\end{tabularx}
+\par\vspace{1mm}\small\textbf{Lecture de la colonne « Statut avant S5 » :} elle décrit l'état constaté au \emph{positionnement initial}, jamais une acquisition constatée depuis. « acquis » signifie « acquis au positionnement initial » ; « en voie » signifie « en voie d'acquisition ».
+\par\small$\bullet$ compétence ciblée par les phases 2 et 3 de la séance. La colonne « Prio. » est \emph{provisoire} : la priorité définitive est produite par \code{tools/analyze_s5.py} après la correction.
+\begin{warningbox}\textbf{Effet de récence.} Les compétences suivantes sont retravaillées pendant cette séance, puis évaluées moins d'une heure plus tard : \code{NSI1_RES_01}, \code{NSI1_WEB_01}, \code{NSI1_ACC_01}, \code{NSI1_TEST_01}, \code{NSI1_ALGO_01}. Une réussite y mesure une \emph{performance immédiate}, pas une consolidation durable. Le plan de rentrée prévoit pour elles un contrôle différé en semaine 1 ou 2 ; aucun bilan ne doit écrire « acquis durablement » sur cette seule preuve.\end{warningbox}
+\sectiontitle{3. Pourquoi ces activités, pour cet élève}
+\begin{goalbox}\textbf{Objectif de la séance :} Fiabiliser les accumulateurs — erreur documentée dans les deux bilans — et installer une pratique de test systématique, compétence la plus basse du profil, décisive pour un parcours en autonomie.\end{goalbox}
+\subsectiontitle{Axe prioritaire (phase 2, 25 min) --- Accumulateurs : somme, compteur, invariant et variant}
+Erreur documentée et persistante dans les deux bilans de positionnement : la somme d'une suite de valeurs est confondue avec le nombre d'itérations. La compétence conditionne tout traitement de données.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{NSI1_ACC_01}.
+\subsectiontitle{Second axe (phase 3, 20 min) --- Tests, assertions et cas limites}
+Compétence « Tests » au niveau 1 au diagnostic, la plus basse du profil malgré des connaissances théoriques étendues ; c'est le levier principal de fiabilité pour un parcours en autonomie.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{NSI1_TEST_01}.
+\subsectiontitle{Équilibre commun / individuel}
+Sur les 75 minutes : \textbf{51 min} (68\,\%) relèvent des objectifs communs du niveau et \textbf{24 min} (32\,\%) ciblent le profil individuel. Sur l'évaluation : \textbf{14 points} de noyau commun (70.0\,\%) et \textbf{6 points} individualisés (30.0\,\%).
+\newpage\sectiontitle{4. Déroulé minute par minute}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{18mm} p{34mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Phase & \color{white}Conduite & \color{white}Indicateur observable \\
+0--10 min & Réactiver sans ordinateur les cinq constructions travaillées & Individuel, sans carte de rappel pendant 7 minutes, puis 3 minutes de mise en commun. & Au moins 4 réponses exactes sur 5 ; la certitude est renseignée avant toute vérification. \\
+10--35 min & Accumulateurs : somme, compteur, invariant et variant & Rappel bref, exemple guidé au tableau, puis exercices en autonomie. Aide donnée seulement après une tentative écrite. & Trois réussites consécutives sans aide sur la compétence visée. \\
+35--55 min & Tests, assertions et cas limites & Pas d'exemple guidé : l'élève démarre seul. Intervention uniquement sur demande. & Deux réussites autonomes ; le contrôle est écrit sans qu'on le demande. \\
+55--70 min & Chercher dans une liste : du parcours complet à la dichotomi & Travail écrit, correction collective courte à la fin. Ne pas transformer ce temps en cours magistral. & L'élève relie explicitement un acquis de l'année écoulée à un attendu de l'année à venir. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le conte & Lecture des cinq règles, puis remise de l'évaluation. Aucune information sur son contenu. & Les deux engagements sont écrits. \\
+75--120 min & Évaluation finale & Individuel, sans document. Partie A environ 10 min, B environ 20 min, C environ 15 min. & Somme des durées cibles : 40 min, marge de 4 min. \\
+\end{tabularx}
+\newpage\sectiontitle{5. Corrigé du livret de travail}
+\subsectiontitle{Phase 1 --- réactivation}
+\begin{enumerate}
+\item \code{NSI1_LIST_01} --- \code{5} ; \code{4} ; \code{4} ; dernier indice \code{3}. Une liste de longueur $n$ a les indices $0$ à $n-1$.
+\item \code{NSI1_LOG_01} --- \code{(x < 3) or (x > 12)} : la négation d'un \emph{et} est un \emph{ou}, et chaque comparaison est inversée.
+\item \code{NSI1_BOUCLE_01} --- \code{2, 5, 8} : trois tours. La borne \code{11} est exclue.
+\item \code{NSI1_AFF_01} --- \code{a} vaut \code{9} et \code{b} vaut \code{4} : \code{b = a} copie la valeur au moment de l'affectation.
+\item \code{NSI1_FONC_01} --- Elle renvoie \code{None} ; la variable vaut donc \code{None}, ce qui provoque une erreur au premier calcul.
+\end{enumerate}
+\subsectiontitle{Phase 2 --- Accumulateurs : somme, compteur, invariant et variant}
+\begin{enumerate}
+\item États : $1, 3, 6, 10, 15$. Résultat : \textbf{15}.
+\item Deux accumulateurs initialisés avant la boucle : \code{total = 0} et \code{n = 0} ; dans la boucle, \code{total = total + v} et \code{if v < 0: n = n + 1} ; puis \code{return total, n}.
+\item Invariant : après $k$ tours, \code{total} contient la somme des $k$ premiers entiers parcourus. Variant : le nombre de valeurs restant à parcourir, qui décroît d'une unité par tour.
+\item L'accumulateur est réinitialisé à chaque tour : à la fin, \code{total} ne contient que la dernière valeur. Il faut placer \code{total = 0} \emph{avant} la boucle.
+\item \code{m = L[0]} puis \code{for v in L: if v > m: m = v}. Initialiser à \code{0} serait faux pour une liste de valeurs toutes négatives.
+\item Il a donné le \emph{nombre d'itérations} et non la somme accumulée. La somme vaut $1+2+3=\textbf{6}$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- somme confondue avec le nombre d'itérations
+\item \textsc{ALGORITHME} --- accumulateur initialisé à l'intérieur de la boucle
+\item \textsc{ALGORITHME} --- initialisation à 0 d'un maximum sur des valeurs négatives
+\end{itemize}
+\subsectiontitle{Phase 3 --- Tests, assertions et cas limites}
+\begin{enumerate}
+\item Par exemple \code{maximum([3, 9, 2]) == 9} ; \code{maximum([5]) == 5} ; \code{maximum([-4, -1]) == -1} ; \code{maximum([])} doit lever une erreur ou renvoyer \code{None} selon le contrat annoncé.
+\item \code{assert maximum([3, 9, 2]) == 9} ; \code{assert maximum([5]) == 5} ; \code{assert maximum([-4, -1]) == -1}.
+\item Les nombres flottants sont représentés de façon approchée en binaire : $0{,}1+0{,}2$ vaut $0{,}30000000000000004$. Écriture correcte : \code{math.isclose(0.1 + 0.2, 0.3)}.
+\item Entrées : une liste \code{L} et une valeur \code{cible}. Sortie : l'indice de la première occurrence. Absence : renvoie $-1$, valeur qui ne peut être confondue avec un indice valide.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{TRANSFERT} --- aucun cas limite envisagé
+\item \textsc{METHODE} --- résultat attendu écrit après avoir lu la sortie du programme
+\item \textsc{CONCEPT} --- égalité stricte utilisée sur des flottants
+\end{itemize}
+\subsectiontitle{Phase 4 --- pont vers Première NSI}
+
+\textbf{A.} 1. \code{if L[i] == cible:} puis \code{return i}. On renvoie $-1$ parce que $0$ est un indice
+valide : $0$ signifierait « trouvé en première position ». $-1$ ne peut être confondu avec aucun indice
+renvoyé par la boucle.
+2. Tour 1 : \code{i = 0}, \code{L[0] = 7}, condition fausse ; tour 2 : \code{i = 1}, \code{L[1] = 3}, condition vraie.
+3. L'appel renvoie \code{1} (première occurrence) ; avec la cible \code{5}, il renvoie \code{-1}.
+4. Au maximum $100$ comparaisons.
+
+\textbf{B.} Avec la convention \code{m = (g + d) // 2} :
+tour 1, \code{g=0}, \code{d=7}, \code{m=3}, \code{L[3]} vaut $19$, inférieur à $41$, donc \code{g=4} ;
+tour 2, \code{g=4}, \code{d=7}, \code{m=5}, \code{L[5]} vaut $33$, inférieur à $41$, donc \code{g=6} ;
+tour 3, \code{g=6}, \code{d=7}, \code{m=6}, \code{L[6]} vaut $41$ : trouvé.
+1. La moitié gauche est éliminée dès le premier tour. 2. \textbf{Trois} comparaisons.
+Avec la convention \code{m = (g + d + 1) // 2}, le premier milieu serait $25$ et deux comparaisons
+suffiraient : le décompte dépend de la convention, ce qui justifie de la fixer d'emblée. 3. Divisée par $2$.
+4. Précondition : la liste doit être \textbf{triée}. 5. Sans tri, éliminer une moitié n'est pas justifié :
+la valeur cherchée peut se trouver dans la partie écartée. L'algorithme reste rapide mais devient faux.
+
+\textbf{Observation à noter :} renvoyer \code{0} au lieu de \code{-1} est une erreur de \textsc{ALGORITHME}
+et non de \textsc{SYNTAXE} : le programme s'exécute sans message d'erreur mais ment sur son résultat.
+
+\newpage\sectiontitle{6. Corrigé de l'évaluation et barème analytique}
+\begin{keybox}\textbf{Total : 20 points sur 20.} Noyau commun 14 pts (70.0\,\%), items individualisés 6 pts (30.0\,\%). Somme des durées cibles : 40 minutes.\end{keybox}
+\itemhead{A1 --- \code{NSI1_LIST_01} --- noyau commun}{1}{1.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{8} ; \code{2} ; \code{5} ; dernier indice \code{4}.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item les indices vont de $0$ à $\text{len}(L)-1$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_LIST\_01 & automatisme & les quatre réponses exactes \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & dernier indice donné égal à \code{len(L)} \\
+CONCEPT & indexation supposée commencer à 1 \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis de tout parcours de tableau en Première
+\par\vspace{2mm}
+\itemhead{A2 --- \code{NSI1_LOG_01} --- noyau commun}{1}{1.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{x > 8} ; \code{(x <= 2) and (x != 0)}.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item négation d'une comparaison\item négation d'un \code{or} : un \code{and} de négations\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_LOG\_01 & automatisme & les deux négations exactes \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & \code{x < 8} donné comme négation de \code{x <= 8} \\
+CONCEPT & \code{or} conservé dans la négation \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} conditions de sortie de boucle et tests de bornes
+\par\vspace{2mm}
+\itemhead{A3 --- \code{NSI1_BOUCLE_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{3, 7, 11} ; trois tours.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item départ à 3, pas de 4, borne 12 exclue\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_BOUCLE\_01 & automatisme & valeurs et nombre de tours exacts \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & borne supérieure comptée comme atteinte \\
+CALCUL & pas confondu avec le nombre de tours \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} contrôle des bornes dans tout algorithme de parcours
+\par\vspace{2mm}
+\itemhead{A4 --- \code{NSI1_AFF_01} --- noyau commun}{1}{1.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{a} vaut \code{10}, \code{b} vaut \code{6} : \code{b} a reçu une copie de la valeur, il n'est pas lié à \code{a}.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item \code{b = a} copie la valeur 6\item \code{a = a + 4} réaffecte seulement \code{a}\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_AFF\_01 & automatisme & les deux valeurs exactes et une explication correcte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & \code{b} supposé suivre les changements de \code{a} \\
+JUSTIFICATION & valeurs exactes mais explication absente \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} modèle mental indispensable avant d'aborder les objets mutables
+\par\vspace{2mm}
+\itemhead{A5 --- \code{NSI1_ACC_01} --- item individualisé}{1}{1.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{total} vaut \code{14} ; quatre tours.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item valeurs parcourues : 2, 3, 4, 5\item $2+3+4+5=14$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_ACC\_01 & automatisme & les deux valeurs exactes \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & somme confondue avec le nombre d'itérations (réponse 4) \\
+CONCEPT & borne 6 incluse \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} l'accumulateur est au cœur de tout traitement de données
+\par\vspace{2mm}
+\itemhead{A6 --- \code{NSI1_BOUCLE_02} --- item individualisé}{1}{2.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{for} : le nombre de répétitions est connu. \code{while} : il dépend d'une condition non connue à l'avance.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item critère : le nombre de répétitions est-il connu avant d'entrer dans la boucle ?\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_BOUCLE\_02 & justification & les deux choix exacts et justifiés \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & critère fondé sur le type de données et non sur la connaissance du nombre de tours \\
+JUSTIFICATION & choix exact sans justification \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} choix de la structure de contrôle, évalué à l'épreuve pratique
+\par\vspace{2mm}
+\itemhead{B1 --- \code{NSI1_ACC_01} --- noyau commun}{2}{4.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{total} : 4, 13, 15, 22 ; \code{n} : 1, 2, 3, 4. Finalement \code{total = 22} (somme des valeurs) et \code{n = 4} (nombre de valeurs parcourues).\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item accumulation successive des valeurs\item comptage indépendant du contenu\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_ACC\_01 & procedure & tableau d'état complet et exact \\
+c2 & 1 & NSI1\_ACC\_01 & communication & valeurs finales exactes et rôle de chaque variable correctement énoncé \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & somme confondue avec le nombre d'itérations \\
+ALGORITHME & accumulateur réinitialisé à chaque tour \\
+JUSTIFICATION & tableau exact mais rôle des variables non explicité \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} tout traitement de données de Première repose sur un accumulateur correct
+\par\vspace{2mm}
+\itemhead{B2 --- \code{NSI1_FONC_01} --- noyau commun}{2}{4.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{m} vaut \code{None} car la fonction affiche sans renvoyer ; il faut remplacer \code{print(...)} par \code{return total / len(valeurs)} ; l'appel \code{moyenne([])} provoque une division par zéro.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item absence de \code{return} : la fonction renvoie \code{None}\item correction par \code{return}\item cas limite de la liste vide : \code{len(valeurs)} vaut 0\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1.25 & NSI1\_FONC\_01 & justification & \code{None} identifié et justifié par l'absence de \code{return} \\
+c2 & 0.75 & NSI1\_FONC\_01 & procedure & correction par \code{return} exacte et complète \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & \code{m} supposé recevoir la valeur affichée \\
+ALGORITHME & \code{print} conservé en plus du \code{return} sans que la question soit traitée \\
+TRANSFERT & aucun cas limite identifié \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} contrat d'une fonction : entrée, sortie, cas limites
+\par\vspace{2mm}
+\itemhead{B3 --- \code{NSI1_CSV_01} --- noyau commun}{2}{6}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{temperature} se convertit en \code{float} et \code{humidite} en \code{int} ; l'opérateur \code{+} appliqué à deux chaînes les concatène et produit \code{"26.51"} ; une métadonnée décrit le fichier lui-même — date de production, capteur d'origine, unité de mesure, encodage — alors qu'une donnée du tableau décrit un enregistrement.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item conversion obligatoire avant tout calcul\item \code{+} entre deux chaînes est une concaténation\item une métadonnée porte sur le fichier, une donnée sur un enregistrement\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 0.75 & NSI1\_CSV\_01 & procedure & colonnes et types de conversion exacts \\
+c2 & 0.5 & NSI1\_CSV\_01 & justification & concaténation correctement expliquée par le type des opérandes \\
+c3 & 0.75 & NSI1\_TAB\_01 & communication & métadonnée pertinente et distinction avec une donnée du tableau \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & conversion jugée inutile parce que la valeur « ressemble » à un nombre \\
+CONCEPT & métadonnée confondue avec une donnée du tableau \\
+ALGORITHME & concaténation attribuée à une erreur du langage plutôt qu'au type des opérandes \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} traitement de données en tables, chapitre entier de Première
+\par\vspace{2mm}
+\itemhead{B4 --- \code{NSI1_TEST_01} --- item individualisé}{2}{4}
+\begin{graybox}\small\textbf{Réponse attendue :} Par exemple \code{moyenne([4, 6]) == 5.0} et \code{moyenne([7]) == 7.0} ; cas limite : \code{moyenne([])} doit lever une erreur explicite, ce que l'on teste par un bloc \code{try / except}. Assertion du premier test : \code{assert moyenne([4, 6]) == 5.0}. La comparaison stricte de flottants échoue car $0{,}1+0{,}2$ vaut $0{,}30000000000000004$ ; il faut employer \code{math.isclose}.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item un test = une entrée et un résultat attendu écrits à l'avance\item cas limite : liste vide\item représentation binaire approchée des flottants\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_TEST\_01 & procedure & trois tests pertinents dont un cas limite conforme au contrat annoncé \\
+c2 & 0.4 & NSI1\_TEST\_01 & procedure & assertion du premier test correctement écrite \\
+c3 & 0.6 & NSI1\_TEST\_01 & justification & problème des flottants expliqué et écriture correcte proposée \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+TRANSFERT & aucun cas limite parmi les trois tests \\
+CONCEPT & égalité stricte jugée fiable sur des flottants \\
+ALGORITHME & le cas de la liste vide est testé comme renvoyant une valeur alors que le contrat annonce une erreur \\
+METHODE & résultat attendu écrit après exécution \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} la pratique de test conditionne l'autonomie en épreuve pratique
+\par\vspace{2mm}
+\itemhead{C1 --- \code{NSI1_ALGO_01} --- noyau commun}{4}{7.5}
+\begin{graybox}\small\textbf{Réponse attendue :} \code{if mesures[i]["id"] == identifiant:} puis \code{return i} ; les résultats sont \code{2} et \code{-1} ; test sur liste vide : \code{chercher([], "C01")} doit renvoyer \code{-1} ; la recherche dichotomique divise par deux la zone de recherche à chaque étape, à la condition que la liste soit triée.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item accès à la clé d'un dictionnaire à l'intérieur d'une liste\item parcours complet puis valeur sentinelle $-1$\item cas limite : liste vide\item précondition de tri, coût logarithmique\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1.5 & NSI1\_ALGO\_01 & transfert & les deux trous complétés correctement \\
+c2 & 0.75 & NSI1\_ALGO\_01 & procedure & les deux résultats exacts, dont la valeur d'absence \\
+c3 & 0.75 & NSI1\_TEST\_01 & transfert & test sur liste vide, avec son résultat attendu \\
+c4 & 1 & NSI1\_ALGO\_01 & communication & gain et précondition de la dichotomie correctement énoncés \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+SYNTAXE & \code{mesures[i].id} au lieu de \code{mesures[i]["id"]} \\
+ALGORITHME & \code{return i} placé hors de la condition, la boucle s'arrête au premier tour \\
+TRANSFERT & aucun cas limite proposé parmi les deux tests \\
+CONCEPT & dichotomie appliquée sans mentionner la précondition de tri \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} premier algorithme du programme de Première ; travaillé en phase 4 de cette même séance
+\par\vspace{2mm}
+\itemhead{C2 --- \code{NSI1_ALGO_01} --- item individualisé}{2}{4.5}
+\begin{graybox}\small\textbf{Réponse attendue :} $1\,000$ comparaisons au maximum ; environ $10$ étapes en dichotomie. Invariant : si la cible figure dans la liste, elle se trouve dans la zone de recherche courante.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item la zone est divisée par 2 à chaque étape : $2^{10} = 1024$\item l'invariant garantit qu'aucune élimination ne perd la cible\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & NSI1\_ALGO\_01 & automatisme & les deux ordres de grandeur exacts \\
+c2 & 1 & NSI1\_ALGO\_01 & communication & invariant correctement énoncé \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & coût dichotomique estimé à 500 \\
+CONCEPT & invariant énoncé comme une propriété de fin de boucle \\
+METHODE & ordre de grandeur annoncé sans expliciter la division répétée par 2 \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} coût et correction d'un algorithme, attendus explicites du programme de Première
+\par\vspace{2mm}
+\newpage\sectiontitle{7. Correspondance diagnostic initial $\leftrightarrow$ évaluation finale}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{25mm} >{\ttfamily\scriptsize}p{22mm} >{\ttfamily\scriptsize}p{16mm} X}
+\rowcolor{Navy}\color{white}Item & \color{white}\scriptsize skill\_id & \color{white}\scriptsize baseline & \color{white}\scriptsize comparaison & \color{white}Lecture \\
+A1 & NSI1\_LIST\_01 & NSI\_TI\_Q09 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A2 & NSI1\_LOG\_01 & NSI\_TI\_Q06 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A3 & NSI1\_BOUCLE\_01 & NSI\_TI\_Q07 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A4 & NSI1\_AFF\_01 & NSI\_TI\_Q03 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A5 & NSI1\_ACC\_01 & --- & post\_only & état final seul : aucune question du positionnement initial ne porte sur cette compétence \\
+A6 & NSI1\_BOUCLE\_02 & NSI\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B1 & NSI1\_ACC\_01 & --- & post\_only & état final seul : aucune question du positionnement initial ne porte sur cette compétence \\
+B2 & NSI1\_FONC\_01 & NSI\_TI\_Q12 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B3 & NSI1\_CSV\_01 & NSI\_TI\_Q17 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B4 & NSI1\_TEST\_01 & --- & post\_only & état final seul : aucune question du positionnement initial ne porte sur cette compétence \\
+C1 & NSI1\_ALGO\_01 & --- & not\_comparable & non comparable : contenu introduit pendant la séance 5 elle-même \\
+C2 & NSI1\_ALGO\_01 & --- & not\_comparable & non comparable : contenu introduit pendant la séance 5 elle-même \\
+\end{tabularx}
+\begin{keybox}\textbf{Aucun écart chiffré ne sera calculé.} Les réponses de l'élève aux 18 questions du positionnement initial n'ont pas été conservées : le dossier n'en garde qu'un statut par domaine. Un statut qualitatif n'est pas une mesure : le convertir en score pour en soustraire un autre produirait un chiffre sans valeur. Le script d'analyse impose donc \code{mastery_delta = null} pour toutes les compétences, et se limite à une confrontation \emph{indicative} entre le statut initial et l'état final.\end{keybox}
+\sectiontitle{8. Clés d'interprétation après correction}
+\subsectiontitle{Échelle de maîtrise par compétence}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{10mm} X}
+\toprule Niveau & Signification \\ \midrule
+0 & non maîtrisé \\
+1 & très fragile \\
+2 & partiellement maîtrisé \\
+3 & maîtrisé \\
+4 & maîtrise solide / transfert réussi \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Croiser réussite et certitude}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{40mm} X}
+\toprule Situation & Conduite à tenir \\ \midrule
+Juste, certitude 3--4 & acquis disponible : faire transférer sur une situation nouvelle. \\
+Juste, certitude 1--2 & presque acquis : faire expliciter la procédure, puis réutiliser. \\
+Faux, certitude 1--2 & notion à installer ou procédure à reprendre pas à pas. \\
+Faux, certitude 3--4 & priorité absolue : confronter la conviction avant toute reprise technique. \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Distinguer les niveaux d'erreur}
+Une erreur de \textsc{CALCUL} isolée, non reproduite sur les items voisins de même compétence, ne vaut pas non-maîtrise conceptuelle. La chaîne à reconstituer est : \textbf{connaissance} $\rightarrow$ \textbf{choix de méthode} $\rightarrow$ \textbf{exécution} $\rightarrow$ \textbf{justification} $\rightarrow$ \textbf{contrôle}. Les codes d'erreur du barème situent l'écart sur cette chaîne.
+\sectiontitle{9. Points d'observation propres à cet élève}
+\begin{itemize}\item Le dossier écarte explicitement une reprise lente de notions déjà connues : le levier est la fiabilité, non l'étendue.\item Exiger que les tests soient écrits avant l'exécution, et non ajustés après lecture de la sortie.\item Faire verbaliser la spécification avant d'écrire le code ; l'oral est relevé au niveau 2.\item Chronométrer les exercices courts : la gestion du temps fait partie des objectifs du parcours candidat individuel.\end{itemize}
+\subsectiontitle{Grille de saisie de la séance}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{26mm} X X X}
+\toprule Phase & Aide maximale utilisée & Réussite autonome & Observation \\ \midrule
+Phase 1 & & & \\[6mm]
+Phase 2 & & & \\[6mm]
+Phase 3 & & & \\[6mm]
+Phase 4 & & & \\[6mm]
+\bottomrule\end{tabularx}
+\begin{warningbox}\textbf{Avant d'écrire quoi que ce soit sur les acquis de cet élève :} tant que l'évaluation n'est pas corrigée et analysée par \code{tools/analyze_s5.py}, aucune formulation du type « maîtrise désormais », « forte progression » ou « objectif atteint » ne doit être employée. Les formulations admises sont : « à vérifier lors de l'évaluation finale », « observé en séance, à confirmer », « hypothèse de consolidation ».\end{warningbox}
+\end{document}

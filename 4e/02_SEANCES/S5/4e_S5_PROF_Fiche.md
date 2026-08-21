@@ -1,5 +1,5 @@
-# 4e_S5_PROF_Fiche
-## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
+# 4e — Séance 5 : Réinvestir, mesurer les progrès et préparer septembre
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

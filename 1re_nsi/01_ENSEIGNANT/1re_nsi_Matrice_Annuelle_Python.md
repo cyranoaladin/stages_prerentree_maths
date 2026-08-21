@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Ce qu’il faut maîtriser pendant l’année</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Document enseignant et élève</div>
 </div>
-# Matrice de compétences
+## Matrice de compétences
 
 | Domaine | Compétences Python | Exemples de preuves | Stage | À réactiver pendant l’année |
 |---|---|---|:---:|:---:|
@@ -31,7 +31,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | Bibliothèques | lire une documentation, importer un module | `csv`, `math` | ✓ | ✓ |
 | Projet | spécifier, découper, coder, tester, documenter | mini-projet final | ✓ | ✓ |
 
-# Repères de qualité du code
+## Repères de qualité du code
 
 - noms explicites ;
 - fonction courte et cohérente ;

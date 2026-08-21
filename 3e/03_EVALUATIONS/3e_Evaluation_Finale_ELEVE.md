@@ -1,5 +1,5 @@
-# 3e_Evaluation_Finale_ELEVE
-## Évaluation finale
+# 3e — Évaluation finale (Élève)
+## Sujet de synthèse
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................
@@ -11,7 +11,7 @@
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 15. Évaluation finale proposée
+## 15. Évaluation finale proposée
 
 Durée : **25 à 28 minutes**.
 Sans note. Certitude obligatoire de 1 à 4.

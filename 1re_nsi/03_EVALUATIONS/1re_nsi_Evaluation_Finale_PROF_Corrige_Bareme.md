@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="prof-only"></div>
 
-# Partie A
+## Partie A
 
 1. `=` affecte ; `==` compare.
 2. `(x < 0) or (x >= 10)`.
@@ -24,7 +24,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 7. La collection doit être triée selon la clé recherchée.
 8. La liste vide.
 
-# Partie B - solution de référence
+## Partie B - solution de référence
 
 ```python
 def valeurs_valides(valeurs, minimum, maximum):
@@ -57,7 +57,7 @@ def indice_capteur(mesures, identifiant):
     return None
 ```
 
-# Barème - 20 points
+## Barème - 20 points
 
 | Critère | Points |
 |---|---:|

@@ -1,5 +1,5 @@
-# 2nde_S2_SUPPORTS_Manipulation
-## Séance 2 — Construire l’algèbre du lycée
+# 2nde — Séance 2 : Construire l’algèbre du lycée
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

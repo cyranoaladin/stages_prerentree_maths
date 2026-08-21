@@ -1,5 +1,5 @@
-# 4e_S3_AIDES_Cartes
-## Séance 3 — Donner du sens aux lettres
+# 4e — Séance 3 : Donner du sens aux lettres
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

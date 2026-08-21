@@ -1,9 +1,10 @@
-# DOCUMENT MAÎTRE - Entrée en Quatrième - Mathématiques
+# Document maître — 4e
+
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 
 
-# 4e_Guide_Formateur
+## Guide du formateur
 ## Entrée en Quatrième - Mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -138,7 +139,7 @@ Le programme est conçu :
 
 ---
 
-# 1. Référentiel officiel applicable en 2026-2027
+## 1. Référentiel officiel applicable en 2026-2027
 
 ## 1.1 Point réglementaire important
 
@@ -160,7 +161,7 @@ Les repères annuels de progression et les attendus de fin d’année Éduscol c
 
 ---
 
-# 2. Diagnostic synthétique du groupe
+## Diagnostic initial
 
 ## 2.1 Diagnostic par domaine
 
@@ -311,7 +312,7 @@ Un mini-diagnostic complémentaire est donc prévu au début de la première sé
 
 ---
 
-# 3. Prérequis de Cinquième et transition vers la Quatrième
+## 3. Prérequis de Cinquième et transition vers la Quatrième
 
 ## 3.1 Tableau N-1 → N
 
@@ -341,7 +342,7 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 
 ---
 
-# 4. Objectifs du stage
+## 4. Objectifs du stage
 
 ## 4.1 Objectifs généraux
 
@@ -404,7 +405,7 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 
 ---
 
-# 5. Progression globale des cinq séances
+## 5. Progression globale des cinq séances
 
 | Séance | Thème commun                  | Axe Sinda                                    | Axe Fares                                                  | Axe Ines                                                       | Ouverture vers la Quatrième        |
 | ------ | ----------------------------- | -------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------- |
@@ -422,7 +423,7 @@ Le stage ne doit pas chercher à « faire le programme de Quatrième en avance �
 _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objectifs, l’ordre des séances et les diagnostics ne sont pas modifiés ; ils sont déclinés ici en supports opérationnels._
 
 
-# 4e_Tableau_Bord_Enseignant
+## Tableau de bord enseignant
 ## Entrée en Quatrième - Mathématiques
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -544,7 +545,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S1_PROF_Fiche
+## Séance 1 — PROF F : Calculer avec du sens
 ## Séance 1 — Calculer avec du sens
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -731,7 +732,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S1_ELEVE_Activite
+## Séance 1 — ELEVE A : Calculer avec du sens
 ## Séance 1 — Calculer avec du sens
 
 **Nom et prénom :** ..............................................................................  
@@ -893,7 +894,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S1_SUPPORTS_Manipulation
+## Séance 1 — SUPPORTS M : Calculer avec du sens
 ## Séance 1 — Calculer avec du sens
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -947,7 +948,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S1_AIDES_Cartes
+## Séance 1 — AIDES C : Calculer avec du sens
 ## Séance 1 — Calculer avec du sens
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1012,7 +1013,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 4e_S2_PROF_Fiche
+## Séance 2 — PROF F : Mesurer une surface ou un contour
 ## Séance 2 — Mesurer une surface ou un contour
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1201,7 +1202,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S2_ELEVE_Activite
+## Séance 2 — ELEVE A : Mesurer une surface ou un contour
 ## Séance 2 — Mesurer une surface ou un contour
 
 **Nom et prénom :** ..............................................................................  
@@ -1356,7 +1357,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S2_SUPPORTS_Manipulation
+## Séance 2 — SUPPORTS M : Mesurer une surface ou un contour
 ## Séance 2 — Mesurer une surface ou un contour
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1402,7 +1403,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S2_AIDES_Cartes
+## Séance 2 — AIDES C : Mesurer une surface ou un contour
 ## Séance 2 — Mesurer une surface ou un contour
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1467,7 +1468,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 4e_S3_PROF_Fiche
+## Séance 3 — PROF F : Donner du sens aux lettres
 ## Séance 3 — Donner du sens aux lettres
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1641,7 +1642,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S3_ELEVE_Activite
+## Séance 3 — ELEVE A : Donner du sens aux lettres
 ## Séance 3 — Donner du sens aux lettres
 
 **Nom et prénom :** ..............................................................................  
@@ -1792,7 +1793,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S3_SUPPORTS_Manipulation
+## Séance 3 — SUPPORTS M : Donner du sens aux lettres
 ## Séance 3 — Donner du sens aux lettres
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1834,7 +1835,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S3_AIDES_Cartes
+## Séance 3 — AIDES C : Donner du sens aux lettres
 ## Séance 3 — Donner du sens aux lettres
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -1899,7 +1900,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 4e_S4_PROF_Fiche
+## Séance 4 — PROF F : Voir, raisonner, démontrer
 ## Séance 4 — Voir, raisonner, démontrer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2069,7 +2070,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S4_ELEVE_Activite
+## Séance 4 — ELEVE A : Voir, raisonner, démontrer
 ## Séance 4 — Voir, raisonner, démontrer
 
 **Nom et prénom :** ..............................................................................  
@@ -2210,7 +2211,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S4_SUPPORTS_Manipulation
+## Séance 4 — SUPPORTS M : Voir, raisonner, démontrer
 ## Séance 4 — Voir, raisonner, démontrer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2258,7 +2259,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S4_AIDES_Cartes
+## Séance 4 — AIDES C : Voir, raisonner, démontrer
 ## Séance 4 — Voir, raisonner, démontrer
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2323,7 +2324,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 4e_S5_PROF_Fiche
+## Séance 5 — PROF F : Réinvestir, mesurer les progrès et préparer septembre
 ## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2425,7 +2426,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S5_ELEVE_Activite
+## Séance 5 — ELEVE A : Réinvestir, mesurer les progrès et préparer septembre
 ## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
 
 **Nom et prénom :** ..............................................................................  
@@ -2525,7 +2526,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S5_SUPPORTS_Manipulation
+## Séance 5 — SUPPORTS M : Réinvestir, mesurer les progrès et préparer septembre
 ## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2561,7 +2562,7 @@ _Source pédagogique unique : `stage_prerentree_quatrieme_maths.md`. Les objecti
 
 <div class="page-break"></div>
 
-# 4e_S5_AIDES_Cartes
+## Séance 5 — AIDES C : Réinvestir, mesurer les progrès et préparer septembre
 ## Séance 5 — Réinvestir, mesurer les progrès et préparer septembre
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
@@ -2626,7 +2627,7 @@ Explique pourquoi la réponse est plausible.
 
 <div class="page-break"></div>
 
-# 4e_Mini_Diagnostic_ELEVE
+## Diagnostic initial
 ## Mini-diagnostic complémentaire
 
 **Nom et prénom :** ..............................................................................  
@@ -2639,7 +2640,7 @@ Explique pourquoi la réponse est plausible.
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 13. Mini-diagnostic complémentaire — séance 1
+## 13. Mini-diagnostic complémentaire — séance 1
 
 Durée maximale : 12 minutes.
 
@@ -2676,10 +2677,10 @@ Durée maximale : 12 minutes.
 
 <div class="page-break"></div>
 
-# 4e_Mini_Diagnostic_PROF_Corrige
+## Diagnostic initial
 ## Mini-diagnostic complémentaire - Corrigé et exploitation
 
-# 13. Mini-diagnostic complémentaire — séance 1
+## 13. Mini-diagnostic complémentaire — séance 1
 
 Durée maximale : 12 minutes.
 
@@ -2731,7 +2732,7 @@ Durée maximale : 12 minutes.
 
 <div class="page-break"></div>
 
-# 4e_Evaluation_Finale_ELEVE
+## Évaluation finale
 ## Évaluation finale
 
 **Nom et prénom :** ..............................................................................  
@@ -2744,7 +2745,7 @@ Durée maximale : 12 minutes.
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 14. Évaluation finale proposée
+## 14. Évaluation finale proposée
 
 Chaque question comporte une certitude de 1 à 4.
 
@@ -2800,10 +2801,10 @@ Chaque question comporte une certitude de 1 à 4.
 
 <div class="page-break"></div>
 
-# 4e_Evaluation_Finale_PROF_Corrige
+## Évaluation finale
 ## Évaluation finale - Corrigé et exploitation
 
-# 14. Évaluation finale proposée
+## 14. Évaluation finale proposée
 
 Chaque question comporte une certitude de 1 à 4.
 
@@ -2864,7 +2865,7 @@ Chaque question comporte une certitude de 1 à 4.
 
 <div class="page-break"></div>
 
-# 4e_Portfolio_Individuel
+## Portfolio individuel
 ## Entrée en Quatrième - Mathématiques
 
 **Nom et prénom :** ..............................................................................  

@@ -1,5 +1,5 @@
-# 3e_S1_ELEVE_Activite
-## Séance 1 — Sécuriser le moteur numérique
+# 3e — Séance 1 : Sécuriser le moteur numérique
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

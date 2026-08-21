@@ -1,5 +1,5 @@
-# 1ere_spe_Portfolio_Individuel
-## Entrée en Première générale - Spécialité mathématiques
+# 1re Spécialité Mathématiques — Portfolio individuel de suivi
+## Grille d’auto-évaluation
 
 **Nom et prénom :** ..............................................................................  
 **Établissement :** ..............................................................................  

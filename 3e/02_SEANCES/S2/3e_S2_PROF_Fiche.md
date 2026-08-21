@@ -1,5 +1,5 @@
-# 3e_S2_PROF_Fiche
-## Séance 2 — Passer du calcul à l’algèbre
+# 3e — Séance 2 : Passer du calcul à l’algèbre
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

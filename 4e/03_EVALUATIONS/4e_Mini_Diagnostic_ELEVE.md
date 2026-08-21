@@ -1,5 +1,5 @@
-# 4e_Mini_Diagnostic_ELEVE
-## Mini-diagnostic complémentaire
+# 4e — Diagnostic initial (Élève)
+## Test de positionnement
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................
@@ -11,7 +11,7 @@
 - Indique ta certitude de 1 à 4.
 - Aucun résultat n’est une note ; il sert à ajuster le parcours.
 
-# 13. Mini-diagnostic complémentaire — séance 1
+## 13. Mini-diagnostic complémentaire — séance 1
 
 Durée maximale : 12 minutes.
 

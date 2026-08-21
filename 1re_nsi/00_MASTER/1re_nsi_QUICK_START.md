@@ -12,7 +12,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Document enseignant</div>
 </div>
 
-# Avant le premier jour
+## Avant le premier jour
 
 - ☐ imprimer `08_PACKS_PDF/1re_nsi_PACK_ELEVE_COMPLET.pdf` en recto simple ;
 - ☐ conserver le pack enseignant hors de la vue des élèves ;
@@ -25,7 +25,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - ☐ ouvrir le tableau de bord enseignant ;
 - ☐ reporter les objectifs individuels.
 
-# Répartition des parcours
+## Répartition des parcours
 
 | Élève | Parcours | Principe |
 |---|---|---|
@@ -34,7 +34,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 
 > Les fiches communes ne portent aucun nom. Le parcours est indiqué dans le dossier nominatif et par l’enseignant.
 
-# Préparer chaque séance
+## Préparer chaque séance
 
 | Séance | Fichier Python | Support principal | Production attendue |
 |---:|---|---|---|
@@ -44,7 +44,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 | 4 | `s4_structures_csv_starter.py` | cartes listes/dictionnaires/CSV | chargement et traitement de données capteurs |
 | 5 | `projet_final_starter_ahmad.py` ou cahier des charges Ahmed | tris, dichotomie et grille de tests | mini-projet final testé et présenté |
 
-# Routine des 120 minutes
+## Routine des 120 minutes
 
 1. rituel et prédiction ;
 2. apport théorique bref ;
@@ -55,7 +55,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 7. jalon du projet ;
 8. exit ticket.
 
-# Contrôles de fin de séance
+## Contrôles de fin de séance
 
 - ☐ le code élève est sauvegardé et versionné ;
 - ☐ le corrigé est resté séparé ;

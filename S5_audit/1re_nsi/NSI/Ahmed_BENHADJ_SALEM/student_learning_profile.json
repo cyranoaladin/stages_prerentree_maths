@@ -1,0 +1,1271 @@
+{
+  "schema": "nexus-s5-learning-profile-v1",
+  "generated_on": "2026-08-20",
+  "student": {
+    "id": "ahmed-benhadj-salem",
+    "name": "Ahmed BENHADJ SALEM",
+    "level": "Entrée en Première — Numérique et sciences informatiques",
+    "level_key": "1re_nsi",
+    "subject": "NSI",
+    "year_prev": "Seconde (SNT et algorithmique)",
+    "year_next": "Première NSI",
+    "parcours": "Projet autonome — parcours candidat individuel"
+  },
+  "sources": [
+    {
+      "path": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.md",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_ELEVE.md",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_PROF_Corrige.md",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/02_SEANCES/S1",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/02_SEANCES/S2",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/02_SEANCES/S3",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/02_SEANCES/S4",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/02_SEANCES/S5",
+      "exists": true
+    },
+    {
+      "path": "Nexus_1re_NSI_S2_PDF_ELEVES/1re_NSI_S2_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "exists": true
+    },
+    {
+      "path": "Nexus_1re_NSI_S3_Dossiers_Eleves_PDF/1re_NSI_S3_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "exists": true
+    },
+    {
+      "path": "Bilans/1re_NSI_S4_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "exists": true
+    },
+    {
+      "path": "1re_nsi/06_CODE/projet_final_specification_ahmed.md",
+      "exists": true
+    }
+  ],
+  "baseline": {
+    "available": true,
+    "instrument": {
+      "name": "Positionnement de pré-rentrée — NSI, entrée en Première",
+      "file": "1re_nsi/03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+      "items": 18,
+      "minutes": 25,
+      "format": "QCM 4 choix + certitude 1-4"
+    },
+    "date": null,
+    "items_traites": "18 questions traitées sur 18 (positionnement Première)",
+    "confidence_scale": {
+      "1": "Je devine.",
+      "2": "Je ne suis pas sûr.",
+      "3": "Je pense avoir juste.",
+      "4": "J'en suis certain : je saurais expliquer pourquoi."
+    },
+    "confidence_calibration": null,
+    "summary": "Représentation binaire, Web, réseaux et données en tables solides ; programmation à 55,6 %, priorité à rectifier. Erreur persistante sur un accumulateur : la somme 1+2+3 est confondue avec le nombre d'itérations.",
+    "strengths": [
+      "Représentation binaire",
+      "Web",
+      "Réseaux",
+      "Données en tables",
+      "Algorithmique et types construits théoriquement disponibles"
+    ],
+    "priorities": [
+      "Négation d'une condition",
+      "Choix for / while",
+      "len et indices",
+      "None et valeur renvoyée",
+      "Accumulateurs",
+      "Tests et cas limites"
+    ],
+    "domain_observations": [
+      {
+        "domain": "Logique",
+        "status": "Niveau initial 2",
+        "observation": "Compétence relevée au niveau 2 dans le tableau de suivi du dossier."
+      },
+      {
+        "domain": "Boucles",
+        "status": "Niveau initial 2",
+        "observation": "Compétence relevée au niveau 2."
+      },
+      {
+        "domain": "Accumulateurs",
+        "status": "Niveau initial 2",
+        "observation": "Erreur persistante documentée dans les deux bilans."
+      },
+      {
+        "domain": "Fonctions",
+        "status": "Niveau initial 3",
+        "observation": "Compétence relevée au niveau 3."
+      },
+      {
+        "domain": "Tests",
+        "status": "Niveau initial 1",
+        "observation": "Compétence la plus basse du profil."
+      },
+      {
+        "domain": "Structures",
+        "status": "Niveau initial 3",
+        "observation": "Compétence relevée au niveau 3."
+      },
+      {
+        "domain": "CSV",
+        "status": "Niveau initial 3",
+        "observation": "Compétence relevée au niveau 3."
+      },
+      {
+        "domain": "Autonomie",
+        "status": "Niveau initial 2",
+        "observation": "Compétence relevée au niveau 2."
+      },
+      {
+        "domain": "Oral",
+        "status": "Niveau initial 2",
+        "observation": "Compétence relevée au niveau 2."
+      }
+    ],
+    "item_level_results_available": false,
+    "item_level_results_note": "Les dossiers restituent des statuts par domaine, non les réponses aux 18 items. La comparaison initial/final est conduite au niveau de la compétence.",
+    "skills": [
+      {
+        "skill_id": "NSI1_REP_01",
+        "label": "Représentation binaire d'un entier et capacité sur n bits",
+        "domain": "Représentation des données",
+        "importance_n": "importante",
+        "baseline_items": [
+          "NSI_TI_Q01",
+          "NSI_TI_Q02"
+        ],
+        "sessions_travaillees": [
+          "S1"
+        ],
+        "statut_avant_s5": "acquis",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Représentation des données ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "OK",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_RES_01",
+        "label": "Adresse IP et rôle d'un routeur",
+        "domain": "Réseaux",
+        "importance_n": "utile",
+        "baseline_items": [
+          "NSI_TI_Q15",
+          "NSI_TI_Q16"
+        ],
+        "sessions_travaillees": [],
+        "statut_avant_s5": "acquis",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Réseaux ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "OK",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "introduced_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "contenu de l'année suivante introduit en phase 4 de la séance"
+        }
+      },
+      {
+        "skill_id": "NSI1_TAB_01",
+        "label": "Enregistrement, attribut et métadonnée",
+        "domain": "Données en tables",
+        "importance_n": "importante",
+        "baseline_items": [
+          "NSI_TI_Q17",
+          "NSI_TI_Q18"
+        ],
+        "sessions_travaillees": [
+          "S4"
+        ],
+        "statut_avant_s5": "acquis",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Données en tables ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "OK",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_WEB_01",
+        "label": "Rôle du CSS et modèle client-serveur",
+        "domain": "Web",
+        "importance_n": "utile",
+        "baseline_items": [
+          "NSI_TI_Q13",
+          "NSI_TI_Q14"
+        ],
+        "sessions_travaillees": [],
+        "statut_avant_s5": "acquis",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Web ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "OK",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "introduced_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "contenu de l'année suivante introduit en phase 4 de la séance"
+        }
+      },
+      {
+        "skill_id": "NSI1_ACC_01",
+        "label": "Accumulateur : somme, compteur, invariant de boucle",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [],
+        "sessions_travaillees": [
+          "S2",
+          "S4"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Erreur d'accumulateur documentée à la fois au positionnement Première et au positionnement de niveau Terminale.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": true,
+        "retention": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      {
+        "skill_id": "NSI1_AFF_01",
+        "label": "Modèle d'affectation : la valeur est copiée, pas liée",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q03",
+          "NSI_TI_Q04"
+        ],
+        "sessions_travaillees": [
+          "S1"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_BOUCLE_01",
+        "label": "range : valeurs produites, bornes et nombre d'itérations",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q07"
+        ],
+        "sessions_travaillees": [
+          "S2"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_BOUCLE_02",
+        "label": "Choisir entre une boucle for et une boucle while",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q08"
+        ],
+        "sessions_travaillees": [
+          "S2"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_LIST_01",
+        "label": "Indexation d'une liste, len et dernier indice valide",
+        "domain": "Types construits",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q09",
+          "NSI_TI_Q10"
+        ],
+        "sessions_travaillees": [
+          "S4"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Le dossier signale des erreurs sur len et les indices malgré des structures au niveau 3.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_LOG_01",
+        "label": "Conditions composées et négation d'une condition",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q05",
+          "NSI_TI_Q06"
+        ],
+        "sessions_travaillees": [
+          "S1"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation ».",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_TEST_01",
+        "label": "Tests, assertions et cas limites",
+        "domain": "Qualité du code",
+        "importance_n": "critique",
+        "baseline_items": [],
+        "sessions_travaillees": [
+          "S3",
+          "S4"
+        ],
+        "statut_avant_s5": "fragile",
+        "preuve": "Compétence « Tests » relevée au niveau 1, la plus basse du profil.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P1",
+        "cible_s5": true,
+        "retention": {
+          "post_test_context": "immediate_after_remediation",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence retravaillée en phase 2 ou 3 de la séance, puis évaluée moins d'une heure plus tard"
+        }
+      },
+      {
+        "skill_id": "NSI1_CSV_01",
+        "label": "Chargement d'un fichier CSV et conversion des types",
+        "domain": "Données en tables",
+        "importance_n": "critique",
+        "baseline_items": [],
+        "sessions_travaillees": [
+          "S4"
+        ],
+        "statut_avant_s5": "en_voie_acquisition",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Données en tables ». Aucun item du diagnostic initial n'évalue cette compétence isolément.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P2",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_FONC_01",
+        "label": "Paramètre, argument, valeur renvoyée et None",
+        "domain": "Programmation",
+        "importance_n": "critique",
+        "baseline_items": [
+          "NSI_TI_Q11",
+          "NSI_TI_Q12"
+        ],
+        "sessions_travaillees": [
+          "S3"
+        ],
+        "statut_avant_s5": "en_voie_acquisition",
+        "preuve": "Compétence « Fonctions » relevée au niveau 3 ; seule la distinction print/return/None est signalée.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P2",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      },
+      {
+        "skill_id": "NSI1_ALGO_01",
+        "label": "Recherche séquentielle et principe de la dichotomie",
+        "domain": "Algorithmique",
+        "importance_n": "critique",
+        "baseline_items": [],
+        "sessions_travaillees": [
+          "S5"
+        ],
+        "statut_avant_s5": "non_travaille",
+        "preuve": "Contenu de la séance 5 ; théoriquement disponible d'après le dossier, mais non évalué.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P3",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "first_worked_in_session_5",
+          "retention_status": "not_yet_verified",
+          "recommended_delayed_check": true,
+          "reason": "compétence travaillée uniquement lors de la séance 5 du niveau, puis évaluée immédiatement"
+        }
+      },
+      {
+        "skill_id": "NSI1_MUT_01",
+        "label": "Alias, copie et mutabilité d'une liste",
+        "domain": "Types construits",
+        "importance_n": "importante",
+        "baseline_items": [],
+        "sessions_travaillees": [
+          "S4"
+        ],
+        "statut_avant_s5": "en_voie_acquisition",
+        "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Types construits ». Aucun item du diagnostic initial n'évalue cette compétence isolément.",
+        "preuve_post_s1_s4": "non documentée : les tableaux d'observation séance par séance du dossier individuel sont vierges",
+        "priorite_provisoire": "P3",
+        "cible_s5": false,
+        "retention": {
+          "post_test_context": "no_remediation_in_session",
+          "retention_status": "not_measured",
+          "recommended_delayed_check": false,
+          "reason": "compétence non retravaillée pendant la séance 5 ; la performance finale ne relève pas d'un effet de récence"
+        }
+      }
+    ],
+    "mesure_initiale_nominative_disponible": false,
+    "mesure_initiale_note": "les réponses item par item du diagnostic initial ne sont pas conservées : aucun score initial nominatif n'existe. Aucun delta de maîtrise ne peut donc être calculé."
+  },
+  "trajectory": {
+    "S1": {
+      "theme": "Variables, affectation et conditions",
+      "documented_evidence": null
+    },
+    "S2": {
+      "theme": "Boucles, compteurs et accumulateurs",
+      "documented_evidence": null
+    },
+    "S3": {
+      "theme": "Fonctions, contrats et tests",
+      "documented_evidence": null
+    },
+    "S4": {
+      "theme": "Listes, enregistrements et données CSV",
+      "documented_evidence": null
+    },
+    "note": "Aucune observation de séance n'a été saisie dans le dossier individuel : « travaillé » ne vaut pas « acquis »."
+  },
+  "session5": {
+    "work_minutes": 75,
+    "exam_minutes": 45,
+    "objective": "Fiabiliser les accumulateurs — erreur documentée dans les deux bilans — et installer une pratique de test systématique, compétence la plus basse du profil, décisive pour un parcours en autonomie.",
+    "priority_skills": [
+      "NSI1_ACC_01",
+      "NSI1_TEST_01"
+    ],
+    "activities": [
+      {
+        "phase": 1,
+        "title": "Réactiver sans ordinateur les cinq constructions travaillées de la séance 1 à la séance 4.",
+        "minutes": 10,
+        "start": 0,
+        "end": 10,
+        "type": "reactivation",
+        "skill": null,
+        "minutes_common_objectives": 10,
+        "minutes_individualised": 0
+      },
+      {
+        "phase": 2,
+        "title": "Accumulateurs : somme, compteur, invariant et variant",
+        "minutes": 25,
+        "start": 10,
+        "end": 35,
+        "type": "consolidation",
+        "skill": "NSI1_ACC_01",
+        "minutes_common_objectives": 13,
+        "minutes_individualised": 12
+      },
+      {
+        "phase": 3,
+        "title": "Tests, assertions et cas limites",
+        "minutes": 20,
+        "start": 35,
+        "end": 55,
+        "type": "consolidation",
+        "skill": "NSI1_TEST_01",
+        "minutes_common_objectives": 10,
+        "minutes_individualised": 10
+      },
+      {
+        "phase": 4,
+        "title": "Chercher dans une liste : du parcours complet à la dichotomie",
+        "minutes": 15,
+        "start": 55,
+        "end": 70,
+        "type": "transfert",
+        "skill": null,
+        "minutes_common_objectives": 13,
+        "minutes_individualised": 2
+      },
+      {
+        "phase": 5,
+        "title": "Cadrage méthodologique, sans aucune information sur le contenu de l'évaluation.",
+        "minutes": 5,
+        "start": 70,
+        "end": 75,
+        "type": "methodologie",
+        "skill": null,
+        "minutes_common_objectives": 5,
+        "minutes_individualised": 0
+      }
+    ],
+    "differentiation": {
+      "work_common_minutes": 51,
+      "work_individual_minutes": 24,
+      "work_common_pct": 68.0
+    }
+  },
+  "assessment": {
+    "duration_minutes": 45,
+    "target_minutes": 40.5,
+    "total_points": 20,
+    "common_points": 14,
+    "individual_points": 6,
+    "common_share_pct": 70.0,
+    "items": [
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1",
+        "ref": "A1",
+        "part": "A",
+        "kind": "commun",
+        "skill_id": "NSI1_LIST_01",
+        "skills": [
+          "NSI1_LIST_01"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 1.5,
+        "time_estimate": {
+          "minutes": 1.5,
+          "breakdown": {
+            "lecture": 0.12,
+            "traitement": 0.6,
+            "redaction": 0.76
+          },
+          "features": {
+            "caracteres_enonce": 84,
+            "lignes_de_code": 0,
+            "sous_questions": 1,
+            "lignes_offertes": 2,
+            "lignes_retenues": 2
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A1_c1",
+            "points": 1,
+            "skill_id": "NSI1_LIST_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": "NSI_TI_Q09",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_LIST_01",
+            "baseline_items": [
+              "NSI_TI_Q09",
+              "NSI_TI_Q10"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2",
+        "ref": "A2",
+        "part": "A",
+        "kind": "commun",
+        "skill_id": "NSI1_LOG_01",
+        "skills": [
+          "NSI1_LOG_01"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 1.5,
+        "time_estimate": {
+          "minutes": 1.5,
+          "breakdown": {
+            "lecture": 0.09,
+            "traitement": 0.6,
+            "redaction": 0.76
+          },
+          "features": {
+            "caracteres_enonce": 66,
+            "lignes_de_code": 0,
+            "sous_questions": 1,
+            "lignes_offertes": 2,
+            "lignes_retenues": 2
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A2_c1",
+            "points": 1,
+            "skill_id": "NSI1_LOG_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": "NSI_TI_Q06",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_LOG_01",
+            "baseline_items": [
+              "NSI_TI_Q05",
+              "NSI_TI_Q06"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3",
+        "ref": "A3",
+        "part": "A",
+        "kind": "commun",
+        "skill_id": "NSI1_BOUCLE_01",
+        "skills": [
+          "NSI1_BOUCLE_01"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 1.0,
+        "time_estimate": {
+          "minutes": 1.0,
+          "breakdown": {
+            "lecture": 0.12,
+            "traitement": 0.6,
+            "redaction": 0.38
+          },
+          "features": {
+            "caracteres_enonce": 87,
+            "lignes_de_code": 0,
+            "sous_questions": 1,
+            "lignes_offertes": 1,
+            "lignes_retenues": 1
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A3_c1",
+            "points": 1,
+            "skill_id": "NSI1_BOUCLE_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": "NSI_TI_Q07",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_BOUCLE_01",
+            "baseline_items": [
+              "NSI_TI_Q07"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4",
+        "ref": "A4",
+        "part": "A",
+        "kind": "commun",
+        "skill_id": "NSI1_AFF_01",
+        "skills": [
+          "NSI1_AFF_01"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 1.5,
+        "time_estimate": {
+          "minutes": 1.5,
+          "breakdown": {
+            "lecture": 0.13,
+            "traitement": 0.6,
+            "redaction": 0.76
+          },
+          "features": {
+            "caracteres_enonce": 94,
+            "lignes_de_code": 0,
+            "sous_questions": 1,
+            "lignes_offertes": 2,
+            "lignes_retenues": 2
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A4_c1",
+            "points": 1,
+            "skill_id": "NSI1_AFF_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": "NSI_TI_Q03",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_AFF_01",
+            "baseline_items": [
+              "NSI_TI_Q03",
+              "NSI_TI_Q04"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5",
+        "ref": "A5",
+        "part": "A",
+        "kind": "individuel",
+        "skill_id": "NSI1_ACC_01",
+        "skills": [
+          "NSI1_ACC_01"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 1.5,
+        "time_estimate": {
+          "minutes": 1.5,
+          "breakdown": {
+            "lecture": 0.19,
+            "traitement": 0.6,
+            "redaction": 0.76
+          },
+          "features": {
+            "caracteres_enonce": 133,
+            "lignes_de_code": 0,
+            "sous_questions": 1,
+            "lignes_offertes": 2,
+            "lignes_retenues": 2
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A5_c1",
+            "points": 1,
+            "skill_id": "NSI1_ACC_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": null,
+        "baseline_skill_refs": [],
+        "comparability": "non_comparable_absence_baseline",
+        "comparison_status": "post_only",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6",
+        "ref": "A6",
+        "part": "A",
+        "kind": "individuel",
+        "skill_id": "NSI1_BOUCLE_02",
+        "skills": [
+          "NSI1_BOUCLE_02"
+        ],
+        "skills_extra": [],
+        "points": 1,
+        "estimated_minutes": 2.5,
+        "time_estimate": {
+          "minutes": 2.5,
+          "breakdown": {
+            "lecture": 0.24,
+            "traitement": 1.2,
+            "redaction": 1.14
+          },
+          "features": {
+            "caracteres_enonce": 168,
+            "lignes_de_code": 0,
+            "sous_questions": 2,
+            "lignes_offertes": 3,
+            "lignes_retenues": 3
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_A6_c1",
+            "points": 1,
+            "skill_id": "NSI1_BOUCLE_02",
+            "evidence_type": "justification",
+            "subpart": "1"
+          }
+        ],
+        "task": "automatisme",
+        "difficulty": "socle",
+        "baseline_item_id": "NSI_TI_Q08",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_BOUCLE_02",
+            "baseline_items": [
+              "NSI_TI_Q08"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1",
+        "ref": "B1",
+        "part": "B",
+        "kind": "commun",
+        "skill_id": "NSI1_ACC_01",
+        "skills": [
+          "NSI1_ACC_01"
+        ],
+        "skills_extra": [],
+        "points": 2,
+        "estimated_minutes": 4.5,
+        "time_estimate": {
+          "minutes": 4.5,
+          "breakdown": {
+            "lecture": 0.94,
+            "traitement": 2.3,
+            "redaction": 1.33
+          },
+          "features": {
+            "caracteres_enonce": 237,
+            "lignes_de_code": 5,
+            "sous_questions": 2,
+            "lignes_offertes": 4,
+            "lignes_retenues": 3.5
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c1",
+            "points": 1,
+            "skill_id": "NSI1_ACC_01",
+            "evidence_type": "procedure",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B1_c2",
+            "points": 1,
+            "skill_id": "NSI1_ACC_01",
+            "evidence_type": "communication",
+            "subpart": "2"
+          }
+        ],
+        "task": "application",
+        "difficulty": "standard",
+        "baseline_item_id": null,
+        "baseline_skill_refs": [],
+        "comparability": "non_comparable_absence_baseline",
+        "comparison_status": "post_only",
+        "confidence_probe": true
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2",
+        "ref": "B2",
+        "part": "B",
+        "kind": "commun",
+        "skill_id": "NSI1_FONC_01",
+        "skills": [
+          "NSI1_FONC_01"
+        ],
+        "skills_extra": [],
+        "points": 2,
+        "estimated_minutes": 4.5,
+        "time_estimate": {
+          "minutes": 4.5,
+          "breakdown": {
+            "lecture": 0.81,
+            "traitement": 2.3,
+            "redaction": 1.33
+          },
+          "features": {
+            "caracteres_enonce": 144,
+            "lignes_de_code": 5,
+            "sous_questions": 2,
+            "lignes_offertes": 5,
+            "lignes_retenues": 3.5
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c1",
+            "points": 1.25,
+            "skill_id": "NSI1_FONC_01",
+            "evidence_type": "justification",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B2_c2",
+            "points": 0.75,
+            "skill_id": "NSI1_FONC_01",
+            "evidence_type": "procedure",
+            "subpart": "2"
+          }
+        ],
+        "task": "application",
+        "difficulty": "standard",
+        "baseline_item_id": "NSI_TI_Q12",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_FONC_01",
+            "baseline_items": [
+              "NSI_TI_Q11",
+              "NSI_TI_Q12"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3",
+        "ref": "B3",
+        "part": "B",
+        "kind": "commun",
+        "skill_id": "NSI1_CSV_01",
+        "skills": [
+          "NSI1_CSV_01",
+          "NSI1_TAB_01"
+        ],
+        "skills_extra": [
+          "NSI1_TAB_01"
+        ],
+        "points": 2,
+        "estimated_minutes": 6.0,
+        "time_estimate": {
+          "minutes": 6.0,
+          "breakdown": {
+            "lecture": 0.77,
+            "traitement": 3.45,
+            "redaction": 1.8
+          },
+          "features": {
+            "caracteres_enonce": 286,
+            "lignes_de_code": 3,
+            "sous_questions": 3,
+            "lignes_offertes": 5,
+            "lignes_retenues": 4.75
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c1",
+            "points": 0.75,
+            "skill_id": "NSI1_CSV_01",
+            "evidence_type": "procedure",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c2",
+            "points": 0.5,
+            "skill_id": "NSI1_CSV_01",
+            "evidence_type": "justification",
+            "subpart": "2"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B3_c3",
+            "points": 0.75,
+            "skill_id": "NSI1_TAB_01",
+            "evidence_type": "communication",
+            "subpart": "3"
+          }
+        ],
+        "task": "application",
+        "difficulty": "standard",
+        "baseline_item_id": "NSI_TI_Q17",
+        "baseline_skill_refs": [
+          {
+            "skill_id": "NSI1_TAB_01",
+            "baseline_items": [
+              "NSI_TI_Q17",
+              "NSI_TI_Q18"
+            ]
+          }
+        ],
+        "comparability": "comparable",
+        "comparison_status": "indicative_skill_comparison",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4",
+        "ref": "B4",
+        "part": "B",
+        "kind": "individuel",
+        "skill_id": "NSI1_TEST_01",
+        "skills": [
+          "NSI1_TEST_01"
+        ],
+        "skills_extra": [],
+        "points": 2,
+        "estimated_minutes": 4.0,
+        "time_estimate": {
+          "minutes": 4.0,
+          "breakdown": {
+            "lecture": 0.47,
+            "traitement": 2.3,
+            "redaction": 1.33
+          },
+          "features": {
+            "caracteres_enonce": 330,
+            "lignes_de_code": 0,
+            "sous_questions": 2,
+            "lignes_offertes": 6,
+            "lignes_retenues": 3.5
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c1",
+            "points": 1,
+            "skill_id": "NSI1_TEST_01",
+            "evidence_type": "procedure",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c2",
+            "points": 0.4,
+            "skill_id": "NSI1_TEST_01",
+            "evidence_type": "procedure",
+            "subpart": "2"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_B4_c3",
+            "points": 0.6,
+            "skill_id": "NSI1_TEST_01",
+            "evidence_type": "justification",
+            "subpart": "3"
+          }
+        ],
+        "task": "application",
+        "difficulty": "standard",
+        "baseline_item_id": null,
+        "baseline_skill_refs": [],
+        "comparability": "non_comparable_absence_baseline",
+        "comparison_status": "post_only",
+        "confidence_probe": false
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1",
+        "ref": "C1",
+        "part": "C",
+        "kind": "commun",
+        "skill_id": "NSI1_ALGO_01",
+        "skills": [
+          "NSI1_ALGO_01",
+          "NSI1_TEST_01"
+        ],
+        "skills_extra": [
+          "NSI1_TEST_01"
+        ],
+        "points": 4,
+        "estimated_minutes": 7.5,
+        "time_estimate": {
+          "minutes": 7.5,
+          "breakdown": {
+            "lecture": 1.3,
+            "traitement": 4.35,
+            "redaction": 1.8
+          },
+          "features": {
+            "caracteres_enonce": 492,
+            "lignes_de_code": 5,
+            "sous_questions": 3,
+            "lignes_offertes": 8,
+            "lignes_retenues": 4.75
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c1",
+            "points": 1.5,
+            "skill_id": "NSI1_ALGO_01",
+            "evidence_type": "transfert",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c2",
+            "points": 0.75,
+            "skill_id": "NSI1_ALGO_01",
+            "evidence_type": "procedure",
+            "subpart": "2"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c3",
+            "points": 0.75,
+            "skill_id": "NSI1_TEST_01",
+            "evidence_type": "transfert",
+            "subpart": "2"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C1_c4",
+            "points": 1.0,
+            "skill_id": "NSI1_ALGO_01",
+            "evidence_type": "communication",
+            "subpart": "3"
+          }
+        ],
+        "task": "transfert",
+        "difficulty": "transfert",
+        "baseline_item_id": null,
+        "baseline_skill_refs": [],
+        "comparability": "non_comparable_contenu_nouveau",
+        "comparison_status": "not_comparable",
+        "confidence_probe": true
+      },
+      {
+        "item_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2",
+        "ref": "C2",
+        "part": "C",
+        "kind": "individuel",
+        "skill_id": "NSI1_ALGO_01",
+        "skills": [
+          "NSI1_ALGO_01"
+        ],
+        "skills_extra": [],
+        "points": 2,
+        "estimated_minutes": 4.5,
+        "time_estimate": {
+          "minutes": 4.5,
+          "breakdown": {
+            "lecture": 0.36,
+            "traitement": 2.9,
+            "redaction": 1.33
+          },
+          "features": {
+            "caracteres_enonce": 250,
+            "lignes_de_code": 0,
+            "sous_questions": 2,
+            "lignes_offertes": 4,
+            "lignes_retenues": 3.5
+          },
+          "model": "contenu-v2"
+        },
+        "criteria": [
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c1",
+            "points": 1,
+            "skill_id": "NSI1_ALGO_01",
+            "evidence_type": "automatisme",
+            "subpart": "1"
+          },
+          {
+            "criterion_id": "1RE_NSI_AHMED_BENHADJ_SALEM_C2_c2",
+            "points": 1,
+            "skill_id": "NSI1_ALGO_01",
+            "evidence_type": "communication",
+            "subpart": "2"
+          }
+        ],
+        "task": "transfert",
+        "difficulty": "transfert",
+        "baseline_item_id": null,
+        "baseline_skill_refs": [],
+        "comparability": "non_comparable_contenu_nouveau",
+        "comparison_status": "not_comparable",
+        "confidence_probe": false
+      }
+    ]
+  },
+  "post_stage": {
+    "status": "awaiting_assessment",
+    "note": "Aucun résultat final n'est renseigné avant la passation."
+  }
+}

@@ -1,5 +1,5 @@
-# 2nde_S5_AIDES_Cartes
-## Séance 5 — Relier, contrôler et expliquer
+# 2nde — Séance 5 : Relier, contrôler et expliquer
+## AIDES C
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

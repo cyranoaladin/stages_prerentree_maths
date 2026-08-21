@@ -1,5 +1,5 @@
-# 3e_S5_PROF_Fiche
-## Séance 5 — Lire les données et mobiliser l’ensemble des acquis
+# 3e — Séance 5 : Lire les données et mobiliser l’ensemble des acquis
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

@@ -1,5 +1,5 @@
-# 1ere_spe_S2_PROF_Fiche
-## Séance 2 — Fonctions, fonctions de référence et première approche de la dérivation
+# 1re Spécialité Mathématiques — Séance 2 : Fonctions, fonctions de référence et première approche de la dérivation
+## PROF F
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

@@ -1,0 +1,4529 @@
+{
+  "schema": "nexus-s5-source-evidence-v1",
+  "genere_le": "2026-08-21",
+  "objet": "permettre de vérifier la traçabilité de la S5 vers les sources S1-S4 sans disposer du corpus : chaque source exploitée est identifiée par son empreinte SHA-256, et ce qui en a été extrait est consigné élève par élève",
+  "racine_de_reference": "Nexus_Reussite_Documentation_Stages_Maths_2026",
+  "nb_sources": 210,
+  "sources": [
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S1/1ere_spe_S1_AIDES_Cartes.md",
+      "sha256": "426f31a96df7e99efc508559b02b923de412641ebe9f15b24c765cb46bc5977c",
+      "taille_octets": 1550,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S1/1ere_spe_S1_ELEVE_Activite.md",
+      "sha256": "6408487e2ae10c0e94efd14994a3ccf3d761bc4ee6e9dda33a3de7a09f3b9101",
+      "taille_octets": 4763,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S1/1ere_spe_S1_PROF_Fiche.md",
+      "sha256": "9248ab543ef0ebec4b34a15044ab7e26fcd8747cb69c29e58ae24979a3406e9f",
+      "taille_octets": 7746,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S1/1ere_spe_S1_SUPPORTS_Manipulation.md",
+      "sha256": "37ee49c85aeeb10a6228583fda093d1b29f65a3b39c133c2f5aae85ae4bf1482",
+      "taille_octets": 1467,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S2/1ere_spe_S2_AIDES_Cartes.md",
+      "sha256": "0a946c797176b7748f39d47bd0d43bb0d7c2c427f92ddcb5f3e392f0393adfb0",
+      "taille_octets": 1566,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S2/1ere_spe_S2_ELEVE_Activite.md",
+      "sha256": "0ef58723b9be18e18b836ae5447d7af9146c8504aa197e594633adc7033f1e1d",
+      "taille_octets": 4968,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S2/1ere_spe_S2_PROF_Fiche.md",
+      "sha256": "f81701ecfb6cad5c9b954a85d8e17643ec9e3c7e0b67439c07e039bc05adbee4",
+      "taille_octets": 7637,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S2/1ere_spe_S2_SUPPORTS_Manipulation.md",
+      "sha256": "e6d1f4fe47a830655ba1fc37b43188bd16ba56337b682401b2e39d385ffa6559",
+      "taille_octets": 1737,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S3/1ere_spe_S3_AIDES_Cartes.md",
+      "sha256": "bf10a2edfb98197ed1729b4e50d9270e4cca280896e7e6a2db10478243d1dcdc",
+      "taille_octets": 1549,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S3/1ere_spe_S3_ELEVE_Activite.md",
+      "sha256": "6edd5e16e8214d6bddd13ea7e292c913bce64e9a79a24628b1f2472153fc8882",
+      "taille_octets": 4968,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S3/1ere_spe_S3_PROF_Fiche.md",
+      "sha256": "d019af6d48104e6d87e76b10de30063f1a4076f5f5d2b3b2ae81ba7444b43843",
+      "taille_octets": 7807,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S3/1ere_spe_S3_SUPPORTS_Manipulation.md",
+      "sha256": "abcb0eb9976f1264d80598b4cd161f95ae816ee90ae7338c527b7d80d5a33995",
+      "taille_octets": 1442,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S4/1ere_spe_S4_AIDES_Cartes.md",
+      "sha256": "0aa37a2c94a5b7235b4272a9a07498cf6e967763746f53d8ae67558af21c5088",
+      "taille_octets": 1526,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S4/1ere_spe_S4_ELEVE_Activite.md",
+      "sha256": "2fc404c3fd6e745dd24fc8abab7fe6f16b866b64e1644ca9c2f6bb309e13beb0",
+      "taille_octets": 4970,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S4/1ere_spe_S4_PROF_Fiche.md",
+      "sha256": "0840b62d654c25b068d213afeef58039640095ef76adb26aef421d62832ce589",
+      "taille_octets": 7852,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S4/1ere_spe_S4_SUPPORTS_Manipulation.md",
+      "sha256": "db602725cec164cfdc54f9116f11ae71b9bfd153b2f2ff0330bd41b4b52b47c3",
+      "taille_octets": 1366,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S5/1ere_spe_S5_AIDES_Cartes.md",
+      "sha256": "0b5eff1282ce705873d2d3de83ab8022907b4432fd74102966697c64fcc2c394",
+      "taille_octets": 1529,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S5/1ere_spe_S5_ELEVE_Activite.md",
+      "sha256": "775f73e44a273cd63e10450ebd2080a787bdbf1924323f1460e5b9e98e9e656e",
+      "taille_octets": 5023,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S5/1ere_spe_S5_PROF_Fiche.md",
+      "sha256": "b19a7e112393a9f54d797504127fa379abb84887c16ac46f7934b615a6faf8bb",
+      "taille_octets": 7420,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/02_SEANCES/S5/1ere_spe_S5_SUPPORTS_Manipulation.md",
+      "sha256": "00651cdebc35cc6a5cd2ee62e155c462b22291038a45a32bef78e858afaa9f76",
+      "taille_octets": 1445,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/03_EVALUATIONS/1ere_spe_Test_Initial.pdf",
+      "sha256": "cdffa06083968835ad44fe6a7659c0d021a0f39f426bcc1fc8df8281be80b837",
+      "taille_octets": 150677,
+      "type_de_source": "test de positionnement",
+      "usage_dans_la_s5": "18 items du diagnostic initial",
+      "eleves_concernes": [
+        "ahmad-beldi-maths",
+        "donia-khadhrani",
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Dossier_Individuel_Ahmad_Beldi.md",
+      "sha256": "f1ae324bc34f376f27ed0604bde4fd22f5f4cbb2c55ceb3818320a39b5285a0f",
+      "taille_octets": 6475,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "ahmad-beldi-maths"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_ELEVE.md",
+      "sha256": "0d0ae3915a67d95ad656d56768e08da5a7b649d9aa9fccb799b95cab7adea341",
+      "taille_octets": 1936,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmad-beldi-maths"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_PROF_Corrige.md",
+      "sha256": "f28cccf9e5048a3cf5180a8986311fd35ec71d8a6c40ddfdfeba05b1469f0def",
+      "taille_octets": 2534,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmad-beldi-maths"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Dossier_Individuel_Donia_Khadhrani.md",
+      "sha256": "af7d670c6770d647cc4896939b33d36c5fc57ae14d2ef0e78c8e9cb3fe27a2aa",
+      "taille_octets": 6522,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "donia-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_ELEVE.md",
+      "sha256": "f96f11eb965ec584d1817a2fa1b388334473757551f2cea48c10f902d50a9d39",
+      "taille_octets": 1950,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "donia-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_PROF_Corrige.md",
+      "sha256": "f9d92acc3b910a45474317f37eb4423042bf84caba95287050cb4c1972c69bda",
+      "taille_octets": 2543,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "donia-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Dossier_Individuel_Malek_Khadhrani.md",
+      "sha256": "cb3e0dea1c66abb949e958d0821434a7acfb2d21c8e54b482215100489b66962",
+      "taille_octets": 6414,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_ELEVE.md",
+      "sha256": "3afd302b03b51f8adc81eb1cec557f140c1959b51f4d8813252bd809f45ab7b0",
+      "taille_octets": 1932,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_PROF_Corrige.md",
+      "sha256": "b126b910bcf2744e64098226320023fd92a0d9c831e168298214c658df53da9c",
+      "taille_octets": 2467,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "malek-khadhrani"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_AIDES_Cartes.md",
+      "sha256": "ce16324013014ab266fc658274a2b216c312b75a09613807840fcd5f7f660d3d",
+      "taille_octets": 1610,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_AIDES_Cartes.pdf",
+      "sha256": "e552d7f3647dcb70e54ed60bfc9bb9f253404c703a9060a10f207b7e96eca462",
+      "taille_octets": 82145,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_ELEVE_Activite.md",
+      "sha256": "288aa0139c1a8968c1789d48c7254318f20a733c53dc1393d4514f33fb8e1aa2",
+      "taille_octets": 4758,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_ELEVE_Activite.pdf",
+      "sha256": "dbdfa877e4dbb013bc24cac1036a161acf6f29a394c5e4901150f383c2a71a97",
+      "taille_octets": 101493,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_PROF_Fiche.md",
+      "sha256": "80d8c4bfafb8b0b247459b08b2029d9d5911a7fc4ca4dc383750f504fd9df40e",
+      "taille_octets": 4941,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_PROF_Fiche.pdf",
+      "sha256": "cc9734708cec61dc0b92ab4030dcefc5d841b08856c6ec42b5a3142e72737847",
+      "taille_octets": 101981,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_SUPPORTS_Pratiques.md",
+      "sha256": "02aa73d2cd696b3470e2c8b56f8f5a3cb95b32d95097eec49a271f9c5e5c3e40",
+      "taille_octets": 2034,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S1/1re_nsi_S1_SUPPORTS_Pratiques.pdf",
+      "sha256": "7a85181be7ba1c2fcda5c6c7cc03577127b0ee61704d15e8a4b67802a146448d",
+      "taille_octets": 94363,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_AIDES_Cartes.md",
+      "sha256": "6c6964b353fa27480cffbba58df0390ba2897fe7aaeaf2704d407d6a37ff4393",
+      "taille_octets": 1608,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_AIDES_Cartes.pdf",
+      "sha256": "977643f2f17389709c5c8654d4068a79cb5f2e5186967fea903a5e94866cc638",
+      "taille_octets": 82485,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_ELEVE_Activite.md",
+      "sha256": "1b66648f083a86b8bc0a0770339686f8a94336fe7b6a0267a87ac9f76a51f0f4",
+      "taille_octets": 4208,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_ELEVE_Activite.pdf",
+      "sha256": "42c9f909bc0d6f2204aae278fce5959cd354213487f3c8337a59a89de866fce0",
+      "taille_octets": 94906,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_PROF_Fiche.md",
+      "sha256": "e4efb8b2a3513bc8a2cd8963fda9544d59b2b51c369fcb871ab4e2b54ccd8904",
+      "taille_octets": 4340,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_PROF_Fiche.pdf",
+      "sha256": "ada457834e582c2cab94546834e7a917cc5ce9181a78d8fdd35e46a7adc528c9",
+      "taille_octets": 94352,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_SUPPORTS_Pratiques.md",
+      "sha256": "1a33730be289ab0c8b9fe14f30f4b07bd584d54175ee5bda8cd40add937aeca8",
+      "taille_octets": 2037,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S2/1re_nsi_S2_SUPPORTS_Pratiques.pdf",
+      "sha256": "53935ac41a46bc748e0b9047817e8586c792c0368b95d8b9a2fef21ea9b5580b",
+      "taille_octets": 89054,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_AIDES_Cartes.md",
+      "sha256": "c4e3ff358bc39c75d6edc3b4de8c94b8d2edc3176a431afd517a8f103c875b0b",
+      "taille_octets": 1538,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_AIDES_Cartes.pdf",
+      "sha256": "c97c974222a35ec8d6edbae2fa2c38b62b1d464e21fb27903921c835ccc1ceb8",
+      "taille_octets": 82064,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_ELEVE_Activite.md",
+      "sha256": "69f13aa1561457a0ef16b6877855cd3c699c942d5b8217801b1c161fc1b72f78",
+      "taille_octets": 4094,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_ELEVE_Activite.pdf",
+      "sha256": "6983bef16f8a2e4c7d926414be21c76b681708ff7e04627bf314567ae02e5129",
+      "taille_octets": 91577,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_PROF_Fiche.md",
+      "sha256": "6af7e21dd37db951cd97540d0a3a43de1442782305768345da8328f7e2c3bada",
+      "taille_octets": 4299,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_PROF_Fiche.pdf",
+      "sha256": "56dc159b17a49e054a905dffd19e7a8fbf60b0974823c5b803ee1cea47ef6470",
+      "taille_octets": 91904,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_SUPPORTS_Pratiques.md",
+      "sha256": "8680533eda3e4516fb9bce2474b331d2cfbaaf06d2899c32f68034e0dc16e776",
+      "taille_octets": 2369,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S3/1re_nsi_S3_SUPPORTS_Pratiques.pdf",
+      "sha256": "b08f311a1184d4d3ae77e13b54ed4d5339653f724508a0e77c90cfc4c8f60d88",
+      "taille_octets": 86640,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_AIDES_Cartes.md",
+      "sha256": "a8eb525cd4cd1abc450b598b6c53204e14ef94647c747dde80e0085355792724",
+      "taille_octets": 1589,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_AIDES_Cartes.pdf",
+      "sha256": "7fc0fca6ed292ec69b485d259f53f916a165528164fdcf254ef0ef73154b835c",
+      "taille_octets": 82399,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_ELEVE_Activite.md",
+      "sha256": "1c3aa46e626fbc01c0aac74b81f34ab6b35cf98de55ea4e6a0151331f4da7fce",
+      "taille_octets": 3981,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_ELEVE_Activite.pdf",
+      "sha256": "9e1d45c1bd5035393779a47b6221c6d31e874c72a03ba531e3398f62b286eb59",
+      "taille_octets": 93723,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_PROF_Fiche.md",
+      "sha256": "2a5e2d70149ee63cf8466b76363de25d213d41f4cac6a35b01d721bc53c3ad4e",
+      "taille_octets": 4132,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_PROF_Fiche.pdf",
+      "sha256": "5502a99e78fda6fe3b1d5d17ccfbbaffc2b83f9574afff19853ad8043889d9e2",
+      "taille_octets": 93110,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_SUPPORTS_Pratiques.md",
+      "sha256": "6cf0b6f54bcd89d2b122665951b7d330e4c97ff7df1935f3f25dbcda4326ff4c",
+      "taille_octets": 1690,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S4/1re_nsi_S4_SUPPORTS_Pratiques.pdf",
+      "sha256": "9838b35543457f938b40c2738c0d1e849339b39907108ab502605feb719ab480",
+      "taille_octets": 86512,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_AIDES_Cartes.md",
+      "sha256": "a3e596e110ce5475d5e5395612b6b987ea91a6ebfaf39214de6537b1933e0e2f",
+      "taille_octets": 1603,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_AIDES_Cartes.pdf",
+      "sha256": "61694eb9a03dacf8bc90a6b84eac77368d7a6fe082ba784fac5e53e1063054b0",
+      "taille_octets": 82638,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_ELEVE_Activite.md",
+      "sha256": "e5e9a39ba93d2692e6b29a9c1367a0cb79f833d82befc447adc08ec3fbf38648",
+      "taille_octets": 4480,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_ELEVE_Activite.pdf",
+      "sha256": "761d09bac87dc002d69093d696ed2907f50df6bd0fa55b91d54c9ea7b3994e22",
+      "taille_octets": 88977,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_PROF_Fiche.md",
+      "sha256": "f3a676946c9a5f7b34e22b9b73e6f4f37abc3033660d6e86db1156a3885f71cc",
+      "taille_octets": 4705,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_PROF_Fiche.pdf",
+      "sha256": "50f8feda0f18c53755585a64ca395c752246662eb57f5f880ed5836b6ae7c957",
+      "taille_octets": 88618,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_SUPPORTS_Pratiques.md",
+      "sha256": "db0225a2842b34e00c9c1aed5abefef52d2026f9d2934facffcb7bcc823bb1a0",
+      "taille_octets": 2086,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/02_SEANCES/S5/1re_nsi_S5_SUPPORTS_Pratiques.pdf",
+      "sha256": "28a8f7ba9839199220fc6ef78ce0b6f73d029e0daae764dd4702757a12119e33",
+      "taille_octets": 84246,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/03_EVALUATIONS/1re_nsi_Test_Initial_ORIGINAL.pdf",
+      "sha256": "18e1a3e205db0dbd0ad2ac1eaf1e3867c7bf0a9881d79944df77c71a6bbe82e0",
+      "taille_octets": 148920,
+      "type_de_source": "test de positionnement",
+      "usage_dans_la_s5": "18 items du diagnostic initial",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi",
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Dossier_Individuel_Ahmad_BELDI.md",
+      "sha256": "d0f8342c2d52855efcd3e1910c45152037d9a0fb584a521de6a8f52c51b2cb1f",
+      "taille_octets": 2645,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_ELEVE.md",
+      "sha256": "ce2fe9e2dff6ebb2f89f8167bd09b371f9e0af4bc0c95d094f13792cfb3d9bf0",
+      "taille_octets": 1531,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Remediation_Ciblee_Ahmad_BELDI_PROF_Corrige.md",
+      "sha256": "39681112846d31b6efb503bac7e09b0fa96153503226c9b76484a37fab13f0fa",
+      "taille_octets": 1055,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.md",
+      "sha256": "a0bd30ecf97685b5360d2646b22db52e2c5e91cb48728ab7c9717d27c0d6acac",
+      "taille_octets": 3208,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_ELEVE.md",
+      "sha256": "edf47601ba3dbfa2198633f6e231d4ab43b8e0dbbb87773090d516c9d42232cc",
+      "taille_octets": 1560,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Remediation_Ciblee_Ahmed_BENHADJ_SALEM_PROF_Corrige.md",
+      "sha256": "0a4bb6683241022ed47592372f56b4465310b80014c22e462ac9e2224dfb308b",
+      "taille_octets": 1077,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/06_CODE/projet_final_specification_ahmed.md",
+      "sha256": "bb006cb2aaa0b0e2a571ebdbc7c0e003c32308a15f7abf00bc907edee2a39025",
+      "taille_octets": 484,
+      "type_de_source": "code Python du stage",
+      "usage_dans_la_s5": "supports de programmation",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "1re_nsi/06_CODE/projet_final_starter_ahmad.py",
+      "sha256": "c02cc83177fdce22a0a5bc6e01979e2a76b03658be67a6fdfd6d126ec7d77df4",
+      "taille_octets": 549,
+      "type_de_source": "code Python du stage",
+      "usage_dans_la_s5": "supports de programmation",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S1/2nde_S1_AIDES_Cartes.md",
+      "sha256": "0587d64c7c43d1ccac56475f0d3e8db0da03e61734dd79db707533b61c579383",
+      "taille_octets": 1428,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S1/2nde_S1_ELEVE_Activite.md",
+      "sha256": "f6e5a85d289f4fbcc6325aaed1908afbfb00eb5a3d5693fca52f8df9cf02959e",
+      "taille_octets": 5228,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S1/2nde_S1_PROF_Fiche.md",
+      "sha256": "37cddf58c4c6fc026934273b3de95f4be22f4a6737a73ac8370913e97901d11c",
+      "taille_octets": 8232,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S1/2nde_S1_SUPPORTS_Manipulation.md",
+      "sha256": "6756d3c073ce52823ce245cdb91459e5958dca7ad77095fa809d491b50637de4",
+      "taille_octets": 1709,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S2/2nde_S2_AIDES_Cartes.md",
+      "sha256": "1b95c415213b1f8aff00874eb07e70eec4f45f5960a544583a77118ba9d73139",
+      "taille_octets": 1437,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S2/2nde_S2_ELEVE_Activite.md",
+      "sha256": "1e790be8df56217027fa9e3ffa3e639bd2af99891e2359f865d525dfd24078cf",
+      "taille_octets": 4347,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S2/2nde_S2_PROF_Fiche.md",
+      "sha256": "d3cd379b2e77c075f562bd96dd1b7a21484f221d2955e4f8966f90f6993a410b",
+      "taille_octets": 6992,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S2/2nde_S2_SUPPORTS_Manipulation.md",
+      "sha256": "e2a4635668d4ee022b483b697aa3eb3233f86cb8318917bd498d447022adfe83",
+      "taille_octets": 1295,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S3/2nde_S3_AIDES_Cartes.md",
+      "sha256": "c0c875ed9b14460043c84929ce12745ce27192f6a095fd92126341905c08bb37",
+      "taille_octets": 1407,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S3/2nde_S3_ELEVE_Activite.md",
+      "sha256": "f7cb6b488c47aea608cf6eed707bcf334bbe6ddb3ce4fb792185d0fca410d065",
+      "taille_octets": 4517,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S3/2nde_S3_PROF_Fiche.md",
+      "sha256": "cbdd4d58b889d01748b77c694e9f2e220724b5ad63333da58884e70902311f62",
+      "taille_octets": 6914,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S3/2nde_S3_SUPPORTS_Manipulation.md",
+      "sha256": "02febb66e308a40964814843b7fb6cd0ac957735142435d7c4abeeb480fbebb6",
+      "taille_octets": 1267,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S4/2nde_S4_AIDES_Cartes.md",
+      "sha256": "af62b156f4b96101df510e6d6d768ae593819c74a6beb0499272fe68080b6c0e",
+      "taille_octets": 1403,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S4/2nde_S4_ELEVE_Activite.md",
+      "sha256": "9b6d1d7c861755c693e23c419ff98c1279ab0f3f49620ecf2fcb50ee0632d6e2",
+      "taille_octets": 5061,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S4/2nde_S4_PROF_Fiche.md",
+      "sha256": "deb0b972e63dbac609c68cef5fdbdb5fc7b53fae2f79a1bae0a661f33a3a60fe",
+      "taille_octets": 7295,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S4/2nde_S4_SUPPORTS_Manipulation.md",
+      "sha256": "e3e508f589dd9733e4535e98e33a122aaaaf1e24db675d8354618ae9f939c12e",
+      "taille_octets": 1321,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S5/2nde_S5_AIDES_Cartes.md",
+      "sha256": "9cb55b752d6f892b30b99c98b2ff48bb88ffc0211d4e10789f0d73d6a82cb214",
+      "taille_octets": 1413,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S5/2nde_S5_ELEVE_Activite.md",
+      "sha256": "0a1b888e761e27983b7c5c38510aa6a2eab1dcaa079064d0504812d0b6e6dae0",
+      "taille_octets": 4239,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S5/2nde_S5_PROF_Fiche.md",
+      "sha256": "ba13494227e69aca5cafcb851c03665df99731def23603c180340d9084cb87e0",
+      "taille_octets": 7167,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/02_SEANCES/S5/2nde_S5_SUPPORTS_Manipulation.md",
+      "sha256": "7861a6592577414af25b0df3b76864126cb947952e3df9b91e6642924bcde5c1",
+      "taille_octets": 1395,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/03_EVALUATIONS/2nde_Test_Initial.pdf",
+      "sha256": "ad9197c33a8244174e9288c2393f4e8f744f9853aacbc1a2360002ca6250820e",
+      "taille_octets": 149563,
+      "type_de_source": "test de positionnement",
+      "usage_dans_la_s5": "18 items du diagnostic initial",
+      "eleves_concernes": [
+        "ahmed-bakir",
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Dossier_Individuel_Ahmed_Bakir.md",
+      "sha256": "626d1454b238b17acf45b563d1e41f3c956a032d30ddca6a66584f7f362fc332",
+      "taille_octets": 6380,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Remediation_Ciblee_Ahmed_Bakir_ELEVE.md",
+      "sha256": "e156d627aaa623f871d665cab3404340271eb46a88ab10ad06ca599decee4703",
+      "taille_octets": 2350,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Remediation_Ciblee_Ahmed_Bakir_PROF_Corrige.md",
+      "sha256": "017c7b8b94963e525d8d28da7b9b58b802a3c0dd82a1766f4d6def442e17ce55",
+      "taille_octets": 3006,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Dossier_Individuel_Noa_Maniaci.md",
+      "sha256": "c109732ad7a0b40bd4cb48c9988840b260ff957bc971e177d0f07d35cc40c8b6",
+      "taille_octets": 6541,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Remediation_Ciblee_Noa_Maniaci_ELEVE.md",
+      "sha256": "4c5b53166ba88d3dfc25f62cae9baff10508fb4cea9dc5ddc7cefa724ae883df",
+      "taille_octets": 2353,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Remediation_Ciblee_Noa_Maniaci_PROF_Corrige.md",
+      "sha256": "3f9cf404d1520cbfe3e629bfb0f2f2e7b85e6d19c0e2a15ff64ca596080013c8",
+      "taille_octets": 3029,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S1/3e_S1_AIDES_Cartes.md",
+      "sha256": "cab3a49f1e26418269f1547a18a2ebff9110c48f3dcfdce6520649756699e147",
+      "taille_octets": 1594,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S1/3e_S1_ELEVE_Activite.md",
+      "sha256": "63b80f622e97aa5555a74d9d33cd9d12330f4ec975404dae1cdac07dcb476d94",
+      "taille_octets": 5541,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S1/3e_S1_PROF_Fiche.md",
+      "sha256": "13662164dafb8534f106d995ef993d4502bb3141a5da475493a8441ce2499d92",
+      "taille_octets": 10549,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S1/3e_S1_SUPPORTS_Manipulation.md",
+      "sha256": "cc0fd6f26f702f68f3ec41cc241cda21cc5e33fb70a3f0c24d82665fca946ab7",
+      "taille_octets": 1198,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S2/3e_S2_AIDES_Cartes.md",
+      "sha256": "75abeec75e6a5449db5b48f29618920474e76f5fd65ca259baef80eb22c6fc81",
+      "taille_octets": 1596,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S2/3e_S2_ELEVE_Activite.md",
+      "sha256": "5dcc55c00c33be0d53fc11872adc3772b4ce748de1890e3964a3ed7f836c8837",
+      "taille_octets": 5596,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S2/3e_S2_PROF_Fiche.md",
+      "sha256": "4efffe40f2120554fa547ddafa61a5a8278985510ad9818739789d37528ac71e",
+      "taille_octets": 9312,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S2/3e_S2_SUPPORTS_Manipulation.md",
+      "sha256": "dd08d933ca438b6ffc7eb0896be1258080887ac98410bced7cef0236bf3311f0",
+      "taille_octets": 1700,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S3/3e_S3_AIDES_Cartes.md",
+      "sha256": "264a379a1c63731208b8adbf4a30dc4ac48868c2edb78489cfeebebc90e1606a",
+      "taille_octets": 1596,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S3/3e_S3_ELEVE_Activite.md",
+      "sha256": "fbe8123be62764d2c353ae07588da65d684dc24a1dedc9e8c3573f3dadc9073f",
+      "taille_octets": 5506,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S3/3e_S3_PROF_Fiche.md",
+      "sha256": "f8fc56107c424ab3837240193068f2ef47d799091830da48b8deb80ab59dbd94",
+      "taille_octets": 9867,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S3/3e_S3_SUPPORTS_Manipulation.md",
+      "sha256": "6e8f85d9a0e53fec8308f988117cf8dfe6835a168b1fff05376e2ab4acd95805",
+      "taille_octets": 1451,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S4/3e_S4_AIDES_Cartes.md",
+      "sha256": "d08757768a21a6e9371025ae1facaec94fe43d93c7b5470a1e38b7a0570b6e67",
+      "taille_octets": 1589,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S4/3e_S4_ELEVE_Activite.md",
+      "sha256": "b0e6c672e12c6edd9ea750a0e77751b6491c9f5dcd973e957d8f83b34f079e9c",
+      "taille_octets": 6138,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S4/3e_S4_PROF_Fiche.md",
+      "sha256": "9391120b0f6cbd16494d7c319341609baec8d8fab932abf8067b354878f71d9f",
+      "taille_octets": 10311,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S4/3e_S4_SUPPORTS_Manipulation.md",
+      "sha256": "b70e81aa20c1fc66020977823bfbfaa7660490006f3ea143808bd25b13fb6c7b",
+      "taille_octets": 1583,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S5/3e_S5_AIDES_Cartes.md",
+      "sha256": "f1af3b52e45cb65657237decb29d8b88a9d1750939d3e656d10364ece9cd02b4",
+      "taille_octets": 1610,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S5/3e_S5_ELEVE_Activite.md",
+      "sha256": "89e153209a11ac415d53627039e201268bcac936980007b1a4938fe2b5e39bdd",
+      "taille_octets": 5441,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S5/3e_S5_PROF_Fiche.md",
+      "sha256": "6be09065600eec82540d86532d8eaf6e2a195e1659ec91ee565ac83ce8b4de68",
+      "taille_octets": 8653,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/02_SEANCES/S5/3e_S5_SUPPORTS_Manipulation.md",
+      "sha256": "76e2b0bb36b04317a6b8ac44ac73c7befe1b6bc8d3190843da0fdb5d52ba39ec",
+      "taille_octets": 1439,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/03_EVALUATIONS/3e_Test_Initial.pdf",
+      "sha256": "719984e8ab3ad8e31ad7151184b3af201ce526fba7dd1b9ab6aead828cdbb51c",
+      "taille_octets": 148822,
+      "type_de_source": "test de positionnement",
+      "usage_dans_la_s5": "18 items du diagnostic initial",
+      "eleves_concernes": [
+        "amine-mansouri",
+        "elyes-kefi",
+        "fares-laajili",
+        "sarah-bargaoui",
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Amine_Mansouri/3e_Dossier_Individuel_Amine_Mansouri.md",
+      "sha256": "9a735c91b79b2cd24bb0df4665cb70eeae62a782b4dea1226208dfa927533b88",
+      "taille_octets": 6995,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Amine_Mansouri/3e_Remediation_Ciblee_Amine_Mansouri_ELEVE.md",
+      "sha256": "ff5b257a6c69b130f40baf1a22d1b7fb7b4abcbab3c5f7e8f92b2083c9d7eeab",
+      "taille_octets": 1939,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Amine_Mansouri/3e_Remediation_Ciblee_Amine_Mansouri_PROF_Corrige.md",
+      "sha256": "330223480cc49778399ef9468bb720ef87dd44ae6ca94419f0d4568d85124a66",
+      "taille_octets": 2548,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Elyes_Kefi/3e_Dossier_Individuel_Elyes_Kefi.md",
+      "sha256": "27aac94a20e38cc253a2167d09f1d17a86c106cf8e17848337af615d27656e41",
+      "taille_octets": 8665,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Elyes_Kefi/3e_Remediation_Ciblee_Elyes_Kefi_ELEVE.md",
+      "sha256": "84679d3932e0ccd1c7ee451a86deafc72001f5ae13b60fa5d6f0044b155ac78f",
+      "taille_octets": 5635,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Elyes_Kefi/3e_Remediation_Ciblee_Elyes_Kefi_PROF_Corrige.md",
+      "sha256": "c4904cdf1a053fee86b40bdabf4c72ba6ce51eea94488fe5e1d586f078dce4d0",
+      "taille_octets": 3646,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Fares_Laajili/3e_Dossier_Individuel_Fares_Laajili.md",
+      "sha256": "8ca982e1dc403f06fd8f846771351964069d01b7bbe47e3b4ed75f22beb5c741",
+      "taille_octets": 6084,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Fares_Laajili/3e_Remediation_Ciblee_Fares_Laajili_ELEVE.md",
+      "sha256": "a36e0043d417dab73dc8582d8461ae2d945cd19bca118317501f4a60290b7e7a",
+      "taille_octets": 1930,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Fares_Laajili/3e_Remediation_Ciblee_Fares_Laajili_PROF_Corrige.md",
+      "sha256": "03af19c6bafc490e4abb4bcf9b11ec3f77b640b98d435b63b3e64d3591c6f02b",
+      "taille_octets": 2456,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Dossier_Individuel_Sarah_Bargaoui.md",
+      "sha256": "69e17844574d2f3005dd83764ed631c6050ee8aea641954f06f47f8d662352c2",
+      "taille_octets": 7052,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Remediation_Ciblee_Sarah_Bargaoui_ELEVE.md",
+      "sha256": "8dcbb4ddeaa0e8eb6ba8329b9c8b9eb629f75f183f956376b29173fba3dbabbf",
+      "taille_octets": 1899,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Remediation_Ciblee_Sarah_Bargaoui_PROF_Corrige.md",
+      "sha256": "d05ebdeac106331e6e49f677c31b3f8f82703bd475b713ab3138df9b02ec4f36",
+      "taille_octets": 2430,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Selim_Mansouri/3e_Dossier_Individuel_Selim_Mansouri.md",
+      "sha256": "50ec14dda1fa3f32f7c9dfa456941d5513e5a78d3667712541521d40a25991ff",
+      "taille_octets": 7023,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Selim_Mansouri/3e_Remediation_Ciblee_Selim_Mansouri_ELEVE.md",
+      "sha256": "7e485a1a1b03c617509d3ae2bcf1c9d24cc36566d9af83d629544b45e26bcafd",
+      "taille_octets": 1903,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "3e/04_NOMINATIFS/Selim_Mansouri/3e_Remediation_Ciblee_Selim_Mansouri_PROF_Corrige.md",
+      "sha256": "ff2e9b81653b677892d820f5da5ea971000ea0e4cbe98347c0568f931a6c573a",
+      "taille_octets": 2434,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S1/4e_S1_AIDES_Cartes.md",
+      "sha256": "3366b9d4db22ae42458b336382c167150ed7b3abf94c95b91f3cd3891d73f75b",
+      "taille_octets": 1497,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S1/4e_S1_ELEVE_Activite.md",
+      "sha256": "d669d2852901b15f61b6ac4be0752813611aa97b05fa4eb3807a3ea3f9f49e4f",
+      "taille_octets": 5517,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S1/4e_S1_PROF_Fiche.md",
+      "sha256": "36fe7aa97461aae27807af4d95108832f53311b400183cb31ea62650255a647c",
+      "taille_octets": 9669,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S1/4e_S1_SUPPORTS_Manipulation.md",
+      "sha256": "1adca882b0a2e1035e27c7a0f81fca7d2b83ae68465acd9ccb2da5aa06a1a9d7",
+      "taille_octets": 1697,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S2/4e_S2_AIDES_Cartes.md",
+      "sha256": "d1b879644f808989df40d0f0bc322a99c5abdd9f60690b0634de1b015a907811",
+      "taille_octets": 1501,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S2/4e_S2_ELEVE_Activite.md",
+      "sha256": "df878f3ddf048239a08cd58d03737e0e145e2382c04447529109474f3e5a0d27",
+      "taille_octets": 5263,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S2/4e_S2_PROF_Fiche.md",
+      "sha256": "3c0b338b14e22610fe422bb88d4b42e71958c8a16e23845beb409ea6b10a724d",
+      "taille_octets": 9850,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S2/4e_S2_SUPPORTS_Manipulation.md",
+      "sha256": "de75556139a0ccae88da70bfd3c955ebc03b40880b0dca84d6d6778be479433c",
+      "taille_octets": 1389,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S3/4e_S3_AIDES_Cartes.md",
+      "sha256": "207a886b5b9c0d642927f308d52ce99f235ccb85388e4ec38272d944fee703f5",
+      "taille_octets": 1478,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S3/4e_S3_ELEVE_Activite.md",
+      "sha256": "f0cdae2a579638848ff0f86113f379844e24352175605c794ca302ed8d6bef87",
+      "taille_octets": 4768,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S3/4e_S3_PROF_Fiche.md",
+      "sha256": "baa3af3b67d9085cd64ebf66009ffca91a73c5d5692bb73c2c3b77f043dc8bb3",
+      "taille_octets": 8228,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S3/4e_S3_SUPPORTS_Manipulation.md",
+      "sha256": "10b49af4ef89b8afd214c8837412d2bc4997a9f0af5f0a7b20df3cb88b3e6ed4",
+      "taille_octets": 1315,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S4/4e_S4_AIDES_Cartes.md",
+      "sha256": "57f7ec5e00c4a1f4da8f73bf520196e00893194c5de3ec309ad5d79d68361416",
+      "taille_octets": 1466,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S4/4e_S4_ELEVE_Activite.md",
+      "sha256": "f09636066e343e7dd3fe7caf21a23b04e9aa8a4ceba47592918adad90d70f260",
+      "taille_octets": 4890,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S4/4e_S4_PROF_Fiche.md",
+      "sha256": "940975d83c3643247f754a4b1082d3e5b3e5694bf1750eab6bd8a1eb290be6fb",
+      "taille_octets": 8801,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S4/4e_S4_SUPPORTS_Manipulation.md",
+      "sha256": "1475131f6b753fe8c4edf2947c606092397d8c03a6918840988b172a55b193ec",
+      "taille_octets": 1515,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S5/4e_S5_AIDES_Cartes.md",
+      "sha256": "8537fbc8f28bf673aa84dd82e414c93a02acf3a673e0064f090dd764b11ee731",
+      "taille_octets": 1514,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S5/4e_S5_ELEVE_Activite.md",
+      "sha256": "72f5fafdb458d71c002fb7a73c30dd964b148059e4fd960ed4100339fab2b39d",
+      "taille_octets": 3118,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S5/4e_S5_PROF_Fiche.md",
+      "sha256": "e6c9669f691efda6b173253575eee35e5ca595ac5cf78bd9ba57000d0bd05100",
+      "taille_octets": 6482,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/02_SEANCES/S5/4e_S5_SUPPORTS_Manipulation.md",
+      "sha256": "4089ab2031bf27ec969432648089212f15b1eb4574dea1824fbfac5babebc5f7",
+      "taille_octets": 1159,
+      "type_de_source": "séance de niveau",
+      "usage_dans_la_s5": "contenu réellement travaillé en S1 à S5",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/03_EVALUATIONS/4e_Test_Initial.pdf",
+      "sha256": "fbe36d2458fc678e21e6ddb8ed875b3fe02608b6a1a7474e9cbf43c19da11cf0",
+      "taille_octets": 147435,
+      "type_de_source": "test de positionnement",
+      "usage_dans_la_s5": "18 items du diagnostic initial",
+      "eleves_concernes": [
+        "fares-darghouth",
+        "ines-kefi",
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Fares_Darghouth/4e_Dossier_Individuel_Fares_Darghouth.md",
+      "sha256": "9abe693f378b04ea30a26ae5d161d42d3e254c74069382a29d0f283d6d5db7c6",
+      "taille_octets": 7261,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Fares_Darghouth/4e_Remediation_Ciblee_Fares_Darghouth_ELEVE.md",
+      "sha256": "823a7bad3f7e0433c78f3b8551efc2561d54e437c1f57e9d28132a26c58a5c4d",
+      "taille_octets": 2440,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Fares_Darghouth/4e_Remediation_Ciblee_Fares_Darghouth_PROF_Corrige.md",
+      "sha256": "46b9bf9e1e7d9ada9ad6b37f9a967c78892e09326f170932bc3be261938869fb",
+      "taille_octets": 3120,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Ines_Kefi/4e_Dossier_Individuel_Ines_Kefi.md",
+      "sha256": "ecdd5c600231975f58b5e44bd1cb693ceed995908b5b1f6788fd619419175fbe",
+      "taille_octets": 8673,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Ines_Kefi/4e_Remediation_Ciblee_Ines_Kefi_ELEVE.md",
+      "sha256": "4c48d170099c5619a25bbaf2c3feed59715b1888318e828cebd8df28071310c0",
+      "taille_octets": 5833,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Ines_Kefi/4e_Remediation_Ciblee_Ines_Kefi_PROF_Corrige.md",
+      "sha256": "6621e6b3b75fc3ce80e6ac2f358ce4ac0e200bc51f5429f463d2915f2afc24f4",
+      "taille_octets": 3917,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Dossier_Individuel_Sinda_Chikhaoui.md",
+      "sha256": "3176596f17cfccbc0e3c37f1e03e48f7022640f2c10e3843a7b64bdab597a2a0",
+      "taille_octets": 6913,
+      "type_de_source": "dossier individuel",
+      "usage_dans_la_s5": "diagnostic initial, points d'appui, priorités",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Remediation_Ciblee_Sinda_Chikhaoui_ELEVE.md",
+      "sha256": "bc48e63aca48fad9598fd6f141d4679c2464c238321c405e40d8fe9daed48479",
+      "taille_octets": 2503,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Remediation_Ciblee_Sinda_Chikhaoui_PROF_Corrige.md",
+      "sha256": "63b31082f3175fc48a960ef08e9a7e76ac4069b8171af12e71250fbb14458e30",
+      "taille_octets": 3242,
+      "type_de_source": "plan de remédiation",
+      "usage_dans_la_s5": "exercices déjà proposés à l'élève",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/1re_NSI_S4_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "89c4c645d78bba8e4cf61b2f983cb263a2edc1ce0c945feb3716fdc34941b5e2",
+      "taille_octets": 371900,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/1re_NSI_S4_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.tex",
+      "sha256": "b5fbc1ac9305e928247e75fbc6217e64160db11cf08b68b64183895ee6b3bcbd",
+      "taille_octets": 23138,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/1re_NSI_S4_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "e1831071d75432cd31997094430b8d843c51475084c3695becd1521218a3931c",
+      "taille_octets": 370639,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/2nde_S4_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "bc30529b59f5613e7330e696c3c2d9f7c1904aa0fc2422b21003f3b7faf5d022",
+      "taille_octets": 333039,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/2nde_S4_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "9550fc6a5ee52705e053943bea15a5a3c55fef7fdaf0294c39c5b918df0895b2",
+      "taille_octets": 296900,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/3e_S4_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "34eba19eb28339d929cb89f9d7d3d16a37b82c870aa93731268ba372cdbf10e1",
+      "taille_octets": 269066,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/3e_S4_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "635d8f0f6275174a01269fc3e7a31991daed59a3c87ec42a027d8bfee3552fa7",
+      "taille_octets": 275098,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/3e_S4_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "eb4ac94b4407b75e6128b35c17e56fc9c3943c42ac2a2a6ad9c65f71855e4d20",
+      "taille_octets": 269213,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/3e_S4_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "6065c41c5931d84fbf4246b4cb4814f6a2a62a9b7e414a73e640eede3e7a017f",
+      "taille_octets": 271015,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/3e_S4_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "2c3a0e4838dd11d623897faf0610a8d1964fd5451780b3cc68593bedb7efb962",
+      "taille_octets": 269171,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/4e_Ines_Kefi_LIVRETS_S4_S5_PERSONNALISES.pdf",
+      "sha256": "aa248688ccc13187162dfacb3a271185aed61780d9b7c5e5b083cc8b89983741",
+      "taille_octets": 548896,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/4e_S4_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "50c3eafe26d0ee14a5ca1f45ebad0d931f8fcc35dc3d343a85323687f00219c8",
+      "taille_octets": 302332,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Bilans/4e_Sinda_Chikhaoui_LIVRETS_S4_S5_PERSONNALISES.pdf",
+      "sha256": "5f9e6af4256b294c09e37a8dafe0068995931dbad24a17de1f32fddeb88d507a",
+      "taille_octets": 571060,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_1re_NSI_S2_PDF_ELEVES/1re_NSI_S2_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "ab38e8a2cc15addef9b4984e9f3a68b88d077504a543dbc6ae9bc57ea9d9ea5e",
+      "taille_octets": 309870,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_1re_NSI_S2_PDF_ELEVES/1re_NSI_S2_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "034c9dd7683757ab78f83e156a0301641193c88fa9846a93dafb5d6d3ffb4aa4",
+      "taille_octets": 308392,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_1re_NSI_S3_Dossiers_Eleves_PDF/1re_NSI_S3_Ahmad_BELDI_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "1de3fc5174796db8a0a68a6dacccca9eb550dee4c57ff72a758df2d5f99c2568",
+      "taille_octets": 379555,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmad-beldi-nsi"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_1re_NSI_S3_Dossiers_Eleves_PDF/1re_NSI_S3_Ahmed_BENHADJ_SALEM_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "5c5b7c8d19ddca67ed3eb07f6f730d882b1877323a3c34baad7bfbd70fcbba19",
+      "taille_octets": 374806,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-benhadj-salem"
+      ],
+      "matieres": [
+        "NSI"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_2nde_S2_Dossiers_Eleves_PDF/2nde_S2_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "8d7b362c191c4a33c468981349d3a4ba3f4cc5eb99b50489b39246f94f97d7ad",
+      "taille_octets": 206273,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_2nde_S2_Dossiers_Eleves_PDF/2nde_S2_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "ed655bfb3954ca21a73ad3ca3f0e6092b03dc5d2a68964b94cbe74a1cc29a42c",
+      "taille_octets": 208460,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_2nde_S3_Dossiers_Eleves_PDF/2nde_S3_Ahmed_Bakir_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "612fd25e2975588b0511f3eb9742cb4ed0c6557254aa45277adc398d72cc1f2f",
+      "taille_octets": 278938,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ahmed-bakir"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_2nde_S3_Dossiers_Eleves_PDF/2nde_S3_Noa_Maniaci_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "a0a0aa02d384a05335ccd673e5b12ba574a65407092a41fe056a756d3e2ec3c6",
+      "taille_octets": 278237,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "noa-maniaci"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "7cea9f708df8927601d65115ac46966056aa3cbc263c53414e2b4b13202b34c3",
+      "taille_octets": 296115,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "61e9644675368d0fcf27099d541a8625e0d815e7eab60d843262718041357d8a",
+      "taille_octets": 296572,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "c45b5d826f1490a49a3ef0da255341b24785a602f28ea8f1a6253cf74ebd63e0",
+      "taille_octets": 294149,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "74cb1725ac03da24191382d43482bfd2a2692bae384a02a7eff9ee28c5dfcfd3",
+      "taille_octets": 296589,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_3e_S3_Dossiers_Eleves_PDF/3e_S3_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "0ed3569802b7c5fa624ff16c32e947ec62726dfd4cee504a3aa485159e42a16c",
+      "taille_octets": 296601,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_Fares_Darghouth_S4_S5_PDF/4e_S5_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "c31a85dbb67cbc68ff0042333289301d27fd70e9932820980383c598ec0794c2",
+      "taille_octets": 267194,
+      "type_de_source": "livret personnalisé S4",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S2_PDF_ELEVES/4e_S2_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "a54e2553405e2737057b8affe769ec233d31e864af0114c2a756a209027bcf0c",
+      "taille_octets": 221016,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S2_PDF_ELEVES/4e_S2_Ines_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "c687d4342ee6aa8735f2d0e48dac5a5b88868846569c001688c62b43ac0134d7",
+      "taille_octets": 207111,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S2_PDF_ELEVES/4e_S2_Sinda_Chikhaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "bc2b532b631cab6c38398777834bfe954939f309188ea8cd806214efcf67d99f",
+      "taille_octets": 205817,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Fares_Darghouth_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "b62c0f9a57cc3079b3da06e5aaad4cc92e6d2716050736187e9fc34017d14b78",
+      "taille_octets": 295516,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-darghouth"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Ines_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "fb6d2e0f3e076b730d67eacc0acba155fd0176c5bff5fa68b90d31fc95faac0f",
+      "taille_octets": 254637,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "ines-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_4e_S3_Dossiers_Eleves_PDF/4e_S3_Sinda_Chikhaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "ed51cb518b1ed67836dbe68b9c0e348f0b91970a6ec0ee4c9b9e2a9b1534732c",
+      "taille_octets": 252805,
+      "type_de_source": "livret personnalisé S3",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sinda-chikhaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Amine_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "406f2bcfdd96990427bf3159dbe294314540ddc49ac4a141e8756cd6f090d89e",
+      "taille_octets": 177427,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "amine-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Elyes_Kefi_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "90bd125a5d0a2f7faae7e902ee161ddbe40e498a84fbded75500059aef6ef55a",
+      "taille_octets": 176686,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "elyes-kefi"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Fares_Laajili_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "325f5751f00ac70082dc58c3a4de52fb288327d9f5f7b7bb59b990b2567acd6e",
+      "taille_octets": 198738,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "fares-laajili"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Sarah_Bargaoui_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "c98de6b60e05a37f4c1fdd5af9c396dcc38ebce420e03cc881a20fdf776c803a",
+      "taille_octets": 189471,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "sarah-bargaoui"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    },
+    {
+      "chemin_canonique": "Nexus_S2_Dossiers_Eleves_PDF/3e_S2_Selim_Mansouri_DOSSIER_ELEVE_PERSONNALISE.pdf",
+      "sha256": "075cfd9b7e905fe4b7e647d1df6f551e01611db9477771c24c4b3e1674b48473",
+      "taille_octets": 194575,
+      "type_de_source": "livret personnalisé S2",
+      "usage_dans_la_s5": "trajectoire individuelle",
+      "eleves_concernes": [
+        "selim-mansouri"
+      ],
+      "matieres": [
+        "Mathématiques"
+      ]
+    }
+  ],
+  "extraits_par_eleve": [
+    {
+      "student_id": "fares-darghouth",
+      "niveau": "4e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "4e/04_NOMINATIFS/Fares_Darghouth/4e_Dossier_Individuel_Fares_Darghouth.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Fractions équivalentes",
+        "Aire versus périmètre",
+        "Angles du triangle",
+        "Symétrie centrale",
+        "Calcul littéral à situer"
+      ],
+      "points_d_appui_extraits": [
+        "Proportionnalité",
+        "Statistiques",
+        "Nombres relatifs presque acquis"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M4E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_PROP_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Statistiques »."
+        },
+        {
+          "skill_id": "M4E_AIRE_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Grandeurs et mesures »."
+        },
+        {
+          "skill_id": "M4E_FRAC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M4E_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_GEO_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Seules les fractions équivalentes sont citées dans les priorités."
+        },
+        {
+          "skill_id": "M4E_LIT_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M4E_REL_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Le dossier écrit « nombres relatifs presque acquis » : le statut « acquis » n'est pas établi."
+        },
+        {
+          "skill_id": "M4E_REL_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Même formulation ; aucune observation distincte sur l'ordre et la droite graduée."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M4E_AIRE_01",
+        "P2": "M4E_GEO_02"
+      }
+    },
+    {
+      "student_id": "ines-kefi",
+      "niveau": "4e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "4e/04_NOMINATIFS/Ines_Kefi/4e_Dossier_Individuel_Ines_Kefi.md"
+      ],
+      "observations_extraites": [
+        {
+          "domaine": "Nombres relatifs",
+          "statut": "À rectifier",
+          "observation": "Deux réponses fausses données avec certitude 4 : ordre décroissant au lieu de croissant ; déplacement vers la gauche au lieu de la droite."
+        },
+        {
+          "domaine": "Fractions",
+          "statut": "À rectifier",
+          "observation": "Pour 5/6 − 1/3, le dénominateur est converti mais le numérateur de 1/3 ne l'est pas."
+        },
+        {
+          "domaine": "Proportionnalité",
+          "statut": "Solide",
+          "observation": "Deux réponses exactes et assurées."
+        },
+        {
+          "domaine": "Calcul littéral",
+          "statut": "À installer",
+          "observation": "Distributivité disponible ; erreur de signe sur 2 − 6 dans une réduction."
+        },
+        {
+          "domaine": "Géométrie",
+          "statut": "À rectifier",
+          "observation": "Hypothèse isocèle ajoutée sans justification ; centre de symétrie confondu avec la seule classe des carrés."
+        },
+        {
+          "domaine": "Aires et périmètres",
+          "statut": "Solide",
+          "observation": "Aire du rectangle et du triangle correctement calculées."
+        },
+        {
+          "domaine": "Statistiques",
+          "statut": "Solide",
+          "observation": "Moyenne et fréquence correctement calculées."
+        }
+      ],
+      "priorites_extraites": [
+        "Fractions : conversion complète vers un dénominateur commun.",
+        "Nombres relatifs : ordre croissant et déplacements sur une droite graduée.",
+        "Géométrie : somme des angles et caractérisation d'un parallélogramme par un centre de symétrie.",
+        "Calcul littéral : réduction des constantes en tenant compte des signes."
+      ],
+      "points_d_appui_extraits": [
+        "Proportionnalité",
+        "Aires et périmètres",
+        "Statistiques"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M4E_AIRE_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Grandeurs et mesures »."
+        },
+        {
+          "skill_id": "M4E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_PROP_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Statistiques »."
+        },
+        {
+          "skill_id": "M4E_FRAC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M4E_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_REL_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M4E_REL_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M4E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Aucune observation isolée sur les fractions de même dénominateur dans le dossier."
+        },
+        {
+          "skill_id": "M4E_GEO_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_LIT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M4E_REL_02",
+        "P2": "M4E_FRAC_02"
+      }
+    },
+    {
+      "student_id": "sinda-chikhaoui",
+      "niveau": "4e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "4e/04_NOMINATIFS/Sinda_Chikhaoui/4e_Dossier_Individuel_Sinda_Chikhaoui.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Soustraction d'un négatif",
+        "Fractions équivalentes",
+        "Distributivité",
+        "Réduction avec constantes négatives",
+        "Aire du triangle"
+      ],
+      "points_d_appui_extraits": [
+        "Proportionnalité",
+        "Géométrie",
+        "Statistiques"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M4E_GEO_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_GEO_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M4E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_PROP_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M4E_STAT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Statistiques »."
+        },
+        {
+          "skill_id": "M4E_AIRE_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "L'aire du triangle est explicitement citée parmi les priorités du dossier."
+        },
+        {
+          "skill_id": "M4E_FRAC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M4E_LIT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M4E_LIT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M4E_REL_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M4E_REL_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M4E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Seules les fractions équivalentes sont citées ; aucune observation sur les dénominateurs égaux."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M4E_REL_01",
+        "P2": "M4E_LIT_02"
+      }
+    },
+    {
+      "student_id": "amine-mansouri",
+      "niveau": "3e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "3e/04_NOMINATIFS/Amine_Mansouri/3e_Dossier_Individuel_Amine_Mansouri.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Justifier les procédures",
+        "Réduire avec signes",
+        "Multiplier des fractions",
+        "Installer la trigonométrie",
+        "Calibrer la confiance"
+      ],
+      "points_d_appui_extraits": [
+        "Relatifs",
+        "Puissances",
+        "Équations",
+        "Proportionnalité",
+        "Pythagore",
+        "Statistiques — sous réserve d'explicitation"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M3E_EQ_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M3E_GEO_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M3E_PUIS_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M3E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_FRAC_02",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Le dossier écrit « statistiques — sous réserve d'explicitation » : la réussite existe mais la procédure n'est pas verbalisée."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M3E_LIT_02",
+        "P2": "M3E_TRIG_01"
+      }
+    },
+    {
+      "student_id": "elyes-kefi",
+      "niveau": "3e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "3e/04_NOMINATIFS/Elyes_Kefi/3e_Dossier_Individuel_Elyes_Kefi.md"
+      ],
+      "observations_extraites": [
+        {
+          "domaine": "Nombres relatifs",
+          "statut": "Solide",
+          "observation": "Produits, quotients et priorités correctement maîtrisés."
+        },
+        {
+          "domaine": "Fractions",
+          "statut": "À rectifier",
+          "observation": "Pour 2/3 × 9/4, croisement inversé donnant 8/27 au lieu de 3/2."
+        },
+        {
+          "domaine": "Puissances",
+          "statut": "Solide",
+          "observation": "Calcul et produit de puissances de même base réussis."
+        },
+        {
+          "domaine": "Calcul littéral",
+          "statut": "À rectifier",
+          "observation": "Distributivité correcte ; réduction erronée : −7 + 3 traité comme −10."
+        },
+        {
+          "domaine": "Équations",
+          "statut": "Solide",
+          "observation": "Deux équations du premier degré correctement résolues."
+        },
+        {
+          "domaine": "Proportionnalité",
+          "statut": "Solide",
+          "observation": "Prix unitaire et vitesse correctement mobilisés."
+        },
+        {
+          "domaine": "Géométrie",
+          "statut": "Solide",
+          "observation": "Pythagore utilisé correctement dans les deux configurations."
+        },
+        {
+          "domaine": "Trigonométrie",
+          "statut": "Solide",
+          "observation": "Cosinus et calcul d'angle correctement maîtrisés."
+        },
+        {
+          "domaine": "Statistiques",
+          "statut": "À rectifier",
+          "observation": "Une valeur oubliée dans la somme lors du calcul de la moyenne simple."
+        }
+      ],
+      "priorites_extraites": [
+        "Fractions : multiplication des numérateurs et des dénominateurs dans le bon ordre.",
+        "Calcul littéral : addition des constantes signées lors d'une réduction.",
+        "Statistiques : prise en compte de toutes les valeurs avant la division."
+      ],
+      "points_d_appui_extraits": [
+        "Nombres relatifs",
+        "Puissances",
+        "Équations",
+        "Proportionnalité",
+        "Géométrie",
+        "Trigonométrie"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M3E_EQ_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M3E_GEO_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Le dossier note explicitement « distributivité correcte »."
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M3E_PUIS_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M3E_FRAC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "L'observation du dossier porte uniquement sur le produit de fractions."
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Statistiques »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M3E_FRAC_02",
+        "P2": "M3E_LIT_02"
+      }
+    },
+    {
+      "student_id": "fares-laajili",
+      "niveau": "3e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "3e/04_NOMINATIFS/Fares_Laajili/3e_Dossier_Individuel_Fares_Laajili.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Produit de fractions",
+        "Pythagore sur les carrés",
+        "Cosinus versus sinus"
+      ],
+      "points_d_appui_extraits": [
+        "Relatifs",
+        "Puissances",
+        "Calcul littéral",
+        "Équations",
+        "Proportionnalité",
+        "Statistiques"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M3E_EQ_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M3E_PUIS_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Statistiques »."
+        },
+        {
+          "skill_id": "M3E_FRAC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M3E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Seul le produit de fractions est signalé dans les priorités."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M3E_FRAC_02",
+        "P2": "M3E_TRIG_01"
+      }
+    },
+    {
+      "student_id": "sarah-bargaoui",
+      "niveau": "3e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "3e/04_NOMINATIFS/Sarah_Bargaoui/3e_Dossier_Individuel_Sarah_Bargaoui.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Réduction avec signes",
+        "Équations",
+        "Proportionnalité",
+        "Pythagore longueur manquante",
+        "Trigonométrie",
+        "Moyenne"
+      ],
+      "points_d_appui_extraits": [
+        "Nombres relatifs",
+        "Fractions",
+        "Puissances"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M3E_FRAC_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_FRAC_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_PUIS_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M3E_EQ_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_GEO_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Statistiques »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M3E_LIT_02",
+        "P2": "M3E_EQ_01"
+      }
+    },
+    {
+      "student_id": "selim-mansouri",
+      "niveau": "3e",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "3e/04_NOMINATIFS/Selim_Mansouri/3e_Dossier_Individuel_Selim_Mansouri.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Signe d'un produit",
+        "Distributivité",
+        "Retour à l'unité",
+        "Pythagore",
+        "Fractions",
+        "Équations",
+        "Trigonométrie"
+      ],
+      "points_d_appui_extraits": [
+        "Puissances"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M3E_PUIS_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M3E_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M3E_LIT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_LIT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M3E_PROP_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M3E_REL_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Nombres relatifs »."
+        },
+        {
+          "skill_id": "M3E_EQ_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M3E_FRAC_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_FRAC_02",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M3E_TRIG_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M3E_STAT_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Statut « a diagnostiquer » porté au dossier individuel pour le domaine « Statistiques »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M3E_REL_01",
+        "P2": "M3E_LIT_01"
+      }
+    },
+    {
+      "student_id": "ahmed-bakir",
+      "niveau": "2nde",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "2nde/04_NOMINATIFS/Ahmed_Bakir/2nde_Dossier_Individuel_Ahmed_Bakir.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Priorités et signes",
+        "Fractions",
+        "Écriture scientifique normalisée",
+        "Identités remarquables",
+        "Équations",
+        "Pythagore/Thalès",
+        "Trigonométrie",
+        "Proportionnalité"
+      ],
+      "points_d_appui_extraits": [
+        "Règle des puissances de 10 ponctuellement réussie",
+        "Hausse simple de 15 % réussie"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M2DE_CALC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M2DE_EQ_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M2DE_EQ_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M2DE_FRAC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M2DE_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M2DE_PUIS_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M2DE_GEO_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M2DE_POURC_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M2DE_TRIG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Trigonométrie »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M2DE_CALC_01",
+        "P2": "M2DE_ALG_01"
+      }
+    },
+    {
+      "student_id": "noa-maniaci",
+      "niveau": "2nde",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "2nde/04_NOMINATIFS/Noa_Maniaci/2nde_Dossier_Individuel_Noa_Maniaci.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Priorités et signes",
+        "Fractions",
+        "Exposants négatifs",
+        "Double distributivité",
+        "Produit nul",
+        "Évolutions successives",
+        "Pythagore/Thalès",
+        "Trigonométrie"
+      ],
+      "points_d_appui_extraits": [
+        "Équation linéaire ponctuellement réussie",
+        "Réciproque 6-8-10 reconnue",
+        "Facteur d'aire 9 trouvé",
+        "Écriture scientifique ponctuellement correcte"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M2DE_ALG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul littéral »."
+        },
+        {
+          "skill_id": "M2DE_CALC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M2DE_EQ_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M2DE_FRAC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fractions »."
+        },
+        {
+          "skill_id": "M2DE_GEO_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Géométrie »."
+        },
+        {
+          "skill_id": "M2DE_POURC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Proportionnalité »."
+        },
+        {
+          "skill_id": "M2DE_PUIS_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Puissances »."
+        },
+        {
+          "skill_id": "M2DE_EQ_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Équations »."
+        },
+        {
+          "skill_id": "M2DE_TRIG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Trigonométrie »."
+        },
+        {
+          "skill_id": "M2DE_GEO_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Le dossier note « facteur d'aire 9 trouvé » : la partie agrandissement-réduction est ponctuellement réussie."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M2DE_EQ_02",
+        "P2": "M2DE_POURC_01"
+      }
+    },
+    {
+      "student_id": "ahmad-beldi-maths",
+      "niveau": "1ere_spe",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "1ere_spe/04_NOMINATIFS/Ahmad_Beldi/1ere_spe_Dossier_Individuel_Ahmad_Beldi.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Différence de carrés",
+        "Image/antécédent",
+        "Comparaison x²/x",
+        "Union/intersection/complémentaire",
+        "Certitude systématique"
+      ],
+      "points_d_appui_extraits": [
+        "Inéquations",
+        "Vecteurs",
+        "Droites et calcul numérique à consolider"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_INEQ_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_VECT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_VECT_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_ALG_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul algébrique »."
+        },
+        {
+          "skill_id": "M1RE_FONC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_FONC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_ALG_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Seule la factorisation est citée parmi les priorités ; le développement n'est pas signalé comme erroné."
+        },
+        {
+          "skill_id": "M1RE_DROIT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_POURC_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_POURC_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_DROIT_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_FREF_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_FREF_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_NUM_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M1RE_NUM_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Probabilités »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Probabilités »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M1RE_ALG_02",
+        "P2": "M1RE_FONC_02"
+      }
+    },
+    {
+      "student_id": "donia-khadhrani",
+      "niveau": "1ere_spe",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "1ere_spe/04_NOMINATIFS/Donia_Khadhrani/1ere_spe_Dossier_Individuel_Donia_Khadhrani.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Image/antécédent",
+        "Fonctions de référence",
+        "Inéquations",
+        "Coefficient directeur",
+        "Pourcentages",
+        "Union de probabilités"
+      ],
+      "points_d_appui_extraits": [
+        "Vecteurs",
+        "Procédures disponibles en calcul littéral et numérique"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M1RE_VECT_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_VECT_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_DROIT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_FONC_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_ALG_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul algébrique »."
+        },
+        {
+          "skill_id": "M1RE_ALG_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul algébrique »."
+        },
+        {
+          "skill_id": "M1RE_DROIT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_FONC_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_INEQ_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_POURC_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_POURC_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Probabilités »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Probabilités »."
+        },
+        {
+          "skill_id": "M1RE_FREF_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_FREF_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_NUM_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M1RE_NUM_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Calcul numérique »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M1RE_FONC_02",
+        "P2": "M1RE_INEQ_01"
+      }
+    },
+    {
+      "student_id": "malek-khadhrani",
+      "niveau": "1ere_spe",
+      "matiere": "Mathématiques",
+      "dossier_individuel": [
+        "1ere_spe/04_NOMINATIFS/Malek_Khadhrani/1ere_spe_Dossier_Individuel_Malek_Khadhrani.md"
+      ],
+      "observations_extraites": [],
+      "priorites_extraites": [
+        "Substitution négative",
+        "Image/antécédent",
+        "Fonction inverse",
+        "Coordonnées de vecteur",
+        "Colinéarité",
+        "Pente",
+        "Puissances"
+      ],
+      "points_d_appui_extraits": [
+        "Calcul littéral",
+        "Pourcentages et évolutions"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "M1RE_ALG_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Calcul algébrique »."
+        },
+        {
+          "skill_id": "M1RE_ALG_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Calcul algébrique »."
+        },
+        {
+          "skill_id": "M1RE_POURC_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_POURC_02",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Pourcentages »."
+        },
+        {
+          "skill_id": "M1RE_FONC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_FONC_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions »."
+        },
+        {
+          "skill_id": "M1RE_VECT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_VECT_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Vecteurs »."
+        },
+        {
+          "skill_id": "M1RE_DROIT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_FREF_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_FREF_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Fonctions de référence »."
+        },
+        {
+          "skill_id": "M1RE_INEQ_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_INEQ_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Inéquations »."
+        },
+        {
+          "skill_id": "M1RE_NUM_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M1RE_NUM_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Calcul numérique »."
+        },
+        {
+          "skill_id": "M1RE_DROIT_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Droites »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Probabilités »."
+        },
+        {
+          "skill_id": "M1RE_PROBA_02",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Probabilités »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "M1RE_FONC_01",
+        "P2": "M1RE_VECT_02"
+      }
+    },
+    {
+      "student_id": "ahmad-beldi-nsi",
+      "niveau": "1re_nsi",
+      "matiere": "NSI",
+      "dossier_individuel": [
+        "1re_nsi/05_NOMINATIFS/Ahmad_BELDI/1re_nsi_Dossier_Individuel_Ahmad_BELDI.md"
+      ],
+      "observations_extraites": [
+        {
+          "domaine": "Affectation",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence relevée au niveau 1 dans le tableau de suivi du dossier."
+        },
+        {
+          "domaine": "Conditions",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2."
+        },
+        {
+          "domaine": "Boucles",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence relevée au niveau 1."
+        },
+        {
+          "domaine": "Fonctions",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence relevée au niveau 1."
+        },
+        {
+          "domaine": "Listes",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence relevée au niveau 1."
+        },
+        {
+          "domaine": "Tables CSV",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2."
+        },
+        {
+          "domaine": "Autonomie",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence relevée au niveau 1."
+        }
+      ],
+      "priorites_extraites": [
+        "Modèle d'affectation : b = a copie la valeur, sans lien dynamique ultérieur.",
+        "x = x + 1 est une affectation, non une équation.",
+        "Négation d'une condition ; valeurs produites par range.",
+        "Indexation à partir de 0 et signification de len.",
+        "Paramètre, valeur renvoyée et None."
+      ],
+      "points_d_appui_extraits": [
+        "Web",
+        "Représentation binaire et données en tables : réussites hésitantes"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "NSI1_WEB_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Web »."
+        },
+        {
+          "skill_id": "NSI1_ACC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_AFF_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_BOUCLE_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_BOUCLE_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_FONC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_LIST_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Types construits »."
+        },
+        {
+          "skill_id": "NSI1_LOG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_TEST_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Qualité du code »."
+        },
+        {
+          "skill_id": "NSI1_CSV_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Données en tables »."
+        },
+        {
+          "skill_id": "NSI1_MUT_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Types construits »."
+        },
+        {
+          "skill_id": "NSI1_ALGO_01",
+          "statut_avant_s5": "non_travaille",
+          "preuve": "La recherche séquentielle et la dichotomie constituent le contenu de la séance 5 : elles ne pouvaient pas être acquises avant."
+        },
+        {
+          "skill_id": "NSI1_REP_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Représentation des données »."
+        },
+        {
+          "skill_id": "NSI1_RES_01",
+          "statut_avant_s5": "non_evalue",
+          "preuve": "Le dossier écrit « réseaux : niveau à situer » — cinq questions du test n'ont pas été traitées."
+        },
+        {
+          "skill_id": "NSI1_TAB_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « a installer » porté au dossier individuel pour le domaine « Données en tables »."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "NSI1_FONC_01",
+        "P2": "NSI1_BOUCLE_01"
+      }
+    },
+    {
+      "student_id": "ahmed-benhadj-salem",
+      "niveau": "1re_nsi",
+      "matiere": "NSI",
+      "dossier_individuel": [
+        "1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM/1re_nsi_Dossier_Individuel_Ahmed_BENHADJ_SALEM.md"
+      ],
+      "observations_extraites": [
+        {
+          "domaine": "Logique",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2 dans le tableau de suivi du dossier."
+        },
+        {
+          "domaine": "Boucles",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2."
+        },
+        {
+          "domaine": "Accumulateurs",
+          "statut": "Niveau initial 2",
+          "observation": "Erreur persistante documentée dans les deux bilans."
+        },
+        {
+          "domaine": "Fonctions",
+          "statut": "Niveau initial 3",
+          "observation": "Compétence relevée au niveau 3."
+        },
+        {
+          "domaine": "Tests",
+          "statut": "Niveau initial 1",
+          "observation": "Compétence la plus basse du profil."
+        },
+        {
+          "domaine": "Structures",
+          "statut": "Niveau initial 3",
+          "observation": "Compétence relevée au niveau 3."
+        },
+        {
+          "domaine": "CSV",
+          "statut": "Niveau initial 3",
+          "observation": "Compétence relevée au niveau 3."
+        },
+        {
+          "domaine": "Autonomie",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2."
+        },
+        {
+          "domaine": "Oral",
+          "statut": "Niveau initial 2",
+          "observation": "Compétence relevée au niveau 2."
+        }
+      ],
+      "priorites_extraites": [
+        "Négation d'une condition",
+        "Choix for / while",
+        "len et indices",
+        "None et valeur renvoyée",
+        "Accumulateurs",
+        "Tests et cas limites"
+      ],
+      "points_d_appui_extraits": [
+        "Représentation binaire",
+        "Web",
+        "Réseaux",
+        "Données en tables",
+        "Algorithmique et types construits théoriquement disponibles"
+      ],
+      "competences_derivees": [
+        {
+          "skill_id": "NSI1_REP_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Représentation des données »."
+        },
+        {
+          "skill_id": "NSI1_RES_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Réseaux »."
+        },
+        {
+          "skill_id": "NSI1_TAB_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Données en tables »."
+        },
+        {
+          "skill_id": "NSI1_WEB_01",
+          "statut_avant_s5": "acquis",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Web »."
+        },
+        {
+          "skill_id": "NSI1_ACC_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Erreur d'accumulateur documentée à la fois au positionnement Première et au positionnement de niveau Terminale."
+        },
+        {
+          "skill_id": "NSI1_AFF_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_BOUCLE_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_BOUCLE_02",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_LIST_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Le dossier signale des erreurs sur len et les indices malgré des structures au niveau 3."
+        },
+        {
+          "skill_id": "NSI1_LOG_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Statut « a rectifier » porté au dossier individuel pour le domaine « Programmation »."
+        },
+        {
+          "skill_id": "NSI1_TEST_01",
+          "statut_avant_s5": "fragile",
+          "preuve": "Compétence « Tests » relevée au niveau 1, la plus basse du profil."
+        },
+        {
+          "skill_id": "NSI1_CSV_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Données en tables ». Aucun item du diagnostic initial n'évalue cette compétence isolément."
+        },
+        {
+          "skill_id": "NSI1_FONC_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Compétence « Fonctions » relevée au niveau 3 ; seule la distinction print/return/None est signalée."
+        },
+        {
+          "skill_id": "NSI1_ALGO_01",
+          "statut_avant_s5": "non_travaille",
+          "preuve": "Contenu de la séance 5 ; théoriquement disponible d'après le dossier, mais non évalué."
+        },
+        {
+          "skill_id": "NSI1_MUT_01",
+          "statut_avant_s5": "en_voie_acquisition",
+          "preuve": "Statut « solide » porté au dossier individuel pour le domaine « Types construits ». Aucun item du diagnostic initial n'évalue cette compétence isolément."
+        }
+      ],
+      "axes_retenus": {
+        "P1": "NSI1_ACC_01",
+        "P2": "NSI1_TEST_01"
+      }
+    }
+  ]
+}

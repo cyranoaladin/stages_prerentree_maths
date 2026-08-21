@@ -1,5 +1,5 @@
-# 2nde_S4_ELEVE_Activite
-## Séance 4 — Choisir le bon théorème
+# 2nde — Séance 4 : Choisir le bon théorème
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

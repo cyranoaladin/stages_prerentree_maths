@@ -1,0 +1,365 @@
+{
+  "schema": "nexus-s5-bilan-facts-v2",
+  "student_id": "eleve-synthetique-test",
+  "student_name": "ELEVE SYNTHETIQUE",
+  "level": "Entrée en Quatrième",
+  "subject": "Mathématiques",
+  "note_sur_20": 12.0,
+  "success_rate_pct": 60.0,
+  "by_part": {
+    "A": {
+      "points": 4.0,
+      "max_points": 6,
+      "success_rate": 0.6667
+    },
+    "B": {
+      "points": 5.0,
+      "max_points": 8,
+      "success_rate": 0.625
+    },
+    "C": {
+      "points": 3.0,
+      "max_points": 6,
+      "success_rate": 0.5
+    }
+  },
+  "baseline_measure_available": false,
+  "progression_chiffree_possible": false,
+  "progression_chiffree_raison": "aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève",
+  "comparaison_qualitative": [
+    {
+      "skill_id": "M4E_AIRE_01",
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "statut_initial_qualitatif": "acquis",
+      "maitrise_finale": 4,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "forte",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "statut_initial_qualitatif": "fragile",
+      "maitrise_finale": 2,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_GEO_01",
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "statut_initial_qualitatif": "acquis",
+      "maitrise_finale": 0,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "label": "Symétrie centrale et caractérisation du parallélogramme",
+      "statut_initial_qualitatif": "acquis",
+      "maitrise_finale": 2,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_LIT_01",
+      "label": "Distributivité simple : développer k(a+b)",
+      "statut_initial_qualitatif": "en_voie_acquisition",
+      "maitrise_finale": 2,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "forte",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "label": "Réduction d'une expression avec constantes signées",
+      "statut_initial_qualitatif": "en_voie_acquisition",
+      "maitrise_finale": 1,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_PROP_01",
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "statut_initial_qualitatif": "acquis",
+      "maitrise_finale": 3,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_PROP_02",
+      "label": "Pourcentage d'une quantité, fréquence",
+      "statut_initial_qualitatif": "acquis",
+      "maitrise_finale": 3,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "statut_initial_qualitatif": "fragile",
+      "maitrise_finale": 3,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "statut_initial_qualitatif": "fragile",
+      "maitrise_finale": 3,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "faible",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "statut_initial_qualitatif": "non_evalue",
+      "maitrise_finale": 1,
+      "comparison_status": "indicative_skill_comparison",
+      "evidence_strength": "moyenne",
+      "lecture_autorisee": "confrontation indicative entre un statut de domaine et une performance finale ; aucun écart chiffré"
+    }
+  ],
+  "skills_demonstrated": [
+    {
+      "skill_id": "M4E_AIRE_01",
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "post_mastery": 4,
+      "evidence_strength": "forte",
+      "a_confirmer_a_distance": false
+    },
+    {
+      "skill_id": "M4E_PROP_01",
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "post_mastery": 3,
+      "evidence_strength": "faible",
+      "a_confirmer_a_distance": false
+    },
+    {
+      "skill_id": "M4E_PROP_02",
+      "label": "Pourcentage d'une quantité, fréquence",
+      "post_mastery": 3,
+      "evidence_strength": "faible",
+      "a_confirmer_a_distance": false
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "post_mastery": 3,
+      "evidence_strength": "faible",
+      "a_confirmer_a_distance": false
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "post_mastery": 3,
+      "evidence_strength": "faible",
+      "a_confirmer_a_distance": true
+    }
+  ],
+  "skills_fragile": [
+    {
+      "skill_id": "M4E_GEO_01",
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "post_mastery": 0,
+      "evidence_strength": "faible"
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "label": "Réduction d'une expression avec constantes signées",
+      "post_mastery": 1,
+      "evidence_strength": "moyenne"
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "post_mastery": 1,
+      "evidence_strength": "moyenne"
+    }
+  ],
+  "reussites_immediates_a_confirmer": [
+    "M4E_REL_02"
+  ],
+  "retention_a_verifier": [
+    {
+      "skill_id": "M4E_FRAC_02",
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "post_test_context": "immediate_after_remediation",
+      "retention_status": "not_yet_verified"
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "post_test_context": "immediate_after_remediation",
+      "retention_status": "not_yet_verified"
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "post_test_context": "first_worked_in_session_5",
+      "retention_status": "not_yet_verified"
+    }
+  ],
+  "contenus_nouveaux_hors_progression": [],
+  "etat_final_seul": [],
+  "dominant_error_codes": [
+    "CONCEPT",
+    "METHODE",
+    "JUSTIFICATION"
+  ],
+  "calibration_cells": {
+    "juste_confiance_haute": 0,
+    "juste_confiance_basse": 1,
+    "faux_confiance_basse": 0,
+    "faux_confiance_haute": 1,
+    "partiel_non_classe": 0
+  },
+  "priorities": [
+    {
+      "skill_id": "M4E_GEO_01",
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "priority_rank": "P1",
+      "reason": "maîtrise 0 sur 4, taux de réussite 0 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 0,
+      "success_rate": 0.0,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "METHODE"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "label": "Réduction d'une expression avec constantes signées",
+      "priority_rank": "P1",
+      "reason": "maîtrise 1 sur 4, taux de réussite 40 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 1,
+      "success_rate": 0.4,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT"
+      ]
+    },
+    {
+      "skill_id": "M4E_STAT_01",
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "priority_rank": "P2",
+      "reason": "maîtrise 1 sur 4, taux de réussite 33 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 1,
+      "success_rate": 0.3333,
+      "importance_n": "importante",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "LECTURE"
+      ]
+    },
+    {
+      "skill_id": "M4E_LIT_01",
+      "label": "Distributivité simple : développer k(a+b)",
+      "priority_rank": "P2",
+      "reason": "maîtrise 2 sur 4, taux de réussite 50 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.5,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "priority_rank": "P2",
+      "reason": "maîtrise 2 sur 4, taux de réussite 60 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.6,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CONCEPT",
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_GEO_02",
+      "label": "Symétrie centrale et caractérisation du parallélogramme",
+      "priority_rank": "P3",
+      "reason": "maîtrise 2 sur 4, taux de réussite 50 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 2,
+      "success_rate": 0.5,
+      "importance_n": "importante",
+      "dominant_error_codes": [
+        "JUSTIFICATION"
+      ]
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "priority_rank": "OK",
+      "reason": "maîtrise 4 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 4,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": [
+        "CALCUL"
+      ]
+    },
+    {
+      "skill_id": "M4E_PROP_01",
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_PROP_02",
+      "label": "Pourcentage d'une quantité, fréquence",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence importante pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "importante",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_REL_01",
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    },
+    {
+      "skill_id": "M4E_REL_02",
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "priority_rank": "OK",
+      "reason": "maîtrise 3 sur 4, taux de réussite 100 %, compétence critique pour l'entrée dans l'année",
+      "post_mastery": 3,
+      "success_rate": 1.0,
+      "importance_n": "critique",
+      "dominant_error_codes": []
+    }
+  ],
+  "warnings": [
+    "aucun écart de maîtrise n'est calculé : aucune mesure initiale nominative appariée : le dossier ne conserve qu'un statut qualitatif par domaine, pas les réponses de l'élève.",
+    "force de preuve faible pour : M4E_GEO_01, M4E_GEO_02, M4E_PROP_01, M4E_PROP_02, M4E_REL_01, M4E_REL_02. Ces niveaux de maîtrise sont indicatifs et ne doivent pas fonder une conclusion isolée.",
+    "compétences évaluées moins d'une heure après leur remédiation : M4E_FRAC_02, M4E_REL_02, M4E_STAT_01. La réussite y mesure une performance immédiate ; la rétention reste à vérifier par un contrôle différé en semaine 1 ou 2."
+  ],
+  "formulations_interdites": [
+    "maîtrise X vers Y",
+    "progression de N points",
+    "a progressé de",
+    "acquis durablement consolidé sur la seule évaluation finale"
+  ],
+  "usage": "toute phrase chiffrée du bilan doit renvoyer à une clé de ce fichier ; aucune affirmation quantitative ne doit être produite autrement, et aucune progression chiffrée ne peut être écrite"
+}

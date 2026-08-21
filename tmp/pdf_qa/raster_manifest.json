@@ -1,0 +1,1012 @@
+[
+  {
+    "pdf": "dist/pdf/1ere_spe/eleves/1ere_spe_S1_ELEVE_Activite.pdf",
+    "doc_id": "1ere_spe_S1_ELEVE_Activite",
+    "pages_total": 5,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "coverage": "full:5/5"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+    "doc_id": "1ere_spe_Evaluation_Finale_PROF_Corrige_Bareme",
+    "pages_total": 4,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "full:4/4"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_Guide_Formateur.pdf",
+    "doc_id": "1ere_spe_Guide_Formateur",
+    "pages_total": 16,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "coverage": "full:16/16"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_MASTER_Documentation_Stage.pdf",
+    "doc_id": "1ere_spe_MASTER_Documentation_Stage",
+    "pages_total": 113,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      109,
+      110,
+      111,
+      112,
+      113
+    ],
+    "coverage": "partial:21/113"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_Mini_Diagnostic_PROF_Corrige.pdf",
+    "doc_id": "1ere_spe_Mini_Diagnostic_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_S1_AIDES_Cartes.pdf",
+    "doc_id": "1ere_spe_S1_AIDES_Cartes",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_S1_PROF_Fiche.pdf",
+    "doc_id": "1ere_spe_S1_PROF_Fiche",
+    "pages_total": 7,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "coverage": "full:7/7"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/enseignants/1ere_spe_Tableau_Bord_Enseignant.pdf",
+    "doc_id": "1ere_spe_Tableau_Bord_Enseignant",
+    "pages_total": 8,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "coverage": "full:8/8"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/evaluations/1ere_spe_Evaluation_Finale_ELEVE.pdf",
+    "doc_id": "1ere_spe_Evaluation_Finale_ELEVE",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/evaluations/1ere_spe_Mini_Diagnostic_ELEVE.pdf",
+    "doc_id": "1ere_spe_Mini_Diagnostic_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Dossier_Individuel_Ahmad_Beldi.pdf",
+    "doc_id": "1ere_spe_Dossier_Individuel_Ahmad_Beldi",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Dossier_Individuel_Donia_Khadhrani.pdf",
+    "doc_id": "1ere_spe_Dossier_Individuel_Donia_Khadhrani",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Dossier_Individuel_Malek_Khadhrani.pdf",
+    "doc_id": "1ere_spe_Dossier_Individuel_Malek_Khadhrani",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_ELEVE.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Ahmad_Beldi_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Ahmad_Beldi_PROF_Corrige.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Ahmad_Beldi_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_ELEVE.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Donia_Khadhrani_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Donia_Khadhrani_PROF_Corrige.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Donia_Khadhrani_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_ELEVE.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Malek_Khadhrani_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/nominatifs-prives/1ere_spe_Remediation_Ciblee_Malek_Khadhrani_PROF_Corrige.pdf",
+    "doc_id": "1ere_spe_Remediation_Ciblee_Malek_Khadhrani_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/1ere_spe/supports/1ere_spe_S1_SUPPORTS_Manipulation.pdf",
+    "doc_id": "1ere_spe_S1_SUPPORTS_Manipulation",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/2nde/eleves/2nde_S1_ELEVE_Activite.pdf",
+    "doc_id": "2nde_S1_ELEVE_Activite",
+    "pages_total": 5,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "coverage": "full:5/5"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+    "doc_id": "2nde_Evaluation_Finale_PROF_Corrige_Bareme",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_Guide_Formateur.pdf",
+    "doc_id": "2nde_Guide_Formateur",
+    "pages_total": 15,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "coverage": "full:15/15"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_MASTER_Documentation_Stage.pdf",
+    "doc_id": "2nde_MASTER_Documentation_Stage",
+    "pages_total": 109,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "coverage": "partial:21/109"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_Mini_Diagnostic_PROF_Corrige.pdf",
+    "doc_id": "2nde_Mini_Diagnostic_PROF_Corrige",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_S1_AIDES_Cartes.pdf",
+    "doc_id": "2nde_S1_AIDES_Cartes",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_S1_PROF_Fiche.pdf",
+    "doc_id": "2nde_S1_PROF_Fiche",
+    "pages_total": 7,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "coverage": "full:7/7"
+  },
+  {
+    "pdf": "dist/pdf/2nde/enseignants/2nde_Tableau_Bord_Enseignant.pdf",
+    "doc_id": "2nde_Tableau_Bord_Enseignant",
+    "pages_total": 8,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "coverage": "full:8/8"
+  },
+  {
+    "pdf": "dist/pdf/2nde/evaluations/2nde_Evaluation_Finale_ELEVE.pdf",
+    "doc_id": "2nde_Evaluation_Finale_ELEVE",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/2nde/evaluations/2nde_Mini_Diagnostic_ELEVE.pdf",
+    "doc_id": "2nde_Mini_Diagnostic_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Dossier_Individuel_Ahmed_Bakir.pdf",
+    "doc_id": "2nde_Dossier_Individuel_Ahmed_Bakir",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Dossier_Individuel_Noa_Maniaci.pdf",
+    "doc_id": "2nde_Dossier_Individuel_Noa_Maniaci",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Remediation_Ciblee_Ahmed_Bakir_ELEVE.pdf",
+    "doc_id": "2nde_Remediation_Ciblee_Ahmed_Bakir_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Remediation_Ciblee_Ahmed_Bakir_PROF_Corrige.pdf",
+    "doc_id": "2nde_Remediation_Ciblee_Ahmed_Bakir_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Remediation_Ciblee_Noa_Maniaci_ELEVE.pdf",
+    "doc_id": "2nde_Remediation_Ciblee_Noa_Maniaci_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/2nde/nominatifs-prives/2nde_Remediation_Ciblee_Noa_Maniaci_PROF_Corrige.pdf",
+    "doc_id": "2nde_Remediation_Ciblee_Noa_Maniaci_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/2nde/supports/2nde_S1_SUPPORTS_Manipulation.pdf",
+    "doc_id": "2nde_S1_SUPPORTS_Manipulation",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/eleves/3e_S1_ELEVE_Activite.pdf",
+    "doc_id": "3e_S1_ELEVE_Activite",
+    "pages_total": 4,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "full:4/4"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+    "doc_id": "3e_Evaluation_Finale_PROF_Corrige_Bareme",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_Guide_Formateur.pdf",
+    "doc_id": "3e_Guide_Formateur",
+    "pages_total": 15,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "coverage": "full:15/15"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_MASTER_Documentation_Stage.pdf",
+    "doc_id": "3e_MASTER_Documentation_Stage",
+    "pages_total": 107,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      103,
+      104,
+      105,
+      106,
+      107
+    ],
+    "coverage": "partial:21/107"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_Mini_Diagnostic_PROF_Corrige.pdf",
+    "doc_id": "3e_Mini_Diagnostic_PROF_Corrige",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_S1_AIDES_Cartes.pdf",
+    "doc_id": "3e_S1_AIDES_Cartes",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_S1_PROF_Fiche.pdf",
+    "doc_id": "3e_S1_PROF_Fiche",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/3e/enseignants/3e_Tableau_Bord_Enseignant.pdf",
+    "doc_id": "3e_Tableau_Bord_Enseignant",
+    "pages_total": 7,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "coverage": "full:7/7"
+  },
+  {
+    "pdf": "dist/pdf/3e/evaluations/3e_Evaluation_Finale_ELEVE.pdf",
+    "doc_id": "3e_Evaluation_Finale_ELEVE",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/evaluations/3e_Mini_Diagnostic_ELEVE.pdf",
+    "doc_id": "3e_Mini_Diagnostic_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Dossier_Individuel_Amine_Mansouri.pdf",
+    "doc_id": "3e_Dossier_Individuel_Amine_Mansouri",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Dossier_Individuel_Fares_Laajili.pdf",
+    "doc_id": "3e_Dossier_Individuel_Fares_Laajili",
+    "pages_total": 5,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "coverage": "full:5/5"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Dossier_Individuel_Sarah_Bargaoui.pdf",
+    "doc_id": "3e_Dossier_Individuel_Sarah_Bargaoui",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Dossier_Individuel_Selim_Mansouri.pdf",
+    "doc_id": "3e_Dossier_Individuel_Selim_Mansouri",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Amine_Mansouri_ELEVE.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Amine_Mansouri_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Amine_Mansouri_PROF_Corrige.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Amine_Mansouri_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Fares_Laajili_ELEVE.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Fares_Laajili_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Fares_Laajili_PROF_Corrige.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Fares_Laajili_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Sarah_Bargaoui_ELEVE.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Sarah_Bargaoui_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Sarah_Bargaoui_PROF_Corrige.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Sarah_Bargaoui_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Selim_Mansouri_ELEVE.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Selim_Mansouri_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/3e/nominatifs-prives/3e_Remediation_Ciblee_Selim_Mansouri_PROF_Corrige.pdf",
+    "doc_id": "3e_Remediation_Ciblee_Selim_Mansouri_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/3e/supports/3e_S1_SUPPORTS_Manipulation.pdf",
+    "doc_id": "3e_S1_SUPPORTS_Manipulation",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/eleves/4e_S1_ELEVE_Activite.pdf",
+    "doc_id": "4e_S1_ELEVE_Activite",
+    "pages_total": 4,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "coverage": "full:4/4"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_Evaluation_Finale_PROF_Corrige_Bareme.pdf",
+    "doc_id": "4e_Evaluation_Finale_PROF_Corrige_Bareme",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_Guide_Formateur.pdf",
+    "doc_id": "4e_Guide_Formateur",
+    "pages_total": 13,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "coverage": "full:13/13"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_MASTER_Documentation_Stage.pdf",
+    "doc_id": "4e_MASTER_Documentation_Stage",
+    "pages_total": 94,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "coverage": "partial:21/94"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_Mini_Diagnostic_PROF_Corrige.pdf",
+    "doc_id": "4e_Mini_Diagnostic_PROF_Corrige",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_S1_AIDES_Cartes.pdf",
+    "doc_id": "4e_S1_AIDES_Cartes",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_S1_PROF_Fiche.pdf",
+    "doc_id": "4e_S1_PROF_Fiche",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/4e/enseignants/4e_Tableau_Bord_Enseignant.pdf",
+    "doc_id": "4e_Tableau_Bord_Enseignant",
+    "pages_total": 7,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "coverage": "full:7/7"
+  },
+  {
+    "pdf": "dist/pdf/4e/evaluations/4e_Evaluation_Finale_ELEVE.pdf",
+    "doc_id": "4e_Evaluation_Finale_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/evaluations/4e_Mini_Diagnostic_ELEVE.pdf",
+    "doc_id": "4e_Mini_Diagnostic_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Dossier_Individuel_Fares_Darghouth.pdf",
+    "doc_id": "4e_Dossier_Individuel_Fares_Darghouth",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Dossier_Individuel_Sinda_Chikhaoui.pdf",
+    "doc_id": "4e_Dossier_Individuel_Sinda_Chikhaoui",
+    "pages_total": 6,
+    "pages_sampled": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "coverage": "full:6/6"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Remediation_Ciblee_Fares_Darghouth_ELEVE.pdf",
+    "doc_id": "4e_Remediation_Ciblee_Fares_Darghouth_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Remediation_Ciblee_Fares_Darghouth_PROF_Corrige.pdf",
+    "doc_id": "4e_Remediation_Ciblee_Fares_Darghouth_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Remediation_Ciblee_Sinda_Chikhaoui_ELEVE.pdf",
+    "doc_id": "4e_Remediation_Ciblee_Sinda_Chikhaoui_ELEVE",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  },
+  {
+    "pdf": "dist/pdf/4e/nominatifs-prives/4e_Remediation_Ciblee_Sinda_Chikhaoui_PROF_Corrige.pdf",
+    "doc_id": "4e_Remediation_Ciblee_Sinda_Chikhaoui_PROF_Corrige",
+    "pages_total": 3,
+    "pages_sampled": [
+      1,
+      2,
+      3
+    ],
+    "coverage": "full:3/3"
+  },
+  {
+    "pdf": "dist/pdf/4e/supports/4e_S1_SUPPORTS_Manipulation.pdf",
+    "doc_id": "4e_S1_SUPPORTS_Manipulation",
+    "pages_total": 2,
+    "pages_sampled": [
+      1,
+      2
+    ],
+    "coverage": "full:2/2"
+  }
+]

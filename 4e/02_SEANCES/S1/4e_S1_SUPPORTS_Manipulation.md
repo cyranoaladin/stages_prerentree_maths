@@ -1,5 +1,5 @@
-# 4e_S1_SUPPORTS_Manipulation
-## Séance 1 — Calculer avec du sens
+# 4e — Séance 1 : Calculer avec du sens
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

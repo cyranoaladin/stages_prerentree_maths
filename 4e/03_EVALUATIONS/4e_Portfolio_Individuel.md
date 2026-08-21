@@ -1,5 +1,5 @@
-# 4e_Portfolio_Individuel
-## Entrée en Quatrième - Mathématiques
+# 4e — Portfolio individuel de suivi
+## Grille d’auto-évaluation
 
 **Nom et prénom :** ..............................................................................  
 **Établissement :** ..............................................................................  

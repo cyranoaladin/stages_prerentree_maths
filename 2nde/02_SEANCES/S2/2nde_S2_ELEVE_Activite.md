@@ -1,5 +1,5 @@
-# 2nde_S2_ELEVE_Activite
-## Séance 2 — Construire l’algèbre du lycée
+# 2nde — Séance 2 : Construire l’algèbre du lycée
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

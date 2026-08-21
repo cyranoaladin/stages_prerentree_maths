@@ -1,0 +1,379 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Dossier enseignant — confidentiel}{S5 — Ahmed BAKIR — usage enseignant}
+\begin{document}
+\nexuscover{SÉANCE 5 --- DOSSIER ENSEIGNANT}{Profil, déroulé, corrigés et barème}{Ahmed BAKIR}{Entrée en Seconde générale et technologique}{Mathématiques --- Reconstruction des procédures et contrôle systématique}
+\begin{methodbox}\small\textbf{Programme de référence.} nouveau programme de mathématiques de Seconde --- BO n° 14 du 2 avril 2026 MENE2602914A. Transition visée : acquis de Troisième 2025-2026, relevant du programme de cycle 4 alors en vigueur, vers le nouveau programme de Seconde applicable dès 2026-2027.\end{methodbox}
+\begin{keybox}\textbf{DOCUMENT CONFIDENTIEL --- USAGE ENSEIGNANT.} Contient les corrigés, le barème et des données nominatives. Ne pas remettre à l'élève ni le laisser visible pendant la séance.\end{keybox}
+\sectiontitle{1. Profil synthétique}
+\begin{methodbox}
+\textbf{Diagnostic initial.} Diagnostic initial (18 items). Sept domaines avec certitudes erronées ; proportionnalité à installer. Les procédures doivent être reconstruites et contrôlées.
+\end{methodbox}
+\subsectiontitle{Points d'appui documentés}
+\begin{itemize}\item Règle des puissances de 10 ponctuellement réussie\item Hausse simple de 15 \% réussie\end{itemize}
+\subsectiontitle{Difficultés documentées}
+\begin{itemize}\item Priorités et signes\item Fractions\item Écriture scientifique normalisée\item Identités remarquables\item Équations\item Pythagore/Thalès\item Trigonométrie\item Proportionnalité\end{itemize}
+\begin{warningbox}\textbf{Limite de la reconstruction.} Les tableaux d'observation séance par séance du dossier individuel sont vierges : il n'existe aucune preuve documentée entre le diagnostic initial et aujourd'hui. Tout statut porté ci-dessous décrit un \emph{état de départ}, jamais une acquisition constatée.\end{warningbox}
+\newpage\sectiontitle{2. Matrice de trajectoire --- état avant la séance 5}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{27mm} X >{\scriptsize}p{16mm} >{\scriptsize}p{20mm} >{\scriptsize\centering\arraybackslash}p{9mm}}
+\rowcolor{Navy}\color{white}\scriptsize skill\_id & \color{white}Compétence & \color{white}Travaillée en & \color{white}Statut avant S5 & \color{white}Prio. \\
+M2DE\_ALG\_01 & $\bullet$ Double distributivité et identités remarquables & S2 & fragile & P1 \\
+M2DE\_CALC\_01 & $\bullet$ Priorités opératoires, signes et puissance d'un relatif & S1 & fragile & P1 \\
+M2DE\_EQ\_01 & Équation du premier degré, inconnue dans les deux membres & S2 & fragile & P1 \\
+M2DE\_EQ\_02 & Équation produit nul & S2 & fragile & P1 \\
+M2DE\_FRAC\_01 & Somme et quotient de fractions & S1 & fragile & P1 \\
+M2DE\_GEO\_01 & Théorème de Pythagore, direct et réciproque & S4 & fragile & P1 \\
+M2DE\_PUIS\_01 & Puissances de 10, exposants négatifs, écriture scientifique & S1 & fragile & P1 \\
+M2DE\_GEO\_02 & Théorème de Thalès et agrandissement-réduction & S4 & fragile & P2 \\
+M2DE\_POURC\_01 & Pourcentages, coefficient multiplicateur, évolutions successives & S3 & en voie & P2 \\
+M2DE\_TRIG\_01 & Rapports trigonométriques dans le triangle rectangle & S4 & fragile & P2 \\
+\end{tabularx}
+\par\vspace{1mm}\small\textbf{Lecture de la colonne « Statut avant S5 » :} elle décrit l'état constaté au \emph{positionnement initial}, jamais une acquisition constatée depuis. « acquis » signifie « acquis au positionnement initial » ; « en voie » signifie « en voie d'acquisition ».
+\par\small$\bullet$ compétence ciblée par les phases 2 et 3 de la séance. La colonne « Prio. » est \emph{provisoire} : la priorité définitive est produite par \code{tools/analyze_s5.py} après la correction.
+\begin{warningbox}\textbf{Effet de récence.} Les compétences suivantes sont retravaillées pendant cette séance, puis évaluées moins d'une heure plus tard : \code{M2DE_ALG_01}, \code{M2DE_CALC_01}. Une réussite y mesure une \emph{performance immédiate}, pas une consolidation durable. Le plan de rentrée prévoit pour elles un contrôle différé en semaine 1 ou 2 ; aucun bilan ne doit écrire « acquis durablement » sur cette seule preuve.\end{warningbox}
+\sectiontitle{3. Pourquoi ces activités, pour cet élève}
+\begin{goalbox}\textbf{Objectif de la séance :} Ne plus considérer une règle comme acquise sans pouvoir l'expliquer et la contrôler — conseil explicite du dossier — en commençant par les priorités opératoires puis par les identités remarquables.\end{goalbox}
+\subsectiontitle{Axe prioritaire (phase 2, 25 min) --- Priorités opératoires, signes et puissance d'un nombre négatif}
+Le diagnostic signale des certitudes erronées sur les priorités et les signes ; ces automatismes conditionnent tout le calcul algébrique de Seconde.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M2DE_CALC_01}.
+\subsectiontitle{Second axe (phase 3, 20 min) --- Double distributivité et identités remarquables}
+Les identités remarquables figurent parmi les priorités du dossier ; elles sont l'outil de base des chapitres d'algèbre de Seconde.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M2DE_ALG_01}.
+\subsectiontitle{Équilibre commun / individuel}
+Sur les 75 minutes : \textbf{51 min} (68\,\%) relèvent des objectifs communs du niveau et \textbf{24 min} (32\,\%) ciblent le profil individuel. Sur l'évaluation : \textbf{14 points} de noyau commun (70.0\,\%) et \textbf{6 points} individualisés (30.0\,\%).
+\newpage\sectiontitle{4. Déroulé minute par minute}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{18mm} p{34mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Phase & \color{white}Conduite & \color{white}Indicateur observable \\
+0--10 min & Réactiver les automatismes de calcul et d'algèbre qui condit & Individuel, sans carte de rappel pendant 7 minutes, puis 3 minutes de mise en commun. & Au moins 4 réponses exactes sur 5 ; la certitude est renseignée avant toute vérification. \\
+10--35 min & Priorités opératoires, signes et puissance d'un nombre négat & Rappel bref, exemple guidé au tableau, puis exercices en autonomie. Aide donnée seulement après une tentative écrite. & Trois réussites consécutives sans aide sur la compétence visée. \\
+35--55 min & Double distributivité et identités remarquables & Pas d'exemple guidé : l'élève démarre seul. Intervention uniquement sur demande. & Deux réussites autonomes ; le contrôle est écrit sans qu'on le demande. \\
+55--70 min & De la Troisième à la Seconde : intervalles et langage des fo & Travail écrit, correction collective courte à la fin. Ne pas transformer ce temps en cours magistral. & L'élève relie explicitement un acquis de l'année écoulée à un attendu de l'année à venir. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le conte & Lecture des cinq règles, puis remise de l'évaluation. Aucune information sur son contenu. & Les deux engagements sont écrits. \\
+75--120 min & Évaluation finale & Individuel, sans document. Partie A environ 10 min, B environ 20 min, C environ 15 min. & Somme des durées cibles : 37 min, marge de 8 min. \\
+\end{tabularx}
+\newpage\sectiontitle{5. Corrigé du livret de travail}
+\subsectiontitle{Phase 1 --- réactivation}
+\begin{enumerate}
+\item \code{M2DE_CALC_01} --- $-5 + (-12) + 2 = \mathbf{-15}$. Le produit se calcule avant les additions.
+\item \code{M2DE_FRAC_01} --- $\frac{5}{6}\times\frac{9}{10}=\frac{45}{60}=\mathbf{\frac{3}{4}}$.
+\item \code{M2DE_ALG_01} --- $x^2+7x-3x-21=\mathbf{x^2+4x-21}$. Contrôle pour $x=1$ : $(-2)\times 8=-16$ et $1+4-21=-16$.
+\item \code{M2DE_EQ_02} --- Un produit est nul si l'un des facteurs est nul : $x=\mathbf{2}$ ou $x=\mathbf{-4}$.
+\item \code{M2DE_PUIS_01} --- $\mathbf{5{,}8\times 10^{-4}}$ : un seul chiffre non nul avant la virgule.
+\end{enumerate}
+\subsectiontitle{Phase 2 --- Priorités opératoires, signes et puissance d'un nombre négatif}
+\begin{enumerate}
+\item $-7-10=\mathbf{-17}$.
+\item $9 - (-27) = \mathbf{36}$.
+\item $16$ et $-16$ : dans le second cas, seule la puissance de $2$ est calculée, le signe reste devant.
+\item $-3 + 12 = \mathbf{9}$.
+\item $-5 - 3\times(-5) = -5 + 15 = \mathbf{10}$.
+\item Il a calculé $(-3+4)\times(-2)$. Résultat exact : $-3-8=\mathbf{-11}$. Contrôle : nommer l'opération prioritaire avant d'écrire le premier chiffre.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{METHODE} --- lecture de gauche à droite sans priorité
+\item \textsc{NOTATION} --- parenthèses de $(-a)^n$ ignorées
+\item \textsc{CONCEPT} --- règle des signes du produit appliquée à une somme
+\end{itemize}
+\subsectiontitle{Phase 3 --- Double distributivité et identités remarquables}
+\begin{enumerate}
+\item $x^2-9x+2x-18=\mathbf{x^2-7x-18}$.
+\item $\mathbf{x^2+12x+36}$.
+\item $\mathbf{9x^2-24x+16}$.
+\item $\mathbf{9x^2-49}$ : le double produit se simplifie.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- double produit oublié dans le carré d'une somme ou d'une différence
+\item \textsc{CONCEPT} --- $(a-b)^2$ confondu avec $a^2-b^2$
+\item \textsc{CALCUL} --- signe du double produit erroné
+\end{itemize}
+\subsectiontitle{Phase 4 --- pont vers Seconde}
+
+\textbf{A.} $x>2 \to \left]2\,;+\infty\right[$ ; $x\le 5 \to \left]-\infty\,;5\right]$ ;
+$-2\le x<3 \to [-2\,;3[$ ; $x$ quelconque $\to \mathbb{R}=\left]-\infty\,;+\infty\right[$.
+Sur l'axe : crochet fermé en $-2$, crochet ouvert en $3$.
+
+\textbf{B.} 1. $f(x)=x^2-3x$. \quad 2. $f(4)=16-12=4$ ; $f(-2)=(-2)^2-3\times(-2)=4+6=10$.
+3. Tableau : $10$ ; $4$ ; $0$ ; $-2$ ; $0$ ; $4$.
+4. $x^2-3x=0$ s'écrit $x(x-3)=0$, donc $x=0$ ou $x=3$ : deux antécédents de $0$.
+5. Vrai : $f(3)=9-9=0$.
+
+\textbf{Observation à noter :} oublier les parenthèses dans $(-2)^2$ est une erreur de \textsc{NOTATION}
+qui produit une erreur de \textsc{CALCUL} ; ne trouver qu'un seul antécédent de $0$ est une erreur de \textsc{METHODE}.
+
+\newpage\sectiontitle{6. Corrigé de l'évaluation et barème analytique}
+\begin{keybox}\textbf{Total : 20 points sur 20.} Noyau commun 14 pts (70.0\,\%), items individualisés 6 pts (30.0\,\%). Somme des durées cibles : 37 minutes.\end{keybox}
+\itemhead{A1 --- \code{M2DE_CALC_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $-13$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $5\times(-3)=-15$\item $-4-15+6=-13$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_CALC\_01 & automatisme & $-13$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+METHODE & calcul de gauche à droite : $(-4+5)\times(-3)$ \\
+CONCEPT & $-(-6)$ traité comme $-6$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} socle du calcul algébrique et de l'étude de signes en Seconde
+\par\vspace{2mm}
+\itemhead{A2 --- \code{M2DE_FRAC_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\dfrac{19}{24}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item dénominateur commun $24$\item $\frac{9}{24}+\frac{10}{24}=\frac{19}{24}$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_FRAC\_01 & automatisme & $\frac{19}{24}$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & numérateurs et dénominateurs additionnés séparément \\
+CALCUL & facteur de conversion appliqué au seul dénominateur \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} calcul exact exigé en Seconde, y compris avec des lettres
+\par\vspace{2mm}
+\itemhead{A3 --- \code{M2DE_PUIS_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $10^{-1}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $10^{5}\times 10^{-2}=10^{3}$\item $10^{3}\div 10^{4}=10^{-1}$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_PUIS\_01 & automatisme & $10^{-1}$ (ou $0{,}1$) exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & exposants multipliés au lieu d'être additionnés \\
+CALCUL & signe de l'exposant négatif perdu \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} notation scientifique utilisée en physique et en statistiques dès septembre
+\par\vspace{2mm}
+\itemhead{A4 --- \code{M2DE_ALG_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $x^2 - 10x + 25$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $(a-b)^2=a^2-2ab+b^2$\item $x^2-2\times 5x+25$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_ALG\_01 & automatisme & $x^2-10x+25$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & double produit oublié : $x^2+25$ \\
+CALCUL & signe du double produit erroné \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} identité indispensable à la forme canonique et à la factorisation
+\par\vspace{2mm}
+\itemhead{A5 --- \code{M2DE_CALC_01} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $-35$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $(-3)^3=-27$\item $2\times(-4)=-8$\item $-27-8=-35$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_CALC\_01 & automatisme & $-35$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $(-3)^3$ pris égal à $27$ \\
+METHODE & somme calculée avant le produit \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} signes et priorités, socle de l'algèbre de Seconde
+\par\vspace{2mm}
+\itemhead{A6 --- \code{M2DE_PUIS_01} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $2{,}05\times 10^{-4}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item un seul chiffre non nul avant la virgule\item quatre décalages vers la droite\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_PUIS\_01 & automatisme & écriture scientifique exacte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & exposant positif \\
+NOTATION & mantisse non comprise entre 1 et 10 \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} notation utilisée en physique-chimie et en statistiques dès septembre
+\par\vspace{2mm}
+\itemhead{B1 --- \code{M2DE_EQ_01} --- noyau commun}{2}{5.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $x=5$ (vérification : $17=17$) ; $x=-3{,}5$ ou $x=3$ ; vérification de $x=3$ : $(2\times 3+7)(3-3)=13\times 0=0$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $5x-2x=7+8$ donc $3x=15$ et $x=5$\item vérification : $5\times 5-8=17$ et $2\times 5+7=17$\item produit nul : $2x+7=0$ ou $x-3=0$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 0.75 & M2DE\_EQ\_01 & procedure & $x=5$ et vérification écrite \\
+c2 & 0.75 & M2DE\_EQ\_02 & procedure & les deux solutions exactes et propriété nommée, quelle que soit la méthode \\
+c3 & 0.5 & M2DE\_EQ\_02 & controle & vérification de la solution entière conduite jusqu'au produit nul \\
+\bottomrule\end{tabularx}
+\begin{successbox}\small\textbf{Méthodes différentes acceptées, sans perte de points :} développer $(2x+7)(x-3)$ puis résoudre l'équation obtenue : la méthode est mathématiquement valide, seulement moins directe. Elle reçoit la totalité des points si les deux solutions sont exactes et si la propriété est nommée\end{successbox}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & une seule solution donnée pour l'équation produit \\
+JUSTIFICATION & propriété du produit nul non nommée alors qu'elle est demandée \\
+CONTROLE & vérification demandée à la question 1 mais non effectuée \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} outil de base pour les équations du second degré et les études de signe
+\par\vspace{2mm}
+\itemhead{B2 --- \code{M2DE_POURC_01} --- noyau commun}{2}{3.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $280$ TND puis $246{,}40$ TND ; $1{,}12\times 0{,}88=0{,}9856 \neq 1$ : le prix final est inférieur de $1{,}44\,\%$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $250\times 1{,}12=280$\item $280\times 0{,}88=246{,}40$\item coefficient global $1{,}12\times 0{,}88=0{,}9856$, soit une baisse de $1{,}44\,\%$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_POURC\_01 & automatisme & les deux prix intermédiaires exacts \\
+c2 & 1 & M2DE\_POURC\_01 & justification & coefficient global calculé et conclusion argumentée \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & les deux pourcentages compensés : réponse « prix identique » \\
+METHODE & coefficients additionnés au lieu d'être multipliés \\
+JUSTIFICATION & conclusion donnée sans le coefficient global \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} évolutions successives réutilisées en Seconde puis en Première
+\par\vspace{2mm}
+\itemhead{B3 --- \code{M2DE_GEO_01} --- noyau commun}{2}{5.5}
+\begin{graybox}\small\textbf{Réponse attendue :} $BC = 15$ cm ; $AN = 4$ cm ; $MN = 5$ cm ; périmètre de $AMN$ $= 3+4+5 = 12$ cm.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $BC^2=81+144=225$ donc $BC=15$\item Thalès : $\frac{AM}{AB}=\frac{AN}{AC}=\frac{MN}{BC}=\frac{3}{9}=\frac{1}{3}$\item $AN=12\times\frac13=4$ ; $MN=15\times\frac13=5$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 0.75 & M2DE\_GEO\_01 & procedure & $BC=15$ cm avec la relation écrite \\
+c2 & 0.75 & M2DE\_GEO\_02 & procedure & $AN$ et $MN$ exacts, théorème de Thalès cité \\
+c3 & 0.5 & M2DE\_GEO\_02 & procedure & périmètre exact, avec l'unité \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+METHODE & rapport de réduction inversé ($3$ au lieu de $\frac13$) \\
+JUSTIFICATION & théorème de Thalès non cité \\
+LECTURE & $AM$ confondu avec $MB$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} configurations réinvesties en géométrie repérée et en vecteurs
+\par\vspace{2mm}
+\itemhead{B4 --- \code{M2DE_ALG_01} --- item individualisé}{2}{3.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $2x^2 + 7x - 15$ ; contrôle : $(-1)\times 6 = -6$ et $2 + 7 - 15 = -6$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $2x^2 + 10x - 3x - 15$\item $2x^2 + 7x - 15$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_ALG\_01 & procedure & développement complet et réduit \\
+c2 & 1 & M2DE\_ALG\_01 & controle & contrôle mené sur les deux écritures \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & deux produits seulement \\
+CALCUL & signe du terme $-3x$ perdu \\
+CONTROLE & contrôle effectué sur une seule écriture \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} outil de base des chapitres d'algèbre de Seconde
+\par\vspace{2mm}
+\itemhead{C1 --- \code{M2DE_ALG_01} --- noyau commun}{4}{8.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $A(x)=x(x-1)=x^2-x$ ; $A(4)=12$ ; diagonale $=5$ m ; prix final $=1\,264{,}38$ TND environ, supérieur car $0{,}85\times 1{,}19=1{,}0115>1$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $A(x)=x(x-1)=x^2-x$\item $A(4)=16-4=12$ et $4\times 3=12$ : les deux voies concordent\item $d^2=4^2+3^2=25$ donc $d=5$ m\item $1250\times 0{,}85=1062{,}50$ puis $\times 1{,}19 = 1264{,}375$\item $0{,}85\times 1{,}19=1{,}0115>1$ : hausse de $1{,}15\,\%$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_ALG\_01 & transfert & expression développée et réduite exacte \\
+c2 & 0.5 & M2DE\_ALG\_01 & controle & $A(4)$ exact et vérifié par les deux voies \\
+c3 & 1 & M2DE\_GEO\_01 & transfert & diagonale exacte, théorème cité \\
+c4 & 1.5 & M2DE\_POURC\_01 & transfert & prix final exact, coefficient global et conclusion argumentée \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & $A(x)$ écrit $x^2-1$ : distributivité appliquée au carré \\
+CONTROLE & aucune des deux voies n'est utilisée pour vérifier $A(4)$ \\
+METHODE & $-15\,\%$ et $+19\,\%$ additionnés en $+4\,\%$ \\
+NOTATION & unité monétaire absente de la conclusion \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} modéliser, contrôler par deux voies, décider : conduite attendue en Seconde
+\par\vspace{2mm}
+\itemhead{C2 --- \code{M2DE_POURC_01} --- item individualisé}{2}{4}
+\begin{graybox}\small\textbf{Réponse attendue :} $69$ TND ; $69\times 0{,}85 = 58{,}65$ TND, donc le prix final est inférieur au prix initial.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $60\times 1{,}15 = 69$\item $69\times 0{,}85 = 58{,}65$\item coefficient global $1{,}15\times 0{,}85 = 0{,}9775$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M2DE\_POURC\_01 & automatisme & prix après hausse exact \\
+c2 & 1 & M2DE\_POURC\_01 & justification & réfutation appuyée sur un calcul explicite \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & les deux pourcentages jugés compensés \\
+METHODE & baisse appliquée au prix initial \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} évolutions successives, réinvesties en Seconde puis en Première
+\par\vspace{2mm}
+\newpage\sectiontitle{7. Correspondance diagnostic initial $\leftrightarrow$ évaluation finale}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{25mm} >{\ttfamily\scriptsize}p{22mm} >{\ttfamily\scriptsize}p{16mm} X}
+\rowcolor{Navy}\color{white}Item & \color{white}\scriptsize skill\_id & \color{white}\scriptsize baseline & \color{white}\scriptsize comparaison & \color{white}Lecture \\
+A1 & M2DE\_CALC\_01 & 2N\_TI\_Q01 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A2 & M2DE\_FRAC\_01 & 2N\_TI\_Q03 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A3 & M2DE\_PUIS\_01 & 2N\_TI\_Q05 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A4 & M2DE\_ALG\_01 & 2N\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A5 & M2DE\_CALC\_01 & 2N\_TI\_Q02 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A6 & M2DE\_PUIS\_01 & 2N\_TI\_Q06 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B1 & M2DE\_EQ\_01 & 2N\_TI\_Q10 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B2 & M2DE\_POURC\_01 & 2N\_TI\_Q12 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B3 & M2DE\_GEO\_01 & 2N\_TI\_Q15 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B4 & M2DE\_ALG\_01 & 2N\_TI\_Q07 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C1 & M2DE\_ALG\_01 & 2N\_TI\_Q07+2N\_TI\_Q13... & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C2 & M2DE\_POURC\_01 & 2N\_TI\_Q12 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+\end{tabularx}
+\begin{keybox}\textbf{Aucun écart chiffré ne sera calculé.} Les réponses de l'élève aux 18 questions du positionnement initial n'ont pas été conservées : le dossier n'en garde qu'un statut par domaine. Un statut qualitatif n'est pas une mesure : le convertir en score pour en soustraire un autre produirait un chiffre sans valeur. Le script d'analyse impose donc \code{mastery_delta = null} pour toutes les compétences, et se limite à une confrontation \emph{indicative} entre le statut initial et l'état final.\end{keybox}
+\sectiontitle{8. Clés d'interprétation après correction}
+\subsectiontitle{Échelle de maîtrise par compétence}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{10mm} X}
+\toprule Niveau & Signification \\ \midrule
+0 & non maîtrisé \\
+1 & très fragile \\
+2 & partiellement maîtrisé \\
+3 & maîtrisé \\
+4 & maîtrise solide / transfert réussi \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Croiser réussite et certitude}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{40mm} X}
+\toprule Situation & Conduite à tenir \\ \midrule
+Juste, certitude 3--4 & acquis disponible : faire transférer sur une situation nouvelle. \\
+Juste, certitude 1--2 & presque acquis : faire expliciter la procédure, puis réutiliser. \\
+Faux, certitude 1--2 & notion à installer ou procédure à reprendre pas à pas. \\
+Faux, certitude 3--4 & priorité absolue : confronter la conviction avant toute reprise technique. \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Distinguer les niveaux d'erreur}
+Une erreur de \textsc{CALCUL} isolée, non reproduite sur les items voisins de même compétence, ne vaut pas non-maîtrise conceptuelle. La chaîne à reconstituer est : \textbf{connaissance} $\rightarrow$ \textbf{choix de méthode} $\rightarrow$ \textbf{exécution} $\rightarrow$ \textbf{justification} $\rightarrow$ \textbf{contrôle}. Les codes d'erreur du barème situent l'écart sur cette chaîne.
+\sectiontitle{9. Points d'observation propres à cet élève}
+\begin{itemize}\item Le dossier documente des certitudes erronées sur sept domaines : chaque réponse doit être accompagnée d'un contrôle écrit, non d'une conviction.\item Indicateur du dossier : trois réussites consécutives par conception, et diminution des erreurs données avec certitude 4.\item Faire verbaliser l'opération prioritaire avant l'écriture du premier chiffre.\end{itemize}
+\subsectiontitle{Grille de saisie de la séance}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{26mm} X X X}
+\toprule Phase & Aide maximale utilisée & Réussite autonome & Observation \\ \midrule
+Phase 1 & & & \\[6mm]
+Phase 2 & & & \\[6mm]
+Phase 3 & & & \\[6mm]
+Phase 4 & & & \\[6mm]
+\bottomrule\end{tabularx}
+\begin{warningbox}\textbf{Avant d'écrire quoi que ce soit sur les acquis de cet élève :} tant que l'évaluation n'est pas corrigée et analysée par \code{tools/analyze_s5.py}, aucune formulation du type « maîtrise désormais », « forte progression » ou « objectif atteint » ne doit être employée. Les formulations admises sont : « à vérifier lors de l'évaluation finale », « observé en séance, à confirmer », « hypothèse de consolidation ».\end{warningbox}
+\end{document}

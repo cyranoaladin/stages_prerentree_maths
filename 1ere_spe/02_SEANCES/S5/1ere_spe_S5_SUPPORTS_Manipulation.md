@@ -1,5 +1,5 @@
-# 1ere_spe_S5_SUPPORTS_Manipulation
-## Séance 5 — Suites numériques, Python et évaluation de synthèse
+# 1re Spécialité Mathématiques — Séance 5 : Suites numériques, Python et évaluation de synthèse
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

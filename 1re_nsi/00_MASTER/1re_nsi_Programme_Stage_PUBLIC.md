@@ -11,7 +11,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="subtitle">Python : des fondations au mini-projet</div>
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Document de présentation - familles et élèves</div>
 </div>
-# Un stage Python conçu pour démarrer la spécialité sans lacunes
+## Un stage Python conçu pour démarrer la spécialité sans lacunes
 
 La NSI n’ayant pas été enseignée auparavant, le stage commence au bon niveau : aucune connaissance préalable de Python n’est exigée. L’objectif est de construire en dix heures un socle opérationnel permettant de suivre la Première NSI avec méthode.
 

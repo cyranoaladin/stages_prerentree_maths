@@ -1,5 +1,5 @@
-# 2nde_S5_SUPPORTS_Manipulation
-## Séance 5 — Relier, contrôler et expliquer
+# 2nde — Séance 5 : Relier, contrôler et expliquer
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

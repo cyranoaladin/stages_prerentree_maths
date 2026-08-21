@@ -1,5 +1,5 @@
-# 1ere_spe_S3_SUPPORTS_Manipulation
-## Séance 3 — Vecteurs, droites et transition vers le produit scalaire
+# 1re Spécialité Mathématiques — Séance 3 : Vecteurs, droites et transition vers le produit scalaire
+## SUPPORTS M
 
 > **Nexus Réussite - Stage de pré-rentrée 2026-2027**
 

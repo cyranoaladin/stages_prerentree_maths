@@ -1,0 +1,386 @@
+{
+  "schema": "nexus-s5-answer-key-v1",
+  "generated_on": "2026-08-20",
+  "confidential": true,
+  "student_id": "ahmad-beldi-nsi",
+  "total_points": 20,
+  "answers": [
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A1",
+      "ref": "A1",
+      "skill_id": "NSI1_LIST_01",
+      "skills": [
+        "NSI1_LIST_01"
+      ],
+      "points": 1,
+      "expected_answer": "\\code{8} ; \\code{2} ; \\code{5} ; dernier indice \\code{4}.",
+      "steps": [
+        "les indices vont de $0$ à $\\text{len}(L)-1$"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A1_c1",
+          "points": 1,
+          "skill_id": "NSI1_LIST_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les quatre réponses exactes"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A2",
+      "ref": "A2",
+      "skill_id": "NSI1_LOG_01",
+      "skills": [
+        "NSI1_LOG_01"
+      ],
+      "points": 1,
+      "expected_answer": "\\code{x > 8} ; \\code{(x <= 2) and (x != 0)}.",
+      "steps": [
+        "négation d'une comparaison",
+        "négation d'un \\code{or} : un \\code{and} de négations"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A2_c1",
+          "points": 1,
+          "skill_id": "NSI1_LOG_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux négations exactes"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A3",
+      "ref": "A3",
+      "skill_id": "NSI1_BOUCLE_01",
+      "skills": [
+        "NSI1_BOUCLE_01"
+      ],
+      "points": 1,
+      "expected_answer": "\\code{3, 7, 11} ; trois tours.",
+      "steps": [
+        "départ à 3, pas de 4, borne 12 exclue"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A3_c1",
+          "points": 1,
+          "skill_id": "NSI1_BOUCLE_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "valeurs et nombre de tours exacts"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A4",
+      "ref": "A4",
+      "skill_id": "NSI1_AFF_01",
+      "skills": [
+        "NSI1_AFF_01"
+      ],
+      "points": 1,
+      "expected_answer": "\\code{a} vaut \\code{10}, \\code{b} vaut \\code{6} : \\code{b} a reçu une copie de la valeur, il n'est pas lié à \\code{a}.",
+      "steps": [
+        "\\code{b = a} copie la valeur 6",
+        "\\code{a = a + 4} réaffecte seulement \\code{a}"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A4_c1",
+          "points": 1,
+          "skill_id": "NSI1_AFF_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les deux valeurs exactes et une explication correcte"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A5",
+      "ref": "A5",
+      "skill_id": "NSI1_FONC_01",
+      "skills": [
+        "NSI1_FONC_01"
+      ],
+      "points": 1,
+      "expected_answer": "\\code{r} vaut \\code{None} : la fonction affiche mais ne renvoie rien.",
+      "steps": [
+        "absence de \\code{return}"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A5_c1",
+          "points": 1,
+          "skill_id": "NSI1_FONC_01",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "\\code{None} et explication correcte"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_A6",
+      "ref": "A6",
+      "skill_id": "NSI1_BOUCLE_01",
+      "skills": [
+        "NSI1_BOUCLE_01"
+      ],
+      "points": 1,
+      "expected_answer": "Six tours ; \\code{2, 3, 4, 5, 6, 7, 8}.",
+      "steps": [
+        "\\code{range(n)} produit $n$ valeurs à partir de 0",
+        "\\code{range(a, b)} s'arrête avant \\code{b}"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_A6_c1",
+          "points": 1,
+          "skill_id": "NSI1_BOUCLE_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "nombre de tours et valeurs exacts"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_B1",
+      "ref": "B1",
+      "skill_id": "NSI1_ACC_01",
+      "skills": [
+        "NSI1_ACC_01"
+      ],
+      "points": 2,
+      "expected_answer": "\\code{total} : 4, 13, 15, 22 ; \\code{n} : 1, 2, 3, 4. Finalement \\code{total = 22} (somme des valeurs) et \\code{n = 4} (nombre de valeurs parcourues).",
+      "steps": [
+        "accumulation successive des valeurs",
+        "comptage indépendant du contenu"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B1_c1",
+          "points": 1,
+          "skill_id": "NSI1_ACC_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "tableau d'état complet et exact"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B1_c2",
+          "points": 1,
+          "skill_id": "NSI1_ACC_01",
+          "evidence_type": "communication",
+          "subpart": "2",
+          "desc": "valeurs finales exactes et rôle de chaque variable correctement énoncé"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_B2",
+      "ref": "B2",
+      "skill_id": "NSI1_FONC_01",
+      "skills": [
+        "NSI1_FONC_01"
+      ],
+      "points": 2,
+      "expected_answer": "\\code{m} vaut \\code{None} car la fonction affiche sans renvoyer ; il faut remplacer \\code{print(...)} par \\code{return total / len(valeurs)} ; l'appel \\code{moyenne([])} provoque une division par zéro.",
+      "steps": [
+        "absence de \\code{return} : la fonction renvoie \\code{None}",
+        "correction par \\code{return}",
+        "cas limite de la liste vide : \\code{len(valeurs)} vaut 0"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B2_c1",
+          "points": 1.25,
+          "skill_id": "NSI1_FONC_01",
+          "evidence_type": "justification",
+          "subpart": "1",
+          "desc": "\\code{None} identifié et justifié par l'absence de \\code{return}"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B2_c2",
+          "points": 0.75,
+          "skill_id": "NSI1_FONC_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "correction par \\code{return} exacte et complète"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_B3",
+      "ref": "B3",
+      "skill_id": "NSI1_CSV_01",
+      "skills": [
+        "NSI1_CSV_01",
+        "NSI1_TAB_01"
+      ],
+      "points": 2,
+      "expected_answer": "\\code{temperature} se convertit en \\code{float} et \\code{humidite} en \\code{int} ; l'opérateur \\code{+} appliqué à deux chaînes les concatène et produit \\code{\"26.51\"} ; une métadonnée décrit le fichier lui-même — date de production, capteur d'origine, unité de mesure, encodage — alors qu'une donnée du tableau décrit un enregistrement.",
+      "steps": [
+        "conversion obligatoire avant tout calcul",
+        "\\code{+} entre deux chaînes est une concaténation",
+        "une métadonnée porte sur le fichier, une donnée sur un enregistrement"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B3_c1",
+          "points": 0.75,
+          "skill_id": "NSI1_CSV_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "colonnes et types de conversion exacts"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B3_c2",
+          "points": 0.5,
+          "skill_id": "NSI1_CSV_01",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "concaténation correctement expliquée par le type des opérandes"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B3_c3",
+          "points": 0.75,
+          "skill_id": "NSI1_TAB_01",
+          "evidence_type": "communication",
+          "subpart": "3",
+          "desc": "métadonnée pertinente et distinction avec une donnée du tableau"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_B4",
+      "ref": "B4",
+      "skill_id": "NSI1_LIST_01",
+      "skills": [
+        "NSI1_LIST_01",
+        "NSI1_MUT_01"
+      ],
+      "points": 2,
+      "expected_answer": "\\code{10} ; \\code{3} ; dernier indice \\code{2}. Après les deux instructions, \\code{L} contient \\code{[10, 4, 7, 9]} : \\code{M} et \\code{L} désignent le même objet liste.",
+      "steps": [
+        "indices de 0 à $\\text{len}(L)-1$",
+        "\\code{M = L} ne crée pas de copie : c'est un alias"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B4_c1",
+          "points": 1.0,
+          "skill_id": "NSI1_LIST_01",
+          "evidence_type": "automatisme",
+          "subpart": "1",
+          "desc": "les trois valeurs exactes, dont le dernier indice valide"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_B4_c2",
+          "points": 1.0,
+          "skill_id": "NSI1_MUT_01",
+          "evidence_type": "justification",
+          "subpart": "2",
+          "desc": "contenu de \\code{L} exact et alias correctement expliqué"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_C1",
+      "ref": "C1",
+      "skill_id": "NSI1_ALGO_01",
+      "skills": [
+        "NSI1_ALGO_01",
+        "NSI1_TEST_01"
+      ],
+      "points": 4,
+      "expected_answer": "\\code{if mesures[i][\"id\"] == identifiant:} puis \\code{return i} ; les résultats sont \\code{2} et \\code{-1} ; test sur liste vide : \\code{chercher([], \"C01\")} doit renvoyer \\code{-1} ; la recherche dichotomique divise par deux la zone de recherche à chaque étape, à la condition que la liste soit triée.",
+      "steps": [
+        "accès à la clé d'un dictionnaire à l'intérieur d'une liste",
+        "parcours complet puis valeur sentinelle $-1$",
+        "cas limite : liste vide",
+        "précondition de tri, coût logarithmique"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C1_c1",
+          "points": 1.5,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "transfert",
+          "subpart": "1",
+          "desc": "les deux trous complétés correctement"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C1_c2",
+          "points": 0.75,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "procedure",
+          "subpart": "2",
+          "desc": "les deux résultats exacts, dont la valeur d'absence"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C1_c3",
+          "points": 0.75,
+          "skill_id": "NSI1_TEST_01",
+          "evidence_type": "transfert",
+          "subpart": "2",
+          "desc": "test sur liste vide, avec son résultat attendu"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C1_c4",
+          "points": 1.0,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "communication",
+          "subpart": "3",
+          "desc": "gain et précondition de la dichotomie correctement énoncés"
+        }
+      ]
+    },
+    {
+      "item_id": "1RE_NSI_AHMAD_BELDI_C2",
+      "ref": "C2",
+      "skill_id": "NSI1_ALGO_01",
+      "skills": [
+        "NSI1_ALGO_01"
+      ],
+      "points": 2,
+      "expected_answer": "\\code{if L[i] < 0:} puis \\code{return i} et \\code{return -1} ; le résultat est \\code{2}.",
+      "steps": [
+        "parcours par indices",
+        "arrêt à la première occurrence",
+        "valeur sentinelle en cas d'absence"
+      ],
+      "methodes_alternatives_acceptees": [],
+      "criteria": [
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C2_c1",
+          "points": 1,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "procedure",
+          "subpart": "1",
+          "desc": "les trois trous complétés correctement"
+        },
+        {
+          "criterion_id": "1RE_NSI_AHMAD_BELDI_C2_c2",
+          "points": 1,
+          "skill_id": "NSI1_ALGO_01",
+          "evidence_type": "automatisme",
+          "subpart": "2",
+          "desc": "résultat \\code{2} exact"
+        }
+      ]
+    }
+  ]
+}

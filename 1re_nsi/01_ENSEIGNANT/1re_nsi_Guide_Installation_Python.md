@@ -12,7 +12,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 <div class="meta">5 séances de 2 heures - 10 heures<br>Python 3 - théorie, pratique, tests et projet<br>Guide famille et élève</div>
 </div>
 
-# Configuration recommandée
+## Configuration recommandée
 
 - un ordinateur portable par élève ;
 - Python 3.11 ou supérieur ;
@@ -21,7 +21,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 - un dossier local de travail sauvegardé ;
 - le pack de code élève correspondant, sans solution.
 
-# Installation
+## Installation
 
 ## Windows et macOS
 
@@ -43,7 +43,7 @@ Installer Python 3 et Thonny avec le gestionnaire de paquets de la distribution 
 python3 --version
 ```
 
-# Packs de code à utiliser
+## Packs de code à utiliser
 
 Dans `09_PACKS_CODE/` :
 
@@ -52,7 +52,7 @@ Dans `09_PACKS_CODE/` :
 - `1re_nsi_CODE_Ahmed_BENHADJ_SALEM.zip` : fichiers et consignes du parcours Reprise/Examen ;
 - `1re_nsi_CODE_ENSEIGNANT.zip` : solutions et tests - à ne jamais copier sur un poste élève.
 
-# Arborescence conseillée
+## Arborescence conseillée
 
 ```text
 Premiere_NSI/
@@ -64,7 +64,7 @@ Premiere_NSI/
 └── sauvegardes/
 ```
 
-# Vérification de l’environnement
+## Vérification de l’environnement
 
 Créer `test_installation.py` :
 
@@ -78,7 +78,7 @@ assert 2 + 2 == 4
 
 Le programme doit s’exécuter sans erreur.
 
-# Règles de sauvegarde
+## Règles de sauvegarde
 
 - ne jamais écraser la dernière version qui fonctionne ;
 - utiliser des noms comme `projet_v01.py`, `projet_v02.py` ;
@@ -87,6 +87,6 @@ Le programme doit s’exécuter sans erreur.
 - ne jamais stocker de mot de passe, clé ou donnée personnelle dans un script ;
 - ne pas utiliser de vraies données d’élèves.
 
-# En cas de problème
+## En cas de problème
 
 Noter le message exact, le système, la version de Python, le fichier et l’étape qui échoue. Joindre une capture du message complet ; ne pas se contenter de « ça ne marche pas ».

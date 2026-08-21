@@ -1,5 +1,5 @@
-# Dossier individuel - Malek Khadhrani
-## Entrée en Première générale - Spécialité mathématiques
+# 1re Spécialité Mathématiques — Dossier individuel — Malek Khadhrani
+## Synthèse et profil élève
 
 > **DOCUMENT CONFIDENTIEL - DONNEES NOMINATIVES**  
 > A conserver dans le dossier pédagogique de l’élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.

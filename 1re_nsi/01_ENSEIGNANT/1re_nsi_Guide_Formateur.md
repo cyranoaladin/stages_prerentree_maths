@@ -13,7 +13,7 @@ subject: "Stage de pré-rentrée - Première NSI"
 </div>
 <div class="confidential">DOCUMENT PÉDAGOGIQUE CONFIDENTIEL - contient des éléments nominatifs.</div>
 
-# 1. Principes de conduite
+## 1. Principes de conduite
 
 ## 1.1 Posture
 
@@ -43,7 +43,7 @@ Pour les activités communes, alterner toutes les 12 à 15 minutes :
 - **navigateur** : lit la spécification, anticipe le résultat, contrôle les tests ;
 - puis inversion des rôles.
 
-# 2. Diagnostic de départ
+## 2. Diagnostic de départ
 
 ## Ahmad BELDI
 
@@ -53,7 +53,7 @@ Le bilan montre une programmation encore fragile : 13 questions traitées sur 18
 
 Le bilan de Première montre quatre domaines solides mais une programmation à 55,6 %. Les erreurs portent sur la négation, le choix `for`/`while`, `len` et `None`. Un bilan de niveau Terminale met aussi en évidence une erreur d’accumulateur. L’enjeu est la fiabilité sous contrainte, pas la découverte théorique.
 
-# 3. Routine de séance
+## 3. Routine de séance
 
 1. rituel sans ordinateur ;
 2. prédiction du comportement d’un code ;
@@ -64,7 +64,7 @@ Le bilan de Première montre quatre domaines solides mais une programmation à 5
 7. tests et revue ;
 8. exit ticket et mise à jour du tableau de bord.
 
-# 4. Barème de compétences
+## 4. Barème de compétences
 
 | Niveau | Description |
 |---:|---|
@@ -74,7 +74,7 @@ Le bilan de Première montre quatre domaines solides mais une programmation à 5
 | 3 | réussit seul, explique et teste |
 | 4 | adapte à un problème nouveau et aide à valider une solution |
 
-# 5. Déroulé des séances
+## 5. Déroulé des séances
 
 ## Séance 1
 
@@ -111,7 +111,7 @@ Le bilan de Première montre quatre domaines solides mais une programmation à 5
 - **Ahmed** : cahier des charges seul, tests supplémentaires et comparaison d’algorithmes ;
 - **preuve attendue** : programme exécutable, documenté, testé et expliqué oralement.
 
-# 6. Questions de relance
+## 6. Questions de relance
 
 - « quelle est la valeur de cette variable avant la ligne ? »
 - « que produit exactement `range` ? »
@@ -122,7 +122,7 @@ Le bilan de Première montre quatre domaines solides mais une programmation à 5
 - « le code modifie-t-il la liste d’origine ? »
 - « quel est le coût quand la liste double ? »
 
-# 7. Protocole de correction d’un bug
+## 7. Protocole de correction d’un bug
 
 1. reproduire le bug ;
 2. réduire l’exemple ;
@@ -133,7 +133,7 @@ Le bilan de Première montre quatre domaines solides mais une programmation à 5
 7. relancer tout le jeu de tests ;
 8. retirer les affichages de débogage inutiles.
 
-# 8. Critères de fin de stage
+## 8. Critères de fin de stage
 
 - aucun mélange entre affectation et comparaison ;
 - conditions et négations exactes ;

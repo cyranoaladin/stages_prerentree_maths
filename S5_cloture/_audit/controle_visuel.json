@@ -1,0 +1,219 @@
+{
+  "schema": "nexus-s5-controle-visuel-v1",
+  "genere_le": "2026-08-20",
+  "methode": "rasterisation des PDF à 72-80 ppp avec pdftoppm, dans un répertoire temporaire créé par mktemp, puis inspection page par page. Aucun fichier de la livraison n'est supprimé ni modifié par le contrôle.",
+  "pages_inspectees": [
+    {
+      "document": "4e / Ines KEFI / S5_TRAVAIL",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "objet": "couverture, feuille de route, phase 1, phase 2 avec figure TikZ"
+    },
+    {
+      "document": "4e / Ines KEFI / S5_EVALUATION",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "objet": "parties A, B et C, zones de réponse, encadrés de certitude, espace de brouillon"
+    },
+    {
+      "document": "4e / Ines KEFI / S5_ENSEIGNANT",
+      "pages": [
+        1,
+        2
+      ],
+      "objet": "page de garde confidentielle, matrice de trajectoire"
+    },
+    {
+      "document": "4e / Fares DARGHOUTH / S5_ENSEIGNANT",
+      "pages": [
+        1
+      ],
+      "objet": "première page"
+    },
+    {
+      "document": "3e / Elyes KEFI / S5_ENSEIGNANT",
+      "pages": [
+        2
+      ],
+      "objet": "matrice de trajectoire, tableau long"
+    },
+    {
+      "document": "3e / Selim MANSOURI / S5_TRAVAIL",
+      "pages": [
+        3
+      ],
+      "objet": "phase de consolidation"
+    },
+    {
+      "document": "3e / Sarah BARGAOUI / S5_TRAVAIL",
+      "pages": [
+        6
+      ],
+      "objet": "dernière page, phase 5, absence de page blanche"
+    },
+    {
+      "document": "2nde / Noa MANIACI / S5_TRAVAIL",
+      "pages": [
+        5
+      ],
+      "objet": "phase 3, encadré de rappel"
+    },
+    {
+      "document": "2nde / Ahmed BAKIR / S5_TRAVAIL",
+      "pages": [
+        4
+      ],
+      "objet": "phase 3, identités remarquables, espaces de réponse"
+    },
+    {
+      "document": "2nde / Ahmed BAKIR / S5_ENSEIGNANT",
+      "pages": [
+        11
+      ],
+      "objet": "dernière page, grille de saisie"
+    },
+    {
+      "document": "1ere_spe / Malek KHADHRANI / S5_TRAVAIL",
+      "pages": [
+        5
+      ],
+      "objet": "phase 4, tableaux de taux de variation"
+    },
+    {
+      "document": "1ere_spe / Donia KHADHRANI / S5_ENSEIGNANT",
+      "pages": [
+        6
+      ],
+      "objet": "barème analytique, en-tête"
+    },
+    {
+      "document": "1ere_spe / Ahmad BELDI / S5_EVALUATION",
+      "pages": [
+        3
+      ],
+      "objet": "partie B"
+    },
+    {
+      "document": "1re_nsi / Ahmad BELDI / S5_TRAVAIL",
+      "pages": [
+        4
+      ],
+      "objet": "phase de consolidation avec code Python"
+    },
+    {
+      "document": "1re_nsi / Ahmad BELDI / S5_ENSEIGNANT",
+      "pages": [
+        5
+      ],
+      "objet": "corrigé et barème analytique, code inline"
+    },
+    {
+      "document": "1re_nsi / Ahmed BENHADJ SALEM / S5_TRAVAIL",
+      "pages": [
+        5,
+        6
+      ],
+      "objet": "phase 3, tests et assertions"
+    },
+    {
+      "document": "1re_nsi / Ahmed BENHADJ SALEM / S5_EVALUATION",
+      "pages": [
+        4
+      ],
+      "objet": "extrait CSV en listing, zones de réponse"
+    },
+    {
+      "document": "3e / Sarah BARGAOUI / S5_TRAVAIL (après correction)",
+      "pages": [
+        6
+      ],
+      "objet": "vérification de la correction de la phase 5"
+    }
+  ],
+  "couverture": {
+    "niveaux_couverts": [
+      "4e",
+      "3e",
+      "2nde",
+      "1ere_spe",
+      "1re_nsi"
+    ],
+    "matieres_couvertes": [
+      "Mathématiques",
+      "NSI"
+    ],
+    "types_de_document_couverts": [
+      "S5_TRAVAIL",
+      "S5_EVALUATION",
+      "S5_ENSEIGNANT"
+    ],
+    "premieres_pages": true,
+    "dernieres_pages": true,
+    "pages_avec_tableaux": true,
+    "pages_avec_figures_tikz": true,
+    "pages_avec_code": true,
+    "pages_avec_nombreuses_zones_de_reponse": true
+  },
+  "defauts_detectes_et_corriges": [
+    {
+      "defaut": "collision entre l'en-tête gauche et l'en-tête droit sur les dossiers enseignants",
+      "correction": "en-tête droit raccourci en « Dossier enseignant — confidentiel » et composé en \\small"
+    },
+    {
+      "defaut": "la ligne « Certitude » et la ligne « Contrôle » se chevauchaient à l'intérieur des encadrés (un \\hfill ne s'étire pas de façon fiable dans un tcolorbox)",
+      "correction": "macros \\certline et \\certbox réécrites sur deux lignes distinctes"
+    },
+    {
+      "defaut": "la ligne d'aide graduée débordait sur une seconde ligne",
+      "correction": "libellés raccourcis dans la macro \\aideline"
+    },
+    {
+      "defaut": "tableau « le fil des cinq séances » mal aligné verticalement",
+      "correction": "remplacé par une liste à puces à étiquettes"
+    },
+    {
+      "defaut": "pages remplies au tiers à cause d'un saut de page systématique entre les phases et entre les parties de l'évaluation",
+      "correction": "sauts de page remplacés par \\needspace, sauf avant la partie A ; espaces de réponse portés à deux lignes minimum en partie A et élargis dans les phases de consolidation"
+    },
+    {
+      "defaut": "une seule ligne de réponse pour des exercices de consolidation traités au stylo",
+      "correction": "table SPACE_UP dans le générateur : chaque exercice de phase 2 et 3 gagne une ligne"
+    },
+    {
+      "defaut": "espace de brouillon isolé sur une page presque vide en partie A",
+      "correction": "déplacé en fin de partie C, dimensionné au tiers de la hauteur de texte"
+    },
+    {
+      "defaut": "libellé « Espace de brouillon — non corrigé » déclenchant à tort le contrôle anti-corrigé",
+      "correction": "libellé remplacé par « non relevé »"
+    },
+    {
+      "defaut": "caractères Unicode mathématiques (∪, ×, −, ²) issus des dossiers sources, non compilables en pdfLaTeX",
+      "correction": "table de substitution TEX_SUBST dans le générateur"
+    },
+    {
+      "defaut": "colonne trop étroite dans le tableau d'engagement de la phase 5 : coupures « systémati-quement » et « der-nier »",
+      "correction": "tableau supprimé, remplacé par deux lignes pleine largeur avec filet de réponse calculé sur \\linewidth"
+    }
+  ],
+  "defauts_restants": [
+    {
+      "constat": "certaines pages de livret de travail se terminent au quart inférieur vide lorsque la phase suivante réclame 62 mm de hauteur",
+      "appreciation": "accepté : la coupure d'une phase entre deux pages serait plus gênante en séance que l'espace résiduel, qui reste utilisable comme brouillon"
+    }
+  ],
+  "controles_automatiques_associes": {
+    "undefined_control_sequence": 0,
+    "references_cassees": 0,
+    "overfull_hbox": 0,
+    "pages_blanches_accidentelles": 0
+  }
+}

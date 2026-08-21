@@ -1,5 +1,5 @@
-# 3e_S3_ELEVE_Activite
-## Séance 3 — Construire et justifier
+# 3e — Séance 3 : Construire et justifier
+## ELEVE A
 
 **Nom et prénom :** ..............................................................................  
 **Date :** ....................................................

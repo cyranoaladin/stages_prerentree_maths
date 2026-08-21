@@ -1,0 +1,356 @@
+{
+  "schema": "nexus-s5-level-blueprint-v1",
+  "generated_on": "2026-08-20",
+  "level_key": "4e",
+  "label": "Entrée en Quatrième",
+  "subject": "Mathématiques",
+  "year_prev": "Cinquième",
+  "year_next": "Quatrième",
+  "curriculum_reference": {
+    "annee_scolaire_visee": "2026-2027",
+    "programme_applique_a_l_eleve": {
+      "cycle": "cycle 4",
+      "texte": "programme de cycle 4 en vigueur pour la classe de Quatrième en 2026-2027",
+      "remarque": "un nouveau programme de cycle 4 a été publié en 2026, mais son application est progressive : Cinquième en 2026-2027, Quatrième en 2027-2028, Troisième en 2028-2029. Les élèves entrant en Quatrième à la rentrée 2026 ne relèvent donc PAS de la nouvelle progression.",
+      "nouvelle_progression_applicable": false,
+      "annee_d_application_pour_ce_niveau": "2027-2028"
+    },
+    "transition": "acquis de Cinquième 2025-2026 vers la Quatrième 2026-2027",
+    "attendus_de_fin_annee_n_moins_1": "Cinquième",
+    "source_de_la_reference": "audit indépendant du 21 août 2026, section 9 ; à confirmer auprès du Bulletin officiel avant diffusion externe",
+    "verifie_par_un_humain": false
+  },
+  "baseline_instrument": {
+    "name": "Positionnement de pré-rentrée — Mathématiques, entrée en Quatrième",
+    "file": "4e/03_EVALUATIONS/4e_Test_Initial.pdf",
+    "items": 18,
+    "minutes": 25,
+    "format": "QCM 4 choix + certitude 1-4"
+  },
+  "sessions": {
+    "S1": "Calculer avec du sens (relatifs, fractions)",
+    "S2": "Mesurer une surface ou un contour (aires et périmètres)",
+    "S3": "Donner du sens aux lettres (calcul littéral)",
+    "S4": "Voir, raisonner, démontrer (géométrie)",
+    "S5": "Réinvestir, mesurer les progrès et préparer septembre"
+  },
+  "skills": {
+    "M4E_REL_01": {
+      "label": "Somme et différence de relatifs, dont la soustraction d'un négatif",
+      "domain": "Nombres relatifs",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q01",
+        "4E_TI_Q02"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M4E_REL_02": {
+      "label": "Ordre des relatifs et déplacements sur une droite graduée",
+      "domain": "Nombres relatifs",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q17",
+        "4E_TI_Q18"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M4E_FRAC_01": {
+      "label": "Somme et différence de fractions de même dénominateur",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q03"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M4E_FRAC_02": {
+      "label": "Fractions équivalentes et réduction au même dénominateur",
+      "domain": "Fractions",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q04"
+      ],
+      "sessions": [
+        "S1"
+      ]
+    },
+    "M4E_LIT_01": {
+      "label": "Distributivité simple : développer k(a+b)",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q07"
+      ],
+      "sessions": [
+        "S3"
+      ]
+    },
+    "M4E_LIT_02": {
+      "label": "Réduction d'une expression avec constantes signées",
+      "domain": "Calcul littéral",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q08"
+      ],
+      "sessions": [
+        "S3"
+      ]
+    },
+    "M4E_GEO_01": {
+      "label": "Somme des angles d'un triangle, triangle rectangle",
+      "domain": "Géométrie",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q09",
+        "4E_TI_Q10"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "M4E_GEO_02": {
+      "label": "Symétrie centrale et caractérisation du parallélogramme",
+      "domain": "Géométrie",
+      "importance_n": "importante",
+      "baseline_items": [
+        "4E_TI_Q13",
+        "4E_TI_Q14"
+      ],
+      "sessions": [
+        "S4"
+      ]
+    },
+    "M4E_AIRE_01": {
+      "label": "Aire et périmètre du rectangle et du triangle, unités",
+      "domain": "Grandeurs et mesures",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q11",
+        "4E_TI_Q12"
+      ],
+      "sessions": [
+        "S2"
+      ]
+    },
+    "M4E_PROP_01": {
+      "label": "Quatrième proportionnelle et retour à l'unité",
+      "domain": "Proportionnalité",
+      "importance_n": "critique",
+      "baseline_items": [
+        "4E_TI_Q05"
+      ],
+      "sessions": [
+        "S2",
+        "S5"
+      ]
+    },
+    "M4E_PROP_02": {
+      "label": "Pourcentage d'une quantité, fréquence",
+      "domain": "Proportionnalité",
+      "importance_n": "importante",
+      "baseline_items": [
+        "4E_TI_Q06",
+        "4E_TI_Q16"
+      ],
+      "sessions": [
+        "S2",
+        "S5"
+      ]
+    },
+    "M4E_STAT_01": {
+      "label": "Moyenne d'une série et contrôle de vraisemblance",
+      "domain": "Statistiques",
+      "importance_n": "importante",
+      "baseline_items": [
+        "4E_TI_Q15"
+      ],
+      "sessions": [
+        "S5"
+      ]
+    }
+  },
+  "baseline_items": {
+    "4E_TI_Q01": "Calculer (−7) + (−5).",
+    "4E_TI_Q02": "Calculer 3 − (−4) + (−6).",
+    "4E_TI_Q03": "Calculer 3/7 + 2/7.",
+    "4E_TI_Q04": "Calculer 5/6 − 1/3.",
+    "4E_TI_Q05": "5 cahiers identiques coûtent 12 dinars. Combien coûtent 15 cahiers ?",
+    "4E_TI_Q06": "Dans une classe de 25 élèves, 20 % sont absents. Combien d'élèves sont absents ?",
+    "4E_TI_Q07": "Développer 4(x + 3).",
+    "4E_TI_Q08": "Réduire l'expression 5x + 2 + 3x − 6.",
+    "4E_TI_Q09": "Dans un triangle, deux angles mesurent 50° et 70°. Mesure du troisième ?",
+    "4E_TI_Q10": "Triangle rectangle dont un angle aigu mesure 35° : que vaut l'autre angle aigu ?",
+    "4E_TI_Q11": "Aire d'un rectangle de longueur 8 cm et de largeur 5 cm.",
+    "4E_TI_Q12": "Aire d'un triangle de base 6 cm et de hauteur 4 cm.",
+    "4E_TI_Q13": "Par la symétrie centrale de centre O, l'image d'un segment [AB] est :",
+    "4E_TI_Q14": "Un quadrilatère qui admet un centre de symétrie est nécessairement :",
+    "4E_TI_Q15": "Moyenne de la série 6 ; 9 ; 12 ; 9.",
+    "4E_TI_Q16": "Sur 20 élèves, 8 pratiquent le football : fréquence en pourcentage ?",
+    "4E_TI_Q17": "Ranger dans l'ordre croissant : −3 ; 2 ; −7 ; 0.",
+    "4E_TI_Q18": "Sur une droite graduée, un point a pour abscisse −4 ; un second est 6 unités à sa droite."
+  },
+  "critical_prerequisites": [
+    "M4E_REL_01",
+    "M4E_REL_02",
+    "M4E_FRAC_02",
+    "M4E_LIT_01",
+    "M4E_LIT_02",
+    "M4E_GEO_01",
+    "M4E_AIRE_01",
+    "M4E_PROP_01"
+  ],
+  "bridges_to_year_n": [
+    "produit et quotient de nombres relatifs",
+    "résolution d'une équation du premier degré ax + b = c",
+    "médiane d'une série et événement contraire"
+  ],
+  "session5_architecture": {
+    "work_minutes": 75,
+    "exam_minutes": 45,
+    "phases": [
+      {
+        "n": 1,
+        "title": "Réactivation et mise en route",
+        "minutes": 10,
+        "minutes_common": 10,
+        "minutes_individual": 0
+      },
+      {
+        "n": 2,
+        "title": "Consolidation ciblée — priorité 1",
+        "minutes": 25,
+        "minutes_common": 13,
+        "minutes_individual": 12
+      },
+      {
+        "n": 3,
+        "title": "Consolidation ciblée — priorité 2",
+        "minutes": 20,
+        "minutes_common": 10,
+        "minutes_individual": 10
+      },
+      {
+        "n": 4,
+        "title": "Réinvestissement et pont vers l'année suivante",
+        "minutes": 15,
+        "minutes_common": 13,
+        "minutes_individual": 2
+      },
+      {
+        "n": 5,
+        "title": "Préparation méthodologique à l'évaluation",
+        "minutes": 5,
+        "minutes_common": 5,
+        "minutes_individual": 0
+      }
+    ]
+  },
+  "exam_common_core": {
+    "A1": {
+      "skill_id": "M4E_REL_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "4E_TI_Q02",
+      "comparability": "comparable"
+    },
+    "A2": {
+      "skill_id": "M4E_FRAC_02",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "4E_TI_Q04",
+      "comparability": "comparable"
+    },
+    "A3": {
+      "skill_id": "M4E_LIT_02",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "4E_TI_Q08",
+      "comparability": "comparable"
+    },
+    "A4": {
+      "skill_id": "M4E_GEO_01",
+      "points": 1,
+      "task": "automatisme",
+      "difficulty": "socle",
+      "baseline_item_id": "4E_TI_Q10",
+      "comparability": "comparable"
+    },
+    "B1": {
+      "skill_id": "M4E_AIRE_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "4E_TI_Q11",
+      "comparability": "comparable"
+    },
+    "B2": {
+      "skill_id": "M4E_LIT_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "4E_TI_Q07",
+      "comparability": "comparable"
+    },
+    "B3": {
+      "skill_id": "M4E_STAT_01",
+      "points": 2,
+      "task": "application",
+      "difficulty": "standard",
+      "baseline_item_id": "4E_TI_Q15",
+      "comparability": "comparable"
+    },
+    "C1": {
+      "skill_id": "M4E_AIRE_01",
+      "points": 4,
+      "task": "transfert",
+      "difficulty": "transfert",
+      "baseline_item_id": null,
+      "comparability": "partiellement_comparable"
+    }
+  },
+  "phase1_items": [
+    {
+      "skill_id": "M4E_REL_01",
+      "text": "Calculer $(-9) + 4 - (-6)$."
+    },
+    {
+      "skill_id": "M4E_FRAC_02",
+      "text": "Calculer $\\dfrac{7}{10} - \\dfrac{2}{5}$ en transformant entièrement la seconde fraction."
+    },
+    {
+      "skill_id": "M4E_LIT_02",
+      "text": "Réduire $6x - 5 + 2x + 9$, puis contrôler pour $x = 1$."
+    },
+    {
+      "skill_id": "M4E_GEO_01",
+      "text": "Deux angles d'un triangle mesurent $43^\\circ$ et $68^\\circ$. Calculer le troisième en citant la propriété."
+    },
+    {
+      "skill_id": "M4E_AIRE_01",
+      "text": "Un rectangle mesure 11 cm sur 6 cm. Donner son aire et son périmètre, unités comprises."
+    }
+  ],
+  "phase4": {
+    "title": "De la Cinquième à la Quatrième : le signe d'un produit et la première équation",
+    "objective": "Découverte guidée : construire, à partir d'acquis de Cinquième, deux notions nouvelles de Quatrième — le signe d'un produit de relatifs et l'équation du premier degré.",
+    "skills_prev": [
+      "M4E_REL_01",
+      "M4E_LIT_01",
+      "M4E_LIT_02"
+    ],
+    "skills_next": [
+      "produit de relatifs",
+      "équation du premier degré"
+    ]
+  }
+}

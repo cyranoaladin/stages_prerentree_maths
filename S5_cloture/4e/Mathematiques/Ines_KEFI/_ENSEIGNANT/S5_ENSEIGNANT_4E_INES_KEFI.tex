@@ -1,0 +1,388 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{nexusS5}
+\setnexusheader{Dossier enseignant — confidentiel}{S5 — Ines KEFI — usage enseignant}
+\begin{document}
+\nexuscover{SÉANCE 5 --- DOSSIER ENSEIGNANT}{Profil, déroulé, corrigés et barème}{Ines KEFI}{Entrée en Quatrième}{Mathématiques --- Transfert mixte et calibration de la confiance}
+\begin{methodbox}\small\textbf{Programme de référence.} programme de cycle 4 en vigueur pour la classe de Quatrième en 2026-2027. Transition visée : acquis de Cinquième 2025-2026 vers la Quatrième 2026-2027. \textbf{Attention :} un nouveau programme de cycle 4 a été publié en 2026, mais son application est progressive : Cinquième en 2026-2027, Quatrième en 2027-2028, Troisième en 2028-2029. Les élèves entrant en Quatrième à la rentrée 2026 ne relèvent donc PAS de la nouvelle progression.\end{methodbox}
+\begin{keybox}\textbf{DOCUMENT CONFIDENTIEL --- USAGE ENSEIGNANT.} Contient les corrigés, le barème et des données nominatives. Ne pas remettre à l'élève ni le laisser visible pendant la séance.\end{keybox}
+\sectiontitle{1. Profil synthétique}
+\begin{methodbox}
+\textbf{Diagnostic initial.} 18 questions traitées sur 18. Trois domaines solides, un domaine à installer et trois domaines à rectifier en priorité. Calibration réussite-confiance : \textbf{67 \%}.
+\par Date du bilan : 16 août 2026.
+\end{methodbox}
+\subsectiontitle{Points d'appui documentés}
+\begin{itemize}\item Proportionnalité\item Aires et périmètres\item Statistiques\end{itemize}
+\subsectiontitle{Difficultés documentées}
+\begin{itemize}\item Fractions : conversion complète vers un dénominateur commun.\item Nombres relatifs : ordre croissant et déplacements sur une droite graduée.\item Géométrie : somme des angles et caractérisation d'un parallélogramme par un centre de symétrie.\item Calcul littéral : réduction des constantes en tenant compte des signes.\end{itemize}
+\subsectiontitle{Lecture détaillée du diagnostic}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{32mm} p{28mm} X}
+\rowcolor{Navy}\color{white}Domaine & \color{white}Statut initial & \color{white}Observation issue du bilan \\
+Nombres relatifs & À rectifier & Deux réponses fausses données avec certitude 4 : ordre décroissant au lieu de croissant ; déplacement vers la gauche au lieu de la droite. \\
+Fractions & À rectifier & Pour 5/6 $-$ 1/3, le dénominateur est converti mais le numérateur de 1/3 ne l'est pas. \\
+Proportionnalité & Solide & Deux réponses exactes et assurées. \\
+Calcul littéral & À installer & Distributivité disponible ; erreur de signe sur 2 $-$ 6 dans une réduction. \\
+Géométrie & À rectifier & Hypothèse isocèle ajoutée sans justification ; centre de symétrie confondu avec la seule classe des carrés. \\
+Aires et périmètres & Solide & Aire du rectangle et du triangle correctement calculées. \\
+Statistiques & Solide & Moyenne et fréquence correctement calculées. \\
+\end{tabularx}
+\begin{warningbox}\textbf{Limite de la reconstruction.} Les tableaux d'observation séance par séance du dossier individuel sont vierges : il n'existe aucune preuve documentée entre le diagnostic initial et aujourd'hui. Tout statut porté ci-dessous décrit un \emph{état de départ}, jamais une acquisition constatée.\end{warningbox}
+\newpage\sectiontitle{2. Matrice de trajectoire --- état avant la séance 5}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{27mm} X >{\scriptsize}p{16mm} >{\scriptsize}p{20mm} >{\scriptsize\centering\arraybackslash}p{9mm}}
+\rowcolor{Navy}\color{white}\scriptsize skill\_id & \color{white}Compétence & \color{white}Travaillée en & \color{white}Statut avant S5 & \color{white}Prio. \\
+M4E\_AIRE\_01 & Aire et périmètre du rectangle et du triangle, unités & S2 & acquis & OK \\
+M4E\_PROP\_01 & Quatrième proportionnelle et retour à l'unité & S2, S5 & acquis & OK \\
+M4E\_PROP\_02 & Pourcentage d'une quantité, fréquence & S2, S5 & acquis & OK \\
+M4E\_STAT\_01 & Moyenne d'une série et contrôle de vraisemblance & S5 & acquis & OK \\
+M4E\_FRAC\_02 & $\bullet$ Fractions équivalentes et réduction au même dénominateur & S1 & fragile & P1 \\
+M4E\_GEO\_01 & Somme des angles d'un triangle, triangle rectangle & S4 & fragile & P1 \\
+M4E\_REL\_01 & Somme et différence de relatifs, dont la soustraction d'un négatif & S1 & fragile & P1 \\
+M4E\_REL\_02 & $\bullet$ Ordre des relatifs et déplacements sur une droite graduée & S1 & fragile & P1 \\
+M4E\_FRAC\_01 & Somme et différence de fractions de même dénominateur & S1 & non évalué & P2 \\
+M4E\_GEO\_02 & Symétrie centrale et caractérisation du parallélogramme & S4 & fragile & P2 \\
+M4E\_LIT\_01 & Distributivité simple : développer k(a+b) & S3 & en voie & P2 \\
+M4E\_LIT\_02 & Réduction d'une expression avec constantes signées & S3 & en voie & P2 \\
+\end{tabularx}
+\par\vspace{1mm}\small\textbf{Lecture de la colonne « Statut avant S5 » :} elle décrit l'état constaté au \emph{positionnement initial}, jamais une acquisition constatée depuis. « acquis » signifie « acquis au positionnement initial » ; « en voie » signifie « en voie d'acquisition ».
+\par\small$\bullet$ compétence ciblée par les phases 2 et 3 de la séance. La colonne « Prio. » est \emph{provisoire} : la priorité définitive est produite par \code{tools/analyze_s5.py} après la correction.
+\begin{warningbox}\textbf{Effet de récence.} Les compétences suivantes sont retravaillées pendant cette séance, puis évaluées moins d'une heure plus tard : \code{M4E_STAT_01}, \code{M4E_FRAC_02}, \code{M4E_REL_02}. Une réussite y mesure une \emph{performance immédiate}, pas une consolidation durable. Le plan de rentrée prévoit pour elles un contrôle différé en semaine 1 ou 2 ; aucun bilan ne doit écrire « acquis durablement » sur cette seule preuve.\end{warningbox}
+\sectiontitle{3. Pourquoi ces activités, pour cet élève}
+\begin{goalbox}\textbf{Objectif de la séance :} Vérifier que les deux erreurs données avec une certitude maximale au diagnostic (ordre des relatifs, déplacement sur une droite graduée) ne réapparaissent plus, et que la transformation d'une fraction porte bien sur ses deux termes.\end{goalbox}
+\subsectiontitle{Axe prioritaire (phase 2, 25 min) --- Ordre des nombres relatifs et déplacements sur une droite graduée}
+Deux réponses fausses données avec une certitude maximale au diagnostic initial : la conviction doit être confrontée avant toute reprise technique.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M4E_REL_02}.
+\subsectiontitle{Second axe (phase 3, 20 min) --- Fractions équivalentes et réduction au même dénominateur}
+Erreur documentée : le dénominateur est converti mais le numérateur ne l'est pas. C'est une erreur de concept sur l'égalité de deux fractions, non une erreur de calcul.
+\par\vspace{1mm}\textbf{Compétence visée :} \code{M4E_FRAC_02}.
+\subsectiontitle{Équilibre commun / individuel}
+Sur les 75 minutes : \textbf{51 min} (68\,\%) relèvent des objectifs communs du niveau et \textbf{24 min} (32\,\%) ciblent le profil individuel. Sur l'évaluation : \textbf{14 points} de noyau commun (70.0\,\%) et \textbf{6 points} individualisés (30.0\,\%).
+\newpage\sectiontitle{4. Déroulé minute par minute}
+\rowcolors{2}{SoftGray}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{18mm} p{34mm} X X}
+\rowcolor{Navy}\color{white}Temps & \color{white}Phase & \color{white}Conduite & \color{white}Indicateur observable \\
+0--10 min & Remettre en activité sur les cinq domaines du stage et faire & Individuel, sans carte de rappel pendant 7 minutes, puis 3 minutes de mise en commun. & Au moins 4 réponses exactes sur 5 ; la certitude est renseignée avant toute vérification. \\
+10--35 min & Ordre des nombres relatifs et déplacements sur une droite gr & Rappel bref, exemple guidé au tableau, puis exercices en autonomie. Aide donnée seulement après une tentative écrite. & Trois réussites consécutives sans aide sur la compétence visée. \\
+35--55 min & Fractions équivalentes et réduction au même dénominateur & Pas d'exemple guidé : l'élève démarre seul. Intervention uniquement sur demande. & Deux réussites autonomes ; le contrôle est écrit sans qu'on le demande. \\
+55--70 min & De la Cinquième à la Quatrième : le signe d'un produit et la & Travail écrit, correction collective courte à la fin. Ne pas transformer ce temps en cours magistral. & L'élève relie explicitement un acquis de l'année écoulée à un attendu de l'année à venir. \\
+70--75 min & Cadrage méthodologique, sans aucune information sur le conte & Lecture des cinq règles, puis remise de l'évaluation. Aucune information sur son contenu. & Les deux engagements sont écrits. \\
+75--120 min & Évaluation finale & Individuel, sans document. Partie A environ 10 min, B environ 20 min, C environ 15 min. & Somme des durées cibles : 38 min, marge de 6 min. \\
+\end{tabularx}
+\newpage\sectiontitle{5. Corrigé du livret de travail}
+\subsectiontitle{Phase 1 --- réactivation}
+\begin{enumerate}
+\item \code{M4E_REL_01} --- $-9+4=-5$ puis $-5-(-6)=-5+6=\mathbf{1}$.
+\item \code{M4E_FRAC_02} --- $\frac{2}{5}=\frac{4}{10}$ (numérateur \emph{et} dénominateur multipliés par 2), donc $\frac{7}{10}-\frac{4}{10}=\mathbf{\frac{3}{10}}$.
+\item \code{M4E_LIT_02} --- $8x+4$. Contrôle : $6-5+2+9=12$ et $8\times 1+4=12$.
+\item \code{M4E_GEO_01} --- Somme des angles d'un triangle $=180^\circ$ : $180-(43+68)=\mathbf{69^\circ}$.
+\item \code{M4E_AIRE_01} --- Aire $=11\times 6=\mathbf{66\ \text{cm}^2}$ ; périmètre $=2\times(11+6)=\mathbf{34\ \text{cm}}$.
+\end{enumerate}
+\subsectiontitle{Phase 2 --- Ordre des nombres relatifs et déplacements sur une droite graduée}
+\begin{enumerate}
+\item $-13 < -6 < -4 < 0 < 1$.
+\item $7 > 5 > -2 > -9$.
+\item $-13+17=\mathbf{4}$.
+\item $6-11=\mathbf{-5}$.
+\item $-17 < -8$ : $-17$ est plus éloigné de zéro du côté négatif, donc plus à gauche sur la droite graduée.
+\item Il a rangé les nombres comme s'ils étaient positifs. Ordre correct : $-10 < -7 < -3$. Contrôle : placer les trois points sur une droite graduée avant de conclure.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- ordre des négatifs calqué sur celui des positifs
+\item \textsc{CONCEPT} --- déplacement vers la droite traité comme une soustraction
+\item \textsc{CONTROLE} --- réponse donnée avec certitude sans support graphique
+\end{itemize}
+\subsectiontitle{Phase 3 --- Fractions équivalentes et réduction au même dénominateur}
+\begin{enumerate}
+\item $\frac{15}{20}$, facteur $5$ appliqué aux deux termes.
+\item $\frac{5}{9}-\frac{3}{9}=\mathbf{\frac{2}{9}}$.
+\item $\frac{9}{12}+\frac{5}{12}=\frac{14}{12}=\mathbf{\frac{7}{6}}$.
+\item $\frac{14}{16}-\frac{3}{16}=\mathbf{\frac{11}{16}}$.
+\end{enumerate}
+\minititle{Erreurs probables}
+\begin{itemize}
+\item \textsc{CONCEPT} --- conversion incomplète : un seul des deux termes est multiplié
+\item \textsc{METHODE} --- numérateurs et dénominateurs soustraits terme à terme
+\item \textsc{CALCUL} --- erreur sur le facteur de conversion
+\end{itemize}
+\subsectiontitle{Phase 4 --- pont vers Quatrième}
+
+\textbf{A.} $3\times(-4)=-12$ ; $(-3)\times(-4)=12$ ; $(-5)\times 2=-10$ ; $(-5)\times(-2)=10$.
+Règle attendue : deux facteurs de \emph{même} signe donnent un produit positif, de signes \emph{contraires}
+un produit négatif. Contrôles possibles : $3\times(-4)$ et $(-6)\times 2$, ou $12\times(-1)$.
+
+\textbf{B.} 1. $C(n)=35+4n$ (ou $4n+35$). \quad 2. $C(12)=35+4\times 12=35+48=83$ TND.
+3. $35+4n=99$ donc $4n=64$ puis $n=16$. \quad 4. $35+4\times 16=35+64=99$ : la solution convient.
+
+\textbf{Observation à noter :} un élève qui écrit $C(n)=39n$ confond un terme constant et un coefficient ;
+c'est une erreur de type \textsc{CONCEPT}, à distinguer d'une erreur de calcul sur $4\times 12$.
+
+\newpage\sectiontitle{6. Corrigé de l'évaluation et barème analytique}
+\begin{keybox}\textbf{Total : 20 points sur 20.} Noyau commun 14 pts (70.0\,\%), items individualisés 6 pts (30.0\,\%). Somme des durées cibles : 38 minutes.\end{keybox}
+\itemhead{A1 --- \code{M4E_REL_01} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $0$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $-8+3=-5$\item $-5-(-5)=-5+5=0$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_REL\_01 & automatisme & résultat $0$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & soustraire un négatif traité comme une soustraction (résultat $-10$) \\
+CALCUL & erreur isolée sur $-8+3$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis direct du produit de relatifs en Quatrième
+\par\vspace{2mm}
+\itemhead{A2 --- \code{M4E_FRAC_02} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\dfrac{3}{8}$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $\frac{1}{4}=\frac{2}{8}$\item $\frac{5}{8}-\frac{2}{8}=\frac{3}{8}$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_FRAC\_02 & automatisme & $\frac{3}{8}$ ou une écriture équivalente correcte \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & dénominateur converti sans convertir le numérateur (réponse $\frac{4}{8}$) \\
+METHODE & soustraction terme à terme des numérateurs et des dénominateurs \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis du produit et du quotient de fractions en Quatrième
+\par\vspace{2mm}
+\itemhead{A3 --- \code{M4E_LIT_02} --- noyau commun}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $4x - 5$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item termes en $x$ : $7x-3x=4x$\item constantes : $4-9=-5$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_LIT\_02 & automatisme & $4x-5$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & constantes additionnées sans tenir compte des signes ($+13$ ou $-13$) \\
+CONCEPT & $4x$ et $-5$ additionnés en $-x$ \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis de l'équation du premier degré
+\par\vspace{2mm}
+\itemhead{A4 --- \code{M4E_GEO_01} --- noyau commun}{1}{1.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $53^\circ$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item les deux angles aigus sont complémentaires\item $90-37=53$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_GEO\_01 & automatisme & $53^\circ$ exact \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+METHODE & $180-37=143$ : l'angle droit n'est pas retiré \\
+LECTURE & angle droit compté comme un angle aigu \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis de la trigonométrie et de Pythagore en Quatrième
+\par\vspace{2mm}
+\itemhead{A5 --- \code{M4E_REL_02} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $-12 < -8 < -5 < 0 < 2$\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item placer les nombres sur une droite graduée\item lire de gauche à droite\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_REL\_02 & automatisme & les cinq nombres dans le bon ordre \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & négatifs rangés comme des positifs \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis du produit de relatifs et de la droite graduée en Quatrième
+\par\vspace{2mm}
+\itemhead{A6 --- \code{M4E_FRAC_02} --- item individualisé}{1}{1}
+\begin{graybox}\small\textbf{Réponse attendue :} $\dfrac{10}{15}$, facteur $5$ appliqué au numérateur et au dénominateur\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $15 = 3\times 5$\item $2\times 5 = 10$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_FRAC\_02 & automatisme & numérateur exact et facteur écrit \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & numérateur laissé inchangé (réponse $\frac{2}{15}$) \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} prérequis direct du produit de fractions en Quatrième
+\par\vspace{2mm}
+\itemhead{B1 --- \code{M4E_AIRE_01} --- noyau commun}{2}{4.25}
+\begin{graybox}\small\textbf{Réponse attendue :} Aire $=84\ \text{m}^2$ ; périmètre $=38$ m ; prix $=84\times 26=2\,184$ TND.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $12\times 7=84\ \text{m}^2$\item $2\times(12+7)=38$ m\item le prix se calcule sur l'aire, pas sur le périmètre : $84\times 26=2184$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_AIRE\_01 & procedure & aire et périmètre exacts, avec les unités correctes \\
+c2 & 1 & M4E\_PROP\_01 & procedure & prix exact, obtenu à partir de l'aire et non du périmètre \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & aire et périmètre échangés \\
+NOTATION & unité absente ou $\text{m}$ au lieu de $\text{m}^2$ \\
+METHODE & prix calculé à partir du périmètre \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} grandeurs composées et coût proportionnel, réutilisés toute l'année
+\par\vspace{2mm}
+\itemhead{B2 --- \code{M4E_LIT_01} --- noyau commun}{2}{5.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $5x-15$ ; puis $7x-8$ ; contrôle : les deux écritures donnent $6$ pour $x=2$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $5(x-3)=5x-15$\item $5x-15+2x+7=7x-8$\item $x=2$ : $5\times(2-3)+2\times 2+7=-5+4+7=6$ et $7\times 2-8=6$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 0.5 & M4E\_LIT\_01 & procedure & développement $5(x-3)=5x-15$ exact \\
+c2 & 0.5 & M4E\_LIT\_02 & procedure & réduction en $7x-8$ exacte \\
+c3 & 1 & M4E\_LIT\_02 & controle & contrôle mené sur les deux écritures pour $x=2$, aboutissant à la même valeur \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & distributivité incomplète : $5x-3$ \\
+CONCEPT & constantes signées : $-15+7$ traité comme $-22$ \\
+CONTROLE & contrôle annoncé mais une seule écriture évaluée \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} double distributivité et mise en équation en Quatrième
+\par\vspace{2mm}
+\itemhead{B3 --- \code{M4E_STAT_01} --- noyau commun}{2}{4.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $35\,\%$ ; somme $=110$, effectif $=8$, moyenne $=13{,}75$, comprise entre $11$ et $17$.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $14\div 40=0{,}35=35\,\%$\item somme $=110$ ; $110\div 8=13{,}75$\item $11 < 13{,}75 < 17$ : le contrôle est concluant\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_PROP\_02 & procedure & fréquence exacte en pourcentage \\
+c2 & 0.7 & M4E\_STAT\_01 & procedure & moyenne exacte, somme et effectif visibles \\
+c3 & 0.3 & M4E\_STAT\_01 & controle & encadrement entre la plus petite et la plus grande valeur écrit \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+LECTURE & une valeur oubliée dans la somme \\
+METHODE & division par le nombre de valeurs distinctes et non par l'effectif \\
+CONTROLE & encadrement non effectué \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} moyenne pondérée et médiane en Quatrième
+\par\vspace{2mm}
+\itemhead{B4 --- \code{M4E_GEO_02} --- item individualisé}{2}{4.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $ABCD$ est un parallélogramme ; non, un rectangle non carré vérifie la même donnée.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item Donnée : les diagonales ont le même milieu\item Propriété : un quadrilatère dont les diagonales se coupent en leur milieu est un parallélogramme\item Conclusion : $ABCD$ est un parallélogramme, sans précision supplémentaire\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_GEO\_02 & justification & raisonnement complet en donnée-propriété-conclusion \\
+c2 & 1 & M4E\_GEO\_02 & justification & réponse négative appuyée sur un contre-exemple explicite \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & conclusion « carré » tirée d'une donnée insuffisante \\
+JUSTIFICATION & propriété non citée \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} rigueur de raisonnement exigée dès la géométrie de Quatrième
+\par\vspace{2mm}
+\itemhead{C1 --- \code{M4E_AIRE_01} --- noyau commun}{4}{9.25}
+\begin{graybox}\small\textbf{Réponse attendue :} $15\ \text{m}^2$ ; $5\ \text{m}^2$ ; $C(n)=19n+25$ ; $C(6)=139$ TND ; $C(10)=215>200$ : non.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $6\times 3=18$ et $2\times 1{,}5=3$, donc $18-3=15\ \text{m}^2$\item $15\div 3=5\ \text{m}^2$\item $C(n)=19n+25$\item $C(6)=19\times 6+25=114+25=139$ TND\item $C(10)=190+25=215$ ; $215>200$ donc dix pots dépassent le budget\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_AIRE\_01 & transfert & aire à peindre exacte, soustraction de la fenêtre visible \\
+c2 & 0.5 & M4E\_FRAC\_02 & procedure & aire de la sous-couche exacte, le tiers étant correctement pris \\
+c3 & 1.5 & M4E\_LIT\_01 & transfert & expression $C(n)=19n+25$ correcte, substitution écrite et $C(6)$ exact \\
+c4 & 1 & M4E\_LIT\_01 & transfert & décision justifiée par la comparaison de $C(10)$ au budget de 200 TND \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+TRANSFERT & aire de la fenêtre non retirée \\
+CONCEPT & $C(n)$ écrit $44n$ : forfait et coût unitaire confondus \\
+LECTURE & réponse donnée sans comparer $215$ et $200$ \\
+NOTATION & unités absentes dans la conclusion \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} tâche complexe de rentrée : lire, choisir, calculer, décider
+\par\vspace{2mm}
+\itemhead{C2 --- \code{M4E_REL_01} --- item individualisé}{2}{4.75}
+\begin{graybox}\small\textbf{Réponse attendue :} $-1$ ; $28$, produit positif car les deux facteurs sont de même signe.\end{graybox}
+\minititle{Étapes significatives}
+\begin{enumerate}\item $-9+14=5$ puis $5-6=-1$\item $(-4)\times(-7)=28$\end{enumerate}
+\minititle{Barème par critère --- la saisie se fait critère par critère}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\scriptsize}p{9mm} >{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{24mm} >{\scriptsize}p{18mm} X}
+\toprule \scriptsize critère & Pts & \scriptsize compétence & \scriptsize preuve & Ce qui est exigé \\ \midrule
+c1 & 1 & M4E\_REL\_02 & procedure & abscisse finale exacte, les deux déplacements visibles \\
+c2 & 1 & M4E\_REL\_01 & justification & produit exact et signe justifié \\
+\bottomrule\end{tabularx}
+\minititle{Erreurs probables et codes}
+\par\noindent\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{26mm} X}
+\toprule Code & Description \\ \midrule
+CONCEPT & déplacement vers la droite traité comme une soustraction \\
+CONCEPT & règle des signes de l'addition appliquée au produit \\
+\bottomrule\end{tabularx}
+\par\vspace{1mm}\small\textbf{Rôle pour la rentrée :} aucun item du diagnostic ne combine ces deux tâches : la question 1 prolonge 4E\_TI\_Q18 et la question 2 porte sur le produit de relatifs introduit en phase 4. La comparaison ne vaut qu'au niveau des compétences M4E\_REL\_01 et M4E\_REL\_02
+\par\vspace{2mm}
+\newpage\sectiontitle{7. Correspondance diagnostic initial $\leftrightarrow$ évaluation finale}
+\rowcolors{2}{SoftBlue}{white}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{9mm} >{\ttfamily\scriptsize}p{25mm} >{\ttfamily\scriptsize}p{22mm} >{\ttfamily\scriptsize}p{16mm} X}
+\rowcolor{Navy}\color{white}Item & \color{white}\scriptsize skill\_id & \color{white}\scriptsize baseline & \color{white}\scriptsize comparaison & \color{white}Lecture \\
+A1 & M4E\_REL\_01 & 4E\_TI\_Q02 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A2 & M4E\_FRAC\_02 & 4E\_TI\_Q04 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A3 & M4E\_LIT\_02 & 4E\_TI\_Q08 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A4 & M4E\_GEO\_01 & 4E\_TI\_Q10 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A5 & M4E\_REL\_02 & 4E\_TI\_Q17 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+A6 & M4E\_FRAC\_02 & 4E\_TI\_Q04 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B1 & M4E\_AIRE\_01 & 4E\_TI\_Q11 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B2 & M4E\_LIT\_01 & 4E\_TI\_Q07 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B3 & M4E\_STAT\_01 & 4E\_TI\_Q15 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+B4 & M4E\_GEO\_02 & 4E\_TI\_Q14 & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C1 & M4E\_AIRE\_01 & 4E\_TI\_Q11+4E\_TI\_Q04... & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+C2 & M4E\_REL\_01 & 4E\_TI\_Q17+4E\_TI\_Q01... & indicative\_skill\_comparison & confrontation indicative seulement : un énoncé parallèle existe au positionnement initial, mais la réponse de l'élève à cet énoncé n'a pas été conservée \\
+\end{tabularx}
+\begin{keybox}\textbf{Aucun écart chiffré ne sera calculé.} Les réponses de l'élève aux 18 questions du positionnement initial n'ont pas été conservées : le dossier n'en garde qu'un statut par domaine. Un statut qualitatif n'est pas une mesure : le convertir en score pour en soustraire un autre produirait un chiffre sans valeur. Le script d'analyse impose donc \code{mastery_delta = null} pour toutes les compétences, et se limite à une confrontation \emph{indicative} entre le statut initial et l'état final.\end{keybox}
+\sectiontitle{8. Clés d'interprétation après correction}
+\subsectiontitle{Échelle de maîtrise par compétence}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{10mm} X}
+\toprule Niveau & Signification \\ \midrule
+0 & non maîtrisé \\
+1 & très fragile \\
+2 & partiellement maîtrisé \\
+3 & maîtrisé \\
+4 & maîtrise solide / transfert réussi \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Croiser réussite et certitude}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{40mm} X}
+\toprule Situation & Conduite à tenir \\ \midrule
+Juste, certitude 3--4 & acquis disponible : faire transférer sur une situation nouvelle. \\
+Juste, certitude 1--2 & presque acquis : faire expliciter la procédure, puis réutiliser. \\
+Faux, certitude 1--2 & notion à installer ou procédure à reprendre pas à pas. \\
+Faux, certitude 3--4 & priorité absolue : confronter la conviction avant toute reprise technique. \\
+\bottomrule\end{tabularx}
+\subsectiontitle{Distinguer les niveaux d'erreur}
+Une erreur de \textsc{CALCUL} isolée, non reproduite sur les items voisins de même compétence, ne vaut pas non-maîtrise conceptuelle. La chaîne à reconstituer est : \textbf{connaissance} $\rightarrow$ \textbf{choix de méthode} $\rightarrow$ \textbf{exécution} $\rightarrow$ \textbf{justification} $\rightarrow$ \textbf{contrôle}. Les codes d'erreur du barème situent l'écart sur cette chaîne.
+\sectiontitle{9. Points d'observation propres à cet élève}
+\begin{itemize}\item Noter si la certitude annoncée est cohérente avec la réussite réelle : point de départ documenté à 67 \%.\item Observer si la droite graduée est mobilisée spontanément avant de répondre sur un ordre ou un déplacement.\item Vérifier qu'aucune hypothèse géométrique non fournie n'est ajoutée dans le raisonnement.\end{itemize}
+\subsectiontitle{Grille de saisie de la séance}
+\par\noindent\begin{tabularx}{\linewidth}{>{\bfseries}p{26mm} X X X}
+\toprule Phase & Aide maximale utilisée & Réussite autonome & Observation \\ \midrule
+Phase 1 & & & \\[6mm]
+Phase 2 & & & \\[6mm]
+Phase 3 & & & \\[6mm]
+Phase 4 & & & \\[6mm]
+\bottomrule\end{tabularx}
+\begin{warningbox}\textbf{Avant d'écrire quoi que ce soit sur les acquis de cet élève :} tant que l'évaluation n'est pas corrigée et analysée par \code{tools/analyze_s5.py}, aucune formulation du type « maîtrise désormais », « forte progression » ou « objectif atteint » ne doit être employée. Les formulations admises sont : « à vérifier lors de l'évaluation finale », « observé en séance, à confirmer », « hypothèse de consolidation ».\end{warningbox}
+\end{document}
