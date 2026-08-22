@@ -318,6 +318,40 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Une chaîne de caractères est-elle muable ?  ....................
 8. Après `M = L` puis `M.append(0)`, que contient `L` ?  ....................
 
+## Avant tout : ta réponse spontanée
+
+> **Remarque.** Réponds **avant** de lire la suite, et note ta certitude honnêtement. Sur ce domaine, ton positionnement a donné une réponse fausse assurée : c'est cette réponse-là qu'il faut voir apparaître pour pouvoir la reprendre.
+
+**Question 0.** Que va afficher ce programme ?
+
+```python
+L = [1, 2, 3]
+L = L.append(4)
+print(L)
+```
+
+Ma prédiction : ..................................................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
+
+Sortie réelle : ..................................................
+
+Ce que je constate : .....................................................................
+
+Et celui-ci ?
+
+```python
+L = [1, 2, 3]
+L.append(4)
+print(L)
+```
+
+Ma prédiction : ....................  Sortie réelle : ....................
+
+**La différence, avec mes mots :** .........................................................
+
+....................................................................................................
+
+---
+
 ## L'essentiel à retenir
 
 > **Indexation.** Les indices commencent à **0**. Pour n éléments, le dernier indice valide
@@ -563,6 +597,34 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 8. Écrire l'en-tête d'une fonction `moyenne` prenant une liste.  ....................
 
 > **Reprise.** Tu as travaillé **Données en tables** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+
+## Avant tout : ta réponse spontanée
+
+> **Remarque.** Réponds **avant** de lire la suite, et note ta certitude honnêtement. Sur ce domaine, ton positionnement a donné une réponse fausse assurée : c'est cette réponse-là qu'il faut voir apparaître pour pouvoir la reprendre.
+
+**Question 0.**
+
+```python
+def h(L):
+    L.append(0)
+
+M = [1, 2]
+r = h(M)
+print("r vaut :", r)
+print("M vaut :", M)
+```
+
+Ma prédiction pour `r` : ....................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
+
+Ma prédiction pour `M` : ....................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
+
+Sorties réelles : $r =$ ....................  $M =$ ....................
+
+**Ce que je constate :** ...................................................................
+
+....................................................................................................
+
+---
 
 ## L'essentiel à retenir
 

@@ -344,3 +344,117 @@ def test_l_index_mene_a_la_note_de_remise_et_au_guide_d_impression():
         index = (ROOT / module / "00_MASTER" / "index.md").read_text(encoding="utf-8")
         assert "PRINT_GUIDE_TERMINALE.md" in index, f"{module} : guide d'impression absent"
         assert "terminale-livraison" in index, f"{module} : note de remise absente"
+
+
+# --- ce que reçoit l'élève rapide -------------------------------------------------
+# Trois défauts trouvés en auditant la pagination : le bloc de la piste excellence était
+# introuvable dans les dix fiches de NSI et de physique-chimie (« Piste excellence » contre
+# « piste Excellence ») ; l'atelier Terminale n'entrait dans aucun cahier ; et la piste
+# excellence n'ouvrait que deux exercices là où les autres en recevaient six. Les meilleurs
+# élèves recevaient le tiers du travail des autres — l'inverse de ce que le stage vise.
+
+@pytest.mark.parametrize("module", ["tle_spe", "tle_nsi", "tle_pc"])
+@pytest.mark.parametrize("seance", [1, 2, 3, 4])
+def test_chaque_fiche_porte_les_six_blocs_de_piste(module, seance):
+    """La séance 5 est hors du lot : elle n'est pas découpée en pistes."""
+    parts = read_sheet(module, seance, ROOT)
+    absents = [p for p in PISTE_BLOCKS if f"piste:{p}" not in parts]
+    assert not absents, (
+        f"{module}/S{seance} : blocs introuvables {absents}. Un élève routé sur l'une de "
+        f"ces pistes recevrait une séance sans le moindre exercice d'entraînement.")
+
+
+def test_le_reperage_des_blocs_ignore_la_casse_du_titre():
+    """Les trois modules ne capitalisent pas « piste excellence » de la même façon."""
+    titres = []
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        chemin = (ROOT / module / "02_SEANCES" / "S1"
+                  / f"{module}_S1_ELEVE_Activite.md")
+        texte = chemin.read_text(encoding="utf-8")
+        titres += [l for l in texte.splitlines()
+                   if l.startswith("#") and "xcellence" in l]
+    assert len(titres) >= 3
+    assert len({t.split("xcellence")[0][-1] for t in titres}) > 1, (
+        "les trois modules capitalisent désormais pareil : ce test ne prouve plus rien")
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        assert "piste:Excellence" in read_sheet(module, 1, ROOT)
+
+
+PISTES_RAPIDES = ("Consolider", "Entretenir", "Excellence")
+
+
+def _seances(chemin):
+    texte = chemin.read_text(encoding="utf-8")
+    bornes = [m.start() for m in re.finditer(r"^# Séance \d+ —", texte, re.M)]
+    for rang, debut in enumerate(bornes, 1):
+        fin = bornes[rang] if rang < len(bornes) else len(texte)
+        yield rang, texte[debut:fin]
+
+
+def test_l_atelier_terminale_va_aux_pistes_qui_l_atteignent_et_pas_aux_autres():
+    """Il est écrit pour « quiconque a terminé sa piste » — encore faut-il le lui donner.
+
+    Et le donner à un élève qui a huit exercices devant lui n'ajoute rien qu'il traitera :
+    cela épaissit son cahier sans le nourrir, et noie ce qui lui est propre sous un bloc
+    identique pour tout le groupe.
+    """
+    vus, egares = 0, []
+    for chemin in sorted(ROOT.glob("tle_nsi/**/*Cahier_Seances*.md")) + \
+            sorted(ROOT.glob("tle_pc/**/*Cahier_Seances*.md")):
+        for rang, bloc in _seances(chemin):
+            piste = re.search(r"\*\*Ta piste :\*\* (\w+)", bloc)
+            porte = "Atelier Terminale" in bloc
+            if piste and piste.group(1) in PISTES_RAPIDES:
+                vus += porte
+            elif porte:
+                egares.append(f"{chemin.name} S{rang} ({piste.group(1) if piste else '?'})")
+    assert not egares, f"atelier donné à des pistes qui ne l'atteignent pas : {egares}"
+    assert vus > 0, "l'atelier n'atteint aucun élève : il reste dans la fiche collective"
+
+
+def test_une_seance_d_excellence_n_est_jamais_reduite_a_deux_exercices():
+    """Sauf en séance 5, dont l'évaluation finale réduit le temps différencié."""
+    maigres = []
+    for chemin in sorted(ROOT.glob("tle_*/**/*Cahier_Seances*.md")):
+        for rang, bloc in _seances(chemin):
+            if "Ta piste :** Excellence" not in bloc or rang == 5:
+                continue
+            taches = len(re.findall(r"^\*\*Exercice \d+\.\*\*", bloc, re.M))
+            ouverture = ("Atelier Terminale" in bloc or "maths expertes" in bloc
+                         or "série d'entretien" in bloc)
+            if taches <= 2 and not ouverture:
+                maigres.append(f"{chemin.name} S{rang} : {taches} exercices, aucune ouverture")
+    assert not maigres, (
+        "des séances d'excellence n'ouvrent que deux exercices pour tout le temps "
+        f"différencié : {maigres}")
+
+
+# --- la confrontation ne porte pas le même nom dans les trois disciplines ----------
+# En NSI elle s'appelle « Prédire, puis exécuter » : l'élève écrit ce qu'il croit que le
+# programme affichera, avec sa certitude, puis il l'exécute. C'est le même geste que la
+# « réponse spontanée » des sciences, et c'est celui dont la posture Confronter dépend
+# entièrement. N'en reconnaître qu'un seul intitulé privait les élèves de NSI de leur
+# confrontation en séances 2, 3 et 4 — sans que rien ne le signale : le cahier reste
+# valide, il lui manque seulement ce qui en fait l'intérêt.
+
+@pytest.mark.parametrize("module", ["tle_spe", "tle_nsi", "tle_pc"])
+@pytest.mark.parametrize("seance", [1, 2, 3, 4])
+def test_chaque_fiche_porte_une_confrontation_extractible(module, seance):
+    """La séance 5 est hors du lot : elle porte l'évaluation, pas de confrontation."""
+    parts = read_sheet(module, seance, ROOT)
+    assert parts.get("spontanee"), (
+        f"{module}/S{seance} : aucune confrontation extraite. Un élève en posture "
+        f"Confronter y perdrait le seul moment où sa réponse fausse apparaît avant "
+        f"d'être reprise.")
+
+
+def test_un_eleve_en_posture_confronter_recoit_sa_confrontation():
+    """Le contrôle de bout en bout, sur les cahiers réellement produits."""
+    prives = []
+    for chemin in sorted(ROOT.glob("tle_*/**/*Cahier_Seances*.md")):
+        for rang, bloc in _seances(chemin):
+            if rang == 5 or "Ta piste :** Confronter" not in bloc:
+                continue
+            if "réponse spontanée" not in bloc:
+                prives.append(f"{chemin.name} S{rang}")
+    assert not prives, f"posture Confronter sans confrontation : {prives}"

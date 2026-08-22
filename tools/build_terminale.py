@@ -1629,6 +1629,11 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
             instrument = items["instruments"][subject["matiere"]]
             suffix = student["slug"]
             attached = option if module.key == "tle_spe" else None
+            # L'ouverture maths expertes ne s'adresse qu'aux élèves qui suivent l'option.
+            # L'atelier Terminale de NSI et de physique-chimie s'adresse à tous : son
+            # propre texte dit à qui il revient — « si tu as terminé ta piste, ou si tu
+            # suis la piste excellence » — et c'est la seule chose qu'un élève rapide
+            # trouve dans son cahier quand il a fini.
 
             directory = f"{module.key}/{module.nominative_dir}/{student['slug']}"
             documents[f"{directory}/{module.key}_Livret_Individuel_{suffix}.md"] = (
@@ -1643,7 +1648,8 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                     session_focus(diagnostic, module),
                     _remediation_exercises(diagnostic, instrument["items"]),
                     frame, group, CONFIDENTIAL_BANNER,
-                    option_ouverte=bool(attached), root=root, diagnostic=diagnostic,
+                    option_ouverte=bool(attached) or module.key != "tle_spe",
+                    root=root, diagnostic=diagnostic,
                 )
             )
             documents[f"{directory}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md"] = (
@@ -1696,7 +1702,8 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                       "parcours": "Installer"}
                      for number, theme in module.sessions],
                     [], frame, group, CONFIDENTIAL_BANNER,
-                    option_ouverte=False, root=root, diagnostic=None,
+                    option_ouverte=module.key != "tle_spe",
+                    root=root, diagnostic=None,
                 )
             )
             module_entries[module.key].append({
