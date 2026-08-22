@@ -1,5 +1,33 @@
 # Journal des modifications
 
+## 2026.3 — 2026-08-22
+
+Corrections de la composition de la cohorte Terminale, sur informations de l'organisme.
+
+- Cadre du stage inscrit dans les documents : **Nexus Réussite**, centre d'accompagnement
+  scolaire ; **10 heures par enseignement de spécialité**, 2 heures par jour, 5 jours
+  consécutifs, **du 24 au 28 août 2026**. Un élève suivant deux spécialités accompagnées
+  suit deux stages de 10 heures.
+- Retrait d'Ahmed Benhadj Salem, qui ne suit aucun stage en Terminale. Ses six documents
+  nominatifs sont supprimés ; le groupe 1 passe de 5 à 4 élèves.
+- Les groupes désignent désormais les **stages suivis**, et non une combinaison de
+  spécialités : « Mathématiques et NSI » (4 élèves) et « Mathématiques » (4 élèves). Dans le
+  second, deux élèves suivent aussi la physique-chimie — sans stage dédié dans ce dispositif
+  — et deux ne suivent qu'un enseignement accompagné. Chaque livret annonce les spécialités
+  réelles de son élève.
+- **Les mathématiques expertes ne font plus l'objet d'un stage ni de documents séparés.**
+  L'option est préparée sur le temps différencié du stage de mathématiques, et le diagnostic
+  d'option de chaque élève concernée est reversé dans son livret de mathématiques, section
+  « Option annuelle », avec la même exigence que le reste : énoncé exact, réponse donnée,
+  origine de l'erreur. Leurs exercices d'option complètent leur feuille de remédiation.
+- Ajout d'une **détection d'orphelins** à `tools/build_terminale.py` : un document nominatif
+  que la génération ne produit plus est supprimé, et un répertoire d'élève vidé l'est aussi.
+  Sans cela, le retrait d'un élève laissait ses documents confidentiels sur le disque, prêts
+  à être imprimés. `--check` les signale.
+- Les tests suivent : un élève doit déclarer les spécialités qu'il suit réellement, l'option
+  annuelle doit être fondue dans le livret de mathématiques et nulle part ailleurs, et ses
+  exercices doivent atteindre les deux versions de la feuille de remédiation.
+
 ## 2026.2 — 2026-08-21
 
 - Ajout des stages de pré-rentrée **Terminale** : module `tle_spe` (spécialité

@@ -11,26 +11,35 @@
 ## 1.1 Cadre général
 
 Ce stage prépare l'entrée en classe terminale de la voie générale pour les élèves qui
-conservent la spécialité mathématiques. Il dure cinq séances de deux heures, soit dix
-heures, et se tient avant la rentrée de septembre 2026.
+conservent la spécialité mathématiques.
+
+Ce stage est organisé par **Nexus Réussite**, centre d'accompagnement scolaire. Il dure
+**10 heures**, à raison de **2 heures par jour pendant 5 jours consécutifs, du 24 au 28 août
+2026**. Un stage est organisé par enseignement de spécialité : un élève qui suit deux
+spécialités accompagnées suit deux stages de 10 heures.
 
 Il ne s'agit ni d'un rattrapage du programme de Première, ni d'une anticipation du
 programme de Terminale. Son objet est précis : **consolider les notions de Première dont
 la Terminale a un besoin immédiat**, en traitant en priorité les conceptions erronées que
 le positionnement a mises au jour.
 
-Deux groupes composent la cohorte, définis par la seconde spécialité conservée. Le groupe
-est une unité d'organisation des séances : une élève y est rattachée sans suivre exactement
-la combinaison qui lui donne son nom (elle ne suit que les mathématiques), ce que son livret
-précise.
+La cohorte compte huit élèves, répartis en deux groupes **selon les stages qu'ils suivent**
+— et non selon la combinaison de spécialités qu'ils ont choisie :
 
-| Groupe | Spécialités | Effectif | Modules du stage |
+| Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
-| Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
+| Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
+| Groupe 2 | Mathématiques | 4 | `tle_spe` |
 
-Deux élèves suivent en outre l'enseignement optionnel de **mathématiques expertes** :
-un module complémentaire leur est destiné (§ 9).
+Les élèves du groupe 2 n'ont pas tous le même profil : deux suivent également la
+**physique-chimie**, pour laquelle aucun stage n'est organisé dans ce dispositif, et deux ne
+suivent qu'un seul enseignement de spécialité accompagné. Le livret de chacun annonce ses
+spécialités réelles.
+
+Deux élèves suivent en outre l'enseignement optionnel de **mathématiques expertes**.
+**Aucun stage n'est dédié à cette option** : elle se prépare à l'intérieur du stage de
+mathématiques, sur le temps différencié, et son diagnostic propre est reversé dans leur
+livret de mathématiques (§ 9).
 
 Le groupe travaille ensemble sur un thème commun par séance ; à l'intérieur de la séance,
 chaque élève suit un parcours personnel décrit dans son livret individuel.
@@ -636,8 +645,11 @@ littéral, systèmes d'équations, logique, suites numériques, dénombrement.
 | Calcul littéral | 50 % | Manipulation des nombres complexes, factorisations dans ℂ |
 | Systèmes d'équations | 50 % | Écriture matricielle AX = B, résolution par inversion |
 
-Le module est traité en accompagnement individualisé, à raison de 20 minutes par séance
-prélevées sur le temps différencié, et non en séance séparée. Le détail figure dans
+**Il n'existe pas de stage de mathématiques expertes.** L'option est travaillée en
+accompagnement individualisé, à raison de 20 minutes par séance prélevées sur le temps
+différencié. Le diagnostic d'option de chaque élève concerné est repris dans son livret de
+mathématiques, section « Option annuelle », avec la même exigence que le reste : énoncé
+exact, réponse donnée, origine de l'erreur. Le détail de la conduite figure dans
 `01_ENSEIGNANT/tle_spe_Option_Maths_Expertes.md`.
 
 ---
@@ -689,8 +701,8 @@ spécialité NSI, le lien est fait explicitement avec le module `tle_nsi`.
 
 | Élément | Décision |
 |---|---|
-| Public | 9 élèves entrant en Terminale, deux groupes selon la seconde spécialité |
-| Durée | 5 séances de 2 heures |
+| Public | 8 élèves entrant en Terminale, deux groupes selon les stages suivis |
+| Durée | 10 heures : 2 h/jour, 5 jours consécutifs, du 24 au 28 août 2026 |
 | Ordre des séances | Déduit du diagnostic : suites, exponentielle, second degré, dérivation, géométrie et probabilités |
 | Principe directeur | Les certitudes erronées d'abord, la justification toujours, l'usage en Terminale explicité |
 | Différenciation | Trois parcours par séance, réattribués à chaque séance, cinq niveaux d'aide |

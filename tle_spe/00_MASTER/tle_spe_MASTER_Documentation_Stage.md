@@ -11,8 +11,10 @@
 |---|---|
 | Intitulé | Stage de pré-rentrée — Entrée en Terminale générale, spécialité mathématiques |
 | Année préparée | 2026-2027 |
-| Durée | 5 séances de 2 heures, soit 10 heures |
-| Effectif | 9 élèves, répartis en 2 groupes selon la seconde spécialité |
+| Organisme | Nexus Réussite — centre d'accompagnement scolaire |
+| Durée | 10 heures : 2 h/jour, 5 jours consécutifs |
+| Dates | du 24 au 28 août 2026 |
+| Effectif | 8 élèves, répartis en 2 groupes selon les stages suivis |
 | Référentiel | BO spécial n° 8 du 25 juillet 2019 (Terminale), BO spécial n° 1 du 22 janvier 2019 (Première) |
 | Évaluation | Sans note ; matrice réussite × confiance, avant et après |
 
@@ -26,15 +28,19 @@ Terminale.
 
 ## 3. La cohorte
 
-| Groupe | Spécialités conservées | Effectif | Modules suivis |
+| Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
-| Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
+| Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
+| Groupe 2 | Mathématiques | 4 | `tle_spe` |
 
-Deux élèves suivent en outre l'enseignement optionnel de mathématiques expertes, traité en
-module complémentaire de 20 minutes par séance. Une élève du groupe 2 ne suit que les
-mathématiques : le groupe est une unité d'organisation, pas une combinaison stricte de
-spécialités, et son livret l'indique.
+Le groupe dit quels **stages** l'élève suit, pas quelles spécialités il a choisies : dans le
+groupe 2, deux élèves suivent également la physique-chimie — sans stage dédié dans ce
+dispositif — et deux ne suivent qu'un seul enseignement accompagné. Chaque livret annonce les
+spécialités réelles de son élève.
+
+Deux élèves suivent l'enseignement optionnel de mathématiques expertes. **Aucun stage ne lui
+est dédié** : l'option est travaillée 20 minutes par séance sur le temps différencié, et son
+diagnostic propre est repris dans leur livret de mathématiques.
 
 Les deux groupes suivent le module de mathématiques **ensemble** : le diagnostic ne fait pas
 apparaître de différence de profil entre eux qui justifierait deux progressions distinctes.

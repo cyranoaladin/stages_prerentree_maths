@@ -38,18 +38,25 @@ Le dépôt contient deux modules de pré-rentrée pour l'entrée en Terminale, `
 ramassés par `tools/build.py`, dont la constante `LEVELS` reste inchangée, et ils
 n'utilisent pas `content/students.json`.
 
-La cohorte compte neuf élèves répartis en deux groupes selon la seconde spécialité
-conservée. Le groupe organise les séances : un élève peut y être rattaché sans suivre
-exactement la combinaison qui lui donne son nom, et son livret le précise alors.
+Les stages sont organisés par **Nexus Réussite**, centre d'accompagnement scolaire. Chaque
+enseignement de spécialité donne lieu à un stage de **10 heures** — 2 heures par jour,
+5 jours consécutifs, **du 24 au 28 août 2026**.
 
+La cohorte compte huit élèves, répartis en deux groupes **selon les stages qu'ils suivent** :
 
-| Groupe | Spécialités | Effectif | Modules suivis |
+| Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
-| Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
+| Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
+| Groupe 2 | Mathématiques | 4 | `tle_spe` |
 
-Deux élèves suivent en outre l'option mathématiques expertes, traitée en module
-complémentaire.
+Le groupe ne décrit pas une combinaison de spécialités : dans le groupe 2, deux élèves
+suivent également la physique-chimie — aucun stage n'est organisé pour cette spécialité ici —
+et deux ne suivent qu'un seul enseignement accompagné. Chaque livret annonce les spécialités
+réelles de son élève.
+
+Deux élèves suivent l'option **mathématiques expertes**. Aucun stage ne lui est dédié :
+l'option est travaillée sur le temps différencié du stage de mathématiques, et son diagnostic
+propre est repris dans leur livret de mathématiques.
 
 ### Trois sources, et rien d'autre
 

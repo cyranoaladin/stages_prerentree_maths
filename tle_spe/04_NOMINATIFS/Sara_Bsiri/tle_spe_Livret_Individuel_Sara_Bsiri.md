@@ -5,10 +5,13 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Sara Bsiri  
-**Groupe :** Groupe 1 — Terminale Mathématiques et NSI  
+**Groupe :** Groupe 1 — Stages de mathématiques et de NSI  
 **Spécialités conservées :** Mathématiques, Numérique et sciences informatiques  
 **Matière de ce livret :** Mathématiques  
-**Stage :** 5 séances de 2 heures  
+**Option suivie en Terminale :** Mathématiques expertes  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027  
 **Diagnostic du :** 2026-08-14  
 **Source :** `Bilans/bilan-nexus-eleve_bsiri_maths.pdf`
@@ -239,6 +242,61 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 | J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
 | Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
 | Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+
+<div class="page-break"></div>
+
+## Option annuelle — Mathématiques expertes
+
+Tu suivras l'enseignement optionnel de **mathématiques expertes** en Terminale, en plus de la spécialité. **Il n'y a pas de stage séparé pour cette option** : elle se prépare à l'intérieur du stage de mathématiques, sur le temps différencié.
+
+Un positionnement distinct t'a été proposé le 2026-08-14. Voici ce qu'il montre, et ce que l'option en fera.
+
+**Source :** `Bilans/bilan-nexus-eleve_bsiri_maths_expertes.pdf`
+
+### Ta réussite par domaine
+
+| Domaine | Réussite | Situation | Ce que l'option en fait en Terminale |
+|---|---:|---|---|
+| Arithmétique | 100 % | Acquis disponible | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans ℤ, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
+| Calcul littéral | 100 % | Acquis disponible | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans ℂ, factorisation de z² + 1, de z^n − 1, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
+| Systèmes d'équations | 100 % | Acquis disponible | Un système s'écrit matriciellement AX = B ; on le résout par inversion de matrice. Les matrices servent également à modéliser des graphes et des marches aléatoires. |
+| Logique | 100 % | Acquis disponible | L'arithmétique de Terminale est un chapitre de démonstrations : raisonnement par récurrence, par contraposée, par l'absurde, par disjonction de cas. La contraposée est l'outil standard des preuves de divisibilité. |
+| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle U(n+1) = A U(n) prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
+| Dénombrement | 66,7 % | Réussite hésitante | Le dénombrement est traité pour lui-même dans la spécialité (combinaisons, coefficients binomiaux) et sert en arithmétique pour compter les diviseurs d'un entier à partir de sa décomposition en facteurs premiers. |
+
+### Tes priorités pour l'option
+
+| # | Domaine | Posture | Ce qu'on en fait |
+|---:|---|---|---|
+| 1 | Dénombrement | **CONSOLIDER** | Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris. |
+
+### Les items à reprendre pour l'option
+
+**1 item(s)** à reprendre, avec l'énoncé exact et l'origine de l'erreur telle qu'établie par ton bilan.
+
+#### Item 17 — Dénombrement · Appliquer le principe multiplicatif
+
+**Énoncé.** Un menu propose 3 entrées et 4 plats. Combien de repas « entrée + plat » différents peut-on composer ?
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** 12
+
+**Ce qu'il faut retenir.** Chaque entrée peut être associée à chaque plat : 3 × 4 = 12 repas.
+
+**Le geste à installer.** Quand un choix se décompose en étapes indépendantes, on multiplie le nombre de possibilités de chaque étape.
+
+### Comment l'option sera travaillée pendant le stage
+
+| Séance | Ce qui est prévu pour l'option |
+|---:|---|
+| 1 | Division euclidienne : poser a = bq + r et contrôler 0 ≤ r < b |
+| 2 | Diviseurs, nombres premiers, décomposition en facteurs premiers |
+| 3 | PGCD et algorithme d'Euclide ; fractions irréductibles |
+| 4 | Logique : contraposée, réciproque, contre-exemple |
+| 5 | Calcul littéral et systèmes ; ouverture sur les matrices et les complexes |
+
+Ces vingt minutes sont prélevées sur le temps différencié de chaque séance : elles ne retirent rien au programme commun du stage.
 
 ## 11. Bilan final
 

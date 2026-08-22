@@ -2,6 +2,10 @@
 
 Ce guide couvre les deux modules, `tle_spe` (mathématiques) et `tle_nsi` (NSI).
 
+**Nexus Réussite** — centre d'accompagnement scolaire. Chaque stage dure 10 heures, à raison
+de 2 heures par jour pendant 5 jours consécutifs, **du 24 au 28 août 2026**. Les documents
+doivent donc être prêts avant le 24 août.
+
 ## 1. Produire les PDF
 
 ```bash
@@ -59,14 +63,14 @@ supprimer la première page si l'encre est comptée — le livret reste complet 
 
 ## 4. Volumétrie
 
-À l'impression recto-verso, pour une cohorte de neuf élèves :
+À l'impression recto-verso, pour une cohorte de huit élèves :
 
 | Lot | Exemplaires | Pages par exemplaire | Feuilles |
 |---|---:|---:|---:|
-| Dossiers élèves (maths) | 10 | 5 à 25 | ~90 |
-| Dossiers élèves (NSI) | 5 | 15 à 25 | ~55 |
-| Fiche d'une séance, maths | 9 | 5 | ~23 |
-| Fiche d'une séance, NSI | 5 | 5 à 7 | ~15 |
+| Dossiers élèves (maths) | 8 | 5 à 30 | ~85 |
+| Dossiers élèves (NSI) | 4 | 15 à 25 | ~45 |
+| Fiche d'une séance, maths | 8 | 5 | ~20 |
+| Fiche d'une séance, NSI | 4 | 5 à 7 | ~12 |
 | Préparation d'une séance | 1 | 11 à 14 | ~7 |
 | Packs enseignants complets | 2 | 100 et 98 | ~100 |
 
@@ -88,13 +92,13 @@ Le manifeste donne le compte exact après chaque génération.
 
 ## 6. Cas particuliers de cette cohorte
 
-- **Deux élèves n'ont pas passé le positionnement en mathématiques.** Leur dossier ne compte
-  que 5 pages et porte la mention « Diagnostic à établir » : il organise la passation en
-  séance 1 au lieu d'annoncer des résultats. Prévoir deux jeux du positionnement papier.
-- **Deux élèves suivent l'option mathématiques expertes.** Elles reçoivent un second dossier,
-  distinct, marqué `EXPERTES` dans le nom du fichier. Ne pas le confondre avec leur dossier
-  de spécialité.
-- **Une élève du groupe 2 ne suit que les mathématiques.** Son livret le précise ; elle ne
-  reçoit aucun document NSI ni physique-chimie.
-- **Une homonymie existe avec un élève entrant en Première NSI.** Vérifier le niveau indiqué
-  sur la couverture avant de remettre un dossier.
+- **Une élève n'a pas passé le positionnement en mathématiques.** Son dossier ne compte que
+  5 pages et porte la mention « Diagnostic à établir » : il organise la passation en séance 1
+  au lieu d'annoncer des résultats. Prévoir un jeu du positionnement papier.
+- **Deux élèves suivent l'option mathématiques expertes.** Elles ne reçoivent **pas** de
+  dossier séparé : l'option figure dans leur livret de mathématiques, section « Option
+  annuelle », et leurs exercices d'option sont à la fin de leur feuille de remédiation. Leur
+  dossier est donc plus épais que celui des autres.
+- **Deux élèves du groupe 2 suivent aussi la physique-chimie**, pour laquelle aucun stage
+  n'est organisé ici, et **deux ne suivent que les mathématiques**. Chaque livret annonce les
+  spécialités réelles : ne pas se fier au nom du groupe pour savoir quoi remettre.

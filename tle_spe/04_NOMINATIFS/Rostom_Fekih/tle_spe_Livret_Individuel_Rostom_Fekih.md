@@ -5,13 +5,17 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Rostom Fekih  
-**Groupe :** Groupe 2 — Terminale Mathématiques et Physique-Chimie  
+**Groupe :** Groupe 2 — Stage de mathématiques  
 **Spécialités conservées :** Mathématiques, Physique-Chimie  
 **Matière de ce livret :** Mathématiques  
-**Stage :** 5 séances de 2 heures  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027  
 **Diagnostic du :** 2026-08-13  
 **Source :** `Bilans/bilan-nexus-eleve_maths_rostom_fekih.pdf`
+
+> **Rattachement au groupe.** Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif.
 
 ---
 

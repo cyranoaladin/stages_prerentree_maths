@@ -5,13 +5,15 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Inès Ben Yahia  
-**Groupe :** Groupe 2 — Terminale Mathématiques et Physique-Chimie  
+**Groupe :** Groupe 2 — Stage de mathématiques  
 **Spécialités conservées :** Mathématiques  
 **Matière de ce livret :** Mathématiques  
-**Stage :** 5 séances de 2 heures  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027
 
-> **Rattachement au groupe.** Rattachée au groupe 2 pour l'organisation des séances. À la différence des autres élèves de ce groupe, elle ne suit que les mathématiques : le module de physique-chimie ne la concerne pas.
+> **Rattachement au groupe.** Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques.
 
 ---
 

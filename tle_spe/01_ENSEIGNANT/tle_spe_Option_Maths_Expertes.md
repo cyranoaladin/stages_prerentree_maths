@@ -1,12 +1,15 @@
 # Terminale Spécialité Mathématiques — Module complémentaire
 ## Enseignement optionnel de mathématiques expertes
 
-**Public :** deux élèves de la cohorte, l'un du groupe 1, l'autre du groupe 2.
-**Format :** 20 minutes par séance, prélevées sur le temps différencié. Pas de séance dédiée.
+**Public :** deux élèves de la cohorte, l'une du groupe 1, l'autre du groupe 2.
+**Format :** 20 minutes par séance, prélevées sur le temps différencié.
+**Il n'existe aucun stage de mathématiques expertes** : l'option se prépare à l'intérieur du
+stage de mathématiques.
 **Source pédagogique :** `05_SOURCES/stage_prerentree_terminale_maths.md`, § 9.
 
 > Ce document ne contient aucune donnée nominative. Le profil de chaque élève figure dans son
-> livret individuel, sous `04_NOMINATIFS/`.
+> **livret de mathématiques**, section « Option annuelle » — et non dans un livret séparé,
+> puisque l'option ne fait pas l'objet d'un stage distinct.
 
 ---
 

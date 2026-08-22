@@ -46,5 +46,77 @@ Contrôle effectué : ☐oui ☐non — lequel ? ...............................
 
 Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
 
+<div class="page-break"></div>
+
+## Exercices de l'option — Mathématiques expertes
+
+Ces exercices préparent l'option que tu suivras en Terminale. Ils se traitent sur le temps différencié, pas à la place du reste.
+
+### Option, exercice 1 — Dénombrement
+
+*Compétence visée : Appliquer le principe multiplicatif.*
+
+**Un cadenas possède 3 molettes portant chacune 6 symboles. Combien de codes différents peut-on former ?**
+
+Propriété, relation ou précondition utilisée :
+
+....................................................................................................
+
+Résolution :
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+
+### Option, exercice 2 — Dénombrement
+
+*Compétence visée : Dénombrer avec une contrainte sur une position.*
+
+**Combien de nombres de 00 à 99 se terminent par un chiffre impair ? Combien ont leurs deux chiffres pairs ?**
+
+Propriété, relation ou précondition utilisée :
+
+....................................................................................................
+
+Résolution :
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+
+### Option, exercice 3 — Logique
+
+*Compétence visée : Écrire la contraposée d'une implication.*
+
+**Écrire la contraposée de « Si n est un multiple de 6, alors n est pair ». Cette contraposée est-elle vraie ?**
+
+Propriété, relation ou précondition utilisée :
+
+....................................................................................................
+
+Résolution :
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_maths.md`._

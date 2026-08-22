@@ -68,5 +68,5 @@ Le dossier `05_NOMINATIFS/` contient, pour chaque élève, son livret individuel
 
 > **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne les nomme pas : la liste et les liens figurent dans le [tableau de bord enseignant](../01_ENSEIGNANT/tle_nsi_Tableau_Bord_Enseignant.md), qui est lui-même confidentiel. Ne jamais placer un document nominatif dans un pack collectif, ni le remettre à un autre élève du groupe.
 
-_5 dossier(s) nominatif(s) dans ce module._
+_4 dossier(s) nominatif(s) dans ce module._
 

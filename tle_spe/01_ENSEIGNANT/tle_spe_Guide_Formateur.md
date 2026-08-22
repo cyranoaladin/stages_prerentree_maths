@@ -1,5 +1,7 @@
 # Terminale Spécialité Mathématiques — Guide du formateur
-## Stage de pré-rentrée 2026-2027 — 5 séances de 2 heures
+## Stage de pré-rentrée 2026-2027 — 10 heures, du 24 au 28 août 2026
+
+**Nexus Réussite**, centre d'accompagnement scolaire · 2 heures par jour, 5 jours consécutifs.
 
 **Source pédagogique unique :** `05_SOURCES/stage_prerentree_terminale_maths.md`
 
@@ -27,29 +29,28 @@ Une phrase résume la doctrine :
 
 ## 2. La cohorte
 
-| Groupe | Spécialités | Élèves |
+| Groupe | Stages suivis | Élèves |
 |---|---|---:|
-| Groupe 1 | Mathématiques et NSI | 5 |
-| Groupe 2 | Mathématiques et Physique-Chimie | 4 |
+| Groupe 1 | Mathématiques et NSI | 4 |
+| Groupe 2 | Mathématiques | 4 |
 
 Les deux groupes suivent **le même module de mathématiques**, ensemble. Le groupe 1 suit en
-outre le module `tle_nsi`. Deux élèves suivent l'option mathématiques expertes.
+outre le module `tle_nsi`.
 
-**Deux élèves n'ont pas passé le positionnement en mathématiques** : un élève du groupe 1,
-et une élève du groupe 2 inscrite après la campagne. Leurs livrets le disent explicitement et
-prévoient un diagnostic en séance 1. **Ne rien inférer à leur place.** Prévoir deux jeux du
-positionnement papier pour la première séance, et 25 minutes pour la passation.
+Dans le groupe 2, deux élèves suivent aussi la physique-chimie — aucun stage n'est organisé
+pour cette spécialité ici — et deux ne suivent que les mathématiques. Deux élèves de la
+cohorte suivent l'option mathématiques expertes, **sans stage dédié**.
 
-Une élève du groupe 2 ne suit que les mathématiques ; elle y est rattachée pour
-l'organisation des séances. Cela ne change rien à sa participation au module, mais évite de
-lui parler d'un enseignement de physique-chimie qu'elle ne suit pas.
+**Une élève n'a pas passé le positionnement en mathématiques** : inscrite après la campagne,
+elle reçoit un livret « diagnostic à établir ». **Ne rien inférer à sa place.** Prévoir un jeu
+du positionnement papier pour la première séance, et 25 minutes pour la passation.
 
 ---
 
 ## 3. Diagnostic du groupe en une page
 
-Sur les sept élèves ayant passé le positionnement en mathématiques ; les deux autres sont
-diagnostiqués en séance 1.
+Sur les sept élèves ayant passé le positionnement en mathématiques ; la huitième est
+diagnostiquée en séance 1.
 
 | Domaine | Réussite moyenne | Certitudes erronées | À installer | À consolider | Acquis | Sans réponse |
 |---|---:|---:|---:|---:|---:|---:|
@@ -169,11 +170,12 @@ certitude erronée : la confrontation demande un pilotage que seul l'enseignant 
 
 ---
 
-## 8. Le module mathématiques expertes
+## 8. L'option mathématiques expertes
 
-Deux élèves. Le module n'a **pas de séance dédiée** : il est traité à raison de 20 minutes
-par séance, prélevées sur le temps différencié. Le détail figure dans
-`tle_spe_Option_Maths_Expertes.md`.
+Deux élèves. **Il n'existe aucun stage de mathématiques expertes** : l'option est traitée à
+raison de 20 minutes par séance, prélevées sur le temps différencié, et son diagnostic propre
+est repris dans le livret de mathématiques de chacune, section « Option annuelle ». Le détail
+de la conduite figure dans `tle_spe_Option_Maths_Expertes.md`.
 
 Le profil des deux élèves est très contrasté : l'une n'a qu'un point à consolider, l'autre a
 laissé deux domaines entiers sans réponse. Le module doit donc être conduit

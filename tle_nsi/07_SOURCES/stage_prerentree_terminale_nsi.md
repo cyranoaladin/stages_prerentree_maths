@@ -11,7 +11,12 @@
 ## 1.1 Cadre général
 
 Ce stage prépare l'entrée en classe terminale pour les élèves qui conservent la spécialité
-numérique et sciences informatiques. Il dure cinq séances de deux heures.
+numérique et sciences informatiques.
+
+Il est organisé par **Nexus Réussite**, centre d'accompagnement scolaire, et dure
+**10 heures**, à raison de **2 heures par jour pendant 5 jours consécutifs, du 24 au 28 août
+2026**. Un stage est organisé par enseignement de spécialité : les élèves concernés suivent
+donc également le stage de mathématiques, soit 20 heures au total.
 
 Tous les élèves concernés conservent également la spécialité mathématiques : ils constituent
 le **groupe 1** de la cohorte de pré-rentrée et suivent aussi le module `tle_spe`. Le module
@@ -22,7 +27,7 @@ L'objet du stage est précis : **consolider les notions de Première NSI dont la
 besoin immédiat**, en traitant en priorité les conceptions erronées que le positionnement a
 mises au jour.
 
-**Effectif :** 5 élèves.
+**Effectif :** 4 élèves.
 
 ## 1.2 Documents exploités
 
@@ -121,7 +126,7 @@ donne au stage sa cible.
 
 ## 3.1 Réussite moyenne par domaine
 
-Sur les cinq élèves ayant passé le positionnement :
+Sur les quatre élèves de la cohorte :
 
 | Domaine | Réussite moyenne | Certitudes erronées | À installer | À consolider | Acquis |
 |---|---:|---:|---:|---:|---:|
@@ -546,7 +551,7 @@ la valeur de retour, mais n'écrit aucune fonction récursive.
 
 ## 8.5 Articuler avec le module de mathématiques
 
-Les cinq élèves suivent les deux modules. Deux articulations sont explicites :
+Les quatre élèves suivent les deux modules. Deux articulations sont explicites :
 
 - les boucles de la séance 5 du module `tle_spe` (calcul des termes d'une suite) sont
   reprises en séance 3 de ce module, sous l'angle de la spécification et des tests ;
@@ -559,8 +564,8 @@ Les cinq élèves suivent les deux modules. Deux articulations sont explicites :
 
 | Élément | Décision |
 |---|---|
-| Public | 5 élèves du groupe 1, entrant en Terminale NSI |
-| Durée | 5 séances de 2 heures |
+| Public | 4 élèves du groupe 1, entrant en Terminale NSI |
+| Durée | 10 heures : 2 h/jour, 5 jours consécutifs, du 24 au 28 août 2026 |
 | Ordre des séances | Représentation et booléens, types construits, programmation, algorithmique, données et systèmes |
 | Principe directeur | Prédire, exécuter, confronter ; table de trace systématique |
 | Différenciation | Trois parcours par séance, cinq niveaux d'aide |

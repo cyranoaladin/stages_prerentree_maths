@@ -5,13 +5,17 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Inès Darghouth  
-**Groupe :** Groupe 2 — Terminale Mathématiques et Physique-Chimie  
-**Spécialités conservées :** Mathématiques, Physique-Chimie  
+**Groupe :** Groupe 2 — Stage de mathématiques  
+**Spécialités conservées :** Mathématiques  
 **Matière de ce livret :** Mathématiques  
-**Stage :** 5 séances de 2 heures  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027  
 **Diagnostic du :** 2026-08-14  
 **Source :** `Bilans/bilan-nexus-eleve_ines_darghouth_maths.pdf`
+
+> **Rattachement au groupe.** Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques.
 
 ---
 

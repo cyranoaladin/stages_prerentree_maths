@@ -76,7 +76,7 @@ def test_sources_are_consistent(registry, diagnostics, items):
 
 def test_cohort_is_split_into_the_two_declared_groups(registry):
     groups = {group["id"]: group for group in registry["groupes"]}
-    assert set(groups) == {"groupe-1-maths-nsi", "groupe-2-maths-pc"}
+    assert set(groups) == {"groupe-1-maths-nsi", "groupe-2-maths"}
     counts: dict[str, int] = {}
     for student in registry["students"]:
         counts[student["groupe"]] = counts.get(student["groupe"], 0) + 1
@@ -112,29 +112,31 @@ def test_every_student_follows_at_least_the_maths_module(registry):
         )
 
 
-def test_a_student_outside_the_group_nominal_pair_states_what_they_actually_follow(registry):
-    """Le groupe porte une combinaison nominale ; un élève peut ne pas la suivre exactement.
+def test_every_student_declares_the_specialities_they_actually_follow(registry):
+    """Le groupe dit quels stages l'élève suit, pas quelles spécialités il a choisies.
 
-    Dans ce cas, son livret ne doit pas se contenter de l'étiquette du groupe : il doit
-    annoncer les spécialités réellement suivies et expliquer le rattachement.
+    Deux élèves du groupe « stage de mathématiques » suivent aussi la physique-chimie, deux
+    autres ne suivent que les mathématiques : le livret doit annoncer le vrai, et une note
+    doit expliquer le rattachement dès que le groupe ne suffit pas à le déduire.
     """
     groups = {group["id"]: group for group in registry["groupes"]}
     for student in registry["students"]:
-        override = student.get("specialites")
-        if override is None:
-            continue
-        assert override != groups[student["groupe"]]["specialites"], (
-            f"{student['displayName']} : surcharge inutile, identique à celle du groupe"
+        specialities = student.get("specialites")
+        assert specialities, f"{student['displayName']} : aucune spécialité déclarée"
+        assert "Mathématiques" in specialities, (
+            f"{student['displayName']} : tous les élèves de la cohorte suivent les maths"
         )
-        assert student.get("noteGroupe", "").strip(), (
-            f"{student['displayName']} suit autre chose que la combinaison de son groupe "
-            "sans qu'aucune note n'explique le rattachement"
-        )
+        stages = groups[student["groupe"]]["stages"]
+        if set(specialities) != set(stages):
+            assert student.get("noteGroupe", "").strip(), (
+                f"{student['displayName']} suit {specialities} alors que son groupe couvre "
+                f"{stages}, sans note expliquant le rattachement"
+            )
 
 
 def test_group_2_students_do_not_follow_the_nsi_module(registry):
     for student in registry["students"]:
-        if student["groupe"] != "groupe-2-maths-pc":
+        if student["groupe"] != "groupe-2-maths":
             continue
         modules = {subject["module"] for subject in student["matieres"]}
         assert "tle_nsi" not in modules, f"{student['displayName']} ne suit pas NSI"
@@ -377,6 +379,49 @@ def test_priority_order_puts_wrong_certainties_first(diagnostics):
                 break
 
 
+def test_the_annual_option_is_folded_into_the_maths_livret(registry, diagnostics, documents):
+    """L'option n'a pas de stage : elle vit dans le livret de mathématiques, pas à côté."""
+    for student in registry["students"]:
+        option = student.get("optionAnnuelle")
+        if option is None:
+            continue
+        relative = (
+            f"tle_spe/04_NOMINATIFS/{student['slug']}/"
+            f"tle_spe_Livret_Individuel_{student['slug']}.md"
+        )
+        content = documents[relative]
+        assert f"Option annuelle — {option['intitule']}" in content
+        assert "Il n'y a pas de stage séparé pour cette option" in content
+
+        # Le diagnostic d'option doit être repris, item par item, comme celui de la spécialité.
+        option_diagnostic = diagnostics["diagnostics"][option["diagnosticId"]]
+        for domain in option_diagnostic["reussite_par_domaine"]:
+            assert domain in content, f"{relative} : domaine d'option '{domain}' absent"
+
+        # Et il ne doit subsister aucun document séparé pour cette option.
+        stray = [key for key in documents if "expertes" in key.lower()]
+        assert stray == [], stray
+
+
+def test_option_exercises_reach_both_remediation_sheets(registry, diagnostics, items, documents):
+    for student in registry["students"]:
+        option = student.get("optionAnnuelle")
+        if option is None:
+            continue
+        option_diagnostic = diagnostics["diagnostics"][option["diagnosticId"]]
+        bank = items["instruments"][option["intitule"]]["items"]
+        expected = {
+            reference["variante"]
+            for _rank, _item, reference in items_to_revisit(option_diagnostic, bank)
+        }
+        base = f"tle_spe/04_NOMINATIFS/{student['slug']}/tle_spe_Remediation_Ciblee_{student['slug']}"
+        eleve = documents[f"{base}_ELEVE.md"]
+        prof = documents[f"{base}_PROF_Corrige.md"]
+        for variante in expected:
+            assert variante in eleve, f"{student['displayName']} : exercice d'option absent"
+            assert variante in prof
+
+
 def test_a_student_without_diagnostic_gets_an_explicit_notice(registry, documents):
     for student in registry["students"]:
         for missing in student.get("matieresSansDiagnostic", []):
@@ -402,14 +447,16 @@ def test_a_student_without_diagnostic_gets_an_explicit_notice(registry, document
             )
 
 
-def test_homonym_students_are_never_merged(registry):
-    """Deux élèves peuvent porter le même nom à des niveaux différents."""
-    flagged = [s for s in registry["students"] if s.get("homonymeAvertissement")]
-    assert flagged, "l'homonymie connue de la cohorte n'est plus signalée"
-    for student in flagged:
-        assert student["slug"] not in {
-            path.name for path in (ROOT / "1re_nsi" / "05_NOMINATIFS").iterdir()
-        }, f"{student['displayName']} partage un dossier avec son homonyme de Première"
+def test_no_terminale_student_shares_a_folder_with_a_premiere_student(registry):
+    """Un même patronyme peut exister à deux niveaux : les dossiers restent distincts."""
+    premiere = {path.name for path in (ROOT / "1re_nsi" / "05_NOMINATIFS").iterdir()}
+    for student in registry["students"]:
+        assert student["slug"] not in premiere, (
+            f"{student['displayName']} partage un répertoire avec un élève de Première"
+        )
+    for student in registry["students"]:
+        if student.get("homonymeAvertissement"):
+            assert student["homonymeAvertissement"].strip()
 
 
 # --------------------------------------------------------------------------------------

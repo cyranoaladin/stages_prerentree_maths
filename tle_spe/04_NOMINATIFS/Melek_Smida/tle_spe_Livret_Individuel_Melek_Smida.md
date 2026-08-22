@@ -5,13 +5,18 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Melek Smida  
-**Groupe :** Groupe 2 — Terminale Mathématiques et Physique-Chimie  
+**Groupe :** Groupe 2 — Stage de mathématiques  
 **Spécialités conservées :** Mathématiques, Physique-Chimie  
 **Matière de ce livret :** Mathématiques  
-**Stage :** 5 séances de 2 heures  
+**Option suivie en Terminale :** Mathématiques expertes  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027  
 **Diagnostic du :** 2026-08-19  
 **Source :** `Bilans/bilan-nexus-eleve_bensmida_maths.pdf`
+
+> **Rattachement au groupe.** Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif.
 
 ---
 
@@ -284,6 +289,152 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 | J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
 | Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
 | Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+
+<div class="page-break"></div>
+
+## Option annuelle — Mathématiques expertes
+
+Tu suivras l'enseignement optionnel de **mathématiques expertes** en Terminale, en plus de la spécialité. **Il n'y a pas de stage séparé pour cette option** : elle se prépare à l'intérieur du stage de mathématiques, sur le temps différencié.
+
+Un positionnement distinct t'a été proposé le 2026-08-19. Voici ce qu'il montre, et ce que l'option en fera.
+
+**Source :** `Bilans/bilan-nexus-eleve_bensmida_maths_expertes.pdf`
+
+### Ta réussite par domaine
+
+| Domaine | Réussite | Situation | Ce que l'option en fait en Terminale |
+|---|---:|---|---|
+| Arithmétique | 58,3 % | Certitude à revoir | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans ℤ, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
+| Calcul littéral | 0 % | Sans réponse | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans ℂ, factorisation de z² + 1, de z^n − 1, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
+| Systèmes d'équations | 0 % | Sans réponse | Un système s'écrit matriciellement AX = B ; on le résout par inversion de matrice. Les matrices servent également à modéliser des graphes et des marches aléatoires. |
+| Logique | 66,7 % | Difficulté repérée, sans fausse certitude | L'arithmétique de Terminale est un chapitre de démonstrations : raisonnement par récurrence, par contraposée, par l'absurde, par disjonction de cas. La contraposée est l'outil standard des preuves de divisibilité. |
+| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle U(n+1) = A U(n) prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
+| Dénombrement | 100 % | Acquis disponible | Le dénombrement est traité pour lui-même dans la spécialité (combinaisons, coefficients binomiaux) et sert en arithmétique pour compter les diviseurs d'un entier à partir de sa décomposition en facteurs premiers. |
+
+### Tes priorités pour l'option
+
+| # | Domaine | Posture | Ce qu'on en fait |
+|---:|---|---|---|
+| 1 | Arithmétique | **CONFRONTER** | Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement. |
+| 2 | Calcul littéral | **DIAGNOSTIQUER** | Aucune réponse n'a été apportée sur ce domaine. On ne devine pas : un test ciblé est passé au démarrage, et la remédiation est décidée à partir de ce qu'il montre. |
+| 3 | Systèmes d'équations | **DIAGNOSTIQUER** | Aucune réponse n'a été apportée sur ce domaine. On ne devine pas : un test ciblé est passé au démarrage, et la remédiation est décidée à partir de ce qu'il montre. |
+| 4 | Logique | **INSTALLER** | La difficulté est repérée et assumée : il n'y a aucune fausse certitude à défaire. On pose les définitions utiles, on montre des exemples résolus, puis on entraîne court et souvent. |
+
+### Les items à reprendre pour l'option
+
+**8 item(s)** à reprendre, avec l'énoncé exact et l'origine de l'erreur telle qu'établie par ton bilan.
+
+#### Item 4 — Arithmétique · Énumérer les diviseurs positifs d'un entier
+
+**Énoncé.** Combien de diviseurs positifs le nombre 12 possède-t-il ?
+
+**Ta réponse.** 4
+
+**Réponse attendue.** 6
+
+**D'où vient l'erreur.** Oublie certains diviseurs, par exemple 4 et 6.
+
+**Ce qu'il faut retenir.** Les diviseurs de 12 sont 1, 2, 3, 4, 6, 12 : il y en a 6.
+
+**Le geste à installer.** Balayer par paires (1 et n, 2 et n/2, …) jusqu'à la racine carrée de n : aucune paire n'est alors oubliée.
+
+#### Item 7 — Arithmétique · Calculer un PGCD
+
+**Énoncé.** Quel est le PGCD de 12 et 18 ?
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** 6
+
+**Ce qu'il faut retenir.** Les diviseurs communs de 12 et 18 sont 1, 2, 3, 6 ; le plus grand est 6.
+
+**Le geste à installer.** Par l'algorithme d'Euclide : remplacer (a ; b) par (b ; reste de a par b) jusqu'à un reste nul. Le dernier reste non nul est le PGCD.
+
+#### Item 8 — Arithmétique · Rendre une fraction irréductible
+
+**Énoncé.** Quelle est la forme irréductible de la fraction 24/36 ?
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** 2/3
+
+**Ce qu'il faut retenir.** On divise numérateur et dénominateur par leur PGCD, 12 : 24/36 = 2/3.
+
+**Le geste à installer.** Diviser numérateur et dénominateur par leur PGCD, en une seule étape, plutôt que de simplifier au hasard.
+
+#### Item 9 — Calcul littéral · Reconnaître et utiliser une différence de deux carrés
+
+**Énoncé.** Factoriser l'expression x² − 16.
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** (x − 4)(x + 4)
+
+**Ce qu'il faut retenir.** x² − 16 = x² − 4² = (x − 4)(x + 4), identité de la différence de deux carrés.
+
+**Le geste à installer.** Identifier a² − b², puis écrire (a − b)(a + b). Vérifier en redéveloppant.
+
+#### Item 10 — Calcul littéral · Développer un produit de deux binômes
+
+**Énoncé.** Développer et réduire (x − 3)(x + 5).
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** x² + 2x − 15
+
+**Ce qu'il faut retenir.** (x − 3)(x + 5) = x² + 5x − 3x − 15 = x² + 2x − 15.
+
+**Le geste à installer.** Distribuer chaque terme du premier facteur sur chaque terme du second (quatre produits), puis regrouper les termes semblables.
+
+#### Item 11 — Systèmes d'équations · Résoudre un système par combinaison linéaire
+
+**Énoncé.** Quelle est la solution du système { x + y = 7 ; x − y = 1 } ?
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** x = 4 et y = 3
+
+**Ce qu'il faut retenir.** En additionnant les deux équations : 2x = 8, donc x = 4, puis y = 3.
+
+**Le geste à installer.** Additionner ou soustraire les deux équations pour éliminer une inconnue, puis remonter. Toujours vérifier le couple obtenu dans les deux équations.
+
+#### Item 12 — Systèmes d'équations · Résoudre un système par substitution
+
+**Énoncé.** Dans le système { 2x + y = 8 ; x = 3 }, que vaut y ?
+
+**Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
+
+**Réponse attendue.** 2
+
+**Ce qu'il faut retenir.** Avec x = 3 : 2 × 3 + y = 8, donc y = 8 − 6 = 2.
+
+**Le geste à installer.** Remplacer l'inconnue connue dans l'autre équation, puis isoler. Une seule substitution suffit quand une équation donne déjà une inconnue.
+
+#### Item 13 — Logique · Écrire la contraposée d'une implication
+
+**Énoncé.** Quelle est la contraposée de « Si n est pair, alors n² est pair » ?
+
+**Ta réponse.** Si n est impair, alors n² est impair
+
+**Réponse attendue.** Si n² est impair, alors n est impair
+
+**D'où vient l'erreur.** Nie les deux propositions sans les échanger : ce n'est pas la contraposée.
+
+**Ce qu'il faut retenir.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : « Si n² est impair, alors n est impair ».
+
+**Le geste à installer.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
+
+### Comment l'option sera travaillée pendant le stage
+
+| Séance | Ce qui est prévu pour l'option |
+|---:|---|
+| 1 | Division euclidienne : poser a = bq + r et contrôler 0 ≤ r < b |
+| 2 | Diviseurs, nombres premiers, décomposition en facteurs premiers |
+| 3 | PGCD et algorithme d'Euclide ; fractions irréductibles |
+| 4 | Logique : contraposée, réciproque, contre-exemple |
+| 5 | Calcul littéral et systèmes ; ouverture sur les matrices et les complexes |
+
+Ces vingt minutes sont prélevées sur le temps différencié de chaque séance : elles ne retirent rien au programme commun du stage.
 
 ## 11. Bilan final
 

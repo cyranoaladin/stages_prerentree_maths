@@ -6,8 +6,8 @@
   "groupes": [
     {
       "id": "groupe-1-maths-nsi",
-      "libelle": "Groupe 1 — Terminale Mathématiques et NSI",
-      "specialites": [
+      "libelle": "Groupe 1 — Stages de mathématiques et de NSI",
+      "stages": [
         "Mathématiques",
         "Numérique et sciences informatiques"
       ],
@@ -15,14 +15,13 @@
         "tle_spe",
         "tle_nsi"
       ],
-      "effectif": 5
+      "effectif": 4
     },
     {
-      "id": "groupe-2-maths-pc",
-      "libelle": "Groupe 2 — Terminale Mathématiques et Physique-Chimie",
-      "specialites": [
-        "Mathématiques",
-        "Physique-Chimie"
+      "id": "groupe-2-maths",
+      "libelle": "Groupe 2 — Stage de mathématiques",
+      "stages": [
+        "Mathématiques"
       ],
       "modules": [
         "tle_spe"
@@ -56,6 +55,10 @@
           "sourceStudentReport": "bilan-nexus-eleve_adam_zahouani_nsi.pdf",
           "sourceParentReport": "bilan-nexus-parents_adam_zahouani_nsi.pdf"
         }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
       ]
     },
     {
@@ -83,6 +86,10 @@
           "sourceStudentReport": "bilan-nexus-eleve_alexandre_zahouani_nsi.pdf",
           "sourceParentReport": "bilan-nexus-parents_alexandre_zahouani_nsi.pdf"
         }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
       ]
     },
     {
@@ -104,21 +111,23 @@
           "sourceParentReport": "bilan-nexus-parents_bsiri_maths.pdf"
         },
         {
-          "module": "tle_spe",
-          "matiere": "Mathématiques expertes",
-          "option": true,
-          "diagnosticId": "sara-bsiri--maths-expertes",
-          "sourceStudentReport": "bilan-nexus-eleve_bsiri_maths_expertes.pdf",
-          "sourceParentReport": "bilan-nexus-parents_bsiri_maths_expertes.pdf"
-        },
-        {
           "module": "tle_nsi",
           "matiere": "NSI",
           "diagnosticId": "sara-bsiri--nsi",
           "sourceStudentReport": "bilan-nexus-eleve_bsiri_nsi.pdf",
           "sourceParentReport": "bilan-nexus-parents_bsiri_nsi.pdf"
         }
-      ]
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ],
+      "optionAnnuelle": {
+        "intitule": "Mathématiques expertes",
+        "diagnosticId": "sara-bsiri--maths-expertes",
+        "sourceStudentReport": "bilan-nexus-eleve_bsiri_maths_expertes.pdf",
+        "sourceParentReport": "bilan-nexus-parents_bsiri_maths_expertes.pdf"
+      }
     },
     {
       "id": "yassine-ben-hassine",
@@ -145,35 +154,10 @@
           "sourceStudentReport": "bilan-nexus-eleve_yassine_nsi.pdf",
           "sourceParentReport": "bilan-nexus-parents_yassine_nsi.pdf"
         }
-      ]
-    },
-    {
-      "id": "ahmed-benhadj-salem-tle",
-      "displayName": "Ahmed Benhadj Salem",
-      "aliases": [
-        "Ahmed Benhadj Salem",
-        "Ahmed (terminale) Benhadj Salem",
-        "AHMED BENHADJ SALEM"
       ],
-      "slug": "Ahmed_Benhadj_Salem",
-      "groupe": "groupe-1-maths-nsi",
-      "active": true,
-      "homonymeAvertissement": "Homonyme de l'élève entrant en Première NSI (module 1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM). Ce sont deux dossiers distincts : ne jamais les fusionner.",
-      "matieres": [
-        {
-          "module": "tle_nsi",
-          "matiere": "NSI",
-          "diagnosticId": "ahmed-benhadj-salem-tle--nsi",
-          "sourceStudentReport": "bilan-nexus-eleve_benhadjsalem_nsi_terminale.pdf",
-          "sourceParentReport": "bilan-nexus-parents_benhadjsalem_nsi_terminale.pdf"
-        }
-      ],
-      "matieresSansDiagnostic": [
-        {
-          "module": "tle_spe",
-          "matiere": "Mathématiques",
-          "motif": "Aucun bilan de positionnement Terminale Mathématiques n'a été passé. Le livret Mathématiques ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1."
-        }
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
       ]
     },
     {
@@ -184,7 +168,7 @@
         "MELEK SMIDA"
       ],
       "slug": "Melek_Smida",
-      "groupe": "groupe-2-maths-pc",
+      "groupe": "groupe-2-maths",
       "active": true,
       "matieres": [
         {
@@ -193,16 +177,19 @@
           "diagnosticId": "melek-smida--maths",
           "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths.pdf",
           "sourceParentReport": "bilan-nexus-parents_bensmida_maths.pdf"
-        },
-        {
-          "module": "tle_spe",
-          "matiere": "Mathématiques expertes",
-          "option": true,
-          "diagnosticId": "melek-smida--maths-expertes",
-          "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths_expertes.pdf",
-          "sourceParentReport": "bilan-nexus-parents_bensmida_maths_expertes.pdf"
         }
-      ]
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "noteGroupe": "Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif.",
+      "optionAnnuelle": {
+        "intitule": "Mathématiques expertes",
+        "diagnosticId": "melek-smida--maths-expertes",
+        "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths_expertes.pdf",
+        "sourceParentReport": "bilan-nexus-parents_bensmida_maths_expertes.pdf"
+      }
     },
     {
       "id": "ines-darghouth",
@@ -213,7 +200,7 @@
         "INES DARGHOUTH"
       ],
       "slug": "Ines_Darghouth",
-      "groupe": "groupe-2-maths-pc",
+      "groupe": "groupe-2-maths",
       "active": true,
       "matieres": [
         {
@@ -223,7 +210,11 @@
           "sourceStudentReport": "bilan-nexus-eleve_ines_darghouth_maths.pdf",
           "sourceParentReport": "bilan-nexus-parents_ines_darghouth_maths.pdf"
         }
-      ]
+      ],
+      "specialites": [
+        "Mathématiques"
+      ],
+      "noteGroupe": "Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques."
     },
     {
       "id": "rostom-fekih",
@@ -233,7 +224,7 @@
         "ROSTOM FEKIH"
       ],
       "slug": "Rostom_Fekih",
-      "groupe": "groupe-2-maths-pc",
+      "groupe": "groupe-2-maths",
       "active": true,
       "matieres": [
         {
@@ -243,7 +234,12 @@
           "sourceStudentReport": "bilan-nexus-eleve_maths_rostom_fekih.pdf",
           "sourceParentReport": "bilan-nexus-parents_maths_rostom_fekih.pdf"
         }
-      ]
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "noteGroupe": "Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif."
     },
     {
       "id": "ines-ben-yahia",
@@ -255,12 +251,12 @@
         "Inès BEN YAHIA"
       ],
       "slug": "Ines_Ben_Yahia",
-      "groupe": "groupe-2-maths-pc",
+      "groupe": "groupe-2-maths",
       "active": true,
       "specialites": [
         "Mathématiques"
       ],
-      "noteGroupe": "Rattachée au groupe 2 pour l'organisation des séances. À la différence des autres élèves de ce groupe, elle ne suit que les mathématiques : le module de physique-chimie ne la concerne pas.",
+      "noteGroupe": "Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques.",
       "matieres": [],
       "matieresSansDiagnostic": [
         {
@@ -270,5 +266,13 @@
         }
       ]
     }
-  ]
+  ],
+  "cadre": {
+    "organisme": "Nexus Réussite",
+    "natureOrganisme": "Centre d'accompagnement scolaire",
+    "dureeParSpecialite": "10 heures",
+    "rythme": "2 heures par jour, 5 jours consécutifs",
+    "dates": "du 24 au 28 août 2026",
+    "note": "Un stage est organisé par enseignement de spécialité. Un élève qui suit deux spécialités accompagnées suit donc deux stages de 10 heures."
+  }
 }

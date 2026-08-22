@@ -101,6 +101,100 @@ Aucune réponse n'a été apportée sur ce domaine. On ne devine pas : un test c
 
 **Argument à donner à l'élève.** Le signe d'un trinôme sert à lire le signe d'une dérivée ou d'une dérivée seconde : c'est lui qui donne les variations, la convexité et les points d'inflexion. Il intervient aussi dans les limites de fonctions rationnelles et dans l'application du théorème des valeurs intermédiaires.
 
+<div class="page-break"></div>
+
+## Option — Mathématiques expertes
+
+Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps différencié du stage de mathématiques, à raison de vingt minutes par séance.
+
+| # | Item du positionnement | Domaine | Compétence | Motif de sélection |
+|---:|---:|---|---|---|
+| 1 | item 4 | Arithmétique | Énumérer les diviseurs positifs d'un entier | réponse fausse au positionnement |
+| 2 | item 7 | Arithmétique | Calculer un PGCD | question laissée sans réponse |
+| 3 | item 8 | Arithmétique | Rendre une fraction irréductible | question laissée sans réponse |
+| 4 | item 9 | Calcul littéral | Reconnaître et utiliser une différence de deux carrés | question laissée sans réponse |
+| 5 | item 10 | Calcul littéral | Développer un produit de deux binômes | question laissée sans réponse |
+| 6 | item 11 | Systèmes d'équations | Résoudre un système par combinaison linéaire | question laissée sans réponse |
+| 7 | item 12 | Systèmes d'équations | Résoudre un système par substitution | question laissée sans réponse |
+| 8 | item 13 | Logique | Écrire la contraposée d'une implication | réponse fausse au positionnement |
+| 9 | item 14 | Logique | Distinguer une implication de sa réciproque | réussi avec une certitude de 2/4 |
+
+### Option, exercice 1 — Arithmétique
+
+**Énoncé.** Combien de diviseurs positifs 18 possède-t-il ? Les énumérer par paires.
+
+**Corrigé.** Les paires sont (1 ; 18), (2 ; 9) et (3 ; 6). Les diviseurs positifs sont donc 1, 2, 3, 6, 9 et 18 : il y en a 6.
+
+**Geste à installer.** Balayer par paires (1 et n, 2 et n/2, …) jusqu'à la racine carrée de n : aucune paire n'est alors oubliée.
+
+**Erreur à surveiller chez cet élève.** Oublie certains diviseurs, par exemple 4 et 6. (item 4 du positionnement d'option.)
+
+### Option, exercice 2 — Arithmétique
+
+**Énoncé.** Calculer le PGCD de 84 et 60 par l'algorithme d'Euclide, en écrivant chaque division euclidienne.
+
+**Corrigé.** 84 = 60 × 1 + 24 ; 60 = 24 × 2 + 12 ; 24 = 12 × 2 + 0. Le dernier reste non nul est 12 : PGCD(84 ; 60) = 12.
+
+**Geste à installer.** Par l'algorithme d'Euclide : remplacer (a ; b) par (b ; reste de a par b) jusqu'à un reste nul. Le dernier reste non nul est le PGCD.
+
+### Option, exercice 3 — Arithmétique
+
+**Énoncé.** Rendre irréductible la fraction 105/135.
+
+**Corrigé.** PGCD(105 ; 135) = 15, car 135 = 105 × 1 + 30, 105 = 30 × 3 + 15, 30 = 15 × 2 + 0. On obtient 105/135 = 7/9.
+
+**Geste à installer.** Diviser numérateur et dénominateur par leur PGCD, en une seule étape, plutôt que de simplifier au hasard.
+
+### Option, exercice 4 — Calcul littéral
+
+**Énoncé.** Factoriser l'expression 9x² − 25, puis résoudre l'équation 9x² − 25 = 0.
+
+**Corrigé.** 9x² − 25 = (3x)² − 5² = (3x − 5)(3x + 5). L'équation a donc pour solutions x = 5/3 et x = −5/3.
+
+**Geste à installer.** Identifier a² − b², puis écrire (a − b)(a + b). Vérifier en redéveloppant.
+
+### Option, exercice 5 — Calcul littéral
+
+**Énoncé.** Développer et réduire (2x − 1)(x + 4).
+
+**Corrigé.** (2x − 1)(x + 4) = 2x² + 8x − x − 4 = 2x² + 7x − 4.
+
+**Geste à installer.** Distribuer chaque terme du premier facteur sur chaque terme du second (quatre produits), puis regrouper les termes semblables.
+
+### Option, exercice 6 — Systèmes d'équations
+
+**Énoncé.** Résoudre le système { 2x + y = 11 ; x − y = 1 }, puis vérifier la solution.
+
+**Corrigé.** En additionnant les deux équations : 3x = 12, donc x = 4. La seconde équation donne y = x − 1 = 3. Vérification : 2 × 4 + 3 = 11 et 4 − 3 = 1.
+
+**Geste à installer.** Additionner ou soustraire les deux équations pour éliminer une inconnue, puis remonter. Toujours vérifier le couple obtenu dans les deux équations.
+
+### Option, exercice 7 — Systèmes d'équations
+
+**Énoncé.** Dans le système { 3x − 2y = 5 ; y = 2 }, déterminer x.
+
+**Corrigé.** En remplaçant y par 2 : 3x − 4 = 5, donc 3x = 9 et x = 3.
+
+**Geste à installer.** Remplacer l'inconnue connue dans l'autre équation, puis isoler. Une seule substitution suffit quand une équation donne déjà une inconnue.
+
+### Option, exercice 8 — Logique
+
+**Énoncé.** Écrire la contraposée de « Si n est un multiple de 6, alors n est pair ». Cette contraposée est-elle vraie ?
+
+**Corrigé.** La contraposée est « Si n est impair, alors n n'est pas un multiple de 6 ». Elle est vraie, puisque l'implication de départ l'est : une implication et sa contraposée sont équivalentes.
+
+**Geste à installer.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
+
+**Erreur à surveiller chez cet élève.** Nie les deux propositions sans les échanger : ce n'est pas la contraposée. (item 13 du positionnement d'option.)
+
+### Option, exercice 9 — Logique
+
+**Énoncé.** La réciproque de « Si a = b, alors a² = b² » est-elle vraie ? Justifier.
+
+**Corrigé.** La réciproque s'énonce « Si a² = b², alors a = b ». Elle est fausse : pour a = 1 et b = −1, on a bien a² = b² = 1 sans que a = b. En réalité a² = b² équivaut à a = b ou a = −b.
+
+**Geste à installer.** La réciproque de « A ⟹ B » est « B ⟹ A ». Elle n'a aucune raison d'être vraie : un seul contre-exemple suffit à la réfuter.
+
 ## Décision de fin de parcours
 
 | Domaine | Situation initiale | Situation finale | Décision pour septembre |

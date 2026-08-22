@@ -5,10 +5,13 @@
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
 **Élève :** Sara Bsiri  
-**Groupe :** Groupe 1 — Terminale Mathématiques et NSI  
+**Groupe :** Groupe 1 — Stages de mathématiques et de NSI  
 **Spécialités conservées :** Mathématiques, Numérique et sciences informatiques  
 **Matière de ce livret :** NSI  
-**Stage :** 5 séances de 2 heures  
+**Option suivie en Terminale :** Mathématiques expertes  
+**Organisme :** Nexus Réussite — centre d'accompagnement scolaire  
+**Stage :** 10 heures, 2 heures par jour, 5 jours consécutifs  
+**Dates :** du 24 au 28 août 2026  
 **Année scolaire préparée :** 2026-2027  
 **Diagnostic du :** 2026-08-14  
 **Source :** `Bilans/bilan-nexus-eleve_bsiri_nsi.pdf`

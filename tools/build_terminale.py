@@ -43,6 +43,11 @@ REGISTRY_PATH = "content/students_terminale.json"
 DIAGNOSTICS_PATH = "content/diagnostics_terminale.json"
 ITEMS_PATH = "content/items_terminale.json"
 
+def stage_frame(registry: dict) -> dict[str, str]:
+    """Cadre matériel du stage : organisme, durée, rythme, dates."""
+    return registry["cadre"]
+
+
 CONFIDENTIAL_BANNER = (
     "> **DOCUMENT CONFIDENTIEL — DONNÉES NOMINATIVES**  \n"
     "> À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus "
@@ -205,6 +210,15 @@ def check_sources(registry: dict, diagnostics: dict, items: dict) -> None:
         # Ce qui serait fautif, c'est de n'avoir aucune matière du tout.
         if not student["matieres"] and not student.get("matieresSansDiagnostic"):
             errors.append(f"{where} : aucune matière déclarée")
+        option = student.get("optionAnnuelle")
+        if option is not None:
+            if option["diagnosticId"] not in diagnostics["diagnostics"]:
+                errors.append(
+                    f"{where} : diagnostic d'option introuvable '{option['diagnosticId']}'"
+                )
+            elif option["intitule"] not in items["instruments"]:
+                errors.append(f"{where} : aucun instrument pour '{option['intitule']}'")
+
         for missing in student.get("matieresSansDiagnostic", []):
             if missing["module"] not in MODULES:
                 errors.append(f"{where} : module inconnu '{missing['module']}'")
@@ -348,8 +362,122 @@ def session_focus(diagnostic: dict, module: Module) -> list[dict[str, object]]:
     return rows
 
 
+def render_option_section(student: dict, option_diagnostic: dict,
+                          option_instrument: dict) -> list[str]:
+    """Section « option annuelle » du livret de mathématiques.
+
+    L'option mathématiques expertes ne fait pas l'objet d'un stage à part : elle se prépare
+    à l'intérieur du stage de mathématiques. Son positionnement propre est donc reversé
+    ici, avec les mêmes règles de lecture que le reste du livret — et le même refus
+    d'extrapoler au-delà du bilan.
+    """
+    intitule = student["optionAnnuelle"]["intitule"]
+    bank = option_instrument["items"]
+    domains = option_instrument["domaines"]
+    scores = option_diagnostic["reussite_par_domaine"]
+    revisit = items_to_revisit(option_diagnostic, bank)
+    priorities = worked_domains(option_diagnostic)
+
+    out: list[str] = []
+    add = out.append
+
+    add("<div class=\"page-break\"></div>")
+    add("")
+    add(f"## Option annuelle — {intitule}")
+    add("")
+    add(f"Tu suivras l'enseignement optionnel de **{intitule.lower()}** en Terminale, en plus "
+        "de la spécialité. **Il n'y a pas de stage séparé pour cette option** : elle se "
+        "prépare à l'intérieur du stage de mathématiques, sur le temps différencié.")
+    add("")
+    add(f"Un positionnement distinct t'a été proposé le {option_diagnostic['date_bilan']}. "
+        "Voici ce qu'il montre, et ce que l'option en fera.")
+    add("")
+    add(f"**Source :** `Bilans/{Path(option_diagnostic['source_pdf']).name}`")
+    add("")
+
+    add("### Ta réussite par domaine")
+    add("")
+    add("| Domaine | Réussite | Situation | Ce que l'option en fait en Terminale |")
+    add("|---|---:|---|---|")
+    for domain, score in scores.items():
+        quadrant = domain_quadrant(option_diagnostic, domain)
+        title, _posture, _method = QUADRANT_BY_KEY[quadrant]
+        opening = domains.get(domain, {}).get("ouverture_terminale", "—")
+        add(f"| {domain} | {format_percentage(score)} | {title} | {opening} |")
+    add("")
+
+    add("### Tes priorités pour l'option")
+    add("")
+    if not priorities:
+        add("Aucune priorité ne ressort de ce positionnement : les prérequis de l'option sont "
+            "en place. Le temps différencié servira à aller plus loin, pas à combler.")
+        add("")
+    else:
+        add("| # | Domaine | Posture | Ce qu'on en fait |")
+        add("|---:|---|---|---|")
+        for index, (domain, quadrant) in enumerate(priorities, 1):
+            _title, posture, method = QUADRANT_BY_KEY[quadrant]
+            add(f"| {index} | {domain} | **{posture}** | {method} |")
+        add("")
+
+    if revisit:
+        add("### Les items à reprendre pour l'option")
+        add("")
+        add(f"**{len(revisit)} item(s)** à reprendre, avec l'énoncé exact et l'origine de "
+            "l'erreur telle qu'établie par ton bilan.")
+        add("")
+        for rank, item, reference in revisit:
+            unanswered = item["verdict"] in ("NON TRAITÉE", "NON TRAITÉ", "SANS RÉPONSE")
+            add(f"#### Item {rank} — {item['domaine']} · {reference['competence']}")
+            add("")
+            add(f"**Énoncé.** {item['question']}")
+            add("")
+            if unanswered:
+                add("**Ta réponse.** _Question non traitée._ On fera le point au démarrage, "
+                    "sans rien supposer.")
+            else:
+                add(f"**Ta réponse.** {item['reponse_donnee']}")
+            add("")
+            if item["reponse_attendue"]:
+                add(f"**Réponse attendue.** {item['reponse_attendue']}")
+                add("")
+            if item["origine_erreur"]:
+                add(f"**D'où vient l'erreur.** {item['origine_erreur']}")
+                add("")
+            add(f"**Ce qu'il faut retenir.** {item['a_retenir']}")
+            add("")
+            add(f"**Le geste à installer.** {reference['geste_correct']}")
+            add("")
+    else:
+        add("### Aucun item à reprendre")
+        add("")
+        add("Ton positionnement d'option ne comporte ni réponse fausse ni question laissée "
+            "vide. Le travail portera sur la rédaction des démonstrations, que l'option "
+            "exige plus que la spécialité et que le positionnement ne mesure pas.")
+        add("")
+
+    add("### Comment l'option sera travaillée pendant le stage")
+    add("")
+    add("| Séance | Ce qui est prévu pour l'option |")
+    add("|---:|---|")
+    for number, contenu in (
+        (1, "Division euclidienne : poser a = bq + r et contrôler 0 ≤ r < b"),
+        (2, "Diviseurs, nombres premiers, décomposition en facteurs premiers"),
+        (3, "PGCD et algorithme d'Euclide ; fractions irréductibles"),
+        (4, "Logique : contraposée, réciproque, contre-exemple"),
+        (5, "Calcul littéral et systèmes ; ouverture sur les matrices et les complexes"),
+    ):
+        add(f"| {number} | {contenu} |")
+    add("")
+    add("Ces vingt minutes sont prélevées sur le temps différencié de chaque séance : elles "
+        "ne retirent rien au programme commun du stage.")
+    add("")
+    return out
+
+
 def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: dict,
-                  module: Module, group: dict) -> str:
+                  module: Module, group: dict, frame: dict,
+                  option: tuple[dict, dict] | None = None) -> str:
     """Livret individuel : le document principal remis à l'élève et à sa famille."""
     name = student["displayName"]
     bank = instrument["items"]
@@ -371,9 +499,12 @@ def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: di
     add(f"**Élève :** {name}  ")
     add(f"**Groupe :** {group['libelle']}  ")
     add(f"**Spécialités conservées :** {', '.join(specialites(student, group))}  ")
-    add(f"**Matière de ce livret :** {subject['matiere']}"
-        + ("  *(enseignement optionnel)*  " if subject.get("option") else "  "))
-    add("**Stage :** 5 séances de 2 heures  ")
+    add(f"**Matière de ce livret :** {subject['matiere']}  ")
+    if student.get("optionAnnuelle"):
+        add(f"**Option suivie en Terminale :** {student['optionAnnuelle']['intitule']}  ")
+    add(f"**Organisme :** {frame['organisme']} — {frame['natureOrganisme'].lower()}  ")
+    add(f"**Stage :** {frame['dureeParSpecialite']}, {frame['rythme']}  ")
+    add(f"**Dates :** {frame['dates']}  ")
     add("**Année scolaire préparée :** 2026-2027  ")
     add(f"**Diagnostic du :** {diagnostic['date_bilan']}  ")
     add(f"**Source :** `Bilans/{Path(diagnostic['source_pdf']).name}`")
@@ -633,6 +764,9 @@ def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: di
     add("| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |")
     add("")
 
+    if option is not None:
+        out.extend(render_option_section(student, option[0], option[1]))
+
     add("## 11. Bilan final")
     add("")
     add("### Comparaison initiale / finale")
@@ -723,8 +857,10 @@ def _remediation_header(student: dict, subject: dict, diagnostic: dict, module: 
 
 
 def render_remediation_eleve(student: dict, subject: dict, diagnostic: dict, instrument: dict,
-                             module: Module) -> str:
+                             module: Module, option: tuple[dict, dict] | None = None) -> str:
     exercises = _remediation_exercises(diagnostic, instrument["items"])
+    option_exercises = (_remediation_exercises(option[0], option[1]["items"])
+                        if option is not None else [])
     out = _remediation_header(student, subject, diagnostic, module, "Élève")
     add = out.append
 
@@ -797,14 +933,44 @@ def render_remediation_eleve(student: dict, subject: dict, diagnostic: dict, ins
             add("Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune")
             add("")
 
+    if option_exercises:
+        intitule = student["optionAnnuelle"]["intitule"]
+        add("<div class=\"page-break\"></div>")
+        add("")
+        add(f"## Exercices de l'option — {intitule}")
+        add("")
+        add("Ces exercices préparent l'option que tu suivras en Terminale. Ils se traitent "
+            "sur le temps différencié, pas à la place du reste.")
+        add("")
+        for number, exercise in enumerate(option_exercises, 1):
+            add(f"### Option, exercice {number} — {exercise['domaine']}")
+            add("")
+            add(f"*Compétence visée : {exercise['competence']}.*")
+            add("")
+            add(f"**{exercise['enonce']}**")
+            add("")
+            add("Propriété, relation ou précondition utilisée :")
+            add("")
+            add(ANSWER_LINE)
+            add("")
+            add("Résolution :")
+            add("")
+            for _ in range(4):
+                add(ANSWER_LINE)
+                add("")
+            add("Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune")
+            add("")
+
     add("---")
     add(f"_Source pédagogique unique : `{module.source_document}`._")
     return "\n".join(out) + "\n"
 
 
 def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, instrument: dict,
-                            module: Module) -> str:
+                            module: Module, option: tuple[dict, dict] | None = None) -> str:
     exercises = _remediation_exercises(diagnostic, instrument["items"])
+    option_exercises = (_remediation_exercises(option[0], option[1]["items"])
+                        if option is not None else [])
     domains = instrument["domaines"]
     out = _remediation_header(student, subject, diagnostic, module, "Corrigé enseignant")
     add = out.append
@@ -924,6 +1090,35 @@ def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, inst
             "de démonstrations, que le positionnement ne mesure pas.")
         add("")
 
+    if option_exercises:
+        intitule = student["optionAnnuelle"]["intitule"]
+        add("<div class=\"page-break\"></div>")
+        add("")
+        add(f"## Option — {intitule}")
+        add("")
+        add("Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps "
+            "différencié du stage de mathématiques, à raison de vingt minutes par séance.")
+        add("")
+        add("| # | Item du positionnement | Domaine | Compétence | Motif de sélection |")
+        add("|---:|---:|---|---|---|")
+        for number, exercise in enumerate(option_exercises, 1):
+            add(f"| {number} | item {exercise['rang_item']} | {exercise['domaine']} | "
+                f"{exercise['competence']} | {exercise['motif']} |")
+        add("")
+        for number, exercise in enumerate(option_exercises, 1):
+            add(f"### Option, exercice {number} — {exercise['domaine']}")
+            add("")
+            add(f"**Énoncé.** {exercise['enonce']}")
+            add("")
+            add(f"**Corrigé.** {exercise['corrige']}")
+            add("")
+            add(f"**Geste à installer.** {exercise['geste']}")
+            add("")
+            if exercise["origine_erreur"]:
+                add(f"**Erreur à surveiller chez cet élève.** {exercise['origine_erreur']} "
+                    f"(item {exercise['rang_item']} du positionnement d'option.)")
+                add("")
+
     add("## Décision de fin de parcours")
     add("")
     add("| Domaine | Situation initiale | Situation finale | Décision pour septembre |")
@@ -939,7 +1134,7 @@ def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, inst
 
 
 def render_missing_subject_notice(student: dict, missing: dict, module: Module,
-                                  group: dict) -> str:
+                                  group: dict, frame: dict) -> str:
     """Livret d'un élève dont le positionnement de cette matière n'a pas été passé.
 
     On ne produit pas un livret vide, et on n'invente rien : le document dit explicitement
@@ -958,7 +1153,9 @@ def render_missing_subject_notice(student: dict, missing: dict, module: Module,
     add(f"**Groupe :** {group['libelle']}  ")
     add(f"**Spécialités conservées :** {', '.join(specialites(student, group))}  ")
     add(f"**Matière de ce livret :** {missing['matiere']}  ")
-    add("**Stage :** 5 séances de 2 heures  ")
+    add(f"**Organisme :** {frame['organisme']} — {frame['natureOrganisme'].lower()}  ")
+    add(f"**Stage :** {frame['dureeParSpecialite']}, {frame['rythme']}  ")
+    add(f"**Dates :** {frame['dates']}  ")
     add("**Année scolaire préparée :** 2026-2027")
     add("")
     if student.get("noteGroupe"):
@@ -1259,6 +1456,7 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
     check_sources(registry, diagnostics, items)
 
     groups = {group["id"]: group for group in registry["groupes"]}
+    frame = stage_frame(registry)
     documents: dict[str, str] = {}
     module_entries: dict[str, list[dict]] = {key: [] for key in MODULES}
 
@@ -1267,26 +1465,35 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
             continue
         group = groups[student["groupe"]]
 
+        # L'option annuelle n'a pas de stage : son diagnostic complète le livret de la
+        # spécialité correspondante au lieu de produire un document séparé.
+        option_entry = student.get("optionAnnuelle")
+        option = None
+        if option_entry is not None:
+            option = (
+                diagnostics["diagnostics"][option_entry["diagnosticId"]],
+                items["instruments"][option_entry["intitule"]],
+            )
+
         for subject in student["matieres"]:
             module = MODULES[subject["module"]]
             diagnostic = diagnostics["diagnostics"][subject["diagnosticId"]]
             instrument = items["instruments"][subject["matiere"]]
-
-            # Une matière optionnelle cohabite avec la matière principale dans le même
-            # module : le suffixe de fichier la distingue.
             suffix = student["slug"]
-            if subject["matiere"] != module.subject_label:
-                suffix = f"{student['slug']}_{slug(subject['matiere'])}"
+            attached = option if module.key == "tle_spe" else None
 
             directory = f"{module.key}/{module.nominative_dir}/{student['slug']}"
             documents[f"{directory}/{module.key}_Livret_Individuel_{suffix}.md"] = (
-                render_livret(student, subject, diagnostic, instrument, module, group)
+                render_livret(student, subject, diagnostic, instrument, module, group,
+                              frame, attached)
             )
             documents[f"{directory}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md"] = (
-                render_remediation_eleve(student, subject, diagnostic, instrument, module)
+                render_remediation_eleve(student, subject, diagnostic, instrument, module,
+                                         attached)
             )
             documents[f"{directory}/{module.key}_Remediation_Ciblee_{suffix}_PROF_Corrige.md"] = (
-                render_remediation_prof(student, subject, diagnostic, instrument, module)
+                render_remediation_prof(student, subject, diagnostic, instrument, module,
+                                        attached)
             )
             module_entries[module.key].append({
                 "name": student["displayName"],
@@ -1296,12 +1503,21 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                 "diagnostic": diagnostic,
             })
 
+        option = student.get("optionAnnuelle")
+        if option is not None:
+            if option["diagnosticId"] not in diagnostics["diagnostics"]:
+                errors.append(
+                    f"{where} : diagnostic d'option introuvable '{option['diagnosticId']}'"
+                )
+            elif option["intitule"] not in items["instruments"]:
+                errors.append(f"{where} : aucun instrument pour '{option['intitule']}'")
+
         for missing in student.get("matieresSansDiagnostic", []):
             module = MODULES[missing["module"]]
             suffix = student["slug"]
             directory = f"{module.key}/{module.nominative_dir}/{student['slug']}"
             documents[f"{directory}/{module.key}_Livret_Individuel_{suffix}.md"] = (
-                render_missing_subject_notice(student, missing, module, group)
+                render_missing_subject_notice(student, missing, module, group, frame)
             )
             module_entries[module.key].append({
                 "name": student["displayName"],
@@ -1321,6 +1537,39 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
         documents[f"{key}/00_MASTER/index.md"] = render_index(module, entries)
 
     return documents
+
+
+def orphan_documents(documents: dict[str, str], root: Path = ROOT) -> list[str]:
+    """Documents nominatifs présents sur le disque mais que la génération ne produit plus.
+
+    Un élève retiré de la cohorte, une matière fondue dans une autre : sans ce contrôle,
+    ses documents resteraient sur le disque et pourraient être imprimés ou distribués. Ce
+    sont des données personnelles de mineurs — un fichier périmé n'est pas un détail.
+    """
+    expected = set(documents)
+    orphans: list[str] = []
+    for module in MODULES.values():
+        nominative = root / module.key / module.nominative_dir
+        if not nominative.exists():
+            continue
+        for path in sorted(nominative.rglob("*.md")):
+            relative = path.relative_to(root).as_posix()
+            if relative not in expected:
+                orphans.append(relative)
+    return orphans
+
+
+def empty_student_directories(root: Path = ROOT) -> list[str]:
+    """Répertoires nominatifs vidés de leurs documents, à supprimer."""
+    empties: list[str] = []
+    for module in MODULES.values():
+        nominative = root / module.key / module.nominative_dir
+        if not nominative.exists():
+            continue
+        for entry in sorted(nominative.iterdir()):
+            if entry.is_dir() and not any(entry.glob("*.md")):
+                empties.append(entry.relative_to(root).as_posix())
+    return empties
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1343,6 +1592,8 @@ def main(argv: list[str] | None = None) -> int:
                 stale.append(f"{relative} : absent")
             elif path.read_text(encoding="utf-8") != content:
                 stale.append(f"{relative} : périmé")
+        stale += [f"{relative} : orphelin, à supprimer" for relative in orphan_documents(documents)]
+        stale += [f"{relative} : répertoire vide, à supprimer" for relative in empty_student_directories()]
         if stale:
             print("ÉCHEC : documents nominatifs non à jour.")
             for line in stale:
@@ -1355,7 +1606,21 @@ def main(argv: list[str] | None = None) -> int:
         path = ROOT / relative
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8")
+
+    # Les orphelins sont supprimés, pas seulement signalés : laisser sur le disque le
+    # livret d'un élève retiré de la cohorte, c'est risquer de l'imprimer.
+    removed = orphan_documents(documents)
+    for relative in removed:
+        (ROOT / relative).unlink()
+    emptied = empty_student_directories()
+    for relative in emptied:
+        (ROOT / relative).rmdir()
+
     print(f"Écrit {len(documents)} documents nominatifs Terminale.")
+    for relative in removed:
+        print(f"  supprimé (orphelin) : {relative}")
+    for relative in emptied:
+        print(f"  supprimé (répertoire vide) : {relative}")
     return 0
 
 
