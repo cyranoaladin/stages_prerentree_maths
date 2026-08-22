@@ -54,8 +54,8 @@ En attendant, l'élève suit le **parcours maîtrise** de la séance 1 : c'est l
 
 | | Certitude faible (1-2) | Certitude forte (3-4) |
 |---|---|---|
-| **Réponse fausse** | Notion absente → on installe | Conception erronée → on confronte |
-| **Réponse juste** | Acquis fragile → on consolide | Acquis disponible → on entretient |
+| **Réponse fausse** | Notion absente $\to$ on installe | Conception erronée $\to$ on confronte |
+| **Réponse juste** | Acquis fragile $\to$ on consolide | Acquis disponible $\to$ on entretient |
 
 ## 4. Parcours prévisionnel
 

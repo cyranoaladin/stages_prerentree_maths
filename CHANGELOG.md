@@ -1,5 +1,50 @@
 # Journal des modifications
 
+## 2026.4 — 2026-08-22
+
+- Passage du rendu des stages Terminale à **LaTeX**. Pandoc traduit chaque document en
+  LaTeX, la charte `tools/assets/nexus_terminale.sty` — dérivée de `_common/nexusS5.sty`,
+  mêmes couleurs et mêmes encadrés — lui donne sa forme, et `latexmk` compose le PDF avec
+  LuaLaTeX. Y sont chargés les paquets propres aux trois disciplines : `amsmath`,
+  `mathtools`, `esvect` et `stmaryrd` pour les mathématiques, `siunitx`, `mhchem` et
+  `chemfig` pour la physique-chimie, `listings` et `algorithm2e` pour le code, `pgfplots`
+  et `tikz` pour les figures.
+- Choix de LuaLaTeX plutôt que pdflatex, sur mesure et non par principe : avec pdflatex,
+  `listings` et `inputenc` se disputent les caractères accentués des commentaires Python et
+  composent « le tableau doit ê tre é tri » au lieu de « doit être trié » ; ni `literate` ni
+  `extendedchars` ne corrigent la permutation sous TeX Live 2023. Les modules Terminale
+  contiennent du code commenté en français : la contrainte est structurelle.
+- Conversion du corpus Terminale en notation mathématique réelle. Les documents écrivaient
+  `u₀`, `0,5^n`, `≥`, `☐`, `Δ`, `Cu²⁺` — une approximation en caractères Unicode, fausse
+  typographiquement et incapable d'exprimer une limite ou une intégrale. Ils écrivent
+  désormais `$u_0$`, `$0{,}5^n$`, `$\geqslant$`, `$\square$`, `$\Delta$`, `\ce{Cu^2+}`.
+  `tools/latex_notation.py` fait la conversion, `tools/mathify_terminale.py` l'applique aux
+  documents rédigés à la main, et `tools/build_terminale.py` aux livrets nominatifs, dont le
+  texte vient des bilans PDF.
+- Ajout de la reconnaissance des unités et des équations de réaction pour la
+  physique-chimie : « 3,0 × 10⁸ m·s⁻¹ » devient `\SI{3.0e8}{\metre\per\second}` et
+  « 2 H₂ + O₂ → 2 H₂O » devient `\ce{2 H2 + O2 -> 2 H2O}`, composés par siunitx et mhchem
+  selon les conventions de la discipline.
+- Remplacement des douze schémas en art ASCII par de vraies figures : tableaux de signes,
+  droite graduée de l'ensemble solution, courbe de l'exponentielle et son asymptote, droites
+  parallèles de la séance 4, cube de la géométrie dans l'espace, arbre de probabilité,
+  tables des poids binaires et des indices négatifs. Ils passent par des blocs
+  `` ```{=latex} `` que pandoc transmet tels quels.
+- Ajout de trois tests qui refusent la source plutôt que le PDF : aucun caractère que la
+  police ne saurait dessiner, aucun délimiteur mathématique laissé ouvert, aucune prose
+  française absorbée dans une formule. Un caractère manquant ne fait pas échouer la
+  compilation — il laisse un trou dans la consigne, et personne ne le voit avant
+  l'impression.
+- Correction, au fil de la conversion, de sept familles d'erreurs du convertisseur, toutes
+  vérifiées sur le corpus : la dernière lettre d'un mot français prise pour une variable
+  (« la suit$e$ »), le « a » du verbe avoir happé par la formule (« $x^2 - 4 a$ pour
+  racines »), l'apostrophe d'élision confondue avec la dérivée (« $e^x = 0 n$'a pas de
+  solution »), l'étiquette d'énumération avalée (« $b) u_{n+1}$ »), la parenthèse ouvrante
+  de la phrase retenue dans l'expression, l'exposant parenthésé `e^(3x)` scindé en deux, et
+  `log_2` laissé sans sa fonction.
+- Correction du chevauchement de l'entête : un intitulé de séance long recouvrait la marque
+  « NEXUS RÉUSSITE » en haut de chaque page.
+
 ## 2026.3 — 2026-08-22
 
 Corrections de la composition de la cohorte Terminale, sur informations de l'organisme.

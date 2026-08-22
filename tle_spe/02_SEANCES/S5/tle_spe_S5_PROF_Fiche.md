@@ -9,7 +9,7 @@ Trois objets sont réunis dans la dernière séance parce qu'ils demandent peu d
 reconstruction et beaucoup de mise en perspective :
 
 - le **produit scalaire** est acquis pour quatre élèves sur sept (71,4 %) ; l'enjeu n'est
-  pas le calcul mais l'usage du critère u·v = 0 comme outil de preuve ;
+  pas le calcul mais l'usage du critère $u \cdot v = 0$ comme outil de preuve ;
 - les **probabilités** de Première n'ont pas été évaluées par le positionnement ; elles sont
   réactivées sans diagnostic préalable, car elles conditionnent la loi binomiale ;
 - **Python** est réactivé sur un cas d'usage mathématique, ce qui prolonge la séance 1.
@@ -36,24 +36,24 @@ La séance se referme sur l'évaluation de synthèse et le plan de septembre.
 
 ## Produit scalaire — 20 minutes
 
-**Rappel.** En repère orthonormé, u·v = x_u x_v + y_u y_v. Le résultat est un **nombre**.
+**Rappel.** En repère orthonormé, $u \cdot v = x_u x_v + y_u y_v$. Le résultat est un **nombre**.
 Faire redire ce point : l'erreur la plus fréquente est d'annoncer un vecteur.
 
 **Le critère comme outil.** Faire traiter deux usages :
 
-1. *Démontrer.* u(−2 ; 5) et v(4 ; 1) : u·v = −8 + 5 = −3 ≠ 0, donc les vecteurs ne sont pas
+1. *Démontrer.* $u( - 2 ; 5)$ et $v(4 ; 1)$ : $u \cdot v = - 8 + 5 = - 3 \neq 0$, donc les vecteurs ne sont pas
    orthogonaux.
-2. *Déterminer un paramètre.* u(3 ; m) et v(−2 ; 6) orthogonaux : −6 + 6m = 0, donc m = 1.
+2. *Déterminer un paramètre.* $u(3 ; m)$ et $v( - 2 ; 6)$ orthogonaux : $- 6 + 6m = 0$, donc $m = 1$.
 
 Le second usage est celui qui manque : le critère se lit comme une **équation** dont
 l'inconnue est un paramètre.
 
 **Annonce de la Terminale.** Écrire au tableau le même critère avec trois coordonnées :
-u·v = x_u x_v + y_u y_v + z_u z_v. Puis :
+$u \cdot v = x_u x_v + y_u y_v + z_u z_v$. Puis :
 
 > Un vecteur **normal** à un plan est un vecteur orthogonal à deux vecteurs directeurs de ce
-> plan. Si n(a ; b ; c) est normal au plan P et si A(x₀ ; y₀ ; z₀) appartient à P, alors P a
-> pour équation cartésienne a(x − x₀) + b(y − y₀) + c(z − z₀) = 0.
+> plan. Si $n(a ; b ; c)$ est normal au plan P et si $A(x_0 ; y_0 ; z_0)$ appartient à P, alors P a
+> pour équation cartésienne $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$.
 >
 > Autrement dit : l'équation d'un plan **est** un produit scalaire nul. Tout le chapitre de
 > géométrie dans l'espace repose sur le critère que vous connaissez déjà.
@@ -67,15 +67,15 @@ boules rouges et 2 boules noires ; on tire deux boules successivement sans remis
 
 Faire écrire sur les branches les probabilités conditionnelles, puis établir :
 
-> P(A ∩ B) = P(A) × P_A(B)
-> P(B) = P(A) × P_A(B) + P(Ā) × P_Ā(B)  *(formule des probabilités totales)*
+> $P(A \cap B) = P(A) \times P_A(B)$
+> $P(B) = P(A) \times P_A(B) + P(\overline{A}) \times P_{\overline{A}}(B)$  *(formule des probabilités totales)*
 
-**Indépendance.** Deux événements sont indépendants lorsque P_A(B) = P(B). Faire distinguer
+**Indépendance.** Deux événements sont indépendants lorsque $P_A(B) = P(B)$. Faire distinguer
 de l'incompatibilité : deux événements incompatibles de probabilités non nulles ne sont
 jamais indépendants. C'est une confusion classique, à provoquer et à traiter.
 
 **Variable aléatoire.** Loi de probabilité sous forme de tableau ; espérance
-E(X) = Σ x_i P(X = x_i), interprétée comme la moyenne des valeurs sur un grand nombre de
+$E(X) = \sum x_i P(X = x_i)$, interprétée comme la moyenne des valeurs sur un grand nombre de
 répétitions.
 
 **Annonce de la Terminale.**
@@ -119,7 +119,7 @@ def premier_rang_depassement(v0, q, seuil):
 
 - `range(n)` produit n valeurs : la boucle effectue bien n pas, pas n + 1.
 - La boucle `while` ne termine que si la suite dépasse effectivement le seuil : demander aux
-  élèves ce qui se passe si q < 1 et si le seuil est supérieur à v₀. C'est une occasion de
+  élèves ce qui se passe si $q < 1$ et si le seuil est supérieur à $v_0$. C'est une occasion de
   relier au sens de variation de la séance 1.
 - Faire tester `terme_geometrique(2, 3, 4)` : le résultat 162 doit coïncider avec le calcul
   à la main.
@@ -132,7 +132,7 @@ tests.
 
 Distribuer `03_EVALUATIONS/tle_spe_Evaluation_Finale_ELEVE.md`. Cinq exercices, un par
 domaine, avec certitude déclarée à chaque question. Aucune note n'est attribuée : la copie
-est relue avec la matrice réussite × confiance et comparée au positionnement initial.
+est relue avec la matrice réussite $\times$ confiance et comparée au positionnement initial.
 
 ## Bilan — 15 minutes
 
@@ -147,8 +147,8 @@ est relue avec la matrice réussite × confiance et comparée au positionnement 
 | Erreur observée | Réponse |
 |---|---|
 | Vecteur annoncé comme résultat d'un produit scalaire | Faire souligner le résultat et écrire « c'est un nombre » |
-| P(A ∩ B) confondu avec P_A(B) | Faire replacer chacune sur l'arbre : la conditionnelle est **sur** la branche |
-| Indépendance confondue avec incompatibilité | Faire chercher deux événements incompatibles et calculer P_A(B) = 0 ≠ P(B) |
+| $P(A \cap B)$ confondu avec $P_A(B)$ | Faire replacer chacune sur l'arbre : la conditionnelle est **sur** la branche |
+| Indépendance confondue avec incompatibilité | Faire chercher deux événements incompatibles et calculer $P_A(B) = 0 \neq P(B)$ |
 | Bornes de boucle décalées | Faire afficher les valeurs successives avec `print` |
 
 ---

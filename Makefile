@@ -48,7 +48,7 @@ test:
 # cet artefact (terminale-check).
 
 .PHONY: terminale terminale-extract terminale-check terminale-test \
-        terminale-pdf terminale-pdf-list
+        terminale-pdf terminale-pdf-list terminale-latex terminale-latex-check
 
 terminale:
 	python3 tools/build_terminale.py
@@ -59,10 +59,19 @@ terminale-extract:
 terminale-check:
 	python3 tools/build_terminale.py --check
 
+# Notation mathématique. terminale-latex réécrit les documents rédigés à la main en
+# LaTeX ; terminale-latex-check se contente de signaler ce qui resterait à convertir et
+# c'est cette forme-là qui tourne en intégration continue.
+terminale-latex:
+	python3 tools/mathify_terminale.py
+
+terminale-latex-check:
+	python3 tools/mathify_terminale.py --check
+
 terminale-test:
 	pytest -q tests/test_terminale.py
 
-# Rendu imprimable. Exige pandoc et WeasyPrint ; les PDF vont dans dist/terminale/, qui
+# Rendu imprimable. Exige pandoc, LuaLaTeX et latexmk ; les PDF vont dans dist/terminale/, qui
 # est ignoré par git : un PDF n'est pas reproductible d'une machine à l'autre.
 terminale-pdf:
 	python3 tools/build_terminale_pdf.py

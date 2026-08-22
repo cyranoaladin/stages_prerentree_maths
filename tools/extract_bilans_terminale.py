@@ -52,15 +52,26 @@ BILANS: dict[str, str] = {
     "melek-smida--maths-expertes": "Bilans/bilan-nexus-eleve_bensmida_maths_expertes.pdf",
     "ines-darghouth--maths": "Bilans/bilan-nexus-eleve_ines_darghouth_maths.pdf",
     "rostom-fekih--maths": "Bilans/bilan-nexus-eleve_maths_rostom_fekih.pdf",
+    "melek-smida--pc": "Bilans/bilan-nexus-eleve_smida_pc_terminale.pdf",
+    "rostom-fekih--pc": "Bilans/bilan-nexus-eleve_PC_rostom_fekih.pdf",
+    "mayar-ourabi--pc": "Bilans/bilan-nexus-eleve_mayar_PC_terminale.pdf",
 }
 
 SUBSCRIPTS = "₀₁₂₃₄₅₆₇₈₉ₙ"
-SUPERSCRIPTS = "⁰¹²³⁴⁵⁶⁷⁸⁹"
+# Les signes exposants + et − comptent : sans eux, « Cu²⁺ » ressort « Cu² ⁺ » et tous les
+# ions de la chimie (H₃O⁺, Fe³⁺, HO⁻, e⁻) sont coupés en deux.
+SUPERSCRIPTS = "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻"
 
 # Le rendu PDF insère des espaces parasites autour des indices, exposants et symboles
 # mathématiques. On les recolle pour que les énoncés restent lisibles en Markdown.
 _GLUE_BEFORE = re.compile(r"\s+([" + SUBSCRIPTS + SUPERSCRIPTS + r"])")
 _GLUE_AFTER = re.compile(r"([" + SUBSCRIPTS + SUPERSCRIPTS + r"])\s+(?=[0-9])")
+# Un indice suivi d'un symbole d'élément lui-même exposé continue une formule chimique :
+# « H₃ O⁺ » doit se recoller en « H₃O⁺ ». La condition sur l'exposant qui suit évite de
+# souder du texte courant, où « u₀ est croissante » doit rester tel quel.
+_GLUE_FORMULA = re.compile(
+    r"([" + SUBSCRIPTS + r"])\s+([A-Z][a-z]?)(?=[" + SUPERSCRIPTS + r"])"
+)
 _SYMBOL_SPACING = re.compile(r"([ℝℕℤℚΔ∞])\s{2,}")
 
 # Marqueurs de page insérés par _read_pages : ils ne doivent jamais atteindre le JSON.
@@ -111,8 +122,13 @@ def clean(value: str) -> str:
     value = value.replace("\u00a0", " ").replace("\u2019", "'").replace("\n", " ")
     value = _GLUE_BEFORE.sub(r"\1", value)
     value = _GLUE_AFTER.sub(r"\1", value)
+    value = _GLUE_FORMULA.sub(r"\1\2", value)
     value = _SYMBOL_SPACING.sub(r"\1 ", value)
-    return re.sub(r"\s{2,}", " ", value).strip()
+    value = re.sub(r"\s{2,}", " ", value)
+    # Espace parasite avant le point ou la virgule, laissé par le recollage des formules.
+    # On ne touche pas aux deux-points, points-virgules et points d'interrogation : la
+    # typographie française y demande une espace.
+    return re.sub(r"\s+([.,])", r"\1", value).strip()
 
 
 def _block(text: str, start: str, end: str) -> str:

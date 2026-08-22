@@ -16,7 +16,7 @@
 | Dates | du 24 au 28 août 2026 |
 | Effectif | 8 élèves, répartis en 2 groupes selon les stages suivis |
 | Référentiel | BO spécial n° 8 du 25 juillet 2019 (Terminale), BO spécial n° 1 du 22 janvier 2019 (Première) |
-| Évaluation | Sans note ; matrice réussite × confiance, avant et après |
+| Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 
 ## 2. Objet du stage
 
@@ -52,13 +52,13 @@ mathématiques.
 Chaque élève a passé un positionnement de 18 items couvrant cinq domaines de Première, avec
 un **niveau de certitude déclaré de 1 à 4** à chaque item.
 
-Le croisement réussite × confiance distingue quatre situations, qui n'appellent pas le même
+Le croisement réussite $\times$ confiance distingue quatre situations, qui n'appellent pas le même
 traitement :
 
 | | Certitude faible (1-2) | Certitude forte (3-4) |
 |---|---|---|
-| **Réponse fausse** | Notion absente → **on installe** | Conception erronée → **on confronte** |
-| **Réponse juste** | Acquis fragile → **on consolide** | Acquis disponible → **on entretient** |
+| **Réponse fausse** | Notion absente $\to$ **on installe** | Conception erronée $\to$ **on confronte** |
+| **Réponse juste** | Acquis fragile $\to$ **on consolide** | Acquis disponible $\to$ **on entretient** |
 
 Un item non traité relève d'une cinquième situation : **on diagnostique** au démarrage.
 
@@ -98,7 +98,7 @@ propre** bilan de positionnement :
 
 | Document | Contenu |
 |---|---|
-| Livret individuel | Carte maîtrise × confiance, priorités, parcours séance par séance, reprise item par item de chaque erreur, plan de septembre, fiches de suivi |
+| Livret individuel | Carte maîtrise $\times$ confiance, priorités, parcours séance par séance, reprise item par item de chaque erreur, plan de septembre, fiches de suivi |
 | Plan de remédiation ciblée (élève) | Exercices choisis d'après ses propres erreurs, sans corrigé |
 | Plan de remédiation ciblée (corrigé enseignant) | Les mêmes exercices, avec corrigé, relevé de maîtrise et notes de conduite |
 

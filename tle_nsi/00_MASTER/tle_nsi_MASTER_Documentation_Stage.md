@@ -15,7 +15,7 @@
 | Effectif | 5 élèves, tous du groupe 1 (mathématiques et NSI) |
 | Référentiel | BO spécial n° 8 du 25 juillet 2019 (Terminale), BO spécial n° 1 du 22 janvier 2019 (Première) |
 | Environnement | Python 3, sans bibliothèque externe, hors réseau |
-| Évaluation | Sans note ; matrice réussite × confiance, avant et après |
+| Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 
 ## 2. Objet du stage
 
@@ -44,8 +44,8 @@ Positionnement de 18 items couvrant sept domaines, avec un **niveau de certitude
 
 | | Certitude faible (1-2) | Certitude forte (3-4) |
 |---|---|---|
-| **Réponse fausse** | Notion absente → **on installe** | Conception erronée → **on confronte** |
-| **Réponse juste** | Acquis fragile → **on consolide** | Acquis disponible → **on entretient** |
+| **Réponse fausse** | Notion absente $\to$ **on installe** | Conception erronée $\to$ **on confronte** |
+| **Réponse juste** | Acquis fragile $\to$ **on consolide** | Acquis disponible $\to$ **on entretient** |
 
 C'est ce classement, et non un pourcentage de réussite, qui détermine l'ordre de travail de
 chaque élève.
@@ -82,7 +82,7 @@ propre** bilan :
 
 | Document | Contenu |
 |---|---|
-| Livret individuel | Carte maîtrise × confiance, priorités, parcours séance par séance, reprise item par item de chaque erreur, plan de septembre, fiches de suivi |
+| Livret individuel | Carte maîtrise $\times$ confiance, priorités, parcours séance par séance, reprise item par item de chaque erreur, plan de septembre, fiches de suivi |
 | Plan de remédiation ciblée (élève) | Exercices choisis d'après ses propres erreurs, sans corrigé |
 | Plan de remédiation ciblée (corrigé enseignant) | Les mêmes exercices, avec corrigé, relevé de maîtrise et notes de conduite |
 
@@ -102,8 +102,8 @@ Les cinq élèves suivent aussi `tle_spe`. Deux articulations sont explicites :
 
 | Articulation | Où | Contenu |
 |---|---|---|
-| Boucles et bornes | `tle_spe` S5 ↔ `tle_nsi` S3 | Les termes d'une suite calculés en mathématiques sont spécifiés et testés en NSI |
-| Contre-exemple | `tle_spe` S4 ↔ `tle_nsi` S3 et S4 | Réfuter par un cas qui échoue est le même geste dans les deux disciplines |
+| Boucles et bornes | `tle_spe` $S5 \leftrightarrow$ `tle_nsi` S3 | Les termes d'une suite calculés en mathématiques sont spécifiés et testés en NSI |
+| Contre-exemple | `tle_spe` $S4 \leftrightarrow$ `tle_nsi` S3 et S4 | Réfuter par un cas qui échoue est le même geste dans les deux disciplines |
 
 ## 9. Confidentialité
 

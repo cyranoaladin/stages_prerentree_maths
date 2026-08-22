@@ -39,7 +39,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** On sait que g' est strictement positive sur ]0 ; 5[. Que peut-on affirmer sur les variations de g ? Peut-on en déduire le signe de g sur cet intervalle ?
 
-**Corrigé.** g est strictement croissante sur ]0 ; 5[. En revanche, on ne peut rien affirmer sur le signe de g : la fonction g(x) = x − 10 a une dérivée strictement positive et reste négative sur ]0 ; 5[.
+**Corrigé.** g est strictement croissante sur ]0 ; 5[. En revanche, on ne peut rien affirmer sur le signe de g : la fonction $g(x) = x - 10$ a une dérivée strictement positive et reste négative sur ]0 ; 5[.
 
 **Geste à installer.** Le signe de f' renseigne sur le sens de variation de f, jamais sur le signe de f. Ce sont deux informations indépendantes.
 
@@ -49,8 +49,8 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 
@@ -74,7 +74,7 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Énoncé.** Un cadenas possède 3 molettes portant chacune 6 symboles. Combien de codes différents peut-on former ?
 
-**Corrigé.** Chaque molette est réglée indépendamment : 6 × 6 × 6 = 6³ = 216 codes possibles.
+**Corrigé.** Chaque molette est réglée indépendamment : $6 \times 6 \times 6 = 6^3 = 216$ codes possibles.
 
 **Geste à installer.** Quand un choix se décompose en étapes indépendantes, on multiplie le nombre de possibilités de chaque étape.
 
@@ -82,7 +82,7 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Énoncé.** Combien de nombres de 00 à 99 se terminent par un chiffre impair ? Combien ont leurs deux chiffres pairs ?
 
-**Corrigé.** Le dernier chiffre impair offre 5 choix (1, 3, 5, 7, 9) et le premier 10 choix : 10 × 5 = 50 nombres. Pour deux chiffres pairs : 5 × 5 = 25 nombres.
+**Corrigé.** Le dernier chiffre impair offre 5 choix (1, 3, 5, 7, 9) et le premier 10 choix : $10 \times 5 = 50$ nombres. Pour deux chiffres pairs : $5 \times 5 = 25$ nombres.
 
 **Geste à installer.** Compter d'abord les possibilités de la position contrainte, puis celles des positions libres, et multiplier.
 
@@ -92,7 +92,7 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Corrigé.** La contraposée est « Si n est impair, alors n n'est pas un multiple de 6 ». Elle est vraie, puisque l'implication de départ l'est : une implication et sa contraposée sont équivalentes.
 
-**Geste à installer.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
+**Geste à installer.** La contraposée de « $A \implies B$ » est « non $B \implies$ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
 
 ## Décision de fin de parcours
 

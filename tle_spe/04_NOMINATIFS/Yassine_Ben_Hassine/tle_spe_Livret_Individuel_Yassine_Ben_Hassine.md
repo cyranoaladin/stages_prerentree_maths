@@ -32,7 +32,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -48,8 +48,8 @@ Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni devi
 |---|---:|---|---|
 | Second degré | 50 % | Certitude à revoir | Première spécialité — « Équations, fonctions polynômes du second degré » : forme canonique, discriminant, racines, factorisation, signe du trinôme. |
 | Dérivation | 63,6 % | Certitude à revoir | Première spécialité — « Dérivation » et « Variations et courbes représentatives des fonctions » : nombre dérivé, tangente, dérivées des fonctions usuelles, dérivée d'un produit et d'un quotient, lien signe de f' / variations de f. |
-| Fonction exponentielle | 50 % | Certitude à revoir | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée. |
-| Suites numériques | 42,9 % | Certitude à revoir | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes. |
+| Fonction exponentielle | 50 % | Certitude à revoir | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée. |
+| Suites numériques | 42,9 % | Certitude à revoir | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes. |
 | Produit scalaire | 50 % | Certitude à revoir | Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection. |
 
 _Ces chiffres décrivent ta réussite domaine par domaine. Ce livret ne donne pas de note._
@@ -76,15 +76,15 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 ### Fonction exponentielle — 50 % · Certitude à revoir · **CONFRONTER**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée.
 
-**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles y' = ay + b et le support des croissances comparées.
+**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Analyse : « Fonction logarithme », « Limites des fonctions », « Primitives, équations différentielles ».
 
 ### Suites numériques — 42,9 % · Certitude à revoir · **CONFRONTER**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes.
 
 **Ce que la Terminale en fera.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
@@ -94,7 +94,7 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 **Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection.
 
-**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « u·v = 0 » devient l'outil de démonstration principal en géométrie dans l'espace.
+**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « $u \cdot v = 0$ » devient l'outil de démonstration principal en géométrie dans l'espace.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Géométrie : « Orthogonalité et distances dans l'espace », « Représentations paramétriques et équations cartésiennes ».
 
@@ -146,17 +146,17 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** Combien de solutions réelles l'équation 2x² − 4x + 5 = 0 admet-elle ?
+**Énoncé.** Combien de solutions réelles l'équation $2x^2 - 4x + 5 = 0$ admet-elle ?
 
 **Ta réponse.** Une seule
 
 **Réponse attendue.** Aucune
 
-**D'où vient l'erreur.** Applique le cas Δ = 0 sans avoir calculé le discriminant.
+**D'où vient l'erreur.** Applique le cas $\Delta = 0$ sans avoir calculé le discriminant.
 
-**Ce qu'il faut retenir.** Δ = (−4)² − 4 × 2 × 5 = 16 − 40 = −24. Le discriminant est strictement négatif : l'équation n'a aucune solution réelle.
+**Ce qu'il faut retenir.** $\Delta = ( - 4)^2 - 4 \times 2 \times 5 = 16 - 40 = - 24$. Le discriminant est strictement négatif : l'équation n'a aucune solution réelle.
 
-**Le geste à installer.** Le signe de Δ décide seul : Δ > 0 deux racines, Δ = 0 une racine double, Δ < 0 aucune racine réelle. Ne jamais conclure sans avoir calculé Δ.
+**Le geste à installer.** Le signe de $\Delta$ décide seul : $\Delta > 0$ deux racines, $\Delta = 0$ une racine double, $\Delta < 0$ aucune racine réelle. Ne jamais conclure sans avoir calculé $\Delta$.
 
 **Ma reformulation, avec mes mots :**
 
@@ -168,15 +168,15 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** Pour quelles valeurs de x a-t-on x² − 4 > 0 ?
+**Énoncé.** Pour quelles valeurs de x a-t-on $x^2 - 4 > 0$ ?
 
-**Ta réponse.** −2 < x < 2
+**Ta réponse.** $- 2 < x < 2$
 
-**Réponse attendue.** x < −2 ou x > 2
+**Réponse attendue.** $x < - 2$ ou $x > 2$
 
 **D'où vient l'erreur.** Inverse la règle : place le signe de a entre les racines au lieu de l'extérieur.
 
-**Ce qu'il faut retenir.** Le trinôme x² − 4 a pour racines −2 et 2, et son coefficient dominant est positif. Il est donc positif à l'extérieur des racines : x < −2 ou x > 2.
+**Ce qu'il faut retenir.** Le trinôme $x^2 - 4$ a pour racines $- 2$ et 2, et son coefficient dominant est positif. Il est donc positif à l'extérieur des racines : $x < - 2$ ou $x > 2$.
 
 **Le geste à installer.** Chercher les racines, repérer le signe de a, puis appliquer la règle : le trinôme est du signe de a à l'extérieur des racines et du signe contraire entre elles.
 
@@ -190,17 +190,17 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** Soit f(x) = (x + 1)/(x − 2), définie sur ]2 ; + ∞ [. Quelle est l'expression de f'(x) ?
+**Énoncé.** Soit $f(x) = (x + 1)/(x - 2)$, définie sur $]2 ; + \infty [$. Quelle est l'expression de $f'(x)$ ?
 
-**Ta réponse.** 3/(x − 2)²
+**Ta réponse.** $3/(x - 2)^2$
 
-**Réponse attendue.** −3/(x − 2)²
+**Réponse attendue.** $- 3/(x - 2)^2$
 
-**D'où vient l'erreur.** Erreur de signe : calcule uv' − u'v au lieu de u'v − uv' au numérateur.
+**D'où vient l'erreur.** Erreur de signe : calcule uv' $-$ u'v au lieu de u'$v -$ uv' au numérateur.
 
-**Ce qu'il faut retenir.** On applique (u/v)' = (u'v − uv')/v². Le numérateur vaut (x − 2) − (x + 1) = −3, d'où f'(x) = −3/(x − 2)².
+**Ce qu'il faut retenir.** On applique (u/v)' = (u'$v -$ uv')$/v^2$. Le numérateur vaut $(x - 2) - (x + 1) = - 3$, d'où $f'(x) = - 3/(x - 2)^2$.
 
-**Le geste à installer.** Appliquer (u/v)' = (u'v − uv')/v². L'ordre du numérateur n'est pas commutatif : u'v vient en premier.
+**Le geste à installer.** Appliquer (u/v)' = (u'$v -$ uv')$/v^2$. L'ordre du numérateur n'est pas commutatif : u'v vient en premier.
 
 **Ma reformulation, avec mes mots :**
 
@@ -212,7 +212,7 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 3/4 — « plutôt sûr »
 
-**Énoncé.** Le nombre dérivé f'(a) représente :
+**Énoncé.** Le nombre dérivé $f'(a)$ représente :
 
 **Ta réponse.** le coefficient directeur de la sécante joignant les points d'abscisses a et a + 1
 
@@ -222,7 +222,7 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Ce qu'il faut retenir.** Le nombre dérivé en a est la limite du taux de variation quand l'écart tend vers zéro : c'est la pente de la tangente à la courbe au point d'abscisse a.
 
-**Le geste à installer.** f'(a) est la limite du taux de variation en a : c'est un coefficient directeur, pas une valeur de la fonction.
+**Le geste à installer.** $f'(a)$ est la limite du taux de variation en a : c'est un coefficient directeur, pas une valeur de la fonction.
 
 **Ma reformulation, avec mes mots :**
 
@@ -234,17 +234,17 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** L'équation e^x = 0 admet :
+**Énoncé.** L'équation $e^x = 0$ admet :
 
-**Ta réponse.** une seule solution, x = 1
+**Ta réponse.** une seule solution, $x = 1$
 
 **Réponse attendue.** aucune solution
 
-**D'où vient l'erreur.** Associe l'équation à la valeur remarquable e¹ = e sans traiter la question posée.
+**D'où vient l'erreur.** Associe l'équation à la valeur remarquable $e^1 = e$ sans traiter la question posée.
 
-**Ce qu'il faut retenir.** La fonction exponentielle est strictement positive sur ℝ : elle ne s'annule jamais. Elle tend vers 0 en − ∞ sans jamais atteindre cette valeur, donc l'équation n'a aucune solution.
+**Ce qu'il faut retenir.** La fonction exponentielle est strictement positive sur $\mathbb{R}$ : elle ne s'annule jamais. Elle tend vers 0 en $- \infty$ sans jamais atteindre cette valeur, donc l'équation n'a aucune solution.
 
-**Le geste à installer.** Pour tout réel x, e^x > 0. Toute équation de la forme e^(quelque chose) = 0 ou = nombre négatif n'a aucune solution.
+**Le geste à installer.** Pour tout réel x, $e^x > 0$. Toute équation de la forme $e^{quelque chose} = 0$ ou = nombre négatif n'a aucune solution.
 
 **Ma reformulation, avec mes mots :**
 
@@ -256,7 +256,7 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 3/4 — « plutôt sûr »
 
-**Énoncé.** La suite définie pour tout entier naturel n par u_n = 0,5^n est :
+**Énoncé.** La suite définie pour tout entier naturel n par $u_n = 0{,}5^n$ est :
 
 **Ta réponse.** constante
 
@@ -264,9 +264,9 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **D'où vient l'erreur.** Confond une raison strictement comprise entre 0 et 1 avec une raison égale à 1.
 
-**Ce qu'il faut retenir.** Pour une suite géométrique de premier terme positif, le sens de variation dépend de la raison : ici 0 < 0,5 < 1, donc la suite est strictement décroissante.
+**Ce qu'il faut retenir.** Pour une suite géométrique de premier terme positif, le sens de variation dépend de la raison : ici $0 < 0{,}5 < 1$, donc la suite est strictement décroissante.
 
-**Le geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, 0 < r < 1 donne une suite décroissante, r > 1 une suite croissante.
+**Le geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, $0 < r < 1$ donne une suite décroissante, $r > 1$ une suite croissante.
 
 **Ma reformulation, avec mes mots :**
 
@@ -278,17 +278,17 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 3/4 — « plutôt sûr »
 
-**Énoncé.** La suite (u_n) est définie par u₀ = 1 et, pour tout entier naturel n, u_(n+1) = u_n + 3n. Que peut- on affirmer ?
+**Énoncé.** La suite $(u_n)$ est définie par $u_0 = 1$ et, pour tout entier naturel n, $u_{n+1} = u_n + 3n$. Que peut- on affirmer ?
 
-**Ta réponse.** (u_n) est géométrique de raison 3
+**Ta réponse.** $(u_n)$ est géométrique de raison 3
 
-**Réponse attendue.** (u_n) est croissante
+**Réponse attendue.** $(u_n)$ est croissante
 
 **D'où vient l'erreur.** Confond une addition et une multiplication dans la relation de récurrence.
 
-**Ce qu'il faut retenir.** On calcule u_(n+1) − u_n = 3n, qui est positif ou nul pour tout entier naturel n. La suite est donc croissante. L'écart n'étant pas constant, elle n'est pas arithmétique.
+**Ce qu'il faut retenir.** On calcule $u_{n+1} - u_n = 3n$, qui est positif ou nul pour tout entier naturel n. La suite est donc croissante. L'écart n'étant pas constant, elle n'est pas arithmétique.
 
-**Le geste à installer.** Calculer la différence u_(n+1) − u_n et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
+**Le geste à installer.** Calculer la différence $u_{n+1} - u_n$ et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
 
 **Ma reformulation, avec mes mots :**
 
@@ -302,15 +302,15 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Énoncé.** Deux vecteurs non nuls u et v sont orthogonaux si et seulement si :
 
-**Ta réponse.** ‖ u ‖ = ‖ v ‖
+**Ta réponse.** $\| u \| = \| v \|$
 
-**Réponse attendue.** u·v = 0
+**Réponse attendue.** $u \cdot v = 0$
 
 **D'où vient l'erreur.** Confond l'orthogonalité avec l'égalité des normes.
 
 **Ce qu'il faut retenir.** Deux vecteurs non nuls sont orthogonaux si et seulement si leur produit scalaire est nul. C'est ce critère qui sera généralisé à l'espace en Terminale.
 
-**Le geste à installer.** u·v = 0 est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu.
+**Le geste à installer.** $u \cdot v = 0$ est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu.
 
 **Ma reformulation, avec mes mots :**
 
@@ -371,48 +371,48 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Second degré | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Dérivation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Fonction exponentielle | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Suites numériques | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Produit scalaire | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Second degré | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Dérivation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Fonction exponentielle | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Suites numériques | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Produit scalaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 11. Bilan final
 

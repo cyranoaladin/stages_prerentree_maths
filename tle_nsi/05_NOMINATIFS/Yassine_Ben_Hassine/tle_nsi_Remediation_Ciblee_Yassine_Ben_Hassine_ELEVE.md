@@ -42,9 +42,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 2 — Représentation binaire
 
@@ -66,9 +66,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 3 — Booléens et logique
 
@@ -90,15 +90,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 4 — Types construits
 
 *Compétence visée : Modifier un tableau en place.*
 
-**Soit L = [1, 2, 3]. Après L.insert(0, 9) puis L.append(4), que contient L ? Que vaudrait L après L = L.append(5) ?**
+**Soit $L = [1$, 2, 3]. Après L.insert(0, 9) puis L.append(4), que contient L ? Que vaudrait L après $L = L$.append(5) ?**
 
 Propriété, relation ou précondition utilisée :
 
@@ -114,9 +114,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 5 — Types construits
 
@@ -138,15 +138,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 6 — Programmation
 
 *Compétence visée : Distinguer effet de bord et valeur renvoyée.*
 
-**Soit def h(L): L.append(0). Que vaut r après r = h([1, 2]) ? Si on écrit M = [1, 2] puis h(M), que contient M ?**
+**Soit def $h(L)$: L.append(0). Que vaut r après $r = h([1$, 2]) ? Si on écrit $M = [1$, 2] puis $h(M)$, que contient M ?**
 
 Propriété, relation ou précondition utilisée :
 
@@ -162,15 +162,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 7 — Programmation
 
 *Compétence visée : Construire un accumulateur dans une boucle.*
 
-**Soit s = 0 puis « for i in range(1, 6): s = s + i*i ». Que vaut s ? Dresser la table de trace.**
+**Soit $s = 0$ puis « for i in range(1, 6): $s = s + i$*i ». Que vaut s ? Dresser la table de trace.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -186,9 +186,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 8 — Algorithmique
 
@@ -210,9 +210,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 9 — Données en tables
 
@@ -234,9 +234,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_nsi.md`._

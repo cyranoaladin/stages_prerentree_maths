@@ -19,7 +19,7 @@
 | Suites numériques | 85,7 % | Certitude à revoir | **CONFRONTER** |
 | Produit scalaire | 100 % | Acquis disponible | **ENTRETENIR** |
 
-**Ordre de traitement.** Suites numériques (CONFRONTER) → Second degré (DIAGNOSTIQUER)
+**Ordre de traitement.** Suites numériques (CONFRONTER) $\to$ Second degré (DIAGNOSTIQUER)
 
 **Calibration de la confiance.** Point fort : ton auto-évaluation est fiable — tu sais globalement ce que tu sais. C'est un vrai atout pour réviser juste, sans perdre de temps.
 
@@ -40,41 +40,41 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 1 — Suites numériques
 
-**Énoncé.** Les suites (w_n) et (t_n) sont définies par w_n = 1,2^n et t_n = 3 × 0,8^n. Donner le sens de variation de chacune, en justifiant.
+**Énoncé.** Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \times 0{,}8^n$. Donner le sens de variation de chacune, en justifiant.
 
-**Corrigé.** Les deux suites sont géométriques de premier terme strictement positif. Pour (w_n), la raison 1,2 est strictement supérieure à 1 : la suite est strictement croissante. Pour (t_n), la raison 0,8 vérifie 0 < 0,8 < 1 : la suite est strictement décroissante.
+**Corrigé.** Les deux suites sont géométriques de premier terme strictement positif. Pour $(w_n)$, la raison 1,2 est strictement supérieure à 1 : la suite est strictement croissante. Pour $(t_n)$, la raison 0,8 vérifie $0 < 0{,}8 < 1$ : la suite est strictement décroissante.
 
-**Geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, 0 < r < 1 donne une suite décroissante, r > 1 une suite croissante.
+**Geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, $0 < r < 1$ donne une suite décroissante, $r > 1$ une suite croissante.
 
 **Erreur à surveiller chez cet élève.** Croit qu'une raison strictement positive entraîne une suite croissante, sans comparer la raison à 1. (constatée à l'item 15 du positionnement, donné avec une certitude de 4/4.)
 
 ### Exercice 2 — Second degré
 
-**Énoncé.** Sur quel intervalle le trinôme −2x² + 8x − 6 est-il strictement positif ?
+**Énoncé.** Sur quel intervalle le trinôme $- 2x^2 + 8x - 6$ est-il strictement positif ?
 
-**Corrigé.** −2x² + 8x − 6 = −2(x² − 4x + 3), dont les racines sont 1 et 3. Comme a = −2 < 0, le trinôme est strictement positif entre les racines : sur ]1 ; 3[.
+**Corrigé.** $- 2x^2 + 8x - 6 = - 2(x^2 - 4x + 3)$, dont les racines sont 1 et 3. Comme $a = - 2 < 0$, le trinôme est strictement positif entre les racines : sur ]1 ; 3[.
 
-**Geste à installer.** Quand a < 0, le trinôme est positif entre les racines. Écrire le tableau de signes plutôt que retenir une formule.
+**Geste à installer.** Quand $a < 0$, le trinôme est positif entre les racines. Écrire le tableau de signes plutôt que retenir une formule.
 
 **Point de vigilance.** L'item correspondant est resté sans réponse : ne rien conclure du silence. Faire traiter l'exercice en observation, puis décider de la suite à partir de ce qui est effectivement produit.
 
 ### Exercice 3 — Suites numériques
 
-**Énoncé.** La suite (u_n) est définie par u₀ = 2 et, pour tout entier naturel n, u_(n+1) = u_n − n². Étudier son sens de variation. Est-elle arithmétique ?
+**Énoncé.** La suite $(u_n)$ est définie par $u_0 = 2$ et, pour tout entier naturel n, $u_{n+1} = u_n - n^2$. Étudier son sens de variation. Est-elle arithmétique ?
 
-**Corrigé.** u_(n+1) − u_n = −n², qui est négatif ou nul pour tout entier naturel n : la suite est décroissante (au sens large). Elle n'est pas arithmétique, car l'écart entre deux termes consécutifs dépend de n et n'est donc pas constant.
+**Corrigé.** $u_{n+1} - u_n = - n^2$, qui est négatif ou nul pour tout entier naturel n : la suite est décroissante (au sens large). Elle n'est pas arithmétique, car l'écart entre deux termes consécutifs dépend de n et n'est donc pas constant.
 
-**Geste à installer.** Calculer la différence u_(n+1) − u_n et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
+**Geste à installer.** Calculer la différence $u_{n+1} - u_n$ et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
 
 **Point de vigilance.** L'item était réussi mais avec une certitude faible : l'objectif est la **vitesse et l'assurance**, pas la compréhension. Ne pas réenseigner ; faire refaire à intervalle espacé.
 
 ### Exercice 4 — Produit scalaire
 
-**Énoncé.** Déterminer le réel m pour que les vecteurs u(3 ; m) et v(−2 ; 6) soient orthogonaux.
+**Énoncé.** Déterminer le réel m pour que les vecteurs $u(3 ; m)$ et $v( - 2 ; 6)$ soient orthogonaux.
 
-**Corrigé.** u et v sont orthogonaux si et seulement si u·v = 0, c'est-à-dire 3 × (−2) + m × 6 = 0, soit −6 + 6m = 0 et donc m = 1.
+**Corrigé.** u et v sont orthogonaux si et seulement si $u \cdot v = 0$, c'est-à-dire $3 \times ( - 2) + m \times 6 = 0$, soit $- 6 + 6m = 0$ et donc $m = 1$.
 
-**Geste à installer.** u·v = 0 est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu.
+**Geste à installer.** $u \cdot v = 0$ est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu.
 
 **Point de vigilance.** L'item était réussi mais avec une certitude faible : l'objectif est la **vitesse et l'assurance**, pas la compréhension. Ne pas réenseigner ; faire refaire à intervalle espacé.
 
@@ -82,10 +82,10 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 3 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 4 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 
@@ -133,7 +133,7 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Énoncé.** Calculer le PGCD de 84 et 60 par l'algorithme d'Euclide, en écrivant chaque division euclidienne.
 
-**Corrigé.** 84 = 60 × 1 + 24 ; 60 = 24 × 2 + 12 ; 24 = 12 × 2 + 0. Le dernier reste non nul est 12 : PGCD(84 ; 60) = 12.
+**Corrigé.** $84 = 60 \times 1 + 24 ; 60 = 24 \times 2 + 12 ; 24 = 12 \times 2 + 0$. Le dernier reste non nul est 12 : PGCD$(84 ; 60) = 12$.
 
 **Geste à installer.** Par l'algorithme d'Euclide : remplacer (a ; b) par (b ; reste de a par b) jusqu'à un reste nul. Le dernier reste non nul est le PGCD.
 
@@ -141,39 +141,39 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Énoncé.** Rendre irréductible la fraction 105/135.
 
-**Corrigé.** PGCD(105 ; 135) = 15, car 135 = 105 × 1 + 30, 105 = 30 × 3 + 15, 30 = 15 × 2 + 0. On obtient 105/135 = 7/9.
+**Corrigé.** PGCD$(105 ; 135) = 15$, car $135 = 105 \times 1 + 30$, $105 = 30 \times 3 + 15$, $30 = 15 \times 2 + 0$. On obtient $105/135 = 7/9$.
 
 **Geste à installer.** Diviser numérateur et dénominateur par leur PGCD, en une seule étape, plutôt que de simplifier au hasard.
 
 ### Option, exercice 4 — Calcul littéral
 
-**Énoncé.** Factoriser l'expression 9x² − 25, puis résoudre l'équation 9x² − 25 = 0.
+**Énoncé.** Factoriser l'expression $9x^2 - 25$, puis résoudre l'équation $9x^2 - 25 = 0$.
 
-**Corrigé.** 9x² − 25 = (3x)² − 5² = (3x − 5)(3x + 5). L'équation a donc pour solutions x = 5/3 et x = −5/3.
+**Corrigé.** $9x^2 - 25 = (3x)^2 - 5^2 = (3x - 5)(3x + 5)$. L'équation a donc pour solutions $x = 5/3$ et $x = - 5/3$.
 
-**Geste à installer.** Identifier a² − b², puis écrire (a − b)(a + b). Vérifier en redéveloppant.
+**Geste à installer.** Identifier $a^2 - b^2$, puis écrire $(a - b)(a + b)$. Vérifier en redéveloppant.
 
 ### Option, exercice 5 — Calcul littéral
 
-**Énoncé.** Développer et réduire (2x − 1)(x + 4).
+**Énoncé.** Développer et réduire $(2x - 1)(x + 4)$.
 
-**Corrigé.** (2x − 1)(x + 4) = 2x² + 8x − x − 4 = 2x² + 7x − 4.
+**Corrigé.** $(2x - 1)(x + 4) = 2x^2 + 8x - x - 4 = 2x^2 + 7x - 4$.
 
 **Geste à installer.** Distribuer chaque terme du premier facteur sur chaque terme du second (quatre produits), puis regrouper les termes semblables.
 
 ### Option, exercice 6 — Systèmes d'équations
 
-**Énoncé.** Résoudre le système { 2x + y = 11 ; x − y = 1 }, puis vérifier la solution.
+**Énoncé.** Résoudre le système { $2x + y = 11 ; x - y = 1$ }, puis vérifier la solution.
 
-**Corrigé.** En additionnant les deux équations : 3x = 12, donc x = 4. La seconde équation donne y = x − 1 = 3. Vérification : 2 × 4 + 3 = 11 et 4 − 3 = 1.
+**Corrigé.** En additionnant les deux équations : $3x = 12$, donc $x = 4$. La seconde équation donne $y = x - 1 = 3$. Vérification : $2 \times 4 + 3 = 11$ et $4 - 3 = 1$.
 
 **Geste à installer.** Additionner ou soustraire les deux équations pour éliminer une inconnue, puis remonter. Toujours vérifier le couple obtenu dans les deux équations.
 
 ### Option, exercice 7 — Systèmes d'équations
 
-**Énoncé.** Dans le système { 3x − 2y = 5 ; y = 2 }, déterminer x.
+**Énoncé.** Dans le système { $3x - 2y = 5 ; y = 2$ }, déterminer x.
 
-**Corrigé.** En remplaçant y par 2 : 3x − 4 = 5, donc 3x = 9 et x = 3.
+**Corrigé.** En remplaçant y par 2 : $3x - 4 = 5$, donc $3x = 9$ et $x = 3$.
 
 **Geste à installer.** Remplacer l'inconnue connue dans l'autre équation, puis isoler. Une seule substitution suffit quand une équation donne déjà une inconnue.
 
@@ -183,17 +183,17 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 **Corrigé.** La contraposée est « Si n est impair, alors n n'est pas un multiple de 6 ». Elle est vraie, puisque l'implication de départ l'est : une implication et sa contraposée sont équivalentes.
 
-**Geste à installer.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
+**Geste à installer.** La contraposée de « $A \implies B$ » est « non $B \implies$ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
 
 **Erreur à surveiller chez cet élève.** Nie les deux propositions sans les échanger : ce n'est pas la contraposée. (item 13 du positionnement d'option.)
 
 ### Option, exercice 9 — Logique
 
-**Énoncé.** La réciproque de « Si a = b, alors a² = b² » est-elle vraie ? Justifier.
+**Énoncé.** La réciproque de « Si $a = b$, alors $a^2 = b^2$ » est-elle vraie ? Justifier.
 
-**Corrigé.** La réciproque s'énonce « Si a² = b², alors a = b ». Elle est fausse : pour a = 1 et b = −1, on a bien a² = b² = 1 sans que a = b. En réalité a² = b² équivaut à a = b ou a = −b.
+**Corrigé.** La réciproque s'énonce « Si $a^2 = b^2$, alors $a = b$ ». Elle est fausse : pour $a = 1$ et $b = - 1$, on a bien $a^2 = b^2 = 1$ sans que $a = b$. En réalité $a^2 = b^2$ équivaut à $a = b$ ou $a = - b$.
 
-**Geste à installer.** La réciproque de « A ⟹ B » est « B ⟹ A ». Elle n'a aucune raison d'être vraie : un seul contre-exemple suffit à la réfuter.
+**Geste à installer.** La réciproque de « $A \implies B$ » est « $B \implies A$ ». Elle n'a aucune raison d'être vraie : un seul contre-exemple suffit à la réfuter.
 
 ## Décision de fin de parcours
 

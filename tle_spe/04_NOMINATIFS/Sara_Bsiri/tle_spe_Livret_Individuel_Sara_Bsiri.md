@@ -33,7 +33,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -49,8 +49,8 @@ Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni devi
 |---|---:|---|---|
 | Second degré | 100 % | Acquis disponible | Première spécialité — « Équations, fonctions polynômes du second degré » : forme canonique, discriminant, racines, factorisation, signe du trinôme. |
 | Dérivation | 100 % | Acquis disponible | Première spécialité — « Dérivation » et « Variations et courbes représentatives des fonctions » : nombre dérivé, tangente, dérivées des fonctions usuelles, dérivée d'un produit et d'un quotient, lien signe de f' / variations de f. |
-| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée. |
-| Suites numériques | 100 % | Acquis disponible | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes. |
+| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée. |
+| Suites numériques | 100 % | Acquis disponible | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes. |
 | Produit scalaire | 100 % | Acquis disponible | Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection. |
 
 _Ces chiffres décrivent ta réussite domaine par domaine. Ce livret ne donne pas de note._
@@ -77,15 +77,15 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 ### Fonction exponentielle — 100 % · Acquis disponible · **ENTRETENIR**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée.
 
-**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles y' = ay + b et le support des croissances comparées.
+**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Analyse : « Fonction logarithme », « Limites des fonctions », « Primitives, équations différentielles ».
 
 ### Suites numériques — 100 % · Acquis disponible · **ENTRETENIR**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes.
 
 **Ce que la Terminale en fera.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
@@ -95,7 +95,7 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 **Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection.
 
-**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « u·v = 0 » devient l'outil de démonstration principal en géométrie dans l'espace.
+**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « $u \cdot v = 0$ » devient l'outil de démonstration principal en géométrie dans l'espace.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Géométrie : « Orthogonalité et distances dans l'espace », « Représentations paramétriques et équations cartésiennes ».
 
@@ -200,48 +200,48 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Second degré | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Dérivation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Fonction exponentielle | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Suites numériques | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Produit scalaire | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Second degré | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Dérivation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Fonction exponentielle | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Suites numériques | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Produit scalaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 <div class="page-break"></div>
 
@@ -257,11 +257,11 @@ Un positionnement distinct t'a été proposé le 2026-08-14. Voici ce qu'il mont
 
 | Domaine | Réussite | Situation | Ce que l'option en fait en Terminale |
 |---|---:|---|---|
-| Arithmétique | 100 % | Acquis disponible | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans ℤ, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
-| Calcul littéral | 100 % | Acquis disponible | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans ℂ, factorisation de z² + 1, de z^n − 1, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
+| Arithmétique | 100 % | Acquis disponible | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans $\mathbb{Z}$, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
+| Calcul littéral | 100 % | Acquis disponible | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans $\mathbb{C}$, factorisation de $z^2 + 1$, de $z^n - 1$, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
 | Systèmes d'équations | 100 % | Acquis disponible | Un système s'écrit matriciellement AX = B ; on le résout par inversion de matrice. Les matrices servent également à modéliser des graphes et des marches aléatoires. |
 | Logique | 100 % | Acquis disponible | L'arithmétique de Terminale est un chapitre de démonstrations : raisonnement par récurrence, par contraposée, par l'absurde, par disjonction de cas. La contraposée est l'outil standard des preuves de divisibilité. |
-| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle U(n+1) = A U(n) prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
+| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle $U(n+1) = A U(n)$ prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
 | Dénombrement | 66,7 % | Réussite hésitante | Le dénombrement est traité pour lui-même dans la spécialité (combinaisons, coefficients binomiaux) et sert en arithmétique pour compter les diviseurs d'un entier à partir de sa décomposition en facteurs premiers. |
 
 ### Tes priorités pour l'option
@@ -282,7 +282,7 @@ Un positionnement distinct t'a été proposé le 2026-08-14. Voici ce qu'il mont
 
 **Réponse attendue.** 12
 
-**Ce qu'il faut retenir.** Chaque entrée peut être associée à chaque plat : 3 × 4 = 12 repas.
+**Ce qu'il faut retenir.** Chaque entrée peut être associée à chaque plat : $3 \times 4 = 12$ repas.
 
 **Le geste à installer.** Quand un choix se décompose en étapes indépendantes, on multiplie le nombre de possibilités de chaque étape.
 
@@ -290,7 +290,7 @@ Un positionnement distinct t'a été proposé le 2026-08-14. Voici ce qu'il mont
 
 | Séance | Ce qui est prévu pour l'option |
 |---:|---|
-| 1 | Division euclidienne : poser a = bq + r et contrôler 0 ≤ r < b |
+| 1 | Division euclidienne : poser $a =$ bq + r et contrôler $0 \leqslant r < b$ |
 | 2 | Diviseurs, nombres premiers, décomposition en facteurs premiers |
 | 3 | PGCD et algorithme d'Euclide ; fractions irréductibles |
 | 4 | Logique : contraposée, réciproque, contre-exemple |

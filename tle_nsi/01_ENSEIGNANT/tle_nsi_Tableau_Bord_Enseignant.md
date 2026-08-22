@@ -77,19 +77,19 @@ L'aide maximale utilisée doit décroître entre la séance 1 et la séance 5.
 
 | Élève | S1 | S2 | S3 | S4 | S5 | Décroissance observée |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Adam Zahouani | | | | | | ☐oui ☐non |
-| Alexandre Zahouani | | | | | | ☐oui ☐non |
-| Sara Bsiri | | | | | | ☐oui ☐non |
-| Yassine Ben Hassine | | | | | | ☐oui ☐non |
+| Adam Zahouani | | | | | | $\square$oui $\square$non |
+| Alexandre Zahouani | | | | | | $\square$oui $\square$non |
+| Sara Bsiri | | | | | | $\square$oui $\square$non |
+| Yassine Ben Hassine | | | | | | $\square$oui $\square$non |
 
 ## 5. Critères de réussite du stage
 
 | Élève | Plus de certitude erronée | Propriété écrite avant calcul | Contrôle systématique | Aide en baisse | Plan de septembre rempli |
 |---|:---:|:---:|:---:|:---:|:---:|
-| Adam Zahouani | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Alexandre Zahouani | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Sara Bsiri | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Yassine Ben Hassine | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Adam Zahouani | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Alexandre Zahouani | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Sara Bsiri | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Yassine Ben Hassine | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 6. Accès aux dossiers nominatifs
 

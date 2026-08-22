@@ -60,7 +60,7 @@ domaines du programme de Première spécialité :
 | Produit scalaire | 2 |
 
 Chaque item est accompagné d'un **niveau de certitude déclaré de 1 à 4**. Le croisement
-réussite × certitude est l'information centrale du dispositif : il distingue quatre situations
+réussite $\times$ certitude est l'information centrale du dispositif : il distingue quatre situations
 qui n'appellent pas le même traitement.
 
 | Situation | Lecture | Traitement |
@@ -160,7 +160,7 @@ prolonge un chapitre de Première. C'est ce qui donne au stage sa cible.
 
 | Chapitre de Terminale | Prérequis de Première déterminant |
 |---|---|
-| Suites et limites, récurrence | Suites arithmétiques et géométriques, sens de variation par le signe de u(n+1) − u(n) |
+| Suites et limites, récurrence | Suites arithmétiques et géométriques, sens de variation par le signe de $u_{n+1} - u_n$ |
 | Compléments sur la dérivation, convexité | Dérivation, lien signe de f' / variations de f |
 | Continuité, théorème des valeurs intermédiaires | Variations d'une fonction, signe d'un trinôme |
 | Fonction logarithme | Fonction exponentielle et règles sur les exposants |
@@ -197,7 +197,7 @@ erreurs reviennent :
 - pour une suite géométrique, la raison est comparée à 0 et non à 1, ce qui conduit à
   déclarer croissante une suite de raison 0,5 ;
 - pour une suite définie par récurrence, le sens de variation est annoncé sans que la
-  différence u(n+1) − u(n) ait été calculée.
+  différence $u_{n+1} - u_n$ ait été calculée.
 
 C'est l'obstacle le plus coûteux du groupe : le premier chapitre de Terminale demande de
 démontrer par récurrence qu'une suite est monotone, puis d'en déduire une limite. Sans le
@@ -209,12 +209,12 @@ La fonction exponentielle est le domaine le plus faible du groupe (57,1 %). Deux
 dominent :
 
 - les exposants sont additionnés lors d'une division ;
-- l'équation e^x = 0 reçoit une solution, alors que la fonction exponentielle ne s'annule
+- l'équation $e^x = 0$ reçoit une solution, alors que la fonction exponentielle ne s'annule
   jamais.
 
 En Terminale, la fonction logarithme est introduite comme réciproque de l'exponentielle :
 chacune de ces erreurs se transpose telle quelle aux règles sur ln, et les équations
-différentielles y' = ay + b reposent entièrement sur ces manipulations.
+différentielles $y' =$ ay + b reposent entièrement sur ces manipulations.
 
 ### C. Le signe de la dérivée est confondu avec le signe de la fonction
 
@@ -227,7 +227,7 @@ encore stabilisé.
 ### D. Le produit scalaire est calculé mais peu utilisé comme outil de preuve
 
 Quatre élèves sur sept ont le produit scalaire pour point d'appui, mais l'usage du critère
-« u·v = 0 » comme outil de démonstration reste rare. En Terminale, ce critère devient
+« $u \cdot v = 0$ » comme outil de démonstration reste rare. En Terminale, ce critère devient
 l'outil principal de la géométrie dans l'espace : vecteur normal à un plan, équation
 cartésienne, distance d'un point à un plan.
 
@@ -298,11 +298,11 @@ partir du livret de chaque élève.
 
 | Séance | Thème commun | Objectif opérationnel principal |
 |---:|---|---|
-| 1 | Suites numériques | Déterminer un sens de variation par le calcul de u(n+1) − u(n) ou par comparaison de la raison à 1, et le rédiger |
+| 1 | Suites numériques | Déterminer un sens de variation par le calcul de $u_{n+1} - u_n$ ou par comparaison de la raison à 1, et le rédiger |
 | 2 | Fonction exponentielle | Appliquer sans erreur les règles sur les exposants et utiliser la stricte positivité de l'exponentielle |
 | 3 | Second degré et signe | Dresser un tableau de signes complet et l'utiliser pour résoudre une inéquation |
 | 4 | Dérivation | Passer du signe de f' aux variations de f, en distinguant signe de la dérivée et signe de la fonction |
-| 5 | Produit scalaire, probabilités, Python | Utiliser u·v = 0 comme outil de preuve ; réactiver probabilités conditionnelles et variable aléatoire |
+| 5 | Produit scalaire, probabilités, Python | Utiliser $u \cdot v = 0$ comme outil de preuve ; réactiver probabilités conditionnelles et variable aléatoire |
 
 ---
 
@@ -315,7 +315,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 ### Objectifs
 
-- Rétablir la méthode du signe de u(n+1) − u(n) pour une suite définie par récurrence.
+- Rétablir la méthode du signe de $u_{n+1} - u_n$ pour une suite définie par récurrence.
 - Rétablir la comparaison de la raison à 1 pour une suite géométrique de premier terme
   positif.
 - Calculer un terme quelconque à partir de la formule explicite.
@@ -326,8 +326,8 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 | Durée | Phase | Contenu |
 |---:|---|---|
-| 10 min | Ouverture | Restitution du positionnement : ce que dit la carte maîtrise × confiance |
-| 20 min | Confrontation | La suite u(n) = 0,5^n est-elle croissante ? Calcul des cinq premiers termes, puis confrontation à la réponse donnée au test |
+| 10 min | Ouverture | Restitution du positionnement : ce que dit la carte maîtrise $\times$ confiance |
+| 20 min | Confrontation | La suite $u_n = 0{,}5^n$ est-elle croissante ? Calcul des cinq premiers termes, puis confrontation à la réponse donnée au test |
 | 25 min | Reconstruction | Sens de variation d'une suite géométrique selon la raison ; sens de variation par le signe de la différence |
 | 30 min | Entraînement différencié | Trois parcours (§ 6) |
 | 20 min | Ouverture Terminale | Une suite croissante et majorée : que peut-on en dire ? Introduction du besoin de la récurrence, sans démonstration |
@@ -336,12 +336,12 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 ### Trace écrite attendue
 
 > **Sens de variation d'une suite.**
-> Méthode générale : on étudie le signe de u(n+1) − u(n).
-> Si u(n+1) − u(n) ≥ 0 pour tout n, la suite est croissante ; si u(n+1) − u(n) ≤ 0, elle est
+> Méthode générale : on étudie le signe de $u_{n+1} - u_n$.
+> Si $u_{n+1} - u_n \geqslant 0$ pour tout n, la suite est croissante ; si $u_{n+1} - u_n \leqslant 0$, elle est
 > décroissante.
 >
-> **Cas d'une suite géométrique** de premier terme v₀ > 0 et de raison q > 0 :
-> si q > 1 la suite est croissante ; si 0 < q < 1 elle est décroissante ; si q = 1 elle est
+> **Cas d'une suite géométrique** de premier terme $v_0 > 0$ et de raison $q > 0$ :
+> si $q > 1$ la suite est croissante ; si $0 < q < 1$ elle est décroissante ; si $q = 1$ elle est
 > constante. **La comparaison se fait à 1, pas à 0.**
 >
 > **Ce que la Terminale ajoute.** Une suite croissante et majorée converge. Pour établir
@@ -352,14 +352,14 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 - Conclure du signe de la raison au sens de variation.
 - Annoncer le sens de variation d'une suite récurrente sans calculer la différence.
-- Confondre u(n+1) et u(n) + 1.
+- Confondre $u_{n+1}$ et $u_n + 1$.
 - Confondre formule explicite et relation de récurrence.
 
 ## Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme
 
 ### Objectifs
 
-- Appliquer sans erreur les règles exp(a) × exp(b) = exp(a+b) et exp(a)/exp(b) = exp(a−b).
+- Appliquer sans erreur les règles $\exp(a) \times \exp(b) = \exp(a+b)$ et $\exp(a)/\exp(b) = \exp(a - b)$.
 - Utiliser la stricte positivité de l'exponentielle pour conclure sur une équation ou une
   inéquation.
 - Relier ces règles à celles que la Terminale établira pour le logarithme.
@@ -369,23 +369,23 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | Durée | Phase | Contenu |
 |---:|---|---|
 | 10 min | Ouverture | Retour sur la séance 1 : une question de contrôle |
-| 20 min | Confrontation | e^(2x)/e^(x−1) : comparaison des réponses e^(3x−1) et e^(x+1), test numérique en x = 1 |
+| 20 min | Confrontation | $e^{2x}/e^{x - 1}$ : comparaison des réponses $e^{3x - 1}$ et $e^{x+1}$, test numérique en $x = 1$ |
 | 25 min | Reconstruction | Les quatre règles d'exposants, démontrées à partir de la relation fonctionnelle ; la stricte positivité et ses conséquences |
 | 30 min | Entraînement différencié | Trois parcours |
-| 20 min | Ouverture Terminale | Le logarithme comme réciproque : ln(ab) = ln a + ln b se lit sur exp(a+b) = exp(a)exp(b) |
+| 20 min | Ouverture Terminale | Le logarithme comme réciproque : ln(ab) $= \ln a + \ln b$ se lit sur $\exp(a+b) = \exp(a)\exp(b)$ |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
 ### Trace écrite attendue
 
 > **Règles sur les exposants.** Pour tous réels a et b :
-> exp(a) × exp(b) = exp(a + b) ; exp(a)/exp(b) = exp(a − b) ; exp(−a) = 1/exp(a) ;
-> (exp(a))^n = exp(na).
+> $\exp(a) \times \exp(b) = \exp(a + b) ; \exp(a)/\exp(b) = \exp(a - b) ; \exp( - a) = 1/\exp(a)$ ;
+> $(\exp(a))^n = \exp$(na).
 > Dans une division, **on soustrait** les exposants, et on garde la parenthèse :
-> exp(2x)/exp(x − 1) = exp(2x − (x − 1)) = exp(x + 1).
+> $\exp(2x)/\exp(x - 1) = \exp(2x - (x - 1)) = \exp(x + 1)$.
 >
-> **Stricte positivité.** Pour tout réel x, exp(x) > 0. En conséquence :
-> l'équation exp(u(x)) = 0 n'a jamais de solution ; l'inéquation exp(u(x)) > 0 est vraie pour
-> tout x du domaine ; dans une factorisation, on peut simplifier par exp(x) sans perdre de
+> **Stricte positivité.** Pour tout réel x, $\exp(x) > 0$. En conséquence :
+> l'équation $\exp(u(x)) = 0$ n'a jamais de solution ; l'inéquation $\exp(u(x)) > 0$ est vraie pour
+> tout x du domaine ; dans une factorisation, on peut simplifier par $\exp(x)$ sans perdre de
 > solution.
 >
 > **Contrôle systématique.** Tester la formule obtenue sur une valeur numérique simple.
@@ -394,8 +394,8 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 - Additionner les exposants lors d'une division.
 - Oublier la parenthèse autour de l'exposant soustrait.
-- Attribuer une solution à exp(x) = 0.
-- Écrire exp(a + b) = exp(a) + exp(b).
+- Attribuer une solution à $\exp(x) = 0$.
+- Écrire $\exp(a + b) = \exp(a) + \exp(b)$.
 
 ## Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes
 
@@ -410,7 +410,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | Durée | Phase | Contenu |
 |---:|---|---|
 | 10 min | Ouverture | Question de contrôle sur la séance 2 |
-| 20 min | Confrontation | −x² + 3x − 2 > 0 : pourquoi la réponse « à l'extérieur des racines » est fausse ici |
+| 20 min | Confrontation | $- x^2 + 3x - 2 > 0$ : pourquoi la réponse « à l'extérieur des racines » est fausse ici |
 | 25 min | Reconstruction | Discriminant, racines, factorisation, règle du signe de a |
 | 30 min | Entraînement différencié | Trois parcours |
 | 20 min | Ouverture Terminale | Le tableau de signes d'une dérivée : préparation directe de la séance 4 ; mention du théorème des valeurs intermédiaires |
@@ -418,13 +418,13 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 ### Trace écrite attendue
 
-> **Résolution.** Δ = b² − 4ac. Si Δ > 0, deux racines (−b ± √Δ)/(2a) ; si Δ = 0, une racine
-> double −b/(2a) ; si Δ < 0, aucune racine réelle.
-> **Contrôle** : somme des racines = −b/a, produit = c/a.
+> **Résolution.** $\Delta = b^2 - 4$ac. Si $\Delta > 0$, deux racines $( - b \pm \surd \Delta )/(2a)$ ; si $\Delta = 0$, une racine
+> double $- b/(2a)$ ; si $\Delta < 0$, aucune racine réelle.
+> **Contrôle** : somme des racines = $- b/a$, produit = c/a.
 >
-> **Signe du trinôme.** Le trinôme ax² + bx + c est **du signe de a à l'extérieur des
-> racines** et **du signe contraire entre les racines**. Quand Δ < 0, il garde le signe de a
-> sur ℝ tout entier.
+> **Signe du trinôme.** Le trinôme ax^2 + bx + c est **du signe de a à l'extérieur des
+> racines** et **du signe contraire entre les racines**. Quand $\Delta < 0$, il garde le signe de a
+> sur $\mathbb{R}$ tout entier.
 >
 > **Ce que la Terminale en fait.** Le signe d'un trinôme sert à lire le signe d'une dérivée,
 > donc les variations d'une fonction, puis le signe d'une dérivée seconde, donc la
@@ -433,7 +433,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 ### Erreurs à surveiller
 
 - Appliquer la règle « du signe de a à l'extérieur » sans regarder le signe de a.
-- Oublier le cas Δ < 0.
+- Oublier le cas $\Delta < 0$.
 - Confondre les solutions d'une équation et l'ensemble solution d'une inéquation.
 - Écrire l'ensemble solution sans réunion quand il est formé de deux intervalles.
 
@@ -451,7 +451,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | Durée | Phase | Contenu |
 |---:|---|---|
 | 10 min | Ouverture | Question de contrôle sur la séance 3 |
-| 20 min | Confrontation | « f' < 0 sur ]1 ; 4[ donc f < 0 sur ]1 ; 4[ » : contre-exemple f(x) = x − 10 |
+| 20 min | Confrontation | « $f' < 0$ sur ]1 ; 4[ donc $f < 0$ sur ]1 ; 4[ » : contre-exemple $f(x) = x - 10$ |
 | 25 min | Reconstruction | Nombre dérivé et tangente ; formules du produit et du quotient ; du tableau de signes de f' au tableau de variations de f |
 | 30 min | Entraînement différencié | Trois parcours |
 | 20 min | Ouverture Terminale | La dérivée seconde et la convexité : f'' donne les variations de f', donc la forme de la courbe |
@@ -459,31 +459,31 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 ### Trace écrite attendue
 
-> **Nombre dérivé.** f'(a) est le coefficient directeur de la tangente à la courbe au point
-> d'abscisse a. Équation de cette tangente : y = f'(a)(x − a) + f(a).
+> **Nombre dérivé.** $f'(a)$ est le coefficient directeur de la tangente à la courbe au point
+> d'abscisse a. Équation de cette tangente : $y = f'(a)(x - a) + f(a)$.
 >
-> **Formules.** (uv)' = u'v + uv' ; (u/v)' = (u'v − uv')/v².
+> **Formules.** (uv)' = u'v + uv' ; (u/v)' = (u'$v -$ uv')$/v^2$.
 >
 > **Signe et variations.** Le signe de f' donne le **sens de variation** de f, jamais le
-> signe de f. Sur un intervalle où f' > 0, f est strictement croissante ; où f' < 0, f est
+> signe de f. Sur un intervalle où $f' > 0$, f est strictement croissante ; où $f' < 0$, f est
 > strictement décroissante.
 >
 > **Ce que la Terminale ajoute.** f'' donne le sens de variation de f' : f est convexe là où
-> f'' ≥ 0, concave là où f'' ≤ 0, et un changement de signe de f'' donne un point
+> f'' $\geqslant 0$, concave là où f'' $\leqslant 0$, et un changement de signe de f'' donne un point
 > d'inflexion. Deux niveaux se superposent : il faut que le premier soit sûr.
 
 ### Erreurs à surveiller
 
 - Confondre signe de la dérivée et signe de la fonction.
 - Inverser l'ordre du numérateur dans la dérivée d'un quotient.
-- Oublier f(a) dans l'équation de la tangente.
+- Oublier $f(a)$ dans l'équation de la tangente.
 - Conclure sur les variations sans avoir factorisé f'.
 
 ## Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation
 
 ### Objectifs
 
-- Utiliser le critère u·v = 0 comme outil de démonstration et de détermination d'un
+- Utiliser le critère $u \cdot v = 0$ comme outil de démonstration et de détermination d'un
   paramètre.
 - Réactiver probabilités conditionnelles et variable aléatoire, prérequis de la loi
   binomiale.
@@ -503,15 +503,15 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 ### Trace écrite attendue
 
-> **Produit scalaire.** En repère orthonormé, u·v = x_u x_v + y_u y_v. Le résultat est un
-> **nombre**. Deux vecteurs non nuls sont orthogonaux si et seulement si u·v = 0.
+> **Produit scalaire.** En repère orthonormé, $u \cdot v = x_u x_v + y_u y_v$. Le résultat est un
+> **nombre**. Deux vecteurs non nuls sont orthogonaux si et seulement si $u \cdot v = 0$.
 >
 > **Ce que la Terminale en fait.** Le même critère s'écrit dans l'espace avec trois
 > coordonnées. Un vecteur normal à un plan est un vecteur orthogonal à deux vecteurs
 > directeurs ; l'équation cartésienne d'un plan se lit directement sur ses coordonnées.
 >
-> **Probabilités.** P(A ∩ B) = P(A) × P_A(B). Deux événements sont indépendants lorsque
-> P_A(B) = P(B). L'espérance d'une variable aléatoire est la moyenne des valeurs pondérée
+> **Probabilités.** $P(A \cap B) = P(A) \times P_A(B)$. Deux événements sont indépendants lorsque
+> $P_A(B) = P(B)$. L'espérance d'une variable aléatoire est la moyenne des valeurs pondérée
 > par les probabilités.
 >
 > **Ce que la Terminale ajoute.** La répétition d'épreuves indépendantes conduit au schéma
@@ -520,7 +520,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 ### Erreurs à surveiller
 
 - Annoncer un vecteur comme résultat d'un produit scalaire.
-- Confondre P(A ∩ B) et P_A(B).
+- Confondre $P(A \cap B)$ et $P_A(B)$.
 - Confondre indépendance et incompatibilité.
 - Écrire une boucle Python dont les bornes sont décalées d'une unité.
 
@@ -591,7 +591,7 @@ travail pour septembre.
 | 3 | Seul : la procédure est correcte et le résultat exact, sans aide |
 | 4 | Je peux expliquer : l'élève justifie sa démarche et contrôle son résultat |
 
-## 7.3 Matrice réussite × confiance
+## 7.3 Matrice réussite $\times$ confiance
 
 C'est l'outil de lecture central, utilisé avant, pendant et après le stage.
 
@@ -613,7 +613,7 @@ Le stage est réussi pour un élève lorsque :
 
 ## 7.5 Portfolio
 
-Le portfolio accompagne l'élève sur les cinq séances. Il contient : la carte maîtrise ×
+Le portfolio accompagne l'élève sur les cinq séances. Il contient : la carte maîtrise $\times$
 confiance initiale, une fiche de synthèse par séance, le relevé des aides, le carnet
 d'erreurs, l'auto-évaluation finale et le plan de septembre.
 
@@ -623,7 +623,7 @@ d'erreurs, l'auto-évaluation finale et le plan de septembre.
 
 L'évaluation finale est commune ; elle est proposée en séance 5 et dure 35 minutes. Elle
 comporte cinq exercices, un par domaine, et fait déclarer une certitude à chaque question.
-Elle n'est pas notée : elle est lue avec la même matrice réussite × confiance que le
+Elle n'est pas notée : elle est lue avec la même matrice réussite $\times$ confiance que le
 positionnement initial, ce qui permet de mesurer le déplacement.
 
 Les énoncés et le corrigé figurent dans `03_EVALUATIONS/`.
@@ -638,11 +638,11 @@ littéral, systèmes d'équations, logique, suites numériques, dénombrement.
 
 | Domaine | Réussite moyenne (2 élèves) | Ce que l'option en fait en Terminale |
 |---|---:|---|
-| Suites numériques | 100 % | Suites définies par une relation matricielle U(n+1) = A U(n) |
+| Suites numériques | 100 % | Suites définies par une relation matricielle $U(n+1) = A U(n)$ |
 | Logique | 83,3 % | Contraposée, absurde, disjonction de cas : l'outillage des preuves d'arithmétique |
 | Dénombrement | 83,3 % | Comptage des diviseurs à partir de la décomposition en facteurs premiers |
 | Arithmétique | 79,2 % | Divisibilité, congruences, PGCD, Bézout, Gauss, Fermat |
-| Calcul littéral | 50 % | Manipulation des nombres complexes, factorisations dans ℂ |
+| Calcul littéral | 50 % | Manipulation des nombres complexes, factorisations dans $\mathbb{C}$ |
 | Systèmes d'équations | 50 % | Écriture matricielle AX = B, résolution par inversion |
 
 **Il n'existe pas de stage de mathématiques expertes.** L'option est travaillée en
@@ -707,5 +707,5 @@ spécialité NSI, le lien est fait explicitement avec le module `tle_nsi`.
 | Principe directeur | Les certitudes erronées d'abord, la justification toujours, l'usage en Terminale explicité |
 | Différenciation | Trois parcours par séance, réattribués à chaque séance, cinq niveaux d'aide |
 | Individualisation | Un livret par élève, construit item par item à partir de son propre bilan |
-| Évaluation | Sans note ; matrice réussite × confiance, avant et après |
+| Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 | Sortie | Un plan de travail personnel écrit pour septembre |

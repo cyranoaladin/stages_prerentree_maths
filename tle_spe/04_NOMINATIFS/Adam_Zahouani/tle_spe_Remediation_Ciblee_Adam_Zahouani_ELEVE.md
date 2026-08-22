@@ -26,7 +26,7 @@ Chaque exercice ci-dessous reprend **une compétence précise** que ton position
 
 *Compétence visée : Appliquer les règles de calcul sur les exposants.*
 
-**Simplifier l'expression e^(3x) × e^(1−x) / e^(x) et donner le résultat sous la forme e^(ax+b).**
+**Simplifier l'expression $e^{3x} \times e^{1 - x} / e^{x}$ et donner le résultat sous la forme $e^{ax+b}$.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -42,15 +42,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 2 — Fonction exponentielle
 
 *Compétence visée : Utiliser la stricte positivité de la fonction exponentielle.*
 
-**Résoudre dans ℝ l'équation e^(x² − 1) = 0, puis l'inéquation e^x > 0.**
+**Résoudre dans $\mathbb{R}$ l'équation $e^{x^2 - 1} = 0$, puis l'inéquation $e^x > 0$.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -66,15 +66,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 3 — Dérivation
 
 *Compétence visée : Déduire les variations du signe de la dérivée.*
 
-**Soit f(x) = x³ − 12x. Déterminer l'intervalle sur lequel f est décroissante.**
+**Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -90,9 +90,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 4 — Dérivation
 
@@ -114,15 +114,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 5 — Suites numériques
 
 *Compétence visée : Déterminer le sens de variation d'une suite géométrique par sa raison.*
 
-**Les suites (w_n) et (t_n) sont définies par w_n = 1,2^n et t_n = 3 × 0,8^n. Donner le sens de variation de chacune, en justifiant.**
+**Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \times 0{,}8^n$. Donner le sens de variation de chacune, en justifiant.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -138,15 +138,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 6 — Suites numériques
 
 *Compétence visée : Étudier le sens de variation d'une suite définie par récurrence.*
 
-**La suite (u_n) est définie par u₀ = 2 et, pour tout entier naturel n, u_(n+1) = u_n − n². Étudier son sens de variation. Est-elle arithmétique ?**
+**La suite $(u_n)$ est définie par $u_0 = 2$ et, pour tout entier naturel n, $u_{n+1} = u_n - n^2$. Étudier son sens de variation. Est-elle arithmétique ?**
 
 Propriété, relation ou précondition utilisée :
 
@@ -162,9 +162,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_maths.md`._

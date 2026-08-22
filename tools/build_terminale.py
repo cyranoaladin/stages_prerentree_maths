@@ -33,11 +33,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from tools.latex_notation import to_latex  # noqa: E402
 
 REGISTRY_PATH = "content/students_terminale.json"
 DIAGNOSTICS_PATH = "content/diagnostics_terminale.json"
@@ -1536,7 +1540,14 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
         )
         documents[f"{key}/00_MASTER/index.md"] = render_index(module, entries)
 
-    return documents
+    # Le texte des bilans est repris tel qu'il a été extrait des PDF : il porte encore la
+    # notation Unicode des sujets d'origine (u₀, ≥, Cu²⁺). La conversion en LaTeX se fait
+    # ici, sur le document complet, pour que les livrets composés par LuaLaTeX portent de
+    # vraies mathématiques et de vraies équations de réaction.
+    return {
+        relative: to_latex(content, chemistry=relative.startswith("tle_pc/"))
+        for relative, content in documents.items()
+    }
 
 
 def orphan_documents(documents: dict[str, str], root: Path = ROOT) -> list[str]:

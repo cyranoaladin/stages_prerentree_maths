@@ -8,7 +8,7 @@ objet ou en **construit** un nouveau.
 
 - Je prédis, puis j'exécute, puis je compare.
 - J'écris ma prédiction **avant** de lancer le programme.
-- Certitude : ☐1 ☐2 ☐3 ☐4 · Aide : A, B, C, D ou E.
+- Certitude : $\square$1 $\square$2 $\square$3 $\square$4 · Aide : A, B, C, D ou E.
 
 ---
 
@@ -18,7 +18,7 @@ Convertis 0x2A en base 10, puis 60 en hexadécimal.
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -32,7 +32,7 @@ L = L.append(4)
 print(L)
 ```
 
-Ma prédiction : ..................................................  Certitude : ☐1 ☐2 ☐3 ☐4
+Ma prédiction : ..................................................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 Sortie réelle : ..................................................
 
@@ -57,7 +57,7 @@ Ma prédiction : ....................  Sortie réelle : ....................
 ## Partie 2 — La trace écrite
 
 > **Indexation.** Les indices commencent à **0**. Pour n éléments, le dernier indice valide
-> est n − 1. L'indice −1 désigne le dernier élément. `L[n]` lève une `IndexError`.
+> est $n - 1$. L'indice $- 1$ désigne le dernier élément. `L[n]` lève une `IndexError`.
 >
 > **Modifier ou construire.**
 >
@@ -85,21 +85,21 @@ Ma prédiction : ....................  Sortie réelle : ....................
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Soit `L = [1, 2, 3]`. Après `L.insert(0, 9)` puis `L.append(4)`, que contient
 L ? Et que vaudrait L après `L = L.append(5)` ?
 
 Prédiction : ....................  Sortie réelle : ....................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Soit `d = {'x': 10, 'y': 20}`. Que vaut `d['y']` ? Que se passe-t-il avec
 `d['z']` ? Comment obtenir 0 dans ce cas, sans erreur ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 4.** Écris les instructions qui ajoutent à `d` la clé `'z'` de valeur 30,
 suppriment la clé `'x'`, puis parcourent `d` en affichant chaque couple clé-valeur.
@@ -110,7 +110,7 @@ suppriment la clé `'x'`, puis parcourent `d` en affichant chaque couple clé-va
 
 ```
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 ### Parcours maîtrise (exercices 3 à 6)
 
@@ -209,6 +209,6 @@ print(arbre['gauche']['valeur'])   # affiche ...........
 
 ....................................................................................................
 
-**Ma certitude sur les types construits, aujourd'hui :** ☐1 ☐2 ☐3 ☐4
+**Ma certitude sur les types construits, aujourd'hui :** $\square$1 $\square$2 $\square$3 $\square$4
 
-**Aide maximale utilisée :** ☐A ☐B ☐C ☐D ☐E ☐aucune
+**Aide maximale utilisée :** $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune

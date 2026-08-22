@@ -2,7 +2,7 @@
 
 ## Principe de lecture
 
-Cette évaluation **n'est pas notée**. Elle est dépouillée avec la matrice réussite ×
+Cette évaluation **n'est pas notée**. Elle est dépouillée avec la matrice réussite $\times$
 confiance, exactement comme le positionnement initial. Ce que l'on mesure est le
 **déplacement** de chaque élève dans cette matrice entre le début et la fin du stage.
 
@@ -21,13 +21,13 @@ important du stage.
 
 ### Exercice 1 — Suites numériques
 
-a) u₁ = u₀ + 2 × 0 − 1 = 3 − 1 = **2** ; u₂ = 2 + 2 × 1 − 1 = **3** ; u₃ = 3 + 2 × 2 − 1 = **6**.
+a) $u_1 = u_0 + 2 \times 0 - 1 = 3 - 1 =$ **2** ; $u_2 = 2 + 2 \times 1 - 1 =$ **3** ; $u_3 = 3 + 2 \times 2 - 1 =$ **6**.
 
-b) u(n+1) − u_n = **2n − 1**. Pour n ≥ 1, on a 2n − 1 ≥ 1 > 0 : la suite est **strictement
-croissante à partir du rang 1**. (Entre les rangs 0 et 1, la différence vaut −1 : la suite
+b) $u_{n+1} - u_n =$ **$2n - 1$**. Pour $n \geqslant 1$, on a $2n - 1 \geqslant 1 > 0$ : la suite est **strictement
+croissante à partir du rang 1**. (Entre les rangs 0 et 1, la différence vaut $- 1$ : la suite
 décroît d'abord, ce qui explique la précision « à partir du rang 1 » de l'énoncé.)
 
-c) **Non.** L'écart 2n − 1 dépend de n : il n'est pas constant. Une suite arithmétique a un
+c) **Non.** L'écart $2n - 1$ dépend de n : il n'est pas constant. Une suite arithmétique a un
 écart constant.
 
 *Ce qui est visé.* Le calcul systématique de la différence, acquis en séance 1. La question c)
@@ -39,30 +39,30 @@ réussite partielle.
 
 ### Exercice 2 — Fonction exponentielle
 
-a) e^(4x) × e^(2−x) = e^(4x + 2 − x) = e^(3x+2). Puis division par e^(2x) :
-e^(3x + 2 − 2x) = **e^(x+2)**.
+a) $e^{4x} \times e^{2 - x} = e^{4x + 2 - x} = e^{3x+2}$. Puis division par $e^{2x}$ :
+$e^{3x + 2 - 2x} =$ **$e^{x+2}$**.
 
-b) La fonction exponentielle est strictement positive sur ℝ : **aucune solution**.
+b) La fonction exponentielle est strictement positive sur $\mathbb{R}$ : **aucune solution**.
 
-c) e^(2x) = e^(x+4) équivaut à 2x = x + 4 (l'exponentielle est strictement croissante donc
-injective), soit **x = 4**.
+c) $e^{2x} = e^{x+4}$ équivaut à $2x = x + 4$ (l'exponentielle est strictement croissante donc
+injective), soit **$x = 4$**.
 
 *Ce qui est visé.* Les deux erreurs de la séance 2 : addition des exposants dans une division,
 et solution attribuée à une exponentielle nulle.
 
-*Contrôle attendu.* Test numérique en x = 1 : e⁴ × e¹ / e² = e³ et e^(1+2) = e³ ✓
+*Contrôle attendu.* Test numérique en $x = 1$ : $e^4 \times e^1 / e^2 = e^3$ et $e^{1+2} = e^3 \checkmark$
 
 ### Exercice 3 — Second degré
 
-a) Δ = 25 − 4 × (−1) × (−6) = 25 − 24 = **1**. Racines : (−5 ± 1)/(−2), soit
-(−5 + 1)/(−2) = **2** et (−5 − 1)/(−2) = **3**.
-Contrôle : somme 5 = −b/a = −5/(−1) ✓ ; produit 6 = c/a = −6/(−1) ✓
+a) $\Delta = 25 - 4 \times ( - 1) \times ( - 6) = 25 - 24 =$ **1**. Racines : $( - 5 \pm 1)/( - 2)$, soit
+$( - 5 + 1)/( - 2) =$ **2** et $( - 5 - 1)/( - 2) =$ **3**.
+Contrôle : somme $5 = - b/a = - 5/( - 1) \checkmark$ ; produit $6 = c/a = - 6/( - 1) \checkmark$
 
-b) **a = −1 < 0** : le trinôme est négatif à l'extérieur des racines, positif entre elles.
+b) **$a = - 1 < 0$** : le trinôme est négatif à l'extérieur des racines, positif entre elles.
 
-| | −∞ | | 2 | | 3 | | +∞ |
+| | $- \infty$ | | 2 | | 3 | | +$\infty$ |
 |---|---|---|---|---|---|---|---|
-| signe de P(x) | | − | 0 | + | 0 | − | |
+| signe de $P(x)$ | | $-$ | 0 | + | 0 | $-$ | |
 
 c) L'inégalité est **large** : l'ensemble solution est **[2 ; 3]**, crochets fermés.
 
@@ -70,34 +70,34 @@ c) L'inégalité est **large** : l'ensemble solution est **[2 ; 3]**, crochets f
 regarder le signe de a. Le coefficient dominant est négatif, comme dans l'item du
 positionnement initial.
 
-*Points d'attention au dépouillement.* Un élève qui écrit ]−∞ ; 2] ∪ [3 ; +∞[ a reproduit
+*Points d'attention au dépouillement.* Un élève qui écrit $] - \infty ; 2] \cup [3 ; + \infty [$ a reproduit
 l'erreur initiale ; un élève qui écrit ]2 ; 3[ a le bon raisonnement mais pas les bons
 crochets — ce sont deux constats très différents à noter séparément.
 
 ### Exercice 4 — Dérivation
 
-a) u = x − 1, u' = 1 ; v = x² + 2, v' = 2x.
-f'(x) = 1 × (x² + 2) + (x − 1) × 2x = x² + 2 + 2x² − 2x = **3x² − 2x + 2**.
+a) $u = x - 1$, $u' = 1 ; v = x^2 + 2$, $v' = 2x$.
+$f'(x) = 1 \times (x^2 + 2) + (x - 1) \times 2x = x^2 + 2 + 2x^2 - 2x =$ **$3x^2 - 2x + 2$**.
 
-b) Discriminant de f' : Δ = 4 − 24 = −20 < 0, et le coefficient dominant 3 est positif :
-**f'(x) > 0 pour tout réel x**. Donc f est **strictement croissante sur ℝ**.
+b) Discriminant de f' : $\Delta = 4 - 24 = - 20 < 0$, et le coefficient dominant 3 est positif :
+**$f'(x) > 0$ pour tout réel x**. Donc f est **strictement croissante sur $\mathbb{R}$**.
 
 c) **Non.** Le signe de g' donne le sens de variation de g, pas son signe. Contre-exemple :
-g(x) = −x + 10 a une dérivée strictement négative et reste positive sur ]0 ; 3[.
+$g(x) = - x + 10$ a une dérivée strictement négative et reste positive sur ]0 ; 3[.
 
-*Ce qui est visé.* La question b) réinvestit le cas Δ < 0 de la séance 3 dans le contexte de
+*Ce qui est visé.* La question b) réinvestit le cas $\Delta < 0$ de la séance 3 dans le contexte de
 la séance 4 : c'est le point de jonction des deux séances. La question c) est la reprise
 directe de l'item du positionnement initial le plus souvent manqué.
 
 ### Exercice 5 — Produit scalaire
 
-a) AB(3 − 0 ; 2 − 1) = **AB(3 ; 1)** et AC(1 − 0 ; 7 − 1) = **AC(1 ; 6)**.
+a) AB$(3 - 0 ; 2 - 1) =$ **AB(3 ; 1)** et AC$(1 - 0 ; 7 - 1) =$ **AC(1 ; 6)**.
 
-b) AB·AC = 3 × 1 + 1 × 6 = **9**. Ce produit n'est pas nul : le triangle **n'est pas
+b) AB·AC = $3 \times 1 + 1 \times 6 =$ **9**. Ce produit n'est pas nul : le triangle **n'est pas
 rectangle en A**.
 
-c) w(t ; −2) orthogonal à AB(3 ; 1) : 3t + 1 × (−2) = 0, soit 3t = 2 et **t = 2/3**.
-Contrôle : w(2/3 ; −2)·AB(3 ; 1) = 2 − 2 = 0 ✓
+c) $w(t ; - 2)$ orthogonal à AB(3 ; 1) : $3t + 1 \times ( - 2) = 0$, soit $3t = 2$ et **$t = 2/3$**.
+Contrôle : $w(2/3 ; - 2) \cdot$AB$(3 ; 1) = 2 - 2 = 0 \checkmark$
 
 *Ce qui est visé.* La question a) vérifie que l'élève prend bien les coordonnées des
 **vecteurs** et non des points. La question c) est le nouvel usage travaillé en séance 5 : le
@@ -111,11 +111,11 @@ critère lu comme une équation.
 
 | Exercice | Domaine | Juste | Faux | Vide | Certitude déclarée | Contrôle effectué | Case de la matrice |
 |---:|---|:---:|:---:|:---:|:---:|:---:|---|
-| 1 | Suites numériques | ☐ | ☐ | ☐ | ...../4 | ☐ | |
-| 2 | Fonction exponentielle | ☐ | ☐ | ☐ | ...../4 | ☐ | |
-| 3 | Second degré | ☐ | ☐ | ☐ | ...../4 | ☐ | |
-| 4 | Dérivation | ☐ | ☐ | ☐ | ...../4 | ☐ | |
-| 5 | Produit scalaire | ☐ | ☐ | ☐ | ...../4 | ☐ | |
+| 1 | Suites numériques | $\square$ | $\square$ | $\square$ | ...../4 | $\square$ | |
+| 2 | Fonction exponentielle | $\square$ | $\square$ | $\square$ | ...../4 | $\square$ | |
+| 3 | Second degré | $\square$ | $\square$ | $\square$ | ...../4 | $\square$ | |
+| 4 | Dérivation | $\square$ | $\square$ | $\square$ | ...../4 | $\square$ | |
+| 5 | Produit scalaire | $\square$ | $\square$ | $\square$ | ...../4 | $\square$ | |
 
 ## Comparaison initiale / finale
 

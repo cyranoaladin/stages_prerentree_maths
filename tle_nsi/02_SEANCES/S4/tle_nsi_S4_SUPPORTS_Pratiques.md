@@ -35,9 +35,9 @@ Tableau à compléter, pour la recherche de 4 dans `[4, 1, 9, 3]`.
 
 | tour | gauche | droite | milieu | tableau[milieu] | décision |
 |---:|---:|---:|---:|---:|---|
-| 1 | 0 | 3 | 1 | 1 | 1 < 4 → gauche = 2 |
-| 2 | 2 | 3 | 2 | 9 | 9 > 4 → droite = 1 |
-| — | 2 | 1 | — | — | gauche > droite → renvoie −1 |
+| 1 | 0 | 3 | 1 | 1 | $1 < 4 \to$ gauche = 2 |
+| 2 | 2 | 3 | 2 | 9 | $9 > 4 \to$ droite = 1 |
+| — | 2 | 1 | — | — | gauche > droite $\to$ renvoie $- 1$ |
 
 **Question à poser.** À quel tour l'indice 0 a-t-il été examiné ? Réponse : jamais. Dès le
 premier tour, la moitié gauche a été écartée — à tort, puisque le tableau n'était pas trié.
@@ -48,17 +48,17 @@ premier tour, la moitié gauche a été écartée — à tort, puisque le tablea
 
 | Taille n | Recherche séquentielle (pire cas) | Dichotomie (pire cas) | Puissance de 2 correspondante |
 |---:|---:|---:|---|
-| 16 | 16 | 4 | 2⁴ = 16 |
-| 100 | 100 | 7 | 2⁷ = 128 |
-| 1 000 | 1 000 | 10 | 2¹⁰ = 1 024 |
-| 100 000 | 100 000 | 17 | 2¹⁷ ≈ 131 000 |
-| 1 000 000 | 1 000 000 | 20 | 2²⁰ ≈ 1 048 000 |
+| 16 | 16 | 4 | $2^4 = 16$ |
+| 100 | 100 | 7 | $2^7 = 128$ |
+| 1 000 | 1 000 | 10 | $2^{10} = 1 024$ |
+| 100 000 | 100 000 | 17 | $2^{17} \approx 131 000$ |
+| 1 000 000 | 1 000 000 | 20 | $2^{20} \approx 1 048 000$ |
 
 **Point à faire émerger.** Passer de 1 000 à 1 000 000 d'éléments multiplie le coût
 séquentiel par 1 000, et double seulement le coût de la dichotomie. C'est ce que signifie
 « logarithmique ».
 
-**Repères à mémoriser :** 2¹⁰ = 1 024 et 2²⁰ ≈ 10⁶.
+**Repères à mémoriser :** $2^{10} = 1 024$ et $2^{20} \approx 10^6$.
 
 ## Support 4 — Cartes de tri par insertion
 
@@ -77,7 +77,7 @@ Quatre cartes portant 5, 2, 8 et 1, à manipuler physiquement.
 
 **Prolongement.** Faire refaire avec le tableau `[8, 5, 2, 1]`, déjà trié à l'envers : le
 nombre de comparaisons passe à 6, le maximum pour quatre cartes. Faire le lien avec « pire
-cas en n² ».
+cas en $n^2$ ».
 
 ## Support 5 — Le grand écart, à chronométrer
 
@@ -123,8 +123,8 @@ et commentées, pas reproduites.
 > Un algorithme dont la précondition n'est pas respectée **ne plante pas** :
 > il répond faux, sans prévenir.
 >
-> **Repères de coût :** 2¹⁰ = 1 024 · 2²⁰ ≈ 1 000 000.
-> Séquentielle : n comparaisons. Dichotomie : log₂ n.
+> **Repères de coût :** $2^{10} = 1 024 \cdot 2^{20} \approx 1 000 000$.
+> Séquentielle : n comparaisons. Dichotomie : $\log_2 n$.
 
 ## Matériel à prévoir
 

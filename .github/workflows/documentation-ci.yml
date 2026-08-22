@@ -73,8 +73,14 @@ jobs:
       - name: Terminale modules must derive from their committed sources
         run: |
           python3 tools/build_terminale.py --check
-          git diff --exit-code -- tle_spe tle_nsi content/students_terminale.json \
+          git diff --exit-code -- tle_spe tle_nsi tle_pc content/students_terminale.json \
             content/diagnostics_terminale.json content/items_terminale.json
+
+      # La composition LaTeX n'est pas rejouée ici : elle demanderait toute une
+      # distribution TeX. C'est la source qui est vérifiée — plus aucun caractère que la
+      # police ne saurait dessiner, et aucune formule ouverte.
+      - name: Terminale documents must be written in LaTeX notation
+        run: python3 tools/mathify_terminale.py --check
 
       - name: Secret scan and public/private confidentiality gates
         run: python3 tools/ci_gates.py

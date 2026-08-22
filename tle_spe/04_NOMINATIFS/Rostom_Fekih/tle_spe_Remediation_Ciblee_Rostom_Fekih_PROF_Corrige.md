@@ -38,9 +38,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 1 — Dérivation
 
-**Énoncé.** Soit f(x) = (3x − 2)(x² + 1). Calculer f'(x).
+**Énoncé.** Soit $f(x) = (3x - 2)(x^2 + 1)$. Calculer $f'(x)$.
 
-**Corrigé.** u = 3x − 2 donc u' = 3 ; v = x² + 1 donc v' = 2x. Alors f'(x) = 3(x² + 1) + (3x − 2)(2x) = 3x² + 3 + 6x² − 4x = 9x² − 4x + 3.
+**Corrigé.** $u = 3x - 2$ donc $u' = 3 ; v = x^2 + 1$ donc $v' = 2x$. Alors $f'(x) = 3(x^2 + 1) + (3x - 2)(2x) = 3x^2 + 3 + 6x^2 - 4x = 9x^2 - 4x + 3$.
 
 **Geste à installer.** Poser u et v, écrire u' et v' à part, puis appliquer (uv)' = u'v + uv' avant de développer.
 
@@ -48,11 +48,11 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 2 — Dérivation
 
-**Énoncé.** Soit f(x) = (2x − 1)/(x + 3), définie sur ]−3 ; +∞[. Calculer f'(x) et donner son signe.
+**Énoncé.** Soit $f(x) = (2x - 1)/(x + 3)$, définie sur $] - 3 ; + \infty [$. Calculer $f'(x)$ et donner son signe.
 
-**Corrigé.** u = 2x − 1, u' = 2 ; v = x + 3, v' = 1. f'(x) = (2(x + 3) − (2x − 1))/(x + 3)² = (2x + 6 − 2x + 1)/(x + 3)² = 7/(x + 3)². Ce quotient est strictement positif : f est strictement croissante sur ]−3 ; +∞[.
+**Corrigé.** $u = 2x - 1$, $u' = 2 ; v = x + 3$, $v' = 1$. $f'(x) = (2(x + 3) - (2x - 1))/(x + 3)^2 = (2x + 6 - 2x + 1)/(x + 3)^2 = 7/(x + 3)^2$. Ce quotient est strictement positif : f est strictement croissante sur $] - 3 ; + \infty [$.
 
-**Geste à installer.** Appliquer (u/v)' = (u'v − uv')/v². L'ordre du numérateur n'est pas commutatif : u'v vient en premier.
+**Geste à installer.** Appliquer (u/v)' = (u'$v -$ uv')$/v^2$. L'ordre du numérateur n'est pas commutatif : u'v vient en premier.
 
 **Point de vigilance.** L'item était réussi mais avec une certitude faible : l'objectif est la **vitesse et l'assurance**, pas la compréhension. Ne pas réenseigner ; faire refaire à intervalle espacé.
 
@@ -60,8 +60,8 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 

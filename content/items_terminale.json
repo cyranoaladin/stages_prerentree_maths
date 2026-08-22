@@ -599,6 +599,210 @@
           "corrige_variante": "Le système d'exploitation gère notamment la mémoire, le processeur (ordonnancement des processus), les périphériques et le système de fichiers. Côté shell : ls affiche le contenu du répertoire courant, cd change de répertoire courant, mkdir crée un répertoire, pwd affiche le chemin du répertoire courant."
         }
       ]
+    },
+    "Physique-chimie": {
+      "programme_officiel": "Programme de l'enseignement de spécialité de physique-chimie de la classe terminale de la voie générale (BO spécial n° 8 du 25 juillet 2019), et programme de la classe de première pour les prérequis.",
+      "domaines": {
+        "Transformations chimiques": {
+          "prerequis_premiere": "Première spécialité — « Suivre l'évolution d'un système, siège d'une transformation » : tableau d'avancement, réactif limitant, avancement maximal ; oxydo-réduction (oxydant, réducteur, couple, demi-équations) ; réaction acide-base au sens de Brønsted et pH.",
+          "ouverture_terminale": "C'est le domaine le plus sollicité de la Terminale : taux d'avancement final et état d'équilibre, quotient de réaction et constante d'équilibre, titrages avec suivi pH-métrique ou conductimétrique, forces des acides et des bases et diagrammes de prédominance, évolution spontanée et piles, cinétique et catalyse. Un tableau d'avancement mal posé bloque tous ces chapitres à la fois.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Constitution et transformations de la matière » : modéliser l'évolution d'un système, évolution spontanée, évolution temporelle."
+        },
+        "Chimie organique": {
+          "prerequis_premiere": "Première spécialité — familles fonctionnelles et groupes caractéristiques : alcools, aldéhydes, cétones, acides carboxyliques, esters ; nomenclature des chaînes carbonées.",
+          "ouverture_terminale": "La Terminale passe de la reconnaissance à la réactivité : polarisation des liaisons, sites donneurs et accepteurs de doublets, mécanismes réactionnels étape par étape, puis stratégie de synthèse — protection de fonction, choix des réactifs, rendement. Sans identification immédiate des groupes, ces mécanismes restent illisibles.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Structure et propriétés des molécules organiques », « Stratégie de synthèse »."
+        },
+        "Mécanique": {
+          "prerequis_premiere": "Première spécialité — description d'un mouvement : vecteur vitesse tangent à la trajectoire, principe d'inertie, notion de force, modèle de la chute libre.",
+          "ouverture_terminale": "Le vecteur accélération est introduit, puis la deuxième loi de Newton, qui devient l'outil central : mouvement dans un champ de pesanteur uniforme, dans un champ électrique uniforme, dans un champ de gravitation avec les lois de Kepler. Chacun de ces mouvements se traite en projetant une relation vectorielle : la nature vectorielle de la vitesse doit être acquise.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Mouvement et interactions » : deuxième loi de Newton, mouvement dans un champ uniforme, mouvement dans un champ de gravitation."
+        },
+        "Énergie": {
+          "prerequis_premiere": "Première spécialité — énergie cinétique, travail d'une force constante, énergie potentielle de pesanteur, énergie mécanique et sa conservation.",
+          "ouverture_terminale": "Le premier principe de la thermodynamique généralise ces bilans en y intégrant l'énergie interne et les transferts thermiques : flux thermique, résistance thermique, loi de refroidissement de Newton. Le théorème de l'énergie cinétique reste l'outil de résolution alternatif à la deuxième loi de Newton.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « L'énergie : conversions et transferts » : premier principe, transferts thermiques."
+        },
+        "Ondes et signaux": {
+          "prerequis_premiere": "Première spécialité — ondes mécaniques progressives : période, fréquence, célérité, longueur d'onde et la relation qui les lie ; indépendance de la fréquence vis-à-vis du milieu.",
+          "ouverture_terminale": "La Terminale ajoute l'intensité sonore et le niveau d'intensité en décibels — donc une échelle logarithmique —, la diffraction et les interférences, et l'effet Doppler. Tous ces phénomènes se quantifient à partir de la longueur d'onde : la relation de Première y sert à chaque exercice.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Ondes et signaux » : caractériser les phénomènes ondulatoires."
+        },
+        "Optique": {
+          "prerequis_premiere": "Première spécialité — lentilles minces convergentes : rayons particuliers, construction d'une image, relation de conjugaison, grandissement.",
+          "ouverture_terminale": "Les mêmes constructions servent à modéliser l'œil et à étudier la lunette astronomique, association de deux lentilles. La Terminale introduit ensuite la description de la lumière par un flux de photons et les transitions d'énergie, où le tracé géométrique laisse place au bilan énergétique.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Ondes et signaux » : images et couleurs, lunette astronomique, description quantique de la lumière."
+        },
+        "Électricité": {
+          "prerequis_premiere": "Première spécialité — puissance et énergie électriques, loi d'Ohm, effet Joule ; bilans de puissance dans un circuit.",
+          "ouverture_terminale": "Le circuit RC est étudié en régime transitoire : charge et décharge d'un condensateur, constante de temps, énergie stockée. Les bilans de puissance de Première y deviennent des bilans d'énergie dépendant du temps, et l'effet Joule explique où part l'énergie dissipée.",
+          "reference_programme": "Terminale, spécialité physique-chimie — « Ondes et signaux » : circuit RC, énergie stockée dans un condensateur."
+        }
+      },
+      "items": [
+        {
+          "rang": 1,
+          "domaine": "Transformations chimiques",
+          "question": "Dans un tableau d'avancement, à quoi correspond l'avancement maximal ?",
+          "competence": "Déterminer l'avancement maximal d'une transformation",
+          "geste_correct": "Comparer, pour chaque réactif, sa quantité de matière divisée par son coefficient stœchiométrique. Le plus petit rapport donne à la fois le réactif limitant et l'avancement maximal.",
+          "variante": "Pour la transformation d'équation 3 A + 2 B → D, on introduit 0,6 mol de A et 0,5 mol de B. Déterminer le réactif limitant et l'avancement maximal.",
+          "corrige_variante": "On compare 0,6/3 = 0,2 et 0,5/2 = 0,25. Le plus petit rapport est celui de A : A est le réactif limitant et l'avancement maximal vaut x_max = 0,2 mol."
+        },
+        {
+          "rang": 2,
+          "domaine": "Transformations chimiques",
+          "question": "Pour la transformation d'équation 2 A + B → C, on introduit 0,4 mol de A et 0,3 mol de B. Quel est le réactif limitant ?",
+          "competence": "Identifier le réactif limitant",
+          "geste_correct": "Ne jamais comparer les quantités brutes : diviser d'abord chaque quantité par le coefficient stœchiométrique du réactif correspondant.",
+          "variante": "Pour la transformation d'équation A + 3 B → C, on introduit 0,5 mol de A et 1,2 mol de B. Quel est le réactif limitant ? Justifier.",
+          "corrige_variante": "On compare 0,5/1 = 0,5 et 1,2/3 = 0,4. Le plus petit rapport est celui de B : c'est B le réactif limitant, bien qu'il soit introduit en plus grande quantité que A."
+        },
+        {
+          "rang": 3,
+          "domaine": "Transformations chimiques",
+          "question": "Un réducteur est une espèce chimique capable de :",
+          "competence": "Distinguer oxydant et réducteur",
+          "geste_correct": "Le réducteur **cède** des électrons, l'oxydant les **capte**. Un transfert de protons relève d'une réaction acide-base, pas d'une oxydo-réduction.",
+          "variante": "Dans la réaction Zn + Cu²⁺ → Zn²⁺ + Cu, identifier l'oxydant et le réducteur, puis écrire les deux demi-équations électroniques.",
+          "corrige_variante": "Zn cède deux électrons : c'est le réducteur, Zn → Zn²⁺ + 2 e⁻. Cu²⁺ les capte : c'est l'oxydant, Cu²⁺ + 2 e⁻ → Cu. La somme des deux demi-équations redonne l'équation de la réaction."
+        },
+        {
+          "rang": 4,
+          "domaine": "Transformations chimiques",
+          "question": "Dans le couple Cu²⁺ / Cu, que peut-on affirmer ?",
+          "competence": "Lire un couple oxydant-réducteur",
+          "geste_correct": "Un couple s'écrit toujours oxydant / réducteur, dans cet ordre. La demi-équation s'écrit avec les électrons du côté de l'oxydant.",
+          "variante": "Écrire la demi-équation électronique du couple Fe³⁺ / Fe²⁺ et préciser laquelle des deux espèces est l'oxydant.",
+          "corrige_variante": "Fe³⁺ + e⁻ ⇌ Fe²⁺. L'oxydant est Fe³⁺, écrit en premier dans le couple : c'est lui qui capte l'électron."
+        },
+        {
+          "rang": 5,
+          "domaine": "Transformations chimiques",
+          "question": "Selon la définition de Brønsted, un acide est une espèce capable de :",
+          "competence": "Appliquer la définition de Brønsted",
+          "geste_correct": "Au sens de Brønsted, un acide **donne** un proton H⁺, une base le **capte**. Les deux formes d'une même espèce constituent un couple acide/base.",
+          "variante": "Écrire l'équation de la réaction entre l'acide éthanoïque CH₃COOH et l'ion hydroxyde HO⁻, puis identifier les deux couples acide/base mis en jeu.",
+          "corrige_variante": "CH₃COOH + HO⁻ → CH₃COO⁻ + H₂O. Les couples sont CH₃COOH / CH₃COO⁻ et H₂O / HO⁻ : l'acide de l'un réagit avec la base de l'autre."
+        },
+        {
+          "rang": 6,
+          "domaine": "Transformations chimiques",
+          "question": "Une solution de pH égal à 3 est :",
+          "competence": "Relier pH et concentration en ions oxonium",
+          "geste_correct": "pH = −log[H₃O⁺], donc [H₃O⁺] = 10^(−pH). Une unité de pH correspond à un facteur dix sur la concentration.",
+          "variante": "Une solution a un pH égal à 2. Quelle est sa concentration en ions H₃O⁺ ? Que devient son pH si on la dilue cent fois ?",
+          "corrige_variante": "[H₃O⁺] = 10⁻² mol·L⁻¹. Une dilution par cent divise la concentration par cent : [H₃O⁺] = 10⁻⁴ mol·L⁻¹, soit un pH de 4. Diluer un acide augmente son pH."
+        },
+        {
+          "rang": 7,
+          "domaine": "Chimie organique",
+          "question": "Le groupe caractéristique −COOH définit la famille des :",
+          "competence": "Associer un groupe caractéristique à sa famille",
+          "geste_correct": "Repérer d'abord l'atome porteur, puis le voisinage : −COOH réunit un carbonyle et un hydroxyle sur le même carbone, ce qui le distingue de l'alcool et de la cétone.",
+          "variante": "Donner la famille et le groupe caractéristique de CH₃−CO−CH₃, puis ceux de CH₃−CHO.",
+          "corrige_variante": "CH₃−CO−CH₃ porte un carbonyle sur un carbone lié à deux carbones : c'est une cétone, la propanone. CH₃−CHO porte un carbonyle en bout de chaîne, lié à un hydrogène : c'est un aldéhyde, l'éthanal."
+        },
+        {
+          "rang": 8,
+          "domaine": "Chimie organique",
+          "question": "À quelle famille appartient le composé de formule CH₃ −CH₂ −OH ?",
+          "competence": "Identifier une famille à partir d'une formule semi-développée",
+          "geste_correct": "Un −OH porté par un carbone tétragonal caractérise un alcool ; le même −OH voisin d'un carbonyle donnerait un acide carboxylique.",
+          "variante": "Nommer CH₃−CH₂−CH₂−OH et donner sa famille. À quelle famille appartient CH₃−CO−O−CH₃ ?",
+          "corrige_variante": "CH₃−CH₂−CH₂−OH est le propan-1-ol : c'est un alcool. CH₃−CO−O−CH₃ présente un carbonyle suivi d'un oxygène relié à une chaîne carbonée : c'est un ester."
+        },
+        {
+          "rang": 9,
+          "domaine": "Mécanique",
+          "question": "À chaque instant, le vecteur vitesse d'un point mobile est :",
+          "competence": "Caractériser le vecteur vitesse",
+          "geste_correct": "Le vecteur vitesse est tangent à la trajectoire et orienté dans le sens du mouvement. Une vitesse constante en norme n'est pas un vecteur vitesse constant.",
+          "variante": "Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.",
+          "corrige_variante": "Le vecteur vitesse n'est pas constant : sa norme l'est, mais sa direction change en permanence puisqu'il reste tangent au cercle. L'accélération n'est donc pas nulle — elle est dirigée vers le centre du cercle."
+        },
+        {
+          "rang": 10,
+          "domaine": "Mécanique",
+          "question": "Un objet en chute libre est soumis :",
+          "competence": "Reconnaître les conditions d'une chute libre",
+          "geste_correct": "La chute libre est un **modèle** : il n'est valable que si le poids est la seule force à prendre en compte. Vérifier que les frottements sont négligeables avant de l'invoquer.",
+          "variante": "Une bille tombe dans l'air, les frottements n'étant pas négligeables. S'agit-il d'une chute libre ? Quelles forces s'exercent alors sur elle ?",
+          "corrige_variante": "Ce n'est pas une chute libre, puisque le poids n'est pas la seule force en jeu. S'exercent le poids, la force de frottement fluide opposée au mouvement, et la poussée d'Archimède."
+        },
+        {
+          "rang": 11,
+          "domaine": "Énergie",
+          "question": "L'énergie cinétique d'un objet de masse m animé d'une vitesse v vaut :",
+          "competence": "Calculer une énergie cinétique",
+          "geste_correct": "Ec = ½ m v², en joules. La vitesse intervient au carré : la doubler quadruple l'énergie cinétique.",
+          "variante": "Un véhicule de 1 200 kg roule à 20 m·s⁻¹. Calculer son énergie cinétique, puis celle qu'il aurait à 40 m·s⁻¹.",
+          "corrige_variante": "Ec = ½ × 1 200 × 20² = 600 × 400 = 240 000 J, soit 240 kJ. À 40 m·s⁻¹ : Ec = 600 × 1 600 = 960 000 J, soit 960 kJ — quatre fois plus pour une vitesse deux fois plus grande."
+        },
+        {
+          "rang": 12,
+          "domaine": "Énergie",
+          "question": "Un objet se déplace horizontalement sur une distance donnée. Que vaut le travail de son poids ?",
+          "competence": "Calculer le travail d'une force",
+          "geste_correct": "Le travail dépend de l'angle entre la force et le déplacement. Une force perpendiculaire au déplacement ne travaille pas, quelle que soit son intensité.",
+          "variante": "Un objet de 5 kg est monté verticalement de 3 m. Calculer le travail de son poids (g = 9,8 N·kg⁻¹). Ce travail est-il moteur ou résistant ?",
+          "corrige_variante": "Le poids est dirigé vers le bas et le déplacement vers le haut : W = −m g h = −5 × 9,8 × 3 = −147 J. Le travail est négatif, donc résistant : le poids s'oppose à la montée."
+        },
+        {
+          "rang": 13,
+          "domaine": "Ondes et signaux",
+          "question": "Quelle relation lie la longueur d'onde λ, la célérité v et la fréquence f d'une onde périodique ?",
+          "competence": "Relier longueur d'onde, célérité et fréquence",
+          "geste_correct": "λ = v / f. La longueur d'onde est la distance parcourue pendant une période. Contrôler l'homogénéité : des mètres par seconde divisés par des hertz donnent bien des mètres.",
+          "variante": "Une onde sonore de fréquence 440 Hz se propage dans l'air à 340 m·s⁻¹. Calculer sa longueur d'onde, puis celle d'un son de 880 Hz dans le même milieu.",
+          "corrige_variante": "λ = v / f = 340 / 440 ≈ 0,77 m. À 880 Hz : λ = 340 / 880 ≈ 0,39 m. Doubler la fréquence divise la longueur d'onde par deux, la célérité étant fixée par le milieu."
+        },
+        {
+          "rang": 14,
+          "domaine": "Ondes et signaux",
+          "question": "Une onde sonore passe de l'air à l'eau. Que devient sa fréquence ?",
+          "competence": "Distinguer ce qui dépend de la source et ce qui dépend du milieu",
+          "geste_correct": "La fréquence est imposée par la source : elle ne change jamais au passage d'un milieu à un autre. C'est la célérité qui dépend du milieu, et la longueur d'onde qui s'ajuste.",
+          "variante": "Un son de fréquence 500 Hz passe de l'air (340 m·s⁻¹) à l'eau (1 500 m·s⁻¹). Calculer la longueur d'onde dans chaque milieu. Quelles grandeurs ont changé ?",
+          "corrige_variante": "Dans l'air : λ = 340 / 500 = 0,68 m. Dans l'eau : λ = 1 500 / 500 = 3,0 m. La fréquence est restée à 500 Hz ; la célérité et la longueur d'onde, elles, ont changé."
+        },
+        {
+          "rang": 15,
+          "domaine": "Optique",
+          "question": "D'un objet situé à l'infini, une lentille convergente donne une image située :",
+          "competence": "Situer l'image d'un objet à l'infini",
+          "geste_correct": "Les rayons issus d'un objet à l'infini arrivent parallèles entre eux : ils convergent dans le plan focal image. Pour un objet à distance finie, appliquer la relation de conjugaison.",
+          "variante": "Une lentille convergente a une distance focale de 5 cm. Où se forme l'image du Soleil ? Et celle d'un objet placé à 15 cm devant la lentille ?",
+          "corrige_variante": "Le Soleil est assimilé à un objet à l'infini : son image se forme dans le plan focal image, à 5 cm de la lentille. Pour l'objet à 15 cm, la relation de conjugaison donne 1/OA' = 1/f' + 1/OA = 1/5 − 1/15 = 2/15, soit OA' = 7,5 cm."
+        },
+        {
+          "rang": 16,
+          "domaine": "Optique",
+          "question": "Un rayon lumineux qui passe par le centre optique d'une lentille mince :",
+          "competence": "Utiliser les rayons particuliers d'une lentille",
+          "geste_correct": "Trois rayons se tracent sans calcul : par le centre optique, parallèle à l'axe, et par le foyer objet. Deux suffisent pour construire une image.",
+          "variante": "Citer les trois rayons particuliers d'une lentille convergente et décrire le comportement de chacun à la traversée de la lentille.",
+          "corrige_variante": "Le rayon passant par le centre optique n'est pas dévié. Le rayon parallèle à l'axe optique émerge en passant par le foyer image F'. Le rayon passant par le foyer objet F émerge parallèle à l'axe optique."
+        },
+        {
+          "rang": 17,
+          "domaine": "Électricité",
+          "question": "La puissance électrique reçue par un dipôle vaut :",
+          "competence": "Calculer une puissance et une énergie électriques",
+          "geste_correct": "P = U × I, en watts. L'énergie s'obtient en multipliant par la durée : en joules si la durée est en secondes, en wattheures si elle est en heures.",
+          "variante": "Un appareil alimenté sous 230 V est traversé par un courant de 0,5 A. Calculer sa puissance, puis l'énergie consommée en 2 heures, en joules puis en kilowattheures.",
+          "corrige_variante": "P = U × I = 230 × 0,5 = 115 W. En 2 h, soit 7 200 s : E = 115 × 7 200 = 828 000 J, soit 828 kJ. En kilowattheures : E = 0,115 kW × 2 h = 0,23 kWh."
+        },
+        {
+          "rang": 18,
+          "domaine": "Électricité",
+          "question": "L'effet Joule correspond :",
+          "competence": "Quantifier l'énergie dissipée par effet Joule",
+          "geste_correct": "Dans un conducteur ohmique, la puissance dissipée vaut P = R I². L'énergie dissipée s'obtient en multipliant par la durée.",
+          "variante": "Un résistor de 100 Ω est traversé par un courant de 0,2 A pendant 5 minutes. Calculer la puissance dissipée par effet Joule, puis l'énergie correspondante.",
+          "corrige_variante": "P = R I² = 100 × 0,2² = 100 × 0,04 = 4 W. Sur 5 minutes, soit 300 s : E = 4 × 300 = 1 200 J. Cette énergie est transférée à l'extérieur sous forme thermique."
+        }
+      ]
     }
   }
 }

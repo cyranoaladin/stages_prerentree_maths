@@ -26,7 +26,7 @@ Chaque exercice ci-dessous reprend **une compétence précise** que ton position
 
 *Compétence visée : Dériver un produit.*
 
-**Soit f(x) = (3x − 2)(x² + 1). Calculer f'(x).**
+**Soit $f(x) = (3x - 2)(x^2 + 1)$. Calculer $f'(x)$.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -42,15 +42,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 2 — Dérivation
 
 *Compétence visée : Dériver un quotient.*
 
-**Soit f(x) = (2x − 1)/(x + 3), définie sur ]−3 ; +∞[. Calculer f'(x) et donner son signe.**
+**Soit $f(x) = (2x - 1)/(x + 3)$, définie sur $] - 3 ; + \infty [$. Calculer $f'(x)$ et donner son signe.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -66,9 +66,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_maths.md`._

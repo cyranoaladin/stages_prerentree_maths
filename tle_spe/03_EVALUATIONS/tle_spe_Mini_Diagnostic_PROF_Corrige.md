@@ -14,16 +14,16 @@ de la séance 5.
 
 ### Exercice 1 — Probabilité conditionnelle
 
-a) **P(NSI ∩ expertes) = P(NSI) × P_NSI(expertes) = 0,6 × 0,8 = 0,48**, soit 48 %.
+a) **P(NSI $\cap$ expertes$) = P($NSI) $\times P_N$SI(expertes) $= 0{,}6 \times 0{,}8 = 0{,}48$**, soit 48 %.
 
-b) Propriété : P(A ∩ B) = P(A) × P_A(B).
+b) Propriété : $P(A \cap B) = P(A) \times P_A(B)$.
 
 *Erreur attendue :* multiplier 0,6 par 0,8 sans savoir pourquoi, ou additionner. Une réponse
 juste sans propriété écrite compte comme « réussite hésitante ».
 
 ### Exercice 2 — Indépendance
 
-a) **Oui.** Le résultat du premier lancer n'influence pas le second : P_A(B) = P(B) = 0,5.
+a) **Oui.** Le résultat du premier lancer n'influence pas le second : $P_A(B) = P(B) = 0{,}5$.
 
 b) **Non.** Ils peuvent se produire ensemble : obtenir pile deux fois est possible, de
 probabilité 0,25.
@@ -34,21 +34,21 @@ séance 5 avec les cartes de tri.
 
 ### Exercice 3 — Variable aléatoire
 
-a) 0,2 + 0,5 + 0,3 = 1, et chaque probabilité est comprise entre 0 et 1 : c'est bien une loi
+a) $0{,}2 + 0{,}5 + 0{,}3 = 1$, et chaque probabilité est comprise entre 0 et 1 : c'est bien une loi
 de probabilité.
 
-b) **E(X) = (−1) × 0,2 + 0 × 0,5 + 2 × 0,3 = −0,2 + 0 + 0,6 = 0,4.**
+b) **$E(X) = ( - 1) \times 0{,}2 + 0 \times 0{,}5 + 2 \times 0{,}3 = - 0{,}2 + 0 + 0{,}6 = 0{,}4$.**
 
-*Erreur attendue :* calculer la moyenne des valeurs (−1 + 0 + 2)/3 sans pondérer.
+*Erreur attendue :* calculer la moyenne des valeurs $( - 1 + 0 + 2)/3$ sans pondérer.
 
 ### Exercice 4 — Justification écrite
 
 Il manque **l'étude du signe de f'**. La rédaction correcte :
 
-> f'(x) = 2x − 4 = 2(x − 2), qui s'annule en 2, est négatif avant et positif après. Donc f
-> est décroissante sur ]−∞ ; 2] et croissante sur [2 ; +∞[.
+> $f'(x) = 2x - 4 = 2(x - 2)$, qui s'annule en 2, est négatif avant et positif après. Donc f
+> est décroissante sur ]$- \infty ; 2]$ et croissante sur $[2 ; + \infty$[.
 
-La conclusion de l'élève est de surcroît **fausse** : f n'est pas croissante sur ℝ.
+La conclusion de l'élève est de surcroît **fausse** : f n'est pas croissante sur $\mathbb{R}$.
 
 *Lecture.* Cet exercice mesure moins une connaissance qu'une habitude. Un élève qui repère le
 manque sans savoir le combler est en bonne position ; un élève qui valide la rédaction est à
@@ -56,10 +56,10 @@ suivre de près en séance 4.
 
 ### Exercice 5 — Contrôle de vraisemblance
 
-a) La **somme** des racines doit valoir −b/a = 7 ; or 2 + 6 = 8. Le **produit** doit valoir
-c/a = 10 ; or 2 × 6 = 12. Les deux contrôles échouent.
+a) La **somme** des racines doit valoir $- b/a = 7$ ; or $2 + 6 = 8$. Le **produit** doit valoir
+$c/a = 10$ ; or $2 \times 6 = 12$. Les deux contrôles échouent.
 
-b) Δ = 49 − 40 = 9, √Δ = 3 : les racines sont (7 − 3)/2 = **2** et (7 + 3)/2 = **5**.
+b) $\Delta = 49 - 40 = 9$, $\surd \Delta = 3$ : les racines sont $(7 - 3)/2 =$ **2** et $(7 + 3)/2 =$ **5**.
 
 *Lecture.* C'est l'exercice le plus discriminant du mini-diagnostic. Un élève qui ne dispose
 d'aucun contrôle validera toute racine plausible. Le contrôle somme/produit est imposé dès la

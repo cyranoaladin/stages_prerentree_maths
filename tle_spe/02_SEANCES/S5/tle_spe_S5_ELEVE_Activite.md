@@ -8,7 +8,7 @@ réactiver les probabilités, et faire calculer une suite par un programme.
 
 - Un produit scalaire donne un **nombre**, jamais un vecteur.
 - J'écris la propriété utilisée avant de calculer.
-- Certitude : ☐1 ☐2 ☐3 ☐4 · Aide : A, B, C, D ou E.
+- Certitude : $\square$1 $\square$2 $\square$3 $\square$4 · Aide : A, B, C, D ou E.
 
 ---
 
@@ -19,31 +19,31 @@ peut-on pas affirmer ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
 ## Partie 1 — Produit scalaire
 
-> **Rappel.** En repère orthonormé : u·v = x_u x_v + y_u y_v. **Le résultat est un nombre.**
-> Deux vecteurs non nuls sont orthogonaux **si et seulement si** u·v = 0.
+> **Rappel.** En repère orthonormé : $u \cdot v = x_u x_v + y_u y_v$. **Le résultat est un nombre.**
+> Deux vecteurs non nuls sont orthogonaux **si et seulement si** $u \cdot v = 0$.
 
-**Exercice 1.** u(−2 ; 5) et v(4 ; 1). Calculer u·v, puis dire si les vecteurs sont
+**Exercice 1.** $u( - 2 ; 5)$ et $v(4 ; 1)$. Calculer u·v, puis dire si les vecteurs sont
 orthogonaux.
 
-u·v = ...........................................  Conclusion : ...........................
+$u \cdot v =$ ...........................................  Conclusion : ...........................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-**Exercice 2.** Déterminer le réel m pour que u(3 ; m) et v(−2 ; 6) soient orthogonaux.
+**Exercice 2.** Déterminer le réel m pour que $u(3 ; m)$ et $v( - 2 ; 6)$ soient orthogonaux.
 
 Équation posée : ..........................................................................
 
-m = ...........................
+$m =$ ...........................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-**Exercice 3.** ABC est un triangle avec A(1 ; 2), B(4 ; 3) et C(2 ; 8). Le triangle est-il
+**Exercice 3.** ABC est un triangle avec $A(1 ; 2)$, $B(4 ; 3)$ et $C(2 ; 8)$. Le triangle est-il
 rectangle en A ?
 
 Vecteurs à utiliser : ....................................................................
@@ -52,17 +52,17 @@ Calcul : .......................................................................
 
 Conclusion : ......................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 ### Ce que la Terminale en fera
 
 > Dans l'espace, le produit scalaire s'écrit avec trois coordonnées :
-> u·v = x_u x_v + y_u y_v + z_u z_v.
+> $u \cdot v = x_u x_v + y_u y_v + z_u z_v$.
 >
 > Un vecteur **normal** à un plan est orthogonal à deux vecteurs directeurs de ce plan. Si
-> n(a ; b ; c) est normal au plan P et si A(x₀ ; y₀ ; z₀) appartient à P, alors P a pour
+> $n(a ; b ; c)$ est normal au plan P et si $A(x_0 ; y_0 ; z_0)$ appartient à P, alors P a pour
 > équation cartésienne :
-> a(x − x₀) + b(y − y₀) + c(z − z₀) = 0.
+> $a(x - x_0) + b(y - y_0) + c(z - z_0) = 0$.
 >
 > Autrement dit : **l'équation d'un plan est un produit scalaire nul.** Le critère que tu
 > viens d'utiliser est l'outil principal de toute la géométrie de Terminale.
@@ -72,10 +72,10 @@ Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
 ## Partie 2 — Probabilités
 
 > **Rappels.**
-> P(A ∩ B) = P(A) × P_A(B).
-> Probabilités totales : P(B) = P(A) × P_A(B) + P(Ā) × P_Ā(B).
-> A et B sont **indépendants** lorsque P_A(B) = P(B).
-> Espérance d'une variable aléatoire : E(X) = Σ x_i × P(X = x_i).
+> $P(A \cap B) = P(A) \times P_A(B)$.
+> Probabilités totales : $P(B) = P(A) \times P_A(B) + P(\overline{A}) \times P_{\overline{A}}(B)$.
+> A et B sont **indépendants** lorsque $P_A(B) = P(B)$.
+> Espérance d'une variable aléatoire : $E(X) = \sum x_i \times P(X = x_i)$.
 
 **Exercice 4.** Une urne contient 3 boules rouges et 2 boules noires. On tire deux boules
 successivement, **sans remise**. Construire l'arbre pondéré, puis calculer la probabilité de
@@ -87,21 +87,21 @@ Arbre :
 
 ....................................................................................................
 
-P(deux rouges) = ...........................
+P(deux rouges) $=$ ...........................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 5.** Deux événements A et B de probabilités non nulles sont **incompatibles**.
-Peuvent-ils être indépendants ? Justifier en calculant P_A(B).
+Peuvent-ils être indépendants ? Justifier en calculant $P_A(B)$.
 
 ....................................................................................................
 
 ....................................................................................................
 
 **Exercice 6.** Une variable aléatoire X prend les valeurs 0, 1 et 3 avec les probabilités
-0,5 ; 0,3 et 0,2. Calculer E(X) et interpréter le résultat.
+0,5 ; 0,3 et 0,2. Calculer $E(X)$ et interpréter le résultat.
 
-E(X) = ...........................  Interprétation : ...........................
+$E(X) =$ ...........................  Interprétation : ...........................
 
 ### Ce que la Terminale en fera
 
@@ -144,7 +144,7 @@ def premier_rang_depassement(v0, q, seuil):
 
 a) Que renvoie `premier_rang_depassement(2, 3, 100)` ? ...........................
 
-b) Que se passe-t-il si q = 0,5 et seuil = 100, avec v0 = 2 ? Pourquoi ?
+b) Que se passe-t-il si $q = 0{,}5$ et seuil = 100, avec $v0 = 2$ ? Pourquoi ?
 
 ....................................................................................................
 
@@ -164,7 +164,7 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ....................................................................................................
 
-**Ma certitude générale en mathématiques, aujourd'hui :** ☐1 ☐2 ☐3 ☐4
+**Ma certitude générale en mathématiques, aujourd'hui :** $\square$1 $\square$2 $\square$3 $\square$4
 
 **Mon plan pour les quatre premières semaines de septembre** (à reporter dans mon livret) :
 

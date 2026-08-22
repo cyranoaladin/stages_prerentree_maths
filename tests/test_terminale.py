@@ -37,6 +37,10 @@ from tools.build_terminale import (  # noqa: E402
     items_to_secure,
     worked_domains,
 )
+from tools.latex_notation import (  # noqa: E402
+    to_latex,
+    unsupported_characters,
+)
 
 MODULE_ROOTS = {"tle_spe": ROOT / "tle_spe", "tle_nsi": ROOT / "tle_nsi"}
 NOMINATIVE_DIRS = {"tle_spe": "04_NOMINATIFS", "tle_nsi": "05_NOMINATIFS"}
@@ -325,11 +329,13 @@ def test_each_livret_reprend_toutes_les_erreurs_de_son_eleve(registry, diagnosti
             )
             content = documents[relative]
             for rank, item, _reference in items_to_revisit(diagnostic, bank):
-                assert item["question"] in content, (
+                # Le document compose l'énoncé en LaTeX ; c'est cette forme-là qu'on y
+                # cherche, sans quoi le test comparerait deux notations différentes.
+                assert to_latex(item["question"]) in content, (
                     f"{relative} : l'énoncé de l'item {rank} manque"
                 )
                 if item["origine_erreur"]:
-                    assert item["origine_erreur"] in content, (
+                    assert to_latex(item["origine_erreur"]) in content, (
                         f"{relative} : l'origine de l'erreur de l'item {rank} manque"
                     )
 
@@ -356,7 +362,7 @@ def test_remediation_sheets_only_target_the_student_own_weaknesses(registry, dia
             )
             content = documents[relative]
             for reference in bank:
-                present = reference["variante"] in content
+                present = to_latex(reference["variante"]) in content
                 if reference["variante"] in expected:
                     assert present, f"{relative} : exercice attendu absent"
                 else:
@@ -418,8 +424,10 @@ def test_option_exercises_reach_both_remediation_sheets(registry, diagnostics, i
         eleve = documents[f"{base}_ELEVE.md"]
         prof = documents[f"{base}_PROF_Corrige.md"]
         for variante in expected:
-            assert variante in eleve, f"{student['displayName']} : exercice d'option absent"
-            assert variante in prof
+            assert to_latex(variante) in eleve, (
+                f"{student['displayName']} : exercice d'option absent"
+            )
+            assert to_latex(variante) in prof
 
 
 def test_a_student_without_diagnostic_gets_an_explicit_notice(registry, documents):
@@ -694,11 +702,11 @@ def test_terminale_tooling_adds_no_file_under_the_published_assets_tree():
     )
 
 
-def test_the_terminale_stylesheet_lives_outside_the_published_assets_tree():
-    from tools.build_terminale_pdf import TERMINALE_CSS
+def test_the_terminale_charter_lives_outside_the_published_assets_tree():
+    from tools.build_terminale_pdf import LATEX_STYLE
 
-    assert TERMINALE_CSS.exists(), "feuille de style d'impression Terminale introuvable"
-    assert (ROOT / "assets") not in TERMINALE_CSS.parents
+    assert LATEX_STYLE.exists(), "charte LaTeX Terminale introuvable"
+    assert (ROOT / "assets") not in LATEX_STYLE.parents
 
 
 def test_the_existing_student_registry_is_untouched():
@@ -725,3 +733,109 @@ def test_check_sources_rejects_a_bank_that_drifted_from_the_instrument(registry,
     broken["instruments"]["Mathématiques"]["items"][0]["question"] = "Autre énoncé."
     with pytest.raises(BuildError, match="énoncé divergent"):
         check_sources(registry, diagnostics, broken)
+
+
+# --------------------------------------------------------------------------- LaTeX
+# Le rendu passe par LuaLaTeX. Un caractère que la police ne sait pas dessiner ne fait
+# pas échouer la compilation : il laisse un trou dans la consigne, et personne ne le voit
+# avant l'impression. Ces tests refusent la source plutôt que le PDF.
+
+def test_no_document_carries_a_character_latex_cannot_typeset():
+    offenders = {}
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        base = ROOT / module
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*.md")):
+            left = unsupported_characters(path.read_text(encoding="utf-8"))
+            if left:
+                offenders[str(path.relative_to(ROOT))] = left
+    assert offenders == {}, (
+        "Notation Unicode à convertir en LaTeX : " + str(offenders)
+        + ". Voir tools/mathify_terminale.py."
+    )
+
+
+def test_every_document_has_balanced_mathematics():
+    """Un `$` orphelin fait basculer tout le reste du document en mode mathématique."""
+    unbalanced = []
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        base = ROOT / module
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*.md")):
+            fenced = False
+            for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                if line.startswith("```"):
+                    fenced = not fenced
+                    continue
+                if fenced:
+                    continue
+                if len(re.findall(r"(?<!\\)\$", line)) % 2:
+                    unbalanced.append(f"{path.relative_to(ROOT)}:{number}")
+    assert unbalanced == [], "Délimiteur mathématique non refermé : " + str(unbalanced)
+
+
+FRENCH_WORDS = re.compile(
+    r"\b(?:le|la|les|de|des|du|et|ou|un|une|est|sont|pour|avec|dans|sur|par|que|qui"
+    r"|pas|plus|moins|donc|alors|ainsi|entre|tout|tous|son|ses|cette|il|elle|on|aux)\b",
+    re.IGNORECASE,
+)
+
+
+def test_no_french_prose_was_absorbed_into_a_formula():
+    """La conversion reconnaît des motifs ; ce test vérifie qu'elle n'a pas trop pris."""
+    absorbed = []
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        base = ROOT / module
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*.md")):
+            for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                for match in re.finditer(r"(?<!\$)\$([^$\n]+)\$(?!\$)", line):
+                    if FRENCH_WORDS.search(match.group(1)):
+                        absorbed.append(f"{path.relative_to(ROOT)}:{number} ${match.group(1)}$")
+    assert absorbed == [], "Prose française prise dans une formule : " + str(absorbed[:5])
+
+
+def test_the_latex_charter_loads_the_packages_each_discipline_needs():
+    charter = (ROOT / "tools/assets/nexus_terminale.sty").read_text(encoding="utf-8")
+    required = {
+        "amsmath": "mathématiques",
+        "mathtools": "mathématiques",
+        "esvect": "vecteurs à la française",
+        "siunitx": "unités de physique",
+        "mhchem": "équations de réaction",
+        "chemfig": "formules développées",
+        "listings": "code Python et SQL",
+        "pgfplots": "courbes et repères",
+        "babel": "typographie française",
+    }
+    missing = [name for name in required if name not in charter]
+    assert missing == [], f"Paquets absents de la charte : {missing}"
+
+
+def test_the_conversion_leaves_code_and_links_untouched():
+    source = (
+        "Voir `content/items_terminale.json` et [la fiche](../S1/tle_spe_S1_PROF_Fiche.md).\n"
+        "```\nu₀ = 3 ; x ≥ 0\n```\n"
+        "Mais ici u₀ = 3 devient des mathématiques.\n"
+    )
+    converted = to_latex(source)
+    assert "`content/items_terminale.json`" in converted
+    assert "(../S1/tle_spe_S1_PROF_Fiche.md)" in converted
+    assert "```\nu₀ = 3 ; x ≥ 0\n```" in converted
+    assert "$u_0 = 3$ devient" in converted
+
+
+def test_the_conversion_is_stable_when_applied_twice():
+    """Les documents committés sont déjà convertis : un second passage ne doit rien casser."""
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        base = ROOT / module
+        if not base.is_dir():
+            continue
+        for path in sorted(base.rglob("*.md")):
+            content = path.read_text(encoding="utf-8")
+            assert to_latex(content) == content, (
+                f"{path.relative_to(ROOT)} : la conversion n'est pas stable"
+            )

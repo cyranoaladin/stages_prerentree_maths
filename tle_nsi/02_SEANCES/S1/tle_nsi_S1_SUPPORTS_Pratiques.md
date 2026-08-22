@@ -5,14 +5,16 @@
 
 Une réglette cartonnée par élève, à conserver dans le portfolio.
 
-```
-┌──────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│  2⁷  │ 2⁶  │ 2⁵  │ 2⁴  │ 2³  │ 2²  │ 2¹  │ 2⁰  │
-├──────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│ 128  │ 64  │ 32  │ 16  │  8  │  4  │  2  │  1  │
-├──────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│      │     │     │     │     │     │     │     │
-└──────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
+```{=latex}
+\begin{center}\small
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|>{\bfseries}l|*{8}{c|}}\hline
+\rowcolor{SoftBlue}
+poids & $2^{7}$ & $2^{6}$ & $2^{5}$ & $2^{4}$ & $2^{3}$ & $2^{2}$ & $2^{1}$ & $2^{0}$ \\\hline
+valeur & 128 & 64 & 32 & 16 & 8 & 4 & 2 & 1 \\\hline
+bit & & & & & & & & \\\hline
+\end{tabular}
+\end{center}
 ```
 
 **Usage.** L'élève pose des jetons sur les puissances retenues, puis lit la ligne de 0 et de
@@ -42,8 +44,8 @@ naturellement : 256, de 0 à 255.
 | Bin | 0000 | 0001 | 0010 | 0011 | 0100 | 0101 | 0110 | 0111 | 1000 | 1001 | 1010 | 1011 | 1100 | 1101 | 1110 | 1111 |
 
 **Point à faire émerger.** La troisième ligne montre qu'un chiffre hexadécimal vaut
-exactement **quatre bits**. La conversion binaire ↔ hexadécimal se fait donc par paquets de
-quatre, sans passer par la base 10 : 1011 0110 → B6.
+exactement **quatre bits**. La conversion binaire $\leftrightarrow$ hexadécimal se fait donc par paquets de
+quatre, sans passer par la base 10 : $1011 0110 \to B6$.
 
 ## Support 4 — Vérification en Python
 
@@ -90,7 +92,7 @@ fausses sont retournées et corrigées au dos.
 > je recalcule la valeur décimale de ce que j'ai écrit.
 > Si je ne retombe pas sur l'entier de départ, c'est faux.
 >
-> **F = 15**, pas 16.
+> **$F = 15$**, pas 16.
 > **Les restes se lisent de bas en haut.**
 > **`not` d'abord, puis `and`, puis `or`.**
 

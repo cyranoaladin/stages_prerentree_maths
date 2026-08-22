@@ -259,7 +259,7 @@ techniques.
 
 | Durée | Phase | Contenu |
 |---:|---|---|
-| 10 min | Ouverture | Restitution du positionnement ; lecture de la carte maîtrise × confiance |
+| 10 min | Ouverture | Restitution du positionnement ; lecture de la carte maîtrise $\times$ confiance |
 | 20 min | Confrontation | Écrire 22 en binaire : recueil des réponses, puis vérification par recalcul |
 | 25 min | Reconstruction | Décomposition en puissances de 2 ; méthode des divisions successives ; base 16 |
 | 30 min | Entraînement différencié | Trois parcours |
@@ -269,14 +269,14 @@ techniques.
 ### Trace écrite attendue
 
 > **Base 2.** Un entier s'écrit comme somme de puissances de 2 décroissantes.
-> 22 = 16 + 4 + 2 = 2⁴ + 2² + 2¹, soit **10110**.
+> $22 = 16 + 4 + 2 = 2^4 + 2^2 + 2^1$, soit **10110**.
 > Méthode alternative : divisions successives par 2, restes lus **de bas en haut**.
 >
-> **Base 16.** A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
-> 0x2A = 2 × 16 + 10 = 42. Réciproquement 60 = 3 × 16 + 12 = 0x3C.
+> **Base 16.** $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$.
+> $0x2A = 2 \times 16 + 10 = 42$. Réciproquement $60 = 3 \times 16 + 12 = 0x3C$.
 >
 > **Booléens.** Priorités : `not`, puis `and`, puis `or`.
-> Lois de De Morgan : non(A et B) = (non A) ou (non B) ; non(A ou B) = (non A) et (non B).
+> Lois de De Morgan : non(A et $B) = ($non A) ou (non B) ; non(A ou $B) = ($non A) et (non B).
 >
 > **Ce que la Terminale en fait.** Le typage des attributs d'une base de données, le coût
 > mémoire des structures, et l'arithmétique du chiffrement reposent sur la représentation des
@@ -312,7 +312,7 @@ techniques.
 ### Trace écrite attendue
 
 > **Indexation.** Les indices commencent à **0**. Pour un tableau de n éléments, le dernier
-> indice valide est n − 1. L'indice −1 désigne le dernier élément.
+> indice valide est $n - 1$. L'indice $- 1$ désigne le dernier élément.
 >
 > **Modification en place.** `L.append(x)`, `L.insert(i, x)`, `del L[i]` **modifient** la
 > liste et **ne renvoient rien** (`None`). Écrire `L = L.append(4)` détruit la liste.
@@ -400,7 +400,7 @@ techniques.
 > possible pour un programme.
 >
 > **Coût.** Recherche séquentielle : jusqu'à n comparaisons. Recherche dichotomique : de
-> l'ordre de log₂(n). Repères : 2¹⁰ = 1 024, 2²⁰ ≈ 10⁶.
+> l'ordre de $\log_2(n)$. Repères : $2^{10} = 1 024$, $2^{20} \approx 10^6$.
 >
 > **Arbitrage.** Trier puis chercher coûte plus cher qu'une recherche séquentielle unique.
 > C'est rentable si l'on effectue de nombreuses recherches sur le même tableau.
@@ -413,7 +413,7 @@ techniques.
 ### Erreurs à surveiller
 
 - Appliquer la dichotomie sans vérifier la précondition.
-- Confondre log₂(n) et n/2.
+- Confondre $\log_2(n)$ et n/2.
 - Croire qu'un algorithme faux échoue toujours bruyamment.
 - Comparer deux algorithmes sur une seule exécution.
 
@@ -570,5 +570,5 @@ Les quatre élèves suivent les deux modules. Deux articulations sont explicites
 | Principe directeur | Prédire, exécuter, confronter ; table de trace systématique |
 | Différenciation | Trois parcours par séance, cinq niveaux d'aide |
 | Individualisation | Un livret par élève, construit item par item à partir de son propre bilan |
-| Évaluation | Sans note ; matrice réussite × confiance, avant et après |
+| Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 | Sortie | Un plan de travail personnel écrit pour septembre |

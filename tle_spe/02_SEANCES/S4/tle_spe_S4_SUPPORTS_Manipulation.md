@@ -5,24 +5,27 @@
 
 Le support central de la séance. Tracer sur un même repère :
 
-```
-      y
-      │        f(x) = −x + 10
-   10 ┼──╲
-      │    ╲
-      │      ╲
-    0 ┼────────╲──────────────  x
-      │          ╲
-      │            ╲
-  −10 ┼──╲           ╲
-      │    ╲  g(x) = −x − 10
+```{=latex}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[width=98mm,height=64mm,axis lines=middle,
+             xlabel=$x$,ylabel=$y$,xmin=-4,xmax=16,ymin=-17,ymax=15,
+             xtick={-4,0,4,8,12,16},ytick={-10,10},
+             every axis plot/.append style={very thick}]
+  \addplot[Navy,domain=-4:16,samples=2] {-x+10};
+  \addplot[Blue,domain=-4:16,samples=2] {-x-10};
+  \node[Navy,font=\small,anchor=west] at (axis cs:-3.6,11.5) {$f(x)=-x+10$};
+  \node[Blue,font=\small,anchor=west] at (axis cs:5.2,-13.5) {$g(x)=-x-10$};
+\end{axis}
+\end{tikzpicture}
+\end{center}
 ```
 
-| | f(x) = −x + 10 | g(x) = −x − 10 |
+| | $f(x) = - x + 10$ | $g(x) = - x - 10$ |
 |---|---|---|
-| dérivée | −1 | −1 |
-| valeur en x = 2 | 8 | −12 |
-| signe en x = 2 | positif | négatif |
+| dérivée | $- 1$ | $- 1$ |
+| valeur en $x = 2$ | 8 | $- 12$ |
+| signe en $x = 2$ | positif | négatif |
 
 **Point à faire émerger.** Les deux fonctions ont **exactement la même dérivée**, et
 pourtant des signes opposés. Le signe de la dérivée ne peut donc pas déterminer le signe de
@@ -37,7 +40,7 @@ l'axe. »*
 Un gabarit par exercice, à photocopier. C'est ce gabarit qui supprime l'erreur d'ordre dans
 la dérivée d'un quotient.
 
-> **Fonction à dériver :** f(x) = ...........................................
+> **Fonction à dériver :** $f(x) =$ ...........................................
 >
 > | | expression |
 > |---|---|
@@ -46,13 +49,13 @@ la dérivée d'un quotient.
 > | v | |
 > | v' | |
 >
-> **Formule appliquée :** ☐ (uv)' = u'v + uv'   ☐ (u/v)' = (u'v − uv')/v²
+> **Formule appliquée :** $\square$ (uv)' = u'v + uv'   $\square$ (u/v)' = (u'$v -$ uv')$/v^2$
 >
 > **Calcul :** ...........................................................
 >
 > **Forme factorisée de f' :** ..........................................
 >
-> **Contrôle :** valeur de f' en x = ......... : ......... (attendu par lecture graphique : .........)
+> **Contrôle :** valeur de f' en $x =$ ......... : ......... (attendu par lecture graphique : .........)
 
 ## Support 3 — Cartes « signe de f' / signe de f » (reconstruction)
 
@@ -61,11 +64,11 @@ ou « on ne peut pas l'affirmer ».
 
 | Carte | Énoncé | Verdict |
 |---:|---|---|
-| 1 | f' > 0 sur I, donc f est croissante sur I | On peut l'affirmer |
-| 2 | f' > 0 sur I, donc f est positive sur I | On ne peut pas |
-| 3 | f' < 0 sur I, donc f est décroissante sur I | On peut l'affirmer |
-| 4 | f' < 0 sur I, donc f est négative sur I | On ne peut pas |
-| 5 | f'(a) = 0, donc f admet un extremum en a | On ne peut pas (f(x) = x³ en 0) |
+| 1 | $f' > 0$ sur I, donc f est croissante sur I | On peut l'affirmer |
+| 2 | $f' > 0$ sur I, donc f est positive sur I | On ne peut pas |
+| 3 | $f' < 0$ sur I, donc f est décroissante sur I | On peut l'affirmer |
+| 4 | $f' < 0$ sur I, donc f est négative sur I | On ne peut pas |
+| 5 | $f'(a) = 0$, donc f admet un extremum en a | On ne peut pas $(f(x) = x^3$ en 0) |
 | 6 | f' change de signe en a, donc f admet un extremum en a | On peut l'affirmer |
 
 Les cartes 5 et 6 sont destinées au parcours approfondissement.
@@ -74,24 +77,24 @@ Les cartes 5 et 6 sont destinées au parcours approfondissement.
 
 Une règle transparente ou une bande de papier rigide, à poser sur une courbe tracée. L'élève
 fait pivoter la bande jusqu'à ce qu'elle « épouse » la courbe au point d'abscisse a, puis lit
-la pente. On compare ensuite avec la valeur calculée de f'(a).
+la pente. On compare ensuite avec la valeur calculée de $f'(a)$.
 
-**Objectif.** Rendre concret que f'(a) est une pente, et faire vérifier que la droite passe
-bien par le point (a ; f(a)) — ce qui explique la présence de f(a) dans la formule.
+**Objectif.** Rendre concret que $f'(a)$ est une pente, et faire vérifier que la droite passe
+bien par le point $(a ; f(a))$ — ce qui explique la présence de $f(a)$ dans la formule.
 
 ## Support 5 — Escalier de la convexité (ouverture Terminale)
 
-À projeter en fin de séance, pour f(x) = x³ − 3x².
+À projeter en fin de séance, pour $f(x) = x^3 - 3x^2$.
 
 | Niveau | Objet | Ce qu'il donne |
 |---:|---|---|
 | 0 | f | la courbe |
-| 1 | f'(x) = 3x² − 6x | les **variations** de f |
-| 2 | f''(x) = 6x − 6 | les **variations de f'**, donc la **convexité** de f |
+| 1 | $f'(x) = 3x^2 - 6x$ | les **variations** de f |
+| 2 | f''$(x) = 6x - 6$ | les **variations de f'**, donc la **convexité** de f |
 
-| | −∞ | | 1 | | +∞ |
+| | $- \infty$ | | 1 | | +$\infty$ |
 |---|---|---|---|---|---|
-| signe de f''(x) | | − | 0 | + | |
+| signe de f''(x) | | $-$ | 0 | + | |
 | convexité de f | | concave | inflexion | convexe | |
 
 Faire remarquer que le tableau du niveau 2 se remplit exactement comme celui du niveau 1.

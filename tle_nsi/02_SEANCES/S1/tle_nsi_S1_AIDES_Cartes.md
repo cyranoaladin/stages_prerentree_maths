@@ -6,7 +6,7 @@
 ### Carte A — Rappel de syntaxe et de propriété
 
 > Puissances de 2 : 128, 64, 32, 16, 8, 4, 2, 1.
-> Hexadécimal : A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.
+> Hexadécimal : $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$.
 > Un chiffre hexadécimal = quatre bits.
 > Priorités booléennes : `not`, puis `and`, puis `or`.
 > De Morgan : `not (A and B)` = `(not A) or (not B)`.
@@ -16,9 +16,7 @@
 ### Carte B — Première ligne écrite
 
 > Pour convertir **45** en binaire par divisions successives :
-> ```
-> 45 = 2 × 22 + 1
-> ```
+> $$45 = 2 \times 22 + 1$$
 > À toi de continuer : divise 22 par 2, puis le quotient obtenu, jusqu'à 0.
 > Les restes se lisent **de bas en haut**.
 
@@ -27,7 +25,7 @@
 ### Carte C — Exemple exécuté à transposer
 
 > **Exemple.** Convertir 37 en binaire.
-> Puissances utiles : 32 + 4 + 1 = 37.
+> Puissances utiles : $32 + 4 + 1 = 37$.
 > On place un 1 sous 32, 4 et 1, un 0 ailleurs :
 >
 > | 32 | 16 | 8 | 4 | 2 | 1 |
@@ -35,7 +33,7 @@
 > | 1 | 0 | 0 | 1 | 0 | 1 |
 >
 > Résultat : **100101**.
-> **Vérification :** 32 + 0 + 0 + 4 + 0 + 1 = 37 ✓
+> **Vérification :** $32 + 0 + 0 + 4 + 0 + 1 = 37 \checkmark$
 >
 > **À toi de transposer**, en gardant les trois étapes : décomposition, écriture,
 > vérification.

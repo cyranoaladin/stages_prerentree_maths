@@ -8,9 +8,9 @@
 > Une **ligne** = un enregistrement · une **colonne** = un descripteur.
 > La ligne d'en-tête n'est pas un enregistrement.
 >
-> **Sélection** : on garde des lignes → `WHERE`
-> **Projection** : on garde des colonnes → `SELECT`
-> **Jointure** : on rapproche deux tables → `JOIN ... ON ...`
+> **Sélection** : on garde des lignes $\to$ `WHERE`
+> **Projection** : on garde des colonnes $\to$ `SELECT`
+> **Jointure** : on rapproche deux tables $\to$ `JOIN ... ON ...`
 >
 > Squelette : `SELECT colonnes FROM table WHERE condition ;`
 
@@ -50,10 +50,10 @@
 
 ### Carte D — Découpage en quatre questions
 
-> 1. De quelles **colonnes** as-tu besoin ? → elles vont dans le `SELECT`.
-> 2. As-tu besoin d'une **deuxième table** ? Si oui, quel attribut est commun aux deux ? →
+> 1. De quelles **colonnes** as-tu besoin ? $\to$ elles vont dans le `SELECT`.
+> 2. As-tu besoin d'une **deuxième table** ? Si oui, quel attribut est commun aux deux ? $\to$
 >    `JOIN ... ON ...`.
-> 3. Quelles **lignes** veux-tu garder ? → `WHERE`.
+> 3. Quelles **lignes** veux-tu garder ? $\to$ `WHERE`.
 > 4. Relis : chaque nom de colonne que tu écris existe-t-il bien dans une des tables citées ?
 
 ---

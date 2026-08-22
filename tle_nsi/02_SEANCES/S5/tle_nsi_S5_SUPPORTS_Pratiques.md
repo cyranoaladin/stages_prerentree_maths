@@ -26,9 +26,9 @@ L'écart entre les deux premières réponses est le point à installer.
 
 Deux accessoires simples, un jeu par binôme :
 
-- une **bande de papier opaque** : on la pose sur les lignes qu'on écarte → **sélection** ;
-- la feuille se **plie** verticalement pour cacher des colonnes → **projection** ;
-- deux feuilles se **posent côte à côte**, alignées sur une colonne commune → **jointure**.
+- une **bande de papier opaque** : on la pose sur les lignes qu'on écarte $\to$ **sélection** ;
+- la feuille se **plie** verticalement pour cacher des colonnes $\to$ **projection** ;
+- deux feuilles se **posent côte à côte**, alignées sur une colonne commune $\to$ **jointure**.
 
 **Consigne.** Réaliser physiquement chacune des trois opérations sur l'extrait imprimé, puis
 nommer ce qu'on vient de faire. Le geste précède le mot.
@@ -125,9 +125,9 @@ seconde une **projection**. Ce sont les mêmes mots qu'en SQL.
 
 ## Support 6 — Affiche de séance
 
-> **Sélection** → des **lignes** → `WHERE`
-> **Projection** → des **colonnes** → `SELECT`
-> **Jointure** → deux tables, un attribut commun → `JOIN ... ON ...`
+> **Sélection** $\to$ des **lignes** $\to$ `WHERE`
+> **Projection** $\to$ des **colonnes** $\to$ `SELECT`
+> **Jointure** $\to$ deux tables, un attribut commun $\to$ `JOIN ... ON ...`
 >
 > **La ligne d'en-tête n'est pas un enregistrement.**
 

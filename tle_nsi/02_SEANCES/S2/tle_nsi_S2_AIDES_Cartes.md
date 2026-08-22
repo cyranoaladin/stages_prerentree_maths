@@ -5,7 +5,7 @@
 
 ### Carte A — Rappel de syntaxe et de propriété
 
-> Indices de 0 à n − 1 ; `L[-1]` est le dernier élément.
+> Indices de 0 à $n - 1$ ; `L[-1]` est le dernier élément.
 > `append`, `insert`, `sort`, `del` **modifient** et renvoient `None`.
 > `L + [x]` et `sorted(L)` **construisent** un nouvel objet.
 > `d[cle]` lève `KeyError` si la clé est absente ; `d.get(cle, defaut)` ne lève rien.
@@ -99,7 +99,7 @@
 ## Carte « erreurs fréquentes » — à distribuer en fin de séance
 
 > 1. `L = L.append(x)` : la liste est remplacée par `None`. **Ne jamais affecter `append`.**
-> 2. `L[n]` sur un tableau de n éléments : le dernier indice est n − 1.
+> 2. `L[n]` sur un tableau de n éléments : le dernier indice est $n - 1$.
 > 3. Accéder à une clé absente sans `get` : `KeyError`.
 > 4. Croire que `sorted(L)` trie L : non, il en renvoie une copie triée.
 > 5. Confondre `pop()` et `pop(0)` : c'est toute la différence entre une pile et une file.

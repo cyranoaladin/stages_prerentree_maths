@@ -25,7 +25,7 @@ naturel — ce sont les deux faces de la représentation des données de base.
 
 | Durée | Phase | Ce que fait le professeur | Ce que fait l'élève |
 |---:|---|---|---|
-| 10 min | Ouverture | Distribue les livrets ; explique la carte maîtrise × confiance | Lit sa carte, repère son domaine prioritaire |
+| 10 min | Ouverture | Distribue les livrets ; explique la carte maîtrise $\times$ confiance | Lit sa carte, repère son domaine prioritaire |
 | 20 min | Confrontation | « Écrivez 22 en binaire » — recueil **avant** tout rappel | Écrit sa réponse, puis recalcule la valeur décimale |
 | 25 min | Reconstruction | Décomposition en puissances de 2 ; divisions successives ; base 16 | Prend la trace écrite, s'entraîne sur deux exemples |
 | 30 min | Entraînement différencié | Distribue les trois parcours ; circule | Traite son parcours, note l'aide utilisée |
@@ -52,28 +52,34 @@ vérifie en une ligne**, et qu'il n'y a donc aucune raison de rendre une convers
 
 **Méthode 1 — décomposition en puissances de 2.** Écrire les puissances au tableau :
 
-| 2⁷ | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
+| $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
 |---:|---:|---:|---:|---:|---:|---:|---:|
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
-22 = 16 + 4 + 2, donc on place un 1 sous 16, 4 et 2 : **10110**.
+$22 = 16 + 4 + 2$, donc on place un 1 sous 16, 4 et 2 : **10110**.
 
 **Méthode 2 — divisions successives.** Diviser par 2 en notant les restes, puis lire les
 restes **de bas en haut** :
 
-```
-22 = 2 × 11 + 0
-11 = 2 ×  5 + 1
- 5 = 2 ×  2 + 1
- 2 = 2 ×  1 + 0
- 1 = 2 ×  0 + 1        →  lecture de bas en haut : 10110
+```{=latex}
+\begin{center}
+$\begin{aligned}
+22 &= 2 \times 11 + \mathbf{0} \\
+11 &= 2 \times \phantom{0}5 + \mathbf{1} \\
+ 5 &= 2 \times \phantom{0}2 + \mathbf{1} \\
+ 2 &= 2 \times \phantom{0}1 + \mathbf{0} \\
+ 1 &= 2 \times \phantom{0}0 + \mathbf{1}
+\end{aligned}$
+\qquad
+\raisebox{9mm}{$\longrightarrow$\ \ lecture de bas en haut : \textbf{10110}}
+\end{center}
 ```
 
 Le sens de lecture est l'erreur classique de cette méthode : le faire dire à voix haute.
 
-**Base 16.** A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Insister : F vaut **15**, pas 16.
+**Base 16.** $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$. Insister : F vaut **15**, pas 16.
 
-0x2A = 2 × 16 + 10 = 42. Réciproquement, 60 = 3 × 16 + 12 = 0x3C.
+$0x2A = 2 \times 16 + 10 = 42$. Réciproquement, $60 = 3 \times 16 + 12 = 0x3C$.
 
 ## Entraînement différencié
 
@@ -86,7 +92,7 @@ Le sens de lecture est l'erreur classique de cette méthode : le faire dire à v
 ## Booléens et ouverture — 20 minutes
 
 **Priorités.** `not` d'abord, puis `and`, puis `or`. Faire évaluer pas à pas :
-`(not True) or (False and True)` → `False or False` → `False`.
+`(not True) or (False and True)` $\to$ `False or False` $\to$ `False`.
 
 **Tables de vérité.** Faire compléter les quatre lignes de `A and B`, puis celles de
 `not (A and B)`. Faire constater que la seconde coïncide avec `(not A) or (not B)` :

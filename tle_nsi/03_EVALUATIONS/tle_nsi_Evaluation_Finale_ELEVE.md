@@ -9,7 +9,7 @@ Sept exercices, un par domaine du stage.
 ### Consignes
 
 - Je prédis avant d'exécuter, quand une exécution est possible.
-- Je déclare ma certitude à chaque exercice : ☐1 ☐2 ☐3 ☐4.
+- Je déclare ma certitude à chaque exercice : $\square$1 $\square$2 $\square$3 $\square$4.
 - Je laisse vide plutôt que de deviner.
 
 **Nom :** ..............................................  **Date :** ......................
@@ -30,7 +30,7 @@ c) Combien de valeurs différentes peut-on coder sur 8 bits ?
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -44,7 +44,7 @@ b) Écris la négation de la condition `age > 18 and classe == 'TG3'`. Justifie.
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -65,7 +65,7 @@ la clé `'z'` est absente, sans erreur.
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -105,7 +105,7 @@ paramètre ?
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -125,7 +125,7 @@ recherche dichotomique ? Justifie par un ordre de grandeur.
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -150,7 +150,7 @@ table `livres`.
 
 ```
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -165,7 +165,7 @@ b) Cite deux ressources gérées par un système d'exploitation.
 
 ....................................................................................................
 
-**Certitude :** ☐1 ☐2 ☐3 ☐4
+**Certitude :** $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 

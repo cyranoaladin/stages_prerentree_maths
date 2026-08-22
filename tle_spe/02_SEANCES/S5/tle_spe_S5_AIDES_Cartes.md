@@ -5,20 +5,20 @@
 
 ### Carte A — Rappel de propriété
 
-> **Produit scalaire.** En repère orthonormé : u·v = x_u x_v + y_u y_v. Le résultat est un
-> nombre. u et v non nuls sont orthogonaux ⟺ u·v = 0.
+> **Produit scalaire.** En repère orthonormé : $u \cdot v = x_u x_v + y_u y_v$. Le résultat est un
+> nombre. u et v non nuls sont orthogonaux $\iff u \cdot v = 0$.
 >
-> **Probabilités.** P(A ∩ B) = P(A) × P_A(B). A et B indépendants ⟺ P_A(B) = P(B).
-> E(X) = Σ x_i × P(X = x_i).
+> **Probabilités.** $P(A \cap B) = P(A) \times P_A(B)$. A et B indépendants $\iff P_A(B) = P(B)$.
+> $E(X) = \sum x_i \times P(X = x_i)$.
 >
-> **Python.** `range(n)` produit n valeurs : 0, 1, …, n−1.
+> **Python.** `range(n)` produit n valeurs : 0, 1, …, $n - 1$.
 
 ---
 
 ### Carte B — Première étape faite
 
-> **Produit scalaire.** Pour montrer que ABC est rectangle en A, avec A(1 ; 2), B(4 ; 3),
-> C(2 ; 8) : les vecteurs à utiliser sont **AB(3 ; 1)** et **AC(1 ; 6)**.
+> **Produit scalaire.** Pour montrer que ABC est rectangle en A, avec $A(1 ; 2)$, $B(4 ; 3)$,
+> $C(2 ; 8)$ : les vecteurs à utiliser sont **AB(3 ; 1)** et **AC(1 ; 6)**.
 >
 > À toi : calcule AB·AC et conclus.
 >
@@ -32,9 +32,9 @@
 ### Carte C — Exemple résolu à transposer
 
 > **Exemple — détermination d'un paramètre.**
-> Pour quel réel k les vecteurs u(4 ; k) et v(3 ; −6) sont-ils orthogonaux ?
-> Le critère u·v = 0 s'écrit : 4 × 3 + k × (−6) = 0, soit 12 − 6k = 0, donc **k = 2**.
-> Contrôle : u(4 ; 2) et v(3 ; −6) donnent 12 − 12 = 0 ✓
+> Pour quel réel k les vecteurs $u(4 ; k)$ et $v(3 ; - 6)$ sont-ils orthogonaux ?
+> Le critère $u \cdot v = 0$ s'écrit : $4 \times 3 + k \times ( - 6) = 0$, soit $12 - 6k = 0$, donc **$k = 2$**.
+> Contrôle : $u(4 ; 2)$ et $v(3 ; - 6)$ donnent $12 - 12 = 0 \checkmark$
 >
 > **À toi de transposer** en gardant les trois étapes : écrire le critère comme une équation,
 > résoudre, contrôler.
@@ -57,10 +57,10 @@
 
 ### Carte E — Corrigé partiel à compléter
 
-> **Orthogonalité avec paramètre.** u(3 ; m) et v(−2 ; 6).
-> Le critère s'écrit : 3 × ( ......... ) + m × ( ......... ) = 0.
-> Soit ......... + 6m = 0, donc m = ......... .
-> Contrôle : u( ......... ; ......... )·v(−2 ; 6) = ......... ✓
+> **Orthogonalité avec paramètre.** $u(3 ; m)$ et $v( - 2 ; 6)$.
+> Le critère s'écrit : $3 \times$ ( ......... $) + m \times ($ ......... ) $= 0$.
+> Soit ......... + $6m = 0$, donc $m =$ ......... .
+> Contrôle : u( ......... ; ......... )$\cdot v( - 2 ; 6) =$ ......... $\checkmark$
 >
 > **Python.**
 > ```python
@@ -76,7 +76,7 @@
 ## Carte « contrôle » — à utiliser avant toute certitude de 4
 
 > - Mon produit scalaire est bien un **nombre**.
-> - J'ai vérifié le signe avec l'angle : positif ⟹ aigu, nul ⟹ droit, négatif ⟹ obtus.
+> - J'ai vérifié le signe avec l'angle : positif $\implies$ aigu, nul $\implies$ droit, négatif $\implies$ obtus.
 > - Sur un arbre, la somme des probabilités partant d'un même nœud vaut 1.
 > - Mon programme donne le même résultat que mon calcul à la main sur un cas simple.
 
@@ -86,7 +86,7 @@
 
 > 1. Annoncer un **vecteur** comme résultat d'un produit scalaire.
 > 2. Prendre les coordonnées des points au lieu de celles des vecteurs.
-> 3. Confondre P(A ∩ B) et P_A(B) : la conditionnelle est **sur** la branche, l'intersection
+> 3. Confondre $P(A \cap B)$ et $P_A(B)$ : la conditionnelle est **sur** la branche, l'intersection
 >    est **au bout** du chemin.
 > 4. Confondre indépendance et incompatibilité.
 > 5. Décaler les bornes d'une boucle : `range(n)` fait n tours, pas n + 1.

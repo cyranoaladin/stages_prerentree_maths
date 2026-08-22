@@ -35,7 +35,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -51,8 +51,8 @@ Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni devi
 |---|---:|---|---|
 | Second degré | 66,7 % | Sans réponse | Première spécialité — « Équations, fonctions polynômes du second degré » : forme canonique, discriminant, racines, factorisation, signe du trinôme. |
 | Dérivation | 100 % | Acquis disponible | Première spécialité — « Dérivation » et « Variations et courbes représentatives des fonctions » : nombre dérivé, tangente, dérivées des fonctions usuelles, dérivée d'un produit et d'un quotient, lien signe de f' / variations de f. |
-| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée. |
-| Suites numériques | 85,7 % | Certitude à revoir | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes. |
+| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée. |
+| Suites numériques | 85,7 % | Certitude à revoir | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes. |
 | Produit scalaire | 100 % | Acquis disponible | Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection. |
 
 _Ces chiffres décrivent ta réussite domaine par domaine. Ce livret ne donne pas de note._
@@ -79,15 +79,15 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 ### Fonction exponentielle — 100 % · Acquis disponible · **ENTRETENIR**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée.
 
-**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles y' = ay + b et le support des croissances comparées.
+**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Analyse : « Fonction logarithme », « Limites des fonctions », « Primitives, équations différentielles ».
 
 ### Suites numériques — 85,7 % · Certitude à revoir · **CONFRONTER**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes.
 
 **Ce que la Terminale en fera.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
@@ -97,7 +97,7 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 **Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection.
 
-**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « u·v = 0 » devient l'outil de démonstration principal en géométrie dans l'espace.
+**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « $u \cdot v = 0$ » devient l'outil de démonstration principal en géométrie dans l'espace.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Géométrie : « Orthogonalité et distances dans l'espace », « Représentations paramétriques et équations cartésiennes ».
 
@@ -148,15 +148,15 @@ Ton positionnement comporte **2 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** NON TRAITÉE · certitude non renseignée
 
-**Énoncé.** Sur quel intervalle le trinôme −x² + 3x − 2 est-il strictement positif ?
+**Énoncé.** Sur quel intervalle le trinôme $- x^2 + 3x - 2$ est-il strictement positif ?
 
 **Ta réponse.** _Question non traitée._ Une question laissée vide renseigne aussi : on fera le point ensemble au démarrage, sans rien supposer.
 
 **Réponse attendue.** ]1 ; 2[
 
-**Ce qu'il faut retenir.** Les racines sont 1 et 2. Le coefficient dominant vaut −1, donc le trinôme est du signe de a à l'extérieur des racines et du signe opposé entre elles : il est positif sur ]1 ; 2[.
+**Ce qu'il faut retenir.** Les racines sont 1 et 2. Le coefficient dominant vaut $- 1$, donc le trinôme est du signe de a à l'extérieur des racines et du signe opposé entre elles : il est positif sur ]1 ; 2[.
 
-**Le geste à installer.** Quand a < 0, le trinôme est positif entre les racines. Écrire le tableau de signes plutôt que retenir une formule.
+**Le geste à installer.** Quand $a < 0$, le trinôme est positif entre les racines. Écrire le tableau de signes plutôt que retenir une formule.
 
 **Ma reformulation, avec mes mots :**
 
@@ -168,7 +168,7 @@ Ton positionnement comporte **2 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** La suite définie pour tout entier naturel n par u_n = 0,5^n est :
+**Énoncé.** La suite définie pour tout entier naturel n par $u_n = 0{,}5^n$ est :
 
 **Ta réponse.** croissante
 
@@ -176,9 +176,9 @@ Ton positionnement comporte **2 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **D'où vient l'erreur.** Croit qu'une raison strictement positive entraîne une suite croissante, sans comparer la raison à 1.
 
-**Ce qu'il faut retenir.** Pour une suite géométrique de premier terme positif, le sens de variation dépend de la raison : ici 0 < 0,5 < 1, donc la suite est strictement décroissante.
+**Ce qu'il faut retenir.** Pour une suite géométrique de premier terme positif, le sens de variation dépend de la raison : ici $0 < 0{,}5 < 1$, donc la suite est strictement décroissante.
 
-**Le geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, 0 < r < 1 donne une suite décroissante, r > 1 une suite croissante.
+**Le geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, $0 < r < 1$ donne une suite décroissante, $r > 1$ une suite croissante.
 
 **Ma reformulation, avec mes mots :**
 
@@ -192,8 +192,8 @@ Sur **2 item(s)**, ta réponse était juste mais l'assurance n'y était pas enco
 
 | Item | Domaine | Compétence | Ta certitude | Le geste qui la rendra sûre |
 |---:|---|---|:---:|---|
-| 16 | Suites numériques | Étudier le sens de variation d'une suite définie par récurrence | 2/4 | Calculer la différence u_(n+1) − u_n et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence. |
-| 18 | Produit scalaire | Utiliser le critère d'orthogonalité | 2/4 | u·v = 0 est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu. |
+| 16 | Suites numériques | Étudier le sens de variation d'une suite définie par récurrence | 2/4 | Calculer la différence $u_{n+1} - u_n$ et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence. |
+| 18 | Produit scalaire | Utiliser le critère d'orthogonalité | 2/4 | $u \cdot v = 0$ est une équivalence : elle sert aussi bien à démontrer une orthogonalité qu'à déterminer un paramètre inconnu. |
 
 <div class="page-break"></div>
 
@@ -247,48 +247,48 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Second degré | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Dérivation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Fonction exponentielle | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Suites numériques | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Produit scalaire | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Second degré | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Dérivation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Fonction exponentielle | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Suites numériques | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Produit scalaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 <div class="page-break"></div>
 
@@ -304,11 +304,11 @@ Un positionnement distinct t'a été proposé le 2026-08-19. Voici ce qu'il mont
 
 | Domaine | Réussite | Situation | Ce que l'option en fait en Terminale |
 |---|---:|---|---|
-| Arithmétique | 58,3 % | Certitude à revoir | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans ℤ, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
-| Calcul littéral | 0 % | Sans réponse | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans ℂ, factorisation de z² + 1, de z^n − 1, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
+| Arithmétique | 58,3 % | Certitude à revoir | C'est le cœur de l'enseignement de mathématiques expertes : divisibilité et division euclidienne dans $\mathbb{Z}$, congruences, PGCD et algorithme d'Euclide, théorèmes de Bézout et de Gauss, nombres premiers et petit théorème de Fermat. Une division euclidienne mal posée bloque tout le chapitre. |
+| Calcul littéral | 0 % | Sans réponse | Les nombres complexes se manipulent avec les mêmes règles : identités remarquables dans $\mathbb{C}$, factorisation de $z^2 + 1$, de $z^n - 1$, calcul du module et de l'argument. Une factorisation hésitante rend le chapitre des complexes très coûteux. |
 | Systèmes d'équations | 0 % | Sans réponse | Un système s'écrit matriciellement AX = B ; on le résout par inversion de matrice. Les matrices servent également à modéliser des graphes et des marches aléatoires. |
 | Logique | 66,7 % | Difficulté repérée, sans fausse certitude | L'arithmétique de Terminale est un chapitre de démonstrations : raisonnement par récurrence, par contraposée, par l'absurde, par disjonction de cas. La contraposée est l'outil standard des preuves de divisibilité. |
-| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle U(n+1) = A U(n) prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
+| Suites numériques | 100 % | Acquis disponible | Les suites définies par une relation matricielle $U(n+1) = A U(n)$ prolongent directement les suites géométriques : on y étudie l'état stable d'une marche aléatoire sur un graphe. |
 | Dénombrement | 100 % | Acquis disponible | Le dénombrement est traité pour lui-même dans la spécialité (combinaisons, coefficients binomiaux) et sert en arithmétique pour compter les diviseurs d'un entier à partir de sa décomposition en facteurs premiers. |
 
 ### Tes priorités pour l'option
@@ -358,77 +358,77 @@ Un positionnement distinct t'a été proposé le 2026-08-19. Voici ce qu'il mont
 
 **Réponse attendue.** 2/3
 
-**Ce qu'il faut retenir.** On divise numérateur et dénominateur par leur PGCD, 12 : 24/36 = 2/3.
+**Ce qu'il faut retenir.** On divise numérateur et dénominateur par leur PGCD, 12 : $24/36 = 2/3$.
 
 **Le geste à installer.** Diviser numérateur et dénominateur par leur PGCD, en une seule étape, plutôt que de simplifier au hasard.
 
 #### Item 9 — Calcul littéral · Reconnaître et utiliser une différence de deux carrés
 
-**Énoncé.** Factoriser l'expression x² − 16.
+**Énoncé.** Factoriser l'expression $x^2 - 16$.
 
 **Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
 
-**Réponse attendue.** (x − 4)(x + 4)
+**Réponse attendue.** $(x - 4)(x + 4)$
 
-**Ce qu'il faut retenir.** x² − 16 = x² − 4² = (x − 4)(x + 4), identité de la différence de deux carrés.
+**Ce qu'il faut retenir.** $x^2 - 16 = x^2 - 4^2 = (x - 4)(x + 4)$, identité de la différence de deux carrés.
 
-**Le geste à installer.** Identifier a² − b², puis écrire (a − b)(a + b). Vérifier en redéveloppant.
+**Le geste à installer.** Identifier $a^2 - b^2$, puis écrire $(a - b)(a + b)$. Vérifier en redéveloppant.
 
 #### Item 10 — Calcul littéral · Développer un produit de deux binômes
 
-**Énoncé.** Développer et réduire (x − 3)(x + 5).
+**Énoncé.** Développer et réduire $(x - 3)(x + 5)$.
 
 **Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
 
-**Réponse attendue.** x² + 2x − 15
+**Réponse attendue.** $x^2 + 2x - 15$
 
-**Ce qu'il faut retenir.** (x − 3)(x + 5) = x² + 5x − 3x − 15 = x² + 2x − 15.
+**Ce qu'il faut retenir.** $(x - 3)(x + 5) = x^2 + 5x - 3x - 15 = x^2 + 2x - 15$.
 
 **Le geste à installer.** Distribuer chaque terme du premier facteur sur chaque terme du second (quatre produits), puis regrouper les termes semblables.
 
 #### Item 11 — Systèmes d'équations · Résoudre un système par combinaison linéaire
 
-**Énoncé.** Quelle est la solution du système { x + y = 7 ; x − y = 1 } ?
+**Énoncé.** Quelle est la solution du système { $x + y = 7 ; x - y = 1$ } ?
 
 **Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
 
-**Réponse attendue.** x = 4 et y = 3
+**Réponse attendue.** $x = 4$ et $y = 3$
 
-**Ce qu'il faut retenir.** En additionnant les deux équations : 2x = 8, donc x = 4, puis y = 3.
+**Ce qu'il faut retenir.** En additionnant les deux équations : $2x = 8$, donc $x = 4$, puis $y = 3$.
 
 **Le geste à installer.** Additionner ou soustraire les deux équations pour éliminer une inconnue, puis remonter. Toujours vérifier le couple obtenu dans les deux équations.
 
 #### Item 12 — Systèmes d'équations · Résoudre un système par substitution
 
-**Énoncé.** Dans le système { 2x + y = 8 ; x = 3 }, que vaut y ?
+**Énoncé.** Dans le système { $2x + y = 8 ; x = 3$ }, que vaut y ?
 
 **Ta réponse.** _Question non traitée._ On fera le point au démarrage, sans rien supposer.
 
 **Réponse attendue.** 2
 
-**Ce qu'il faut retenir.** Avec x = 3 : 2 × 3 + y = 8, donc y = 8 − 6 = 2.
+**Ce qu'il faut retenir.** Avec $x = 3$ : $2 \times 3 + y = 8$, donc $y = 8 - 6 = 2$.
 
 **Le geste à installer.** Remplacer l'inconnue connue dans l'autre équation, puis isoler. Une seule substitution suffit quand une équation donne déjà une inconnue.
 
 #### Item 13 — Logique · Écrire la contraposée d'une implication
 
-**Énoncé.** Quelle est la contraposée de « Si n est pair, alors n² est pair » ?
+**Énoncé.** Quelle est la contraposée de « Si n est pair, alors $n^2$ est pair » ?
 
-**Ta réponse.** Si n est impair, alors n² est impair
+**Ta réponse.** Si n est impair, alors $n^2$ est impair
 
-**Réponse attendue.** Si n² est impair, alors n est impair
+**Réponse attendue.** Si $n^2$ est impair, alors n est impair
 
 **D'où vient l'erreur.** Nie les deux propositions sans les échanger : ce n'est pas la contraposée.
 
-**Ce qu'il faut retenir.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : « Si n² est impair, alors n est impair ».
+**Ce qu'il faut retenir.** La contraposée de « $A \implies B$ » est « non $B \implies$ non A » : « Si $n^2$ est impair, alors n est impair ».
 
-**Le geste à installer.** La contraposée de « A ⟹ B » est « non B ⟹ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
+**Le geste à installer.** La contraposée de « $A \implies B$ » est « non $B \implies$ non A » : on nie les deux propositions et on échange leur rôle. Elle a toujours la même valeur de vérité que l'implication de départ.
 
 ### Comment l'option sera travaillée pendant le stage
 
 | Séance | Ce qui est prévu pour l'option |
 |---:|---|
-| 1 | Division euclidienne : poser a = bq + r et contrôler 0 ≤ r < b |
+| 1 | Division euclidienne : poser $a =$ bq + r et contrôler $0 \leqslant r < b$ |
 | 2 | Diviseurs, nombres premiers, décomposition en facteurs premiers |
 | 3 | PGCD et algorithme d'Euclide ; fractions irréductibles |
 | 4 | Logique : contraposée, réciproque, contre-exemple |

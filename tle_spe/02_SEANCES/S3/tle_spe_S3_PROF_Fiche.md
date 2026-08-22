@@ -25,8 +25,8 @@ trinôme est exactement l'outil dont on aura besoin le lendemain pour lire le si
 
 | Durée | Phase | Ce que fait le professeur | Ce que fait l'élève |
 |---:|---|---|---|
-| 10 min | Ouverture | Contrôle sur la séance 2 : simplifier e^(4x)/e^(x+2) | Répond, déclare sa certitude |
-| 20 min | Confrontation | « Sur quel intervalle −x² + 3x − 2 est-il strictement positif ? » | Répond, puis teste en x = 0 et x = 1,5 |
+| 10 min | Ouverture | Contrôle sur la séance 2 : simplifier $e^{4x}/e^{x+2}$ | Répond, déclare sa certitude |
+| 20 min | Confrontation | « Sur quel intervalle $- x^2 + 3x - 2$ est-il strictement positif ? » | Répond, puis teste en $x = 0$ et $x = 1{,}5$ |
 | 25 min | Reconstruction | Discriminant, racines, factorisation ; règle du signe de a ; tableau de signes | Prend la trace écrite |
 | 30 min | Entraînement différencié | Distribue les trois parcours | Traite son parcours |
 | 20 min | Ouverture Terminale | Le tableau de signes d'une dérivée ; mention du théorème des valeurs intermédiaires | Observe, note |
@@ -34,42 +34,42 @@ trinôme est exactement l'outil dont on aura besoin le lendemain pour lire le si
 
 ## Conduite de la phase de confrontation
 
-1. Écrire : « Sur quel intervalle le trinôme −x² + 3x − 2 est-il strictement positif ? »
+1. Écrire : « Sur quel intervalle le trinôme $- x^2 + 3x - 2$ est-il strictement positif ? »
    Recueillir les réponses écrites et les certitudes, sans commenter.
 2. La réponse fausse attendue est « à l'extérieur des racines », soit
-   ]−∞ ; 1[ ∪ ]2 ; +∞[ — le réflexe pris avec des trinômes à coefficient dominant positif.
+   $] - \infty ; 1[ \cup ]2 ; + \infty [$ — le réflexe pris avec des trinômes à coefficient dominant positif.
 3. Faire **tester deux valeurs** :
-   - en x = 0 : −0 + 0 − 2 = −2, négatif ;
-   - en x = 1,5 : −2,25 + 4,5 − 2 = 0,25, positif.
+   - en $x = 0$ : $- 0 + 0 - 2 = - 2$, négatif ;
+   - en $x = 1{,}5$ : $- 2{,}25 + 4{,}5 - 2 = 0{,}25$, positif.
 4. Faire verbaliser : la valeur 0 est à l'extérieur des racines et pourtant le trinôme y est
    négatif. La règle a été appliquée sans regarder le signe de a.
 5. **Puis** reconstruire : le trinôme est du signe de a à l'extérieur des racines. Ici
-   a = −1 : à l'extérieur il est négatif, entre les racines il est positif.
+   $a = - 1$ : à l'extérieur il est négatif, entre les racines il est positif.
 
 ## Reconstruction
 
-**Résolution.** Δ = b² − 4ac.
+**Résolution.** $\Delta = b^2 - 4$ac.
 
-| Signe de Δ | Racines |
+| Signe de $\Delta$ | Racines |
 |---|---|
-| Δ > 0 | deux racines distinctes (−b ± √Δ)/(2a) |
-| Δ = 0 | une racine double −b/(2a) |
-| Δ < 0 | aucune racine réelle |
+| $\Delta > 0$ | deux racines distinctes $( - b \pm \surd \Delta )/(2a)$ |
+| $\Delta = 0$ | une racine double $- b/(2a)$ |
+| $\Delta < 0$ | aucune racine réelle |
 
-**Contrôle systématique** : somme des racines = −b/a, produit = c/a. Ce contrôle prend cinq
+**Contrôle systématique** : somme des racines = $- b/a$, produit = c/a. Ce contrôle prend cinq
 secondes et détecte la quasi-totalité des erreurs de calcul.
 
 **Signe du trinôme.** Faire construire le tableau au tableau, avec les élèves :
 
-| | −∞ | | x₁ | | x₂ | | +∞ |
+| | $- \infty$ | | $x_1$ | | $x_2$ | | +$\infty$ |
 |---|---|---|---|---|---|---|---|
-| signe de ax²+bx+c | | signe de a | 0 | signe de −a | 0 | signe de a | |
+| signe de ax^2+bx+c | | signe de a | 0 | signe de $- a$ | 0 | signe de a | |
 
-Quand Δ < 0, le trinôme garde le signe de a sur ℝ tout entier — cas à traiter
+Quand $\Delta < 0$, le trinôme garde le signe de a sur $\mathbb{R}$ tout entier — cas à traiter
 explicitement, car il est souvent oublié.
 
-**Écriture de l'ensemble solution.** Insister sur la réunion : pour x² − 9 ≥ 0, l'ensemble
-solution est ]−∞ ; −3] ∪ [3 ; +∞[, avec les crochets fermés puisque l'inégalité est large.
+**Écriture de l'ensemble solution.** Insister sur la réunion : pour $x^2 - 9 \geqslant 0$, l'ensemble
+solution est $] - \infty ; - 3] \cup [3 ; + \infty [$, avec les crochets fermés puisque l'inégalité est large.
 
 ## Entraînement différencié
 
@@ -81,7 +81,7 @@ solution est ]−∞ ; −3] ∪ [3 ; +∞[, avec les crochets fermés puisque l
 
 ## Ouverture sur la Terminale — 20 minutes
 
-Écrire : soit f(x) = x³ − 3x² + 1. Faire calculer f'(x) = 3x² − 6x = 3x(x − 2).
+Écrire : soit $f(x) = x^3 - 3x^2 + 1$. Faire calculer $f'(x) = 3x^2 - 6x = 3x(x - 2)$.
 
 Faire remarquer : **f' est un trinôme**. Dresser son tableau de signes exactement comme
 depuis le début de la séance. En déduire les variations de f — sans les démontrer, elles
@@ -89,12 +89,12 @@ seront reprises en séance 4.
 
 Puis annoncer le prolongement de Terminale :
 
-> En Terminale, on dérivera une deuxième fois : f''(x) = 6x − 6. Le signe de f'' donne les
+> En Terminale, on dérivera une deuxième fois : f''$(x) = 6x - 6$. Le signe de f'' donne les
 > variations de f', donc la **convexité** de f. Le tableau de signes que vous savez faire
 > aujourd'hui servira deux fois par exercice.
 
 Mentionner enfin le **théorème des valeurs intermédiaires** : si f est continue et
-strictement monotone sur un intervalle, et change de signe, l'équation f(x) = 0 y admet une
+strictement monotone sur un intervalle, et change de signe, l'équation $f(x) = 0$ y admet une
 solution unique. Les variations en sont l'ingrédient. Ne pas aller plus loin.
 
 ## Erreurs à surveiller et réponses à apporter
@@ -102,10 +102,10 @@ solution unique. Les variations en sont l'ingrédient. Ne pas aller plus loin.
 | Erreur observée | Réponse |
 |---|---|
 | Règle du signe appliquée sans regarder a | Faire tester une valeur à l'extérieur des racines |
-| Cas Δ < 0 oublié | Faire chercher le signe de 2x² + x + 3 sur ℝ |
+| Cas $\Delta < 0$ oublié | Faire chercher le signe de $2x^2 + x + 3$ sur $\mathbb{R}$ |
 | Solutions d'équation confondues avec ensemble solution d'inéquation | Faire écrire les deux pour le même trinôme |
 | Réunion oubliée dans l'ensemble solution | Faire placer les intervalles sur une droite graduée |
-| Δ = b² + 4ac | Faire réécrire la formule avant chaque calcul |
+| $\Delta = b^2 + 4$ac | Faire réécrire la formule avant chaque calcul |
 
 ## Indicateurs de fin de séance
 

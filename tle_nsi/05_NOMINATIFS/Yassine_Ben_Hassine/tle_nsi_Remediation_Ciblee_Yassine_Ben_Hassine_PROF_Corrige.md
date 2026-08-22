@@ -21,7 +21,7 @@
 | Données en tables | 66,7 % | Certitude à revoir | **CONFRONTER** |
 | Architecture et systèmes | 100 % | Acquis disponible | **ENTRETENIR** |
 
-**Ordre de traitement.** Représentation binaire (CONFRONTER) → Booléens et logique (CONFRONTER) → Types construits (CONFRONTER) → Programmation (CONFRONTER) → Algorithmique (CONFRONTER) → Données en tables (CONFRONTER)
+**Ordre de traitement.** Représentation binaire (CONFRONTER) $\to$ Booléens et logique (CONFRONTER) $\to$ Types construits (CONFRONTER) $\to$ Programmation (CONFRONTER) $\to$ Algorithmique (CONFRONTER) $\to$ Données en tables (CONFRONTER)
 
 **Calibration de la confiance.** Un levier en plus des notions : ton ressenti et tes résultats ne coïncident pas toujours. Apprendre à repérer quand tu es sûr à raison — et quand tu ne l'es pas — vaut autant que le contenu lui-même.
 
@@ -49,7 +49,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Écrire 22 en binaire, puis vérifier en recalculant la valeur décimale.
 
-**Corrigé.** 22 = 16 + 4 + 2 = 2⁴ + 2² + 2¹, ce qui s'écrit 10110. Vérification : 16 + 0 + 4 + 2 + 0 = 22.
+**Corrigé.** $22 = 16 + 4 + 2 = 2^4 + 2^2 + 2^1$, ce qui s'écrit 10110. Vérification : $16 + 0 + 4 + 2 + 0 = 22$.
 
 **Geste à installer.** Décomposer en somme de puissances de 2 décroissantes, ou diviser successivement par 2 et lire les restes de bas en haut.
 
@@ -59,9 +59,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Convertir 0x2A en base 10, puis convertir 60 en hexadécimal.
 
-**Corrigé.** 0x2A = 2 × 16 + 10 = 42. Pour 60 : 60 = 3 × 16 + 12, et 12 s'écrit C, donc 60 s'écrit 0x3C.
+**Corrigé.** $0x2A = 2 \times 16 + 10 = 42$. Pour 60 : $60 = 3 \times 16 + 12$, et 12 s'écrit C, donc 60 s'écrit 0x3C.
 
-**Geste à installer.** En hexadécimal, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Chaque position vaut une puissance de 16.
+**Geste à installer.** En hexadécimal, $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$. Chaque position vaut une puissance de 16.
 
 **Erreur à surveiller chez cet élève.** Ne compte que le chiffre F et oublie le 1 des « seizaines ». (constatée à l'item 2 du positionnement, donné avec une certitude de 3/4.)
 
@@ -77,11 +77,11 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 4 — Types construits
 
-**Énoncé.** Soit L = [1, 2, 3]. Après L.insert(0, 9) puis L.append(4), que contient L ? Que vaudrait L après L = L.append(5) ?
+**Énoncé.** Soit $L = [1$, 2, 3]. Après L.insert(0, 9) puis L.append(4), que contient L ? Que vaudrait L après $L = L$.append(5) ?
 
-**Corrigé.** insert(0, 9) place 9 en tête : L vaut [9, 1, 2, 3], puis append(4) donne [9, 1, 2, 3, 4]. En revanche L = L.append(5) affecte à L la valeur renvoyée par append, c'est-à-dire None : la liste est perdue.
+**Corrigé.** insert(0, 9) place 9 en tête : L vaut [9, 1, 2, 3], puis append(4) donne [9, 1, 2, 3, 4]. En revanche $L = L$.append(5) affecte à L la valeur renvoyée par append, c'est-à-dire None : la liste est perdue.
 
-**Geste à installer.** append ajoute en fin de liste et ne renvoie rien : écrire L = L.append(4) détruit la liste en la remplaçant par None.
+**Geste à installer.** append ajoute en fin de liste et ne renvoie rien : écrire $L = L$.append(4) détruit la liste en la remplaçant par None.
 
 **Erreur à surveiller chez cet élève.** append ajoute en fin de liste, pas au début. (constatée à l'item 6 du positionnement, donné avec une certitude de 3/4.)
 
@@ -89,17 +89,17 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Écrire les instructions qui ajoutent à d la clé 'z' de valeur 30, puis suppriment la clé 'x', puis parcourent d en affichant chaque couple clé-valeur.
 
-**Corrigé.** d['z'] = 30 crée l'entrée. del d['x'] (ou d.pop('x')) la supprime. Le parcours s'écrit : for cle, valeur in d.items(): print(cle, valeur).
+**Corrigé.** d['$z'] = 30$ crée l'entrée. del d['x'] (ou d.pop('x')) la supprime. Le parcours s'écrit : for cle, valeur in d.items(): print(cle, valeur).
 
-**Geste à installer.** Une affectation d[clé] = valeur crée l'entrée si elle n'existe pas et la remplace sinon ; del d[clé] la supprime.
+**Geste à installer.** Une affectation d[clé] $=$ valeur crée l'entrée si elle n'existe pas et la remplace sinon ; del d[clé] la supprime.
 
 **Erreur à surveiller chez cet élève.** append est une méthode des listes, pas des dictionnaires. (constatée à l'item 8 du positionnement, donné avec une certitude de 4/4.)
 
 ### Exercice 6 — Programmation
 
-**Énoncé.** Soit def h(L): L.append(0). Que vaut r après r = h([1, 2]) ? Si on écrit M = [1, 2] puis h(M), que contient M ?
+**Énoncé.** Soit def $h(L)$: L.append(0). Que vaut r après $r = h([1$, 2]) ? Si on écrit $M = [1$, 2] puis $h(M)$, que contient M ?
 
-**Corrigé.** h ne comporte pas de return : r vaut None. En revanche la liste est mutable et modifiée en place, donc après h(M) la liste M contient [1, 2, 0].
+**Corrigé.** h ne comporte pas de return : r vaut None. En revanche la liste est mutable et modifiée en place, donc après $h(M)$ la liste M contient [1, 2, 0].
 
 **Geste à installer.** Sans return, une fonction renvoie None. Une fonction peut modifier un objet mutable reçu en paramètre tout en renvoyant None : ce sont deux choses distinctes.
 
@@ -107,9 +107,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 7 — Programmation
 
-**Énoncé.** Soit s = 0 puis « for i in range(1, 6): s = s + i*i ». Que vaut s ? Dresser la table de trace.
+**Énoncé.** Soit $s = 0$ puis « for i in range(1, 6): $s = s + i$*i ». Que vaut s ? Dresser la table de trace.
 
-**Corrigé.** range(1, 6) produit 1, 2, 3, 4, 5. Table de trace : s vaut successivement 1, 5, 14, 30 puis 55. Au final s = 1 + 4 + 9 + 16 + 25 = 55.
+**Corrigé.** range(1, 6) produit 1, 2, 3, 4, 5. Table de trace : s vaut successivement 1, 5, 14, 30 puis 55. Au final $s = 1 + 4 + 9 + 16 + 25 = 55$.
 
 **Geste à installer.** Initialiser l'accumulateur avant la boucle, écrire la valeur des variables à chaque tour dans une table de trace pour vérifier.
 
@@ -119,9 +119,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Dans un tableau trié de 1 000 éléments, combien de comparaisons au pire pour une recherche dichotomique ? Et pour une recherche séquentielle ?
 
-**Corrigé.** La dichotomie effectue de l'ordre de log₂(1 000) ≈ 10 comparaisons au pire, car 2¹⁰ = 1 024. La recherche séquentielle en effectue jusqu'à 1 000 : c'est le gain qui justifie de trier.
+**Corrigé.** La dichotomie effectue de l'ordre de $\log_2(1 000) \approx 10$ comparaisons au pire, car $2^{10} = 1 024$. La recherche séquentielle en effectue jusqu'à 1 000 : c'est le gain qui justifie de trier.
 
-**Geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de log₂(n). Retenir les repères : 2¹⁰ ≈ 1 000, 2²⁰ ≈ 1 000 000.
+**Geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de $\log_2(n)$. Retenir les repères : $2^{10} \approx 1 000$, $2^{20} \approx 1 000 000$.
 
 **Erreur à surveiller chez cet élève.** Correspond à une recherche séquentielle, pas dichotomique. (constatée à l'item 14 du positionnement, donné avec une certitude de 3/4.)
 
@@ -139,15 +139,15 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 5 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 6 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 7 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 8 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 9 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 3 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 4 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 5 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 6 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 7 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 8 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 9 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 

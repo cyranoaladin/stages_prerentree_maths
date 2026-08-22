@@ -33,7 +33,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -167,7 +167,7 @@ Ton positionnement comporte **1 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude non renseignée
 
-**Énoncé.** On définit d = {'a': 1, 'b': 2}. Que vaut d['b'] ?
+**Énoncé.** On définit $d =$ {'a': 1, 'b': 2}. Que vaut d['b'] ?
 
 **Ta réponse.** une erreur
 
@@ -192,13 +192,13 @@ Sur **12 item(s)**, ta réponse était juste mais l'assurance n'y était pas enc
 | Item | Domaine | Compétence | Ta certitude | Le geste qui la rendra sûre |
 |---:|---|---|:---:|---|
 | 1 | Représentation binaire | Convertir un entier de la base 10 vers la base 2 | non déclarée | Décomposer en somme de puissances de 2 décroissantes, ou diviser successivement par 2 et lire les restes de bas en haut. |
-| 2 | Représentation binaire | Convertir entre base 16 et base 10 | non déclarée | En hexadécimal, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Chaque position vaut une puissance de 16. |
+| 2 | Représentation binaire | Convertir entre base 16 et base 10 | non déclarée | En hexadécimal, $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$. Chaque position vaut une puissance de 16. |
 | 3 | Booléens et logique | Évaluer une expression booléenne | non déclarée | Évaluer de l'intérieur vers l'extérieur, en respectant la priorité : not, puis and, puis or. |
 | 4 | Booléens et logique | Maîtriser les tables de vérité de la conjonction et de la disjonction | non déclarée | Une disjonction n'est fausse que si les deux opérandes sont faux ; une conjonction n'est vraie que si les deux sont vrais. Écrire la table de vérité plutôt que se fier à l'intuition. |
 | 9 | Programmation | Comprendre l'appel de fonction et la valeur renvoyée | non déclarée | Le paramètre prend la valeur de l'argument à l'appel ; return renvoie une valeur à l'appelant et termine la fonction. |
 | 10 | Programmation | Distinguer effet de bord et valeur renvoyée | non déclarée | Sans return, une fonction renvoie None. Une fonction peut modifier un objet mutable reçu en paramètre tout en renvoyant None : ce sont deux choses distinctes. |
 | 13 | Algorithmique | Connaître la précondition de la recherche dichotomique | non déclarée | La dichotomie compare à l'élément central pour éliminer une moitié : cette élimination n'est valide que sur un tableau trié. La précondition fait partie de la spécification. |
-| 14 | Algorithmique | Évaluer le coût d'un algorithme de recherche | non déclarée | À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de log₂(n). Retenir les repères : 2¹⁰ ≈ 1 000, 2²⁰ ≈ 1 000 000. |
+| 14 | Algorithmique | Évaluer le coût d'un algorithme de recherche | non déclarée | À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de $\log_2(n)$. Retenir les repères : $2^{10} \approx 1 000$, $2^{20} \approx 1 000 000$. |
 | 15 | Données en tables | Distinguer enregistrement et descripteur | non déclarée | Une ligne est un enregistrement (un individu, un objet) ; une colonne est un descripteur (un attribut). La première ligne du fichier contient en général les noms des descripteurs. |
 | 16 | Données en tables | Nommer les opérations sur une table | non déclarée | Sélection : on choisit des lignes selon une condition. Projection : on choisit des colonnes. Jointure : on rapproche deux tables par un attribut commun. |
 | 17 | Architecture et systèmes | Identifier les composants du modèle de von Neumann | non déclarée | Le processeur contient l'unité arithmétique et logique (les calculs) et l'unité de commande (le séquencement) ; la mémoire contient données et instructions ; les bus les relient. |
@@ -257,50 +257,50 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Types construits : tableaux, dictionnaires, mutabilité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Programmation : fonctions, retour, portée, boucles**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Algorithmique : préconditions, recherche, tris, coût**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Données en tables, bases de données, systèmes, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Représentation binaire | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Booléens et logique | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Types construits | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Programmation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Algorithmique | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Données en tables | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Architecture et systèmes | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Représentation binaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Booléens et logique | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Types construits | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Programmation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Algorithmique | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Données en tables | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Architecture et systèmes | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 11. Bilan final
 

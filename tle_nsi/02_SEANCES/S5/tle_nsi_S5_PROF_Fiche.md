@@ -65,7 +65,7 @@ Construire le tableau avec les élèves, en manipulant l'extrait projeté :
 |---|---|---|---|
 | **Sélection** | des **lignes**, selon une condition | note > 12 | Durand et Ferrand |
 | **Projection** | des **colonnes** | nom et note | 3 lignes, 2 colonnes |
-| **Jointure** | on rapproche deux tables par un attribut commun | élèves × classes, par `classe` | table élargie |
+| **Jointure** | on rapproche deux tables par un attribut commun | élèves $\times$ classes, par `classe` | table élargie |
 
 Faire manipuler physiquement : masquer des lignes avec une bande de papier (sélection), plier
 la feuille pour cacher des colonnes (projection). Le geste distingue les deux opérations mieux
@@ -140,7 +140,7 @@ referme sur lui-même : c'est la conclusion à faire formuler.
 ## Évaluation finale — 35 minutes
 
 Distribuer `03_EVALUATIONS/tle_nsi_Evaluation_Finale_ELEVE.md`. Sept exercices, un par
-domaine, avec certitude déclarée. Aucune note : la copie est relue avec la matrice réussite ×
+domaine, avec certitude déclarée. Aucune note : la copie est relue avec la matrice réussite $\times$
 confiance et comparée au positionnement initial.
 
 ## Bilan — 15 minutes

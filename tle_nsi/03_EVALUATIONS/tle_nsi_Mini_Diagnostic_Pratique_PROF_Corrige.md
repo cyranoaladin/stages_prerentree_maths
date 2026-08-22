@@ -71,7 +71,7 @@ spécification : c'est un constat à part.
 
 ### Exercice 4 — Déboguer
 
-a) `maximum([-5, -2, -8])` renvoie **0**, alors que le maximum est **−2**. Tout appel avec une
+a) `maximum([-5, -2, -8])` renvoie **0**, alors que le maximum est **$- 2$**. Tout appel avec une
 liste d'entiers strictement négatifs convient.
 
 b) L'accumulateur est initialisé à **0**, valeur arbitraire qui n'appartient pas

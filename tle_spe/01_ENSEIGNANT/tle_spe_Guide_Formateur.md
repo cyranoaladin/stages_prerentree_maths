@@ -64,7 +64,7 @@ Les cinq erreurs structurantes du groupe :
 
 1. le sens de variation d'une suite géométrique déduit du **signe** de la raison au lieu de
    sa position par rapport à 1 ;
-2. le sens de variation d'une suite récurrente annoncé sans calcul de u(n+1) − u_n ;
+2. le sens de variation d'une suite récurrente annoncé sans calcul de $u_{n+1} - u_n$ ;
 3. les exposants **additionnés** lors d'une division d'exponentielles ;
 4. la règle du signe du trinôme appliquée sans regarder le signe du coefficient dominant ;
 5. le signe de f' confondu avec le signe de f.
@@ -112,7 +112,7 @@ C'est la phase qui fait le stage. Elle se conduit en cinq temps, toujours les m�
    prononcé ici suffit à faire changer d'avis sans qu'aucune conception ait été traitée.
 3. **Mettre à l'épreuve** : calcul des premiers termes, test numérique, contre-exemple.
    Le cas doit être choisi pour que l'erreur soit visible — c'est le point technique de la
-   phase (voir la séance 2 : le test en x = 1 ne discrimine rien).
+   phase (voir la séance 2 : le test en $x = 1$ ne discrimine rien).
 4. **Faire verbaliser la contradiction** par un élève, à voix haute, avec ses mots.
 5. **Seulement alors, reconstruire.**
 
@@ -199,9 +199,9 @@ individuellement, pas en petit groupe.
 
 | Quand | Quoi |
 |---|---|
-| J−7 | Lire les huit livrets individuels ; repérer les parcours de la séance 1 |
-| J−3 | Préparer les supports : cartes, bandes numériques, gabarits, arbres pondérés |
-| J−1 | Photocopier les fiches élèves des cinq séances et les portfolios |
+| $J - 7$ | Lire les huit livrets individuels ; repérer les parcours de la séance 1 |
+| $J - 3$ | Préparer les supports : cartes, bandes numériques, gabarits, arbres pondérés |
+| $J - 1$ | Photocopier les fiches élèves des cinq séances et les portfolios |
 | Séance 1, début | Faire passer le mini-diagnostic complémentaire (20 min) |
 | Séance 1, fin | Dépouiller le mini-diagnostic ; ajuster la séance 5 en conséquence |
 | Séance 5, fin | Dépouiller l'évaluation finale ; remplir la comparaison initiale/finale |

@@ -26,7 +26,7 @@ Chaque exercice ci-dessous reprend **une compétence précise** que ton position
 
 *Compétence visée : Accéder à une valeur par sa clé dans un dictionnaire.*
 
-**Soit d = {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?**
+**Soit $d =$ {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?**
 
 Propriété, relation ou précondition utilisée :
 
@@ -42,9 +42,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 2 — Types construits
 
@@ -66,9 +66,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 3 — Algorithmique
 
@@ -90,9 +90,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 4 — Données en tables
 
@@ -114,9 +114,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 5 — Données en tables
 
@@ -138,9 +138,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 6 — Représentation binaire
 
@@ -162,9 +162,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 7 — Représentation binaire
 
@@ -186,15 +186,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 8 — Programmation
 
 *Compétence visée : Distinguer effet de bord et valeur renvoyée.*
 
-**Soit def h(L): L.append(0). Que vaut r après r = h([1, 2]) ? Si on écrit M = [1, 2] puis h(M), que contient M ?**
+**Soit def $h(L)$: L.append(0). Que vaut r après $r = h([1$, 2]) ? Si on écrit $M = [1$, 2] puis $h(M)$, que contient M ?**
 
 Propriété, relation ou précondition utilisée :
 
@@ -210,15 +210,15 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## Exercice 9 — Programmation
 
 *Compétence visée : Construire un accumulateur dans une boucle.*
 
-**Soit s = 0 puis « for i in range(1, 6): s = s + i*i ». Que vaut s ? Dresser la table de trace.**
+**Soit $s = 0$ puis « for i in range(1, 6): $s = s + i$*i ». Que vaut s ? Dresser la table de trace.**
 
 Propriété, relation ou précondition utilisée :
 
@@ -234,9 +234,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_nsi.md`._

@@ -34,7 +34,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -50,8 +50,8 @@ Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni devi
 |---|---:|---|---|
 | Second degré | 100 % | Acquis disponible | Première spécialité — « Équations, fonctions polynômes du second degré » : forme canonique, discriminant, racines, factorisation, signe du trinôme. |
 | Dérivation | 100 % | Réussite hésitante | Première spécialité — « Dérivation » et « Variations et courbes représentatives des fonctions » : nombre dérivé, tangente, dérivées des fonctions usuelles, dérivée d'un produit et d'un quotient, lien signe de f' / variations de f. |
-| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée. |
-| Suites numériques | 100 % | Acquis disponible | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes. |
+| Fonction exponentielle | 100 % | Acquis disponible | Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée. |
+| Suites numériques | 100 % | Acquis disponible | Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes. |
 | Produit scalaire | 100 % | Acquis disponible | Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection. |
 
 _Ces chiffres décrivent ta réussite domaine par domaine. Ce livret ne donne pas de note._
@@ -78,15 +78,15 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 ### Fonction exponentielle — 100 % · Acquis disponible · **ENTRETENIR**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle exp(a+b) = exp(a)exp(b), stricte positivité, sens de variation, dérivée.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Fonction exponentielle » : définition, relation fonctionnelle $\exp(a+b) = \exp(a)\exp(b)$, stricte positivité, sens de variation, dérivée.
 
-**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles y' = ay + b et le support des croissances comparées.
+**Ce que la Terminale en fera.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Analyse : « Fonction logarithme », « Limites des fonctions », « Primitives, équations différentielles ».
 
 ### Suites numériques — 100 % · Acquis disponible · **ENTRETENIR**
 
-**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de u(n+1) − u(n), sommes de termes.
+**Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Suites numériques, modèles discrets » : suites arithmétiques et géométriques, terme général, sens de variation par l'étude du signe de $u_{n+1} - u_n$, sommes de termes.
 
 **Ce que la Terminale en fera.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
@@ -96,7 +96,7 @@ Pour chaque domaine évalué, voici ce que le programme de Terminale en fera. C'
 
 **Ce que tu dois avoir en entrant en Terminale.** Première spécialité — « Calcul vectoriel et produit scalaire » et « Géométrie repérée » : expression analytique en repère orthonormé, critère d'orthogonalité, projection.
 
-**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « u·v = 0 » devient l'outil de démonstration principal en géométrie dans l'espace.
+**Ce que la Terminale en fera.** Le produit scalaire est généralisé à l'espace : orthogonalité de deux droites, vecteur normal à un plan, équation cartésienne d'un plan, distance d'un point à un plan, représentations paramétriques. Le critère « $u \cdot v = 0$ » devient l'outil de démonstration principal en géométrie dans l'espace.
 
 **Au programme officiel :** Terminale, spécialité mathématiques — Géométrie : « Orthogonalité et distances dans l'espace », « Représentations paramétriques et équations cartésiennes ».
 
@@ -150,7 +150,7 @@ Sur **2 item(s)**, ta réponse était juste mais l'assurance n'y était pas enco
 | Item | Domaine | Compétence | Ta certitude | Le geste qui la rendra sûre |
 |---:|---|---|:---:|---|
 | 5 | Dérivation | Dériver un produit | 4/4 | Poser u et v, écrire u' et v' à part, puis appliquer (uv)' = u'v + uv' avant de développer. |
-| 6 | Dérivation | Dériver un quotient | 2/4 | Appliquer (u/v)' = (u'v − uv')/v². L'ordre du numérateur n'est pas commutatif : u'v vient en premier. |
+| 6 | Dérivation | Dériver un quotient | 2/4 | Appliquer (u/v)' = (u'$v -$ uv')$/v^2$. L'ordre du numérateur n'est pas commutatif : u'v vient en premier. |
 
 <div class="page-break"></div>
 
@@ -203,48 +203,48 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Second degré | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Dérivation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Fonction exponentielle | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Suites numériques | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Produit scalaire | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Second degré | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Dérivation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Fonction exponentielle | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Suites numériques | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Produit scalaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 11. Bilan final
 

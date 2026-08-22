@@ -5,10 +5,16 @@
 
 Une bande cartonnée par élève, avec deux lignes de cases.
 
-```
-valeurs :  │  5  │  7  │  9  │ 11  │
-indices +  │  0  │  1  │  2  │  3  │
-indices −  │ −4  │ −3  │ −2  │ −1  │
+```{=latex}
+\begin{center}\small
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|>{\bfseries}l|c|c|c|c|}\hline
+\rowcolor{SoftBlue}
+valeurs & 5 & 7 & 9 & 11 \\\hline
+indices positifs & 0 & 1 & 2 & 3 \\\hline
+indices négatifs & $-4$ & $-3$ & $-2$ & $-1$ \\\hline
+\end{tabular}
+\end{center}
 ```
 
 **Usage.** L'élève pointe une case et lit les deux indices possibles. Le fait de voir
@@ -114,7 +120,7 @@ file défile au début (`pop(0)`). Une ligne sépare les deux structures.
 >
 > Si elle modifie : **je n'affecte pas son résultat.**
 >
-> **Les indices commencent à 0.** Pour n éléments, le dernier est n − 1.
+> **Les indices commencent à 0.** Pour n éléments, le dernier est $n - 1$.
 > **Une clé peut être absente :** `get` plutôt que les crochets, en cas de doute.
 
 ## Matériel à prévoir

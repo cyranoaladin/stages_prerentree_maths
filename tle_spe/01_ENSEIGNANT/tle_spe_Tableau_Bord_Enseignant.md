@@ -105,27 +105,27 @@ L'aide maximale utilisée doit décroître entre la séance 1 et la séance 5.
 
 | Élève | S1 | S2 | S3 | S4 | S5 | Décroissance observée |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Adam Zahouani | | | | | | ☐oui ☐non |
-| Alexandre Zahouani | | | | | | ☐oui ☐non |
-| Sara Bsiri | | | | | | ☐oui ☐non |
-| Yassine Ben Hassine | | | | | | ☐oui ☐non |
-| Melek Smida | | | | | | ☐oui ☐non |
-| Inès Darghouth | | | | | | ☐oui ☐non |
-| Rostom Fekih | | | | | | ☐oui ☐non |
-| Inès Ben Yahia | | | | | | ☐oui ☐non |
+| Adam Zahouani | | | | | | $\square$oui $\square$non |
+| Alexandre Zahouani | | | | | | $\square$oui $\square$non |
+| Sara Bsiri | | | | | | $\square$oui $\square$non |
+| Yassine Ben Hassine | | | | | | $\square$oui $\square$non |
+| Melek Smida | | | | | | $\square$oui $\square$non |
+| Inès Darghouth | | | | | | $\square$oui $\square$non |
+| Rostom Fekih | | | | | | $\square$oui $\square$non |
+| Inès Ben Yahia | | | | | | $\square$oui $\square$non |
 
 ## 5. Critères de réussite du stage
 
 | Élève | Plus de certitude erronée | Propriété écrite avant calcul | Contrôle systématique | Aide en baisse | Plan de septembre rempli |
 |---|:---:|:---:|:---:|:---:|:---:|
-| Adam Zahouani | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Alexandre Zahouani | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Sara Bsiri | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Yassine Ben Hassine | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Melek Smida | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Inès Darghouth | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Rostom Fekih | ☐ | ☐ | ☐ | ☐ | ☐ |
-| Inès Ben Yahia | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Adam Zahouani | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Alexandre Zahouani | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Sara Bsiri | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Yassine Ben Hassine | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Melek Smida | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Inès Darghouth | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Rostom Fekih | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| Inès Ben Yahia | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 6. Accès aux dossiers nominatifs
 

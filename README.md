@@ -20,6 +20,7 @@ Ouvrez ensuite `http://localhost:8000`. Le portail public est dans `dist/site-pu
   - `requirements.lock` est généré avec `pip-compile`, contient l’ensemble des dépendances transitives verrouillées et leurs hashes SHA-256 ;
   - l’installation de production/CI doit utiliser `python3 -m pip install --require-hashes -r requirements.lock`.
 - **Système** : Pandoc, qpdf, Poppler (`pdftotext`), Ghostscript ou ImageMagick (`convert`/`identify`) pour l’inspection visuelle des PDF.
+- **LaTeX**, pour le rendu des stages Terminale : LuaLaTeX et `latexmk`, avec `texlive-latex-extra`, `texlive-science` (siunitx, mhchem, chemfig), `texlive-pictures`, `texlive-plain-generic`, `texlive-lang-french` et les Latin Modern OpenType (`fonts-lmodern`). Le pipeline Mathématiques, lui, n’en dépend pas.
 - Aucune police n’est téléchargée à distance : le build fonctionne hors ligne.
 
 ## Source et confidentialité
@@ -100,8 +101,33 @@ dossier par élève et par matière, les corrigés tenus à part, et les fiches 
 photocopier. Un pack élève ne peut pas contenir de corrigé — l'assemblage échoue plutôt que
 de produire un fichier douteux.
 
+#### Rendu LaTeX
+
+Les documents Terminale sont composés par **LuaLaTeX**, et non par la chaîne HTML du
+pipeline Mathématiques. Pandoc traduit chaque Markdown en LaTeX, la charte
+`tools/assets/nexus_terminale.sty` — dérivée de `_common/nexusS5.sty`, mêmes couleurs et
+mêmes encadrés — lui donne sa forme, et `latexmk` compose le PDF. Y sont chargés les
+paquets dont les trois disciplines ont besoin : `amsmath`, `mathtools` et `esvect` pour les
+mathématiques, `siunitx`, `mhchem` et `chemfig` pour la physique-chimie, `listings` pour le
+code, `pgfplots` pour les courbes.
+
+Le moteur est LuaLaTeX et non pdflatex pour une raison mesurable : avec pdflatex, `listings`
+et `inputenc` se disputent les caractères accentués des commentaires Python et composent
+« le tableau doit ê tre é tri » au lieu de « doit être trié ». LuaLaTeX lit l'UTF-8
+nativement.
+
+La source Markdown porte de vraies mathématiques — `$u_{n+1} - u_n \geqslant 0$`,
+`\ce{2H2 + O2 -> 2H2O}`, `\SI{3.0e8}{\metre\per\second}` — et non plus une approximation en
+caractères Unicode. `tools/latex_notation.py` fait la conversion : une fois pour les
+documents rédigés à la main (`make terminale-latex`), à chaque génération pour les livrets
+nominatifs, dont le texte vient des bilans PDF. Les schémas — tableaux de signes, droites
+graduées, courbes, arbres de probabilité, cube de l'espace — sont dessinés en TikZ et
+pgfplots dans des blocs `` ```{=latex} ``. Trois tests refusent une source qui repasserait
+en Unicode, qui laisserait un `$` non refermé, ou qui aurait absorbé de la prose française
+dans une formule.
+
 Les PDF **ne sont pas versionnés** (`dist/terminale/` est ignoré) : leur binaire dépend de la
-version de WeasyPrint et des polices installées. Le Markdown fait foi. Détail des réglages
+version de LuaLaTeX et des paquets TeX installés. Le Markdown fait foi. Détail des réglages
 d'impression et de la distribution : `tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md`.
 
 ### Confidentialité

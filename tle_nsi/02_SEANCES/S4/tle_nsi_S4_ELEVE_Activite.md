@@ -8,7 +8,7 @@ juste — et combien il coûte.
 
 - J'écris la **précondition** avant d'utiliser un algorithme.
 - Je compte les comparaisons, je ne me contente pas de mesurer une fois.
-- Certitude : ☐1 ☐2 ☐3 ☐4 · Aide : A, B, C, D ou E.
+- Certitude : $\square$1 $\square$2 $\square$3 $\square$4 · Aide : A, B, C, D ou E.
 
 ---
 
@@ -18,7 +18,7 @@ Quelles valeurs prend `i` dans `for i in range(1, 10, 4)` ? Combien de tours ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -44,7 +44,7 @@ def recherche_dichotomique(tableau, valeur):
 
 *Remarque : la valeur 4 est bien présente dans le tableau, à l'indice 0.*
 
-Ma prédiction : ....................  Ma certitude : ☐1 ☐2 ☐3 ☐4
+Ma prédiction : ....................  Ma certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 Sortie réelle : ....................
 
@@ -60,7 +60,7 @@ Déroule maintenant l'algorithme à la main :
 
 ....................................................................................................
 
-**Le programme a-t-il affiché une erreur ?** ☐oui ☐non
+**Le programme a-t-il affiché une erreur ?** $\square$oui $\square$non
 
 ---
 
@@ -83,7 +83,7 @@ Déroule maintenant l'algorithme à la main :
 > | 1 000 | 1 000 | 10 |
 > | 1 000 000 | 1 000 000 | 20 |
 >
-> Repères : **2¹⁰ = 1 024** et **2²⁰ ≈ 1 000 000**.
+> Repères : **$2^{10} = 1 024$** et **$2^{20} \approx 1 000 000$**.
 >
 > **Arbitrage.** Trier puis chercher coûte plus cher qu'une seule recherche séquentielle.
 > C'est rentable si l'on fait **beaucoup** de recherches dans le même tableau.
@@ -99,7 +99,7 @@ Déroule maintenant l'algorithme à la main :
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Dans un tableau trié de 1 000 éléments, combien de comparaisons au pire pour
 une recherche dichotomique ? Et pour une recherche séquentielle ?
@@ -108,7 +108,7 @@ Dichotomie : ....................  Séquentielle : ....................
 
 Justification : ...................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Déroule la recherche dichotomique de la valeur 13 dans le tableau trié
 `[1, 3, 5, 7, 9, 11, 13]`.
@@ -135,7 +135,7 @@ def recherche_dichotomique(tableau, valeur):
 ### Parcours maîtrise (exercices 3 à 6)
 
 **Exercice 5.** Écris `recherche_sequentielle(tableau, valeur)` qui renvoie l'indice de la
-valeur, ou −1. Quelle est sa précondition ? Combien de comparaisons au pire ?
+valeur, ou $- 1$. Quelle est sa précondition ? Combien de comparaisons au pire ?
 
 ```python
 
@@ -159,7 +159,7 @@ Total des comparaisons : ....................
 
 **Exercice 7.** On dispose d'un tableau de n éléments non triés et on prévoit d'y faire k
 recherches. À partir de quelle valeur de k vaut-il mieux trier d'abord ? Raisonne avec un tri
-en n log₂ n et une dichotomie en log₂ n.
+en $n \log_2 n$ et une dichotomie en $\log_2 n$.
 
 ....................................................................................................
 
@@ -218,6 +218,6 @@ Temps pour `fibo_memo(32)` : ....................
 
 ....................................................................................................
 
-**Ma certitude en algorithmique, aujourd'hui :** ☐1 ☐2 ☐3 ☐4
+**Ma certitude en algorithmique, aujourd'hui :** $\square$1 $\square$2 $\square$3 $\square$4
 
-**Aide maximale utilisée :** ☐A ☐B ☐C ☐D ☐E ☐aucune
+**Aide maximale utilisée :** $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune

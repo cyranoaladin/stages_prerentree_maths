@@ -13,7 +13,7 @@ et ce que tu voulais reprendre.
 
 ## 1. Ma carte de départ
 
-À recopier depuis ton livret individuel, rubrique « Ta carte maîtrise × confiance ».
+À recopier depuis ton livret individuel, rubrique « Ta carte maîtrise $\times$ confiance ».
 
 | Case | Domaines concernés |
 |---|---|
@@ -106,14 +106,14 @@ désormais sans y penser.
 
 | Contrôle | Domaine | Je l'utilise |
 |---|---|:---:|
-| Somme = −b/a et produit = c/a | Second degré | ☐ |
-| Test numérique sur une valeur ≠ 0 et ≠ 1 | Fonction exponentielle | ☐ |
-| Calcul des trois premiers termes | Suites numériques | ☐ |
-| Écriture séparée de u, v, u', v' | Dérivation | ☐ |
-| Le point de contact appartient à la tangente | Dérivation | ☐ |
-| Signe du produit scalaire cohérent avec l'angle | Produit scalaire | ☐ |
-| Somme des probabilités partant d'un nœud = 1 | Probabilités | ☐ |
-| Résultat du programme confronté au calcul à la main | Python | ☐ |
+| Somme = $- b/a$ et produit = c/a | Second degré | $\square$ |
+| Test numérique sur une valeur $\neq 0$ et $\neq 1$ | Fonction exponentielle | $\square$ |
+| Calcul des trois premiers termes | Suites numériques | $\square$ |
+| Écriture séparée de u, v, u', v' | Dérivation | $\square$ |
+| Le point de contact appartient à la tangente | Dérivation | $\square$ |
+| Signe du produit scalaire cohérent avec l'angle | Produit scalaire | $\square$ |
+| Somme des probabilités partant d'un nœud = 1 | Probabilités | $\square$ |
+| Résultat du programme confronté au calcul à la main | Python | $\square$ |
 
 ---
 
@@ -131,14 +131,14 @@ Reporte l'aide maximale utilisée à chaque séance. La courbe doit descendre.
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je détermine le sens de variation d'une suite | ☐ | ☐ | ☐ | ☐ |
-| J'applique les règles sur les exposants | ☐ | ☐ | ☐ | ☐ |
-| Je dresse un tableau de signes complet | ☐ | ☐ | ☐ | ☐ |
-| Je passe du signe de f' aux variations de f | ☐ | ☐ | ☐ | ☐ |
-| J'utilise le produit scalaire pour démontrer | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je détermine le sens de variation d'une suite | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'applique les règles sur les exposants | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je dresse un tableau de signes complet | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je passe du signe de f' aux variations de f | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'utilise le produit scalaire pour démontrer | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ---
 

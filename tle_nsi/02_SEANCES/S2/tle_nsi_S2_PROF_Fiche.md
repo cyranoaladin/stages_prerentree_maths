@@ -71,7 +71,7 @@ implémentation, pendant toute l'année.
 | `L[4]` | `IndexError` |
 | `len(L)` | 4 |
 
-Faire dire la règle : pour n éléments, les indices valides vont de 0 à n − 1.
+Faire dire la règle : pour n éléments, les indices valides vont de 0 à $n - 1$.
 
 **En place ou pas.**
 

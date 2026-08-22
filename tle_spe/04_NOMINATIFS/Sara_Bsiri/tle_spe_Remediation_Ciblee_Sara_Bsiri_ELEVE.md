@@ -42,9 +42,9 @@ Résolution :
 
 ....................................................................................................
 
-Contrôle effectué : ☐oui ☐non — lequel ? ......................................
+Contrôle effectué : $\square$oui $\square$non — lequel ? ......................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 <div class="page-break"></div>
 
@@ -72,7 +72,7 @@ Résolution :
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ### Option, exercice 2 — Dénombrement
 
@@ -94,7 +94,7 @@ Résolution :
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ### Option, exercice 3 — Logique
 
@@ -116,7 +116,7 @@ Résolution :
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ---
 _Source pédagogique unique : `stage_prerentree_terminale_maths.md`._

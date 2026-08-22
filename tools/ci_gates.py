@@ -25,7 +25,7 @@ SECRET_PATTERNS = [
     (re.compile(r"\bsk-[A-Za-z0-9]{20,}\b"), "API secret key"),
 ]
 SECRET_SCAN_DIRS = (
-    "4e", "3e", "2nde", "1ere_spe", "1re_nsi", "tle_spe", "tle_nsi",
+    "4e", "3e", "2nde", "1ere_spe", "1re_nsi", "tle_spe", "tle_nsi", "tle_pc",
     "content", "tools", "tests", "reports", "assets",
 )
 SECRET_SCAN_EXTENSIONS = {".md", ".py", ".json", ".csv", ".yml", ".yaml", ".css", ".js", ".html"}

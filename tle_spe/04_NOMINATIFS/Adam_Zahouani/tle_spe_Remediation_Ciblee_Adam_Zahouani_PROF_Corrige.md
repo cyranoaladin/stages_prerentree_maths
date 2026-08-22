@@ -19,7 +19,7 @@
 | Suites numériques | 42,9 % | Difficulté repérée, sans fausse certitude | **INSTALLER** |
 | Produit scalaire | 100 % | Acquis disponible | **ENTRETENIR** |
 
-**Ordre de traitement.** Fonction exponentielle (CONFRONTER) → Dérivation (INSTALLER) → Suites numériques (INSTALLER)
+**Ordre de traitement.** Fonction exponentielle (CONFRONTER) $\to$ Dérivation (INSTALLER) $\to$ Suites numériques (INSTALLER)
 
 **Calibration de la confiance.** Point fort : ton auto-évaluation est fiable — tu sais globalement ce que tu sais. C'est un vrai atout pour réviser juste, sans perdre de temps.
 
@@ -42,9 +42,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 1 — Fonction exponentielle
 
-**Énoncé.** Simplifier l'expression e^(3x) × e^(1−x) / e^(x) et donner le résultat sous la forme e^(ax+b).
+**Énoncé.** Simplifier l'expression $e^{3x} \times e^{1 - x} / e^{x}$ et donner le résultat sous la forme $e^{ax+b}$.
 
-**Corrigé.** On additionne les exposants du produit puis on soustrait celui du dénominateur : 3x + (1 − x) − x = x + 1. L'expression vaut donc e^(x+1).
+**Corrigé.** On additionne les exposants du produit puis on soustrait celui du dénominateur : $3x + (1 - x) - x = x + 1$. L'expression vaut donc $e^{x+1}$.
 
 **Geste à installer.** Diviser deux exponentielles revient à soustraire les exposants, en gardant la parenthèse autour de l'exposant soustrait.
 
@@ -52,21 +52,21 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 2 — Fonction exponentielle
 
-**Énoncé.** Résoudre dans ℝ l'équation e^(x² − 1) = 0, puis l'inéquation e^x > 0.
+**Énoncé.** Résoudre dans $\mathbb{R}$ l'équation $e^{x^2 - 1} = 0$, puis l'inéquation $e^x > 0$.
 
-**Corrigé.** La fonction exponentielle est strictement positive sur ℝ : elle ne s'annule jamais, donc l'équation e^(x² − 1) = 0 n'a aucune solution. Pour la même raison, l'inéquation e^x > 0 est vraie pour tout réel x : son ensemble de solutions est ℝ.
+**Corrigé.** La fonction exponentielle est strictement positive sur $\mathbb{R}$ : elle ne s'annule jamais, donc l'équation $e^{x^2 - 1} = 0$ n'a aucune solution. Pour la même raison, l'inéquation $e^x > 0$ est vraie pour tout réel x : son ensemble de solutions est $\mathbb{R}$.
 
-**Geste à installer.** Pour tout réel x, e^x > 0. Toute équation de la forme e^(quelque chose) = 0 ou = nombre négatif n'a aucune solution.
+**Geste à installer.** Pour tout réel x, $e^x > 0$. Toute équation de la forme $e^{quelque chose} = 0$ ou = nombre négatif n'a aucune solution.
 
-**Erreur à surveiller chez cet élève.** Associe l'équation à la valeur remarquable e¹ = e sans traiter la question posée. (constatée à l'item 12 du positionnement, donné avec une certitude de 4/4.)
+**Erreur à surveiller chez cet élève.** Associe l'équation à la valeur remarquable $e^1 = e$ sans traiter la question posée. (constatée à l'item 12 du positionnement, donné avec une certitude de 4/4.)
 
 ### Exercice 3 — Dérivation
 
-**Énoncé.** Soit f(x) = x³ − 12x. Déterminer l'intervalle sur lequel f est décroissante.
+**Énoncé.** Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante.
 
-**Corrigé.** f'(x) = 3x² − 12 = 3(x − 2)(x + 2), qui s'annule en −2 et 2 et est négatif entre ces valeurs. La fonction f est donc décroissante sur [−2 ; 2].
+**Corrigé.** $f'(x) = 3x^2 - 12 = 3(x - 2)(x + 2)$, qui s'annule en $- 2$ et 2 et est négatif entre ces valeurs. La fonction f est donc décroissante sur $[ - 2 ; 2]$.
 
-**Geste à installer.** Calculer f', la factoriser, dresser le tableau de signes, puis lire les variations. f décroît là où f' ≤ 0.
+**Geste à installer.** Calculer f', la factoriser, dresser le tableau de signes, puis lire les variations. f décroît là où $f' \leqslant 0$.
 
 **Erreur à surveiller chez cet élève.** Inverse le lien entre le signe de f' et le sens de variation. (constatée à l'item 7 du positionnement, donné avec une certitude de 2/4.)
 
@@ -74,7 +74,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** On sait que g' est strictement positive sur ]0 ; 5[. Que peut-on affirmer sur les variations de g ? Peut-on en déduire le signe de g sur cet intervalle ?
 
-**Corrigé.** g est strictement croissante sur ]0 ; 5[. En revanche, on ne peut rien affirmer sur le signe de g : la fonction g(x) = x − 10 a une dérivée strictement positive et reste négative sur ]0 ; 5[.
+**Corrigé.** g est strictement croissante sur ]0 ; 5[. En revanche, on ne peut rien affirmer sur le signe de g : la fonction $g(x) = x - 10$ a une dérivée strictement positive et reste négative sur ]0 ; 5[.
 
 **Geste à installer.** Le signe de f' renseigne sur le sens de variation de f, jamais sur le signe de f. Ce sont deux informations indépendantes.
 
@@ -82,34 +82,34 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 5 — Suites numériques
 
-**Énoncé.** Les suites (w_n) et (t_n) sont définies par w_n = 1,2^n et t_n = 3 × 0,8^n. Donner le sens de variation de chacune, en justifiant.
+**Énoncé.** Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \times 0{,}8^n$. Donner le sens de variation de chacune, en justifiant.
 
-**Corrigé.** Les deux suites sont géométriques de premier terme strictement positif. Pour (w_n), la raison 1,2 est strictement supérieure à 1 : la suite est strictement croissante. Pour (t_n), la raison 0,8 vérifie 0 < 0,8 < 1 : la suite est strictement décroissante.
+**Corrigé.** Les deux suites sont géométriques de premier terme strictement positif. Pour $(w_n)$, la raison 1,2 est strictement supérieure à 1 : la suite est strictement croissante. Pour $(t_n)$, la raison 0,8 vérifie $0 < 0{,}8 < 1$ : la suite est strictement décroissante.
 
-**Geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, 0 < r < 1 donne une suite décroissante, r > 1 une suite croissante.
+**Geste à installer.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, $0 < r < 1$ donne une suite décroissante, $r > 1$ une suite croissante.
 
 **Erreur à surveiller chez cet élève.** Croit qu'une raison strictement positive entraîne une suite croissante, sans comparer la raison à 1. (constatée à l'item 15 du positionnement, donné avec une certitude de 3/4.)
 
 ### Exercice 6 — Suites numériques
 
-**Énoncé.** La suite (u_n) est définie par u₀ = 2 et, pour tout entier naturel n, u_(n+1) = u_n − n². Étudier son sens de variation. Est-elle arithmétique ?
+**Énoncé.** La suite $(u_n)$ est définie par $u_0 = 2$ et, pour tout entier naturel n, $u_{n+1} = u_n - n^2$. Étudier son sens de variation. Est-elle arithmétique ?
 
-**Corrigé.** u_(n+1) − u_n = −n², qui est négatif ou nul pour tout entier naturel n : la suite est décroissante (au sens large). Elle n'est pas arithmétique, car l'écart entre deux termes consécutifs dépend de n et n'est donc pas constant.
+**Corrigé.** $u_{n+1} - u_n = - n^2$, qui est négatif ou nul pour tout entier naturel n : la suite est décroissante (au sens large). Elle n'est pas arithmétique, car l'écart entre deux termes consécutifs dépend de n et n'est donc pas constant.
 
-**Geste à installer.** Calculer la différence u_(n+1) − u_n et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
+**Geste à installer.** Calculer la différence $u_{n+1} - u_n$ et étudier son signe : c'est la seule méthode fiable pour une suite définie par récurrence.
 
-**Erreur à surveiller chez cet élève.** Ne calcule pas le signe de u_(n+1) − u_n avant de conclure. (constatée à l'item 16 du positionnement, donné avec une certitude de 2/4.)
+**Erreur à surveiller chez cet élève.** Ne calcule pas le signe de $u_{n+1} - u_n$ avant de conclure. (constatée à l'item 16 du positionnement, donné avec une certitude de 2/4.)
 
 ## Relevé de maîtrise
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 5 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 6 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 3 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 4 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 5 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 6 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 
@@ -117,7 +117,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles y' = ay + b et le support des croissances comparées.
+**Argument à donner à l'élève.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 ### Dérivation — INSTALLER
 

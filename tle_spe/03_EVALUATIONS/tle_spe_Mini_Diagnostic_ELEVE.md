@@ -12,7 +12,7 @@ Il n'est **pas noté**. Il sert à savoir par où commencer.
 ### Consignes
 
 - J'écris la propriété ou la relation utilisée avant de calculer.
-- Je déclare ma certitude à chaque question : ☐1 ☐2 ☐3 ☐4.
+- Je déclare ma certitude à chaque question : $\square$1 $\square$2 $\square$3 $\square$4.
 - Si je ne sais pas, je laisse vide : une question vide renseigne autant qu'une réponse.
 
 ---
@@ -30,7 +30,7 @@ b) Quelle propriété as-tu utilisée ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -47,23 +47,23 @@ b) Sont-ils incompatibles ? Justifier.
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
 **Exercice 3 — Variable aléatoire**
 
-Une variable aléatoire X prend les valeurs −1, 0 et 2 avec les probabilités 0,2 ; 0,5 et 0,3.
+Une variable aléatoire X prend les valeurs $- 1$, 0 et 2 avec les probabilités 0,2 ; 0,5 et 0,3.
 
 a) Vérifier que cette loi est bien une loi de probabilité.
 
 ....................................................................................................
 
-b) Calculer E(X).
+b) Calculer $E(X)$.
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -71,7 +71,7 @@ Certitude : ☐1 ☐2 ☐3 ☐4
 
 Voici une rédaction d'élève :
 
-> « f(x) = x² − 4x. Donc f'(x) = 2x − 4. Donc f est croissante. »
+> « $f(x) = x^2 - 4x$. Donc $f'(x) = 2x - 4$. Donc f est croissante. »
 
 Que manque-t-il à cette rédaction ? Écris ce que tu aurais ajouté.
 
@@ -79,13 +79,13 @@ Que manque-t-il à cette rédaction ? Écris ce que tu aurais ajouté.
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
 **Exercice 5 — Contrôle de vraisemblance**
 
-Un élève trouve que les racines de x² − 7x + 10 sont 2 et 6.
+Un élève trouve que les racines de $x^2 - 7x + 10$ sont 2 et 6.
 
 a) Sans les recalculer, comment peux-tu voir que c'est faux ?
 
@@ -95,7 +95,7 @@ b) Quelles sont les racines correctes ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -115,7 +115,7 @@ a) `mystere(4)` renvoie : ...........................
 
 b) Combien de tours de boucle ? ...........................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -123,9 +123,9 @@ Certitude : ☐1 ☐2 ☐3 ☐4
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je sais calculer une probabilité conditionnelle | ☐ | ☐ | ☐ | ☐ |
-| Je distingue indépendance et incompatibilité | ☐ | ☐ | ☐ | ☐ |
-| Je sais calculer une espérance | ☐ | ☐ | ☐ | ☐ |
-| Je justifie avant de conclure | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle mon résultat | ☐ | ☐ | ☐ | ☐ |
-| Je lis un programme Python simple | ☐ | ☐ | ☐ | ☐ |
+| Je sais calculer une probabilité conditionnelle | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je distingue indépendance et incompatibilité | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je sais calculer une espérance | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je justifie avant de conclure | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle mon résultat | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je lis un programme Python simple | $\square$ | $\square$ | $\square$ | $\square$ |

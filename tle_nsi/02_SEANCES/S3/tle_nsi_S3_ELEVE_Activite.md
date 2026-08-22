@@ -9,7 +9,7 @@
 - J'écris ma prédiction **avant** d'exécuter.
 - Je fais une table de trace avant de lancer une boucle.
 - Chaque fonction que j'écris a une spécification et **deux** tests.
-- Certitude : ☐1 ☐2 ☐3 ☐4 · Aide : A, B, C, D ou E.
+- Certitude : $\square$1 $\square$2 $\square$3 $\square$4 · Aide : A, B, C, D ou E.
 
 ---
 
@@ -19,7 +19,7 @@ Soit `L = [1, 2, 3]`. Que contient L après `L.insert(0, 9)` puis `L.append(4)` 
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -37,11 +37,11 @@ print("r vaut :", r)
 print("M vaut :", M)
 ```
 
-Ma prédiction pour `r` : ....................  Certitude : ☐1 ☐2 ☐3 ☐4
+Ma prédiction pour `r` : ....................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
-Ma prédiction pour `M` : ....................  Certitude : ☐1 ☐2 ☐3 ☐4
+Ma prédiction pour `M` : ....................  Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
-Sorties réelles : r = ....................  M = ....................
+Sorties réelles : $r =$ ....................  $M =$ ....................
 
 **Ce que je constate :** ...................................................................
 
@@ -84,14 +84,14 @@ Sorties réelles : r = ....................  M = ....................
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Combien d'itérations effectue `for i in range(2, 10, 3)` ? Quelles valeurs
 prend `i` ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Soit `s = 0` puis `for i in range(1, 6): s = s + i*i`. Remplis la table de
 trace, **puis** vérifie par exécution.
@@ -104,7 +104,7 @@ trace, **puis** vérifie par exécution.
 | 4 | | | |
 | 5 | | | |
 
-Valeur finale de s : ....................  Vérifiée par exécution : ☐oui ☐non
+Valeur finale de s : ....................  Vérifiée par exécution : $\square$oui $\square$non
 
 **Exercice 4.** Écris une fonction `somme_jusqua(n)` qui renvoie 1 + 2 + … + n. Ajoute une
 spécification et deux tests.
@@ -212,6 +212,6 @@ def c(L):
 
 ....................................................................................................
 
-**Ma certitude en programmation, aujourd'hui :** ☐1 ☐2 ☐3 ☐4
+**Ma certitude en programmation, aujourd'hui :** $\square$1 $\square$2 $\square$3 $\square$4
 
-**Aide maximale utilisée :** ☐A ☐B ☐C ☐D ☐E ☐aucune
+**Aide maximale utilisée :** $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune

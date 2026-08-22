@@ -114,14 +114,14 @@ Coche ceux que tu fais désormais sans y penser.
 
 | Contrôle | Domaine | Je l'utilise |
 |---|---|:---:|
-| Je recalcule la valeur décimale d'une conversion | Représentation binaire | ☐ |
-| Je parenthèse avant d'évaluer une expression booléenne | Booléens | ☐ |
-| Je sais si une instruction modifie ou construit | Types construits | ☐ |
-| J'écris les valeurs de `range` avant de coder | Programmation | ☐ |
-| J'initialise l'accumulateur avant la boucle | Programmation | ☐ |
-| J'écris une spécification et deux tests | Programmation | ☐ |
-| J'écris la précondition avant d'utiliser un algorithme | Algorithmique | ☐ |
-| Ma jointure comporte une condition `ON` | Bases de données | ☐ |
+| Je recalcule la valeur décimale d'une conversion | Représentation binaire | $\square$ |
+| Je parenthèse avant d'évaluer une expression booléenne | Booléens | $\square$ |
+| Je sais si une instruction modifie ou construit | Types construits | $\square$ |
+| J'écris les valeurs de `range` avant de coder | Programmation | $\square$ |
+| J'initialise l'accumulateur avant la boucle | Programmation | $\square$ |
+| J'écris une spécification et deux tests | Programmation | $\square$ |
+| J'écris la précondition avant d'utiliser un algorithme | Algorithmique | $\square$ |
+| Ma jointure comporte une condition `ON` | Bases de données | $\square$ |
 
 ---
 
@@ -137,16 +137,16 @@ Coche ceux que tu fais désormais sans y penser.
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je convertis entre bases 2, 10 et 16 | ☐ | ☐ | ☐ | ☐ |
-| J'écris la négation d'une condition composée | ☐ | ☐ | ☐ | ☐ |
-| J'indexe un tableau sans erreur | ☐ | ☐ | ☐ | ☐ |
-| Je distingue modifier et construire | ☐ | ☐ | ☐ | ☐ |
-| Je distingue valeur renvoyée et effet de bord | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise les bornes de `range` | ☐ | ☐ | ☐ | ☐ |
-| J'écris une spécification et deux tests | ☐ | ☐ | ☐ | ☐ |
-| J'énonce la précondition d'un algorithme | ☐ | ☐ | ☐ | ☐ |
-| Je nomme sélection, projection et jointure | ☐ | ☐ | ☐ | ☐ |
-| J'écris une requête SQL simple | ☐ | ☐ | ☐ | ☐ |
+| Je convertis entre bases 2, 10 et 16 | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la négation d'une condition composée | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'indexe un tableau sans erreur | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je distingue modifier et construire | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je distingue valeur renvoyée et effet de bord | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise les bornes de `range` | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris une spécification et deux tests | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'énonce la précondition d'un algorithme | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je nomme sélection, projection et jointure | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris une requête SQL simple | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ---
 

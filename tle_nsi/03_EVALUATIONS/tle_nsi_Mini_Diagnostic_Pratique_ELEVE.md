@@ -10,7 +10,7 @@ Elle n'est pas notée.
 
 - Je fais une **table de trace** avant d'exécuter, pour chaque exercice.
 - J'accompagne chaque fonction d'une spécification et de **deux** tests.
-- Je déclare ma certitude : ☐1 ☐2 ☐3 ☐4.
+- Je déclare ma certitude : $\square$1 $\square$2 $\square$3 $\square$4.
 - Si je ne sais pas, je laisse vide.
 
 **Nom :** ..............................................  **Date :** ......................
@@ -35,9 +35,9 @@ Prédiction pour `r` : ....................  Prédiction pour `M` : ............
 
 **Puis exécute.** Sorties réelles : ....................  et  ....................
 
-Écart avec ma prédiction : ☐aucun ☐oui, sur : ..............................
+Écart avec ma prédiction : $\square$aucun $\square$oui, sur : ..............................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -59,7 +59,7 @@ Remplis la table **avant** d'exécuter.
 
 Valeur finale de `s` : ....................
 
-Vérifiée par exécution : ☐oui ☐non   Certitude : ☐1 ☐2 ☐3 ☐4
+Vérifiée par exécution : $\square$oui $\square$non   Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -78,7 +78,7 @@ assert compte_pairs(..........) == ..........
 assert compte_pairs(..........) == ..........
 ```
 
-Mes tests passent : ☐oui ☐non   Certitude : ☐1 ☐2 ☐3 ☐4
+Mes tests passent : $\square$oui $\square$non   Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -109,7 +109,7 @@ c) Corrige-la.
 
 ```
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -128,7 +128,7 @@ assert effectifs(['a', 'b', 'a']) == ..........................
 assert effectifs([]) == ..........................
 ```
 
-Mes tests passent : ☐oui ☐non   Certitude : ☐1 ☐2 ☐3 ☐4
+Mes tests passent : $\square$oui $\square$non   Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -136,9 +136,9 @@ Mes tests passent : ☐oui ☐non   Certitude : ☐1 ☐2 ☐3 ☐4
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je prédis une sortie avant d'exécuter | ☐ | ☐ | ☐ | ☐ |
-| Je fais une table de trace | ☐ | ☐ | ☐ | ☐ |
-| Je distingue valeur renvoyée et effet de bord | ☐ | ☐ | ☐ | ☐ |
-| J'écris une spécification | ☐ | ☐ | ☐ | ☐ |
-| J'écris deux tests, dont un cas limite | ☐ | ☐ | ☐ | ☐ |
-| Je trouve un contre-exemple à un programme faux | ☐ | ☐ | ☐ | ☐ |
+| Je prédis une sortie avant d'exécuter | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je fais une table de trace | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je distingue valeur renvoyée et effet de bord | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris une spécification | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris deux tests, dont un cas limite | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je trouve un contre-exemple à un programme faux | $\square$ | $\square$ | $\square$ | $\square$ |

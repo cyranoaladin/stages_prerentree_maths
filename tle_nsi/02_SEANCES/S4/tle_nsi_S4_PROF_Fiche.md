@@ -50,16 +50,16 @@ C'est la confrontation la plus importante du module, parce que l'erreur y est **
    ```
 2. Demander la prédiction pour `recherche_dichotomique([4, 1, 9, 3], 4)`.
    La valeur 4 **est** dans le tableau, à l'indice 0 : la plupart des élèves prédiront 0.
-3. **Faire exécuter.** La fonction renvoie **−1** : « valeur absente ».
+3. **Faire exécuter.** La fonction renvoie **$- 1$** : « valeur absente ».
 4. Laisser le silence. Faire dire ce qui vient de se passer : le programme n'a pas planté, il
    n'a affiché aucune erreur — **il a simplement menti**.
 5. Faire dérouler à la main :
 
    | tour | gauche | droite | milieu | tableau[milieu] | décision |
    |---:|---:|---:|---:|---:|---|
-   | 1 | 0 | 3 | 1 | 1 | 1 < 4, on cherche à droite : gauche = 2 |
-   | 2 | 2 | 3 | 2 | 9 | 9 > 4, on cherche à gauche : droite = 1 |
-   | — | 2 | 1 | — | — | gauche > droite : la boucle s'arrête, on renvoie −1 |
+   | 1 | 0 | 3 | 1 | 1 | $1 < 4$, on cherche à droite : gauche = 2 |
+   | 2 | 2 | 3 | 2 | 9 | $9 > 4$, on cherche à gauche : droite = 1 |
+   | — | 2 | 1 | — | — | gauche > droite : la boucle s'arrête, on renvoie $- 1$ |
 
    La valeur 4, à l'indice 0, n'a jamais été regardée : l'algorithme l'a écartée dès le
    premier tour, parce qu'il a supposé le tableau trié.
@@ -89,10 +89,10 @@ C'est la confrontation la plus importante du module, parce que l'erreur y est **
 | 1 000 | 1 000 | 10 |
 | 1 000 000 | 1 000 000 | 20 |
 
-Repères à mémoriser : **2¹⁰ = 1 024** et **2²⁰ ≈ 10⁶**.
+Repères à mémoriser : **$2^{10} = 1 024$** et **$2^{20} \approx 10^6$**.
 
 Faire dire la règle : à chaque étape, la dichotomie divise la taille par deux. Le nombre
-d'étapes est le nombre de fois qu'on peut diviser n par 2, c'est-à-dire log₂(n).
+d'étapes est le nombre de fois qu'on peut diviser n par 2, c'est-à-dire $\log_2(n)$.
 
 **L'arbitrage.** Poser la question : faut-il toujours trier avant de chercher ?
 
@@ -106,7 +106,7 @@ C'est le premier raisonnement d'arbitrage algorithmique de leur scolarité : le 
 tel.
 
 **Tri par insertion.** Le faire dérouler sur `[5, 2, 8, 1]` avec des cartes physiques, en
-comptant les comparaisons. Coût : de l'ordre de n² dans le pire cas.
+comptant les comparaisons. Coût : de l'ordre de $n^2$ dans le pire cas.
 
 ## Entraînement différencié
 
@@ -152,8 +152,8 @@ fournies, exécutées, commentées, pas reproduites.
 | Erreur observée | Réponse |
 |---|---|
 | Dichotomie appliquée sans vérifier le tri | Reprendre l'exécution de la recherche de 4 dans `[4, 1, 9, 3]` |
-| Croire qu'un algorithme faux plante | Insister : il renvoie −1 sans aucune erreur |
-| log₂(n) confondu avec n/2 | Faire remplir le tableau de coûts : 1 000 000 donne 20, pas 500 000 |
+| Croire qu'un algorithme faux plante | Insister : il renvoie $- 1$ sans aucune erreur |
+| $\log_2(n)$ confondu avec n/2 | Faire remplir le tableau de coûts : 1 000 000 donne 20, pas 500 000 |
 | « Il faut toujours trier d'abord » | Faire l'arbitrage : combien de recherches prévoit-on ? |
 | Comparer deux algorithmes sur une seule exécution | Faire compter les comparaisons, pas mesurer une seule fois |
 

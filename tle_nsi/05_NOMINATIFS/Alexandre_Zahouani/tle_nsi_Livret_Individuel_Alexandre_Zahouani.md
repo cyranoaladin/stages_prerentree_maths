@@ -32,7 +32,7 @@ Les certitudes à revoir passent en premier : tant qu'on croit juste une idée f
 
 Tout ce qui suit vient de **ton** bilan. Aucun contenu n'a été ajouté ni deviné.
 
-## 2. Ta carte maîtrise × confiance
+## 2. Ta carte maîtrise $\times$ confiance
 
 | Situation | Tes domaines | Ce qu'on en fait |
 |---|---|---|
@@ -173,7 +173,7 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **D'où vient l'erreur.** Vaut 14 : décale d'une unité.
 
-**Ce qu'il faut retenir.** 13 = 8 + 4 + 1 = 2³ + 2² + 2⁰ , ce qui s'écrit 1101 en binaire.
+**Ce qu'il faut retenir.** $13 = 8 + 4 + 1 = 2^3 + 2^2 + 2^0$, ce qui s'écrit 1101 en binaire.
 
 **Le geste à installer.** Décomposer en somme de puissances de 2 décroissantes, ou diviser successivement par 2 et lire les restes de bas en haut.
 
@@ -195,9 +195,9 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **D'où vient l'erreur.** Traite F comme s'il valait 9.
 
-**Ce qu'il faut retenir.** 0x1F = 1 × 16 + 15 = 31, car en hexadécimal F représente 15.
+**Ce qu'il faut retenir.** $0x1F = 1 \times 16 + 15 = 31$, car en hexadécimal F représente 15.
 
-**Le geste à installer.** En hexadécimal, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Chaque position vaut une puissance de 16.
+**Le geste à installer.** En hexadécimal, $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$. Chaque position vaut une puissance de 16.
 
 **Ma reformulation, avec mes mots :**
 
@@ -209,7 +209,7 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Statut :** À REVOIR · certitude déclarée 4/4 — « certain »
 
-**Énoncé.** On définit d = {'a': 1, 'b': 2}. Que vaut d['b'] ?
+**Énoncé.** On définit $d =$ {'a': 1, 'b': 2}. Que vaut d['b'] ?
 
 **Ta réponse.** une erreur
 
@@ -233,15 +233,15 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Énoncé.** Comment ajouter au dictionnaire d la clé 'c' associée à la valeur 3 ?
 
-**Ta réponse.** d['c'] == 3
+**Ta réponse.** d['$c'] == 3$
 
-**Réponse attendue.** d['c'] = 3
+**Réponse attendue.** d['$c'] = 3$
 
 **D'où vient l'erreur.** == est un test d'égalité, il n'affecte aucune valeur.
 
-**Ce qu'il faut retenir.** On crée ou modifie une entrée par affectation : d['c'] = 3.
+**Ce qu'il faut retenir.** On crée ou modifie une entrée par affectation : d['$c'] = 3$.
 
-**Le geste à installer.** Une affectation d[clé] = valeur crée l'entrée si elle n'existe pas et la remplace sinon ; del d[clé] la supprime.
+**Le geste à installer.** Une affectation d[clé] $=$ valeur crée l'entrée si elle n'existe pas et la remplace sinon ; del d[clé] la supprime.
 
 **Ma reformulation, avec mes mots :**
 
@@ -279,13 +279,13 @@ Ton positionnement comporte **8 item(s)** à reprendre. Pour chacun : l'énoncé
 
 **Ta réponse.** 8
 
-**Réponse attendue.** 4 (log₂ de 16)
+**Réponse attendue.** $4 (\log_2$ de 16)
 
 **D'où vient l'erreur.** Suppose que l'on divise une seule fois la taille par deux.
 
-**Ce qu'il faut retenir.** La dichotomie divise la taille par deux à chaque étape : log₂ (16) = 4 comparaisons environ.
+**Ce qu'il faut retenir.** La dichotomie divise la taille par deux à chaque étape : $\log_2 (16) = 4$ comparaisons environ.
 
-**Le geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de log₂(n). Retenir les repères : 2¹⁰ ≈ 1 000, 2²⁰ ≈ 1 000 000.
+**Le geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de $\log_2(n)$. Retenir les repères : $2^{10} \approx 1 000$, $2^{20} \approx 1 000 000$.
 
 **Ma reformulation, avec mes mots :**
 
@@ -398,50 +398,50 @@ _L'aide maximale doit décroître entre la séance 1 et la séance 5. C'est l'un
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 2 — Types construits : tableaux, dictionnaires, mutabilité**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 3 — Programmation : fonctions, retour, portée, boucles**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 4 — Algorithmique : préconditions, recherche, tris, coût**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 **Séance 5 — Données en tables, bases de données, systèmes, évaluation**
 
 - Ce que j'ai compris : ......................................................................
 - Mon ancienne erreur : ......................................................................
 - Comment je la corrige : ......................................................................
-- Ma certitude aujourd'hui : ☐1 ☐2 ☐3 ☐4 · Aide utilisée : ☐A ☐B ☐C ☐D ☐E ☐aucune
+- Ma certitude aujourd'hui : $\square$1 $\square$2 $\square$3 $\square$4 · Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E $\square$aucune
 
 ## 10. Auto-évaluation finale
 
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
-| Je maîtrise : Représentation binaire | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Booléens et logique | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Types construits | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Programmation | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Algorithmique | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Données en tables | ☐ | ☐ | ☐ | ☐ |
-| Je maîtrise : Architecture et systèmes | ☐ | ☐ | ☐ | ☐ |
-| J'écris la propriété avant de calculer | ☐ | ☐ | ☐ | ☐ |
-| Je contrôle avant de déclarer une certitude | ☐ | ☐ | ☐ | ☐ |
-| Ma certitude est cohérente avec ma réussite | ☐ | ☐ | ☐ | ☐ |
+| Je maîtrise : Représentation binaire | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Booléens et logique | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Types construits | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Programmation | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Algorithmique | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Données en tables | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je maîtrise : Architecture et systèmes | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris la propriété avant de calculer | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je contrôle avant de déclarer une certitude | $\square$ | $\square$ | $\square$ | $\square$ |
+| Ma certitude est cohérente avec ma réussite | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## 11. Bilan final
 

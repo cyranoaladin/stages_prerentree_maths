@@ -21,7 +21,7 @@
 | Données en tables | 100 % | Réussite hésitante | **CONSOLIDER** |
 | Architecture et systèmes | 100 % | Réussite hésitante | **CONSOLIDER** |
 
-**Ordre de traitement.** Types construits (INSTALLER) → Représentation binaire (CONSOLIDER) → Booléens et logique (CONSOLIDER) → Programmation (CONSOLIDER) → Algorithmique (CONSOLIDER) → Données en tables (CONSOLIDER) → Architecture et systèmes (CONSOLIDER)
+**Ordre de traitement.** Types construits (INSTALLER) $\to$ Représentation binaire (CONSOLIDER) $\to$ Booléens et logique (CONSOLIDER) $\to$ Programmation (CONSOLIDER) $\to$ Algorithmique (CONSOLIDER) $\to$ Données en tables (CONSOLIDER) $\to$ Architecture et systèmes (CONSOLIDER)
 
 **Calibration de la confiance.** Un levier en plus des notions : ton ressenti et tes résultats ne coïncident pas toujours. Apprendre à repérer quand tu es sûr à raison — et quand tu ne l'es pas — vaut autant que le contenu lui-même.
 
@@ -51,7 +51,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 1 — Types construits
 
-**Énoncé.** Soit d = {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?
+**Énoncé.** Soit $d =$ {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?
 
 **Corrigé.** d['y'] vaut 20. L'expression d['z'] lève une erreur KeyError car la clé n'existe pas. Pour obtenir une valeur par défaut sans erreur, on écrit d.get('z', 0).
 
@@ -63,7 +63,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Écrire 22 en binaire, puis vérifier en recalculant la valeur décimale.
 
-**Corrigé.** 22 = 16 + 4 + 2 = 2⁴ + 2² + 2¹, ce qui s'écrit 10110. Vérification : 16 + 0 + 4 + 2 + 0 = 22.
+**Corrigé.** $22 = 16 + 4 + 2 = 2^4 + 2^2 + 2^1$, ce qui s'écrit 10110. Vérification : $16 + 0 + 4 + 2 + 0 = 22$.
 
 **Geste à installer.** Décomposer en somme de puissances de 2 décroissantes, ou diviser successivement par 2 et lire les restes de bas en haut.
 
@@ -73,9 +73,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Convertir 0x2A en base 10, puis convertir 60 en hexadécimal.
 
-**Corrigé.** 0x2A = 2 × 16 + 10 = 42. Pour 60 : 60 = 3 × 16 + 12, et 12 s'écrit C, donc 60 s'écrit 0x3C.
+**Corrigé.** $0x2A = 2 \times 16 + 10 = 42$. Pour 60 : $60 = 3 \times 16 + 12$, et 12 s'écrit C, donc 60 s'écrit 0x3C.
 
-**Geste à installer.** En hexadécimal, A = 10, B = 11, C = 12, D = 13, E = 14, F = 15. Chaque position vaut une puissance de 16.
+**Geste à installer.** En hexadécimal, $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, $F = 15$. Chaque position vaut une puissance de 16.
 
 **Point de vigilance.** L'item était réussi mais avec une certitude faible : l'objectif est la **vitesse et l'assurance**, pas la compréhension. Ne pas réenseigner ; faire refaire à intervalle espacé.
 
@@ -93,7 +93,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** L'expression « A ET B » est vraie uniquement lorsque… ? Écrire la table de vérité complète de A ET B, puis celle de non(A ET B).
 
-**Corrigé.** « A ET B » n'est vraie que si A et B sont tous les deux vrais. Table : (V,V) → V ; (V,F) → F ; (F,V) → F ; (F,F) → F. Sa négation non(A ET B) vaut respectivement F, V, V, V : c'est « non A OU non B » (loi de De Morgan).
+**Corrigé.** « A ET B » n'est vraie que si A et B sont tous les deux vrais. Table : (V,$V) \to V ; (V$,$F) \to F ; (F$,$V) \to F ; (F$,$F) \to F$. Sa négation non(A ET B) vaut respectivement F, V, V, V : c'est « non A OU non B » (loi de De Morgan).
 
 **Geste à installer.** Une disjonction n'est fausse que si les deux opérandes sont faux ; une conjonction n'est vraie que si les deux sont vrais. Écrire la table de vérité plutôt que se fier à l'intuition.
 
@@ -101,9 +101,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 6 — Programmation
 
-**Énoncé.** Soit def g(n): return n*n + 1. Que renvoie g(4) ? Que vaut g(g(1)) ?
+**Énoncé.** Soit def $g(n)$: return n*n + 1. Que renvoie $g(4)$ ? Que vaut $g(g(1))$ ?
 
-**Corrigé.** g(4) renvoie 4 × 4 + 1 = 17. Pour g(g(1)) : g(1) = 1 × 1 + 1 = 2, puis g(2) = 2 × 2 + 1 = 5.
+**Corrigé.** $g(4)$ renvoie $4 \times 4 + 1 = 17$. Pour $g(g(1))$ : $g(1) = 1 \times 1 + 1 = 2$, puis $g(2) = 2 \times 2 + 1 = 5$.
 
 **Geste à installer.** Le paramètre prend la valeur de l'argument à l'appel ; return renvoie une valeur à l'appelant et termine la fonction.
 
@@ -111,9 +111,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 7 — Programmation
 
-**Énoncé.** Soit def h(L): L.append(0). Que vaut r après r = h([1, 2]) ? Si on écrit M = [1, 2] puis h(M), que contient M ?
+**Énoncé.** Soit def $h(L)$: L.append(0). Que vaut r après $r = h([1$, 2]) ? Si on écrit $M = [1$, 2] puis $h(M)$, que contient M ?
 
-**Corrigé.** h ne comporte pas de return : r vaut None. En revanche la liste est mutable et modifiée en place, donc après h(M) la liste M contient [1, 2, 0].
+**Corrigé.** h ne comporte pas de return : r vaut None. En revanche la liste est mutable et modifiée en place, donc après $h(M)$ la liste M contient [1, 2, 0].
 
 **Geste à installer.** Sans return, une fonction renvoie None. Une fonction peut modifier un objet mutable reçu en paramètre tout en renvoyant None : ce sont deux choses distinctes.
 
@@ -123,7 +123,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Peut-on appliquer directement la recherche dichotomique au tableau [4, 1, 9, 3] ? Que faut-il faire avant ? Quel est alors le coût total ?
 
-**Corrigé.** Non : le tableau n'est pas trié, la précondition n'est pas vérifiée. Il faut le trier d'abord. Le coût total devient celui du tri (de l'ordre de n log n pour un tri efficace, n² pour un tri par insertion) suivi de la recherche en log n : le tri domine, sauf si l'on effectue de nombreuses recherches sur le même tableau.
+**Corrigé.** Non : le tableau n'est pas trié, la précondition n'est pas vérifiée. Il faut le trier d'abord. Le coût total devient celui du tri (de l'ordre de n log n pour un tri efficace, $n^2$ pour un tri par insertion) suivi de la recherche en log n : le tri domine, sauf si l'on effectue de nombreuses recherches sur le même tableau.
 
 **Geste à installer.** La dichotomie compare à l'élément central pour éliminer une moitié : cette élimination n'est valide que sur un tableau trié. La précondition fait partie de la spécification.
 
@@ -133,9 +133,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Dans un tableau trié de 1 000 éléments, combien de comparaisons au pire pour une recherche dichotomique ? Et pour une recherche séquentielle ?
 
-**Corrigé.** La dichotomie effectue de l'ordre de log₂(1 000) ≈ 10 comparaisons au pire, car 2¹⁰ = 1 024. La recherche séquentielle en effectue jusqu'à 1 000 : c'est le gain qui justifie de trier.
+**Corrigé.** La dichotomie effectue de l'ordre de $\log_2(1 000) \approx 10$ comparaisons au pire, car $2^{10} = 1 024$. La recherche séquentielle en effectue jusqu'à 1 000 : c'est le gain qui justifie de trier.
 
-**Geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de log₂(n). Retenir les repères : 2¹⁰ ≈ 1 000, 2²⁰ ≈ 1 000 000.
+**Geste à installer.** À chaque étape la taille est divisée par deux : le nombre d'étapes est de l'ordre de $\log_2(n)$. Retenir les repères : $2^{10} \approx 1 000$, $2^{20} \approx 1 000 000$.
 
 **Point de vigilance.** L'item était réussi mais avec une certitude faible : l'objectif est la **vitesse et l'assurance**, pas la compréhension. Ne pas réenseigner ; faire refaire à intervalle espacé.
 
@@ -183,19 +183,19 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 | Exercice | Juste sans aide | Juste avec aide | Erreur de procédure | Erreur de calcul | À reprendre |
 |---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 2 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 3 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 4 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 5 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 6 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 7 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 8 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 9 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 10 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 11 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 12 | ☐ | ☐ | ☐ | ☐ | ☐ |
-| 13 | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 1 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 2 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 3 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 4 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 5 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 6 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 7 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 8 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 9 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 10 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 11 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 12 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| 13 | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ## Conduite recommandée
 

@@ -139,8 +139,8 @@ nommées devant eux :
 
 | Articulation | Où | Contenu |
 |---|---|---|
-| Boucles et bornes | `tle_spe` S5 ↔ `tle_nsi` S3 | Le calcul des termes d'une suite en Python est écrit en mathématiques, spécifié et testé en NSI |
-| Contre-exemple | `tle_spe` S4 ↔ `tle_nsi` S3 et S4 | Réfuter une affirmation par un cas qui échoue est le même geste dans les deux disciplines |
+| Boucles et bornes | `tle_spe` $S5 \leftrightarrow$ `tle_nsi` S3 | Le calcul des termes d'une suite en Python est écrit en mathématiques, spécifié et testé en NSI |
+| Contre-exemple | `tle_spe` $S4 \leftrightarrow$ `tle_nsi` S3 et S4 | Réfuter une affirmation par un cas qui échoue est le même geste dans les deux disciplines |
 
 Un troisième lien est utile à signaler : le raisonnement sur les ordres de grandeur
 (séance 4 NSI) rejoint celui des puissances et des croissances comparées en mathématiques.
@@ -197,10 +197,10 @@ perd alors la confrontation, qui est le moment le plus utile de la séance.
 
 | Quand | Quoi |
 |---|---|
-| J−7 | Lire les cinq livrets individuels ; repérer les parcours de la séance 1 |
-| J−3 | Vérifier que les cinq scripts de `06_CODE/` s'exécutent sur les postes |
-| J−3 | Préparer les supports : réglettes, cartes, bandes d'indices, tables imprimées |
-| J−1 | Photocopier les fiches élèves, les mémentos et les portfolios |
+| $J - 7$ | Lire les cinq livrets individuels ; repérer les parcours de la séance 1 |
+| $J - 3$ | Vérifier que les cinq scripts de `06_CODE/` s'exécutent sur les postes |
+| $J - 3$ | Préparer les supports : réglettes, cartes, bandes d'indices, tables imprimées |
+| $J - 1$ | Photocopier les fiches élèves, les mémentos et les portfolios |
 | Séance 3 | Faire passer le mini-diagnostic pratique (20 min) |
 | Séance 3, fin | Dépouiller ; ajuster les séances 4 et 5 en conséquence |
 | Séance 5, fin | Dépouiller l'évaluation finale ; remplir la comparaison initiale/finale |

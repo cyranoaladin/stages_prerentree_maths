@@ -8,10 +8,10 @@
 > **Précondition de la dichotomie :** le tableau doit être **trié**.
 > Non respectée, elle ne provoque aucune erreur : le résultat est simplement faux.
 >
-> **Coûts au pire :** séquentielle n comparaisons ; dichotomie log₂ n.
-> Repères : 2¹⁰ = 1 024 · 2²⁰ ≈ 1 000 000.
+> **Coûts au pire :** séquentielle n comparaisons ; dichotomie $\log_2 n$.
+> Repères : $2^{10} = 1 024 \cdot 2^{20} \approx 1 000 000$.
 >
-> **Tri par insertion :** de l'ordre de n² comparaisons au pire.
+> **Tri par insertion :** de l'ordre de $n^2$ comparaisons au pire.
 
 ---
 
@@ -38,8 +38,8 @@
 >
 > | tour | gauche | droite | milieu | tableau[milieu] | décision |
 > |---:|---:|---:|---:|---:|---|
-> | 1 | 0 | 4 | 2 | 5 | 5 < 9 → gauche = 3 |
-> | 2 | 3 | 4 | 3 | 7 | 7 < 9 → gauche = 4 |
+> | 1 | 0 | 4 | 2 | 5 | $5 < 9 \to$ gauche = 3 |
+> | 2 | 3 | 4 | 3 | 7 | $7 < 9 \to$ gauche = 4 |
 > | 3 | 4 | 4 | 4 | 9 | trouvé, on renvoie 4 |
 >
 > **À toi de transposer**, en remplissant une ligne par tour et en n'oubliant aucune colonne.
@@ -94,7 +94,7 @@
 >    prévient pas.**
 > 2. Croire qu'un algorithme faux plante : il renvoie un résultat, avec le même aplomb qu'un
 >    résultat juste.
-> 3. Confondre log₂ n et n/2 : pour un million d'éléments, c'est 20 contre 500 000.
+> 3. Confondre $\log_2 n$ et n/2 : pour un million d'éléments, c'est 20 contre 500 000.
 > 4. Croire qu'il faut toujours trier avant de chercher : cela ne devient rentable qu'à partir
 >    d'un certain nombre de recherches.
 > 5. Comparer deux algorithmes sur une seule exécution au lieu de compter les opérations.

@@ -7,7 +7,7 @@ projection, jointure — et les écrire en SQL.
 ### Règle de travail
 
 - Je distingue **lignes** et **colonnes** avant de nommer une opération.
-- Certitude : ☐1 ☐2 ☐3 ☐4 · Aide : A, B, C, D ou E.
+- Certitude : $\square$1 $\square$2 $\square$3 $\square$4 · Aide : A, B, C, D ou E.
 
 ---
 
@@ -18,7 +18,7 @@ respectée ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -43,7 +43,7 @@ Ferrand,Sacha,TG3,17
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4
 
 ---
 
@@ -81,7 +81,7 @@ Combien de lignes ? Combien d'enregistrements ? Combien de descripteurs ?
 
 ....................................................................................................
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Pour chaque opération, écris son nom.
 
@@ -91,7 +91,7 @@ Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
 | Ne garder que les colonnes « nom » et « note » | |
 | Rapprocher la table des élèves et celle des classes | |
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Écris en SQL : « afficher le nom et la note des élèves de la classe TG3 ».
 
@@ -99,7 +99,7 @@ Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
 
 ```
 
-Certitude : ☐1 ☐2 ☐3 ☐4   Aide : ☐A ☐B ☐C ☐D ☐E
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 4.** Sur l'extrait de la partie 1, applique une sélection `note > 12` **puis** une
 projection sur `nom` et `note`. Écris la table obtenue.
@@ -214,7 +214,7 @@ commandes du shell agissant sur le système de fichiers.
 
 ....................................................................................................
 
-**Ma certitude générale en NSI, aujourd'hui :** ☐1 ☐2 ☐3 ☐4
+**Ma certitude générale en NSI, aujourd'hui :** $\square$1 $\square$2 $\square$3 $\square$4
 
 **Mon plan pour les quatre premières semaines de septembre** (à reporter dans mon livret) :
 

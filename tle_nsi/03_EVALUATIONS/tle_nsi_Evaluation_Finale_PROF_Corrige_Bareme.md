@@ -2,7 +2,7 @@
 
 ## Principe de lecture
 
-Cette évaluation **n'est pas notée**. Elle est dépouillée avec la matrice réussite ×
+Cette évaluation **n'est pas notée**. Elle est dépouillée avec la matrice réussite $\times$
 confiance, exactement comme le positionnement initial. On mesure le **déplacement** de chaque
 élève entre les deux.
 
@@ -20,9 +20,9 @@ si la réponse n'est pas encore assurée.
 
 ### Exercice 1 — Représentation binaire
 
-a) 37 = 32 + 4 + 1 = 2⁵ + 2² + 2⁰ → **100101**. Vérification : 32 + 0 + 0 + 4 + 0 + 1 = 37 ✓
+a) $37 = 32 + 4 + 1 = 2^5 + 2^2 + 2^0 \to$ **100101**. Vérification : $32 + 0 + 0 + 4 + 0 + 1 = 37 \checkmark$
 
-b) 0x3C = 3 × 16 + 12 = **60**.
+b) $0x3C = 3 \times 16 + 12 =$ **60**.
 
 c) Sur 8 bits : **256** valeurs, de 0 à 255.
 
@@ -94,7 +94,7 @@ b) L'algorithme **ne signale rien** : ni erreur, ni exception, ni ralentissement
 simplement un résultat faux — par exemple « valeur absente » pour une valeur pourtant
 présente.
 
-c) De l'ordre de **17 comparaisons**, car 2¹⁷ ≈ 131 000 dépasse 100 000. Une réponse « environ
+c) De l'ordre de **17 comparaisons**, car $2^{17} \approx 131 000$ dépasse 100 000. Une réponse « environ
 17 » ou « une vingtaine » est correcte : c'est un ordre de grandeur qui est demandé, pas une
 valeur exacte.
 
@@ -134,13 +134,13 @@ exercice sert de point d'appui en fin d'épreuve, et vérifie que l'acquis a ten
 
 | Exercice | Domaine | Juste | Faux | Vide | Certitude | Case de la matrice |
 |---:|---|:---:|:---:|:---:|:---:|---|
-| 1 | Représentation binaire | ☐ | ☐ | ☐ | ...../4 | |
-| 2 | Booléens et logique | ☐ | ☐ | ☐ | ...../4 | |
-| 3 | Types construits | ☐ | ☐ | ☐ | ...../4 | |
-| 4 | Programmation | ☐ | ☐ | ☐ | ...../4 | |
-| 5 | Algorithmique | ☐ | ☐ | ☐ | ...../4 | |
-| 6 | Données en tables | ☐ | ☐ | ☐ | ...../4 | |
-| 7 | Architecture et systèmes | ☐ | ☐ | ☐ | ...../4 | |
+| 1 | Représentation binaire | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 2 | Booléens et logique | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 3 | Types construits | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 4 | Programmation | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 5 | Algorithmique | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 6 | Données en tables | $\square$ | $\square$ | $\square$ | ...../4 | |
+| 7 | Architecture et systèmes | $\square$ | $\square$ | $\square$ | ...../4 | |
 
 ## Comparaison initiale / finale
 
@@ -158,10 +158,10 @@ exercice sert de point d'appui en fin d'épreuve, et vérifie que l'acquis a ten
 
 | Indicateur | Constat |
 |---|---|
-| Vérification effectuée à l'exercice 1 | ☐oui ☐non |
-| Table de trace remplie avant exécution (ex. 4a) | ☐oui ☐non |
-| Spécification écrite (ex. 4b) | ☐oui ☐non |
-| Deux tests dont un cas limite (ex. 4b) | ☐oui ☐non |
+| Vérification effectuée à l'exercice 1 | $\square$oui $\square$non |
+| Table de trace remplie avant exécution (ex. 4a) | $\square$oui $\square$non |
+| Spécification écrite (ex. 4b) | $\square$oui $\square$non |
+| Deux tests dont un cas limite (ex. 4b) | $\square$oui $\square$non |
 | Aide maximale utilisée en séance 5 | ....... |
 
 ## Critères de réussite du stage
