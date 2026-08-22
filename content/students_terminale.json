@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "nexus-students-terminale-v1",
+  "scope": "stages_terminale_2026",
+  "anneeScolairePreparee": "2026-2027",
+  "note": "Registre nominatif canonique du stage de pré-rentrée Terminale. Distinct de content/students.json, qui couvre les stages 4e, 3e, 2nde et 1re et n'est pas modifié. Données de mineurs : circulation locale strictement limitée.",
+  "groupes": [
+    {
+      "id": "groupe-1-maths-nsi",
+      "libelle": "Groupe 1 — Stages de mathématiques et de NSI",
+      "stages": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ],
+      "modules": [
+        "tle_spe",
+        "tle_nsi"
+      ],
+      "effectif": 4
+    },
+    {
+      "id": "groupe-2-maths",
+      "libelle": "Groupe 2 — Stage de mathématiques",
+      "stages": [
+        "Mathématiques"
+      ],
+      "modules": [
+        "tle_spe"
+      ],
+      "effectif": 2
+    },
+    {
+      "id": "groupe-3-maths-pc",
+      "libelle": "Groupe 3 — Stages de mathématiques et de physique-chimie",
+      "stages": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "modules": [
+        "tle_spe",
+        "tle_pc"
+      ],
+      "effectif": 2
+    },
+    {
+      "id": "groupe-4-pc",
+      "libelle": "Groupe 4 — Stage de physique-chimie",
+      "stages": [
+        "Physique-Chimie"
+      ],
+      "modules": [
+        "tle_pc"
+      ],
+      "effectif": 1
+    }
+  ],
+  "students": [
+    {
+      "id": "adam-zahouani",
+      "displayName": "Adam Zahouani",
+      "aliases": [
+        "Adam Zahouani",
+        "ADAM ZAHOUANI"
+      ],
+      "slug": "Adam_Zahouani",
+      "groupe": "groupe-1-maths-nsi",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "adam-zahouani--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_adam_zahouani_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_adman_zahouani_maths.pdf"
+        },
+        {
+          "module": "tle_nsi",
+          "matiere": "NSI",
+          "diagnosticId": "adam-zahouani--nsi",
+          "sourceStudentReport": "bilan-nexus-eleve_adam_zahouani_nsi.pdf",
+          "sourceParentReport": "bilan-nexus-parents_adam_zahouani_nsi.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ]
+    },
+    {
+      "id": "alexandre-zahouani",
+      "displayName": "Alexandre Zahouani",
+      "aliases": [
+        "Alexandre Zahouani",
+        "ALEXANDRE ZAHOUANI"
+      ],
+      "slug": "Alexandre_Zahouani",
+      "groupe": "groupe-1-maths-nsi",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "alexandre-zahouani--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_alexandre_zahouani_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_alexandre_zahouani_maths.pdf"
+        },
+        {
+          "module": "tle_nsi",
+          "matiere": "NSI",
+          "diagnosticId": "alexandre-zahouani--nsi",
+          "sourceStudentReport": "bilan-nexus-eleve_alexandre_zahouani_nsi.pdf",
+          "sourceParentReport": "bilan-nexus-parents_alexandre_zahouani_nsi.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ]
+    },
+    {
+      "id": "sara-bsiri",
+      "displayName": "Sara Bsiri",
+      "aliases": [
+        "Sara Bsiri",
+        "SARA BSIRI"
+      ],
+      "slug": "Sara_Bsiri",
+      "groupe": "groupe-1-maths-nsi",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "sara-bsiri--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_bsiri_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_bsiri_maths.pdf"
+        },
+        {
+          "module": "tle_nsi",
+          "matiere": "NSI",
+          "diagnosticId": "sara-bsiri--nsi",
+          "sourceStudentReport": "bilan-nexus-eleve_bsiri_nsi.pdf",
+          "sourceParentReport": "bilan-nexus-parents_bsiri_nsi.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ],
+      "optionAnnuelle": {
+        "intitule": "Mathématiques expertes",
+        "diagnosticId": "sara-bsiri--maths-expertes",
+        "sourceStudentReport": "bilan-nexus-eleve_bsiri_maths_expertes.pdf",
+        "sourceParentReport": "bilan-nexus-parents_bsiri_maths_expertes.pdf"
+      }
+    },
+    {
+      "id": "yassine-ben-hassine",
+      "displayName": "Yassine Ben Hassine",
+      "aliases": [
+        "Yassine Ben Hassine",
+        "YASSINE BEN HASSINE"
+      ],
+      "slug": "Yassine_Ben_Hassine",
+      "groupe": "groupe-1-maths-nsi",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "yassine-ben-hassine--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_yassine_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_yassine_maths.pdf"
+        },
+        {
+          "module": "tle_nsi",
+          "matiere": "NSI",
+          "diagnosticId": "yassine-ben-hassine--nsi",
+          "sourceStudentReport": "bilan-nexus-eleve_yassine_nsi.pdf",
+          "sourceParentReport": "bilan-nexus-parents_yassine_nsi.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ]
+    },
+    {
+      "id": "melek-smida",
+      "displayName": "Melek Smida",
+      "aliases": [
+        "Melek Smida",
+        "MELEK SMIDA"
+      ],
+      "slug": "Melek_Smida",
+      "groupe": "groupe-3-maths-pc",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "melek-smida--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_bensmida_maths.pdf"
+        },
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "melek-smida--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_smida_pc_terminale.pdf",
+          "sourceParentReport": "bilan-nexus-parents_smida_PC_terminale.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "optionAnnuelle": {
+        "intitule": "Mathématiques expertes",
+        "diagnosticId": "melek-smida--maths-expertes",
+        "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths_expertes.pdf",
+        "sourceParentReport": "bilan-nexus-parents_bensmida_maths_expertes.pdf"
+      }
+    },
+    {
+      "id": "ines-darghouth",
+      "displayName": "Inès Darghouth",
+      "aliases": [
+        "Inès Darghouth",
+        "Ines Darghouth",
+        "INES DARGHOUTH"
+      ],
+      "slug": "Ines_Darghouth",
+      "groupe": "groupe-2-maths",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "ines-darghouth--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_ines_darghouth_maths.pdf",
+          "sourceParentReport": "bilan-nexus-parents_ines_darghouth_maths.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques"
+      ],
+      "noteGroupe": "Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques."
+    },
+    {
+      "id": "rostom-fekih",
+      "displayName": "Rostom Fekih",
+      "aliases": [
+        "Rostom Fekih",
+        "ROSTOM FEKIH"
+      ],
+      "slug": "Rostom_Fekih",
+      "groupe": "groupe-3-maths-pc",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "diagnosticId": "rostom-fekih--maths",
+          "sourceStudentReport": "bilan-nexus-eleve_maths_rostom_fekih.pdf",
+          "sourceParentReport": "bilan-nexus-parents_maths_rostom_fekih.pdf"
+        },
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "rostom-fekih--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_PC_rostom_fekih.pdf",
+          "sourceParentReport": "bilan-nexus-parents_PC_rostom_fekih.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ]
+    },
+    {
+      "id": "ines-ben-yahia",
+      "displayName": "Inès Ben Yahia",
+      "aliases": [
+        "Inès Ben Yahia",
+        "Ines Ben Yahia",
+        "INES BEN YAHIA",
+        "Inès BEN YAHIA"
+      ],
+      "slug": "Ines_Ben_Yahia",
+      "groupe": "groupe-2-maths",
+      "active": true,
+      "specialites": [
+        "Mathématiques"
+      ],
+      "noteGroupe": "Ne suit qu'un seul enseignement de spécialité accompagné : les mathématiques.",
+      "matieres": [],
+      "matieresSansDiagnostic": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "motif": "Aucun bilan de positionnement Terminale Mathématiques n'a été passé — l'inscription est postérieure à la campagne de positionnement. Le livret ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1."
+        }
+      ]
+    },
+    {
+      "id": "mayar-ourabi",
+      "displayName": "Mayar Ourabi",
+      "aliases": [
+        "Mayar Ourabi",
+        "MAYAR OURABI",
+        "Mayar (Terminale) Ourabi"
+      ],
+      "slug": "Mayar_Ourabi",
+      "groupe": "groupe-4-pc",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "mayar-ourabi--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_mayar_PC_terminale.pdf",
+          "sourceParentReport": "bilan-nexus-parents_Mayar_PC_terminale.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "noteGroupe": "Mayar suit le stage de physique-chimie seul : les mathématiques restent une spécialité de son année de Terminale, mais elles ne font pas l'objet d'un stage de pré-rentrée pour elle."
+    }
+  ],
+  "cadre": {
+    "organisme": "Nexus Réussite",
+    "natureOrganisme": "Centre d'accompagnement scolaire",
+    "dureeParSpecialite": "10 heures",
+    "rythme": "2 heures par jour, 5 jours consécutifs",
+    "dates": "du 24 au 28 août 2026",
+    "note": "Un stage est organisé par enseignement de spécialité. Un élève qui suit deux spécialités accompagnées suit donc deux stages de 10 heures."
+  }
+}

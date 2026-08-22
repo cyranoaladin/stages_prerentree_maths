@@ -1,0 +1,243 @@
+%% nexus_terminale.sty — charte LaTeX des stages de pré-rentrée Terminale.
+%%
+%% Reprend sans changement l'identité graphique déjà en service dans le dépôt
+%% (S5_release/_common/nexusS5.sty) : mêmes couleurs, mêmes encadrés, mêmes titres.
+%% Y sont ajoutés les paquets dont les trois disciplines ont besoin et que la
+%% chaîne HTML ne pouvait pas rendre :
+%%
+%%   mathématiques  amsmath, amssymb, mathtools, esvect (vecteurs à la française),
+%%                  pgfplots pour les repères et les courbes ;
+%%   physique-chimie siunitx (unités, chiffres, incertitudes) et mhchem/chemfig
+%%                  (équations de réaction, formules développées) ;
+%%   NSI            listings (Python, SQL) et algorithm2e (pseudo-code).
+%%
+%% Le document est composé par **LuaLaTeX**, et non par pdflatex comme le reste
+%% du dépôt. La raison est mesurable : avec pdflatex, `listings` et `inputenc`
+%% se disputent les caractères accentués des commentaires Python et rendent
+%% « le tableau doit ê tre é tri » au lieu de « doit être trié » ; ni `literate`
+%% ni `extendedchars` ne corrigent la permutation sous TeX Live 2023. LuaLaTeX
+%% lit l'UTF-8 nativement et le problème disparaît. Les modules Terminale
+%% comportent du code Python et SQL commenté en français : la contrainte est
+%% structurelle, pas circonstancielle.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nexus_terminale}[2026/08/22 Nexus Reussite - charte Terminale]
+
+%% ------------------------------------------------------------------ langue
+\RequirePackage{iftex}
+\RequireLuaTeX
+\RequirePackage{fontspec}
+%% Latin Modern : la police déjà en service dans la charte S5 (paquet lmodern),
+%% ici dans sa version OpenType pour que LuaLaTeX la charge nativement.
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=MatchLowercase]
+\RequirePackage[french]{babel}
+\RequirePackage{microtype}
+\RequirePackage[a4paper,margin=16mm,top=24mm,bottom=20mm,headheight=22pt,headsep=5mm]{geometry}
+
+%% ------------------------------------------------------------ mathématiques
+\RequirePackage{amsmath,amssymb,amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{bm}
+\RequirePackage{esvect}      % \vv{u} : la flèche des programmes français
+\RequirePackage{stmaryrd}    % \llbracket n \rrbracket : intervalles d'entiers
+
+%% ---------------------------------------------------------- physique-chimie
+\RequirePackage{siunitx}
+\RequirePackage[version=4]{mhchem}
+\RequirePackage{chemfig}
+\sisetup{
+  locale = FR,                    % virgule décimale, « et » des intervalles
+  per-mode = symbol,              % m.s^{-1} plutôt qu'une fraction dans le texte
+  separate-uncertainty = true,    % (1,25 +- 0,03) V
+  range-phrase = { à },
+  range-units = single,
+  detect-weight = true,
+  detect-family = true,
+}
+%% Unités courantes au lycée que siunitx ne déclare pas lui-même. `bar` et
+%% `electronvolt` sont fournis par siunitx v3 : les redéclarer serait une erreur.
+\DeclareSIUnit\molaire{\mole\per\litre}
+\DeclareSIUnit\annee{a}
+
+%% -------------------------------------------------------------------- NSI
+\RequirePackage{listings}
+\RequirePackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+%% ---------------------------------------------------------- mise en page
+\RequirePackage[table]{xcolor}
+\RequirePackage{tabularx,array,booktabs,longtable,multirow}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+%% titlesec charge titleps, qui refuse de démarrer si \headrule a déjà été
+%% redéfini (il ne reconnaît alors plus fancyhdr). Il doit donc être chargé ici,
+%% avant la personnalisation de l'entête plus bas.
+\RequirePackage{titlesec}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{graphicx}
+\RequirePackage{lastpage}
+\RequirePackage{pgffor}
+\RequirePackage{needspace}
+\RequirePackage{upquote}
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning,calc,patterns}
+\RequirePackage{hyperref}
+\hypersetup{hidelinks,pdfcreator={Nexus Reussite},pdfproducer={pdflatex}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.3pt}
+\setlist[itemize]{leftmargin=6mm,itemsep=1.1pt,topsep=2pt}
+\setlist[enumerate]{leftmargin=7mm,itemsep=1.6pt,topsep=2pt}
+\renewcommand{\arraystretch}{1.17}
+\sloppy
+\raggedbottom
+
+%% Le français de babel met une espace fine avant : ; ! ? — mais il ne faut pas
+%% qu'elle provoque une coupure de ligne devant un deux-points de consigne.
+\frenchsetup{ThinSpaceInFrenchNumbers=true}
+
+%% ---------------------------------------------------------------- couleurs
+\definecolor{Navy}{HTML}{0B2347}
+\definecolor{Blue}{HTML}{0E5AA7}
+\definecolor{Gold}{HTML}{C9A227}
+\definecolor{SoftGold}{HTML}{F7F1D8}
+\definecolor{SoftBlue}{HTML}{EDF4FB}
+\definecolor{SoftGray}{HTML}{F4F5F7}
+\definecolor{Red}{HTML}{9E2234}
+\definecolor{Green}{HTML}{167A68}
+\definecolor{TextGray}{HTML}{526170}
+\definecolor{CodeBg}{HTML}{F2F4F7}
+\definecolor{LineGray}{HTML}{A9B0B7}
+\definecolor{Purple}{HTML}{6E4C9A}
+\definecolor{Orange}{HTML}{B86416}
+
+%% ------------------------------------------------------------- entête/pied
+\newcommand{\NexusHeadRight}{}
+\newcommand{\NexusFootLeft}{}
+\newcommand{\setnexusheader}[2]{\renewcommand{\NexusHeadRight}{#1}\renewcommand{\NexusFootLeft}{#2}}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{NEXUS RÉUSSITE}}
+%% Le titre de droite est borné et cadré à droite : sans cette boîte, un intitulé de
+%% séance un peu long chevauchait la marque en haut de chaque page.
+\rhead{\parbox[b]{0.68\headwidth}{\raggedleft\footnotesize\NexusHeadRight}}
+\cfoot{\small \NexusFootLeft \quad | \quad page \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Gold}\leaders\hrule height \headrulewidth\hfill}}
+
+%% ---------------------------------------------------------------- encadrés
+\newtcolorbox{goalbox}{enhanced,breakable,colback=SoftGold,colframe=Gold,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{methodbox}{enhanced,breakable,colback=SoftBlue,colframe=Navy,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{successbox}{enhanced,breakable,colback=green!3,colframe=Green,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{graybox}{enhanced,breakable,colback=SoftGray,colframe=TextGray,boxrule=0.65pt,arc=1.5mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{codegoalbox}{enhanced,breakable,colback=purple!3,colframe=Purple,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{warningbox}{enhanced,breakable,colback=orange!4,colframe=Orange,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+\newtcolorbox{keybox}{enhanced,breakable,colback=Red!3,colframe=Red,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+
+%% Les citations Markdown (« > ») portent dans ce corpus la trace écrite :
+%% c'est le contenu que l'élève doit garder. On lui donne l'encadré méthode.
+\renewenvironment{quote}{\begin{methodbox}}{\end{methodbox}}
+
+%% ------------------------------------------------------------------ titres
+\newcommand{\sectiontitle}[1]{\par\needspace{13mm}\vspace{1mm}{\color{Navy}\Large\bfseries #1}\par\vspace{1mm}{\color{Gold}\rule{\linewidth}{1.1pt}}\vspace{1.5mm}}
+\newcommand{\subsectiontitle}[1]{\par\needspace{8mm}\vspace{1mm}{\color{Blue}\large\bfseries #1}\par\vspace{0.8mm}}
+\newcommand{\minititle}[1]{\par\needspace{6mm}{\color{Purple}\normalsize\bfseries #1}\par\vspace{0.6mm}}
+
+%% Les titres Markdown passent par les sections LaTeX : on les redessine pour
+%% qu'ils reprennent exactement la charte ci-dessus, sans numérotation.
+\setcounter{secnumdepth}{0}
+\titleformat{\section}{\needspace{13mm}\color{Navy}\Large\bfseries}{}{0pt}{}[{\color{Gold}\rule{\linewidth}{1.1pt}}]
+\titleformat{\subsection}{\needspace{9mm}\color{Blue}\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\needspace{7mm}\color{Purple}\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{3.2mm}{1.6mm}
+\titlespacing*{\subsection}{0pt}{2.6mm}{1.2mm}
+\titlespacing*{\subsubsection}{0pt}{2.2mm}{0.9mm}
+
+%% ------------------------------------------------- outils de réponse élève
+\newcommand{\conf}{$\square$\,1\quad$\square$\,2\quad$\square$\,3\quad$\square$\,4}
+\newcommand{\worklines}[1]{\par\vspace{0.8mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.32pt}\par\vspace{5.0mm}}}
+\newcommand{\shortlines}[1]{\par\vspace{0.5mm}\foreach \n in {1,...,#1}{\rule{\linewidth}{0.3pt}\par\vspace{3.4mm}}}
+\newcommand{\cb}{$\square$}
+\newcommand{\answerbox}[1]{\begin{tcolorbox}[colback=white,colframe=LineGray,boxrule=0.45pt,arc=1mm,height=#1,left=2mm,right=2mm,top=1mm,bottom=1mm]\end{tcolorbox}}
+
+%% Ligne de réponse : le corpus Markdown l'écrit en pointillés (« ....... »).
+%% À l'impression un filet plein est plus lisible et consomme moins d'encre.
+\newcommand{\answerline}{\par\vspace{0.6mm}\noindent\rule{\linewidth}{0.32pt}\par\vspace{2.6mm}}
+
+%% ------------------------------------------------------------------ Python
+\lstdefinestyle{nexuscode}{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{CodeBg},
+  frame=single,
+  rulecolor=\color{gray!35},
+  numbers=none,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  tabsize=4,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{TextGray}{$\hookrightarrow$}\space},
+  xleftmargin=1mm,
+  framexleftmargin=1mm,
+  aboveskip=1.5mm,
+  belowskip=1.5mm,
+  keywordstyle=\color{Blue}\bfseries,
+  commentstyle=\color{Green!80!black},
+  stringstyle=\color{Red!85!black},
+}
+%% Les commentaires français passent par inputenc : `literate` n'est pas
+%% utilisable ici (dans un .sty il casse les séquences UTF-8 en octets isolés),
+%% et la charte S5 déjà en service s'en passe sans dommage.
+\lstset{style=nexuscode,language=Python}
+\lstnewenvironment{pycode}{\lstset{language=Python}}{}
+\lstnewenvironment{sqlcode}{\lstset{language=SQL}}{}
+
+%% -------------------------------------------------- macros disciplinaires
+%% Mathématiques : les notations que les trois modules emploient sans arrêt.
+%% `\R` et `\C` sont déjà pris par d'autres paquets selon l'ordre de chargement :
+%% on écrase délibérément, ces documents n'utilisent pas leur sens d'origine.
+\providecommand{\N}{}\renewcommand{\N}{\mathbb{N}}
+\providecommand{\Z}{}\renewcommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{}\renewcommand{\Q}{\mathbb{Q}}
+\providecommand{\R}{}\renewcommand{\R}{\mathbb{R}}
+\providecommand{\C}{}\renewcommand{\C}{\mathbb{C}}
+\providecommand{\e}{}\renewcommand{\e}{\mathrm{e}}
+\newcommand{\dd}{\mathop{}\!\mathrm{d}}
+\newcommand{\ps}[2]{\vv{#1}\cdot\vv{#2}}          % produit scalaire
+\newcommand{\norme}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\intervalle}[2]{\llbracket #1\,;#2 \rrbracket}
+
+%% ---------------------------------------------------------------- couverture
+\newcommand{\nexuscover}[5]{%
+\thispagestyle{empty}
+\begin{center}
+\vspace*{18mm}
+{\color{Gold}\large\bfseries PRÉ-RENTRÉE 2026-2027 \textperiodcentered\ NEXUS RÉUSSITE}\\[6mm]
+{\color{Navy}\fontsize{22}{26}\selectfont\bfseries #1}\\[4mm]
+{\color{Gold}\rule{0.55\linewidth}{1.4pt}}\\[4mm]
+{\large #2}\\[3mm]
+%% Le troisième champ peut être vide : la page de garde d'un dossier nominatif porte
+%% déjà le nom dans son sous-titre, et le répéter en gros serait un doublon.
+\def\nexustitretiers{#3}\ifx\nexustitretiers\empty\else
+{\color{Blue}\Large\bfseries #3}\\[6mm]\fi
+\end{center}
+\begin{graybox}#4\end{graybox}
+#5
+\vfill
+\begin{center}{\color{TextGray}\small Document pédagogique \textperiodcentered\ Nexus Réussite}\end{center}
+\clearpage}
+
+%% Bandeau de confidentialité des documents nominatifs.
+\newcommand{\nexusconfidentiel}[1]{\begin{keybox}\small\textbf{Document confidentiel.} #1\end{keybox}}
+
+%% ------------------------------------------------- compatibilité pandoc
+%% Macros que pandoc émet et que son gabarit par défaut définit ; comme nous
+%% utilisons notre propre gabarit, il faut les fournir ici.
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\real}[1]{#1}
+\providecommand{\pandocbounded}[1]{#1}
+\endinput

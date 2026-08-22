@@ -38,6 +38,47 @@ test:
 	pytest -q
 	python3 S5_cloture/tools/tests/test_analyze_s5.py
 
+# --- Stages de pré-rentrée Terminale (tle_spe, tle_nsi) ----------------------
+# Pipeline de documentation indépendant de tools/build.py, comme l'est déjà 1re_nsi.
+# Aucune cible existante n'est modifiée.
+#
+# terminale-extract n'est pas exécutée en intégration continue : le rendu du texte d'un PDF
+# dépend de la version de pypdf, et content/diagnostics_terminale.json est un artefact
+# committé et relu. La CI vérifie en revanche que les documents nominatifs dérivent bien de
+# cet artefact (terminale-check).
+
+.PHONY: terminale terminale-extract terminale-check terminale-test \
+        terminale-pdf terminale-pdf-list terminale-latex terminale-latex-check
+
+terminale:
+	python3 tools/build_terminale.py
+
+terminale-extract:
+	python3 tools/extract_bilans_terminale.py
+
+terminale-check:
+	python3 tools/build_terminale.py --check
+
+# Notation mathématique. terminale-latex réécrit les documents rédigés à la main en
+# LaTeX ; terminale-latex-check se contente de signaler ce qui resterait à convertir et
+# c'est cette forme-là qui tourne en intégration continue.
+terminale-latex:
+	python3 tools/mathify_terminale.py
+
+terminale-latex-check:
+	python3 tools/mathify_terminale.py --check
+
+terminale-test:
+	pytest -q tests/test_terminale.py
+
+# Rendu imprimable. Exige pandoc, LuaLaTeX et latexmk ; les PDF vont dans dist/terminale/, qui
+# est ignoré par git : un PDF n'est pas reproductible d'une machine à l'autre.
+terminale-pdf:
+	python3 tools/build_terminale_pdf.py
+
+terminale-pdf-list:
+	python3 tools/build_terminale_pdf.py --list
+
 # --- Nexus S5 — Correction & Bilans -----------------------------------------
 # Cibles ajoutées pour l'application de correction. Aucune cible existante n'est touchée.
 S5_APP := S5_correction_app
