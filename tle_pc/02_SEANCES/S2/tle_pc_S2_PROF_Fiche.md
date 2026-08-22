@@ -37,7 +37,7 @@ Newton reste une formule.
 | $\SI{10}{\minute}$ | Ouverture | Retour sur la séance 1 : deux quotients au tableau, sans support | Répond, note sa certitude |
 | $\SI{20}{\minute}$ | Confrontation | Pose : « À quoi un objet en chute libre est-il soumis ? » Recueille **sans commenter** | Répond, déclare sa certitude |
 | $\SI{25}{\minute}$ | Reconstruction | Trace la trajectoire et les vecteurs vitesse ; établit le bilan des forces | Prend la trace écrite, trace à son tour |
-| $\SI{30}{\minute}$ | Entraînement différencié | Distribue les trois parcours ; circule ; note les aides utilisées | Traite son parcours |
+| $\SI{30}{\minute}$ | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule ; note les aides utilisées | Traite son parcours |
 | $\SI{20}{\minute}$ | Ouverture Terminale | Introduit le vecteur accélération et nomme la deuxième loi de Newton | Observe, note l'ouverture |
 | $\SI{15}{\minute}$ | Trace écrite et bilan | Fait remplir la synthèse et l'auto-évaluation | Remplit, déclare sa certitude |
 
@@ -104,11 +104,17 @@ elle-même à ce contrôle.
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Livret portant « Mécanique » en priorité 1 ou 2 | Exercices 1 à 4, trajectoires fournies |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont un plan incliné |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, trajectoires fournies |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont un plan incliné |
 
 ## Ouverture sur la Terminale — 20 minutes
 

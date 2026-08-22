@@ -59,13 +59,17 @@ reconstruction et consacrer le temps gagné au parcours d'approfondissement.
 | $\SI{20}{\minute}$ | Ouverture Terminale | Ce que la Terminale fera de la notion, sans la traiter |
 | $\SI{15}{\minute}$ | Trace écrite et bilan | Synthèse écrite, certitude déclarée à nouveau |
 
-## 4. Les trois parcours
+## 4. Les cinq pistes
 
 | Parcours | Élèves concernés | Attendu |
 |---|---|---|
-| Consolidation | Domaine en priorité 1 ou 2 du livret | Exercices guidés, exemple résolu fourni |
-| Maîtrise | Domaine réussi mais hésitant | Mêmes exercices, justification écrite exigée |
-| Approfondissement | Domaine acquis avec certitude | Exercices d'extension, ouverture Terminale anticipée |
+| Diagnostiquer | Domaine laissé sans réponse au positionnement | Question 0 puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | La réponse fausse est produite avant d'être corrigée, puis exemple résolu fourni |
+| Installer | Réponse fausse avec une certitude basse | Exercices guidés, exemple résolu fourni |
+| Consolider | Domaine réussi mais hésitant | Mêmes exercices, justification écrite exigée |
+| Entretenir | Domaine acquis avec certitude | Exercices d'extension, ouverture Terminale anticipée |
+
+Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance : un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
 
 L'attribution se lit dans le livret individuel, rubrique « Parcours personnalisé séance
 par séance ». Elle n'est pas annoncée collectivement : chaque élève lit la sienne.

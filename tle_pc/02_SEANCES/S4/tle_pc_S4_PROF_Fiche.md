@@ -38,7 +38,7 @@ une association de deux lentilles, avec les mêmes rayons.
 | $\SI{20}{\minute}$ | Confrontation | Pose : « un son passe de l'air à l'eau — que devient sa fréquence ? » | Répond, déclare sa certitude |
 | $\SI{20}{\minute}$ | Reconstruction ondes | Établit $\lambda = v/f$ et l'invariance de la fréquence | Prend la trace écrite |
 | $\SI{20}{\minute}$ | Reconstruction optique | Trace les trois rayons particuliers, puis l'objet à l'infini | Trace à son tour |
-| $\SI{30}{\minute}$ | Entraînement différencié | Distribue les trois parcours ; circule ; note les aides | Traite son parcours |
+| $\SI{30}{\minute}$ | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule ; note les aides | Traite son parcours |
 | $\SI{20}{\minute}$ | Ouverture Terminale | Nomme diffraction, interférences, effet Doppler, lunette | Observe, note l'ouverture |
 
 Le bilan de certitude est intégré à la dernière phase : la séance porte deux domaines, il
@@ -109,11 +109,17 @@ que la lunette astronomique réutilisera.
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Livret portant « Ondes » ou « Optique » en priorité 1 ou 2 | Exercices 1 à 4, schémas de lentille pré-tracés |
-| Maîtrise | Domaines réussis mais hésitants | Exercices 3 à 6, construction complète exigée |
-| Approfondissement | Domaines acquis avec certitude | Exercices 6 à 8, dont une association de deux lentilles |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, schémas de lentille pré-tracés |
+| Consolider | Domaines réussis mais hésitants | Exercices 3 à 6, construction complète exigée |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont une association de deux lentilles |
 
 ## Ouverture sur la Terminale — 20 minutes
 

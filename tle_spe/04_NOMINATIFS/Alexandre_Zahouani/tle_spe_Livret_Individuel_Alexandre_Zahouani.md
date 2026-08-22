@@ -122,11 +122,11 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Suites numériques : du sens de variation à la récurrence | Fonction exponentielle (CONFRONTER) | Consolidation | | |
-| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Second degré (CONFRONTER) | Consolidation | | |
-| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Dérivation (CONFRONTER) | Consolidation | | |
-| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Suites numériques (CONFRONTER) | Consolidation | | |
-| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Produit scalaire (INSTALLER) | Consolidation | | |
+| 1 | Suites numériques : du sens de variation à la récurrence | Fonction exponentielle (CONFRONTER) | Confronter | | |
+| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Second degré (CONFRONTER) | Confronter | | |
+| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Dérivation (CONFRONTER) | Confronter | | |
+| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Suites numériques (CONFRONTER) | Confronter | | |
+| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Produit scalaire (INSTALLER) | Installer | | |
 
 **Objectif de chaque séance, pour toi :**
 

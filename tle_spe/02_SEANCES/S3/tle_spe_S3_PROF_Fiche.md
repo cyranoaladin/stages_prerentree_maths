@@ -28,7 +28,7 @@ trinôme est exactement l'outil dont on aura besoin le lendemain pour lire le si
 | 10 min | Ouverture | Contrôle sur la séance 2 : simplifier $e^{4x}/e^{x+2}$ | Répond, déclare sa certitude |
 | 20 min | Confrontation | « Sur quel intervalle $- x^2 + 3x - 2$ est-il strictement positif ? » | Répond, puis teste en $x = 0$ et $x = 1{,}5$ |
 | 25 min | Reconstruction | Discriminant, racines, factorisation ; règle du signe de a ; tableau de signes | Prend la trace écrite |
-| 30 min | Entraînement différencié | Distribue les trois parcours | Traite son parcours |
+| 30 min | Entraînement différencié | Aiguille chaque élève sur sa piste | Traite son parcours |
 | 20 min | Ouverture Terminale | Le tableau de signes d'une dérivée ; mention du théorème des valeurs intermédiaires | Observe, note |
 | 15 min | Trace écrite et bilan | Fait remplir la fiche de synthèse | Remplit, déclare sa certitude |
 
@@ -73,11 +73,25 @@ solution est $] - \infty ; - 3] \cup [3 ; + \infty [$, avec les crochets fermés
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
-|---|---|---|
-| Consolidation | Certitude erronée ou item sans réponse sur le second degré | Exercices 1 à 4, tableau de signes pré-imprimé |
-| Maîtrise | Réussite hésitante | Exercices 3 à 6, tableau à construire seul |
-| Approfondissement | Domaine acquis | Exercices 6 à 8, dont une discussion selon un paramètre |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau, pour que l'élève sache
+sans le demander ce qu'il a à faire.
+
+| Piste | Posture au diagnostic | Support | Ce qu'on exige |
+|---|---|---|---|
+| Diagnostiquer | « Second degré » laissé sans réponse | Question 0, puis exercices 1 et 2 | Une réponse écrite, quelle que soit la certitude déclarée |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 sur le second degré | Question 0, puis exercices 1 à 4, exemple résolu fourni | L'élève écrit ce qu'il croyait avant d'écrire la règle |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, exemple résolu fourni | La propriété écrite avant chaque calcul |
+| Consolider | Réussite hésitante | Exercices 3 à 6, sans exemple résolu | Justification écrite, sans carte d'aide |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont une discussion selon un paramètre | La démonstration rédigée en entier |
+| Excellence | Aucun domaine à reprendre dans tout le bilan | Exercices 9 et 10, puis rôle de vérificateur | Une rédaction complète, puis la relecture d'une copie sans en donner la réponse |
+
+**Le rôle de vérificateur.** Confier à l'élève de la piste excellence, une fois ses exercices
+rendus, la copie d'un camarade. Sa tâche n'est pas de corriger : il indique si la propriété a
+été écrite avant le calcul, si la conclusion répond à la question posée, et où le raisonnement
+s'interrompt. Ne jamais lui confier l'explication d'une notion à un camarade porteur d'une
+certitude erronée : la confrontation demande un pilotage que seul l'enseignant peut assurer.
 
 ## Ouverture sur la Terminale — 20 minutes
 
@@ -96,6 +110,38 @@ Puis annoncer le prolongement de Terminale :
 Mentionner enfin le **théorème des valeurs intermédiaires** : si f est continue et
 strictement monotone sur un intervalle, et change de signe, l'équation $f(x) = 0$ y admet une
 solution unique. Les variations en sont l'ingrédient. Ne pas aller plus loin.
+
+## Corrigé du parcours excellence
+
+**Exercice 9.**
+a) $P(2) = 16 - 12 - 6 + 2 = 0$.
+b) Par identification ou division : $a = 2$, $b = 1$, $c = - 1$, soit
+$P(x) = (x - 2)(2x^2 + x - 1)$.
+c) $\Delta = 1 + 8 = 9$, donc $x = ( - 1 - 3)/4 = - 1$ ou $x = ( - 1 + 3)/4 = 1/2$.
+d) Solutions de $P(x) = 0$ : $\{ - 1 ; 1/2 ; 2 \}$. Tableau de signes sur les quatre
+intervalles délimités par ces trois racines : P est négatif sur $] - \infty ; - 1]$, positif
+sur $[ - 1 ; 1/2]$, négatif sur $[1/2 ; 2]$, positif sur $[2 ; + \infty[$. Le coefficient
+dominant est 2, positif : le signe à l'extrême droite est positif, et alterne à chaque racine
+simple.
+
+**Exercice 10.**
+a) La faille est le cas $m = 0$ : l'équation devient $- 4x + 1 = 0$, du premier degré. Elle
+n'a pas de discriminant, et admet une unique solution. Parler de discriminant suppose
+$m \neq 0$.
+b) Si $m = 0$ : une solution, $x = 1/4$. Si $m \neq 0$ : $\Delta = 16 - 4m$, donc deux
+solutions pour $m < 4$ (et $m \neq 0$), une solution double pour $m = 4$, aucune pour
+$m > 4$.
+c) Deux cas, de nature différente : $m = 0$ (équation du premier degré) et $m = 4$ (racine
+double). C'est le point de l'exercice : reconnaître que l'unicité de la solution ne recouvre
+pas le même phénomène dans les deux cas.
+
+## Corrigé de l'ouverture maths expertes
+
+a) $252 = 1 \times 198 + 54$ ; $198 = 3 \times 54 + 36$ ; $54 = 1 \times 36 + 18$ ;
+$36 = 2 \times 18 + 0$. Le dernier reste non nul vaut 18, donc le PGCD vaut **18**.
+b) $252/198 = 14/11$.
+c) Non, 252 et 198 ont 18 pour PGCD. Oui pour 14 et 11 : leur PGCD vaut 1, c'est précisément
+ce que signifie « fraction irréductible ».
 
 ## Erreurs à surveiller et réponses à apporter
 

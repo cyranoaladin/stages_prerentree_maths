@@ -121,25 +121,25 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Suites numériques : du sens de variation à la récurrence | Dérivation (CONSOLIDER) | Maîtrise | | |
-| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Consolidation d'ensemble | Approfondissement | | |
-| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Consolidation d'ensemble | Approfondissement | | |
-| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Consolidation d'ensemble | Approfondissement | | |
-| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Consolidation d'ensemble | Approfondissement | | |
+| 1 | Suites numériques : du sens de variation à la récurrence | Dérivation (CONSOLIDER) | Consolider | | |
+| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Rédaction et raisonnement | Excellence | | |
+| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Rédaction et raisonnement | Excellence | | |
+| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Rédaction et raisonnement | Excellence | | |
+| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Rédaction et raisonnement | Excellence | | |
 
 **Objectif de chaque séance, pour toi :**
 
 - **Séance 1** — Stabiliser l'acquis encore fragile en dérivation.
-- **Séance 2** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
-- **Séance 3** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
-- **Séance 4** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
-- **Séance 5** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
+- **Séance 2** — Mener une étude de fonction complète sur un produit faisant intervenir l'exponentielle, et trancher une équation par le tableau de variations.
+- **Séance 3** — Factoriser un polynôme de degré 3 à partir d'une racine évidente, puis discuter le nombre de solutions d'une équation selon un paramètre.
+- **Séance 4** — Dériver un quotient, en déduire un encadrement de la fonction, et distinguer l'annulation de la dérivée du changement de signe.
+- **Séance 5** — Établir une probabilité en fonction d'un paramètre, la comparer à une valeur seuil par une factorisation, et la vérifier par un programme.
 
 <div class="page-break"></div>
 
 ## 6. Tes erreurs, une par une
 
-**Aucune erreur à reprendre.** Ton positionnement ne comporte ni réponse fausse, ni question laissée vide. C'est rare, et cela change la nature de ton stage : tu suis le parcours d'approfondissement dès la première séance, et le travail porte sur la **rédaction** et la **justification**, que le positionnement ne mesurait pas.
+**Aucune erreur à reprendre.** Ton positionnement ne comporte ni réponse fausse, ni question laissée vide. C'est rare, et cela change la nature de ton stage : tu suis la **piste excellence** dès la première séance — les exercices 9 et 10 de chaque fiche, un problème de type bac et une question ouverte — et le travail porte sur la **rédaction** et la **justification**, que le positionnement ne mesurait pas.
 
 ## 7. Ce que tu réussis sans en être sûr
 

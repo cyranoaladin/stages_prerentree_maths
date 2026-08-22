@@ -61,7 +61,7 @@ En attendant, l'élève suit le **parcours maîtrise** de la séance 1 : c'est l
 
 | Séance | Thème commun du stage | Focus personnel | Parcours |
 |---:|---|---|---|
-| 1 | Suites numériques : du sens de variation à la récurrence | Diagnostic initial | Maîtrise (par défaut) |
+| 1 | Suites numériques : du sens de variation à la récurrence | Diagnostic initial | Installer (par défaut) |
 | 2 | Fonction exponentielle : exposants, équations, vers le logarithme | à définir après la séance 1 | à définir |
 | 3 | Second degré : discriminant, signe du trinôme, tableau de signes | à définir après la séance 1 | à définir |
 | 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | à définir après la séance 1 | à définir |

@@ -61,7 +61,21 @@ Relis ta première réponse. Y a-t-il une force que la définition écarte ?
 
 ## Partie 3 — Entraînement
 
-### Parcours consolidation (exercices 1 à 4)
+### Comment tu trouves ton parcours
+
+Ton livret individuel porte, pour cette séance, une **posture** et un **parcours**. Le tableau
+ci-dessous dit ce que tu traites. Tu ne fais pas les huit exercices : tu fais les tiens, et tu
+les fais entièrement.
+
+| Ta posture du jour | Ce que tu traites | Ce qu'on attend de toi |
+|---|---|---|
+| **DIAGNOSTIQUER** — tu avais laissé ce domaine sans réponse | Question 0, puis exercices 1 et 2 | Répondre même sans être sûr : déclarer une certitude de 1 est une réponse, pas un aveu |
+| **CONFRONTER** — tu t'es trompé en étant sûr de toi | Question 0, puis exercices 1 à 4 | Écrire ce que tu croyais, puis ce qui l'a mis en défaut |
+| **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
+| **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
+| **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+
+### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
 **Exercice 1.** Une balle est lâchée sans vitesse initiale. On néglige l'action de l'air.
 Système, référentiel, bilan des forces.
@@ -105,11 +119,15 @@ vitesse est-il constant ? Justifier.
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-### Parcours maîtrise (exercices 3 à 6)
+### Exercices 3 à 6 — piste Consolider
 
 **Exercice 5.** Un livre est posé, immobile, sur une table horizontale. Bilan des forces.
 Pour chacune, nommer l'objet qui l'exerce. Que dit le principe d'inertie de la somme de
 ces forces ?
+
+....................................................................................................
+
+....................................................................................................
 
 ....................................................................................................
 
@@ -125,13 +143,21 @@ du poids ? Le mouvement est-il accéléré à cet instant ?
 
 ....................................................................................................
 
+....................................................................................................
+
+....................................................................................................
+
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-### Parcours approfondissement (exercices 6 à 8)
+### Exercices 6 à 8 — piste Entretenir
 
 **Exercice 7.** Un solide glisse sans frottement sur un plan incliné d'un angle $\alpha$
 avec l'horizontale. Faire le bilan des forces et préciser la direction de chacune par
 rapport au plan.
+
+....................................................................................................
+
+....................................................................................................
 
 ....................................................................................................
 
@@ -143,6 +169,12 @@ rapport au plan.
 - « Un mouvement rectiligne uniforme n'est pas accéléré. »
 
 L'une est fausse, l'autre est vraie. Laquelle, et pourquoi ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
 
 ....................................................................................................
 

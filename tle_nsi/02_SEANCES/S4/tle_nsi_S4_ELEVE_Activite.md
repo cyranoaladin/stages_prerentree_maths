@@ -92,7 +92,21 @@ Déroule maintenant l'algorithme à la main :
 
 ## Partie 3 — Entraînement
 
-### Parcours consolidation (exercices 1 à 4)
+### Comment tu trouves ton parcours
+
+Ton livret individuel porte, pour cette séance, une **posture** et un **parcours**. Le tableau
+ci-dessous dit ce que tu traites. Tu ne fais pas les huit exercices : tu fais les tiens, et tu
+les fais entièrement.
+
+| Ta posture du jour | Ce que tu traites | Ce qu'on attend de toi |
+|---|---|---|
+| **DIAGNOSTIQUER** — tu avais laissé ce domaine sans réponse | Question 0, puis exercices 1 et 2 | Répondre même sans être sûr : déclarer une certitude de 1 est une réponse, pas un aveu |
+| **CONFRONTER** — tu t'es trompé en étant sûr de toi | Question 0, puis exercices 1 à 4 | Écrire ce que tu croyais, puis ce qui l'a mis en défaut |
+| **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Exécuter avant de conclure, et écrire la table de trace |
+| **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Spécifier la fonction et écrire ses tests, sans carte d'aide |
+| **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Justifier le choix d'algorithme par son coût, pas par le temps mesuré |
+
+### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
 **Exercice 1.** Peut-on appliquer directement la recherche dichotomique au tableau
 `[4, 1, 9, 3]` ? Que faut-il faire avant ?
@@ -121,6 +135,14 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 Indice renvoyé : ....................  Nombre de comparaisons : ....................
 
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
 **Exercice 4.** Ajoute la précondition à la spécification de la fonction, puis un `assert`
 qui la vérifie.
 
@@ -132,12 +154,19 @@ def recherche_dichotomique(tableau, valeur):
     ...
 ```
 
-### Parcours maîtrise (exercices 3 à 6)
+### Exercices 3 à 6 — piste Consolider
 
 **Exercice 5.** Écris `recherche_sequentielle(tableau, valeur)` qui renvoie l'indice de la
 valeur, ou $- 1$. Quelle est sa précondition ? Combien de comparaisons au pire ?
 
 ```python
+
+
+
+
+
+
+
 
 
 
@@ -155,11 +184,23 @@ valeur, ou $- 1$. Quelle est sa précondition ? Combien de comparaisons au pire 
 
 Total des comparaisons : ....................
 
-### Parcours approfondissement (exercices 6 à 8)
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+### Exercices 6 à 8 — piste Entretenir
 
 **Exercice 7.** On dispose d'un tableau de n éléments non triés et on prévoit d'y faire k
 recherches. À partir de quelle valeur de k vaut-il mieux trier d'abord ? Raisonne avec un tri
 en $n \log_2 n$ et une dichotomie en $\log_2 n$.
+
+....................................................................................................
+
+....................................................................................................
 
 ....................................................................................................
 

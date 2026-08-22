@@ -185,12 +185,62 @@ QUADRANTS: tuple[tuple[str, str, str, str], ...] = (
 QUADRANT_BY_KEY = {key: (title, posture, method) for key, title, posture, method in QUADRANTS}
 WORKED_QUADRANTS = ("certitudes_a_revoir", "sans_reponse", "a_installer", "a_consolider")
 
+# Le livret et la fiche de séance nomment la même piste de la même façon : sans cela, un
+# élève lisant « Consolidation » dans son livret devait deviner qu'il relevait de la ligne
+# « CONFRONTER » du tableau d'aiguillage.
 PARCOURS_BY_QUADRANT = {
-    "certitudes_a_revoir": "Consolidation",
-    "sans_reponse": "Consolidation",
-    "a_installer": "Consolidation",
-    "a_consolider": "Maîtrise",
-    "acquis": "Approfondissement",
+    "certitudes_a_revoir": "Confronter",
+    "sans_reponse": "Diagnostiquer",
+    "a_installer": "Installer",
+    "a_consolider": "Consolider",
+    "acquis": "Entretenir",
+}
+
+# Un élève dont le bilan ne comporte aucun domaine à reprendre atteignait la fin de la fiche
+# avant la fin de la phase différenciée : le parcours d'approfondissement s'arrêtait à
+# l'exercice 8. Les exercices 9 et 10 de chaque séance lui sont destinés.
+PARCOURS_SANS_REPRISE = "Excellence"
+
+# Ce que chaque séance apporte à un élève qui n'a rien à reprendre sur son thème. Sans cette
+# table, toutes ses séances portaient la même phrase d'attente, qui ne disait rien de ce
+# qu'il allait faire.
+OBJECTIF_SANS_PRIORITE = {
+    "tle_spe": {
+        1: "Rédiger la démonstration du sens de variation d'une suite géométrique, puis "
+           "établir qu'une suite peut croître sans jamais dépasser une valeur.",
+        2: "Mener une étude de fonction complète sur un produit faisant intervenir "
+           "l'exponentielle, et trancher une équation par le tableau de variations.",
+        3: "Factoriser un polynôme de degré 3 à partir d'une racine évidente, puis discuter "
+           "le nombre de solutions d'une équation selon un paramètre.",
+        4: "Dériver un quotient, en déduire un encadrement de la fonction, et distinguer "
+           "l'annulation de la dérivée du changement de signe.",
+        5: "Établir une probabilité en fonction d'un paramètre, la comparer à une valeur "
+           "seuil par une factorisation, et la vérifier par un programme.",
+    },
+    "tle_nsi": {
+        1: "Justifier la correspondance entre un chiffre hexadécimal et quatre bits, et "
+           "expliquer le codage des entiers négatifs en complément à deux.",
+        2: "Implémenter une structure de données à partir d'une liste et en spécifier les "
+           "préconditions.",
+        3: "Écrire une fonction avec sa spécification et ses tests, et distinguer ce qu'elle "
+           "renvoie de ce qu'elle modifie.",
+        4: "Comparer le coût de deux algorithmes sur un même problème et justifier le choix "
+           "par le nombre d'opérations, pas par le temps mesuré.",
+        5: "Écrire une requête faisant intervenir une jointure, et traiter le même besoin "
+           "par un programme lisant le fichier.",
+    },
+    "tle_pc": {
+        1: "Conduire un tableau d'avancement jusqu'au réactif limitant sur une "
+           "transformation à trois réactifs, et écrire les demi-équations associées.",
+        2: "Établir un bilan des forces sur un plan incliné et relier la variation du vecteur "
+           "vitesse à la résultante.",
+        3: "Traiter un mouvement avec frottement par un bilan d'énergie, et identifier "
+           "l'énergie dissipée.",
+        4: "Construire l'image d'un objet placé entre le foyer et le centre optique, puis "
+           "traiter un système de deux lentilles.",
+        5: "Contrôler un résultat par son ordre de grandeur et par le nombre de chiffres "
+           "significatifs, et justifier le rejet d'une valeur.",
+    },
 }
 
 AIDES = (
@@ -325,6 +375,19 @@ def worked_domains(diagnostic: dict) -> list[tuple[str, str]]:
     return ordered
 
 
+def domains_to_fix(diagnostic: dict) -> list[str]:
+    """Domaines portant une erreur, par opposition à ceux qui ne demandent qu'à être affermis.
+
+    Un acquis hésitant se travaille par répétition, pas par remédiation : un élève qui n'a
+    qu'un domaine à consolider n'a rien à reprendre au sens strict, et relève de la piste
+    excellence sur toutes les séances où aucun focus personnel ne lui est assigné.
+    """
+    card = diagnostic["carte_maitrise_confiance"]
+    return [domain
+            for key in ("certitudes_a_revoir", "sans_reponse", "a_installer")
+            for domain in card.get(key, [])]
+
+
 def domain_quadrant(diagnostic: dict, domain: str) -> str:
     for key, _title, _posture, _method in QUADRANTS:
         if domain in diagnostic["carte_maitrise_confiance"].get(key, []):
@@ -384,17 +447,18 @@ def session_focus(diagnostic: dict, module: Module) -> list[dict[str, object]]:
             quadrant = domain_quadrant(diagnostic, focus[0]["domaine"])
         else:
             domains = "Consolidation d'ensemble"
-            objectives = (
-                "Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. "
-                "Le contenu précis est ajusté avec le groupe."
-            )
+            objectives = OBJECTIF_SANS_PRIORITE[module.key][number]
             quadrant = "acquis"
+        parcours = PARCOURS_BY_QUADRANT[quadrant]
+        if not focus and not domains_to_fix(diagnostic):
+            parcours = PARCOURS_SANS_REPRISE
+            domains = "Rédaction et raisonnement"
         rows.append({
             "seance": number,
             "theme": theme,
             "focus": domains,
             "objectif": objectives,
-            "parcours": PARCOURS_BY_QUADRANT[quadrant],
+            "parcours": parcours,
         })
     return rows
 
@@ -669,7 +733,8 @@ def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: di
     if not revisit:
         add("**Aucune erreur à reprendre.** Ton positionnement ne comporte ni réponse fausse, "
             "ni question laissée vide. C'est rare, et cela change la nature de ton stage : tu "
-            "suis le parcours d'approfondissement dès la première séance, et le travail porte "
+            "suis la **piste excellence** dès la première séance — les exercices 9 et 10 de chaque "
+            "fiche, un problème de type bac et une question ouverte — et le travail porte "
             "sur la **rédaction** et la **justification**, que le positionnement ne mesurait "
             "pas.")
         add("")
@@ -1121,10 +1186,11 @@ def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, inst
             "un camarade porteur d'une certitude erronée — la confrontation demande un pilotage "
             "que seul l'enseignant peut assurer.")
         add("")
-        add("Trois usages utiles de son temps : le parcours d'approfondissement de chaque "
-            "séance ; le rôle de **vérificateur** (relire la rédaction d'un camarade et dire si "
-            "la propriété a été écrite avant le calcul, sans donner la réponse) ; la rédaction "
-            "de démonstrations, que le positionnement ne mesure pas.")
+        add("Trois usages utiles de son temps : la **piste excellence** de chaque séance, "
+            "c'est-à-dire les exercices 9 et 10 de la fiche élève ; le rôle de "
+            "**vérificateur** (relire la rédaction d'un camarade et dire si la propriété a "
+            "été écrite avant le calcul, sans donner la réponse) ; la rédaction de "
+            "démonstrations, que le positionnement ne mesure pas.")
         add("")
 
     if option_exercises:
@@ -1255,7 +1321,7 @@ def render_missing_subject_notice(student: dict, missing: dict, module: Module,
     add("|---:|---|---|---|")
     for number, theme in module.sessions:
         focus = "Diagnostic initial" if number == 1 else "à définir après la séance 1"
-        parcours = "Maîtrise (par défaut)" if number == 1 else "à définir"
+        parcours = "Installer (par défaut)" if number == 1 else "à définir"
         add(f"| {number} | {theme} | {focus} | {parcours} |")
     add("")
 
@@ -1363,7 +1429,7 @@ def render_dashboard(module: Module, entries: list[dict]) -> str:
         for entry in entries:
             diagnostic = entry["diagnostic"]
             if diagnostic is None:
-                add(f"| {entry['name']} | Diagnostic en cours | Maîtrise (par défaut) | | | |")
+                add(f"| {entry['name']} | Diagnostic en cours | Installer (par défaut) | | | |")
                 continue
             row = next(r for r in session_focus(diagnostic, module) if r["seance"] == number)
             add(f"| {entry['name']} | {row['focus']} | {row['parcours']} | | | |")

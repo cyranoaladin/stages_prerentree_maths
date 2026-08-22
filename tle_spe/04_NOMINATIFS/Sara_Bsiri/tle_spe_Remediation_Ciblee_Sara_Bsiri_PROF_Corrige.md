@@ -56,7 +56,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Cet élève ne relève d'aucune remédiation. Deux écueils à éviter : le laisser sans tâche pendant les temps différenciés, et lui confier l'explication d'une notion à un camarade porteur d'une certitude erronée — la confrontation demande un pilotage que seul l'enseignant peut assurer.
 
-Trois usages utiles de son temps : le parcours d'approfondissement de chaque séance ; le rôle de **vérificateur** (relire la rédaction d'un camarade et dire si la propriété a été écrite avant le calcul, sans donner la réponse) ; la rédaction de démonstrations, que le positionnement ne mesure pas.
+Trois usages utiles de son temps : la **piste excellence** de chaque séance, c'est-à-dire les exercices 9 et 10 de la fiche élève ; le rôle de **vérificateur** (relire la rédaction d'un camarade et dire si la propriété a été écrite avant le calcul, sans donner la réponse) ; la rédaction de démonstrations, que le positionnement ne mesure pas.
 
 <div class="page-break"></div>
 
