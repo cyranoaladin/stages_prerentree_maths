@@ -198,7 +198,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 > le résultat, et où le raisonnement s'interrompt.
 
 **Exercice 9.** Un solide de masse $m = \SI{0.50}{\kilogram}$ glisse sur un plan
-incliné faisant un angle $\alpha = 30\degree$ avec l'horizontale. On prend
+incliné faisant un angle $\alpha = \ang{30}$ avec l'horizontale. On prend
 $g = \SI{9.8}{\newton\per\kilogram}$.
 
 a) Faire le bilan des forces et les représenter sur un schéma. Préciser, pour chacune, ce qui
@@ -314,7 +314,7 @@ Elle s'écrit $\sum \vv{F} = m \vec{a}$, où $\vec{a}$ est le **vecteur accélé
 mesure la variation du vecteur vitesse par unité de temps, et il a la même direction et le
 même sens que la résultante des forces.
 
-**a)** Reprends le solide de $\SI{0.50}{\kilogram}$ sur le plan incliné à $30\degree$, sans
+**a)** Reprends le solide de $\SI{0.50}{\kilogram}$ sur le plan incliné à $\ang{30}$, sans
 frottement. La résultante vaut $\SI{2.45}{\newton}$ le long du plan. Calcule la valeur de
 l'accélération.
 

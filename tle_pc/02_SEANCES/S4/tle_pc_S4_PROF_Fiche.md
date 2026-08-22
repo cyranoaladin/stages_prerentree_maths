@@ -144,7 +144,7 @@ comme le point où le tracé géométrique cède la place à un bilan énergéti
 ## Corrigé de la piste excellence
 
 **Exercice 9.** a) $\lambda = v/f = 340/680 = \SI{0.50}{\metre}$ ;
-$T = 1/f = \SI{1.5e-3}{\second}$.
+$T = 1/f = \SI{1.47e-3}{\second}$, soit $\SI{1.5}{\milli\second}$ à deux chiffres significatifs — c'est cette dernière écriture qu'on attend, puisque la fréquence n'en porte que deux.
 b) La fréquence et la période sont **imposées par la source** : elles ne changent pas. Seule
 la longueur d'onde change : $\lambda = 1500/680 = \SI{2.2}{\metre}$.
 c) $0{,}25/0{,}50 = 1/2$ : les détecteurs sont distants d'une demi-longueur d'onde, les

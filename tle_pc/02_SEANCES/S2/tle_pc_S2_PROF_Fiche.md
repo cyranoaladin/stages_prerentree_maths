@@ -143,8 +143,8 @@ s'arrêter là. Ne conduire aucun de ces mouvements.
 **Exercice 9.** a) Deux forces : le poids, exercé par la Terre, vertical vers le bas ; la
 réaction normale du support, perpendiculaire au plan. Exiger que chaque force soit nommée avec
 ce qui l'exerce.
-b) $P_x = 0{,}50 \times 9{,}8 \times \sin 30\degree = \SI{2.45}{\newton}$.
-c) $R = 0{,}50 \times 9{,}8 \times \cos 30\degree = \SI{4.2}{\newton}$.
+b) $P_x = 0{,}50 \times 9{,}8 \times \sin \ang{30} = \SI{2.45}{\newton}$.
+c) $R = 0{,}50 \times 9{,}8 \times \cos \ang{30} = \SI{4.2}{\newton}$.
 d) Non : la composante normale se compense, mais $P_x$ ne l'est par rien. La résultante vaut
 $\SI{2.45}{\newton}$ le long du plan, donc le vecteur vitesse varie — le mouvement est
 accéléré vers le bas.

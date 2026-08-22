@@ -38,6 +38,9 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_seances import render_cahier  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -1590,6 +1593,17 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                 render_livret(student, subject, diagnostic, instrument, module, group,
                               frame, attached)
             )
+            # Le cahier de séances : les cinq séances écrites pour cet élève, avec ses
+            # exercices et son objectif. Il remplace, pour lui, la fiche collective.
+            documents[f"{directory}/{module.key}_Cahier_Seances_{suffix}.md"] = (
+                render_cahier(
+                    student, subject, module,
+                    session_focus(diagnostic, module),
+                    _remediation_exercises(diagnostic, instrument["items"]),
+                    frame, group, CONFIDENTIAL_BANNER,
+                    option_ouverte=bool(attached), root=root, diagnostic=diagnostic,
+                )
+            )
             documents[f"{directory}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md"] = (
                 render_remediation_eleve(student, subject, diagnostic, instrument, module,
                                          attached)
@@ -1621,6 +1635,24 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
             directory = f"{module.key}/{module.nominative_dir}/{student['slug']}"
             documents[f"{directory}/{module.key}_Livret_Individuel_{suffix}.md"] = (
                 render_missing_subject_notice(student, missing, module, group, frame)
+            )
+            # Le cahier de séances existe aussi pour lui : sans positionnement, il n'y a pas
+            # de priorité personnelle à écrire, mais il y a un noyau commun auquel il a
+            # droit. La piste par défaut est celle de l'installation, la plus étayée, et
+            # elle sera corrigée dès que la séance 1 aura produit un constat.
+            documents[f"{directory}/{module.key}_Cahier_Seances_{suffix}.md"] = (
+                render_cahier(
+                    student, missing, module,
+                    [{"seance": number, "theme": theme,
+                      "focus": "Diagnostic à établir en séance 1",
+                      "objectif": ("Établir ce qui est acquis sur ce thème, puis consolider "
+                                   "ce qui en a besoin. Le contenu précis sera ajusté avec "
+                                   "toi dès la première séance."),
+                      "parcours": "Installer"}
+                     for number, theme in module.sessions],
+                    [], frame, group, CONFIDENTIAL_BANNER,
+                    option_ouverte=False, root=root, diagnostic=None,
+                )
             )
             module_entries[module.key].append({
                 "name": student["displayName"],

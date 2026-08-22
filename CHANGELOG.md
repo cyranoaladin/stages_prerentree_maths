@@ -1,5 +1,50 @@
 # Journal des modifications
 
+## 2026.8 — 2026-08-22
+
+- Ajout des **cahiers de séances nominatifs** : un cahier par élève et par matière, couvrant
+  les cinq séances. Les fiches collectives restaient la seule chose que l'élève avait sous
+  les yeux pendant la séance ; il y trouvait les huit exercices du groupe, dont la moitié ne
+  le concernait pas, et devait ouvrir son livret pour savoir lesquels étaient les siens. Le
+  cahier assemble, pour lui seul, la progression commune et ce que son bilan dit de lui :
+  objectif personnel, rappel de son diagnostic, automatismes, définitions et propriétés,
+  méthode pas à pas, exemple résolu quand sa posture le demande, uniquement les exercices de
+  sa piste, ses exercices issus de ses propres erreurs, indices gradués, transfert,
+  passerelle Terminale, prise de recul, question de sortie et travail inter-séances.
+  Quinze cahiers, de 17 à 25 pages.
+- L'étayage dépend désormais de la posture diagnostique et non d'un niveau supposé. Un élève
+  porteur d'une certitude erronée produit sa réponse avant toute correction ; un élève lucide
+  sur ce qui lui manque reçoit l'exemple résolu tout de suite ; un élève qui réussit sans
+  assurance s'en passe, c'est précisément l'objet du travail. Sans cette distinction, quatre
+  élèves de mathématiques recevaient quatre cahiers identiques à leur exercice personnel près.
+- Le point d'entrée dans une série d'exercices suit le taux de réussite du domaine : à plus
+  de 70 %, les deux premières applications directes sont passées, et le cahier dit pourquoi.
+  Aucun objectif n'est retiré — les exercices sautés restent dans la fiche collective.
+- Reprise espacée : le domaine travaillé en séance n revient en séance n+2, sous forme d'une
+  question de rappel sans notes. Une réussite le jour même ne prouve pas qu'une notion est
+  installée.
+- Correction d'un défaut d'interprétation du bilan : un domaine laissé **sans réponse**
+  affichait « 0 % de réussite ». Ce zéro ne mesure rien, et l'écrire annonçait un échec là où
+  le positionnement n'avait produit aucune information.
+- Ajout de `CURRICULUM_SOURCES.md`. Le nouveau programme de spécialité mathématiques publié
+  au BO du 2 avril 2026 n'entre en vigueur qu'à la rentrée 2027-2028 : il ne s'applique pas à
+  cette cohorte, qui relève du programme de 2019 en Première comme en Terminale. Une erreur
+  de génération de programme est indétectable dans un document fini ; la référence est donc
+  écrite, avec ses adresses et ses dates.
+- Charte enrichie : logo Nexus Réussite en page de garde et en tête de page, et huit encadrés
+  nommés — définition, propriété, méthode, automatisme, remarque, piège, exemple, rappel de
+  Première — reconnus depuis le Markdown à leur étiquette en gras.
+- Correction d'un échec de compilation : `\degree` n'est pas défini par siunitx v3. La macro
+  avait été introduite au commit précédent et n'avait jamais été compilée.
+- Pages presque vides ramenées de 17 à 5 : un sommaire de moins de six pièces ne prend plus
+  sa propre feuille, et les pénalités de veuves, d'orphelines et de coupure de liste
+  empêchent une ou deux lignes de partir seules. Les cinq restantes sont deux pages de
+  signature — faites pour être écrites — et trois queues de documents enseignant.
+- Ajout de quatre outils de contrôle : `qa_pdf.py` (pages presque vides), `qa_science.py`
+  (80 vérifications numériques des corrigés), `qa_code.py` (validité du code Python, en
+  distinguant les squelettes à compléter et les exercices de débogage) et
+  `qa_personnalisation.py` (deux bilans différents doivent produire deux cahiers différents).
+
 ## 2026.7 — 2026-08-22
 
 - Élargissement de l'espace d'écriture des exercices qui demandent une rédaction, dans les
