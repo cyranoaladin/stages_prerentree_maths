@@ -50,7 +50,7 @@ L'entraînement collectif porte sur transformations chimiques ; ton exercice per
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Mécanique (CONFRONTER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -183,7 +183,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 **1. Mécanique — Caractériser le vecteur vitesse.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une question laissée sans réponse.
 
-Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.
+Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Justifier en distinguant sa norme et sa direction.
 
 ....................................................................................................
 
@@ -195,7 +195,7 @@ Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est
 
 > **Méthode.** Le vecteur vitesse est tangent à la trajectoire et orienté dans le sens du mouvement. Une vitesse constante en norme n'est pas un vecteur vitesse constant.
 
-**2. Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une bille tombe dans l'air, les frottements n'étant pas négligeables. S'agit-il d'une chute libre ? Quelles forces s'exercent alors sur elle ?
 
@@ -312,7 +312,7 @@ L'entraînement collectif porte sur mécanique ; ton exercice personnel, plus ba
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Transformations chimiques (CONFRONTER). Sur ce domaine, tu as réussi 42 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur les ondes : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur les ondes : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -450,7 +450,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\mole}$ de A et $\SI{1.2}{\mole}$ de B. Quel est le réactif limitant ? Justifier.
 
@@ -607,7 +607,7 @@ Stabiliser l'acquis encore fragile sur l'énergie.
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Énergie (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Optique — acquis et disponible. On s'en servira comme socle pour aller plus loin.
+> **Point d'appui.** Optique — acquis et disponible. On s'en servira comme socle pour aller plus loin.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -621,7 +621,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Que vaut le travail d'une force perpendiculaire au déplacement ?  ....................
 7. Un objet immobile posé sur une étagère a-t-il une énergie cinétique ?  ....................
 
-> **Rappel.** Tu as travaillé **Mécanique** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Mécanique** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -671,7 +671,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 - Oublier le facteur $\frac{1}{2}$ dans l'énergie cinétique.
 - Élever la masse au carré au lieu de la vitesse.
 - Appliquer la conservation de l'énergie mécanique en présence de frottement.
-- Dire que l'énergie dissipée est perdue : elle est passée en énergie interne.
+- Dire que l'énergie dissipée est perdue : elle a changé de forme, la matière s'est échauffée.
 
 ## Ton entraînement
 
@@ -840,7 +840,7 @@ L'entraînement collectif porte sur ondes et optique ; ton exercice personnel, p
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Électricité (DIAGNOSTIQUER). Les questions de ce domaine sont restées sans réponse : on ne sait donc pas encore ce que tu sais faire dessus, et c'est ce que la séance va établir. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -854,7 +854,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Où se forme l'image d'un objet situé à l'infini ?  ....................
 7. Un rayon passant par le centre optique : que devient-il ?  ....................
 
-> **Rappel.** Tu as travaillé **Transformations chimiques** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Transformations chimiques** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## Avant tout : ta réponse spontanée
 
@@ -1116,7 +1116,7 @@ Fait : $\square$oui $\square$non    Ce que j'ai noté : ........................
 
 Contrôler un résultat par son ordre de grandeur et par le nombre de chiffres significatifs, et justifier le rejet d'une valeur.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur les ondes : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur les ondes : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1130,7 +1130,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Combien de chiffres significatifs dans $\SI{0.0250}{\metre}$ ?  ....................
 7. Le courant est-il le même avant et après une résistance ?  ....................
 
-> **Rappel.** Tu as travaillé **Énergie** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Énergie** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 

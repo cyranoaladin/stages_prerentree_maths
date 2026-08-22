@@ -262,7 +262,7 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
             f"{row['focus']}.{chiffre} C'est de là que part ta séance.")
         add("")
     if appui:
-        add(f"> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : {appui}")
+        add(f"> **Point d'appui.** {appui}")
         add("")
 
     # --- réactivation -------------------------------------------------------------
@@ -275,7 +275,7 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
         add(f"{position}. {question}  ....................")
     add("")
     if reactivation_differee:
-        add(f"> **Rappel.** {reactivation_differee}")
+        add(f"> **Reprise.** {reactivation_differee}")
         add("")
 
     # --- essentiel ----------------------------------------------------------------
@@ -467,7 +467,8 @@ def _reactivations(rows: list[dict]) -> dict[int, str]:
     differed: dict[int, str] = {}
     for row in rows:
         focus = str(row["focus"])
-        if focus in ("Consolidation d'ensemble", "Rédaction et raisonnement"):
+        if focus in ("Consolidation d'ensemble", "Rédaction et raisonnement",
+                     "Diagnostic à établir en séance 1"):
             continue
         target = int(row["seance"]) + 2
         if target > 5:

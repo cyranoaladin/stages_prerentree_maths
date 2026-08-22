@@ -47,7 +47,7 @@ Rectifier une certitude erronée sur les suites numériques.
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Suites numériques (CONFRONTER). Sur ce domaine, tu as réussi 14 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -174,7 +174,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Suites numériques — Calculer un terme d'une suite géométrique.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Suites numériques — Calculer un terme d'une suite géométrique.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 La suite $(v_n)$ est géométrique de premier terme $v_0 = 5$ et de raison 1/2. Calculer $v_3$.
 
@@ -190,7 +190,7 @@ La suite $(v_n)$ est géométrique de premier terme $v_0 = 5$ et de raison 1/2. 
 
 > **Méthode.** Formule explicite $v_n = v_0 \times r^n$ : la raison est élevée à la puissance n, elle n'est pas multipliée par n.
 
-**2. Suites numériques — Déterminer le sens de variation d'une suite géométrique par sa raison.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Suites numériques — Déterminer le sens de variation d'une suite géométrique par sa raison.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \times 0{,}8^n$. Donner le sens de variation de chacune, en justifiant.
 
@@ -206,7 +206,7 @@ Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \ti
 
 > **Méthode.** Comparer la raison à 1, et non à 0 : pour un premier terme positif, $0 < r < 1$ donne une suite décroissante, $r > 1$ une suite croissante.
 
-**3. Suites numériques — Étudier le sens de variation d'une suite définie par récurrence.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**3. Suites numériques — Étudier le sens de variation d'une suite définie par récurrence.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 La suite $(u_n)$ est définie par $u_0 = 2$ et, pour tout entier naturel n, $u_{n+1} = u_n - n^2$. Étudier son sens de variation. Est-elle arithmétique ?
 
@@ -320,7 +320,7 @@ L'entraînement collectif porte sur fonction exponentielle ; ton exercice person
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Second degré (CONFRONTER). Sur ce domaine, tu as réussi 67 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -430,7 +430,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Second degré — Tenir compte du signe du coefficient dominant dans le tableau de signes.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Second degré — Tenir compte du signe du coefficient dominant dans le tableau de signes.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Sur quel intervalle le trinôme $- 2x^2 + 8x - 6$ est-il strictement positif ?
 
@@ -548,7 +548,7 @@ L'entraînement collectif porte sur second degré ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Produit scalaire (INSTALLER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -562,7 +562,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Signe de $- 2x^2 + 3$ quand x est très grand.  ....................
 7. Un trinôme de coefficient dominant positif et de discriminant négatif : quel est son signe ?  ....................
 
-> **Rappel.** Tu as travaillé **Suites numériques** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Suites numériques** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -650,7 +650,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Produit scalaire — Calculer un produit scalaire par les coordonnées.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Produit scalaire — Calculer un produit scalaire par les coordonnées.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Dans un repère orthonormé, $u( - 2 ; 5)$ et $v(4 ; 1)$. Calculer u·v, puis dire si les vecteurs sont orthogonaux.
 
@@ -666,7 +666,7 @@ Dans un repère orthonormé, $u( - 2 ; 5)$ et $v(4 ; 1)$. Calculer u·v, puis di
 
 > **Méthode.** En repère orthonormé, $u \cdot v = x_u x_v + y_u y_v$. Le résultat est un nombre réel, jamais un vecteur.
 
-**2. Produit scalaire — Utiliser le critère d'orthogonalité.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Produit scalaire — Utiliser le critère d'orthogonalité.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Déterminer le réel m pour que les vecteurs $u(3 ; m)$ et $v( - 2 ; 6)$ soient orthogonaux.
 
@@ -781,7 +781,7 @@ L'entraînement collectif porte sur dérivation ; ton exercice personnel, plus b
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Fonction exponentielle (INSTALLER). Sur ce domaine, tu as réussi 50 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -796,7 +796,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. $f'(2) = 0$ : que peut-on affirmer, et que ne peut-on pas affirmer ?  ....................
 8. Que représente $f'(a)$ pour la courbe de f au point d'abscisse a ?  ....................
 
-> **Rappel.** Tu as travaillé **Second degré** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Second degré** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -877,7 +877,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Fonction exponentielle — Utiliser la stricte positivité de la fonction exponentielle.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Fonction exponentielle — Utiliser la stricte positivité de la fonction exponentielle.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Résoudre dans $\mathbb{R}$ l'équation $e^{x^2 - 1} = 0$, puis l'inéquation $e^x > 0$.
 
@@ -990,7 +990,7 @@ L'entraînement collectif porte sur produit scalaire vers l'espace, probabilité
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Dérivation (INSTALLER). Sur ce domaine, tu as réussi 82 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment en dérivation. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1005,7 +1005,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que renvoie `range(2, 10, 3)` ?  ....................
 8. Une variable aléatoire prend les valeurs 0 et 2 avec les probabilités $0{,}4$ et $0{,}6$ : que vaut son espérance ?  ....................
 
-> **Rappel.** Tu as travaillé **Produit scalaire** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Produit scalaire** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 
@@ -1165,7 +1165,7 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Dérivation — Déduire les variations du signe de la dérivée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Dérivation — Déduire les variations du signe de la dérivée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante.
 

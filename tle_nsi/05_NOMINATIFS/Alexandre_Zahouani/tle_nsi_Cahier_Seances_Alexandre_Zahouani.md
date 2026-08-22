@@ -50,7 +50,7 @@ L'entraînement collectif porte sur représentation des données et booléens ; 
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Données en tables (CONFRONTER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -172,7 +172,7 @@ grande, écrite en base 10 ?
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Données en tables — Distinguer enregistrement et descripteur.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Données en tables — Distinguer enregistrement et descripteur.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Un fichier CSV décrit 500 élèves par 6 attributs, avec une ligne d'en-tête. Combien de lignes contient le fichier ? Combien d'enregistrements ? Combien de descripteurs ?
 
@@ -188,7 +188,7 @@ Un fichier CSV décrit 500 élèves par 6 attributs, avec une ligne d'en-tête. 
 
 > **Méthode.** Une ligne est un enregistrement (un individu, un objet) ; une colonne est un descripteur (un attribut). La première ligne du fichier contient en général les noms des descripteurs.
 
-**2. Données en tables — Nommer les opérations sur une table.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Données en tables — Nommer les opérations sur une table.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Ne garder que les colonnes « nom » et « note » d'une table : de quelle opération s'agit-il ? Et rapprocher une table « élèves » d'une table « classes » par l'identifiant de classe ? Écrire la première en SQL.
 
@@ -303,7 +303,7 @@ L'entraînement collectif porte sur types construits ; ton exercice personnel, p
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Algorithmique (CONFRONTER). Sur ce domaine, tu as réussi 33 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur l'architecture des ordinateurs : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur l'architecture des ordinateurs : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -413,7 +413,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Algorithmique — Évaluer le coût d'un algorithme de recherche.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Algorithmique — Évaluer le coût d'un algorithme de recherche.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Dans un tableau trié de 1 000 éléments, combien de comparaisons au pire pour une recherche dichotomique ? Et pour une recherche séquentielle ?
 
@@ -547,7 +547,7 @@ L'entraînement collectif porte sur programmation ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Types construits (CONFRONTER). Sur ce domaine, tu as réussi 50 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -562,7 +562,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que fait `while` si la condition est fausse dès le départ ?  ....................
 8. Écrire l'en-tête d'une fonction `moyenne` prenant une liste.  ....................
 
-> **Rappel.** Tu as travaillé **Données en tables** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Données en tables** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -678,7 +678,7 @@ assert somme_jusqua(....) == ....
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Types construits — Accéder à une valeur par sa clé dans un dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Types construits — Accéder à une valeur par sa clé dans un dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit $d =$ {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?
 
@@ -694,7 +694,7 @@ Soit $d =$ {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit 
 
 > **Méthode.** Un dictionnaire s'indexe par clé, pas par position. L'accès à une clé absente lève une erreur.
 
-**2. Types construits — Créer, modifier et supprimer une entrée de dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Types construits — Créer, modifier et supprimer une entrée de dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Écrire les instructions qui ajoutent à d la clé 'z' de valeur 30, puis suppriment la clé 'x', puis parcourent d en affichant chaque couple clé-valeur.
 
@@ -816,7 +816,7 @@ L'entraînement collectif porte sur algorithmique ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Représentation binaire (INSTALLER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur l'architecture des ordinateurs : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur l'architecture des ordinateurs : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -831,7 +831,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que compare-t-on pour juger deux algorithmes : le temps mesuré ou le nombre d'opérations ?  ....................
 8. Qu'est-ce qu'un invariant de boucle ?  ....................
 
-> **Rappel.** Tu as travaillé **Algorithmique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Algorithmique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -944,7 +944,7 @@ def recherche_dichotomique(tableau, valeur):
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Représentation binaire — Convertir un entier de la base 10 vers la base 2.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Représentation binaire — Convertir un entier de la base 10 vers la base 2.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Écrire 22 en binaire, puis vérifier en recalculant la valeur décimale.
 
@@ -960,7 +960,7 @@ def recherche_dichotomique(tableau, valeur):
 
 > **Méthode.** Décomposer en somme de puissances de 2 décroissantes, ou diviser successivement par 2 et lire les restes de bas en haut.
 
-**2. Représentation binaire — Convertir entre base 16 et base 10.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Représentation binaire — Convertir entre base 16 et base 10.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Convertir 0x2A en base 10, puis convertir 60 en hexadécimal.
 
@@ -1076,7 +1076,7 @@ L'entraînement collectif porte sur données en tables, bases de données, syst�
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Programmation (INSTALLER). Sur ce domaine, tu as réussi 67 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Booléens et logique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1091,7 +1091,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Citer les quatre éléments du modèle de von Neumann.  ....................
 8. Citer deux ressources gérées par un système d'exploitation.  ....................
 
-> **Rappel.** Tu as travaillé **Types construits** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Types construits** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -1200,7 +1200,7 @@ projection sur `nom` et `note`. Écris la table obtenue.
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Programmation — Distinguer effet de bord et valeur renvoyée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Programmation — Distinguer effet de bord et valeur renvoyée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit def $h(L)$: L.append(0). Que vaut r après $r = h([1$, 2]) ? Si on écrit $M = [1$, 2] puis $h(M)$, que contient M ?
 
@@ -1285,7 +1285,7 @@ Ce qui suit n'est pas attendu de toi aujourd'hui. C'est là pour que tu voies à
 
 ## Prendre du recul
 
-- Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ?
+- Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ? (SQL est au programme de Terminale : on l'ouvre ici, on ne l'exige pas.)
 
 ....................................................................................................
 

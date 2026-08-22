@@ -50,7 +50,7 @@ L'entraînement collectif porte sur suites numériques ; ton exercice personnel,
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Dérivation (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -248,7 +248,7 @@ Fait : $\square$oui $\square$non    Ce que j'ai noté : ........................
 
 Mener une étude de fonction complète sur un produit faisant intervenir l'exponentielle, et trancher une équation par le tableau de variations.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur la fonction exponentielle : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur la fonction exponentielle : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -460,7 +460,7 @@ Fait : $\square$oui $\square$non    Ce que j'ai noté : ........................
 
 Factoriser un polynôme de degré 3 à partir d'une racine évidente, puis discuter le nombre de solutions d'une équation selon un paramètre.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Suites numériques — acquis et disponible. On s'en servira comme socle pour aller plus loin.
+> **Point d'appui.** Suites numériques — acquis et disponible. On s'en servira comme socle pour aller plus loin.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -474,7 +474,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Signe de $- 2x^2 + 3$ quand x est très grand.  ....................
 7. Un trinôme de coefficient dominant positif et de discriminant négatif : quel est son signe ?  ....................
 
-> **Rappel.** Tu as travaillé **Dérivation** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Dérivation** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -666,7 +666,7 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Dériver un quotient, en déduire un encadrement de la fonction, et distinguer l'annulation de la dérivée du changement de signe.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Produit scalaire — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Produit scalaire — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -863,7 +863,7 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Établir une probabilité en fonction d'un paramètre, la comparer à une valeur seuil par une factorisation, et la vérifier par un programme.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 

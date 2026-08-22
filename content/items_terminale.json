@@ -596,7 +596,7 @@
           "competence": "Décrire le rôle d'un système d'exploitation",
           "geste_correct": "Le système d'exploitation est l'intermédiaire entre les programmes et le matériel : il gère mémoire, processeur, périphériques, fichiers et processus.",
           "variante": "Citer trois ressources gérées par un système d'exploitation, puis deux commandes du shell agissant sur le système de fichiers en précisant leur effet.",
-          "corrige_variante": "Le système d'exploitation gère notamment la mémoire, le processeur (ordonnancement des processus), les périphériques et le système de fichiers. Côté shell : ls affiche le contenu du répertoire courant, cd change de répertoire courant, mkdir crée un répertoire, pwd affiche le chemin du répertoire courant."
+          "corrige_variante": "Le système d'exploitation gère notamment la mémoire, le processeur, les périphériques et le système de fichiers. Côté shell : ls affiche le contenu du répertoire courant, cd change de répertoire courant, mkdir crée un répertoire, pwd affiche le chemin du répertoire courant."
         }
       ]
     },
@@ -718,8 +718,8 @@
           "question": "À chaque instant, le vecteur vitesse d'un point mobile est :",
           "competence": "Caractériser le vecteur vitesse",
           "geste_correct": "Le vecteur vitesse est tangent à la trajectoire et orienté dans le sens du mouvement. Une vitesse constante en norme n'est pas un vecteur vitesse constant.",
-          "variante": "Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.",
-          "corrige_variante": "Le vecteur vitesse n'est pas constant : sa norme l'est, mais sa direction change en permanence puisqu'il reste tangent au cercle. L'accélération n'est donc pas nulle — elle est dirigée vers le centre du cercle."
+          "variante": "Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Justifier en distinguant sa norme et sa direction.",
+          "corrige_variante": "Le vecteur vitesse n'est pas constant : sa norme l'est, mais sa direction change en permanence puisqu'il reste tangent au cercle. C'est cette variation de direction que la Terminale mesurera par le vecteur accélération — elle sera dirigée vers le centre du cercle."
         },
         {
           "rang": 10,

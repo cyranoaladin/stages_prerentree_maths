@@ -69,7 +69,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** Toute l'analyse de Terminale s'appuie dessus : dérivée d'une fonction composée, dérivée seconde et convexité, étude des fonctions comportant exp et ln, recherche de primitives, équations différentielles.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Toute l'analyse de Terminale s'appuie dessus : dérivée d'une fonction composée, dérivée seconde et convexité, étude des fonctions comportant exp et ln, recherche de primitives, équations différentielles.
 
 ## Décision de fin de parcours
 

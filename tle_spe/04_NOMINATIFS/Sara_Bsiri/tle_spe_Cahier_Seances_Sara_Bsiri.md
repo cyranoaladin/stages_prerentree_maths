@@ -45,7 +45,7 @@ Le thème de chaque séance est commun au groupe. L'objectif, la piste et les ex
 
 Rédiger la démonstration du sens de variation d'une suite géométrique, puis établir qu'une suite peut croître sans jamais dépasser une valeur.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Second degré — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -304,7 +304,7 @@ Fait : $\square$oui $\square$non    Ce que j'ai noté : ........................
 
 Mener une étude de fonction complète sur un produit faisant intervenir l'exponentielle, et trancher une équation par le tableau de variations.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur la dérivation : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur la dérivation : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -555,7 +555,7 @@ Fait : $\square$oui $\square$non    Ce que j'ai noté : ........................
 
 Factoriser un polynôme de degré 3 à partir d'une racine évidente, puis discuter le nombre de solutions d'une équation selon un paramètre.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Fonction exponentielle — acquis et disponible. On s'en servira comme socle pour aller plus loin.
+> **Point d'appui.** Fonction exponentielle — acquis et disponible. On s'en servira comme socle pour aller plus loin.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -798,7 +798,7 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Dériver un quotient, en déduire un encadrement de la fonction, et distinguer l'annulation de la dérivée du changement de signe.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Suites numériques — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Suites numériques — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1043,7 +1043,7 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Établir une probabilité en fonction d'un paramètre, la comparer à une valeur seuil par une factorisation, et la vérifier par un programme.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur le produit scalaire : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur le produit scalaire : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 

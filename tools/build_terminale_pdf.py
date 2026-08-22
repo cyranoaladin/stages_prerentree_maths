@@ -326,6 +326,8 @@ BOX_LABELS = {
     "Exemple": "examplebox",
     "Rappel": "recallbox",
     "Rappel de Première": "recallbox",
+    "Reprise": "recallagainbox",
+    "Point d'appui": "supportbox",
 }
 # Les étiquettes les plus longues d'abord : sans cela « Rappel » l'emporterait sur
 # « Rappel de Première » et laisserait la fin du libellé traîner dans le texte.

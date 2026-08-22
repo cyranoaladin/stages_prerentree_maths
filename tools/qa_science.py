@@ -147,5 +147,47 @@ check("incertitude absolue", round(0.08*P, 1), 0.2, 1e-9)
 check("charge pile 0,10 A pendant 1 h", 0.10*3600, 360.0, 1e-12)
 check("(2+i)(2-i)", complex(2,1)*complex(2,-1), complex(5,0))
 
+# Le mémento est le seul document que l'élève emporte en septembre : ce qui y est faux le
+# suit toute l'année. Les quatre contrôles ci-dessous gardent les corrections apportées
+# après relecture ligne à ligne — un défaut d'exactitude ne se rattrape pas à la relecture
+# suivante s'il n'est pas tenu par un test.
+print("PC MÉMENTO — exactitude et domaines de validité")
+import pathlib
+memento = pathlib.Path("tle_pc/03_EVALUATIONS/tle_pc_Memento_Formules_Terminale_ELEVE.md").read_text(encoding="utf-8")
+
+# Le son audible descend à 20 Hz, où la longueur d'onde vaut 17 m et non « quelques mètres ».
+check("λ du son audible à 20 kHz, en cm", round(340/20000*100, 1), 1.7, 1e-9)
+check("λ du son audible à 20 Hz, en m", 340/20, 17.0, 1e-9)
+check("le mémento annonce la borne haute 17 m", r"\SI{17}{\metre}" in memento, True)
+check("le mémento n'annonce plus « quelques mètres »",
+      "à quelques $\\si{\\metre}$" not in memento, True)
+
+# P = R I² ne vaut que pour un conducteur ohmique : ni pour une pile, ni pour un moteur.
+check("le mémento restreint la loi d'Ohm au conducteur ohmique",
+      "conducteur ohmique**" in memento and "ni pour une pile" in memento, True)
+check("le mémento n'enchaîne plus P = U I = R I²",
+      r"P = U \times I = R\,I^{2}" not in memento, True)
+
+# L'énergie mécanique ne se conserve pas « sans frottement » : il faut que seul le poids travaille.
+check("le mémento nomme la condition de conservation de E_m",
+      "seule force qui" in memento, True)
+check("le mémento ne réduit plus la condition à l'absence de frottement",
+      "Sans frottement, $E_m$ reste constante." not in memento, True)
+
+# Les ordres de grandeur annoncés, recalculés.
+check("piéton 1,5 m/s en km/h", round(1.5*3.6, 1), 5.4, 1e-9)
+check("E_pp d'un étage (60 kg, 3 m) en kJ", round(60*9.8*3/1000, 1), 1.8, 1e-9)
+check("E_c d'une voiture (1200 kg, 130 km/h) en kJ",
+      round(0.5*1200*(130/3.6)**2/1000), 782)
+check("l'ordre de grandeur annoncé est bien « quelques centaines de kJ »",
+      100 <= 0.5*1200*(130/3.6)**2/1000 < 1000, True)
+
+# Le mémento ne doit porter que des acquis de Première : les notions de Terminale
+# qui lui ressemblent le plus sont nommément exclues.
+for notion in ("décibel", "niveau d'intensité sonore", "quotient de réaction",
+               "vecteur accélération", "condensateur", "diffraction"):
+    check(f"le mémento ne contient pas « {notion} » (Terminale)",
+          notion.lower() not in memento.lower(), True)
+
 print(f"\n{ok} vérifications passées, {ko} en échec.")
 raise SystemExit(1 if ko else 0)

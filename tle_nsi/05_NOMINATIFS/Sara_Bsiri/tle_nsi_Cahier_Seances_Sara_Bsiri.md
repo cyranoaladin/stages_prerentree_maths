@@ -50,7 +50,7 @@ L'entraînement collectif porte sur représentation des données et booléens ; 
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Types construits (INSTALLER) · Représentation binaire (CONSOLIDER). Sur ce domaine, tu as réussi 83 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
+> **Point d'appui.** Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -156,7 +156,7 @@ grande, écrite en base 10 ?
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Types construits — Accéder à une valeur par sa clé dans un dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Types construits — Accéder à une valeur par sa clé dans un dictionnaire.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit $d =$ {'x': 10, 'y': 20}. Que vaut d['y'] ? Que se passe-t-il si on écrit d['z'] ? Comment obtenir 0 dans ce cas sans erreur ?
 
@@ -271,7 +271,7 @@ L'entraînement collectif porte sur types construits ; ton exercice personnel, p
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Booléens et logique (CONSOLIDER) · Programmation (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
+> **Point d'appui.** Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -510,7 +510,7 @@ L'entraînement collectif porte sur programmation ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Algorithmique (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
+> **Point d'appui.** Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -525,7 +525,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que fait `while` si la condition est fausse dès le départ ?  ....................
 8. Écrire l'en-tête d'une fonction `moyenne` prenant une liste.  ....................
 
-> **Rappel.** Tu as travaillé **Types construits** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Types construits** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -750,7 +750,7 @@ L'entraînement collectif porte sur algorithmique ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Données en tables (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
+> **Point d'appui.** Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -765,7 +765,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que compare-t-on pour juger deux algorithmes : le temps mesuré ou le nombre d'opérations ?  ....................
 8. Qu'est-ce qu'un invariant de boucle ?  ....................
 
-> **Rappel.** Tu as travaillé **Booléens et logique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Booléens et logique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -980,7 +980,7 @@ L'entraînement collectif porte sur données en tables, bases de données, syst�
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Architecture et systèmes (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
+> **Point d'appui.** Aucun domaine n'est encore complètement stabilisé — c'est exactement ce que le stage vient faire. Ton point d'appui le plus proche est la représentation binaire : la réussite y est déjà réelle, il reste à l'affermir.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -995,7 +995,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Citer les quatre éléments du modèle de von Neumann.  ....................
 8. Citer deux ressources gérées par un système d'exploitation.  ....................
 
-> **Rappel.** Tu as travaillé **Algorithmique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Algorithmique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -1159,7 +1159,7 @@ Ce qui suit n'est pas attendu de toi aujourd'hui. C'est là pour que tu voies à
 
 ## Prendre du recul
 
-- Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ?
+- Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ? (SQL est au programme de Terminale : on l'ouvre ici, on ne l'exige pas.)
 
 ....................................................................................................
 

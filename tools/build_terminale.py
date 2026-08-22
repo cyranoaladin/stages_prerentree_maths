@@ -915,7 +915,7 @@ def _remediation_exercises(diagnostic: dict, bank: list[dict]) -> list[dict[str,
             "competence": reference["competence"],
             "motif": ("question laissée sans réponse"
                       if item["verdict"] in ("NON TRAITÉE", "NON TRAITÉ", "SANS RÉPONSE")
-                      else "réponse fausse au positionnement"),
+                      else "réponse fausse"),
             "certitude": item["certitude_sur_4"],
             "origine_erreur": item["origine_erreur"],
             "enonce": reference["variante"],
@@ -1181,7 +1181,8 @@ def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, inst
             add(method)
             add("")
             if opening:
-                add(f"**Argument à donner à l'élève.** {opening}")
+                add(f"**Ce que ce domaine conditionne en Terminale — repère pour vous, "
+                    f"non à lire tel quel.** {opening}")
                 add("")
     else:
         add("Cet élève ne relève d'aucune remédiation. Deux écueils à éviter : le laisser sans "

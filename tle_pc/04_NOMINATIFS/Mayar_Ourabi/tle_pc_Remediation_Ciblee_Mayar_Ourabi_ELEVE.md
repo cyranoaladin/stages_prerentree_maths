@@ -218,7 +218,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 *Compétence visée : Caractériser le vecteur vitesse.*
 
-**Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.**
+**Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Justifier en distinguant sa norme et sa direction.**
 
 Propriété, relation ou précondition utilisée :
 

@@ -50,7 +50,7 @@ L'entraînement collectif porte sur transformations chimiques ; ton exercice per
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Énergie (CONFRONTER). Sur ce domaine, tu as réussi 25 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -181,7 +181,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Énergie — Calculer le travail d'une force.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Énergie — Calculer le travail d'une force.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Un objet de $\SI{5}{\kilogram}$ est monté verticalement de $\SI{3}{\metre}$. Calculer le travail de son poids $(g =$ $\SI{9.8}{\newton\per\kilogram}$). Ce travail est-il moteur ou résistant ?
 
@@ -298,7 +298,7 @@ L'entraînement collectif porte sur mécanique ; ton exercice personnel, plus ba
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Ondes et signaux (CONFRONTER). Sur ce domaine, tu as réussi 40 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur l'électricité : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur l'électricité : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -436,7 +436,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Ondes et signaux — Distinguer ce qui dépend de la source et ce qui dépend du milieu.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Ondes et signaux — Distinguer ce qui dépend de la source et ce qui dépend du milieu.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Un son de fréquence $\SI{500}{\hertz}$ passe de l'air ($\SI{340}{\metre\per\second}$) à l'eau ($\SI{1500}{\metre\per\second}$). Calculer la longueur d'onde dans chaque milieu. Quelles grandeurs ont changé ?
 
@@ -554,7 +554,7 @@ L'entraînement collectif porte sur énergie ; ton exercice personnel, plus bas,
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Mécanique (CONFRONTER). Sur ce domaine, tu as réussi 50 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -568,7 +568,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Que vaut le travail d'une force perpendiculaire au déplacement ?  ....................
 7. Un objet immobile posé sur une étagère a-t-il une énergie cinétique ?  ....................
 
-> **Rappel.** Tu as travaillé **Énergie** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Énergie** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## Avant tout : ta réponse spontanée
 
@@ -649,7 +649,7 @@ Ce que je constate : ...........................................................
 - Oublier le facteur $\frac{1}{2}$ dans l'énergie cinétique.
 - Élever la masse au carré au lieu de la vitesse.
 - Appliquer la conservation de l'énergie mécanique en présence de frottement.
-- Dire que l'énergie dissipée est perdue : elle est passée en énergie interne.
+- Dire que l'énergie dissipée est perdue : elle a changé de forme, la matière s'est échauffée.
 
 ## Ton entraînement
 
@@ -691,7 +691,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une bille tombe dans l'air, les frottements n'étant pas négligeables. S'agit-il d'une chute libre ? Quelles forces s'exercent alors sur elle ?
 
@@ -812,7 +812,7 @@ L'entraînement collectif porte sur ondes et optique ; ton exercice personnel, p
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Transformations chimiques (CONFRONTER). Sur ce domaine, tu as réussi 75 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Tu peux t'appuyer sur l'électricité : les réponses sont justes et assumées, rien à reprendre pour l'instant.
+> **Point d'appui.** Tu peux t'appuyer sur l'électricité : les réponses sont justes et assumées, rien à reprendre pour l'instant.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -826,7 +826,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Où se forme l'image d'un objet situé à l'infini ?  ....................
 7. Un rayon passant par le centre optique : que devient-il ?  ....................
 
-> **Rappel.** Tu as travaillé **Ondes et signaux** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Ondes et signaux** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## Avant tout : ta réponse spontanée
 
@@ -964,7 +964,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\mole}$ de A et $\SI{1.2}{\mole}$ de B. Quel est le réactif limitant ? Justifier.
 
@@ -1083,7 +1083,7 @@ L'entraînement collectif porte sur électricité, chimie organique, mesure et i
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Optique (INSTALLER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Chimie organique — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1097,7 +1097,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Combien de chiffres significatifs dans $\SI{0.0250}{\metre}$ ?  ....................
 7. Le courant est-il le même avant et après une résistance ?  ....................
 
-> **Rappel.** Tu as travaillé **Mécanique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Mécanique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 
@@ -1265,7 +1265,7 @@ les deux autres ne le sont-ils pas ?
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Optique — Situer l'image d'un objet à l'infini.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Optique — Situer l'image d'un objet à l'infini.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une lentille convergente a une distance focale de $\SI{5}{\centi\metre}$. Où se forme l'image du Soleil ? Et celle d'un objet placé à $\SI{15}{\centi\metre}$ devant la lentille ?
 
@@ -1281,7 +1281,7 @@ Une lentille convergente a une distance focale de $\SI{5}{\centi\metre}$. Où se
 
 > **Méthode.** Les rayons issus d'un objet à l'infini arrivent parallèles entre eux : ils convergent dans le plan focal image. Pour un objet à distance finie, appliquer la relation de conjugaison.
 
-**2. Optique — Utiliser les rayons particuliers d'une lentille.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Optique — Utiliser les rayons particuliers d'une lentille.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Citer les trois rayons particuliers d'une lentille convergente et décrire le comportement de chacun à la traversée de la lentille.
 

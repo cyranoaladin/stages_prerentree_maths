@@ -50,7 +50,7 @@ L'entraînement collectif porte sur suites numériques ; ton exercice personnel,
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Fonction exponentielle (CONFRONTER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -177,7 +177,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Fonction exponentielle — Appliquer les règles de calcul sur les exposants.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Fonction exponentielle — Appliquer les règles de calcul sur les exposants.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Simplifier l'expression $e^{3x} \times e^{1 - x} / e^{x}$ et donner le résultat sous la forme $e^{ax+b}$.
 
@@ -193,7 +193,7 @@ Simplifier l'expression $e^{3x} \times e^{1 - x} / e^{x}$ et donner le résultat
 
 > **Méthode.** Diviser deux exponentielles revient à soustraire les exposants, en gardant la parenthèse autour de l'exposant soustrait.
 
-**2. Fonction exponentielle — Utiliser la stricte positivité de la fonction exponentielle.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Fonction exponentielle — Utiliser la stricte positivité de la fonction exponentielle.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Résoudre dans $\mathbb{R}$ l'équation $e^{x^2 - 1} = 0$, puis l'inéquation $e^x > 0$.
 
@@ -307,7 +307,7 @@ L'entraînement collectif porte sur fonction exponentielle ; ton exercice person
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Second degré (CONFRONTER). Sur ce domaine, tu as réussi 50 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -417,7 +417,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Second degré — Résoudre une inéquation du second degré par le signe du trinôme.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Second degré — Résoudre une inéquation du second degré par le signe du trinôme.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Résoudre dans $\mathbb{R}$ l'inéquation $x^2 - 9 \geqslant 0$.
 
@@ -433,7 +433,7 @@ Résoudre dans $\mathbb{R}$ l'inéquation $x^2 - 9 \geqslant 0$.
 
 > **Méthode.** Chercher les racines, repérer le signe de a, puis appliquer la règle : le trinôme est du signe de a à l'extérieur des racines et du signe contraire entre elles.
 
-**2. Second degré — Tenir compte du signe du coefficient dominant dans le tableau de signes.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Second degré — Tenir compte du signe du coefficient dominant dans le tableau de signes.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Sur quel intervalle le trinôme $- 2x^2 + 8x - 6$ est-il strictement positif ?
 
@@ -551,7 +551,7 @@ L'entraînement collectif porte sur second degré ; ton exercice personnel, plus
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Dérivation (CONFRONTER). Sur ce domaine, tu as réussi 54 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -565,7 +565,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Signe de $- 2x^2 + 3$ quand x est très grand.  ....................
 7. Un trinôme de coefficient dominant positif et de discriminant négatif : quel est son signe ?  ....................
 
-> **Rappel.** Tu as travaillé **Fonction exponentielle** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Fonction exponentielle** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## Avant tout : ta réponse spontanée
 
@@ -676,7 +676,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Dérivation — Déduire les variations du signe de la dérivée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Dérivation — Déduire les variations du signe de la dérivée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante.
 
@@ -692,7 +692,7 @@ Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante
 
 > **Méthode.** Calculer f', la factoriser, dresser le tableau de signes, puis lire les variations. f décroît là où $f' \leqslant 0$.
 
-**2. Dérivation — Distinguer le signe de la dérivée et le signe de la fonction.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Dérivation — Distinguer le signe de la dérivée et le signe de la fonction.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 On sait que g' est strictement positive sur ]0 ; 5[. Que peut-on affirmer sur les variations de g ? Peut-on en déduire le signe de g sur cet intervalle ?
 
@@ -708,7 +708,7 @@ On sait que g' est strictement positive sur ]0 ; 5[. Que peut-on affirmer sur le
 
 > **Méthode.** Le signe de f' renseigne sur le sens de variation de f, jamais sur le signe de f. Ce sont deux informations indépendantes.
 
-**3. Dérivation — Écrire l'équation de la tangente en un point.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**3. Dérivation — Écrire l'équation de la tangente en un point.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Soit $f(x) = x^3$. Déterminer l'équation de la tangente à la courbe de f au point d'abscisse 1.
 
@@ -837,7 +837,7 @@ L'entraînement collectif porte sur dérivation ; ton exercice personnel, plus b
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Suites numériques (CONFRONTER). Sur ce domaine, tu as réussi 57 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -852,7 +852,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. $f'(2) = 0$ : que peut-on affirmer, et que ne peut-on pas affirmer ?  ....................
 8. Que représente $f'(a)$ pour la courbe de f au point d'abscisse a ?  ....................
 
-> **Rappel.** Tu as travaillé **Second degré** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Second degré** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## Avant tout : ta réponse spontanée
 
@@ -979,7 +979,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Suites numériques — Étudier le sens de variation d'une suite définie par récurrence.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Suites numériques — Étudier le sens de variation d'une suite définie par récurrence.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 La suite $(u_n)$ est définie par $u_0 = 2$ et, pour tout entier naturel n, $u_{n+1} = u_n - n^2$. Étudier son sens de variation. Est-elle arithmétique ?
 
@@ -1103,7 +1103,7 @@ Installer les repères indispensables sur le produit scalaire.
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Produit scalaire (INSTALLER). Sur ce domaine, tu as réussi 50 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
+> **Point d'appui.** Pas encore de domaine stabilisé, mais un vrai atout : tu sais dire où ça coince, notamment sur le produit scalaire. Cette lucidité est le meilleur point de départ pour progresser vite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1118,7 +1118,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 7. Que renvoie `range(2, 10, 3)` ?  ....................
 8. Une variable aléatoire prend les valeurs 0 et 2 avec les probabilités $0{,}4$ et $0{,}6$ : que vaut son espérance ?  ....................
 
-> **Rappel.** Tu as travaillé **Dérivation** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Dérivation** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 
@@ -1278,7 +1278,7 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ## Ton exercice, celui qui vient de ton positionnement
 
-**Produit scalaire — Calculer un produit scalaire par les coordonnées.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**Produit scalaire — Calculer un produit scalaire par les coordonnées.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Dans un repère orthonormé, $u( - 2 ; 5)$ et $v(4 ; 1)$. Calculer u·v, puis dire si les vecteurs sont orthogonaux.
 

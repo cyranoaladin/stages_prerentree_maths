@@ -27,12 +27,12 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 11 | Fonction exponentielle | Appliquer les règles de calcul sur les exposants | réponse fausse au positionnement |
-| 2 | item 12 | Fonction exponentielle | Utiliser la stricte positivité de la fonction exponentielle | réponse fausse au positionnement |
-| 3 | item 7 | Dérivation | Déduire les variations du signe de la dérivée | réponse fausse au positionnement |
-| 4 | item 8 | Dérivation | Distinguer le signe de la dérivée et le signe de la fonction | réponse fausse au positionnement |
-| 5 | item 15 | Suites numériques | Déterminer le sens de variation d'une suite géométrique par sa raison | réponse fausse au positionnement |
-| 6 | item 16 | Suites numériques | Étudier le sens de variation d'une suite définie par récurrence | réponse fausse au positionnement |
+| 1 | item 11 | Fonction exponentielle | Appliquer les règles de calcul sur les exposants | réponse fausse |
+| 2 | item 12 | Fonction exponentielle | Utiliser la stricte positivité de la fonction exponentielle | réponse fausse |
+| 3 | item 7 | Dérivation | Déduire les variations du signe de la dérivée | réponse fausse |
+| 4 | item 8 | Dérivation | Distinguer le signe de la dérivée et le signe de la fonction | réponse fausse |
+| 5 | item 15 | Suites numériques | Déterminer le sens de variation d'une suite géométrique par sa raison | réponse fausse |
+| 6 | item 16 | Suites numériques | Étudier le sens de variation d'une suite définie par récurrence | réponse fausse |
 
 Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi sans assurance : même compétence, énoncé différent. La feuille d'un autre élève n'a donc pas la même composition.
 
@@ -117,19 +117,19 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La fonction logarithme népérien est introduite en Terminale comme réciproque de l'exponentielle : toute erreur sur les règles d'exposants se propage aux règles sur ln. L'exponentielle est aussi la solution de référence des équations différentielles $y' =$ ay + b et le support des croissances comparées.
 
 ### Dérivation — INSTALLER
 
 La difficulté est repérée et assumée : il n'y a aucune fausse certitude à défaire. On pose les définitions utiles, on montre des exemples résolus, puis on entraîne court et souvent.
 
-**Argument à donner à l'élève.** Toute l'analyse de Terminale s'appuie dessus : dérivée d'une fonction composée, dérivée seconde et convexité, étude des fonctions comportant exp et ln, recherche de primitives, équations différentielles.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Toute l'analyse de Terminale s'appuie dessus : dérivée d'une fonction composée, dérivée seconde et convexité, étude des fonctions comportant exp et ln, recherche de primitives, équations différentielles.
 
 ### Suites numériques — INSTALLER
 
 La difficulté est repérée et assumée : il n'y a aucune fausse certitude à défaire. On pose les définitions utiles, on montre des exemples résolus, puis on entraîne court et souvent.
 
-**Argument à donner à l'élève.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
 ## Décision de fin de parcours
 

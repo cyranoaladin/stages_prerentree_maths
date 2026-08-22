@@ -415,8 +415,6 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Signe de $- 2x^2 + 3$ quand x est très grand.  ....................
 7. Un trinôme de coefficient dominant positif et de discriminant négatif : quel est son signe ?  ....................
 
-> **Rappel.** Tu as travaillé **Diagnostic à établir en séance 1** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
-
 ## L'essentiel à retenir
 
 > **Résolution.** $\Delta = b^2 - 4$ac.
@@ -600,8 +598,6 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Si $f'$ est négative sur un intervalle, que fait f ?  ....................
 7. $f'(2) = 0$ : que peut-on affirmer, et que ne peut-on pas affirmer ?  ....................
 8. Que représente $f'(a)$ pour la courbe de f au point d'abscisse a ?  ....................
-
-> **Rappel.** Tu as travaillé **Diagnostic à établir en séance 1** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -793,8 +789,6 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Formule de $P(A \cup B)$.  ....................
 7. Que renvoie `range(2, 10, 3)` ?  ....................
 8. Une variable aléatoire prend les valeurs 0 et 2 avec les probabilités $0{,}4$ et $0{,}6$ : que vaut son espérance ?  ....................
-
-> **Rappel.** Tu as travaillé **Diagnostic à établir en séance 1** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 

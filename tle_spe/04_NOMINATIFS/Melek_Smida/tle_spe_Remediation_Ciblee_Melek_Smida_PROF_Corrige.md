@@ -27,7 +27,7 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 15 | Suites numériques | Déterminer le sens de variation d'une suite géométrique par sa raison | réponse fausse au positionnement |
+| 1 | item 15 | Suites numériques | Déterminer le sens de variation d'une suite géométrique par sa raison | réponse fausse |
 | 2 | item 4 | Second degré | Tenir compte du signe du coefficient dominant dans le tableau de signes | question laissée sans réponse |
 | 3 | item 16 | Suites numériques | Étudier le sens de variation d'une suite définie par récurrence | réussi avec une certitude de 2/4 |
 | 4 | item 18 | Produit scalaire | Utiliser le critère d'orthogonalité | réussi avec une certitude de 2/4 |
@@ -93,13 +93,13 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** C'est le chapitre d'ouverture de la Terminale : raisonnement par récurrence, limite d'une suite, suites majorées, minorées, bornées, théorèmes de comparaison et théorème de convergence monotone. On ne démontre pas une limite sans savoir d'abord établir un sens de variation.
 
 ### Second degré — DIAGNOSTIQUER
 
 Aucune réponse n'a été apportée sur ce domaine. On ne devine pas : un test ciblé est passé au démarrage, et la remédiation est décidée à partir de ce qu'il montre.
 
-**Argument à donner à l'élève.** Le signe d'un trinôme sert à lire le signe d'une dérivée ou d'une dérivée seconde : c'est lui qui donne les variations, la convexité et les points d'inflexion. Il intervient aussi dans les limites de fonctions rationnelles et dans l'application du théorème des valeurs intermédiaires.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le signe d'un trinôme sert à lire le signe d'une dérivée ou d'une dérivée seconde : c'est lui qui donne les variations, la convexité et les points d'inflexion. Il intervient aussi dans les limites de fonctions rationnelles et dans l'application du théorème des valeurs intermédiaires.
 
 <div class="page-break"></div>
 
@@ -109,14 +109,14 @@ Cette option ne fait l'objet d'aucun stage : elle se prépare sur le temps diff�
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 4 | Arithmétique | Énumérer les diviseurs positifs d'un entier | réponse fausse au positionnement |
+| 1 | item 4 | Arithmétique | Énumérer les diviseurs positifs d'un entier | réponse fausse |
 | 2 | item 7 | Arithmétique | Calculer un PGCD | question laissée sans réponse |
 | 3 | item 8 | Arithmétique | Rendre une fraction irréductible | question laissée sans réponse |
 | 4 | item 9 | Calcul littéral | Reconnaître et utiliser une différence de deux carrés | question laissée sans réponse |
 | 5 | item 10 | Calcul littéral | Développer un produit de deux binômes | question laissée sans réponse |
 | 6 | item 11 | Systèmes d'équations | Résoudre un système par combinaison linéaire | question laissée sans réponse |
 | 7 | item 12 | Systèmes d'équations | Résoudre un système par substitution | question laissée sans réponse |
-| 8 | item 13 | Logique | Écrire la contraposée d'une implication | réponse fausse au positionnement |
+| 8 | item 13 | Logique | Écrire la contraposée d'une implication | réponse fausse |
 | 9 | item 14 | Logique | Distinguer une implication de sa réciproque | réussi avec une certitude de 2/4 |
 
 ### Option, exercice 1 — Arithmétique

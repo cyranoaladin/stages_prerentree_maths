@@ -29,12 +29,12 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 2 | Transformations chimiques | Identifier le réactif limitant | réponse fausse au positionnement |
-| 2 | item 10 | Mécanique | Reconnaître les conditions d'une chute libre | réponse fausse au positionnement |
-| 3 | item 12 | Énergie | Calculer le travail d'une force | réponse fausse au positionnement |
-| 4 | item 14 | Ondes et signaux | Distinguer ce qui dépend de la source et ce qui dépend du milieu | réponse fausse au positionnement |
-| 5 | item 15 | Optique | Situer l'image d'un objet à l'infini | réponse fausse au positionnement |
-| 6 | item 16 | Optique | Utiliser les rayons particuliers d'une lentille | réponse fausse au positionnement |
+| 1 | item 2 | Transformations chimiques | Identifier le réactif limitant | réponse fausse |
+| 2 | item 10 | Mécanique | Reconnaître les conditions d'une chute libre | réponse fausse |
+| 3 | item 12 | Énergie | Calculer le travail d'une force | réponse fausse |
+| 4 | item 14 | Ondes et signaux | Distinguer ce qui dépend de la source et ce qui dépend du milieu | réponse fausse |
+| 5 | item 15 | Optique | Situer l'image d'un objet à l'infini | réponse fausse |
+| 6 | item 16 | Optique | Utiliser les rayons particuliers d'une lentille | réponse fausse |
 
 Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi sans assurance : même compétence, énoncé différent. La feuille d'un autre élève n'a donc pas la même composition.
 
@@ -119,31 +119,31 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** C'est le domaine le plus sollicité de la Terminale : taux d'avancement final et état d'équilibre, quotient de réaction et constante d'équilibre, titrages avec suivi pH-métrique ou conductimétrique, forces des acides et des bases et diagrammes de prédominance, évolution spontanée et piles, cinétique et catalyse. Un tableau d'avancement mal posé bloque tous ces chapitres à la fois.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** C'est le domaine le plus sollicité de la Terminale : taux d'avancement final et état d'équilibre, quotient de réaction et constante d'équilibre, titrages avec suivi pH-métrique ou conductimétrique, forces des acides et des bases et diagrammes de prédominance, évolution spontanée et piles, cinétique et catalyse. Un tableau d'avancement mal posé bloque tous ces chapitres à la fois.
 
 ### Mécanique — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Le vecteur accélération est introduit, puis la deuxième loi de Newton, qui devient l'outil central : mouvement dans un champ de pesanteur uniforme, dans un champ électrique uniforme, dans un champ de gravitation avec les lois de Kepler. Chacun de ces mouvements se traite en projetant une relation vectorielle : la nature vectorielle de la vitesse doit être acquise.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le vecteur accélération est introduit, puis la deuxième loi de Newton, qui devient l'outil central : mouvement dans un champ de pesanteur uniforme, dans un champ électrique uniforme, dans un champ de gravitation avec les lois de Kepler. Chacun de ces mouvements se traite en projetant une relation vectorielle : la nature vectorielle de la vitesse doit être acquise.
 
 ### Énergie — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Le premier principe de la thermodynamique généralise ces bilans en y intégrant l'énergie interne et les transferts thermiques : flux thermique, résistance thermique, loi de refroidissement de Newton. Le théorème de l'énergie cinétique reste l'outil de résolution alternatif à la deuxième loi de Newton.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le premier principe de la thermodynamique généralise ces bilans en y intégrant l'énergie interne et les transferts thermiques : flux thermique, résistance thermique, loi de refroidissement de Newton. Le théorème de l'énergie cinétique reste l'outil de résolution alternatif à la deuxième loi de Newton.
 
 ### Ondes et signaux — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** La Terminale ajoute l'intensité sonore et le niveau d'intensité en décibels — donc une échelle logarithmique —, la diffraction et les interférences, et l'effet Doppler. Tous ces phénomènes se quantifient à partir de la longueur d'onde : la relation de Première y sert à chaque exercice.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La Terminale ajoute l'intensité sonore et le niveau d'intensité en décibels — donc une échelle logarithmique —, la diffraction et les interférences, et l'effet Doppler. Tous ces phénomènes se quantifient à partir de la longueur d'onde : la relation de Première y sert à chaque exercice.
 
 ### Optique — INSTALLER
 
 La difficulté est repérée et assumée : il n'y a aucune fausse certitude à défaire. On pose les définitions utiles, on montre des exemples résolus, puis on entraîne court et souvent.
 
-**Argument à donner à l'élève.** Les mêmes constructions servent à modéliser l'œil et à étudier la lunette astronomique, association de deux lentilles. La Terminale introduit ensuite la description de la lumière par un flux de photons et les transitions d'énergie, où le tracé géométrique laisse place au bilan énergétique.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Les mêmes constructions servent à modéliser l'œil et à étudier la lunette astronomique, association de deux lentilles. La Terminale introduit ensuite la description de la lumière par un flux de photons et les transitions d'énergie, où le tracé géométrique laisse place au bilan énergétique.
 
 ## Décision de fin de parcours
 

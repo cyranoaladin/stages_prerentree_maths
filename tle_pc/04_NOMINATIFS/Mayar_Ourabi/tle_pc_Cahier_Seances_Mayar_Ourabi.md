@@ -50,7 +50,7 @@ L'entraînement collectif porte sur transformations chimiques ; ton exercice per
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Énergie (CONFRONTER) · Ondes et signaux (CONFRONTER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -181,7 +181,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Énergie — Calculer une énergie cinétique.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Énergie — Calculer une énergie cinétique.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Un véhicule de $\SI{1200}{\kilogram}$ roule à $\SI{20}{\metre\per\second}$. Calculer son énergie cinétique, puis celle qu'il aurait à $\SI{40}{\metre\per\second}$.
 
@@ -197,7 +197,7 @@ Un véhicule de $\SI{1200}{\kilogram}$ roule à $\SI{20}{\metre\per\second}$. Ca
 
 > **Méthode.** Ec = $\tfrac{1}{2} m v^2$, en joules. La vitesse intervient au carré : la doubler quadruple l'énergie cinétique.
 
-**2. Énergie — Calculer le travail d'une force.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Énergie — Calculer le travail d'une force.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Un objet de $\SI{5}{\kilogram}$ est monté verticalement de $\SI{3}{\metre}$. Calculer le travail de son poids $(g =$ $\SI{9.8}{\newton\per\kilogram}$). Ce travail est-il moteur ou résistant ?
 
@@ -311,7 +311,7 @@ Installer les repères indispensables en mécanique.
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Mécanique (INSTALLER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -431,9 +431,9 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Mécanique — Caractériser le vecteur vitesse.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Mécanique — Caractériser le vecteur vitesse.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
-Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.
+Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Justifier en distinguant sa norme et sa direction.
 
 ....................................................................................................
 
@@ -447,7 +447,7 @@ Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est
 
 > **Méthode.** Le vecteur vitesse est tangent à la trajectoire et orienté dans le sens du mouvement. Une vitesse constante en norme n'est pas un vecteur vitesse constant.
 
-**2. Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Mécanique — Reconnaître les conditions d'une chute libre.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une bille tombe dans l'air, les frottements n'étant pas négligeables. S'agit-il d'une chute libre ? Quelles forces s'exercent alors sur elle ?
 
@@ -565,7 +565,7 @@ L'entraînement collectif porte sur énergie ; ton exercice personnel, plus bas,
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Optique (INSTALLER). Sur ce domaine, tu as réussi 0 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -579,7 +579,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Que vaut le travail d'une force perpendiculaire au déplacement ?  ....................
 7. Un objet immobile posé sur une étagère a-t-il une énergie cinétique ?  ....................
 
-> **Rappel.** Tu as travaillé **Énergie** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Énergie** en séance 1. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -639,7 +639,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 - Oublier le facteur $\frac{1}{2}$ dans l'énergie cinétique.
 - Élever la masse au carré au lieu de la vitesse.
 - Appliquer la conservation de l'énergie mécanique en présence de frottement.
-- Dire que l'énergie dissipée est perdue : elle est passée en énergie interne.
+- Dire que l'énergie dissipée est perdue : elle a changé de forme, la matière s'est échauffée.
 
 ## Ton entraînement
 
@@ -681,7 +681,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Optique — Situer l'image d'un objet à l'infini.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Optique — Situer l'image d'un objet à l'infini.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une lentille convergente a une distance focale de $\SI{5}{\centi\metre}$. Où se forme l'image du Soleil ? Et celle d'un objet placé à $\SI{15}{\centi\metre}$ devant la lentille ?
 
@@ -697,7 +697,7 @@ Une lentille convergente a une distance focale de $\SI{5}{\centi\metre}$. Où se
 
 > **Méthode.** Les rayons issus d'un objet à l'infini arrivent parallèles entre eux : ils convergent dans le plan focal image. Pour un objet à distance finie, appliquer la relation de conjugaison.
 
-**2. Optique — Utiliser les rayons particuliers d'une lentille.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Optique — Utiliser les rayons particuliers d'une lentille.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Citer les trois rayons particuliers d'une lentille convergente et décrire le comportement de chacun à la traversée de la lentille.
 
@@ -818,7 +818,7 @@ L'entraînement collectif porte sur ondes et optique ; ton exercice personnel, p
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Transformations chimiques (INSTALLER). Sur ce domaine, tu as réussi 25 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -832,7 +832,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Où se forme l'image d'un objet situé à l'infini ?  ....................
 7. Un rayon passant par le centre optique : que devient-il ?  ....................
 
-> **Rappel.** Tu as travaillé **Mécanique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Mécanique** en séance 2. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## L'essentiel à retenir
 
@@ -947,7 +947,7 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ## Tes exercices, ceux qui viennent de ton positionnement
 
-**1. Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**1. Transformations chimiques — Identifier le réactif limitant.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\mole}$ de A et $\SI{1.2}{\mole}$ de B. Quel est le réactif limitant ? Justifier.
 
@@ -963,7 +963,7 @@ Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\
 
 > **Méthode.** Ne jamais comparer les quantités brutes : diviser d'abord chaque quantité par le coefficient stœchiométrique du réactif correspondant.
 
-**2. Transformations chimiques — Lire un couple oxydant-réducteur.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**2. Transformations chimiques — Lire un couple oxydant-réducteur.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Écrire la demi-équation électronique du couple $\ce{Fe^3+}$ / $\ce{Fe^2+}$ et préciser laquelle des deux espèces est l'oxydant.
 
@@ -979,7 +979,7 @@ Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\
 
 > **Méthode.** Un couple s'écrit toujours oxydant / réducteur, dans cet ordre. La demi-équation s'écrit avec les électrons du côté de l'oxydant.
 
-**3. Transformations chimiques — Appliquer la définition de Brønsted.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**3. Transformations chimiques — Appliquer la définition de Brønsted.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Écrire l'équation de la réaction entre l'acide éthanoïque $\ce{CH3COOH}$ et l'ion hydroxyde $\ce{HO^-}$, puis identifier les deux couples acide/base mis en jeu.
 
@@ -995,7 +995,7 @@ Pour la transformation d'équation $\ce{A + 3 B -> C}$, on introduit $\SI{0.5}{\
 
 > **Méthode.** Au sens de Brønsted, un acide **donne** un proton $\ce{H^+}$, une base le **capte**. Les deux formes d'une même espèce constituent un couple acide/base.
 
-**4. Transformations chimiques — Relier pH et concentration en ions oxonium.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
+**4. Transformations chimiques — Relier pH et concentration en ions oxonium.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse.
 
 Une solution a un pH égal à 2. Quelle est sa concentration en ions $\ce{H3O^+}$ ? Que devient son pH si on la dilue cent fois ?
 
@@ -1114,7 +1114,7 @@ L'entraînement collectif porte sur électricité, chimie organique, mesure et i
 
 > **Remarque.** Ce que ton positionnement a montré sur ce point : Chimie organique (CONSOLIDER). Sur ce domaine, tu as réussi 100 % des questions du positionnement. C'est de là que part ta séance.
 
-> **Rappel.** Un point sur lequel tu peux t'appuyer aujourd'hui : Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
+> **Point d'appui.** Électricité — réponses justes, données avec assurance : c'est un vrai point d'appui pour la suite.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -1128,7 +1128,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 6. Combien de chiffres significatifs dans $\SI{0.0250}{\metre}$ ?  ....................
 7. Le courant est-il le même avant et après une résistance ?  ....................
 
-> **Rappel.** Tu as travaillé **Optique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
+> **Reprise.** Tu as travaillé **Optique** en séance 3. Avant de commencer, écris en une phrase la règle que tu en as retenue — sans regarder tes notes. Si elle ne vient pas, c'est le moment de le dire.
 
 ## La méthode, dans l'ordre
 

@@ -347,7 +347,8 @@ BANK[("tle_pc", 3)] = {
         r"Oublier le facteur $\frac{1}{2}$ dans l'énergie cinétique.",
         r"Élever la masse au carré au lieu de la vitesse.",
         r"Appliquer la conservation de l'énergie mécanique en présence de frottement.",
-        r"Dire que l'énergie dissipée est perdue : elle est passée en énergie interne.",
+        r"Dire que l'énergie dissipée est perdue : elle a changé de forme, la "
+        r"matière s'est échauffée.",
     ],
 }
 
@@ -565,7 +566,8 @@ un second fichier des paiements. a) Écris la requête SQL si les deux fichiers 
 tables. b) Décris l'algorithme Python à partir des deux fichiers. c) Que gagne-t-elle à passer
 à une base de données ?""",
     "controle": [
-        r"Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ?",
+        r"Comment vérifier qu'une requête SQL renvoie bien ce qu'on voulait ? "
+        r"(SQL est au programme de Terminale : on l'ouvre ici, on ne l'exige pas.)",
         r"Qu'est-ce qui, dans un CSV, peut casser silencieusement un traitement ?",
     ],
     "exit": [

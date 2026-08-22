@@ -77,6 +77,7 @@ terminale-test:
 terminale-qa:
 	python3 tools/qa_science.py
 	python3 tools/qa_code.py
+	python3 tools/qa_curriculum.py
 	python3 tools/qa_personnalisation.py
 
 # Exige que les PDF aient été produits (make terminale-pdf).
