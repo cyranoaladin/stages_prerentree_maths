@@ -105,6 +105,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Exécuter avant de conclure, et écrire la table de trace |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Spécifier la fonction et écrire ses tests, sans carte d'aide |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Justifier le choix d'algorithme par son coût, pas par le temps mesuré |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire une fonction spécifiée et testée, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -234,6 +235,105 @@ Temps pour `fibo_memo(32)` : ....................
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend une fonction spécifiée, testée, et dont tu sais dire le coût.
+> Le second part d'un énoncé faux : on attend un contre-exemple, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la fonction est spécifiée, si le cas limite est traité, et où
+> le raisonnement s'interrompt.
+
+**Exercice 9.** Recherche dichotomique : l'écrire, puis prouver qu'elle s'arrête et
+qu'elle est correcte.
+
+a) Écris `dichotomie(tableau, valeur)`, qui renvoie l'indice de la valeur ou $- 1$.
+
+```python
+def dichotomie(tableau, valeur):
+    """..............................................................."""
+
+
+
+
+
+
+
+
+
+
+```
+
+b) Écris la précondition et l'`assert` qui la vérifie.
+
+....................................................................................................
+
+....................................................................................................
+
+c) Un **variant de boucle** est une quantité entière positive qui décroît strictement à chaque
+tour : son existence prouve que la boucle s'arrête. Donne-en un pour ta fonction.
+
+....................................................................................................
+
+....................................................................................................
+
+d) Un **invariant de boucle** est une propriété vraie avant et après chaque tour : elle sert à
+prouver que le résultat est correct. Donne-en un.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+e) Sur un tableau trié d'un million d'éléments, combien de comparaisons au pire ? Justifie.
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Un élève affirme : « le tri par insertion est en $O(n^2)$ et le tri fusion
+en $O(n \log n)$, donc le tri fusion est toujours plus rapide ».
+
+a) Sur quelle entrée le tri par insertion effectue-t-il seulement $n - 1$ comparaisons ?
+
+....................................................................................................
+
+....................................................................................................
+
+b) Pour une liste de dix éléments, lequel des deux est le plus rapide en pratique ? Qu'est-ce
+que la notation $O$ ne dit pas ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) Écris l'énoncé correct.
+
+....................................................................................................
+
+....................................................................................................
+
+d) Un algorithme effectue $3n^2 + 2n$ opérations, un autre $100 n \log_2 n$. À partir de
+quelle valeur de n le second devient-il le meilleur ? Estime, puis vérifie par un petit
+programme.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 > **Diviser pour régner.** La dichotomie est un cas particulier d'un schéma général : diviser
@@ -246,6 +346,68 @@ Temps pour `fibo_memo(32)` : ....................
 >
 > **Arbres et graphes.** Les parcours en largeur et en profondeur s'analysent avec exactement
 > le même raisonnement sur le coût.
+
+---
+
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de comparer le coût de deux algorithmes de recherche. La méthode
+**diviser pour régner**, au programme de Terminale, applique à un tri l'idée que tu as
+utilisée pour la dichotomie : couper le problème en deux.
+
+Le **tri fusion** coupe la liste en deux moitiés, trie chacune, puis fusionne les deux moitiés
+triées.
+
+**a)** Écris la fonction `fusion(A, B)` qui, à partir de deux listes **déjà triées**, renvoie
+une liste triée contenant tous leurs éléments.
+
+```python
+def fusion(A, B):
+    """..............................................................."""
+
+
+
+
+
+
+
+
+```
+
+**b)** Déroule le tri fusion sur `[5, 2, 8, 1]` : écris les découpages, puis les fusions.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** À chaque niveau de découpage, la fusion parcourt les n éléments une fois. Combien de
+niveaux y a-t-il pour une liste de n éléments ? En déduire le coût total.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Le tri par insertion de la séance coûte $n^2/2$ comparaisons au pire, le tri fusion
+$n \log_2 n$. Pour $n = 1000$, calcule les deux et compare.
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Diviser pour régner est l'une des quatre méthodes de
+conception au programme, avec les algorithmes gloutons, la programmation dynamique et la
+recherche exhaustive. Toutes se jugent au coût, pas au chronomètre.
 
 ---
 

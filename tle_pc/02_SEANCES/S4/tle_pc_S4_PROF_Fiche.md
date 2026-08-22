@@ -141,6 +141,38 @@ rayons d'aujourd'hui suffisent à construire toute la lunette.
 Nommer aussi la **description quantique de la lumière** — photon, transitions d'énergie —
 comme le point où le tracé géométrique cède la place à un bilan énergétique. Et s'arrêter.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) $\lambda = v/f = 340/680 = \SI{0.50}{\metre}$ ;
+$T = 1/f = \SI{1.5e-3}{\second}$.
+b) La fréquence et la période sont **imposées par la source** : elles ne changent pas. Seule
+la longueur d'onde change : $\lambda = 1500/680 = \SI{2.2}{\metre}$.
+c) $0{,}25/0{,}50 = 1/2$ : les détecteurs sont distants d'une demi-longueur d'onde, les
+signaux sont en **opposition de phase**.
+d) Parce que la fréquence ne dépend que de la source, alors que la longueur d'onde dépend
+aussi du milieu traversé. Deux milieux, deux longueurs d'onde, une seule fréquence.
+
+**Exercice 10.** a) Objet entre F et O : l'image est **virtuelle, droite et agrandie** — c'est
+le principe de la loupe. Exiger la construction avec les deux rayons particuliers.
+b) Une lentille convergente donne une image renversée **lorsque l'objet est situé au-delà du
+foyer objet**. En deçà, l'image est droite et virtuelle.
+c) Vrai : les rayons issus d'un point à l'infini arrivent parallèles et convergent au foyer
+image.
+d) L'image reste **entière**, simplement moins lumineuse : chaque point de l'objet envoie des
+rayons sur toute la surface de la lentille, et la moitié restante suffit à les faire
+converger. C'est l'erreur la plus tenace du chapitre.
+
+## Corrigé de l'atelier Terminale physique-chimie
+
+a) $L = 10 \log(10^{-6}/10^{-12}) = 10 \log(10^{6}) = \SI{60}{\decibel}$.
+b) $10 \log 2 \approx \SI{3}{\decibel}$. Le calcul **ne dépend pas** de l'intensité de départ :
+doubler l'intensité ajoute toujours trois décibels. C'est la propriété caractéristique du
+logarithme, et l'objet de l'atelier.
+c) Gagner $\SI{20}{\decibel}$ demande de multiplier l'intensité par 100 : cent personnes.
+d) $10^{12}$ fois plus grande. Une échelle linéaire demanderait douze ordres de grandeur sur
+le même axe ; l'échelle logarithmique les ramène à l'intervalle 0-120, qui correspond en outre
+à la façon dont l'oreille perçoit.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

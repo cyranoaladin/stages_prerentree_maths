@@ -78,6 +78,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire un résultat avec son unité et ses chiffres significatifs, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -171,6 +172,96 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend un résultat écrit avec son unité et un nombre de chiffres
+> significatifs justifié. Le second part d'une affirmation fausse : on attend un
+> contre-exemple précis, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la relation a été écrite avant les valeurs, si l'unité suit
+> le résultat, et où le raisonnement s'interrompt.
+
+**Exercice 9.** On fait réagir $\SI{2.0}{\gram}$ de fer avec
+$\SI{100}{\milli\litre}$ d'une solution d'acide chlorhydrique de concentration
+$\SI{0.50}{\mole\per\litre}$. L'équation de la réaction est
+$\ce{Fe + 2 H+ -> Fe^2+ + H2}$. On donne $M(\ce{Fe}) = \SI{56}{\gram\per\mole}$ et,
+dans les conditions de l'expérience, $V_m = \SI{24}{\litre\per\mole}$.
+
+a) Calculer les quantités de matière initiales de fer et d'ions hydrogène.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) Dresser le tableau d'avancement et déterminer le réactif limitant.
+
+| | $\ce{Fe}$ | $\ce{2 H+}$ | $\ce{Fe^2+}$ | $\ce{H2}$ |
+|---|---|---|---|---|
+| état initial | | | | |
+| en cours, avancement x | | | | |
+| état final | | | | |
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) En déduire le volume de dihydrogène dégagé.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Quelle masse de fer reste-t-il à l'état final ?
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Un élève affirme : « le réactif limitant est celui dont la quantité de
+matière initiale est la plus faible ».
+
+a) Réfuter cette affirmation à l'aide des chiffres de l'exercice 9.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) Écrire l'énoncé correct.
+
+....................................................................................................
+
+....................................................................................................
+
+c) « Dans un mélange stœchiométrique, aucun réactif n'est limitant. » Vrai ou faux ? Justifier.
+
+....................................................................................................
+
+....................................................................................................
+
+d) Un élève trouve un avancement maximal négatif. Que peut-on en conclure **sans refaire le
+calcul** ?
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 En Première, la transformation est supposée **totale** : l'avancement final vaut
@@ -183,6 +274,62 @@ Il vaut 1 pour une transformation totale, et moins de 1 lorsque le système atte
 
 Cinq chapitres de ton année commencent par le tableau que tu viens de poser : taux
 d'avancement final, quotient de réaction, titrage, évolution spontanée, cinétique.
+
+---
+
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Ton tableau d'avancement donne l'état final. Il ne dit rien du **temps**
+qu'il faut pour l'atteindre : c'est l'objet de la cinétique chimique, au programme de
+Terminale.
+
+On suit la disparition d'un réactif A au cours du temps. Le volume de la solution vaut
+$\SI{100}{\milli\litre}$.
+
+| $t$ (min) | 0 | 2 | 5 | 10 | 20 | 40 |
+|---|---|---|---|---|---|---|
+| $n(\ce{A})$ (mmol) | 20{,}0 | 14{,}0 | 9{,}0 | 5{,}0 | 2{,}5 | 1{,}2 |
+
+**a)** Calcule la concentration de A à $t = 0$ et à $t = \SI{10}{\minute}$.
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** La quantité de A disparue entre 0 et $\SI{2}{\minute}$ est-elle la même qu'entre 10 et
+$\SI{20}{\minute}$ ? La vitesse de la réaction est-elle constante ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Le **temps de demi-réaction** $t_{1/2}$ est la durée au bout de laquelle la moitié du
+réactif limitant a été consommée. Le lire dans le tableau.
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** On ajoute un **catalyseur**. La courbe atteint le même palier, mais deux fois plus vite.
+Qu'est-ce qui change : l'état final, la vitesse, ou les deux ? Qu'est-ce que cela dit du rôle
+d'un catalyseur ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** La vitesse volumique de disparition se définit comme
+l'opposé de la dérivée de la concentration par rapport au temps. C'est le premier endroit de
+l'année où le cours de mathématiques sert directement en chimie.
 
 ---
 

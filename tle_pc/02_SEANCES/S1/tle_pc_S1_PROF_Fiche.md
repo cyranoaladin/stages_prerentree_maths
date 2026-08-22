@@ -140,6 +140,41 @@ Puis introduire, **sans la traiter**, la seule nouveauté de Terminale sur ce po
 Ne pas aller plus loin. L'objectif est de montrer que le tableau d'avancement n'est pas
 un exercice de Première mais l'outil de toute l'année.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) $n(\ce{Fe}) = 2{,}0/56 = \SI{3.6e-2}{\mole}$ ;
+$n(\ce{H+}) = 0{,}50 \times 0{,}100 = \SI{5.0e-2}{\mole}$.
+b) On compare $n(\ce{Fe})/1 = \SI{3.6e-2}{\mole}$ et
+$n(\ce{H+})/2 = \SI{2.5e-2}{\mole}$. Le plus petit quotient désigne le limitant : c'est
+$\ce{H+}$, et $x_{\max} = \SI{2.5e-2}{\mole}$.
+c) $n(\ce{H2}) = x_{\max} = \SI{2.5e-2}{\mole}$, donc
+$V = 2{,}5\times 10^{-2} \times 24 = \SI{0.60}{\litre}$.
+d) $n(\ce{Fe})$ restant $= 3{,}6\times 10^{-2} - 2{,}5\times 10^{-2} = \SI{1.1e-2}{\mole}$,
+soit $m = \SI{0.60}{\gram}$.
+
+**Exercice 10.** a) Le fer est en quantité **plus faible** ($\SI{3.6e-2}{\mole}$ contre
+$\SI{5.0e-2}{\mole}$) et pourtant ce n'est pas lui le limitant : c'est le coefficient
+stœchiométrique 2 devant $\ce{H+}$ qui décide.
+b) Le réactif limitant est celui dont le **quotient** quantité initiale sur coefficient
+stœchiométrique est le plus petit.
+c) Faux : dans un mélange stœchiométrique, les deux réactifs sont limitants — les quotients
+sont égaux, et les deux disparaissent ensemble.
+d) Un avancement est une quantité de matière : il ne peut pas être négatif. Le calcul est
+faux, ou le tableau a été rempli avec les signes inversés. Inutile de chercher plus loin.
+
+## Corrigé de l'atelier Terminale physique-chimie
+
+a) $[\ce{A}]_0 = 20{,}0\times 10^{-3}/0{,}100 = \SI{0.200}{\mole\per\litre}$ ; à
+$t = \SI{10}{\minute}$, $[\ce{A}] = \SI{0.050}{\mole\per\litre}$.
+b) $\SI{6.0}{\milli\mole}$ disparaissent en deux minutes au début, contre
+$\SI{2.5}{\milli\mole}$ en dix minutes ensuite. La vitesse **n'est pas constante** : elle
+diminue à mesure que le réactif s'épuise. C'est le point de l'atelier.
+c) La moitié de $\SI{20.0}{\milli\mole}$ vaut $\SI{10.0}{\milli\mole}$, atteinte entre 2 et
+$\SI{5}{\minute}$ : $t_{1/2} \approx \SI{4}{\minute}$. Accepter toute lecture cohérente.
+d) Seule la vitesse change ; l'état final est le même. Un catalyseur accélère la
+transformation **sans modifier l'état final**, et il n'apparaît pas dans l'équation puisqu'il
+est régénéré.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

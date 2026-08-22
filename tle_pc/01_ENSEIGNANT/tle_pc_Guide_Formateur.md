@@ -74,6 +74,23 @@ Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times
 L'attribution se lit dans le livret individuel, rubrique « Parcours personnalisé séance
 par séance ». Elle n'est pas annoncée collectivement : chaque élève lit la sienne.
 
+### La piste excellence et l'atelier Terminale
+
+La physique-chimie ne comporte pas d'option annuelle : l'équivalent de l'ouverture
+mathématiques expertes vient donc du programme de Terminale de la discipline lui-même.
+
+| Séance | Piste excellence — les deux derniers exercices | Atelier Terminale — 20 minutes |
+|---:|---|---|
+| 1 | Réactif limitant sur un cas chiffré ; réfuter « le limitant est le moins abondant » | Cinétique : vitesse non constante, temps de demi-réaction, catalyseur |
+| 2 | Plan incliné, résultante, effet du frottement ; réfuter « immobile donc sans force » | Deuxième loi de Newton et vecteur accélération |
+| 3 | Bilan d'énergie avec dissipation et rendement ; réfuter « l'énergie mécanique se conserve » | Premier principe : $\Delta U = W + Q$ et capacité thermique |
+| 4 | Onde changeant de milieu, déphasage ; réfuter « l'image est toujours renversée » | Échelle logarithmique : niveau d'intensité sonore, lien avec le pH |
+| 5 | Puissance, énergie, incertitude relative ; chiffres significatifs | Piles et électrolyse : sens spontané et sens forcé |
+
+L'atelier n'est pas réservé aux élèves sans erreur : il s'adresse à quiconque a terminé sa
+piste avant la fin du temps différencié. Il se distingue de la rubrique « Ce que la Terminale
+en fera », qui se lit : ici, l'élève traite des questions.
+
 ## 5. Les cinq cartes d'aide
 
 Chaque séance dispose de cinq cartes graduées, de A à E. L'élève demande une carte, et

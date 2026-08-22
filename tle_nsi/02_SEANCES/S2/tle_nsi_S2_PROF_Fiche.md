@@ -145,6 +145,37 @@ Faire exécuter les trois blocs. Faire formuler la conclusion :
 
 Ne pas demander d'implémenter une structure complète pendant le stage.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) `enfiler` ajoute à `f['entree']`. `defiler` : si `f['sortie']` est vide,
+dépiler tout `f['entree']` dedans, puis dépiler `f['sortie']`.
+b) Après les trois `enfiler` : entrée `[1, 2, 3]`, sortie `[]`. Premier `defiler` : bascule en
+sortie `[3, 2, 1]`, renvoie 1. Second `defiler` : sortie `[3, 2]`, renvoie 2.
+c) `L.pop(0)` décale tous les éléments : coût linéaire à chaque défilement. Ici chaque élément
+est basculé une seule fois : coût **constant en moyenne**. C'est le point de l'exercice.
+d) Précondition : la file ne doit pas être vide, c'est-à-dire `f['entree']` et `f['sortie']`
+pas toutes deux vides. `assert f['entree'] or f['sortie']`.
+
+**Exercice 10.** a) `[1]`, puis `[1, 2]`, puis `[1, 2, 3]`.
+b) La liste par défaut est créée **une seule fois**, à la définition de la fonction, et non à
+chaque appel. Tous les appels sans argument partagent donc le même objet.
+c) `def ajoute(element, liste=None): if liste is None: liste = []` puis le reste inchangé.
+d) Faux tel quel. Le tuple garantit que ses **cases** ne changent pas, pas que les objets
+qu'elles désignent sont immuables : `t[0].append(3)` fonctionne et donne `([1, 3], 2)`.
+Énoncé correct : un tuple est immuable, mais il peut contenir des objets muables.
+
+## Corrigé de l'atelier Terminale NSI
+
+a) Arbre obtenu : racine 8 ; à gauche 3, dont les fils sont 1 et 6, et 6 a pour fils gauche 4 ;
+à droite 10, dont le fils droit est 14.
+b) Parcours infixe : 1, 3, 4, 6, 8, 10, 14. **Les valeurs sortent triées** — c'est la propriété
+qui fait tout l'intérêt de la structure.
+c) Comparer la valeur cherchée à celle du nœud, descendre à gauche si elle est plus petite, à
+droite sinon, s'arrêter sur `None`.
+d) Trois comparaisons au pire, la hauteur de l'arbre. Avec l'insertion dans l'ordre croissant,
+chaque valeur part à droite : l'arbre dégénère en une liste de hauteur 7, et la recherche
+redevient linéaire. C'est ce cas qui motive les arbres équilibrés.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

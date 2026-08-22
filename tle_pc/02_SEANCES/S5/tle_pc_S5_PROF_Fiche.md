@@ -138,6 +138,40 @@ Le message à faire passer, explicitement : **un domaine qui passe de « certitu
 revoir » à « à consolider » est un progrès**, même si la réponse reste imparfaite. L'élève
 sait désormais qu'il ne sait pas — c'est la condition pour apprendre en septembre.
 
+## Corrigé de la piste excellence
+
+**Exercice 8.** a) $U = R I = 47 \times 0{,}25 = \SI{11.75}{\volt}$, soit
+$\SI{12}{\volt}$ à deux chiffres significatifs.
+b) $P = R I^2 = 47 \times 0{,}25^2 = \SI{2.9}{\watt}$.
+c) $t = \SI{180}{\second}$, donc $E = P t = 2{,}94 \times 180 = \SI{5.3e2}{\joule}$, soit
+$\SI{0.53}{\kilo\joule}$.
+d) Incertitude relative sur I : $0{,}01/0{,}25 = \SI{4}{\percent}$. Sur P :
+$2 \times 4 = \SI{8}{\percent}$, soit une incertitude absolue de
+$0{,}08 \times 2{,}94 = \SI{0.2}{\watt}$.
+e) $P = 2{,}9 \pm \SI{0.2}{\watt}$. Le dernier chiffre écrit doit être celui sur lequel porte
+l'incertitude : écrire $2{,}94$ serait annoncer une précision qu'on n'a pas.
+
+**Exercice 9.** a) L'intensité est la même avant et après le conducteur ohmique : la charge se
+conserve, rien ne s'use. Un ampèremètre placé de part et d'autre donne la même valeur.
+b) C'est la **tension**, donc l'énergie transportée par unité de charge. L'énergie est
+convertie en énergie thermique dans le conducteur.
+c) $\SI{2.94}{\watt}$ affiche trois chiffres alors que l'incertitude porte sur le premier
+décimal : les deux derniers chiffres n'ont aucun sens. Plus de chiffres n'est pas plus précis,
+c'est seulement plus faux.
+d) $\SI{2.9}{\watt}$. $\SI{2.94}{\watt}$ annonce une précision inexistante ;
+$\SI{3}{\watt}$ en perd une réelle, puisque l'incertitude permet de garder le dixième.
+
+## Corrigé de l'atelier Terminale physique-chimie
+
+a) $\ce{Zn -> Zn^2+ + 2 e-}$ (oxydation) et $\ce{Cu^2+ + 2 e- -> Cu}$ (réduction), soit
+$\ce{Zn + Cu^2+ -> Zn^2+ + Cu}$.
+b) L'oxydation se produit à l'électrode de zinc. Elle libère les électrons dans le circuit :
+c'est le **pôle négatif**. Attendre le raisonnement par le sens de circulation des électrons,
+pas la récitation.
+c) $Q = I t = 0{,}10 \times 3600 = \SI{3.6e2}{\coulomb}$.
+d) De l'énergie électrique. La réaction inverse n'est pas spontanée : le générateur impose le
+sens du courant et fournit l'énergie que la transformation ne libère pas d'elle-même.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

@@ -136,6 +136,37 @@ exactement le point d'entrée du premier principe.
 Nommer ensuite les trois objets que la Terminale construit là-dessus : flux thermique,
 résistance thermique, loi de refroidissement de Newton. Et s'arrêter.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) $E_{pp} = m g h = 40 \times 9{,}8 \times 12 = \SI{4.7e3}{\joule}$.
+b) $E_c = \frac{1}{2} m v^2 = 0{,}5 \times 40 \times 12^2 = \SI{2.9e3}{\joule}$.
+c) Non : $E_c$ finale est inférieure à $E_{pp}$ initiale. L'énergie dissipée vaut
+$4704 - 2880 = \SI{1.8e3}{\joule}$.
+d) Sans frottement, $\frac{1}{2} m v^2 = m g h$ donne
+$v = \sqrt{2 g h} = \sqrt{235} = \SI{15}{\metre\per\second}$, contre
+$\SI{12}{\metre\per\second}$ mesurés.
+e) $2880/4704 = \SI{61}{\percent}$.
+
+**Exercice 10.** a) L'exercice 9 le contredit : l'énergie mécanique passe de $\SI{4.7e3}{\joule}$
+à $\SI{2.9e3}{\joule}$.
+b) L'énergie mécanique se conserve **en l'absence de frottement**, c'est-à-dire lorsque
+seules des forces conservatives travaillent.
+c) Elle n'est pas perdue : elle est passée en énergie interne — la luge, la neige et l'air se
+sont légèrement échauffés. Refuser « elle a disparu ».
+d) L'énergie cinétique est maximale au passage par la position d'équilibre, en bas. À la fin,
+l'énergie mécanique a été intégralement convertie en énergie interne par les frottements de
+l'air et de l'axe.
+
+## Corrigé de l'atelier Terminale physique-chimie
+
+a) En énergie interne : la luge, la neige sous les patins et l'air se sont échauffés.
+b) $\Delta T = \Delta U/(m c) = 1824/(5{,}0 \times 2100) = \SI{0.17}{\kelvin}$.
+c) Elle est très faible, donc plausible — et invérifiable au thermomètre ordinaire. On en
+déduit que l'énergie s'est répartie sur une masse bien plus grande que $\SI{5}{\kilogram}$, et
+en partie dans l'air. Faire dire que l'ordre de grandeur, ici, sert de contrôle.
+d) $\Delta U = W + Q = 500 + ( - 200) = \SI{300}{\joule}$. Le signe négatif traduit une énergie
+**cédée** : c'est la convention à installer dès maintenant.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

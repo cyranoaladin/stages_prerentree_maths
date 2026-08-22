@@ -61,6 +61,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Exécuter avant de conclure, et écrire la table de trace |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Spécifier la fonction et écrire ses tests, sans carte d'aide |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Justifier le choix d'algorithme par son coût, pas par le temps mesuré |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 11 et 12, puis l'atelier Terminale | Produire une fonction spécifiée et testée, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -163,6 +164,89 @@ Cette égalité s'appelle une **loi de De Morgan**. Écris-la avec tes mots :
 
 ---
 
+## Piste excellence — exercices 11 et 12
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend une fonction spécifiée, testée, et dont tu sais dire le coût.
+> Le second part d'un énoncé faux : on attend un contre-exemple, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la fonction est spécifiée, si le cas limite est traité, et où
+> le raisonnement s'interrompt.
+
+**Exercice 11.** Les entiers négatifs en complément à deux, sur 8 bits.
+
+a) Écris $- 45$ en complément à deux sur 8 bits. Détaille les trois étapes : écrire 45,
+inverser tous les bits, ajouter 1.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) Additionne, sur 8 bits, ton écriture de $- 45$ et celle de 45. Que vaut le résultat ? Que
+devient la neuvième retenue ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) Quel est le plus grand entier représentable sur 8 bits en complément à deux ? Le plus
+petit ?
+
+....................................................................................................
+
+....................................................................................................
+
+d) Cet intervalle n'est pas symétrique autour de zéro. Explique pourquoi.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 12.** Un élève affirme : « ajouter un bit à gauche double le nombre de valeurs
+représentables, donc double la valeur maximale ».
+
+a) La première moitié de l'affirmation est-elle vraie ? Justifie.
+
+....................................................................................................
+
+....................................................................................................
+
+b) La seconde ? Donne un contre-exemple chiffré en comparant 4 bits et 5 bits.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) Écris l'énoncé correct reliant le nombre de bits et la valeur maximale non signée.
+
+....................................................................................................
+
+....................................................................................................
+
+d) La même affirmation tient-elle en complément à deux ? Vérifie sur 4 puis 5 bits.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 5 — Ce que la Terminale en fera
 
 > **Invariants de boucle.** Pour démontrer qu'un algorithme est correct, on exhibe une
@@ -175,6 +259,55 @@ Cette égalité s'appelle une **loi de De Morgan**. Écris-la avec tes mots :
 >
 > **Sécurisation des communications.** Le chiffrement repose sur l'arithmétique des entiers
 > en machine : la représentation binaire y est un outil de tous les jours.
+
+---
+
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Une adresse IP est un nombre binaire, et le masque de sous-réseau
+s'applique par un ET bit à bit — exactement l'opérateur booléen que tu viens d'utiliser.
+
+Une machine a pour adresse `192.168.1.37` et pour masque `255.255.255.0`.
+
+**a)** Écris en binaire le dernier octet de l'adresse (37) et celui du masque (0).
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** L'adresse du réseau s'obtient par un ET bit à bit entre l'adresse et le masque. Calcule
+les quatre octets de l'adresse réseau.
+
+| Octet | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| adresse | 192 | 168 | 1 | 37 |
+| masque | 255 | 255 | 255 | 0 |
+| ET bit à bit | | | | |
+
+**c)** La machine `192.168.1.200` est-elle sur le même réseau ? Et `192.168.2.37` ? Justifie
+par le calcul, pas par l'apparence des adresses.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Avec ce masque, combien d'adresses le réseau contient-il ? Combien sont utilisables
+pour des machines, sachant que la première désigne le réseau et la dernière la diffusion ?
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Les protocoles de routage — RIP, OSPF — choisissent le chemin
+d'un paquet entre réseaux identifiés exactement de cette façon. Sans le ET bit à bit, aucune
+table de routage ne se lit.
 
 ---
 

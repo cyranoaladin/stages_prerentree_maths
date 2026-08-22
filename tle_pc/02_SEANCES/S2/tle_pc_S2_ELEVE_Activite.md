@@ -74,6 +74,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire un résultat avec son unité et ses chiffres significatifs, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -184,6 +185,102 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend un résultat écrit avec son unité et un nombre de chiffres
+> significatifs justifié. Le second part d'une affirmation fausse : on attend un
+> contre-exemple précis, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la relation a été écrite avant les valeurs, si l'unité suit
+> le résultat, et où le raisonnement s'interrompt.
+
+**Exercice 9.** Un solide de masse $m = \SI{0.50}{\kilogram}$ glisse sur un plan
+incliné faisant un angle $\alpha = 30\degree$ avec l'horizontale. On prend
+$g = \SI{9.8}{\newton\per\kilogram}$.
+
+a) Faire le bilan des forces et les représenter sur un schéma. Préciser, pour chacune, ce qui
+l'exerce.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) La composante du poids parallèle au plan vaut $P_x = m g \sin\alpha$. La calculer.
+
+....................................................................................................
+
+....................................................................................................
+
+c) En l'absence de frottement, la réaction du support est perpendiculaire au plan et vaut
+$R = m g \cos\alpha$. La calculer.
+
+....................................................................................................
+
+....................................................................................................
+
+d) La somme vectorielle des forces est-elle nulle ? Qu'en déduire sur le vecteur vitesse du
+solide au cours du mouvement ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+e) On tient maintenant compte d'une force de frottement de $\SI{1.0}{\newton}$, opposée au
+mouvement. Que devient la résultante ? Le mouvement est-il encore accéléré ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Un élève affirme : « un objet immobile n'est soumis à aucune force ».
+
+a) Réfuter à l'aide du livre posé sur la table, étudié en début de séance.
+
+....................................................................................................
+
+....................................................................................................
+
+b) Écrire l'énoncé correct.
+
+....................................................................................................
+
+....................................................................................................
+
+c) « Si les forces se compensent, l'objet est immobile. » Vrai ou faux ? Donner un
+contre-exemple.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Un satellite décrit une orbite circulaire à vitesse de norme constante. La somme des forces
+qu'il subit est-elle nulle ? Raisonner sur le **vecteur** vitesse, pas sur sa norme.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 Le **vecteur accélération** mesure la variation du vecteur vitesse. Il n'est pas nul dès
@@ -199,6 +296,64 @@ vitesse, travaillé aujourd'hui, n'est pas un détail de notation.
 
 Trois mouvements seront traités avec elle : dans un champ de pesanteur uniforme, dans un
 champ électrique uniforme, dans un champ de gravitation — avec les lois de Kepler.
+
+---
+
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens d'établir que la somme des forces n'est pas nulle et d'en
+déduire que le vecteur vitesse varie. La **deuxième loi de Newton**, au programme de
+Terminale, chiffre exactement de combien.
+
+Elle s'écrit $\sum \vv{F} = m \vec{a}$, où $\vec{a}$ est le **vecteur accélération** : il
+mesure la variation du vecteur vitesse par unité de temps, et il a la même direction et le
+même sens que la résultante des forces.
+
+**a)** Reprends le solide de $\SI{0.50}{\kilogram}$ sur le plan incliné à $30\degree$, sans
+frottement. La résultante vaut $\SI{2.45}{\newton}$ le long du plan. Calcule la valeur de
+l'accélération.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** Cette accélération dépend-elle de la masse du solide ? Reprends le calcul avec
+$m = \SI{2.0}{\kilogram}$ et conclus.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** En chute libre verticale, la seule force est le poids. Montre que l'accélération vaut
+alors g, quelle que soit la masse.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Un objet est lancé horizontalement. Le poids est vertical. Que peut-on dire de
+l'accélération horizontale ? Et de la composante horizontale du vecteur vitesse ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Toute la mécanique de l'année tient dans cette relation :
+on fait le bilan des forces, on projette sur deux axes, on obtient l'accélération, puis les
+équations horaires du mouvement.
 
 ---
 

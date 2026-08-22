@@ -121,6 +121,23 @@ Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times
 
 L'attribution est **relue à chaque séance** dans le livret individuel.
 
+### La piste excellence et l'atelier Terminale
+
+La NSI ne comporte pas d'option annuelle : l'équivalent de l'ouverture mathématiques expertes
+vient donc du programme de Terminale de la discipline lui-même.
+
+| Séance | Piste excellence — les deux derniers exercices | Atelier Terminale — 20 minutes |
+|---:|---|---|
+| 1 | Complément à deux ; réfuter « ajouter un bit double le maximum » | Adressage IP et masque de sous-réseau, par le ET bit à bit |
+| 2 | File par deux piles ; mutabilité de l'argument par défaut | Arbre binaire de recherche : insertion, parcours infixe, hauteur |
+| 3 | Second maximum en un parcours ; portée et `UnboundLocalError` | Programmation orientée objet : écrire une classe `Pile` |
+| 4 | Dichotomie : variant, invariant, coût ; réfuter « $O$ décide toujours » | Diviser pour régner : le tri fusion et son coût |
+| 5 | Schéma relationnel, jointure, intégrité ; CSV contre base de données | Processus, états, interblocage : le cycle dans un graphe |
+
+L'atelier n'est pas réservé aux élèves sans erreur : il s'adresse à quiconque a terminé sa
+piste avant la fin du temps différencié. Il se distingue de la rubrique « Ce que la Terminale
+en fera », qui se lit : ici, l'élève traite des questions.
+
 ### Les cinq aides
 
 | Aide | Contenu |
