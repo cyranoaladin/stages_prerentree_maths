@@ -45,7 +45,11 @@ from tools.build_terminale import MODULES, Module, load_json  # noqa: E402
 
 OUTPUT_DIR = ROOT / "dist" / "terminale"
 PRINT_CSS = ROOT / "assets" / "print.css"
-TERMINALE_CSS = ROOT / "assets" / "terminale" / "print_terminale.css"
+# La feuille de style Terminale vit sous tools/ et non sous assets/ : `tools/build.py`
+# recopie l'intégralité de assets/ dans les deux sites publiés et fait entrer chaque fichier
+# dans MANIFEST_PUBLIC.csv et MANIFEST_PRIVATE.csv. Un fichier ajouté là ferait diverger les
+# manifests du pipeline mathématique, que ce module ne doit pas toucher.
+TERMINALE_CSS = ROOT / "tools" / "assets" / "terminale_print.css"
 
 # Un document dont le nom porte l'un de ces marqueurs ne peut jamais rejoindre un pack élève.
 TEACHER_MARKERS = ("PROF", "Corrige", "Tableau_Bord", "Guide_Formateur")

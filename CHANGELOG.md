@@ -45,6 +45,12 @@
   restent produits ; préparer une séance n'oblige plus à imprimer un pack de cent pages.
 - Audit du rendu des cinq séances : les 40 documents de séance sont présents et complets dans
   les PDF, sans page blanche, sans section perdue, code Python et requêtes SQL rendus.
+- Correction d'une régression sur le pipeline mathématique : la feuille de style d'impression
+  Terminale, d'abord placée sous `assets/`, entrait dans les deux sites publiés par
+  `tools/build.py` et donc dans `MANIFEST_PUBLIC.csv` et `MANIFEST_PRIVATE.csv`, faisant
+  échouer l'intégration continue loin de sa cause. Elle vit désormais sous `tools/assets/`,
+  et un test compare l'arborescence de `assets/` au manifeste committé pour que l'erreur se
+  signale localement.
 
 ## 2026.1 — 2026-08-16
 

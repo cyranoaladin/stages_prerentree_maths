@@ -618,6 +618,42 @@ def test_terminale_modules_are_outside_the_maths_build_pipeline():
     assert "tle_" not in registry_levels.group(1)
 
 
+def test_terminale_tooling_adds_no_file_under_the_published_assets_tree():
+    """`assets/` appartient au pipeline mathématique : rien de Terminale n'y entre.
+
+    `tools/build.py` recopie l'intégralité de `assets/` dans les deux sites publiés, et
+    chaque fichier publié entre dans MANIFEST_PUBLIC.csv et MANIFEST_PRIVATE.csv. Un seul
+    fichier ajouté là fait diverger les manifests du pipeline mathématique et casse
+    l'intégration continue, loin de sa cause — c'est arrivé avec la feuille de style
+    d'impression Terminale, déplacée depuis sous `tools/assets/`.
+
+    Le test compare l'arborescence réelle au manifeste committé : une addition légitime,
+    accompagnée d'une régénération des manifests, continue de passer.
+    """
+    manifest = (ROOT / "MANIFEST_PUBLIC.csv").read_text(encoding="utf-8")
+    published = {
+        line.split(",")[0].removeprefix("dist/site-public/")
+        for line in manifest.splitlines()[1:] if line
+    }
+    unpublished = [
+        path.relative_to(ROOT).as_posix()
+        for path in sorted((ROOT / "assets").rglob("*"))
+        if path.is_file() and path.relative_to(ROOT).as_posix() not in published
+    ]
+    assert unpublished == [], (
+        "Fichier(s) sous assets/ absent(s) du manifeste publié : "
+        + str(unpublished)
+        + ". Les ressources propres aux modules Terminale vont sous tools/assets/."
+    )
+
+
+def test_the_terminale_stylesheet_lives_outside_the_published_assets_tree():
+    from tools.build_terminale_pdf import TERMINALE_CSS
+
+    assert TERMINALE_CSS.exists(), "feuille de style d'impression Terminale introuvable"
+    assert (ROOT / "assets") not in TERMINALE_CSS.parents
+
+
 def test_the_existing_student_registry_is_untouched():
     registry = json.loads((ROOT / "content/students.json").read_text(encoding="utf-8"))
     assert registry["scope"] == "stages_maths_2026"
