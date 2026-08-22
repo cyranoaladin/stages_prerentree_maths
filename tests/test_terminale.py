@@ -15,6 +15,7 @@ Trois familles de vérifications :
 
 from __future__ import annotations
 
+import copy
 import json
 import re
 import sys
@@ -494,6 +495,104 @@ def test_relative_links_resolve():
                 if not (path.parent / target).resolve().exists():
                     broken.append(f"{path.relative_to(ROOT)} -> {target}")
     assert broken == [], broken
+
+
+# --------------------------------------------------------------------------------------
+# 3 bis. Composition des paquets PDF
+#
+# Ces tests portent sur le *plan* d'assemblage, pas sur le rendu : ils s'exécutent sans
+# pandoc ni WeasyPrint, donc partout, y compris en intégration continue.
+# --------------------------------------------------------------------------------------
+
+@pytest.fixture(scope="module")
+def bundles():
+    from tools.build_terminale_pdf import plan_bundles
+
+    return plan_bundles(ROOT)
+
+
+def test_every_session_has_its_own_pdf_in_both_modules(bundles):
+    """Une séance est l'unité de travail : elle doit exister comme fichier à elle seule."""
+    produced = {bundle.filename for bundle in bundles}
+    missing = []
+    for key in MODULES:
+        label = "Tle_SPE" if key == "tle_spe" else "Tle_NSI"
+        for number in range(1, 6):
+            for name in (f"{label}_S{number}_PREPARATION_ENSEIGNANT.pdf",
+                         f"{label}_S{number}_FICHE_ELEVE.pdf"):
+                if name not in produced:
+                    missing.append(name)
+    assert missing == [], missing
+
+
+def test_a_session_bundle_holds_only_that_session(bundles):
+    """Le PDF de la séance 3 ne doit pas embarquer la séance 4."""
+    strays = []
+    for bundle in bundles:
+        match = re.search(r"_S(\d)_(PREPARATION_ENSEIGNANT|FICHE_ELEVE)\.pdf$", bundle.filename)
+        if not match:
+            continue
+        expected = f"_S{match.group(1)}_"
+        for source in bundle.sources:
+            if expected not in source.name:
+                strays.append(f"{bundle.filename} contient {source.name}")
+    assert strays == [], strays
+
+
+def test_session_bundles_carry_the_expected_documents(bundles):
+    """Préparation = fiche professeur + supports + cartes d'aide. Fiche élève = l'activité."""
+    by_name = {bundle.filename: bundle for bundle in bundles}
+    for key, module in MODULES.items():
+        label = "Tle_SPE" if key == "tle_spe" else "Tle_NSI"
+        supports = "SUPPORTS_Pratiques" if key == "tle_nsi" else "SUPPORTS_Manipulation"
+        for number in range(1, 6):
+            prof = by_name[f"{label}_S{number}_PREPARATION_ENSEIGNANT.pdf"]
+            assert [source.name for source in prof.sources] == [
+                f"{key}_S{number}_PROF_Fiche.md",
+                f"{key}_S{number}_{supports}.md",
+                f"{key}_S{number}_AIDES_Cartes.md",
+            ], prof.filename
+
+            eleve = by_name[f"{label}_S{number}_FICHE_ELEVE.pdf"]
+            assert [source.name for source in eleve.sources] == [
+                f"{key}_S{number}_ELEVE_Activite.md"
+            ], eleve.filename
+
+
+def test_no_student_bundle_can_hold_a_teacher_document(bundles):
+    """Le contrôle d'audience doit refuser l'assemblage, pas seulement nommer le fichier."""
+    from tools.build_terminale_pdf import PdfBuildError, enforce_audience
+
+    for bundle in bundles:
+        if bundle.audience == "eleve":
+            enforce_audience(bundle)   # ne doit rien lever
+
+    victim = next(b for b in bundles if b.audience == "eleve")
+    tampered = copy.deepcopy(victim)
+    tampered.sources = list(tampered.sources) + [
+        ROOT / "tle_spe/02_SEANCES/S1/tle_spe_S1_PROF_Fiche.md"
+    ]
+    with pytest.raises(PdfBuildError, match="document enseignant"):
+        enforce_audience(tampered)
+
+
+def test_student_directories_never_receive_a_teacher_bundle(bundles):
+    """`eleves/` et `seances/` doivent rester sûrs à distribuer, dossier par dossier."""
+    offenders = [
+        f"{bundle.directory}/{bundle.filename}"
+        for bundle in bundles
+        if bundle.directory in ("eleves", "seances") and bundle.audience != "eleve"
+    ]
+    assert offenders == [], offenders
+
+
+def test_every_planned_source_exists(bundles):
+    missing = [
+        str(source.relative_to(ROOT))
+        for bundle in bundles for source in bundle.sources
+        if not source.exists()
+    ]
+    assert missing == [], missing
 
 
 # --------------------------------------------------------------------------------------

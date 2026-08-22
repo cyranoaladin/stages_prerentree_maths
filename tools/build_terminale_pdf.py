@@ -338,6 +338,50 @@ def plan_bundles(root: Path = ROOT) -> list[Bundle]:
     for key, module in MODULES.items():
         label = "Tle_SPE" if key == "tle_spe" else "Tle_NSI"
         sources_dir = "07_SOURCES" if key == "tle_nsi" else "05_SOURCES"
+        supports = "SUPPORTS_Pratiques" if key == "tle_nsi" else "SUPPORTS_Manipulation"
+
+        # Une séance est l'unité de travail réelle de l'enseignant : il prépare la séance 3,
+        # pas « le module ». Sans ces fichiers, il faudrait imprimer un pack de cent pages ou
+        # extraire des plages de pages à la main.
+        for number, theme in module.sessions:
+            folder = ROOT / key / "02_SEANCES" / f"S{number}"
+
+            bundles.append(Bundle(
+                filename=f"{label}_S{number}_PREPARATION_ENSEIGNANT.pdf",
+                title=f"Séance {number} — préparation",
+                subtitle=f"{module.label} · {theme}",
+                audience="enseignant",
+                directory="enseignant/seances",
+                meta=[
+                    ("Module", module.label),
+                    ("Séance", f"{number} sur 5 — {theme}"),
+                    ("Contenu", "Fiche professeur, supports, cartes d'aide"),
+                    ("Durée", "2 heures"),
+                ],
+                sources=[
+                    folder / f"{key}_S{number}_PROF_Fiche.md",
+                    folder / f"{key}_S{number}_{supports}.md",
+                    folder / f"{key}_S{number}_AIDES_Cartes.md",
+                ],
+                module_key=key,
+            ))
+
+            bundles.append(Bundle(
+                filename=f"{label}_S{number}_FICHE_ELEVE.pdf",
+                title=f"Séance {number}",
+                subtitle=f"{module.label} · {theme}",
+                audience="eleve",
+                directory="seances",
+                meta=[
+                    ("Module", module.label),
+                    ("Séance", f"{number} sur 5 — {theme}"),
+                    ("Durée", "2 heures"),
+                    ("Usage", "Un exemplaire par élève"),
+                ],
+                sources=[folder / f"{key}_S{number}_ELEVE_Activite.md"],
+                toc=False,
+                module_key=key,
+            ))
 
         bundles.append(Bundle(
             filename=f"{label}_PACK_ELEVE_SEANCES.pdf",

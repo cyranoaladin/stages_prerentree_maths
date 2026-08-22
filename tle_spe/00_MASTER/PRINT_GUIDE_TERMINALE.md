@@ -24,8 +24,19 @@ sans rien rendre — utile pour vérifier la composition avant d'imprimer.
 | Dossier | Contenu | Destinataire |
 |---|---|---|
 | `eleves/` | Un dossier par élève et par matière : livret individuel et plan de remédiation | L'élève et sa famille |
+| `seances/` | Une fiche par séance (S1 à S5) et le pack des cinq séances | À photocopier pour le groupe |
+| `enseignant/seances/` | Une préparation par séance : fiche professeur, supports, cartes d'aide | L'enseignant seul |
 | `enseignant/` | Les corrigés nominatifs, les tableaux de bord, les packs complets | L'enseignant seul |
-| `seances/` | Les fiches élèves des cinq séances, les évaluations, le portfolio | À photocopier pour le groupe |
+
+**Les deux niveaux de granularité coexistent volontairement.** Le pack des cinq séances sert
+à photocopier tout le stage d'un coup ; les fichiers `S1` à `S5` servent à préparer et à
+imprimer une séance à la fois, ce qui est l'usage réel. Préparer la séance 3 ne doit pas
+obliger à imprimer un pack de cent pages.
+
+| Fichier | Contenu | Pages |
+|---|---|---:|
+| `seances/Tle_SPE_S3_FICHE_ELEVE.pdf` | L'activité élève de la séance 3 | 5 |
+| `enseignant/seances/Tle_SPE_S3_PREPARATION_ENSEIGNANT.pdf` | Fiche professeur, supports, cartes d'aide | 12 |
 
 **Un dossier `eleves/` ne contient jamais de corrigé.** Ce n'est pas une convention de
 nommage : `tools/build_terminale_pdf.py` refuse d'assembler un pack élève contenant un
@@ -54,8 +65,14 @@ supprimer la première page si l'encre est comptée — le livret reste complet 
 |---|---:|---:|---:|
 | Dossiers élèves (maths) | 10 | 5 à 25 | ~90 |
 | Dossiers élèves (NSI) | 5 | 15 à 25 | ~55 |
-| Fiches de séances élèves | 9 | 34 (maths) / 47 (NSI) | ~250 |
-| Packs enseignants | 2 | 99 et 98 | ~100 |
+| Fiche d'une séance, maths | 9 | 5 | ~23 |
+| Fiche d'une séance, NSI | 5 | 5 à 7 | ~15 |
+| Préparation d'une séance | 1 | 11 à 14 | ~7 |
+| Packs enseignants complets | 2 | 100 et 98 | ~100 |
+
+Imprimer séance par séance est plus économe : cinq tirages de 5 pages pour un élève de maths
+valent 23 feuilles en recto-verso, contre 17 pour le pack de 34 pages — mais on n'imprime que
+ce qui sert le jour même, et les fiches non utilisées ne sont pas gaspillées.
 
 Le manifeste donne le compte exact après chaque génération.
 

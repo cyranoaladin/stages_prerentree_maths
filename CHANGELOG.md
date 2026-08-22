@@ -40,6 +40,11 @@
   stricte de spécialités.
 - Ajout de deux garde-fous contre la dérive des chiffres de cohorte : les effectifs de groupe
   et le total d'élèves écrits dans les documents rédigés sont comparés au registre.
+- Ajout d'un PDF par séance, dans les deux modules : une fiche élève et une préparation
+  enseignante pour chacune des séances S1 à S5, soit 20 fichiers. Les packs d'ensemble
+  restent produits ; préparer une séance n'oblige plus à imprimer un pack de cent pages.
+- Audit du rendu des cinq séances : les 40 documents de séance sont présents et complets dans
+  les PDF, sans page blanche, sans section perdue, code Python et requêtes SQL rendus.
 
 ## 2026.1 — 2026-08-16
 
