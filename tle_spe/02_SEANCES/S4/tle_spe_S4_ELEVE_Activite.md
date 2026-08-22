@@ -81,7 +81,7 @@ les fais entièrement.
 > calcul, si la conclusion répond bien à la question, et si une étape manque. Savoir dire
 > *où* un raisonnement s'interrompt est une compétence de Terminale à part entière.
 
-### Parcours consolidation (exercices 1 à 4)
+### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
 **Exercice 1.** Soit $f(x) = (3x - 2)(x^2 + 1)$. Calculer $f'(x)$.
 
@@ -136,7 +136,7 @@ sur les variations de g ? Peut-on en déduire le signe de g ? Justifier par un e
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-### Parcours maîtrise (exercices 3 à 6)
+### Exercices 3 à 6 — piste Consolider
 
 **Exercice 5.** Soit $f(x) = x^3$. Déterminer l'équation de la tangente à la courbe de f au
 point d'abscisse 1. Vérifier que le point de contact appartient bien à cette droite.
@@ -156,7 +156,7 @@ Donner l'équation de la tangente à la courbe de h au point d'abscisse 3.
 
 ....................................................................................................
 
-### Parcours approfondissement (exercices 6 à 8)
+### Exercices 6 à 8 — piste Entretenir
 
 **Exercice 7.** Soit f définie sur $\mathbb{R}$ par $f(x) = (x^2 + 1)/(x^2 + 2)$. Calculer $f'(x)$, étudier
 son signe et dresser le tableau de variations de f.
@@ -188,7 +188,7 @@ signes de f''. Que se passe-t-il en $x = 1$ pour l'allure de la courbe de f ?
 
 ....................................................................................................
 
-### Parcours excellence (exercices 9 et 10)
+### Exercices 9 et 10 — piste Excellence
 
 **Exercice 9.** Soit f définie sur $\mathbb{R}$ par $f(x) = 2x/(x^2 + 1)$.
 

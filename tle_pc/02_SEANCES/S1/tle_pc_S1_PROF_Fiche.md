@@ -35,7 +35,7 @@ de tout le stage.
 | $\SI{10}{\minute}$ | Ouverture | Remet les livrets individuels ; explique la carte maîtrise $\times$ confiance | Lit sa carte, repère son domaine prioritaire |
 | $\SI{20}{\minute}$ | Confrontation | Pose la question du réactif limitant **sans commenter les réponses** | Répond, déclare sa certitude, puis calcule les quotients |
 | $\SI{25}{\minute}$ | Reconstruction | Construit le tableau d'avancement ligne par ligne au tableau | Prend la trace écrite, reformule à l'oral |
-| $\SI{30}{\minute}$ | Entraînement différencié | Distribue les trois parcours ; circule ; note les aides utilisées | Traite son parcours, note l'aide utilisée |
+| $\SI{30}{\minute}$ | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule ; note les aides utilisées | Traite son parcours, note l'aide utilisée |
 | $\SI{20}{\minute}$ | Ouverture Terminale | Montre où le tableau d'avancement réapparaît en Terminale | Observe, note l'ouverture |
 | $\SI{15}{\minute}$ | Trace écrite et bilan | Fait remplir la synthèse et l'auto-évaluation | Remplit, déclare sa certitude |
 
@@ -108,11 +108,17 @@ dix.
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Livret portant « Transformations chimiques » en priorité 1 ou 2 | Exercices 1 à 4, exemple résolu fourni |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont un tableau à trois réactifs |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, exemple résolu fourni |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont un tableau à trois réactifs |
 
 ## Ouverture sur la Terminale — 20 minutes
 

@@ -38,7 +38,7 @@ deux disciplines.
 | $\SI{10}{\minute}$ | Ouverture | Retour sur la séance 2 : un bilan des forces au tableau | Répond, note sa certitude |
 | $\SI{20}{\minute}$ | Confrontation | Pose : « une valise tirée horizontalement — que vaut le travail du poids ? » | Répond, déclare sa certitude |
 | $\SI{25}{\minute}$ | Reconstruction | Établit $W = F \times AB \times \cos\alpha$ ; balaie les trois cas d'angle | Prend la trace écrite |
-| $\SI{30}{\minute}$ | Entraînement différencié | Distribue les trois parcours ; circule ; note les aides utilisées | Traite son parcours |
+| $\SI{30}{\minute}$ | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule ; note les aides utilisées | Traite son parcours |
 | $\SI{20}{\minute}$ | Ouverture Terminale | Nomme le premier principe et ce qu'il ajoute au bilan | Observe, note l'ouverture |
 | $\SI{15}{\minute}$ | Trace écrite et bilan | Fait remplir la synthèse et l'auto-évaluation | Remplit, déclare sa certitude |
 
@@ -103,14 +103,17 @@ en altitude, il le gagne en vitesse. C'est la formulation que la Terminale gén�
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
-|---|---|---|
-| Consolidation | Livret portant « Énergie » en priorité 1 ou 2 | Exercices 1 à 4, angles fournis sur schéma |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont un plan incliné avec frottement |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
 
-L'écart de niveau étant maximal sur ce domaine, prévoir de circuler davantage : un élève
-à 0 % et un élève à 100 % travaillent ici sur des supports réellement différents.
+| Piste | Posture au diagnostic | Support |
+|---|---|---|
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, angles fournis sur schéma |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, justification écrite exigée |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont un plan incliné avec frottement |
 
 ## Ouverture sur la Terminale — 20 minutes
 

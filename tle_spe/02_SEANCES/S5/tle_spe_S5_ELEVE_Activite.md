@@ -198,7 +198,7 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ....................................................................................................
 
-## Partie 3 bis — Parcours excellence (exercices 9 et 10)
+## Partie 3 bis — Exercices 9 et 10, piste Excellence
 
 **Exercice 9.** Dans un repère orthonormé, on donne $A(1 ; 2)$, $B(5 ; 0)$ et $C(4 ; 5)$.
 

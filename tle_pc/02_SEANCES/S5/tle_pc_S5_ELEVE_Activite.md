@@ -13,6 +13,22 @@ unité et un ordre de grandeur contrôlé.
 
 ---
 
+### Comment tu trouves ton parcours
+
+Cette dernière séance couvre trois domaines et se termine par l'évaluation. Ton livret
+individuel porte la posture qui est la tienne : elle dit avec quelle exigence tu traites
+chaque partie, pas quels exercices tu sautes.
+
+| Ta posture du jour | Ce que tu traites | Ce qu'on attend de toi |
+|---|---|---|
+| **DIAGNOSTIQUER** — tu avais laissé ce domaine sans réponse | Exercices 1, 2 et 4 | Répondre même sans être sûr : déclarer une certitude de 1 est une réponse, pas un aveu |
+| **CONFRONTER** — tu t'es trompé en étant sûr de toi | Exercices 1 à 4 | Écrire ce que tu croyais, puis ce qui l'a mis en défaut |
+| **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
+| **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
+| **ENTRETENIR** — c'est acquis et assumé | Exercices 5 à 7 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+
+---
+
 ## Partie 1 — Électricité
 
 > **Puissance électrique.**

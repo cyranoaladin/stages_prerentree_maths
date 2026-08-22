@@ -35,6 +35,21 @@ quinze minutes et sert de point d'appui.
 | 35 min | Évaluation finale | Épreuve de synthèse |
 | 15 min | Bilan | Restitution, plan de septembre, portfolio |
 
+## Aiguillage des élèves
+
+Cette séance n'est pas découpée en parcours : elle enchaîne trois domaines puis l'évaluation.
+La posture inscrite au livret dit avec quelle exigence chaque élève traite chaque partie.
+
+| Piste | Ce que l'enseignant vérifie en priorité |
+|---|---|
+| Diagnostiquer | Qu'une réponse soit écrite, avec sa certitude, avant toute correction |
+| Confronter | Que l'élève ait formulé sa conviction initiale avant de la voir mise en défaut |
+| Installer | Que la relation ou la propriété soit écrite avant tout calcul |
+| Consolider | Que la justification soit rédigée sans recours à une carte d'aide |
+| Entretenir | Que le résultat soit contrôlé, et le contrôle écrit |
+
+Les libellés sont ceux du livret individuel et des fiches des séances 1 à 4.
+
 ## Données en tables — 25 minutes
 
 ### Enregistrement et descripteur

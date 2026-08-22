@@ -28,7 +28,7 @@ naturel — ce sont les deux faces de la représentation des données de base.
 | 10 min | Ouverture | Distribue les livrets ; explique la carte maîtrise $\times$ confiance | Lit sa carte, repère son domaine prioritaire |
 | 20 min | Confrontation | « Écrivez 22 en binaire » — recueil **avant** tout rappel | Écrit sa réponse, puis recalcule la valeur décimale |
 | 25 min | Reconstruction | Décomposition en puissances de 2 ; divisions successives ; base 16 | Prend la trace écrite, s'entraîne sur deux exemples |
-| 30 min | Entraînement différencié | Distribue les trois parcours ; circule | Traite son parcours, note l'aide utilisée |
+| 30 min | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule | Traite son parcours, note l'aide utilisée |
 | 20 min | Booléens et ouverture | Tables de vérité ; De Morgan ; usage en boucle et en SQL | Complète les tables, formule De Morgan |
 | 15 min | Trace écrite et bilan | Fait remplir la fiche de synthèse | Remplit, déclare sa certitude |
 
@@ -83,11 +83,17 @@ $0x2A = 2 \times 16 + 10 = 42$. Réciproquement, $60 = 3 \times 16 + 12 = 0x3C$.
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Représentation binaire en priorité 1 ou 2 dans le livret | Exercices 1 à 4, tableau de puissances fourni |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, sans tableau |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont un passage par la base 16 |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, tableau de puissances fourni |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, sans tableau |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont un passage par la base 16 |
 
 ## Booléens et ouverture — 20 minutes
 

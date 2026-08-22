@@ -76,7 +76,7 @@ les fais entièrement.
 > calcul, si la conclusion répond bien à la question, et si une étape manque. Savoir dire
 > *où* un raisonnement s'interrompt est une compétence de Terminale à part entière.
 
-### Parcours consolidation (exercices 1 à 4)
+### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
 **Exercice 1.** Résoudre dans $\mathbb{R}$ l'équation $x^2 - 7x + 12 = 0$, puis vérifier par la somme et
 le produit des racines.
@@ -118,7 +118,7 @@ Signe de a : ..........  Racines : ..........
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-### Parcours maîtrise (exercices 3 à 6)
+### Exercices 3 à 6 — piste Consolider
 
 **Exercice 5.** Étudier le signe de $2x^2 + x + 3$ sur $\mathbb{R}$. Justifier sans tableau.
 
@@ -141,7 +141,7 @@ Comparer les deux ensembles solutions.
 
 ....................................................................................................
 
-### Parcours approfondissement (exercices 6 à 8)
+### Exercices 6 à 8 — piste Entretenir
 
 **Exercice 7.** Déterminer les valeurs du réel m pour lesquelles l'équation
 $x^2 - 4x + m = 0$ admet deux solutions réelles distinctes.
@@ -173,7 +173,7 @@ tableau de signes. Que peux-tu en déduire sur les variations de f ?
 
 ....................................................................................................
 
-### Parcours excellence (exercices 9 et 10)
+### Exercices 9 et 10 — piste Excellence
 
 **Exercice 9.** Soit $P(x) = 2x^3 - 3x^2 - 3x + 2$.
 

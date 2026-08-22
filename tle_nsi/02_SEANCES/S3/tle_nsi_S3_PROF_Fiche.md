@@ -30,7 +30,7 @@ conséquences sur les fonctions.
 | 10 min | Ouverture | Contrôle sur la séance 2 : contenu de L après `L.insert(0, 9)` | Répond, déclare sa certitude |
 | 20 min | Confrontation | `r = h([1, 2])` où h ne fait qu'un `append` : que vaut r ? Et la liste ? | Prédit, puis exécute |
 | 25 min | Reconstruction | Appel, paramètre, retour, `None` ; portée ; bornes de `range` ; table de trace | Prend la trace écrite |
-| 30 min | Entraînement différencié | Distribue les trois parcours, sur machine | Traite son parcours |
+| 30 min | Entraînement différencié | Aiguille chaque élève sur sa piste, sur machine | Traite son parcours |
 | 20 min | Évaluation pratique | Fait passer le mini-diagnostic pratique | Traite l'épreuve sur machine |
 | 15 min | Trace écrite et bilan | Fait remplir la fiche de synthèse | Remplit, déclare sa certitude |
 
@@ -117,11 +117,17 @@ assert moyenne([5]) == 5
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Programmation en priorité 1 ou 2 dans le livret | Exercices 1 à 4, tables de trace pré-imprimées |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, spécification et deux tests exigés |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont une fonction à effets multiples |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, tables de trace pré-imprimées |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, spécification et deux tests exigés |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont une fonction à effets multiples |
 
 ## Évaluation pratique — 20 minutes
 

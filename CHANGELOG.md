@@ -36,6 +36,14 @@
 - La piste excellence est attribuée aux séances sans focus personnel des élèves dont le
   bilan ne comporte aucune erreur à reprendre. Un acquis hésitant ne compte pas comme une
   erreur : il se travaille par répétition, pas par remédiation.
+- Extension de l'aiguillage à NSI et à la physique-chimie. Le générateur de livrets est
+  commun aux trois modules : renommer les parcours d'après les postures du diagnostic les a
+  renommés partout, et un élève de NSI lisait « Consolider » dans son livret sans trouver la
+  ligne correspondante sur sa fiche. Les deux modules reçoivent le même tableau, sans la
+  piste excellence : aucun élève de ces groupes n'a un bilan sans erreur à reprendre, et les
+  exercices 9 et 10 n'existent que dans les fiches de mathématiques.
+- Les titres de section des fiches élève nomment la piste plutôt que l'ancien parcours :
+  « Exercices 3 à 6 — piste Consolider » au lieu de « Parcours maîtrise (exercices 3 à 6) ».
 
 ## 2026.6 — 2026-08-22
 

@@ -26,7 +26,7 @@ comptage d'opérations, et les parcours d'arbres et de graphes s'analysent de la
 | 10 min | Ouverture | Contrôle sur la séance 3 : valeurs produites par `range(1, 10, 4)` | Répond, déclare sa certitude |
 | 20 min | Confrontation | Appliquer une dichotomie à un tableau **non trié** : que se passe-t-il ? | Prédit, puis exécute |
 | 25 min | Reconstruction | Précondition ; dichotomie ; coût logarithmique ; tri par insertion | Prend la trace écrite |
-| 30 min | Entraînement différencié | Distribue les trois parcours, sur machine | Traite son parcours |
+| 30 min | Entraînement différencié | Aiguille chaque élève sur sa piste, sur machine | Traite son parcours |
 | 20 min | Ouverture Terminale | Diviser pour régner ; parcours d'arbre ; programmation dynamique | Observe, exécute |
 | 15 min | Trace écrite et bilan | Fait remplir la fiche de synthèse | Remplit, déclare sa certitude |
 
@@ -110,11 +110,17 @@ comptant les comparaisons. Coût : de l'ordre de $n^2$ dans le pire cas.
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau.
+
+| Piste | Posture au diagnostic | Support |
 |---|---|---|
-| Consolidation | Algorithmique en priorité 1 ou 2 dans le livret | Exercices 1 à 4, code fourni à exécuter et tracer |
-| Maîtrise | Domaine réussi mais hésitant | Exercices 3 à 6, comptage des comparaisons exigé |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont une comparaison expérimentale |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0, puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | Question 0, puis exercices 1 à 4 ; la réponse fausse est produite avant d'être corrigée |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, code fourni à exécuter et tracer |
+| Consolider | Domaine réussi mais hésitant | Exercices 3 à 6, comptage des comparaisons exigé |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont une comparaison expérimentale |
 
 ## Ouverture sur la Terminale — 20 minutes
 

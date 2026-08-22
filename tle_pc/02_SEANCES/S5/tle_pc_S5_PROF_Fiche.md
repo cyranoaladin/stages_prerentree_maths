@@ -42,6 +42,21 @@ parce qu'un résultat de mesure mal rendu coûte des points à chaque épreuve d
 | $\SI{40}{\minute}$ | Évaluation finale | Distribue, surveille, ne répond à aucune question de contenu | Compose |
 | $\SI{10}{\minute}$ | Correction et bilan | Corrige avec les élèves ; fait remplir la carte de sortie | Corrige, déclare sa certitude finale |
 
+## Aiguillage des élèves
+
+Cette séance n'est pas découpée en parcours : elle enchaîne trois domaines puis l'évaluation.
+La posture inscrite au livret dit avec quelle exigence chaque élève traite chaque partie.
+
+| Piste | Ce que l'enseignant vérifie en priorité |
+|---|---|
+| Diagnostiquer | Qu'une réponse soit écrite, avec sa certitude, avant toute correction |
+| Confronter | Que l'élève ait formulé sa conviction initiale avant de la voir mise en défaut |
+| Installer | Que la relation ou la propriété soit écrite avant tout calcul |
+| Consolider | Que la justification soit rédigée sans recours à une carte d'aide |
+| Entretenir | Que le résultat soit contrôlé, et le contrôle écrit |
+
+Les libellés sont ceux du livret individuel et des fiches des séances 1 à 4.
+
 ## Électricité — conduite différenciée
 
 Le contraste est trop fort pour un traitement collectif.

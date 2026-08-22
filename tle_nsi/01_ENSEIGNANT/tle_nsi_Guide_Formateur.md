@@ -107,13 +107,17 @@ reverser le temps gagné au parcours d'approfondissement.
 
 ## 6. Différenciation
 
-### Les trois parcours
+### Les cinq pistes
 
 | Parcours | Attribution | Ce qui change |
 |---|---|---|
-| Consolidation | Le domaine de la séance est en priorité 1 ou 2 dans le livret | Exemple exécuté fourni, table de trace pré-remplie |
-| Maîtrise | Le domaine est réussi mais hésitant | Pas d'exemple ; spécification et tests exigés |
-| Approfondissement | Le domaine est acquis avec certitude | Problème ouvert, comparaison d'algorithmes |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0 puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | La réponse fausse est produite avant d'être corrigée, puis exemple exécuté fourni |
+| Installer | Réponse fausse avec une certitude basse | Exemple exécuté fourni, table de trace pré-remplie |
+| Consolider | Le domaine est réussi mais hésitant | Pas d'exemple ; spécification et tests exigés |
+| Entretenir | Le domaine est acquis avec certitude | Problème ouvert, comparaison d'algorithmes |
+
+Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance : un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
 
 L'attribution est **relue à chaque séance** dans le livret individuel.
 

@@ -71,7 +71,7 @@ les fais entièrement.
 > calcul, si la conclusion répond bien à la question, et si une étape manque. Savoir dire
 > *où* un raisonnement s'interrompt est une compétence de Terminale à part entière.
 
-### Parcours consolidation (exercices 1 à 4)
+### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
 **Exercice 1.** La suite $(u_n)$ est arithmétique, de premier terme $u_0 = - 4$ et de raison 3.
 Calculer $u_{12}$.
@@ -117,7 +117,7 @@ Conclusion : ...................................................................
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
-### Parcours maîtrise (exercices 3 à 6)
+### Exercices 3 à 6 — piste Consolider
 
 **Exercice 5.** La suite $(u_n)$ est définie par $u_0 = 1$ et $u_{n+1} = 0{,}5 u_n + 3$.
 Calculer $u_1$, $u_2$, $u_3$, puis conjecturer le sens de variation et la limite éventuelle.
@@ -141,7 +141,7 @@ La suite est-elle croissante ? décroissante ? Justifier à l'aide des premiers 
 
 ....................................................................................................
 
-### Parcours approfondissement (exercices 6 à 8)
+### Exercices 6 à 8 — piste Entretenir
 
 **Exercice 7.** Démontrer que pour une suite géométrique de premier terme $v_0 > 0$ et de
 raison $q > 0$, on a $v_{n+1} - v_n = v_0 q^n (q - 1)$. En déduire le sens de variation selon la
@@ -174,7 +174,7 @@ Calculer $u_0$, $u_1$, $u_2$, $u_3$. Montrer que la suite est croissante. Peut-e
 
 ....................................................................................................
 
-### Parcours excellence (exercices 9 et 10)
+### Exercices 9 et 10 — piste Excellence
 
 **Exercice 9.** La suite $(u_n)$ est définie par $u_0 = 1$ et, pour tout entier naturel n,
 $u_{n+1} = u_n/(1 + u_n)$.
