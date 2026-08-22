@@ -96,6 +96,7 @@ jobs:
           python3 tools/qa_code.py
           python3 tools/qa_curriculum.py
           python3 tools/qa_personnalisation.py
+          python3 tools/build_dossier_livraison.py --check
 
       - name: Automated QA counters must show zero failures
         run: |

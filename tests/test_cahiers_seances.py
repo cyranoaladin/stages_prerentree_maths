@@ -256,3 +256,51 @@ def test_retirer_des_exercices_laisse_toujours_de_quoi_travailler():
 ])
 def test_le_point_d_entree_suit_des_seuils_explicites(reussite, attendu):
     assert entry_point(reussite) == attendu
+
+
+# --- rendu LaTeX : ce qui doit rester du code -------------------------------------
+# Une fiche Python à trous — « u = .......... » — est passée en production avec la
+# commande LaTeX écrite en toutes lettres dans le code : \rule n'est pas interprété en
+# verbatim. Trente blocs, dans les fiches collectives comme dans les cahiers d'élèves.
+# Rien ne le voyait : ni la compilation, qui réussit, ni le contrôle de densité, qui
+# compte des caractères.
+
+def test_les_files_de_points_deviennent_des_filets_hors_du_code():
+    from tools.build_terminale_pdf import rule_dotted_runs
+    rendu = rule_dotted_runs(r"Réponse : .......... fin")
+    assert r"\rule" in rendu
+    assert "........" not in rendu
+
+
+@pytest.mark.parametrize("environnement", ["lstlisting", "verbatim", "Shaded"])
+def test_les_files_de_points_restent_des_points_dans_le_code(environnement):
+    from tools.build_terminale_pdf import rule_dotted_runs
+    source = ("\\begin{%s}\nu = ..........\n\\end{%s}" % (environnement, environnement))
+    assert rule_dotted_runs(source) == source
+
+
+def test_un_document_melangeant_code_et_prose_traite_chaque_partie_selon_sa_nature():
+    from tools.build_terminale_pdf import rule_dotted_runs
+    rendu = rule_dotted_runs(
+        "Avant ..........\n"
+        r"\begin{lstlisting}[language=Python]" "\nu = ..........\n" r"\end{lstlisting}"
+        "\nAprès ..........")
+    assert rendu.count(r"\rule") == 2, "la prose doit porter deux filets"
+    assert rendu.count("..........") == 1, "le code doit garder ses points"
+
+
+def test_aucun_bloc_de_code_du_corpus_ne_sort_avec_une_commande_latex_dans_le_code():
+    """Le contrôle de bout en bout, sur les sources réelles."""
+    from tools.build_terminale_pdf import rule_dotted_runs
+    fence = re.compile(r"^```.*?^```", re.M | re.S)
+    vus = 0
+    for chemin in sorted(ROOT.glob("tle_*/**/*.md")):
+        for bloc in fence.finditer(chemin.read_text(encoding="utf-8")):
+            if "........" not in bloc.group(0):
+                continue
+            vus += 1
+            latex = "\\begin{lstlisting}\n" + bloc.group(0) + "\n\\end{lstlisting}"
+            assert r"\rule" not in rule_dotted_runs(latex), (
+                f"{chemin.relative_to(ROOT)} : un trou de code deviendrait une commande "
+                f"LaTeX imprimée en toutes lettres")
+    assert vus >= 20, f"seulement {vus} blocs de code à trous trouvés : le corpus a changé"

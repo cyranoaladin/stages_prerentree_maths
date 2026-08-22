@@ -262,7 +262,7 @@ techniques.
 | 10 min | Ouverture | Restitution du positionnement ; lecture de la carte maîtrise $\times$ confiance |
 | 20 min | Confrontation | Écrire 22 en binaire : recueil des réponses, puis vérification par recalcul |
 | 25 min | Reconstruction | Décomposition en puissances de 2 ; méthode des divisions successives ; base 16 |
-| 30 min | Entraînement différencié | Trois parcours |
+| 30 min | Entraînement différencié | Six pistes |
 | 20 min | Booléens et ouverture | Tables de vérité ; De Morgan ; usage dans les conditions de boucle et les clauses SQL |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -305,7 +305,7 @@ techniques.
 | 10 min | Ouverture | Contrôle sur la séance 1 : convertir 0x2A |
 | 20 min | Confrontation | `L = L.append(4)` : que vaut L ensuite ? Exécution effective |
 | 25 min | Reconstruction | Indexation ; méthodes en place et valeur `None` ; dictionnaires |
-| 30 min | Entraînement différencié | Trois parcours |
+| 30 min | Entraînement différencié | Six pistes |
 | 20 min | Ouverture Terminale | Une pile et une file construites sur une liste ; un arbre construit sur un dictionnaire |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -348,7 +348,7 @@ techniques.
 | 10 min | Ouverture | Contrôle sur la séance 2 : que contient L après `L.insert(0, 9)` |
 | 20 min | Confrontation | `r = h([1, 2])` où h se contente d'un `append` : que vaut r ? |
 | 25 min | Reconstruction | Appel, paramètre, retour, `None` ; portée ; bornes de `range` ; table de trace |
-| 30 min | Entraînement différencié | Trois parcours, sur machine |
+| 30 min | Entraînement différencié | Six pistes, sur machine |
 | 20 min | Évaluation pratique | Mini-diagnostic pratique (§ 7) |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -389,7 +389,7 @@ techniques.
 | 10 min | Ouverture | Contrôle sur la séance 3 : valeurs produites par `range(1, 10, 4)` |
 | 20 min | Confrontation | Appliquer la dichotomie à un tableau non trié : que se passe-t-il ? |
 | 25 min | Reconstruction | Précondition ; dichotomie ; coût logarithmique ; tri par insertion |
-| 30 min | Entraînement différencié | Trois parcours, sur machine |
+| 30 min | Entraînement différencié | Six pistes, sur machine |
 | 20 min | Ouverture Terminale | Diviser pour régner ; parcours d'arbre ; programmation dynamique |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -469,13 +469,20 @@ techniques.
 
 # 6. Différenciation
 
-## 6.1 Trois parcours
+## 6.1 Les six pistes
 
-| Parcours | Public | Ce qui change |
+| Piste | Public | Ce qui change |
 |---|---|---|
-| **Consolidation** | Domaine de la séance en certitude erronée ou notion absente | Exemple exécuté fourni, table de trace pré-remplie, étayage écrit |
-| **Maîtrise** | Domaine réussi mais hésitant | Pas d'exemple ; spécification et tests exigés |
-| **Approfondissement** | Domaine acquis avec certitude | Problème ouvert, comparaison d'algorithmes, ouverture explicite sur la Terminale |
+| **Diagnostiquer** | Le domaine de la séance est resté sans réponse au positionnement | Question 0 puis deux exercices seulement ; exemple exécuté et indices gradués ; aucune spécification exigée |
+| **Confronter** | Une réponse fausse a été donnée avec assurance | Question 0 obligatoire — la réponse spontanée doit apparaître avant d'être mise en défaut — puis quatre exercices avec exemple exécuté et indices |
+| **Installer** | L'élève sait qu'il lui manque quelque chose | Quatre exercices avec exemple exécuté, table de trace pré-remplie et indices ; le point d'entrée est décalé selon la réussite déjà obtenue |
+| **Consolider** | Réussite réelle, mais hésitante | Exercices 3 à 6, sans exemple exécuté ; spécification et deux tests exigés |
+| **Entretenir** | Acquis et assumé | Exercices 6 à 8, sans étayage ; fonction spécifiée, testée et commentée |
+| **Excellence** | Aucun domaine à reprendre au bilan, ou piste terminée | Exercices 9 et 10 puis l'atelier Terminale ; rôle de vérificateur sur le code d'un camarade, sans lui donner la réponse |
+
+L'attribution est faite **séance par séance**, à partir du bilan. Ce ne sont pas des niveaux
+mais des **postures** : un élève lucide sur sa lacune et un élève faussement sûr de lui ont
+besoin de deux choses différentes, quel que soit leur niveau.
 
 ## 6.2 Aides graduées
 
@@ -486,6 +493,15 @@ techniques.
 | C | Exemple exécuté analogue, avec sa sortie |
 | D | Découpage en trois sous-fonctions |
 | E | Squelette de code à compléter |
+
+
+**Deux dispositifs d'étayage coexistent, et ne se confondent pas.** Les cinq cartes A à E
+sont **collectives** : elles sont posées sur la table, l'élève va les chercher, et il note
+laquelle il a prise. Les **trois indices gradués** du cahier nominatif sont **individuels** :
+ils sont imprimés dans le cahier, sous l'exercice, et ne sont donnés qu'aux pistes qui en
+relèvent — Diagnostiquer, Confronter et Installer. Un élève en Consolider ou en Entretenir
+n'a pas d'indices dans son cahier : les cartes restent sa seule ressource, et le fait d'aller
+la chercher est précisément l'information qu'on veut recueillir.
 
 ## 6.3 Rituel de séance
 
@@ -568,7 +584,7 @@ Les quatre élèves suivent les deux modules. Deux articulations sont explicites
 | Durée | 10 heures : 2 h/jour, 5 jours consécutifs, du 24 au 28 août 2026 |
 | Ordre des séances | Représentation et booléens, types construits, programmation, algorithmique, données et systèmes |
 | Principe directeur | Prédire, exécuter, confronter ; table de trace systématique |
-| Différenciation | Trois parcours par séance, cinq niveaux d'aide |
+| Différenciation | Six pistes par séance, cinq niveaux d'aide |
 | Individualisation | Un livret par élève, construit item par item à partir de son propre bilan |
 | Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 | Sortie | Un plan de travail personnel écrit pour septembre |

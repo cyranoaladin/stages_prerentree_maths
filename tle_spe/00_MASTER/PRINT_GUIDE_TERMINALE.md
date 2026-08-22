@@ -17,11 +17,22 @@ make terminale-pdf    # puis les assemble en PDF A4
 Les fichiers sont écrits sous `dist/terminale/`, avec un inventaire dans
 `MANIFEST_TERMINALE.csv`.
 
-**Les PDF ne sont pas versionnés.** Leur contenu binaire dépend de la version de WeasyPrint
+```bash
+make terminale-livraison   # écrit dist/terminale/NOTE_DE_REMISE.md
+```
+
+**La note de remise est le document à imprimer pour la personne qui distribue.** Elle
+est produite à partir du registre de la cohorte, et non écrite à la main : elle ne peut
+pas décrire une remise différente de ce qui a été fabriqué. Elle donne, élève par élève,
+ce qui lui revient et en combien de pages ; séance par séance, ce qui se photocopie et
+en combien d'exemplaires ; et la liste de ce qui ne sort pas du dossier pédagogique.
+Le même outil échoue si un document nominatif se trouve dans la liasse collective.
+
+**Les PDF ne sont pas versionnés.** Leur contenu binaire dépend de la version de LuaLaTeX
 et des polices installées : deux machines ne produisent pas deux fichiers identiques. Le
 Markdown, lui, est versionné et fait foi.
 
-Dépendances : `pandoc` et `weasyprint`. `make terminale-pdf-list` liste ce qui serait produit
+Dépendances : `pandoc`, `lualatex` et `latexmk`. `make terminale-pdf-list` liste ce qui serait produit
 sans rien rendre — utile pour vérifier la composition avant d'imprimer.
 
 ## 2. Ce qui est produit
@@ -40,13 +51,13 @@ obliger à imprimer un pack de cent pages.
 
 | Fichier | Contenu | Pages |
 |---|---|---:|
-| `seances/Tle_SPE_S3_FICHE_ELEVE.pdf` | L'activité élève de la séance 3 | 5 |
-| `enseignant/seances/Tle_SPE_S3_PREPARATION_ENSEIGNANT.pdf` | Fiche professeur, supports, cartes d'aide | 12 |
+| `seances/Tle_SPE_S3_FICHE_ELEVE.pdf` | L'activité élève de la séance 3 | 6 |
+| `enseignant/seances/Tle_SPE_S3_PREPARATION_ENSEIGNANT.pdf` | Fiche professeur, supports, cartes d'aide | 9 |
 
 **Le cahier des cinq séances est le document de travail.** C'est celui que l'élève apporte
 chaque jour : il porte sa progression, ses automatismes, ses exercices — et seulement les
 siens, ceux de sa piste. Un élève en remédiation n'y trouve pas les problèmes destinés à
-ceux qui n'ont rien à reprendre, et réciproquement. Il fait de 17 à 25 pages selon le profil,
+ceux qui n'ont rien à reprendre, et réciproquement. Il fait de 17 à 24 pages selon le profil,
 et c'est la seule chose à imprimer en recto verso agrafé.
 
 Le **dossier individuel**, lui, se conserve : il restitue le positionnement, sert à l'entretien
@@ -74,22 +85,29 @@ supprimer la première page si l'encre est comptée — le livret reste complet 
 
 ## 4. Volumétrie
 
-À l'impression recto-verso, pour une cohorte de huit élèves :
+La note de remise (`dist/terminale/NOTE_DE_REMISE.md`, produite par
+`make terminale-livraison`) donne le compte exact, élève par élève et séance par
+séance, à partir du registre. Les ordres de grandeur, pour la cohorte de neuf élèves —
+huit en mathématiques, quatre en NSI, trois en physique-chimie :
 
 | Lot | Exemplaires | Pages par exemplaire | Feuilles |
 |---|---:|---:|---:|
-| Dossiers élèves (maths) | 8 | 5 à 30 | ~85 |
-| Dossiers élèves (NSI) | 4 | 15 à 25 | ~45 |
-| Fiche d'une séance, maths | 8 | 5 | ~20 |
-| Fiche d'une séance, NSI | 4 | 5 à 7 | ~12 |
-| Préparation d'une séance | 1 | 11 à 14 | ~7 |
-| Packs enseignants complets | 2 | 100 et 98 | ~100 |
+| Cahiers des cinq séances (maths) | 8 | 17 à 23 | ~85 |
+| Cahiers des cinq séances (NSI) | 4 | 21 à 23 | ~45 |
+| Cahiers des cinq séances (physique-chimie) | 3 | 23 à 24 | ~36 |
+| Dossiers individuels (les trois matières) | 15 | 4 à 17 | ~95 |
+| Fiche d'une séance, maths | 8 | 5 à 6 | ~24 |
+| Fiche d'une séance, NSI | 4 | 6 à 7 | ~16 |
+| Fiche d'une séance, physique-chimie | 3 | 6 | ~9 |
+| Préparation d'une séance | 1 | 9 à 14 | ~7 |
+| Packs enseignants complets | 3 | 96 à 114 | ~160 |
 
-Imprimer séance par séance est plus économe : cinq tirages de 5 pages pour un élève de maths
-valent 23 feuilles en recto-verso, contre 17 pour le pack de 34 pages — mais on n'imprime que
-ce qui sert le jour même, et les fiches non utilisées ne sont pas gaspillées.
+Imprimer séance par séance coûte un peu plus de papier : les cinq fiches de mathématiques
+font 5, 5, 6, 6 et 6 pages, soit 15 feuilles en recto-verso, contre 14 pour le pack de
+33 pages tiré d'un bloc. On n'imprime en revanche que ce qui sert le jour même, et une
+séance qui se déroule autrement que prévu ne rend pas caduque une liasse déjà tirée.
 
-Le manifeste donne le compte exact après chaque génération.
+Le manifeste et la note de remise donnent le compte exact après chaque génération.
 
 ## 5. Distribution
 
@@ -104,12 +122,13 @@ Le manifeste donne le compte exact après chaque génération.
 ## 6. Cas particuliers de cette cohorte
 
 - **Une élève n'a pas passé le positionnement en mathématiques.** Son dossier ne compte que
-  5 pages et porte la mention « Diagnostic à établir » : il organise la passation en séance 1
+  4 pages et porte la mention « Diagnostic à établir » : il organise la passation en séance 1
   au lieu d'annoncer des résultats. Prévoir un jeu du positionnement papier.
 - **Deux élèves suivent l'option mathématiques expertes.** Elles ne reçoivent **pas** de
   dossier séparé : l'option figure dans leur livret de mathématiques, section « Option
   annuelle », et leurs exercices d'option sont à la fin de leur feuille de remédiation. Leur
   dossier est donc plus épais que celui des autres.
-- **Deux élèves du groupe 2 suivent aussi la physique-chimie**, pour laquelle aucun stage
-  n'est organisé ici, et **deux ne suivent que les mathématiques**. Chaque livret annonce les
-  spécialités réelles : ne pas se fier au nom du groupe pour savoir quoi remettre.
+- **Trois élèves suivent le stage de physique-chimie**, dont une qui ne suit que celui-là.
+  **Deux ne suivent que les mathématiques.** Chaque livret annonce les spécialités réelles :
+  ne pas se fier au nom du groupe pour savoir quoi remettre — le tableau 1 de la note de
+  remise fait foi.

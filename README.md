@@ -163,7 +163,23 @@ s'en passer, et un domaine laissé sans réponse ne peut pas afficher un taux de
 Les textes officiels applicables à cette cohorte sont fixés dans
 [`CURRICULUM_SOURCES.md`](./CURRICULUM_SOURCES.md). Le programme de spécialité mathématiques
 publié au BO du 2 avril 2026 n'entre en vigueur qu'à la rentrée 2027-2028 : il ne s'applique
-pas ici.
+pas ici. `tools/qa_curriculum.py` (`make terminale-qa`) tient cette frontière : il refuse
+qu'une notion de Terminale figure dans un encadré qui affirme un acquis de Première, qu'un
+prérequis annoncé décrive en réalité le programme de l'année à venir, ou qu'une notion de
+Terminale apparaisse sans être annoncée comme telle. L'erreur qu'il empêche est la plus
+coûteuse du dispositif : compter en déficit de Première un élève qui a buté sur une
+passerelle, et le faire donc travailler sur ce qu'il maîtrise déjà.
+
+### Remise
+
+`make terminale-livraison` écrit `dist/terminale/NOTE_DE_REMISE.md` à partir du registre de
+la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui se photocopie et en
+combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. La note n'est pas rédigée à
+la main — elle ne peut donc pas décrire une remise différente de ce qui a été fabriqué. Le
+même outil, en `--check`, échoue si un document nominatif se trouve dans la liasse
+collective, si un document attendu manque, ou si un fichier est attribué à quelqu'un qui
+n'est pas au registre. Il ne demande pas de distribution TeX et tourne en intégration
+continue.
 
 ## Module Première NSI
 

@@ -307,8 +307,27 @@ def latex_fragment(source: Path) -> str:
     )
     fragment = result.stdout
     # pandoc échappe les points ; ils ressortent tels quels et repassent ici en filets.
-    fragment = DOTTED_RUN.sub(lambda match: _rule_for(len(match.group(0))), fragment)
+    fragment = rule_dotted_runs(fragment)
     return size_tables(name_boxes(fragment))
+
+
+# Un bloc de code est composé en verbatim : \rule n'y est pas interprété, il s'y imprime.
+# Une fiche Python à trous — « u = .......... » — sortait donc avec la commande LaTeX en
+# toutes lettres à la place du trou. Dans du code, les points restent des points.
+LISTING = re.compile(r"\\begin\{(lstlisting|verbatim|Shaded|Highlighting)\}.*?"
+                     r"\\end\{\1\}", re.S)
+
+
+def rule_dotted_runs(fragment: str) -> str:
+    """Remplace les files de points par des filets, hors des blocs de code."""
+    out, position = [], 0
+    for bloc in LISTING.finditer(fragment):
+        out.append(DOTTED_RUN.sub(lambda m: _rule_for(len(m.group(0))),
+                                  fragment[position:bloc.start()]))
+        out.append(bloc.group(0))
+        position = bloc.end()
+    out.append(DOTTED_RUN.sub(lambda m: _rule_for(len(m.group(0))), fragment[position:]))
+    return "".join(out)
 
 
 # --- encadrés nommés ---------------------------------------------------------------

@@ -71,7 +71,7 @@ L'ordre est déduit du diagnostic et respecte les dépendances techniques : la m
 | 10 min | Question de contrôle | Réactiver la séance précédente, avec certitude déclarée |
 | 20 min | Confrontation | Prédire, exécuter, constater l'écart |
 | 25 min | Reconstruction | Propriété, exemple exécuté, trace écrite |
-| 30 min | Entraînement différencié | Trois parcours, cinq niveaux d'aide, sur machine |
+| 30 min | Entraînement différencié | Six pistes, cinq niveaux d'aide, sur machine |
 | 20 min | Ouverture Terminale | Nommer ce que la notion conditionne l'an prochain |
 | 15 min | Trace écrite et auto-évaluation | Portfolio, certitude déclarée |
 

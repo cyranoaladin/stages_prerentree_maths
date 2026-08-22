@@ -1,5 +1,63 @@
 # Journal des modifications
 
+## 2026.10 — 2026-08-22
+
+Relecture des documents que rien n'avait encore contrôlés : le mémento de physique-chimie,
+la place curriculaire de chaque notion, et les 416 pages destinées à l'enseignant.
+
+**Le mémento de formules de physique-chimie**, relu ligne à ligne contre le programme de
+Première de 2019, portait quatre défauts. C'est le seul document du corpus que l'élève
+emporte en septembre : ce qui y est faux le suit toute l'année.
+
+- `P = U I = R I²` enchaînait une loi générale et une loi qui ne vaut que pour un conducteur
+  ohmique — ni pour une pile, ni pour un moteur. Les deux relations sont désormais séparées,
+  avec leur domaine de validité.
+- La conservation de l'énergie mécanique était réduite à « sans frottement ». Une force
+  motrice la rompt tout autant : la condition est que le poids soit la seule force qui
+  travaille.
+- La longueur d'onde d'un son audible était donnée « de quelques centimètres à quelques
+  mètres ». À 20 Hz elle vaut 17 m.
+- Un espace parasite séparait les deux arguments d'un `\SI`.
+
+**Audit curriculaire.** `tools/qa_curriculum.py` vérifie qu'aucune notion de Terminale n'est
+présentée comme un acquis antérieur, que chaque domaine du positionnement porte son prérequis
+et son ouverture, que le programme de mathématiques publié en avril 2026 n'est jamais donné
+pour applicable à cette cohorte, et que toute notion de Terminale qui apparaît est annoncée
+comme telle. 1524 contrôles. Il a trouvé :
+
+- **la variante de l'item 9 de physique-chimie demandait le vecteur accélération** — introduit
+  en Terminale — pour remédier à une lacune de Première. Un élève qui échouait dessus était
+  compté en déficit sur une notion qu'il n'a pas encore rencontrée ;
+- **le champ `ouverture_terminale` était servi au professeur comme « argument à donner à
+  l'élève »** : cinq notions de l'année à venir, à citer à quelqu'un qui bute sur l'année
+  passée. C'est un repère curriculaire, pas un texte à lire ;
+- un piège de Première se corrigeait par l'énergie interne, une question de recul demandait
+  du SQL sans dire que SQL est de Terminale, et l'auto-évaluation finale de NSI mettait huit
+  énoncés de Première et deux de Terminale sur le même plan.
+
+**Balayage visuel des documents enseignant.** Il a trouvé ce que le contrôle de densité ne
+pouvait pas voir : **les files de points étaient converties en filets `\rule` jusque dans les
+blocs de code**. En verbatim, `\rule` n'est pas interprété — il s'imprime. Trente blocs
+étaient concernés, dont les fiches Python à trous distribuées aux élèves, qui sortaient avec
+`u = \rule{15mm}{0.32pt}` à la place du trou. La substitution connaît désormais les blocs de
+code, et cinq tests la tiennent.
+
+Le même balayage a montré que les documents de cadrage annonçaient encore **trois parcours**
+quand les fiches élèves en portent six : les guides du formateur, les documentations de
+module et les trois documents sources sont alignés. La distinction entre les **cinq cartes
+d'aide collectives** et les **trois indices gradués du cahier nominatif** est écrite là où
+elle manquait.
+
+**Dossier de remise.** `tools/build_dossier_livraison.py` produit `NOTE_DE_REMISE.md` à partir
+du registre de la cohorte : qui reçoit quoi, en combien de pages, ce qui se photocopie et en
+combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. Le même outil échoue si un
+document nominatif se trouve dans la liasse collective, si un document attendu manque, ou si
+un fichier est attribué à quelqu'un qui n'est pas au registre. Il tourne sans distribution
+TeX, et donc en intégration continue.
+
+Le guide d'impression annonçait encore WeasyPrint, une cohorte de huit élèves et l'absence de
+stage de physique-chimie. Les trois sont faux depuis plusieurs versions.
+
 ## 2026.9 — 2026-08-22
 
 Balayage visuel des 327 pages des quinze cahiers nominatifs, en trente planches contact.

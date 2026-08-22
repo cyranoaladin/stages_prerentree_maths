@@ -296,7 +296,7 @@ travail à part entière.
 
 Chaque séance suit le même déroulé de 120 minutes : **confrontation** (l'élève produit sa
 réponse avant tout apport), **reconstruction** (la méthode est établie au tableau),
-**entraînement différencié** (trois parcours), **ouverture Terminale** (à quoi cela va
+**entraînement différencié** (six pistes), **ouverture Terminale** (à quoi cela va
 servir), **trace écrite et bilan de certitude**.
 
 ## Séance 1 — Transformations chimiques : avancement, réactif limitant, oxydo-réduction
