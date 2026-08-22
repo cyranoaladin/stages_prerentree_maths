@@ -137,7 +137,7 @@ def read_sheet(module: str, session: int, root: Path) -> dict[str, str]:
         )
 
     for piste, marker in PISTE_BLOCKS.items():
-        body = _body(sections, lambda t, m=marker: m in t)
+        body = _body(sections, lambda t, m=marker.lower(): m in t.lower())
         if body:
             parts[f"piste:{piste}"] = body
 
@@ -323,6 +323,23 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
     add("## Ton entraînement")
     add("")
     exercises = parts.get(f"piste:{piste}")
+    # La piste excellence n'ouvre que deux problèmes. C'est assez pour trente minutes quand
+    # une ouverture les accompagne — l'atelier Terminale en NSI et en physique-chimie,
+    # l'option maths expertes pour qui la suit. Un élève d'excellence en mathématiques qui
+    # ne suit pas l'option n'avait donc que deux exercices pour tout le temps différencié,
+    # soit le tiers de ce que recevait un élève en remédiation. Il reçoit d'abord la série
+    # d'entretien, qu'il traitera vite, puis ses deux problèmes : une rampe, pas une falaise.
+    if piste == "Excellence" and not (option_ouverte and parts.get("option")):
+        entretien = parts.get("piste:Entretenir")
+        if entretien and exercises:
+            add("**D'abord la série d'entretien** — tu la traiteras vite, et elle vaut "
+                "échauffement : on y attend la démonstration rédigée en entier, ce que tes "
+                "deux problèmes exigeront ensuite.")
+            add("")
+            add(entretien)
+            add("")
+            add("**Puis tes deux problèmes.**")
+            add("")
     if exercises:
         # Le décalage ne vaut que pour la piste Installer. Un élève en confrontation porte
         # une certitude erronée : le taux de réussite ne dit pas qu'il maîtrise l'accès, il
@@ -401,7 +418,15 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
         add(parts["terminale"])
         add("")
 
-    if option_ouverte and parts.get("option"):
+    # L'atelier ne revient qu'aux pistes qui atteignent la fin du temps différencié.
+    # Le donner à un élève qui a huit exercices devant lui n'ajoute rien qu'il traitera :
+    # cela épaissit son cahier sans le nourrir, et noie ce qui lui est propre sous un bloc
+    # identique pour tout le groupe. L'ouverture maths expertes, elle, tient à l'option et
+    # non à la piste.
+    ouverture = option_ouverte and parts.get("option")
+    if ouverture and str(parts.get("option_titre", "")).startswith("Atelier"):
+        ouverture = piste in ("Consolider", "Entretenir", "Excellence")
+    if ouverture:
         add(f"## {parts.get('option_titre', 'Ouverture')}")
         add("")
         add(parts["option"])

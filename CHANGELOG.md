@@ -1,5 +1,40 @@
 # Journal des modifications
 
+## 2026.11 — 2026-08-22
+
+Audit de la pagination des cahiers d'élèves, déclenché par un doute sur leur épaisseur.
+Le doute était fondé, et il désignait trois défauts qui allaient tous dans le même sens :
+**les meilleurs élèves recevaient le moins de travail.**
+
+- **Le bloc de la piste excellence était introuvable dans dix fiches sur quinze.** Le titre
+  s'écrit « Exercices 9 et 10 — piste Excellence » en mathématiques et « Piste excellence —
+  exercices 11 et 12 » en NSI, « Piste excellence — exercices 9 et 10 » en physique-chimie.
+  Le motif cherché était sensible à la casse. Aucun élève de NSI ni de physique-chimie n'est
+  aujourd'hui routé sur cette piste, donc rien ne s'était vu : le premier qui l'aurait été
+  aurait reçu une séance **sans le moindre exercice d'entraînement**. Le repérage ignore
+  désormais la casse, et un test parcourt les douze couples (module, séance) concernés.
+- **L'atelier Terminale n'entrait dans aucun cahier** — zéro séance sur soixante-quinze. Le
+  drapeau qui l'ouvre était calculé pour l'option maths expertes, qui ne concerne que les
+  mathématiques : pour NSI et physique-chimie il valait donc toujours faux. Dix ateliers
+  écrits, destinés par leur propre texte à « quiconque a terminé sa piste avant la fin du
+  temps différencié », n'ont jamais quitté la fiche collective. Ils rejoignent les cahiers
+  des pistes qui les atteignent — Consolider, Entretenir, Excellence — et pas les autres :
+  donner un bloc de trente-cinq lignes à un élève qui a huit exercices devant lui épaissit
+  son cahier sans le nourrir, et noie ce qui lui est propre sous un contenu identique pour
+  tout le groupe.
+- **La piste excellence n'ouvrait que deux exercices**, contre six en médiane pour les
+  pistes de remédiation, pour le même créneau de trente minutes. Un élève d'excellence en
+  mathématiques qui ne suit pas l'option maths expertes n'avait donc rien d'autre. Il reçoit
+  d'abord la série d'entretien — qu'il traitera vite, et qui exige déjà la démonstration
+  rédigée en entier — puis ses deux problèmes.
+
+Après correction, la médiane de tâches par séance va de 5 à 7 selon la piste, contre 2 à 6
+avant. L'écart minimal entre deux cahiers d'élèves aux bilans différents passe de 17,3 % à
+20,5 %.
+
+Six tests tiennent ces trois correctifs, et les trois régressions correspondantes ont été
+réintroduites une à une pour vérifier qu'ils les rattrapent : ils les rattrapent.
+
 ## 2026.10 — 2026-08-22
 
 Relecture des documents que rien n'avait encore contrôlés : le mémento de physique-chimie,

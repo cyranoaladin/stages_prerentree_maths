@@ -457,6 +457,70 @@ print(arbre['gauche']['valeur'])   # affiche ...........
 
 ---
 
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de représenter un arbre par un dictionnaire imbriqué. Un **arbre
+binaire de recherche** est le même objet, avec une règle en plus : à gauche les valeurs plus
+petites, à droite les plus grandes.
+
+On insère successivement 8, 3, 10, 1, 6, 14, 4 dans un arbre binaire de recherche vide.
+
+**a)** Dessine l'arbre obtenu. Chaque valeur descend depuis la racine en comparant à chaque
+nœud.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** Le **parcours infixe** visite le sous-arbre gauche, puis la racine, puis le sous-arbre
+droit. Écris la suite des valeurs obtenue. Que remarques-tu ?
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Écris la fonction de recherche, en réutilisant le dictionnaire à trois clés de
+l'exercice 8.
+
+```python
+def recherche(arbre, valeur):
+    """..............................................................."""
+
+
+
+
+
+
+```
+
+**d)** Combien de comparaisons au pire pour trouver une valeur dans cet arbre ? Et si on avait
+inséré 1, 3, 4, 6, 8, 10, 14 dans cet ordre ? Que devient l'arbre ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** L'arbre binaire de recherche est la structure du programme de
+Terminale qui explique pourquoi un dictionnaire Python est rapide. Sa hauteur décide de tout :
+un arbre équilibré cherche en $\log_2 n$ comparaisons, un arbre dégénéré en n.
+
+---
+
 ## Prendre du recul
 
 - Comment savoir si une opération a modifié la structure ou en a créé une nouvelle ?
@@ -697,6 +761,65 @@ Ce qui suit n'est pas attendu de toi aujourd'hui. C'est là pour que tu voies à
 
 ---
 
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de séparer ce qu'une fonction **renvoie** de ce qu'elle
+**modifie**. La programmation orientée objet, au programme de Terminale, range les deux au
+même endroit : les données et les fonctions qui les manipulent.
+
+**a)** Voici une pile écrite en objet. Complète les deux méthodes manquantes.
+
+```python
+class Pile:
+    def __init__(self):
+        self.contenu = []
+
+    def empiler(self, x):
+
+
+    def depiler(self):
+
+
+
+    def est_vide(self):
+
+```
+
+**b)** Écris les trois lignes qui créent une pile, y empilent 5, puis dépilent.
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** À quoi sert `self` ? Que se passerait-il si on l'oubliait dans la définition de
+`empiler` ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Compare avec la fonction `empiler(p, x)` de la séance 2, où `p` était une liste. Qu'est-ce
+que l'écriture objet garantit que l'écriture par fonctions ne garantissait pas ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Toutes les structures de données de l'année — pile, file,
+liste chaînée, arbre, graphe — sont définies ainsi : une classe, ses attributs, ses méthodes,
+et une interface qu'on peut utiliser sans connaître l'implémentation.
+
+---
+
 ## Prendre du recul
 
 - Comment savoir si une fonction renvoie bien quelque chose dans tous les cas ?
@@ -927,6 +1050,68 @@ Ce qui suit n'est pas attendu de toi aujourd'hui. C'est là pour que tu voies à
 
 ---
 
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de comparer le coût de deux algorithmes de recherche. La méthode
+**diviser pour régner**, au programme de Terminale, applique à un tri l'idée que tu as
+utilisée pour la dichotomie : couper le problème en deux.
+
+Le **tri fusion** coupe la liste en deux moitiés, trie chacune, puis fusionne les deux moitiés
+triées.
+
+**a)** Écris la fonction `fusion(A, B)` qui, à partir de deux listes **déjà triées**, renvoie
+une liste triée contenant tous leurs éléments.
+
+```python
+def fusion(A, B):
+    """..............................................................."""
+
+
+
+
+
+
+
+
+```
+
+**b)** Déroule le tri fusion sur `[5, 2, 8, 1]` : écris les découpages, puis les fusions.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** À chaque niveau de découpage, la fusion parcourt les n éléments une fois. Combien de
+niveaux y a-t-il pour une liste de n éléments ? En déduire le coût total.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Le tri par insertion de la séance coûte $n^2/2$ comparaisons au pire, le tri fusion
+$n \log_2 n$. Pour $n = 1000$, calcule les deux et compare.
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Diviser pour régner est l'une des quatre méthodes de
+conception au programme, avec les algorithmes gloutons, la programmation dynamique et la
+recherche exhaustive. Toutes se jugent au coût, pas au chronomètre.
+
+---
+
 ## Prendre du recul
 
 - Comment être sûr qu'une boucle s'arrête ?
@@ -1154,6 +1339,60 @@ Ce qui suit n'est pas attendu de toi aujourd'hui. C'est là pour que tu voies à
 > donc sur la représentation binaire de la séance 1.
 >
 > Remarque : les trois dernières ouvertures renvoient à des séances que tu as déjà faites.
+
+---
+
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de manipuler des données partagées entre plusieurs tables. Un
+système d'exploitation partage autre chose entre plusieurs programmes : le processeur, la
+mémoire, les fichiers. Le programme de Terminale appelle cela la **gestion des processus**.
+
+**a)** Un processus peut être **élu**, **prêt** ou **bloqué**. Associe chaque situation à un
+état.
+
+| Situation | État |
+|---|---|
+| Le programme attend la fin d'une lecture sur disque | |
+| Le programme s'exécute sur le processeur | |
+| Le programme pourrait s'exécuter, mais un autre occupe le processeur | |
+
+**b)** Deux processus, P et Q. P détient le fichier A et demande le fichier B ; Q détient B et
+demande A. Décris ce qui se passe. Comment appelle-t-on cette situation ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Représente la situation par un schéma où une flèche signifie « attend ». Qu'est-ce qui,
+dans ce schéma, caractérise le blocage ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Propose une règle simple qui empêcherait ce blocage de se produire.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** L'interblocage se détecte exactement comme un cycle dans un
+graphe orienté — le même objet mathématique que les graphes du programme d'algorithmique.
+Deux chapitres qui semblent étrangers reposent sur la même structure.
 
 ---
 

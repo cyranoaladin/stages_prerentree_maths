@@ -1342,6 +1342,61 @@ justifié.
 
 ....................................................................................................
 
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de traiter un conducteur ohmique, où l'énergie électrique est
+entièrement dissipée. Dans une pile, la chimie **produit** cette énergie ; dans une
+électrolyse, l'électricité **force** une transformation qui ne se ferait pas seule. C'est au
+programme de Terminale.
+
+On considère la pile Daniell, construite sur les couples $\ce{Cu^2+/Cu}$ et
+$\ce{Zn^2+/Zn}$. Le zinc y est oxydé.
+
+**a)** Écris les deux demi-équations, puis l'équation de la réaction qui fonctionne
+spontanément dans la pile.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** À quelle électrode se produit l'oxydation ? Cette électrode est-elle le pôle positif ou
+le pôle négatif de la pile ?
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** La pile débite $\SI{0.10}{\ampere}$ pendant $\SI{1.0}{\hour}$. La charge transportée
+vaut $Q = I \times t$. La calculer en coulombs.
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Une électrolyse impose le sens **inverse** à l'aide d'un générateur. Qu'est-ce que le
+générateur apporte que la réaction spontanée ne fournissait pas ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Prévoir le sens spontané d'évolution, puis le forcer : c'est
+la dernière partie du programme de chimie, et elle réunit l'oxydo-réduction de la séance 1 et
+l'électricité d'aujourd'hui.
+
+---
+
 ## Prendre du recul
 
 - Comment contrôler qu'une puissance calculée est plausible pour un appareil domestique ?

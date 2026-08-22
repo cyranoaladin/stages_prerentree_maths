@@ -787,6 +787,62 @@ de refroidissement de Newton.
 
 ---
 
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de constater que l'énergie mécanique diminue quand il y a
+frottement, sans disparaître. Le **premier principe de la thermodynamique**, au programme de
+Terminale, ferme le bilan.
+
+Il s'écrit $\Delta U = W + Q$ : la variation d'énergie interne d'un système est la somme du
+travail et du transfert thermique qu'il reçoit.
+
+**a)** Dans l'exercice de la luge, l'énergie dissipée valait environ
+$\SI{1.8}{\kilo\joule}$. Sous quelle forme se retrouve-t-elle, et dans quels corps ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** L'énergie interne d'un corps de masse m et de capacité thermique massique c varie de
+$\Delta U = m c \Delta T$. La neige a pour capacité thermique massique
+$\SI{2100}{\joule\per\kilogram\per\kelvin}$. Si toute l'énergie dissipée était reçue par
+$\SI{5.0}{\kilogram}$ de neige, de combien sa température s'élèverait-elle ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Cette élévation est-elle plausible ? Que peut-on en déduire sur la répartition réelle
+de l'énergie dissipée ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Un système reçoit $\SI{500}{\joule}$ de travail et cède $\SI{200}{\joule}$ par
+transfert thermique. Calcule $\Delta U$ en respectant les signes.
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Le bilan d'énergie de Première ne comptait que $E_c$ et
+$E_{pp}$. Le premier principe y ajoute l'énergie interne, et rend le bilan exact — c'est ce
+qui permet ensuite d'étudier le flux thermique et la loi de refroidissement de Newton.
+
+---
+
 ## Prendre du recul
 
 - Comment contrôler qu'une énergie calculée a le bon ordre de grandeur ?
@@ -1303,6 +1359,61 @@ justifié.
 ....................................................................................................
 
 ....................................................................................................
+
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de traiter un conducteur ohmique, où l'énergie électrique est
+entièrement dissipée. Dans une pile, la chimie **produit** cette énergie ; dans une
+électrolyse, l'électricité **force** une transformation qui ne se ferait pas seule. C'est au
+programme de Terminale.
+
+On considère la pile Daniell, construite sur les couples $\ce{Cu^2+/Cu}$ et
+$\ce{Zn^2+/Zn}$. Le zinc y est oxydé.
+
+**a)** Écris les deux demi-équations, puis l'équation de la réaction qui fonctionne
+spontanément dans la pile.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** À quelle électrode se produit l'oxydation ? Cette électrode est-elle le pôle positif ou
+le pôle négatif de la pile ?
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** La pile débite $\SI{0.10}{\ampere}$ pendant $\SI{1.0}{\hour}$. La charge transportée
+vaut $Q = I \times t$. La calculer en coulombs.
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Une électrolyse impose le sens **inverse** à l'aide d'un générateur. Qu'est-ce que le
+générateur apporte que la réaction spontanée ne fournissait pas ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Prévoir le sens spontané d'évolution, puis le forcer : c'est
+la dernière partie du programme de chimie, et elle réunit l'oxydo-réduction de la séance 1 et
+l'électricité d'aujourd'hui.
+
+---
 
 ## Prendre du recul
 
