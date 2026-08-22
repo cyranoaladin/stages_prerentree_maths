@@ -45,12 +45,12 @@
 
 ## Évaluations
 
-- [Mini-diagnostic pratique élève](../03_EVALUATIONS/tle_pc_Mini_Diagnostic_Pratique_ELEVE.md)
-- [Mini-diagnostic pratique corrigé](../03_EVALUATIONS/tle_pc_Mini_Diagnostic_Pratique_PROF_Corrige.md)
+- [Mini-diagnostic élève](../03_EVALUATIONS/tle_pc_Mini_Diagnostic_ELEVE.md)
+- [Mini-diagnostic corrigé](../03_EVALUATIONS/tle_pc_Mini_Diagnostic_PROF_Corrige.md)
 - [Évaluation finale élève](../03_EVALUATIONS/tle_pc_Evaluation_Finale_ELEVE.md)
 - [Évaluation finale corrigée](../03_EVALUATIONS/tle_pc_Evaluation_Finale_PROF_Corrige_Bareme.md)
-- [Mémento Python](../04_PORTFOLIO/tle_pc_Memento_Python_Terminale_ELEVE.md)
-- [Portfolio du stage](../04_PORTFOLIO/tle_pc_Portfolio_Individuel.md)
+- [Mémento de formules](../03_EVALUATIONS/tle_pc_Memento_Formules_Terminale_ELEVE.md)
+- [Portfolio du stage](../03_EVALUATIONS/tle_pc_Portfolio_Individuel.md)
 
 ## Source pédagogique
 
@@ -63,4 +63,10 @@ Le dossier `04_NOMINATIFS/` contient, pour chaque élève, trois pièces : son *
 > **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne les nomme pas : la liste et les liens figurent dans le [tableau de bord enseignant](../01_ENSEIGNANT/tle_pc_Tableau_Bord_Enseignant.md), qui est lui-même confidentiel. Ne jamais placer un document nominatif dans un pack collectif, ni le remettre à un autre élève du groupe.
 
 _3 dossier(s) nominatif(s) dans ce module._
+
+## Impression et remise
+
+- [Guide d'impression et de distribution](../../tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md) — commun aux trois modules : réglages, volumétrie, règles de distribution
+- `make terminale` puis `make terminale-pdf` produisent les PDF sous `dist/terminale/`
+- `make terminale-livraison` écrit la **note de remise**, produite à partir du registre de la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui se photocopie et en combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. C'est le document à imprimer pour la personne qui distribue.
 

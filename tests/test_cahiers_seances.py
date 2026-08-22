@@ -304,3 +304,43 @@ def test_aucun_bloc_de_code_du_corpus_ne_sort_avec_une_commande_latex_dans_le_co
                 f"{chemin.relative_to(ROOT)} : un trou de code deviendrait une commande "
                 f"LaTeX imprimée en toutes lettres")
     assert vus >= 20, f"seulement {vus} blocs de code à trous trouvés : le corpus a changé"
+
+
+# --- index des modules : aucun lien ne doit pointer dans le vide -------------------
+# Le générateur branchait sur la clé du module au lieu d'employer les champs prévus
+# (`diagnostic_prefix`, `portfolio_dir`, `extra_portfolio`). La physique-chimie héritait
+# donc de la forme de NSI, et son index proposait quatre documents qui n'existent pas —
+# dont un mini-diagnostic « pratique » et un mémento Python. Le mémento de formules, lui,
+# n'était lié nulle part.
+
+LIEN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+
+
+@pytest.mark.parametrize("module", ["tle_spe", "tle_nsi", "tle_pc"])
+def test_aucun_lien_mort_dans_l_index_d_un_module(module):
+    index = ROOT / module / "00_MASTER" / "index.md"
+    morts = []
+    for cible in LIEN.findall(index.read_text(encoding="utf-8")):
+        if cible.startswith(("http://", "https://", "#")):
+            continue
+        chemin = (index.parent / cible.split("#")[0]).resolve()
+        if not chemin.exists():
+            morts.append(cible)
+    assert not morts, f"{index.relative_to(ROOT)} : liens morts {morts}"
+
+
+@pytest.mark.parametrize("module,memento", [
+    ("tle_nsi", "Memento_Python"),
+    ("tle_pc", "Memento_Formules"),
+])
+def test_le_memento_que_l_eleve_emporte_est_lie_depuis_l_index(module, memento):
+    """C'est le seul document destiné à servir après le stage : il doit se trouver."""
+    index = (ROOT / module / "00_MASTER" / "index.md").read_text(encoding="utf-8")
+    assert memento in index, f"{module} : le mémento n'est lié depuis aucun index"
+
+
+def test_l_index_mene_a_la_note_de_remise_et_au_guide_d_impression():
+    for module in ("tle_spe", "tle_nsi", "tle_pc"):
+        index = (ROOT / module / "00_MASTER" / "index.md").read_text(encoding="utf-8")
+        assert "PRINT_GUIDE_TERMINALE.md" in index, f"{module} : guide d'impression absent"
+        assert "terminale-livraison" in index, f"{module} : note de remise absente"

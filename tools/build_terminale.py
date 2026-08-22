@@ -1490,6 +1490,20 @@ def render_dashboard(module: Module, entries: list[dict]) -> str:
     return "\n".join(out) + "\n"
 
 
+MEMENTOS = {
+    "Memento_Python": "Mémento Python",
+    "Memento_Formules": "Mémento de formules",
+}
+
+
+def portfolio_label(document: str) -> str:
+    """L'intitulé d'une pièce du portfolio, lu sur son nom de fichier."""
+    for marqueur, libelle in MEMENTOS.items():
+        if marqueur in document:
+            return libelle
+    raise KeyError(f"aucun intitulé connu pour {document} — l'ajouter à MEMENTOS")
+
+
 def render_index(module: Module, entries: list[dict]) -> str:
     out: list[str] = []
     add = out.append
@@ -1522,19 +1536,17 @@ def render_index(module: Module, entries: list[dict]) -> str:
 
     add("## Évaluations")
     add("")
-    if module.key == "tle_spe":
-        add(f"- [Mini-diagnostic élève](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_ELEVE.md)")
-        add(f"- [Mini-diagnostic corrigé](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_PROF_Corrige.md)")
-    else:
-        add(f"- [Mini-diagnostic pratique élève](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_Pratique_ELEVE.md)")
-        add(f"- [Mini-diagnostic pratique corrigé](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_Pratique_PROF_Corrige.md)")
+    diagnostic = "Mini-diagnostic" + (
+        " pratique" if module.diagnostic_prefix.endswith("_Pratique") else "")
+    add(f"- [{diagnostic} élève]"
+        f"(../03_EVALUATIONS/{module.key}_{module.diagnostic_prefix}_ELEVE.md)")
+    add(f"- [{diagnostic} corrigé]"
+        f"(../03_EVALUATIONS/{module.key}_{module.diagnostic_prefix}_PROF_Corrige.md)")
     add(f"- [Évaluation finale élève](../03_EVALUATIONS/{module.key}_Evaluation_Finale_ELEVE.md)")
     add(f"- [Évaluation finale corrigée](../03_EVALUATIONS/{module.key}_Evaluation_Finale_PROF_Corrige_Bareme.md)")
-    if module.key == "tle_spe":
-        add(f"- [Portfolio du stage](../03_EVALUATIONS/{module.key}_Portfolio_Individuel.md)")
-    else:
-        add(f"- [Mémento Python](../04_PORTFOLIO/{module.key}_Memento_Python_Terminale_ELEVE.md)")
-        add(f"- [Portfolio du stage](../04_PORTFOLIO/{module.key}_Portfolio_Individuel.md)")
+    for document in module.extra_portfolio:
+        add(f"- [{portfolio_label(document)}](../{module.portfolio_dir}/{document})")
+    add(f"- [Portfolio du stage](../{module.portfolio_dir}/{module.key}_Portfolio_Individuel.md)")
     add("")
 
     if module.key == "tle_nsi":
@@ -1564,6 +1576,22 @@ def render_index(module: Module, entries: list[dict]) -> str:
         "collectif, ni le remettre à un autre élève du groupe.")
     add("")
     add(f"_{len(entries)} dossier(s) nominatif(s) dans ce module._")
+    add("")
+
+    # Le corpus ne sert à rien tant qu'il n'est pas entre les bonnes mains : l'index doit
+    # donner la route vers l'impression et la remise, sans quoi elle se cherche.
+    add("## Impression et remise")
+    add("")
+    guide = ("./PRINT_GUIDE_TERMINALE.md" if module.key == "tle_spe"
+             else "../../tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md")
+    add(f"- [Guide d'impression et de distribution]({guide}) — commun aux trois modules : "
+        "réglages, volumétrie, règles de distribution")
+    add("- `make terminale` puis `make terminale-pdf` produisent les PDF sous "
+        "`dist/terminale/`")
+    add("- `make terminale-livraison` écrit la **note de remise**, produite à partir du "
+        "registre de la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui "
+        "se photocopie et en combien d'exemplaires, ce qui ne sort pas du dossier "
+        "pédagogique. C'est le document à imprimer pour la personne qui distribue.")
     add("")
     return "\n".join(out) + "\n"
 

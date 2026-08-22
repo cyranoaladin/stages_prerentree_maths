@@ -64,3 +64,9 @@ Le dossier `04_NOMINATIFS/` contient, pour chaque élève, trois pièces : son *
 
 _8 dossier(s) nominatif(s) dans ce module._
 
+## Impression et remise
+
+- [Guide d'impression et de distribution](./PRINT_GUIDE_TERMINALE.md) — commun aux trois modules : réglages, volumétrie, règles de distribution
+- `make terminale` puis `make terminale-pdf` produisent les PDF sous `dist/terminale/`
+- `make terminale-livraison` écrit la **note de remise**, produite à partir du registre de la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui se photocopie et en combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. C'est le document à imprimer pour la personne qui distribue.
+

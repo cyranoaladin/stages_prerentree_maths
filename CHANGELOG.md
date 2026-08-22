@@ -48,6 +48,16 @@ module et les trois documents sources sont alignés. La distinction entre les **
 d'aide collectives** et les **trois indices gradués du cahier nominatif** est écrite là où
 elle manquait.
 
+**Index des modules.** Le générateur branchait sur la clé du module au lieu d'employer les
+champs prévus pour ces différences — `diagnostic_prefix`, `portfolio_dir`,
+`extra_portfolio`. La physique-chimie héritait donc de la forme de NSI : son index
+proposait un mini-diagnostic « pratique », un mémento Python et un portfolio dans
+`04_PORTFOLIO`, soit **quatre documents qui n'existent pas**. Le mémento de formules, lui,
+n'était lié depuis aucun index — alors que c'est le seul document du corpus destiné à
+servir après le stage. Les trois index mènent en outre désormais au guide d'impression et
+à la note de remise. Six tests refusent un lien mort, un mémento non lié, ou un index qui
+ne mènerait pas à la remise.
+
 **Dossier de remise.** `tools/build_dossier_livraison.py` produit `NOTE_DE_REMISE.md` à partir
 du registre de la cohorte : qui reçoit quoi, en combien de pages, ce qui se photocopie et en
 combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. Le même outil échoue si un
