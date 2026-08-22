@@ -1,0 +1,104 @@
+/* Feuille d'impression des stages de pré-rentrée Terminale.
+   Complète assets/print.css, qui porte la charte commune du dépôt : elle est chargée
+   avant celle-ci et n'est pas dupliquée. On ne redéfinit ici que la page de garde, les
+   lignes de réponse et quelques ajustements propres aux livrets nominatifs. */
+
+@page {
+  size: A4;
+  margin: 16mm 17mm 20mm 17mm;
+  @bottom-center {
+    content: counter(page) " / " counter(pages);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #536070;
+  }
+}
+
+/* La page de garde ne porte ni numéro ni pied de page. */
+@page cover { margin: 0; @bottom-center { content: none; } }
+
+.cover {
+  page: cover;
+  break-after: page;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 45mm 22mm 22mm;
+  background: var(--navy, #071A3A);
+  color: #FFFFFF;
+
+  /* assets/print.css contraint le corps à 180 mm centrés dans une page A4 de 210 mm,
+     ce qui laisserait deux bandes blanches de 15 mm de part et d'autre de la couverture.
+     On la fait déborder pour qu'elle occupe la page entière. */
+  width: 210mm;
+  margin-left: -15mm;
+  margin-right: -15mm;
+}
+
+.cover .kicker {
+  font-size: 10.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold, #C9A227);
+}
+
+.cover h1 {
+  font-size: 30pt;
+  line-height: 1.15;
+  margin: 8mm 0 0;
+  color: #FFFFFF;
+  border-bottom: 3px solid var(--gold, #C9A227);
+  padding-bottom: 6mm;
+}
+
+.cover .subtitle { font-size: 17pt; margin: 7mm 0 0; color: #FFFFFF; }
+.cover .meta { margin-top: 12mm; font-size: 10.5pt; line-height: 1.75; color: #D7DCE6; }
+.cover .meta strong { color: #FFFFFF; }
+
+.cover .confidential-band {
+  margin-top: 16mm;
+  border: 1.5pt solid var(--gold, #C9A227);
+  padding: 5mm;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.cover .footer-brand {
+  position: absolute;
+  bottom: 22mm;
+  font-size: 9pt;
+  color: #A9B3C4;
+}
+
+/* Sommaire du dossier assemblé. */
+.toc { break-after: page; }
+.toc h2 { margin-top: 0; }
+.toc ol { font-size: 11pt; line-height: 1.9; }
+
+/* Chaque document assemblé démarre sur une page neuve. */
+.doc + .doc { break-before: page; }
+
+/* Les lignes pointillées de réponse produites en Markdown sont du texte : on les
+   remplace visuellement par un filet.
+
+   Le filet est *plein*, pas pointillé, pour une raison de poids : WeasyPrint trace chaque
+   point d'une bordure pointillée comme un objet vectoriel distinct. Sur un livret qui en
+   compte plusieurs centaines, cela faisait passer un dossier de 19 pages de 40 Kio à
+   1,4 Mio — mesuré : 200 lignes pointillées pèsent 5,4 Mio, les mêmes en trait plein
+   8 Kio. Un livret doit pouvoir s'imprimer et s'envoyer par courriel. */
+.answer-line {
+  display: block;
+  border-bottom: 0.4pt solid #9AA5B4;
+  height: 7mm;
+  margin: 0 0 1.5mm;
+}
+
+/* Les cases à cocher Unicode restent lisibles à l'impression. */
+.doc p, .doc li, .doc td { font-variant-numeric: tabular-nums; }
+
+/* Un tableau de suivi ne doit pas se couper au milieu d'une ligne. */
+.doc table { break-inside: auto; }
+.doc thead { display: table-header-group; }
+
+/* Bandeau de confidentialité repris en tête de chaque document nominatif. */
+.doc > blockquote:first-of-type { border-left-color: #8B1A1A; background: #FBF1F1; }

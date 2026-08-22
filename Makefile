@@ -47,7 +47,8 @@ test:
 # committé et relu. La CI vérifie en revanche que les documents nominatifs dérivent bien de
 # cet artefact (terminale-check).
 
-.PHONY: terminale terminale-extract terminale-check terminale-test
+.PHONY: terminale terminale-extract terminale-check terminale-test \
+        terminale-pdf terminale-pdf-list
 
 terminale:
 	python3 tools/build_terminale.py
@@ -60,6 +61,14 @@ terminale-check:
 
 terminale-test:
 	pytest -q tests/test_terminale.py
+
+# Rendu imprimable. Exige pandoc et WeasyPrint ; les PDF vont dans dist/terminale/, qui
+# est ignoré par git : un PDF n'est pas reproductible d'une machine à l'autre.
+terminale-pdf:
+	python3 tools/build_terminale_pdf.py
+
+terminale-pdf-list:
+	python3 tools/build_terminale_pdf.py --list
 
 # --- Nexus S5 — Correction & Bilans -----------------------------------------
 # Cibles ajoutées pour l'application de correction. Aucune cible existante n'est touchée.

@@ -38,13 +38,15 @@ Le dépôt contient deux modules de pré-rentrée pour l'entrée en Terminale, `
 ramassés par `tools/build.py`, dont la constante `LEVELS` reste inchangée, et ils
 n'utilisent pas `content/students.json`.
 
-La cohorte compte huit élèves répartis en deux groupes selon la seconde spécialité
-conservée :
+La cohorte compte neuf élèves répartis en deux groupes selon la seconde spécialité
+conservée. Le groupe organise les séances : un élève peut y être rattaché sans suivre
+exactement la combinaison qui lui donne son nom, et son livret le précise alors.
+
 
 | Groupe | Spécialités | Effectif | Modules suivis |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 3 | `tle_spe` |
+| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
 
 Deux élèves suivent en outre l'option mathématiques expertes, traitée en module
 complémentaire.
@@ -78,6 +80,22 @@ mots au milieu (« T erm inale ») sans rien signaler. `content/diagnostics_term
 est donc un artefact committé et relu ; le script refuse de s'exécuter sous une version qui
 dégraderait l'extraction, et `tests/test_terminale.py` compare les 18 énoncés de chaque
 instrument à la banque, caractère pour caractère.
+
+### Rendu imprimable
+
+```bash
+make terminale-pdf        # assemble les PDF A4 sous dist/terminale/
+make terminale-pdf-list   # liste ce qui serait produit, sans rendre
+```
+
+`tools/build_terminale_pdf.py` assemble les Markdown en dossiers prêts à distribuer : un
+dossier par élève et par matière, les corrigés tenus à part, et les fiches de séances à
+photocopier. Un pack élève ne peut pas contenir de corrigé — l'assemblage échoue plutôt que
+de produire un fichier douteux.
+
+Les PDF **ne sont pas versionnés** (`dist/terminale/` est ignoré) : leur binaire dépend de la
+version de WeasyPrint et des polices installées. Le Markdown fait foi. Détail des réglages
+d'impression et de la distribution : `tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md`.
 
 ### Confidentialité
 

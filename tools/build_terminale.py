@@ -200,8 +200,20 @@ def check_sources(registry: dict, diagnostics: dict, items: dict) -> None:
         seen_slugs.add(student["slug"])
         if student["groupe"] not in groups:
             errors.append(f"{where} : groupe inconnu '{student['groupe']}'")
-        if not student["matieres"]:
+        # Un élève inscrit après la campagne de positionnement n'a aucune matière
+        # diagnostiquée : ses matières figurent toutes dans matieresSansDiagnostic.
+        # Ce qui serait fautif, c'est de n'avoir aucune matière du tout.
+        if not student["matieres"] and not student.get("matieresSansDiagnostic"):
             errors.append(f"{where} : aucune matière déclarée")
+        for missing in student.get("matieresSansDiagnostic", []):
+            if missing["module"] not in MODULES:
+                errors.append(f"{where} : module inconnu '{missing['module']}'")
+            if not missing.get("motif", "").strip():
+                errors.append(
+                    f"{where} : matière '{missing.get('matiere')}' sans diagnostic doit "
+                    "porter un motif expliquant ce qui manque"
+                )
+
         for subject in student["matieres"]:
             if subject["module"] not in MODULES:
                 errors.append(f"{where} : module inconnu '{subject['module']}'")
@@ -239,6 +251,17 @@ def check_sources(registry: dict, diagnostics: dict, items: dict) -> None:
 
     if errors:
         raise BuildError("Sources incohérentes :\n- " + "\n- ".join(errors))
+
+
+def specialites(student: dict, group: dict) -> list[str]:
+    """Spécialités réellement suivies par l'élève.
+
+    Le groupe porte une combinaison nominale — « mathématiques et NSI », « mathématiques et
+    physique-chimie » — mais il sert d'abord à organiser les séances. Un élève peut y être
+    rattaché sans suivre exactement cette combinaison ; son livret doit alors annoncer ce
+    qu'il suit vraiment, pas l'étiquette du groupe.
+    """
+    return student.get("specialites") or group["specialites"]
 
 
 def worked_domains(diagnostic: dict) -> list[tuple[str, str]]:
@@ -347,7 +370,7 @@ def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: di
     add("")
     add(f"**Élève :** {name}  ")
     add(f"**Groupe :** {group['libelle']}  ")
-    add(f"**Spécialités conservées :** {', '.join(group['specialites'])}  ")
+    add(f"**Spécialités conservées :** {', '.join(specialites(student, group))}  ")
     add(f"**Matière de ce livret :** {subject['matiere']}"
         + ("  *(enseignement optionnel)*  " if subject.get("option") else "  "))
     add("**Stage :** 5 séances de 2 heures  ")
@@ -355,6 +378,9 @@ def render_livret(student: dict, subject: dict, diagnostic: dict, instrument: di
     add(f"**Diagnostic du :** {diagnostic['date_bilan']}  ")
     add(f"**Source :** `Bilans/{Path(diagnostic['source_pdf']).name}`")
     add("")
+    if student.get("noteGroupe"):
+        add(f"> **Rattachement au groupe.** {student['noteGroupe']}")
+        add("")
     if student.get("homonymeAvertissement"):
         add(f"> **Attention — homonymie.** {student['homonymeAvertissement']}")
         add("")
@@ -930,10 +956,14 @@ def render_missing_subject_notice(student: dict, missing: dict, module: Module,
     add("")
     add(f"**Élève :** {name}  ")
     add(f"**Groupe :** {group['libelle']}  ")
+    add(f"**Spécialités conservées :** {', '.join(specialites(student, group))}  ")
     add(f"**Matière de ce livret :** {missing['matiere']}  ")
     add("**Stage :** 5 séances de 2 heures  ")
     add("**Année scolaire préparée :** 2026-2027")
     add("")
+    if student.get("noteGroupe"):
+        add(f"> **Rattachement au groupe.** {student['noteGroupe']}")
+        add("")
     if student.get("homonymeAvertissement"):
         add(f"> **Attention — homonymie.** {student['homonymeAvertissement']}")
         add("")

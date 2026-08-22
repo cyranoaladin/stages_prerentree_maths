@@ -19,12 +19,15 @@ programme de Terminale. Son objet est précis : **consolider les notions de Prem
 la Terminale a un besoin immédiat**, en traitant en priorité les conceptions erronées que
 le positionnement a mises au jour.
 
-Deux groupes composent la cohorte, définis par la seconde spécialité conservée :
+Deux groupes composent la cohorte, définis par la seconde spécialité conservée. Le groupe
+est une unité d'organisation des séances : une élève y est rattachée sans suivre exactement
+la combinaison qui lui donne son nom (elle ne suit que les mathématiques), ce que son livret
+précise.
 
 | Groupe | Spécialités | Effectif | Modules du stage |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 3 | `tle_spe` |
+| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
 
 Deux élèves suivent en outre l'enseignement optionnel de **mathématiques expertes** :
 un module complémentaire leur est destiné (§ 9).
@@ -245,9 +248,11 @@ réviser. C'est pourquoi les certitudes erronées sont traitées avant tout le r
 - Les items sont majoritairement à réponse courte : ils renseignent sur le résultat, moins
   sur la rédaction. La qualité de la rédaction est observée pendant le stage, pas mesurée
   avant.
-- Un élève du groupe 1 n'a pas passé le positionnement en mathématiques. Son livret le
-  signale explicitement et prévoit un diagnostic en séance 1 : aucune conclusion n'est
-  formulée à sa place.
+- **Deux élèves n'ont pas passé le positionnement en mathématiques** : un élève du groupe 1,
+  et une élève du groupe 2 inscrite après la campagne de positionnement. Leurs livrets le
+  signalent explicitement et organisent un diagnostic en séance 1 ; aucune conclusion n'est
+  formulée à leur place. Le diagnostic de groupe ci-dessus porte donc sur **sept** élèves, et
+  non sur les neuf que compte la cohorte.
 
 ---
 
@@ -683,7 +688,7 @@ spécialité NSI, le lien est fait explicitement avec le module `tle_nsi`.
 
 | Élément | Décision |
 |---|---|
-| Public | 8 élèves entrant en Terminale, deux groupes selon la seconde spécialité |
+| Public | 9 élèves entrant en Terminale, deux groupes selon la seconde spécialité |
 | Durée | 5 séances de 2 heures |
 | Ordre des séances | Déduit du diagnostic : suites, exponentielle, second degré, dérivation, géométrie et probabilités |
 | Principe directeur | Les certitudes erronées d'abord, la justification toujours, l'usage en Terminale explicité |

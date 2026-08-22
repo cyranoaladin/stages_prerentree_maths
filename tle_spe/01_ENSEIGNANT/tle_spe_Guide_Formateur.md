@@ -30,17 +30,26 @@ Une phrase résume la doctrine :
 | Groupe | Spécialités | Élèves |
 |---|---|---:|
 | Groupe 1 | Mathématiques et NSI | 5 |
-| Groupe 2 | Mathématiques et Physique-Chimie | 3 |
+| Groupe 2 | Mathématiques et Physique-Chimie | 4 |
 
 Les deux groupes suivent **le même module de mathématiques**, ensemble. Le groupe 1 suit en
 outre le module `tle_nsi`. Deux élèves suivent l'option mathématiques expertes.
 
-Un élève du groupe 1 n'a pas passé le positionnement en mathématiques : son livret le dit
-explicitement et prévoit un diagnostic en séance 1. **Ne rien inférer à sa place.**
+**Deux élèves n'ont pas passé le positionnement en mathématiques** : un élève du groupe 1,
+et une élève du groupe 2 inscrite après la campagne. Leurs livrets le disent explicitement et
+prévoient un diagnostic en séance 1. **Ne rien inférer à leur place.** Prévoir deux jeux du
+positionnement papier pour la première séance, et 25 minutes pour la passation.
+
+Une élève du groupe 2 ne suit que les mathématiques ; elle y est rattachée pour
+l'organisation des séances. Cela ne change rien à sa participation au module, mais évite de
+lui parler d'un enseignement de physique-chimie qu'elle ne suit pas.
 
 ---
 
 ## 3. Diagnostic du groupe en une page
+
+Sur les sept élèves ayant passé le positionnement en mathématiques ; les deux autres sont
+diagnostiqués en séance 1.
 
 | Domaine | Réussite moyenne | Certitudes erronées | À installer | À consolider | Acquis | Sans réponse |
 |---|---:|---:|---:|---:|---:|---:|

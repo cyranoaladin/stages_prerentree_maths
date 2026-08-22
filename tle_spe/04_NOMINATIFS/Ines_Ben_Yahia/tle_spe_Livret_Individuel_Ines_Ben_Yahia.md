@@ -1,23 +1,23 @@
-# Terminale Spécialité Mathématiques — Livret individuel — Ahmed Benhadj Salem
+# Terminale Spécialité Mathématiques — Livret individuel — Inès Ben Yahia
 ## Mathématiques — Diagnostic à établir
 
 > **DOCUMENT CONFIDENTIEL — DONNÉES NOMINATIVES**  
 > À conserver dans le dossier pédagogique de l'élève. Ne pas diffuser hors de Nexus Réussite et de la famille concernée.
 
-**Élève :** Ahmed Benhadj Salem  
-**Groupe :** Groupe 1 — Terminale Mathématiques et NSI  
-**Spécialités conservées :** Mathématiques, Numérique et sciences informatiques  
+**Élève :** Inès Ben Yahia  
+**Groupe :** Groupe 2 — Terminale Mathématiques et Physique-Chimie  
+**Spécialités conservées :** Mathématiques  
 **Matière de ce livret :** Mathématiques  
 **Stage :** 5 séances de 2 heures  
 **Année scolaire préparée :** 2026-2027
 
-> **Attention — homonymie.** Homonyme de l'élève entrant en Première NSI (module 1re_nsi/05_NOMINATIFS/Ahmed_BENHADJ_SALEM). Ce sont deux dossiers distincts : ne jamais les fusionner.
+> **Rattachement au groupe.** Rattachée au groupe 2 pour l'organisation des séances. À la différence des autres élèves de ce groupe, elle ne suit que les mathématiques : le module de physique-chimie ne la concerne pas.
 
 ---
 
 ## 1. Pourquoi ce livret est différent des autres
 
-Aucun bilan de positionnement Terminale Mathématiques n'a été passé. Le livret Mathématiques ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1.
+Aucun bilan de positionnement Terminale Mathématiques n'a été passé — l'inscription est postérieure à la campagne de positionnement. Le livret ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1.
 
 Les autres livrets de la cohorte reprennent, item par item, les erreurs effectivement commises au positionnement. Ici, il n'y a pas de positionnement à reprendre.
 

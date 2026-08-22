@@ -7,6 +7,9 @@ __pycache__/
 dist/pdf/
 dist/packs/
 dist/manifests/
+# PDF des stages Terminale : le binaire produit dépend de la version de WeasyPrint
+# et des polices installées. On les régénère avec « make terminale-pdf ».
+dist/terminale/
 
 # --- Nexus S5 — Correction & Bilans -----------------------------------------
 # Les corrections réelles, les bilans et la base sont des données personnelles

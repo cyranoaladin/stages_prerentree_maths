@@ -26,6 +26,20 @@
   des énoncés à la banque fait échouer les tests si une extraction dégradée était committée.
 - Les modules Terminale ne sont pas intégrés à `tools/build.py` : `LEVELS`,
   `content/students.json` et les manifests du pipeline mathématique sont inchangés.
+- Ajout du rendu imprimable `tools/build_terminale_pdf.py` : dossiers élèves nominatifs,
+  corrigés enseignants tenus à part, fiches de séances à photocopier, packs complets et
+  manifeste, sous `dist/terminale/` (non versionné). L'assemblage refuse de placer un
+  document enseignant dans un pack élève.
+- Correction d'un défaut de poids à l'impression : WeasyPrint trace chaque point d'une
+  bordure pointillée comme un objet vectoriel distinct. Les lignes de réponse des livrets
+  faisaient passer un dossier de 19 pages à 1,4 Mio ; en trait plein, le même dossier pèse
+  40 Kio, et l'ensemble des PDF 2,6 Mio au lieu d'une trentaine.
+- Ajout de l'élève Inès Ben Yahia (groupe 2). Inscrite après la campagne de positionnement,
+  elle reçoit le livret « diagnostic à établir » ; elle ne suit que les mathématiques, ce que
+  son livret précise — le groupe organise les séances, il ne décrit pas une combinaison
+  stricte de spécialités.
+- Ajout de deux garde-fous contre la dérive des chiffres de cohorte : les effectifs de groupe
+  et le total d'élèves écrits dans les documents rédigés sont comparés au registre.
 
 ## 2026.1 — 2026-08-16
 

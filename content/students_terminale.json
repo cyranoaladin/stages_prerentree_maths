@@ -7,23 +7,37 @@
     {
       "id": "groupe-1-maths-nsi",
       "libelle": "Groupe 1 — Terminale Mathématiques et NSI",
-      "specialites": ["Mathématiques", "Numérique et sciences informatiques"],
-      "modules": ["tle_spe", "tle_nsi"],
+      "specialites": [
+        "Mathématiques",
+        "Numérique et sciences informatiques"
+      ],
+      "modules": [
+        "tle_spe",
+        "tle_nsi"
+      ],
       "effectif": 5
     },
     {
       "id": "groupe-2-maths-pc",
       "libelle": "Groupe 2 — Terminale Mathématiques et Physique-Chimie",
-      "specialites": ["Mathématiques", "Physique-Chimie"],
-      "modules": ["tle_spe"],
-      "effectif": 3
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "modules": [
+        "tle_spe"
+      ],
+      "effectif": 4
     }
   ],
   "students": [
     {
       "id": "adam-zahouani",
       "displayName": "Adam Zahouani",
-      "aliases": ["Adam Zahouani", "ADAM ZAHOUANI"],
+      "aliases": [
+        "Adam Zahouani",
+        "ADAM ZAHOUANI"
+      ],
       "slug": "Adam_Zahouani",
       "groupe": "groupe-1-maths-nsi",
       "active": true,
@@ -47,7 +61,10 @@
     {
       "id": "alexandre-zahouani",
       "displayName": "Alexandre Zahouani",
-      "aliases": ["Alexandre Zahouani", "ALEXANDRE ZAHOUANI"],
+      "aliases": [
+        "Alexandre Zahouani",
+        "ALEXANDRE ZAHOUANI"
+      ],
       "slug": "Alexandre_Zahouani",
       "groupe": "groupe-1-maths-nsi",
       "active": true,
@@ -71,7 +88,10 @@
     {
       "id": "sara-bsiri",
       "displayName": "Sara Bsiri",
-      "aliases": ["Sara Bsiri", "SARA BSIRI"],
+      "aliases": [
+        "Sara Bsiri",
+        "SARA BSIRI"
+      ],
       "slug": "Sara_Bsiri",
       "groupe": "groupe-1-maths-nsi",
       "active": true,
@@ -103,7 +123,10 @@
     {
       "id": "yassine-ben-hassine",
       "displayName": "Yassine Ben Hassine",
-      "aliases": ["Yassine Ben Hassine", "YASSINE BEN HASSINE"],
+      "aliases": [
+        "Yassine Ben Hassine",
+        "YASSINE BEN HASSINE"
+      ],
       "slug": "Yassine_Ben_Hassine",
       "groupe": "groupe-1-maths-nsi",
       "active": true,
@@ -127,7 +150,11 @@
     {
       "id": "ahmed-benhadj-salem-tle",
       "displayName": "Ahmed Benhadj Salem",
-      "aliases": ["Ahmed Benhadj Salem", "Ahmed (terminale) Benhadj Salem", "AHMED BENHADJ SALEM"],
+      "aliases": [
+        "Ahmed Benhadj Salem",
+        "Ahmed (terminale) Benhadj Salem",
+        "AHMED BENHADJ SALEM"
+      ],
       "slug": "Ahmed_Benhadj_Salem",
       "groupe": "groupe-1-maths-nsi",
       "active": true,
@@ -152,7 +179,10 @@
     {
       "id": "melek-smida",
       "displayName": "Melek Smida",
-      "aliases": ["Melek Smida", "MELEK SMIDA"],
+      "aliases": [
+        "Melek Smida",
+        "MELEK SMIDA"
+      ],
       "slug": "Melek_Smida",
       "groupe": "groupe-2-maths-pc",
       "active": true,
@@ -177,7 +207,11 @@
     {
       "id": "ines-darghouth",
       "displayName": "Inès Darghouth",
-      "aliases": ["Inès Darghouth", "Ines Darghouth", "INES DARGHOUTH"],
+      "aliases": [
+        "Inès Darghouth",
+        "Ines Darghouth",
+        "INES DARGHOUTH"
+      ],
       "slug": "Ines_Darghouth",
       "groupe": "groupe-2-maths-pc",
       "active": true,
@@ -194,7 +228,10 @@
     {
       "id": "rostom-fekih",
       "displayName": "Rostom Fekih",
-      "aliases": ["Rostom Fekih", "ROSTOM FEKIH"],
+      "aliases": [
+        "Rostom Fekih",
+        "ROSTOM FEKIH"
+      ],
       "slug": "Rostom_Fekih",
       "groupe": "groupe-2-maths-pc",
       "active": true,
@@ -205,6 +242,31 @@
           "diagnosticId": "rostom-fekih--maths",
           "sourceStudentReport": "bilan-nexus-eleve_maths_rostom_fekih.pdf",
           "sourceParentReport": "bilan-nexus-parents_maths_rostom_fekih.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ines-ben-yahia",
+      "displayName": "Inès Ben Yahia",
+      "aliases": [
+        "Inès Ben Yahia",
+        "Ines Ben Yahia",
+        "INES BEN YAHIA",
+        "Inès BEN YAHIA"
+      ],
+      "slug": "Ines_Ben_Yahia",
+      "groupe": "groupe-2-maths-pc",
+      "active": true,
+      "specialites": [
+        "Mathématiques"
+      ],
+      "noteGroupe": "Rattachée au groupe 2 pour l'organisation des séances. À la différence des autres élèves de ce groupe, elle ne suit que les mathématiques : le module de physique-chimie ne la concerne pas.",
+      "matieres": [],
+      "matieresSansDiagnostic": [
+        {
+          "module": "tle_spe",
+          "matiere": "Mathématiques",
+          "motif": "Aucun bilan de positionnement Terminale Mathématiques n'a été passé — l'inscription est postérieure à la campagne de positionnement. Le livret ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1."
         }
       ]
     }

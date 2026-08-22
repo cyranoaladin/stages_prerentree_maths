@@ -18,6 +18,7 @@
 | Melek Smida | Mathématiques expertes | 54,2 % | Arithmétique | Logique | — | Suites numériques, Dénombrement |
 | Inès Darghouth | Mathématiques | 42,6 % | Second degré, Suites numériques | Dérivation, Fonction exponentielle, Produit scalaire | — | — |
 | Rostom Fekih | Mathématiques | 100 % | — | — | Dérivation | Second degré, Fonction exponentielle, Suites numériques, Produit scalaire |
+| Inès Ben Yahia | Mathématiques | _non passé_ | — | — | — | — |
 
 ## 2. Réussite par domaine
 
@@ -33,6 +34,7 @@
 | Melek Smida | — | — | — | 100 % | — | 58,3 % | 0 % | 0 % | 66,7 % | 100 % |
 | Inès Darghouth | 66,7 % | 81,8 % | 50 % | 14,3 % | 0 % | — | — | — | — | — |
 | Rostom Fekih | 100 % | 100 % | 100 % | 100 % | 100 % | — | — | — | — | — |
+| Inès Ben Yahia | — | — | — | — | — | — | — | — | — | — |
 
 ## 3. Attribution des parcours, séance par séance
 
@@ -52,6 +54,7 @@
 | Melek Smida | Arithmétique (CONFRONTER) | Consolidation | | | |
 | Inès Darghouth | Suites numériques (CONFRONTER) | Consolidation | | | |
 | Rostom Fekih | Dérivation (CONSOLIDER) | Maîtrise | | | |
+| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
 
 ### Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme
 
@@ -67,6 +70,7 @@
 | Melek Smida | Logique (INSTALLER) | Consolidation | | | |
 | Inès Darghouth | Second degré (CONFRONTER) | Consolidation | | | |
 | Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
+| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
 
 ### Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes
 
@@ -82,6 +86,7 @@
 | Melek Smida | Calcul littéral (DIAGNOSTIQUER) | Consolidation | | | |
 | Inès Darghouth | Produit scalaire (INSTALLER) | Consolidation | | | |
 | Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
+| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
 
 ### Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité
 
@@ -97,6 +102,7 @@
 | Melek Smida | Systèmes d'équations (DIAGNOSTIQUER) | Consolidation | | | |
 | Inès Darghouth | Fonction exponentielle (INSTALLER) | Consolidation | | | |
 | Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
+| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
 
 ### Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation
 
@@ -112,6 +118,7 @@
 | Melek Smida | Consolidation d'ensemble | Approfondissement | | | |
 | Inès Darghouth | Dérivation (INSTALLER) | Consolidation | | | |
 | Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
+| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
 
 ## 4. Relevé de l'autonomie
 
@@ -129,6 +136,7 @@ L'aide maximale utilisée doit décroître entre la séance 1 et la séance 5.
 | Melek Smida | | | | | | ☐oui ☐non |
 | Inès Darghouth | | | | | | ☐oui ☐non |
 | Rostom Fekih | | | | | | ☐oui ☐non |
+| Inès Ben Yahia | | | | | | ☐oui ☐non |
 
 ## 5. Critères de réussite du stage
 
@@ -144,6 +152,7 @@ L'aide maximale utilisée doit décroître entre la séance 1 et la séance 5.
 | Melek Smida | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Inès Darghouth | ☐ | ☐ | ☐ | ☐ | ☐ |
 | Rostom Fekih | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Inès Ben Yahia | ☐ | ☐ | ☐ | ☐ | ☐ |
 
 ## 6. Accès aux dossiers nominatifs
 
@@ -159,6 +168,7 @@ Ces liens sont volontairement absents de l'index du module : celui-ci ne nomme a
 - **Melek Smida — Mathématiques expertes** : [livret](../04_NOMINATIFS/Melek_Smida/tle_spe_Livret_Individuel_Melek_Smida_Mathematiques_expertes.md) · [remédiation élève](../04_NOMINATIFS/Melek_Smida/tle_spe_Remediation_Ciblee_Melek_Smida_Mathematiques_expertes_ELEVE.md) · [corrigé enseignant](../04_NOMINATIFS/Melek_Smida/tle_spe_Remediation_Ciblee_Melek_Smida_Mathematiques_expertes_PROF_Corrige.md)
 - **Inès Darghouth** : [livret](../04_NOMINATIFS/Ines_Darghouth/tle_spe_Livret_Individuel_Ines_Darghouth.md) · [remédiation élève](../04_NOMINATIFS/Ines_Darghouth/tle_spe_Remediation_Ciblee_Ines_Darghouth_ELEVE.md) · [corrigé enseignant](../04_NOMINATIFS/Ines_Darghouth/tle_spe_Remediation_Ciblee_Ines_Darghouth_PROF_Corrige.md)
 - **Rostom Fekih** : [livret](../04_NOMINATIFS/Rostom_Fekih/tle_spe_Livret_Individuel_Rostom_Fekih.md) · [remédiation élève](../04_NOMINATIFS/Rostom_Fekih/tle_spe_Remediation_Ciblee_Rostom_Fekih_ELEVE.md) · [corrigé enseignant](../04_NOMINATIFS/Rostom_Fekih/tle_spe_Remediation_Ciblee_Rostom_Fekih_PROF_Corrige.md)
+- **Inès Ben Yahia** : [livret](../04_NOMINATIFS/Ines_Ben_Yahia/tle_spe_Livret_Individuel_Ines_Ben_Yahia.md)
 
 ---
 _Document enseignant nominatif. Source pédagogique unique : `stage_prerentree_terminale_maths.md`._

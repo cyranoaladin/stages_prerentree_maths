@@ -86,15 +86,48 @@ def test_cohort_is_split_into_the_two_declared_groups(registry):
         )
 
 
+def _modules_of(student: dict) -> set[str]:
+    return {subject["module"] for subject in student["matieres"]} | {
+        missing["module"] for missing in student.get("matieresSansDiagnostic", [])
+    }
+
+
 def test_every_group_1_student_follows_both_modules(registry):
     """Le groupe 1 est défini par « maths et NSI » : chacun doit avoir les deux modules."""
     for student in registry["students"]:
         if student["groupe"] != "groupe-1-maths-nsi":
             continue
-        modules = {subject["module"] for subject in student["matieres"]}
-        modules |= {missing["module"] for missing in student.get("matieresSansDiagnostic", [])}
+        modules = _modules_of(student)
         assert modules == {"tle_spe", "tle_nsi"}, (
             f"{student['displayName']} est en groupe 1 mais ne suit que {sorted(modules)}"
+        )
+
+
+def test_every_student_follows_at_least_the_maths_module(registry):
+    """Tous les élèves de la cohorte suivent les mathématiques, quel que soit leur groupe."""
+    for student in registry["students"]:
+        assert "tle_spe" in _modules_of(student), (
+            f"{student['displayName']} ne suit pas le module de mathématiques"
+        )
+
+
+def test_a_student_outside_the_group_nominal_pair_states_what_they_actually_follow(registry):
+    """Le groupe porte une combinaison nominale ; un élève peut ne pas la suivre exactement.
+
+    Dans ce cas, son livret ne doit pas se contenter de l'étiquette du groupe : il doit
+    annoncer les spécialités réellement suivies et expliquer le rattachement.
+    """
+    groups = {group["id"]: group for group in registry["groupes"]}
+    for student in registry["students"]:
+        override = student.get("specialites")
+        if override is None:
+            continue
+        assert override != groups[student["groupe"]]["specialites"], (
+            f"{student['displayName']} : surcharge inutile, identique à celle du groupe"
+        )
+        assert student.get("noteGroupe", "").strip(), (
+            f"{student['displayName']} suit autre chose que la combinaison de son groupe "
+            "sans qu'aucune note n'explique le rattachement"
         )
 
 
@@ -104,6 +137,50 @@ def test_group_2_students_do_not_follow_the_nsi_module(registry):
             continue
         modules = {subject["module"] for subject in student["matieres"]}
         assert "tle_nsi" not in modules, f"{student['displayName']} ne suit pas NSI"
+
+
+# Les effectifs de groupe sont recopiés à la main dans plusieurs documents rédigés. Sans
+# garde-fou, ils dérivent dès qu'un élève rejoint la cohorte.
+DOCUMENTS_CITANT_LES_EFFECTIFS = (
+    "tle_spe/05_SOURCES/stage_prerentree_terminale_maths.md",
+    "tle_spe/00_MASTER/tle_spe_MASTER_Documentation_Stage.md",
+    "tle_spe/01_ENSEIGNANT/tle_spe_Guide_Formateur.md",
+    "README.md",
+)
+
+
+def test_prose_group_sizes_match_the_registry(registry):
+    """Un effectif écrit dans un document doit être celui du registre."""
+    expected = {group["libelle"].split("—")[0].strip(): group["effectif"]
+                for group in registry["groupes"]}
+    mismatches = []
+    for relative in DOCUMENTS_CITANT_LES_EFFECTIFS:
+        for line in (ROOT / relative).read_text(encoding="utf-8").splitlines():
+            row = re.match(r"^\|\s*(Groupe \d)\s*\|[^|]*\|\s*(\d+)\s*\|", line)
+            if not row:
+                continue
+            group, written = row.group(1), int(row.group(2))
+            if group in expected and written != expected[group]:
+                mismatches.append(
+                    f"{relative} : « {group} » annoncé à {written}, "
+                    f"le registre en compte {expected[group]}"
+                )
+    assert mismatches == [], mismatches
+
+
+def test_total_cohort_size_is_stated_consistently(registry):
+    total = len(registry["students"])
+    written = {"8": "huit", "9": "neuf", "10": "dix"}
+    stale = []
+    for relative in DOCUMENTS_CITANT_LES_EFFECTIFS:
+        text = (ROOT / relative).read_text(encoding="utf-8")
+        for digits, word in written.items():
+            if int(digits) == total:
+                continue
+            for form in (f"{digits} élèves", f"{word} élèves"):
+                if form in text:
+                    stale.append(f"{relative} : « {form} » alors que la cohorte en compte {total}")
+    assert stale == [], stale
 
 
 def test_every_declared_source_report_exists(registry):
@@ -311,6 +388,12 @@ def test_a_student_without_diagnostic_gets_an_explicit_notice(registry, document
             assert "Diagnostic à établir" in content
             assert missing["motif"] in content
             assert "Aucune conclusion n'est donc formulée" in content
+            if student.get("noteGroupe"):
+                assert student["noteGroupe"] in content, (
+                    f"{relative} : la note de rattachement au groupe manque"
+                )
+            for speciality in student.get("specialites", []):
+                assert speciality in content
             # Pas de plan de remédiation : il n'y a rien à remédier tant qu'on ne sait rien.
             assert f"{module.key}_Remediation_Ciblee_{student['slug']}_ELEVE.md" not in "".join(
                 key for key in documents

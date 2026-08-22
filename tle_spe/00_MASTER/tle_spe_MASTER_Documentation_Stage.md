@@ -12,7 +12,7 @@
 | Intitulé | Stage de pré-rentrée — Entrée en Terminale générale, spécialité mathématiques |
 | Année préparée | 2026-2027 |
 | Durée | 5 séances de 2 heures, soit 10 heures |
-| Effectif | 8 élèves, répartis en 2 groupes selon la seconde spécialité |
+| Effectif | 9 élèves, répartis en 2 groupes selon la seconde spécialité |
 | Référentiel | BO spécial n° 8 du 25 juillet 2019 (Terminale), BO spécial n° 1 du 22 janvier 2019 (Première) |
 | Évaluation | Sans note ; matrice réussite × confiance, avant et après |
 
@@ -29,10 +29,12 @@ Terminale.
 | Groupe | Spécialités conservées | Effectif | Modules suivis |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 5 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques et Physique-Chimie | 3 | `tle_spe` |
+| Groupe 2 | Mathématiques et Physique-Chimie | 4 | `tle_spe` |
 
 Deux élèves suivent en outre l'enseignement optionnel de mathématiques expertes, traité en
-module complémentaire de 20 minutes par séance.
+module complémentaire de 20 minutes par séance. Une élève du groupe 2 ne suit que les
+mathématiques : le groupe est une unité d'organisation, pas une combinaison stricte de
+spécialités, et son livret l'indique.
 
 Les deux groupes suivent le module de mathématiques **ensemble** : le diagnostic ne fait pas
 apparaître de différence de profil entre eux qui justifierait deux progressions distinctes.
