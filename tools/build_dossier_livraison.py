@@ -139,6 +139,23 @@ def verifie(reg: dict, prevu: dict[str, dict], produit: list[dict] | None) -> No
                   f"le nom de {autres}.")
 
 
+def sans_prenom(note: str, nom_complet: str) -> str:
+    """La note du registre reprend parfois le prénom, que la puce vient déjà d'écrire."""
+    prenom = nom_complet.split()[0]
+    return note[len(prenom):].lstrip() if note.startswith(prenom + " ") else note
+
+
+def minuscule_initiale(note: str) -> str:
+    """La note s'enchaîne au nom en gras : elle ne recommence pas par une majuscule."""
+    if not note:
+        return note
+    premier = note.split()[0]
+    # Un mot déjà entièrement en majuscules, ou un nom propre, garde sa casse.
+    if premier.isupper() or premier in ("Mathématiques", "Terminale", "Première", "NSI"):
+        return note
+    return note[0].lower() + note[1:]
+
+
 def pages(produit: list[dict] | None, chemin: str) -> str:
     if produit is None:
         return "—"
@@ -289,7 +306,8 @@ def note(reg: dict, prevu: dict[str, dict], produit: list[dict] | None) -> str:
                 "complet et n'annonce aucun résultat, et son dossier organise la passation "
                 "en séance 1 au lieu de restituer un bilan. Prévoir un jeu papier")
         if eleve.get("noteGroupe"):
-            particularites.append(eleve["noteGroupe"].rstrip("."))
+            particularites.append(minuscule_initiale(
+                sans_prenom(eleve["noteGroupe"].rstrip("."), eleve["displayName"])))
         if particularites:
             add(f"- **{eleve['displayName']}** " + " ; ".join(particularites) + ".")
     add("")
