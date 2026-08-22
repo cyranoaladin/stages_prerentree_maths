@@ -77,8 +77,9 @@ l'individualisation des livrets ; aucune donnée n'est extrapolée au-delà.
 2. Le calendrier des évaluations communes et la date de l'épreuve du baccalauréat.
 3. Le choix effectif de l'option mathématiques expertes pour les deux élèves concernés.
 4. Le matériel disponible : calculatrice de chaque élève, accès à Python.
-5. Pour l'élève dont le positionnement en mathématiques n'a pas été passé, la
-   disponibilité d'un créneau de diagnostic en début de séance 1.
+5. Pour les **deux** élèves dont le positionnement en mathématiques n'a pas été passé, la
+   disponibilité d'un créneau de diagnostic en début de séance 1, et deux jeux de
+   l'instrument papier (18 items).
 
 ## 1.4 Hypothèses de travail
 
