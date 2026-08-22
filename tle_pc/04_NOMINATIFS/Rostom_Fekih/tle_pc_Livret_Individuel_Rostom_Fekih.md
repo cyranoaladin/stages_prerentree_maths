@@ -141,11 +141,11 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Transformations chimiques : avancement, réactif limitant, oxydo-réduction | Énergie (CONFRONTER) | Consolidation | | |
-| 2 | Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton | Ondes et signaux (CONFRONTER) | Consolidation | | |
-| 3 | Énergie : travail, énergies cinétique et potentielle, énergie mécanique | Mécanique (CONFRONTER) | Consolidation | | |
-| 4 | Ondes et optique : période, célérité, longueur d'onde, lentilles minces | Transformations chimiques (CONFRONTER) | Consolidation | | |
-| 5 | Électricité, chimie organique, mesure et incertitudes, évaluation | Optique (INSTALLER) | Consolidation | | |
+| 1 | Transformations chimiques : avancement, réactif limitant, oxydo-réduction | Énergie (CONFRONTER) | Confronter | | |
+| 2 | Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton | Ondes et signaux (CONFRONTER) | Confronter | | |
+| 3 | Énergie : travail, énergies cinétique et potentielle, énergie mécanique | Mécanique (CONFRONTER) | Confronter | | |
+| 4 | Ondes et optique : période, célérité, longueur d'onde, lentilles minces | Transformations chimiques (CONFRONTER) | Confronter | | |
+| 5 | Électricité, chimie organique, mesure et incertitudes, évaluation | Optique (INSTALLER) | Installer | | |
 
 **Objectif de chaque séance, pour toi :**
 

@@ -143,11 +143,11 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Représentation des données et booléens | Types construits (INSTALLER) · Représentation binaire (CONSOLIDER) | Consolidation | | |
-| 2 | Types construits : tableaux, dictionnaires, mutabilité | Booléens et logique (CONSOLIDER) · Programmation (CONSOLIDER) | Maîtrise | | |
-| 3 | Programmation : fonctions, retour, portée, boucles | Algorithmique (CONSOLIDER) | Maîtrise | | |
-| 4 | Algorithmique : préconditions, recherche, tris, coût | Données en tables (CONSOLIDER) | Maîtrise | | |
-| 5 | Données en tables, bases de données, systèmes, évaluation | Architecture et systèmes (CONSOLIDER) | Maîtrise | | |
+| 1 | Représentation des données et booléens | Types construits (INSTALLER) · Représentation binaire (CONSOLIDER) | Installer | | |
+| 2 | Types construits : tableaux, dictionnaires, mutabilité | Booléens et logique (CONSOLIDER) · Programmation (CONSOLIDER) | Consolider | | |
+| 3 | Programmation : fonctions, retour, portée, boucles | Algorithmique (CONSOLIDER) | Consolider | | |
+| 4 | Algorithmique : préconditions, recherche, tris, coût | Données en tables (CONSOLIDER) | Consolider | | |
+| 5 | Données en tables, bases de données, systèmes, évaluation | Architecture et systèmes (CONSOLIDER) | Consolider | | |
 
 **Objectif de chaque séance, pour toi :**
 

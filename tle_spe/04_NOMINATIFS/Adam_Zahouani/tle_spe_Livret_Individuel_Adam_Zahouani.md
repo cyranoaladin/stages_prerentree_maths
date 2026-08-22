@@ -121,19 +121,19 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Suites numériques : du sens de variation à la récurrence | Fonction exponentielle (CONFRONTER) | Consolidation | | |
-| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Suites numériques (INSTALLER) | Consolidation | | |
-| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Dérivation (INSTALLER) | Consolidation | | |
-| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Consolidation d'ensemble | Approfondissement | | |
-| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Consolidation d'ensemble | Approfondissement | | |
+| 1 | Suites numériques : du sens de variation à la récurrence | Fonction exponentielle (CONFRONTER) | Confronter | | |
+| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Suites numériques (INSTALLER) | Installer | | |
+| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Dérivation (INSTALLER) | Installer | | |
+| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Consolidation d'ensemble | Entretenir | | |
+| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Consolidation d'ensemble | Entretenir | | |
 
 **Objectif de chaque séance, pour toi :**
 
 - **Séance 1** — Rectifier une certitude erronée sur la fonction exponentielle.
 - **Séance 2** — Installer les repères indispensables sur les suites numériques.
 - **Séance 3** — Poser les définitions et les gestes de base en dérivation.
-- **Séance 4** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
-- **Séance 5** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
+- **Séance 4** — Dériver un quotient, en déduire un encadrement de la fonction, et distinguer l'annulation de la dérivée du changement de signe.
+- **Séance 5** — Établir une probabilité en fonction d'un paramètre, la comparer à une valeur seuil par une factorisation, et la vérifier par un programme.
 
 <div class="page-break"></div>
 

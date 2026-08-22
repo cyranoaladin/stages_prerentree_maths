@@ -28,41 +28,41 @@
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Melek Smida | Mécanique (CONFRONTER) | Consolidation | | | |
-| Rostom Fekih | Énergie (CONFRONTER) | Consolidation | | | |
-| Mayar Ourabi | Énergie (CONFRONTER) · Ondes et signaux (CONFRONTER) | Consolidation | | | |
+| Melek Smida | Mécanique (CONFRONTER) | Confronter | | | |
+| Rostom Fekih | Énergie (CONFRONTER) | Confronter | | | |
+| Mayar Ourabi | Énergie (CONFRONTER) · Ondes et signaux (CONFRONTER) | Confronter | | | |
 
 ### Séance 2 — Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Melek Smida | Transformations chimiques (CONFRONTER) | Consolidation | | | |
-| Rostom Fekih | Ondes et signaux (CONFRONTER) | Consolidation | | | |
-| Mayar Ourabi | Mécanique (INSTALLER) | Consolidation | | | |
+| Melek Smida | Transformations chimiques (CONFRONTER) | Confronter | | | |
+| Rostom Fekih | Ondes et signaux (CONFRONTER) | Confronter | | | |
+| Mayar Ourabi | Mécanique (INSTALLER) | Installer | | | |
 
 ### Séance 3 — Énergie : travail, énergies cinétique et potentielle, énergie mécanique
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Melek Smida | Énergie (CONSOLIDER) | Maîtrise | | | |
-| Rostom Fekih | Mécanique (CONFRONTER) | Consolidation | | | |
-| Mayar Ourabi | Optique (INSTALLER) | Consolidation | | | |
+| Melek Smida | Énergie (CONSOLIDER) | Consolider | | | |
+| Rostom Fekih | Mécanique (CONFRONTER) | Confronter | | | |
+| Mayar Ourabi | Optique (INSTALLER) | Installer | | | |
 
 ### Séance 4 — Ondes et optique : période, célérité, longueur d'onde, lentilles minces
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Melek Smida | Électricité (DIAGNOSTIQUER) | Consolidation | | | |
-| Rostom Fekih | Transformations chimiques (CONFRONTER) | Consolidation | | | |
-| Mayar Ourabi | Transformations chimiques (INSTALLER) | Consolidation | | | |
+| Melek Smida | Électricité (DIAGNOSTIQUER) | Diagnostiquer | | | |
+| Rostom Fekih | Transformations chimiques (CONFRONTER) | Confronter | | | |
+| Mayar Ourabi | Transformations chimiques (INSTALLER) | Installer | | | |
 
 ### Séance 5 — Électricité, chimie organique, mesure et incertitudes, évaluation
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Melek Smida | Consolidation d'ensemble | Approfondissement | | | |
-| Rostom Fekih | Optique (INSTALLER) | Consolidation | | | |
-| Mayar Ourabi | Chimie organique (CONSOLIDER) | Maîtrise | | | |
+| Melek Smida | Consolidation d'ensemble | Entretenir | | | |
+| Rostom Fekih | Optique (INSTALLER) | Installer | | | |
+| Mayar Ourabi | Chimie organique (CONSOLIDER) | Consolider | | | |
 
 ## 4. Relevé de l'autonomie
 

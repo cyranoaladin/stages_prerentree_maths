@@ -142,6 +142,40 @@ est relue avec la matrice réussite $\times$ confiance et comparée au positionn
 4. Faire formuler à chacun, à voix haute, **une** phrase : « ce que j'ai corrigé pendant ce
    stage, c'est… »
 
+## Corrigé du parcours excellence
+
+**Exercice 9.**
+a) $\vv{AB}(4 ; - 2)$ et $\vv{AC}(3 ; 3)$, donc
+$\vv{AB} \cdot \vv{AC} = 12 - 6 = 6$.
+b) $AB = \sqrt{20}$ et $AC = \sqrt{18}$. De
+$\vv{AB} \cdot \vv{AC} = AB \times AC \times \cos(\widehat{BAC})$ on tire
+$\cos(\widehat{BAC}) = 6/\sqrt{360} = 1/\sqrt{10}$.
+c) $\vv{BC}( - 1 ; 5)$ est un vecteur normal de la droite cherchée, d'où une équation de la
+forme $- x + 5y + c = 0$. Le passage par $A(1 ; 2)$ donne $c = - 9$, soit $x - 5y + 9 = 0$.
+d) $3 - 5 \times 2{,}4 + 9 = 3 - 12 + 9 = 0$ : oui, H appartient à la droite.
+
+**Exercice 10.**
+a) Les tirages sont indépendants puisqu'il y a remise. La probabilité de deux boules de même
+couleur vaut $(n/(n+3))^2 + (3/(n+3))^2 = (n^2 + 9)/(n + 3)^2$.
+b) L'égalité $(n^2 + 9)/(n + 3)^2 = 0{,}5$ conduit à $2n^2 + 18 = n^2 + 6n + 9$, soit
+$n^2 - 6n + 9 = 0$, c'est-à-dire $(n - 3)^2 = 0$ : $n = 3$.
+c) `def proba(n): return (n**2 + 9) / (n + 3)**2` ; `proba(3)` renvoie 0,5.
+d) Non. La différence $(n^2 + 9)/(n + 3)^2 - 1/2$ vaut $(n - 3)^2/(2(n + 3)^2)$, qui est
+positive ou nulle. La probabilité est donc toujours supérieure ou égale à 0,5, avec égalité
+au seul rang $n = 3$. C'est la factorisation qui conclut, pas le tableau de valeurs.
+
+## Corrigé de l'ouverture maths expertes
+
+a) De $5x - y = 3$ on tire $y = 5x - 3$ ; en substituant : $2x + 15x - 9 = 8$, donc
+$17x = 17$, soit $x = 1$ et $y = 2$. Par combinaison : $3 \times L_2 + L_1$ élimine y et
+donne $17x = 17$.
+b) Le déterminant vaut $- 2 - 15 = - 17$. S'il était nul, les deux équations
+représenteraient des droites parallèles : le système n'aurait aucune solution, ou une
+infinité.
+c) $(a + b)^2 = a^2 + 2ab + b^2$ et $(a - b)(a + b) = a^2 - b^2$. Avec $i^2 = - 1$ :
+$(2 + i)(2 - i) = 4 - i^2 = 5$. Faire remarquer que le produit de deux nombres complexes
+conjugués est un **réel positif** — c'est ce qui permettra de diviser par un complexe.
+
 ## Erreurs à surveiller
 
 | Erreur observée | Réponse |

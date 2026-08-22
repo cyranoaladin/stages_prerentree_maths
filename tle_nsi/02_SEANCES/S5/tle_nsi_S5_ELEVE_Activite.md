@@ -97,6 +97,9 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\sq
 
 ```sql
 
+
+
+
 ```
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
@@ -109,6 +112,14 @@ projection sur `nom` et `note`. Écris la table obtenue.
 | | |
 | | |
 
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
 ### Parcours maîtrise (exercices 3 à 6)
 
 **Exercice 5.** Écris en SQL : « afficher le nom des élèves dont la note est supérieure à 12
@@ -116,6 +127,8 @@ projection sur `nom` et `note`. Écris la table obtenue.
 cette condition.
 
 ```sql
+
+
 
 
 ```
@@ -132,6 +145,8 @@ classes(code, professeur, salle)
 Écris la requête qui affiche, pour chaque élève, son nom et le nom de son professeur.
 
 ```sql
+
+
 
 
 ```
@@ -154,6 +169,17 @@ réalises-tu à chaque étape ?
 
 ```python
 import csv
+
+
+
+
+
+
+
+
+
+
+
 
 with open('eleves.csv', encoding='utf-8') as fichier:
     lecteur = csv.DictReader(fichier)

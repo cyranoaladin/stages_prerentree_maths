@@ -28,7 +28,7 @@ primitives reposent également sur ces manipulations.
 | 10 min | Ouverture | Question de contrôle sur la séance 1 : sens de variation de $v_n = 4 \times 0{,}7^n$ | Répond, déclare sa certitude |
 | 20 min | Confrontation | Écrit $e^{2x}/e^{x - 1}$ au tableau ; recueille les réponses **avant** commentaire | Propose une simplification, la teste en $x = 1$ |
 | 25 min | Reconstruction | Établit les quatre règles à partir de la relation fonctionnelle ; établit la stricte positivité | Prend la trace écrite |
-| 30 min | Entraînement différencié | Distribue les trois parcours ; circule | Traite son parcours, note l'aide utilisée |
+| 30 min | Entraînement différencié | Aiguille chaque élève sur sa piste ; circule | Traite son parcours, note l'aide utilisée |
 | 20 min | Ouverture Terminale | Introduit ln comme réciproque ; montre le passage d'une règle à l'autre | Observe, note la correspondance |
 | 15 min | Trace écrite et bilan | Fait remplir la fiche de synthèse | Remplit, déclare sa certitude |
 
@@ -75,11 +75,25 @@ Conséquences à écrire au tableau :
 
 ## Entraînement différencié
 
-| Parcours | Élèves concernés | Support |
-|---|---|---|
-| Consolidation | Ceux dont le livret porte « Fonction exponentielle » en priorité | Exercices 1 à 4, exemple résolu fourni |
-| Maîtrise | Réussite hésitante sur le domaine | Exercices 3 à 6, justification écrite exigée |
-| Approfondissement | Domaine acquis avec certitude | Exercices 6 à 8, dont la démonstration de la stricte positivité |
+L'aiguillage suit les cinq postures de la carte maîtrise $\times$ confiance, et non un niveau
+supposé. L'attribution se lit dans le livret individuel de chaque élève, rubrique « Ton
+parcours, séance par séance » ; la fiche élève porte le même tableau, pour que l'élève sache
+sans le demander ce qu'il a à faire.
+
+| Piste | Posture au diagnostic | Support | Ce qu'on exige |
+|---|---|---|---|
+| Diagnostiquer | « Fonction exponentielle » laissé sans réponse | Question 0, puis exercices 1 et 2 | Une réponse écrite, quelle que soit la certitude déclarée |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 sur l'exponentielle | Question 0, puis exercices 1 à 4, exemple résolu fourni | L'élève écrit ce qu'il croyait avant d'écrire la règle |
+| Installer | Réponse fausse avec une certitude basse | Exercices 1 à 4, exemple résolu fourni | La propriété écrite avant chaque calcul |
+| Consolider | Réussite hésitante | Exercices 3 à 6, sans exemple résolu | Justification écrite, sans carte d'aide |
+| Entretenir | Domaine acquis et assumé | Exercices 6 à 8, dont la démonstration de la stricte positivité | La démonstration rédigée en entier |
+| Excellence | Aucun domaine à reprendre dans tout le bilan | Exercices 9 et 10, puis rôle de vérificateur | Une rédaction complète, puis la relecture d'une copie sans en donner la réponse |
+
+**Le rôle de vérificateur.** Confier à l'élève de la piste excellence, une fois ses exercices
+rendus, la copie d'un camarade. Sa tâche n'est pas de corriger : il indique si la propriété a
+été écrite avant le calcul, si la conclusion répond à la question posée, et où le raisonnement
+s'interrompt. Ne jamais lui confier l'explication d'une notion à un camarade porteur d'une
+certitude erronée : la confrontation demande un pilotage que seul l'enseignant peut assurer.
 
 ## Ouverture sur la Terminale — 20 minutes
 
@@ -99,6 +113,34 @@ Faire énoncer la conclusion : *une erreur commise sur exp se retrouvera à l'id
 ln.* C'est l'argument qui justifie la séance.
 
 Ne pas faire résoudre d'équation avec ln pendant le stage.
+
+## Corrigé du parcours excellence
+
+**Exercice 9.**
+a) $f'(x) = e^x + (x - 1)e^x = e^x(1 + x - 1) = x e^x$.
+b) $e^x > 0$ pour tout x, donc $f'(x)$ a le signe de x : f décroît sur $] - \infty ; 0]$ et
+croît sur $[0 ; + \infty[$. Minimum en 0, valant $f(0) = - 1 + 2 = 1$.
+c) $f(0) = 1$ et $f'(0) = 0$ : la tangente a pour équation $y = 1$. Elle est horizontale, ce
+qui est cohérent avec l'extremum.
+d) Le minimum de f vaut 1, donc $f(x) \geqslant 1 > 0$ pour tout réel x : l'équation
+$f(x) = 0$ n'a aucune solution. C'est le tableau de variations qui conclut, pas un essai de
+valeurs.
+
+**Exercice 10.**
+a) Vraie : c'est la stricte croissance de l'exponentielle, donc son injectivité.
+b) Fausse : $e^{2x} = (e^x)^2$. Contre-exemple avec $x = 1$ : $e^2 \approx 7{,}39$ tandis que
+$2e \approx 5{,}44$.
+c) Vraie : l'exponentielle est à valeurs strictement positives.
+d) a) et c) sont des propriétés du cours ; b) est une erreur de calcul, la confusion entre
+un facteur et un exposant. La différence à faire entendre : une propriété se démontre une
+fois pour toutes, une erreur de calcul se réfute par un seul contre-exemple.
+
+## Corrigé de l'ouverture maths expertes
+
+a) Diviseurs de 60 : 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60. Soit **12** diviseurs.
+b) $60 = 2^2 \times 3 \times 5$ et $360 = 2^3 \times 3^2 \times 5$.
+c) Pour 60 : $(2+1)(1+1)(1+1) = 12$ — la formule retrouve bien le compte de la question a).
+Pour 360 : $(3+1)(2+1)(1+1) = 24$ diviseurs, sans en écrire un seul.
 
 ## Erreurs à surveiller et réponses à apporter
 

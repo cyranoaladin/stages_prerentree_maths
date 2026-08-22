@@ -142,11 +142,11 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Transformations chimiques : avancement, réactif limitant, oxydo-réduction | Mécanique (CONFRONTER) | Consolidation | | |
-| 2 | Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton | Transformations chimiques (CONFRONTER) | Consolidation | | |
-| 3 | Énergie : travail, énergies cinétique et potentielle, énergie mécanique | Énergie (CONSOLIDER) | Maîtrise | | |
-| 4 | Ondes et optique : période, célérité, longueur d'onde, lentilles minces | Électricité (DIAGNOSTIQUER) | Consolidation | | |
-| 5 | Électricité, chimie organique, mesure et incertitudes, évaluation | Consolidation d'ensemble | Approfondissement | | |
+| 1 | Transformations chimiques : avancement, réactif limitant, oxydo-réduction | Mécanique (CONFRONTER) | Confronter | | |
+| 2 | Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton | Transformations chimiques (CONFRONTER) | Confronter | | |
+| 3 | Énergie : travail, énergies cinétique et potentielle, énergie mécanique | Énergie (CONSOLIDER) | Consolider | | |
+| 4 | Ondes et optique : période, célérité, longueur d'onde, lentilles minces | Électricité (DIAGNOSTIQUER) | Diagnostiquer | | |
+| 5 | Électricité, chimie organique, mesure et incertitudes, évaluation | Consolidation d'ensemble | Entretenir | | |
 
 **Objectif de chaque séance, pour toi :**
 
@@ -154,7 +154,7 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 - **Séance 2** — Faire apparaître, puis lever, l'idée fausse installée sur les transformations chimiques.
 - **Séance 3** — Stabiliser l'acquis encore fragile sur l'énergie.
 - **Séance 4** — Établir le niveau réel en électricité avant de choisir une remédiation.
-- **Séance 5** — Réinvestir ce qui a été repris, automatiser, mesurer le chemin parcouru. Le contenu précis est ajusté avec le groupe.
+- **Séance 5** — Contrôler un résultat par son ordre de grandeur et par le nombre de chiffres significatifs, et justifier le rejet d'une valeur.
 
 <div class="page-break"></div>
 

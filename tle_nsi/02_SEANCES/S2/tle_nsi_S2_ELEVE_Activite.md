@@ -108,6 +108,8 @@ suppriment la clé `'x'`, puis parcourent `d` en affichant chaque couple clé-va
 
 
 
+
+
 ```
 
 Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
@@ -135,6 +137,13 @@ un dictionnaire associant à chaque mot son nombre d'occurrences. Ajoute deux te
 def effectifs(mots):
     ...
 
+
+
+
+
+
+
+
 # Tests
 # effectifs(['a', 'b', 'a']) doit valoir ...............
 # effectifs([]) doit valoir ...............
@@ -146,6 +155,15 @@ def effectifs(mots):
 Que doit renvoyer `depiler` sur une pile vide ? Justifie ton choix.
 
 ```python
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,6 +181,14 @@ quand même.*
 
 
 ```
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
 
 ---
 

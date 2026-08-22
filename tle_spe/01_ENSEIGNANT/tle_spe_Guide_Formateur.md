@@ -125,17 +125,26 @@ reconstruction et reverser le temps gagné au parcours d'approfondissement.
 
 ## 6. Différenciation
 
-### Les trois parcours
+### Les six pistes
 
-| Parcours | Attribution | Ce qui change |
+| Piste | Attribution | Ce qui change |
 |---|---|---|
-| Consolidation | Le domaine de la séance est en priorité 1 ou 2 dans le livret | Exemple résolu fourni, valeurs simples, étayage écrit |
-| Maîtrise | Le domaine est réussi mais hésitant | Pas d'exemple résolu, justification écrite exigée |
-| Approfondissement | Le domaine est acquis avec certitude | Question ouverte, démonstration à rédiger |
+| Diagnostiquer | Le domaine de la séance a été laissé sans réponse au positionnement | On établit d'abord ce que l'élève sait ; aucune correction avant qu'une réponse soit écrite |
+| Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | La réponse fausse est produite **avant** d'être corrigée ; exemple résolu fourni ensuite |
+| Installer | Réponse fausse avec une certitude basse | Exemple résolu fourni, valeurs simples, étayage écrit |
+| Consolider | Le domaine est réussi mais hésitant | Pas d'exemple résolu, justification écrite exigée |
+| Entretenir | Le domaine est acquis avec certitude | Question ouverte, démonstration à rédiger |
+| Excellence | Le bilan ne comporte aucun domaine à reprendre | Problème de type bac et question ouverte (exercices 9 et 10), puis rôle de vérificateur |
+
+Les cinq premières pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance :
+un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le
+même besoin, et ne relèvent donc pas du même traitement. La sixième existe parce que deux
+élèves du groupe n'ont **aucun** domaine à reprendre : sans elle, ils atteignaient la fin de
+la fiche avant la fin de la phase différenciée.
 
 L'attribution est **relue à chaque séance** dans le livret individuel. Un élève peut être en
-consolidation en séance 1 et en approfondissement en séance 3 : c'est le cas le plus
-fréquent, pas l'exception.
+installation en séance 1 et en entretien en séance 3 : c'est le cas le plus fréquent, pas
+l'exception.
 
 ### Les cinq aides
 

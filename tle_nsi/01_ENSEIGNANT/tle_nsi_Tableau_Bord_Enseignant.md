@@ -30,46 +30,46 @@
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Données en tables (CONFRONTER) · Programmation (CONFRONTER) | Consolidation | | | |
-| Alexandre Zahouani | Données en tables (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Types construits (INSTALLER) · Représentation binaire (CONSOLIDER) | Consolidation | | | |
-| Yassine Ben Hassine | Représentation binaire (CONFRONTER) · Types construits (CONFRONTER) | Consolidation | | | |
+| Adam Zahouani | Données en tables (CONFRONTER) · Programmation (CONFRONTER) | Confronter | | | |
+| Alexandre Zahouani | Données en tables (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Types construits (INSTALLER) · Représentation binaire (CONSOLIDER) | Installer | | | |
+| Yassine Ben Hassine | Représentation binaire (CONFRONTER) · Types construits (CONFRONTER) | Confronter | | | |
 
 ### Séance 2 — Types construits : tableaux, dictionnaires, mutabilité
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Types construits (CONFRONTER) | Consolidation | | | |
-| Alexandre Zahouani | Algorithmique (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Booléens et logique (CONSOLIDER) · Programmation (CONSOLIDER) | Maîtrise | | | |
-| Yassine Ben Hassine | Programmation (CONFRONTER) | Consolidation | | | |
+| Adam Zahouani | Types construits (CONFRONTER) | Confronter | | | |
+| Alexandre Zahouani | Algorithmique (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Booléens et logique (CONSOLIDER) · Programmation (CONSOLIDER) | Consolider | | | |
+| Yassine Ben Hassine | Programmation (CONFRONTER) | Confronter | | | |
 
 ### Séance 3 — Programmation : fonctions, retour, portée, boucles
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Représentation binaire (INSTALLER) | Consolidation | | | |
-| Alexandre Zahouani | Types construits (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Algorithmique (CONSOLIDER) | Maîtrise | | | |
-| Yassine Ben Hassine | Algorithmique (CONFRONTER) | Consolidation | | | |
+| Adam Zahouani | Représentation binaire (INSTALLER) | Installer | | | |
+| Alexandre Zahouani | Types construits (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Algorithmique (CONSOLIDER) | Consolider | | | |
+| Yassine Ben Hassine | Algorithmique (CONFRONTER) | Confronter | | | |
 
 ### Séance 4 — Algorithmique : préconditions, recherche, tris, coût
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Algorithmique (INSTALLER) | Consolidation | | | |
-| Alexandre Zahouani | Représentation binaire (INSTALLER) | Consolidation | | | |
-| Sara Bsiri | Données en tables (CONSOLIDER) | Maîtrise | | | |
-| Yassine Ben Hassine | Booléens et logique (CONFRONTER) | Consolidation | | | |
+| Adam Zahouani | Algorithmique (INSTALLER) | Installer | | | |
+| Alexandre Zahouani | Représentation binaire (INSTALLER) | Installer | | | |
+| Sara Bsiri | Données en tables (CONSOLIDER) | Consolider | | | |
+| Yassine Ben Hassine | Booléens et logique (CONFRONTER) | Confronter | | | |
 
 ### Séance 5 — Données en tables, bases de données, systèmes, évaluation
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Booléens et logique (INSTALLER) | Consolidation | | | |
-| Alexandre Zahouani | Programmation (INSTALLER) | Consolidation | | | |
-| Sara Bsiri | Architecture et systèmes (CONSOLIDER) | Maîtrise | | | |
-| Yassine Ben Hassine | Données en tables (CONFRONTER) | Consolidation | | | |
+| Adam Zahouani | Booléens et logique (INSTALLER) | Installer | | | |
+| Alexandre Zahouani | Programmation (INSTALLER) | Installer | | | |
+| Sara Bsiri | Architecture et systèmes (CONSOLIDER) | Consolider | | | |
+| Yassine Ben Hassine | Données en tables (CONFRONTER) | Confronter | | | |
 
 ## 4. Relevé de l'autonomie
 

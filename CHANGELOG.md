@@ -1,5 +1,42 @@
 # Journal des modifications
 
+## 2026.7 — 2026-08-22
+
+- Élargissement de l'espace d'écriture des exercices qui demandent une rédaction, dans les
+  quinze fiches élève des trois modules. Deux lignes suffisent pour une conversion en
+  binaire ou le calcul d'un terme de rang 12 ; elles ne suffisent pas pour une démonstration,
+  une étude de fonction ou un bilan des forces. Les exercices à réponse courte gardent leur
+  espace : l'élargir n'aurait fait que gonfler la fiche. Les blocs de code sont traités à
+  part, en agrandissant la plage vide où l'élève écrit plutôt qu'en y insérant des lignes
+  de points.
+- Ajout de la **piste excellence** aux cinq séances de mathématiques : un problème de type
+  bac (exercice 9) et une question ouverte (exercice 10) par séance, avec leur corrigé dans
+  la fiche professeur. Deux élèves du groupe ont un positionnement sans aucune erreur : le
+  parcours d'approfondissement s'arrêtait à l'exercice 8, ils atteignaient donc la fin de la
+  fiche avant la fin de la phase différenciée. Les questions ouvertes portent toutes sur un
+  énoncé faux à réfuter, une réciproque à examiner ou un contre-exemple à produire — ce que
+  le positionnement ne mesure pas.
+- Ajout de l'**ouverture maths expertes** aux cinq fiches de séance, avec son corrigé :
+  division euclidienne, diviseurs et nombres premiers, algorithme d'Euclide, logique,
+  systèmes et ouverture sur les matrices et les complexes. Le livret individuel annonçait
+  ces vingt minutes par séance et en donnait le programme, mais aucune fiche ne portait le
+  contenu correspondant : la promesse était invérifiable. Chaque encadré part du thème de
+  la séance, pour que l'option prolonge le travail commun au lieu de le doubler.
+- Remplacement des trois parcours par un **aiguillage à six pistes**, dans les fiches élève,
+  les fiches professeur et le guide du formateur. Trois parcours pour cinq postures
+  diagnostiques : un élève ayant laissé un domaine sans réponse recevait le même traitement
+  qu'un élève porteur d'une certitude erronée, alors que le premier a besoin qu'on établisse
+  ce qu'il sait et le second qu'on mette sa conviction en défaut. Le livret et la fiche
+  nomment désormais la même piste de la même façon.
+- Remplacement de la phrase d'attente « Réinvestir ce qui a été repris, automatiser, mesurer
+  le chemin parcouru. Le contenu précis est ajusté avec le groupe. » par un objectif propre
+  à chaque thème de séance et à chaque module. Elle remplissait les cinq séances des élèves
+  sans domaine à reprendre, c'est-à-dire précisément les livrets qui avaient le plus besoin
+  d'un contenu.
+- La piste excellence est attribuée aux séances sans focus personnel des élèves dont le
+  bilan ne comporte aucune erreur à reprendre. Un acquis hésitant ne compte pas comme une
+  erreur : il se travaille par répétition, pas par remédiation.
+
 ## 2026.6 — 2026-08-22
 
 - Ajout d'un contrôle des débordements de marge à la construction des PDF : LaTeX les

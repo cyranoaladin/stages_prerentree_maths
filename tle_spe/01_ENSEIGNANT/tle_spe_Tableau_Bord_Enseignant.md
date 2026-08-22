@@ -38,66 +38,66 @@
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Fonction exponentielle (CONFRONTER) | Consolidation | | | |
-| Alexandre Zahouani | Fonction exponentielle (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Consolidation d'ensemble | Approfondissement | | | |
-| Yassine Ben Hassine | Suites numériques (CONFRONTER) | Consolidation | | | |
-| Melek Smida | Suites numériques (CONFRONTER) | Consolidation | | | |
-| Inès Darghouth | Suites numériques (CONFRONTER) | Consolidation | | | |
-| Rostom Fekih | Dérivation (CONSOLIDER) | Maîtrise | | | |
-| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
+| Adam Zahouani | Fonction exponentielle (CONFRONTER) | Confronter | | | |
+| Alexandre Zahouani | Fonction exponentielle (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Rédaction et raisonnement | Excellence | | | |
+| Yassine Ben Hassine | Suites numériques (CONFRONTER) | Confronter | | | |
+| Melek Smida | Suites numériques (CONFRONTER) | Confronter | | | |
+| Inès Darghouth | Suites numériques (CONFRONTER) | Confronter | | | |
+| Rostom Fekih | Dérivation (CONSOLIDER) | Consolider | | | |
+| Inès Ben Yahia | Diagnostic en cours | Installer (par défaut) | | | |
 
 ### Séance 2 — Fonction exponentielle : exposants, équations, vers le logarithme
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Suites numériques (INSTALLER) | Consolidation | | | |
-| Alexandre Zahouani | Second degré (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Consolidation d'ensemble | Approfondissement | | | |
-| Yassine Ben Hassine | Second degré (CONFRONTER) | Consolidation | | | |
-| Melek Smida | Second degré (DIAGNOSTIQUER) | Consolidation | | | |
-| Inès Darghouth | Second degré (CONFRONTER) | Consolidation | | | |
-| Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
+| Adam Zahouani | Suites numériques (INSTALLER) | Installer | | | |
+| Alexandre Zahouani | Second degré (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Rédaction et raisonnement | Excellence | | | |
+| Yassine Ben Hassine | Second degré (CONFRONTER) | Confronter | | | |
+| Melek Smida | Second degré (DIAGNOSTIQUER) | Diagnostiquer | | | |
+| Inès Darghouth | Second degré (CONFRONTER) | Confronter | | | |
+| Rostom Fekih | Rédaction et raisonnement | Excellence | | | |
+| Inès Ben Yahia | Diagnostic en cours | Installer (par défaut) | | | |
 
 ### Séance 3 — Second degré : discriminant, signe du trinôme, tableau de signes
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Dérivation (INSTALLER) | Consolidation | | | |
-| Alexandre Zahouani | Dérivation (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Consolidation d'ensemble | Approfondissement | | | |
-| Yassine Ben Hassine | Fonction exponentielle (CONFRONTER) | Consolidation | | | |
-| Melek Smida | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Darghouth | Produit scalaire (INSTALLER) | Consolidation | | | |
-| Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
+| Adam Zahouani | Dérivation (INSTALLER) | Installer | | | |
+| Alexandre Zahouani | Dérivation (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Rédaction et raisonnement | Excellence | | | |
+| Yassine Ben Hassine | Fonction exponentielle (CONFRONTER) | Confronter | | | |
+| Melek Smida | Consolidation d'ensemble | Entretenir | | | |
+| Inès Darghouth | Produit scalaire (INSTALLER) | Installer | | | |
+| Rostom Fekih | Rédaction et raisonnement | Excellence | | | |
+| Inès Ben Yahia | Diagnostic en cours | Installer (par défaut) | | | |
 
 ### Séance 4 — Dérivation : du nombre dérivé aux variations, ouverture sur la convexité
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Consolidation d'ensemble | Approfondissement | | | |
-| Alexandre Zahouani | Suites numériques (CONFRONTER) | Consolidation | | | |
-| Sara Bsiri | Consolidation d'ensemble | Approfondissement | | | |
-| Yassine Ben Hassine | Produit scalaire (CONFRONTER) | Consolidation | | | |
-| Melek Smida | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Darghouth | Fonction exponentielle (INSTALLER) | Consolidation | | | |
-| Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
+| Adam Zahouani | Consolidation d'ensemble | Entretenir | | | |
+| Alexandre Zahouani | Suites numériques (CONFRONTER) | Confronter | | | |
+| Sara Bsiri | Rédaction et raisonnement | Excellence | | | |
+| Yassine Ben Hassine | Produit scalaire (CONFRONTER) | Confronter | | | |
+| Melek Smida | Consolidation d'ensemble | Entretenir | | | |
+| Inès Darghouth | Fonction exponentielle (INSTALLER) | Installer | | | |
+| Rostom Fekih | Rédaction et raisonnement | Excellence | | | |
+| Inès Ben Yahia | Diagnostic en cours | Installer (par défaut) | | | |
 
 ### Séance 5 — Produit scalaire vers l'espace, probabilités, Python, évaluation
 
 | Élève | Focus personnel | Parcours | Aide maximale | Erreur dominante | Décision pour la suite |
 |---|---|---|---|---|---|
-| Adam Zahouani | Consolidation d'ensemble | Approfondissement | | | |
-| Alexandre Zahouani | Produit scalaire (INSTALLER) | Consolidation | | | |
-| Sara Bsiri | Consolidation d'ensemble | Approfondissement | | | |
-| Yassine Ben Hassine | Dérivation (CONFRONTER) | Consolidation | | | |
-| Melek Smida | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Darghouth | Dérivation (INSTALLER) | Consolidation | | | |
-| Rostom Fekih | Consolidation d'ensemble | Approfondissement | | | |
-| Inès Ben Yahia | Diagnostic en cours | Maîtrise (par défaut) | | | |
+| Adam Zahouani | Consolidation d'ensemble | Entretenir | | | |
+| Alexandre Zahouani | Produit scalaire (INSTALLER) | Installer | | | |
+| Sara Bsiri | Rédaction et raisonnement | Excellence | | | |
+| Yassine Ben Hassine | Dérivation (CONFRONTER) | Confronter | | | |
+| Melek Smida | Consolidation d'ensemble | Entretenir | | | |
+| Inès Darghouth | Dérivation (INSTALLER) | Installer | | | |
+| Rostom Fekih | Rédaction et raisonnement | Excellence | | | |
+| Inès Ben Yahia | Diagnostic en cours | Installer (par défaut) | | | |
 
 ## 4. Relevé de l'autonomie
 

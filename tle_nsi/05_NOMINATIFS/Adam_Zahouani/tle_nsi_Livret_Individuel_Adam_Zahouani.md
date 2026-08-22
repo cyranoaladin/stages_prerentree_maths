@@ -141,11 +141,11 @@ Le thème de la séance est commun au groupe. Le focus, l'objectif et le parcour
 
 | Séance | Thème commun du stage | Ton focus personnel | Ton parcours | Aide max. utilisée | Preuve recueillie |
 |---:|---|---|---|---|---|
-| 1 | Représentation des données et booléens | Données en tables (CONFRONTER) · Programmation (CONFRONTER) | Consolidation | | |
-| 2 | Types construits : tableaux, dictionnaires, mutabilité | Types construits (CONFRONTER) | Consolidation | | |
-| 3 | Programmation : fonctions, retour, portée, boucles | Représentation binaire (INSTALLER) | Consolidation | | |
-| 4 | Algorithmique : préconditions, recherche, tris, coût | Algorithmique (INSTALLER) | Consolidation | | |
-| 5 | Données en tables, bases de données, systèmes, évaluation | Booléens et logique (INSTALLER) | Consolidation | | |
+| 1 | Représentation des données et booléens | Données en tables (CONFRONTER) · Programmation (CONFRONTER) | Confronter | | |
+| 2 | Types construits : tableaux, dictionnaires, mutabilité | Types construits (CONFRONTER) | Confronter | | |
+| 3 | Programmation : fonctions, retour, portée, boucles | Représentation binaire (INSTALLER) | Installer | | |
+| 4 | Algorithmique : préconditions, recherche, tris, coût | Algorithmique (INSTALLER) | Installer | | |
+| 5 | Données en tables, bases de données, systèmes, évaluation | Booléens et logique (INSTALLER) | Installer | | |
 
 **Objectif de chaque séance, pour toi :**
 
