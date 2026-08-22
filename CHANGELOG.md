@@ -28,6 +28,13 @@ Le doute était fondé, et il désignait trois défauts qui allaient tous dans l
   d'abord la série d'entretien — qu'il traitera vite, et qui exige déjà la démonstration
   rédigée en entier — puis ses deux problèmes.
 
+- **La confrontation de NSI n'était pas reconnue.** Elle s'y appelle « Prédire, puis
+  exécuter » : l'élève écrit ce qu'il croit que le programme affichera, avec sa certitude,
+  puis il l'exécute. C'est le même geste que la « réponse spontanée » des sciences, et
+  c'est celui dont la posture Confronter dépend entièrement. L'extracteur ne connaissait
+  qu'un intitulé : les élèves de NSI perdaient leur confrontation en séances 2, 3 et 4.
+  Six séances d'élèves la retrouvent.
+
 Après correction, la médiane de tâches par séance va de 5 à 7 selon la piste, contre 2 à 6
 avant. L'écart minimal entre deux cahiers d'élèves aux bilans différents passe de 17,3 % à
 20,5 %.

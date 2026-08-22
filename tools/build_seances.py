@@ -118,7 +118,14 @@ def read_sheet(module: str, session: int, root: Path) -> dict[str, str]:
         raise SheetError(f"{path} : aucun titre de niveau 2")
     parts["theme"] = theme
 
-    spontanee = _body(sections, lambda t: "réponse spontanée" in t)
+    # La confrontation ne porte pas le même nom dans les trois disciplines. En NSI, elle
+    # s'appelle « Prédire, puis exécuter » : l'élève écrit ce qu'il croit que le programme
+    # affichera, avec sa certitude, puis il l'exécute. C'est exactement le même geste que la
+    # réponse spontanée des sciences — et c'est celui dont la posture Confronter dépend
+    # entièrement. Ne reconnaître qu'un seul intitulé privait les élèves de NSI de leur
+    # confrontation en séances 2, 3 et 4.
+    CONFRONTATIONS = ("réponse spontanée", "Prédire, puis exécuter")
+    spontanee = _body(sections, lambda t: any(c in t for c in CONFRONTATIONS))
     if spontanee:
         parts["spontanee"] = spontanee
     trace = _body(sections, lambda t: "La trace écrite" in t)

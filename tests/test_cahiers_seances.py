@@ -427,3 +427,34 @@ def test_une_seance_d_excellence_n_est_jamais_reduite_a_deux_exercices():
     assert not maigres, (
         "des séances d'excellence n'ouvrent que deux exercices pour tout le temps "
         f"différencié : {maigres}")
+
+
+# --- la confrontation ne porte pas le même nom dans les trois disciplines ----------
+# En NSI elle s'appelle « Prédire, puis exécuter » : l'élève écrit ce qu'il croit que le
+# programme affichera, avec sa certitude, puis il l'exécute. C'est le même geste que la
+# « réponse spontanée » des sciences, et c'est celui dont la posture Confronter dépend
+# entièrement. N'en reconnaître qu'un seul intitulé privait les élèves de NSI de leur
+# confrontation en séances 2, 3 et 4 — sans que rien ne le signale : le cahier reste
+# valide, il lui manque seulement ce qui en fait l'intérêt.
+
+@pytest.mark.parametrize("module", ["tle_spe", "tle_nsi", "tle_pc"])
+@pytest.mark.parametrize("seance", [1, 2, 3, 4])
+def test_chaque_fiche_porte_une_confrontation_extractible(module, seance):
+    """La séance 5 est hors du lot : elle porte l'évaluation, pas de confrontation."""
+    parts = read_sheet(module, seance, ROOT)
+    assert parts.get("spontanee"), (
+        f"{module}/S{seance} : aucune confrontation extraite. Un élève en posture "
+        f"Confronter y perdrait le seul moment où sa réponse fausse apparaît avant "
+        f"d'être reprise.")
+
+
+def test_un_eleve_en_posture_confronter_recoit_sa_confrontation():
+    """Le contrôle de bout en bout, sur les cahiers réellement produits."""
+    prives = []
+    for chemin in sorted(ROOT.glob("tle_*/**/*Cahier_Seances*.md")):
+        for rang, bloc in _seances(chemin):
+            if rang == 5 or "Ta piste :** Confronter" not in bloc:
+                continue
+            if "réponse spontanée" not in bloc:
+                prives.append(f"{chemin.name} S{rang}")
+    assert not prives, f"posture Confronter sans confrontation : {prives}"
