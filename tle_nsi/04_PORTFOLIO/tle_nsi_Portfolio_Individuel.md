@@ -135,6 +135,8 @@ Coche ceux que tu fais désormais sans y penser.
 
 ## 7. Auto-évaluation finale
 
+Les deux dernières lignes portent une **ouverture Terminale** : elles ne sont pas attendues à l'entrée en Terminale, et « pas encore » n'y est pas une lacune.
+
 | Affirmation | Pas encore | Avec aide | Seul | Je peux expliquer |
 |---|:---:|:---:|:---:|:---:|
 | Je convertis entre bases 2, 10 et 16 | $\square$ | $\square$ | $\square$ | $\square$ |
@@ -145,8 +147,8 @@ Coche ceux que tu fais désormais sans y penser.
 | Je maîtrise les bornes de `range` | $\square$ | $\square$ | $\square$ | $\square$ |
 | J'écris une spécification et deux tests | $\square$ | $\square$ | $\square$ | $\square$ |
 | J'énonce la précondition d'un algorithme | $\square$ | $\square$ | $\square$ | $\square$ |
-| Je nomme sélection, projection et jointure | $\square$ | $\square$ | $\square$ | $\square$ |
-| J'écris une requête SQL simple | $\square$ | $\square$ | $\square$ | $\square$ |
+| Je nomme sélection, projection et jointure *(ouverture Terminale)* | $\square$ | $\square$ | $\square$ | $\square$ |
+| J'écris une requête SQL simple *(ouverture Terminale)* | $\square$ | $\square$ | $\square$ | $\square$ |
 
 ---
 

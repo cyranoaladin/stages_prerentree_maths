@@ -331,7 +331,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | 10 min | Ouverture | Restitution du positionnement : ce que dit la carte maîtrise $\times$ confiance |
 | 20 min | Confrontation | La suite $u_n = 0{,}5^n$ est-elle croissante ? Calcul des cinq premiers termes, puis confrontation à la réponse donnée au test |
 | 25 min | Reconstruction | Sens de variation d'une suite géométrique selon la raison ; sens de variation par le signe de la différence |
-| 30 min | Entraînement différencié | Trois parcours (§ 6) |
+| 30 min | Entraînement différencié | Six pistes (§ 6) |
 | 20 min | Ouverture Terminale | Une suite croissante et majorée : que peut-on en dire ? Introduction du besoin de la récurrence, sans démonstration |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation, certitude déclarée |
 
@@ -373,7 +373,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | 10 min | Ouverture | Retour sur la séance 1 : une question de contrôle |
 | 20 min | Confrontation | $e^{2x}/e^{x - 1}$ : comparaison des réponses $e^{3x - 1}$ et $e^{x+1}$, test numérique en $x = 1$ |
 | 25 min | Reconstruction | Les quatre règles d'exposants, démontrées à partir de la relation fonctionnelle ; la stricte positivité et ses conséquences |
-| 30 min | Entraînement différencié | Trois parcours |
+| 30 min | Entraînement différencié | Six pistes |
 | 20 min | Ouverture Terminale | Le logarithme comme réciproque : ln(ab) $= \ln a + \ln b$ se lit sur $\exp(a+b) = \exp(a)\exp(b)$ |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -414,7 +414,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | 10 min | Ouverture | Question de contrôle sur la séance 2 |
 | 20 min | Confrontation | $- x^2 + 3x - 2 > 0$ : pourquoi la réponse « à l'extérieur des racines » est fausse ici |
 | 25 min | Reconstruction | Discriminant, racines, factorisation, règle du signe de a |
-| 30 min | Entraînement différencié | Trois parcours |
+| 30 min | Entraînement différencié | Six pistes |
 | 20 min | Ouverture Terminale | Le tableau de signes d'une dérivée : préparation directe de la séance 4 ; mention du théorème des valeurs intermédiaires |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -455,7 +455,7 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 | 10 min | Ouverture | Question de contrôle sur la séance 3 |
 | 20 min | Confrontation | « $f' < 0$ sur ]1 ; 4[ donc $f < 0$ sur ]1 ; 4[ » : contre-exemple $f(x) = x - 10$ |
 | 25 min | Reconstruction | Nombre dérivé et tangente ; formules du produit et du quotient ; du tableau de signes de f' au tableau de variations de f |
-| 30 min | Entraînement différencié | Trois parcours |
+| 30 min | Entraînement différencié | Six pistes |
 | 20 min | Ouverture Terminale | La dérivée seconde et la convexité : f'' donne les variations de f', donc la forme de la courbe |
 | 15 min | Trace écrite et bilan | Fiche de synthèse, auto-évaluation |
 
@@ -532,19 +532,25 @@ domaines les plus porteurs de certitudes erronées passent en premier.
 
 ## 6.1 Principe
 
-La différenciation ne consiste pas à préparer trois cours : elle consiste à faire varier,
+La différenciation ne consiste pas à préparer plusieurs cours : elle consiste à faire varier,
 sur un tronc commun, la quantité d'étayage et le niveau d'exigence de justification.
 
-## 6.2 Trois parcours
+## 6.2 Les six pistes
 
-| Parcours | Public | Ce qui change |
+| Piste | Public | Ce qui change |
 |---|---|---|
-| **Consolidation** | Élève dont le domaine de la séance porte une certitude erronée ou une notion absente | Exemple résolu fourni, valeurs numériques simples, étayage écrit permanent |
-| **Maîtrise** | Élève dont le domaine est réussi mais hésitant | Aucun exemple résolu, exigence de justification écrite, contrôle imposé |
-| **Approfondissement** | Élève dont le domaine est acquis avec certitude | Question ouverte, démonstration à rédiger, ouverture explicite sur la Terminale |
+| **Diagnostiquer** | Le domaine de la séance est resté sans réponse au positionnement | Question 0 puis deux exercices seulement ; exemple résolu et indices gradués ; aucune exigence de rédaction |
+| **Confronter** | Une réponse fausse a été donnée avec assurance | Question 0 obligatoire — c'est la réponse spontanée qu'il faut voir apparaître — puis quatre exercices avec exemple résolu et indices |
+| **Installer** | L'élève sait qu'il lui manque quelque chose | Quatre exercices avec exemple résolu et indices ; le point d'entrée est décalé selon la réussite déjà obtenue sur le domaine |
+| **Consolider** | Réussite réelle, mais hésitante | Exercices 3 à 6, sans exemple résolu ; indices disponibles ; rédaction écrite exigée |
+| **Entretenir** | Acquis et assumé | Exercices 6 à 8, sans étayage d'aucune sorte ; démonstration complète attendue |
+| **Excellence** | Aucun domaine à reprendre au bilan, ou piste terminée | Exercices 9 et 10, puis rôle de vérificateur : relire la copie d'un camarade sans lui donner la réponse |
 
-L'attribution est faite **séance par séance**, à partir du livret individuel : un même élève
-peut être en consolidation en séance 1 et en approfondissement en séance 3.
+L'attribution est faite **séance par séance**, à partir du bilan : un même élève peut être
+en confrontation en séance 1 et en excellence en séance 3. Ce ne sont pas des niveaux mais
+des **postures** — ce que le bilan dit de la relation de l'élève à ce domaine-là, ce jour-là.
+Un élève lucide sur sa lacune et un élève faussement sûr de lui ont besoin de deux choses
+différentes, quel que soit leur niveau.
 
 ## 6.3 Aides graduées
 
@@ -559,12 +565,21 @@ décroissance de l'étayage au fil des séances.
 | D | Découpage de la tâche en trois sous-questions |
 | E | Corrigé partiel à compléter |
 
+
+**Deux dispositifs d'étayage coexistent, et ne se confondent pas.** Les cinq cartes A à E
+sont **collectives** : elles sont posées sur la table, l'élève va les chercher, et il note
+laquelle il a prise. Les **trois indices gradués** du cahier nominatif sont **individuels** :
+ils sont imprimés dans le cahier, sous l'exercice, et ne sont donnés qu'aux pistes qui en
+relèvent — Diagnostiquer, Confronter et Installer. Un élève en Consolider ou en Entretenir
+n'a pas d'indices dans son cahier : les cartes restent sa seule ressource, et le fait d'aller
+la chercher est précisément l'information qu'on veut recueillir.
+
 ## 6.4 Rituel de séance
 
 1. **Question de contrôle** (5 min) sur la séance précédente, avec certitude déclarée.
 2. **Confrontation** (20 min) : un cas qui met la conception erronée en défaut.
 3. **Reconstruction** (25 min) : propriété, démonstration courte, exemple.
-4. **Entraînement différencié** (30 min) : trois parcours, aides graduées.
+4. **Entraînement différencié** (30 min) : six pistes, aides graduées.
 5. **Ouverture Terminale** (20 min) : ce que ce contenu conditionne l'an prochain.
 6. **Trace écrite et auto-évaluation** (15 min), certitude déclarée.
 
@@ -707,7 +722,7 @@ spécialité NSI, le lien est fait explicitement avec le module `tle_nsi`.
 | Durée | 10 heures : 2 h/jour, 5 jours consécutifs, du 24 au 28 août 2026 |
 | Ordre des séances | Déduit du diagnostic : suites, exponentielle, second degré, dérivation, géométrie et probabilités |
 | Principe directeur | Les certitudes erronées d'abord, la justification toujours, l'usage en Terminale explicité |
-| Différenciation | Trois parcours par séance, réattribués à chaque séance, cinq niveaux d'aide |
+| Différenciation | Six pistes par séance, réattribuées à chaque séance, cinq niveaux d'aide |
 | Individualisation | Un livret par élève, construit item par item à partir de son propre bilan |
 | Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 | Sortie | Un plan de travail personnel écrit pour septembre |

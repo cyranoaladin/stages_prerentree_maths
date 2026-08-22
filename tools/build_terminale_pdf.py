@@ -57,6 +57,12 @@ OUTPUT_DIR = ROOT / "dist" / "terminale"
 # MANIFEST_PUBLIC.csv et MANIFEST_PRIVATE.csv. Un fichier ajouté là ferait diverger les
 # manifests du pipeline mathématique, que ce module ne doit pas toucher.
 LATEX_STYLE = ROOT / "tools" / "assets" / "nexus_terminale.sty"
+# Le logo est copié dans le dossier de compilation avec la charte : LaTeX ne va pas le
+# chercher ailleurs, et la charte se rabat silencieusement sur un titre texte s'il manque.
+LATEX_IMAGES = (
+    ROOT / "tools" / "assets" / "nexus_logo_mark.png",
+    ROOT / "tools" / "assets" / "nexus_logo_slogan.png",
+)
 
 # LuaLaTeX et non pdflatex : voir l'entête de nexus_terminale.sty. Le code Python et SQL
 # des modules porte des commentaires accentués que pdflatex, via listings et inputenc,
@@ -301,8 +307,78 @@ def latex_fragment(source: Path) -> str:
     )
     fragment = result.stdout
     # pandoc échappe les points ; ils ressortent tels quels et repassent ici en filets.
-    fragment = DOTTED_RUN.sub(lambda match: _rule_for(len(match.group(0))), fragment)
-    return size_tables(fragment)
+    fragment = rule_dotted_runs(fragment)
+    return size_tables(name_boxes(fragment))
+
+
+# Un bloc de code est composé en verbatim : \rule n'y est pas interprété, il s'y imprime.
+# Une fiche Python à trous — « u = .......... » — sortait donc avec la commande LaTeX en
+# toutes lettres à la place du trou. Dans du code, les points restent des points.
+LISTING = re.compile(r"\\begin\{(lstlisting|verbatim|Shaded|Highlighting)\}.*?"
+                     r"\\end\{\1\}", re.S)
+
+
+def rule_dotted_runs(fragment: str) -> str:
+    """Remplace les files de points par des filets, hors des blocs de code."""
+    out, position = [], 0
+    for bloc in LISTING.finditer(fragment):
+        out.append(DOTTED_RUN.sub(lambda m: _rule_for(len(m.group(0))),
+                                  fragment[position:bloc.start()]))
+        out.append(bloc.group(0))
+        position = bloc.end()
+    out.append(DOTTED_RUN.sub(lambda m: _rule_for(len(m.group(0))), fragment[position:]))
+    return "".join(out)
+
+
+# --- encadrés nommés ---------------------------------------------------------------
+# Une citation Markdown devient par défaut l'encadré « méthode ». Lorsqu'elle s'ouvre sur
+# une étiquette en gras — « **Définition.** », « **Piège.** » — c'est cette nature-là que
+# l'auteur a voulu marquer : on lui donne l'encadré correspondant, et l'étiquette passe
+# dans l'onglet du cadre au lieu d'être répétée dans le texte.
+BOX_LABELS = {
+    "Définition": "definitionbox",
+    "Propriété": "propertybox",
+    "Méthode": "methodstepbox",
+    "Automatisme": "reflexbox",
+    "Remarque": "remarkbox",
+    "Piège": "trapbox",
+    "Exemple": "examplebox",
+    "Rappel": "recallbox",
+    "Rappel de Première": "recallbox",
+    "Reprise": "recallagainbox",
+    "Point d'appui": "supportbox",
+}
+# Les étiquettes les plus longues d'abord : sans cela « Rappel » l'emporterait sur
+# « Rappel de Première » et laisserait la fin du libellé traîner dans le texte.
+QUOTE_OPEN = re.compile(
+    r"\\begin\{quote\}\n\\textbf\{("
+    + "|".join(re.escape(label) for label in sorted(BOX_LABELS, key=len, reverse=True))
+    + r")\.?\}\s*"
+)
+
+
+def name_boxes(fragment: str) -> str:
+    """Remplace les citations étiquetées par l'encadré de leur nature."""
+    out, position, stack = [], 0, []
+    pattern = re.compile(r"\\begin\{quote\}|\\end\{quote\}")
+    for match in pattern.finditer(fragment):
+        out.append(fragment[position:match.start()])
+        position = match.end()
+        if match.group(0) == r"\begin{quote}":
+            labelled = QUOTE_OPEN.match(fragment, match.start())
+            if labelled:
+                environment = BOX_LABELS[labelled.group(1)]
+                stack.append(environment)
+                out.append("\\begin{%s}" % environment)
+                position = labelled.end()
+            else:
+                stack.append("quote")
+                out.append(r"\begin{quote}")
+        else:
+            environment = stack.pop() if stack else "quote"
+            out.append("\\end{%s}" % environment)
+    out.append(fragment[position:])
+    return "".join(out)
 
 
 def check_source_notation(sources: list[Path]) -> list[str]:
@@ -343,6 +419,9 @@ def cover_latex(bundle: Bundle) -> str:
 # En deçà de ce seuil, un sommaire coûterait une feuille par élève pour deux lignes que
 # la page de garde annonce déjà.
 TOC_MINIMUM_DOCUMENTS = 3
+# Et en deçà de celui-ci, il ne mérite pas sa propre feuille : trois lignes de sommaire
+# suivies d'une page blanche sont un défaut de mise en page, pas une aération.
+TOC_OWN_PAGE_DOCUMENTS = 6
 
 
 def toc_latex(bundle: Bundle) -> str:
@@ -351,9 +430,11 @@ def toc_latex(bundle: Bundle) -> str:
     entries = "\n".join(
         rf"\item {latex_escape(document_title(source))}" for source in bundle.sources
     )
+    tail = ("\\clearpage\n" if len(bundle.sources) >= TOC_OWN_PAGE_DOCUMENTS
+            else "\\vspace{3mm}\n")
     return (
         "\\sectiontitle{Contenu de ce dossier}\n"
-        "\\begin{enumerate}\n" + entries + "\n\\end{enumerate}\n\\clearpage\n"
+        "\\begin{enumerate}\n" + entries + "\n\\end{enumerate}\n" + tail
     )
 
 
@@ -423,6 +504,9 @@ def render(bundle: Bundle) -> Path:
     with tempfile.TemporaryDirectory(prefix="nexus-tle-") as workdir:
         work = Path(workdir)
         shutil.copy(LATEX_STYLE, work / LATEX_STYLE.name)
+        for image in LATEX_IMAGES:
+            if image.exists():
+                shutil.copy(image, work / image.name)
         job = "document"
         (work / f"{job}.tex").write_text(latex_document(bundle), encoding="utf-8")
         compile_latex(work, job, bundle.filename)
@@ -497,6 +581,7 @@ def student_documents(module: Module, slug: str, suffix: str) -> dict[str, Path]
     base = nominative_dir(module) / slug
     return {
         "livret": base / f"{module.key}_Livret_Individuel_{suffix}.md",
+        "cahier": base / f"{module.key}_Cahier_Seances_{suffix}.md",
         "remediation_eleve": base / f"{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md",
         "remediation_prof": base / f"{module.key}_Remediation_Ciblee_{suffix}_PROF_Corrige.md",
     }
@@ -566,6 +651,29 @@ def plan_bundles(root: Path = ROOT) -> list[Bundle]:
             documents = student_documents(module, student["slug"], suffix)
             label = file_label(module)
             matiere_tag = "" if subject["matiere"] == module.subject_label else "_EXPERTES"
+
+            # Cahier de séances : le support que l'élève a devant lui pendant les cinq
+            # séances. Nominatif, donc confidentiel, et sans aucun corrigé.
+            if documents["cahier"].exists():
+                bundles.append(Bundle(
+                    filename=(f"{label}{matiere_tag}_{student['slug']}"
+                              f"_CAHIER_SEANCES_ELEVE.pdf"),
+                    title="Cahier des cinq séances",
+                    subtitle=f"{student['displayName']} — {subject['matiere']}",
+                    audience="eleve",
+                    directory="eleves",
+                    meta=[
+                        ("Élève", student["displayName"]),
+                        ("Groupe", group["libelle"]),
+                        ("Matière", subject["matiere"]),
+                        ("Usage", "Support des cinq séances, à apporter chaque jour"),
+                        ("Année préparée", registry["anneeScolairePreparee"]),
+                    ],
+                    sources=[documents["cahier"]],
+                    confidential=True,
+                    student=student["displayName"],
+                    module_key=module.key,
+                ))
 
             # Dossier élève : livret + remédiation, jamais de corrigé.
             eleve_sources = [documents["livret"]]

@@ -121,6 +121,34 @@ c'est la loi de De Morgan, à faire énoncer par un élève.
 > booléenne. Sa négation correcte n'est pas `age <= 18 AND classe != 'TG3'` : c'est De Morgan
 > qui donne la bonne écriture.
 
+## Corrigé de la piste excellence
+
+**Exercice 11.** a) $45 = 0010\,1101$ ; inversion : $1101\,0010$ ; plus 1 : $1101\,0011$,
+soit `0xD3`.
+b) $0010\,1101 + 1101\,0011 = 1\,0000\,0000$. Sur 8 bits, il reste $0000\,0000$ : la neuvième
+retenue est perdue, et c'est précisément ce qui fait fonctionner le codage.
+c) De $-128$ à $+127$.
+d) Le bit de poids fort code le signe, mais zéro n'a qu'une seule écriture — celle des
+positifs. Il reste donc une combinaison de plus du côté négatif. **Attendre cet argument**,
+pas « c'est comme ça ».
+
+**Exercice 12.** a) Vraie : n bits codent $2^n$ valeurs, $n+1$ bits en codent $2^{n+1}$.
+b) Fausse. Sur 4 bits, le maximum vaut 15 ; sur 5 bits, 31. Or $2 \times 15 = 30 \neq 31$.
+c) Sur n bits non signés, le maximum vaut $2^n - 1$. Le nombre de valeurs double, le maximum
+vaut le double **plus un**.
+d) Sur 4 bits en complément à deux, le maximum vaut 7 ; sur 5 bits, 15, et $2 \times 7 + 1 = 15$ :
+la même relation tient, avec un maximum de $2^{n-1} - 1$.
+
+## Corrigé de l'atelier Terminale NSI
+
+a) $37 = 0010\,0101$ ; $0 = 0000\,0000$.
+b) Adresse réseau : $192.168.1.0$. Le quatrième octet s'annule, les trois premiers sont
+inchangés puisque $255$ vaut $1111\,1111$ et que $x$ ET $1$ vaut $x$.
+c) $192.168.1.200$ : même réseau, l'adresse réseau reste $192.168.1.0$. $192.168.2.37$ :
+réseau $192.168.2.0$, donc **réseau différent**. Exiger le calcul : les deux adresses se
+ressemblent, seul le ET tranche.
+d) Le dernier octet est libre, soit $2^8 = 256$ adresses, dont 254 utilisables.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

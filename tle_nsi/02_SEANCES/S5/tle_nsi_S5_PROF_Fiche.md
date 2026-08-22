@@ -165,6 +165,41 @@ confiance et comparée au positionnement initial.
 3. Faire compléter le portfolio et l'auto-évaluation finale.
 4. Faire formuler à chacun une phrase : « ce que j'ai corrigé pendant ce stage, c'est… ».
 
+## Corrigé de la piste excellence
+
+**Exercice 11.** a) Clé primaire de `eleves` : `id`. La table `notes` n'a pas de clé primaire
+d'une seule colonne : c'est le triplet `(id_eleve, matiere)` qui identifie une ligne.
+`id_eleve` est la clé étrangère, elle pointe vers `eleves.id`.
+b) `SELECT eleves.nom, AVG(notes.note) FROM eleves JOIN notes ON eleves.id = notes.id_eleve
+WHERE eleves.classe = 'TG3' GROUP BY eleves.nom;`
+c) Une boucle sur les élèves de TG3, une boucle interne sur les notes pour retenir celles dont
+`id_eleve` correspond, puis la moyenne. Faire constater la double boucle.
+d) La contrainte de **clé étrangère**. Sans elle, la base contiendrait des notes orphelines,
+que la jointure ferait disparaître silencieusement — une erreur invisible.
+
+**Exercice 12.** a) Au choix : l'unicité de la clé primaire, l'intégrité référentielle, le
+typage des colonnes, l'accès concurrent, l'atomicité des transactions. Deux suffisent, à
+condition d'être expliquées.
+b) Dans un CSV, rien ne se passe : les deux lignes coexistent, et le programme qui les lit
+choisira arbitrairement. Avec une clé primaire, l'insertion est **refusée**.
+c) Le système de gestion connaît la structure des tables et dispose d'index : il choisit lui
+même la stratégie de rapprochement. En Python, c'est au programmeur d'écrire la double boucle
+et d'en payer le coût.
+d) Un échange ponctuel entre deux outils, un export à lire une fois, un jeu de données que
+personne ne modifie à plusieurs. Le CSV est lisible sans logiciel : c'est son avantage.
+
+## Corrigé de l'atelier Terminale NSI
+
+a) Attente d'une lecture disque : **bloqué**. En cours d'exécution : **élu**. Prêt mais en
+attente du processeur : **prêt**.
+b) P attend B que Q détient, Q attend A que P détient : aucun des deux ne peut avancer ni
+libérer ce qu'il tient. C'est un **interblocage**.
+c) Deux flèches, de P vers Q et de Q vers P : le schéma comporte un **cycle**. C'est le cycle
+qui caractérise le blocage, pas le nombre de processus.
+d) Imposer un ordre global d'acquisition des ressources — par exemple toujours demander A
+avant B. Aucun cycle ne peut alors se former. Accepter aussi le délai d'attente avec
+libération.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

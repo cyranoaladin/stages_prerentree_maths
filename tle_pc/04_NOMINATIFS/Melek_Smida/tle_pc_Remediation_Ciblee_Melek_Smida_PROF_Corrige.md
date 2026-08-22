@@ -29,11 +29,11 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 2 | Transformations chimiques | Identifier le réactif limitant | réponse fausse au positionnement |
+| 1 | item 2 | Transformations chimiques | Identifier le réactif limitant | réponse fausse |
 | 2 | item 5 | Transformations chimiques | Appliquer la définition de Brønsted | question laissée sans réponse |
 | 3 | item 6 | Transformations chimiques | Relier pH et concentration en ions oxonium | question laissée sans réponse |
 | 4 | item 9 | Mécanique | Caractériser le vecteur vitesse | question laissée sans réponse |
-| 5 | item 10 | Mécanique | Reconnaître les conditions d'une chute libre | réponse fausse au positionnement |
+| 5 | item 10 | Mécanique | Reconnaître les conditions d'une chute libre | réponse fausse |
 | 6 | item 17 | Électricité | Calculer une puissance et une énergie électriques | question laissée sans réponse |
 | 7 | item 18 | Électricité | Quantifier l'énergie dissipée par effet Joule | question laissée sans réponse |
 | 8 | item 3 | Transformations chimiques | Distinguer oxydant et réducteur | réussi avec une certitude de 2/4 |
@@ -78,9 +78,9 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 ### Exercice 4 — Mécanique
 
-**Énoncé.** Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Le vecteur accélération est-il nul ? Justifier.
+**Énoncé.** Un point décrit un cercle à vitesse de norme constante. Le vecteur vitesse est-il constant ? Justifier en distinguant sa norme et sa direction.
 
-**Corrigé.** Le vecteur vitesse n'est pas constant : sa norme l'est, mais sa direction change en permanence puisqu'il reste tangent au cercle. L'accélération n'est donc pas nulle — elle est dirigée vers le centre du cercle.
+**Corrigé.** Le vecteur vitesse n'est pas constant : sa norme l'est, mais sa direction change en permanence puisqu'il reste tangent au cercle. C'est cette variation de direction que la Terminale mesurera par le vecteur accélération — elle sera dirigée vers le centre du cercle.
 
 **Geste à installer.** Le vecteur vitesse est tangent à la trajectoire et orienté dans le sens du mouvement. Une vitesse constante en norme n'est pas un vecteur vitesse constant.
 
@@ -167,25 +167,25 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** C'est le domaine le plus sollicité de la Terminale : taux d'avancement final et état d'équilibre, quotient de réaction et constante d'équilibre, titrages avec suivi pH-métrique ou conductimétrique, forces des acides et des bases et diagrammes de prédominance, évolution spontanée et piles, cinétique et catalyse. Un tableau d'avancement mal posé bloque tous ces chapitres à la fois.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** C'est le domaine le plus sollicité de la Terminale : taux d'avancement final et état d'équilibre, quotient de réaction et constante d'équilibre, titrages avec suivi pH-métrique ou conductimétrique, forces des acides et des bases et diagrammes de prédominance, évolution spontanée et piles, cinétique et catalyse. Un tableau d'avancement mal posé bloque tous ces chapitres à la fois.
 
 ### Mécanique — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Le vecteur accélération est introduit, puis la deuxième loi de Newton, qui devient l'outil central : mouvement dans un champ de pesanteur uniforme, dans un champ électrique uniforme, dans un champ de gravitation avec les lois de Kepler. Chacun de ces mouvements se traite en projetant une relation vectorielle : la nature vectorielle de la vitesse doit être acquise.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le vecteur accélération est introduit, puis la deuxième loi de Newton, qui devient l'outil central : mouvement dans un champ de pesanteur uniforme, dans un champ électrique uniforme, dans un champ de gravitation avec les lois de Kepler. Chacun de ces mouvements se traite en projetant une relation vectorielle : la nature vectorielle de la vitesse doit être acquise.
 
 ### Électricité — DIAGNOSTIQUER
 
 Aucune réponse n'a été apportée sur ce domaine. On ne devine pas : un test ciblé est passé au démarrage, et la remédiation est décidée à partir de ce qu'il montre.
 
-**Argument à donner à l'élève.** Le circuit RC est étudié en régime transitoire : charge et décharge d'un condensateur, constante de temps, énergie stockée. Les bilans de puissance de Première y deviennent des bilans d'énergie dépendant du temps, et l'effet Joule explique où part l'énergie dissipée.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le circuit RC est étudié en régime transitoire : charge et décharge d'un condensateur, constante de temps, énergie stockée. Les bilans de puissance de Première y deviennent des bilans d'énergie dépendant du temps, et l'effet Joule explique où part l'énergie dissipée.
 
 ### Énergie — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** Le premier principe de la thermodynamique généralise ces bilans en y intégrant l'énergie interne et les transferts thermiques : flux thermique, résistance thermique, loi de refroidissement de Newton. Le théorème de l'énergie cinétique reste l'outil de résolution alternatif à la deuxième loi de Newton.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le premier principe de la thermodynamique généralise ces bilans en y intégrant l'énergie interne et les transferts thermiques : flux thermique, résistance thermique, loi de refroidissement de Newton. Le théorème de l'énergie cinétique reste l'outil de résolution alternatif à la deuxième loi de Newton.
 
 ## Décision de fin de parcours
 

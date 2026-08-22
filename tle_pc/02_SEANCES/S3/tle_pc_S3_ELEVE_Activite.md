@@ -81,6 +81,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire un résultat avec son unité et ses chiffres significatifs, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -185,6 +186,95 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend un résultat écrit avec son unité et un nombre de chiffres
+> significatifs justifié. Le second part d'une affirmation fausse : on attend un
+> contre-exemple précis, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la relation a été écrite avant les valeurs, si l'unité suit
+> le résultat, et où le raisonnement s'interrompt.
+
+**Exercice 9.** Une luge et son passager, de masse totale
+$m = \SI{40}{\kilogram}$, partent sans vitesse initiale d'une hauteur
+$h = \SI{12}{\metre}$ et arrivent en bas de la pente à la vitesse
+$v = \SI{12}{\metre\per\second}$. On prend $g = \SI{9.8}{\newton\per\kilogram}$ et on
+choisit le bas de la pente comme origine des altitudes.
+
+a) Calculer l'énergie potentielle de pesanteur au départ.
+
+....................................................................................................
+
+....................................................................................................
+
+b) Calculer l'énergie cinétique à l'arrivée.
+
+....................................................................................................
+
+....................................................................................................
+
+c) L'énergie mécanique s'est-elle conservée ? Calculer l'énergie dissipée par les frottements.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Quelle vitesse la luge aurait-elle atteinte en l'absence de frottement ? Comparer.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+e) Quelle proportion de l'énergie initiale a été convertie en énergie cinétique ?
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Un élève affirme : « l'énergie mécanique se conserve toujours ».
+
+a) Réfuter à l'aide de l'exercice 9.
+
+....................................................................................................
+
+....................................................................................................
+
+b) Écrire l'énoncé correct, en précisant la condition.
+
+....................................................................................................
+
+....................................................................................................
+
+c) L'énergie dissipée est-elle perdue ? Sous quelle forme se retrouve-t-elle, et où ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Un pendule lâché sans vitesse oscille, puis finit par s'arrêter. À quel moment son énergie
+cinétique est-elle maximale ? Et où est passée son énergie mécanique à la fin ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 Une voiture freine et s'arrête. Son énergie cinétique valait $\SI{200}{\kilo\joule}$. Où
@@ -203,6 +293,62 @@ $$\Delta U = W + Q$$
 où $Q$ est le transfert thermique. Rien n'est perdu ; tout est compté. C'est sur cette
 relation que la Terminale construit le flux thermique, la résistance thermique et la loi
 de refroidissement de Newton.
+
+---
+
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de constater que l'énergie mécanique diminue quand il y a
+frottement, sans disparaître. Le **premier principe de la thermodynamique**, au programme de
+Terminale, ferme le bilan.
+
+Il s'écrit $\Delta U = W + Q$ : la variation d'énergie interne d'un système est la somme du
+travail et du transfert thermique qu'il reçoit.
+
+**a)** Dans l'exercice de la luge, l'énergie dissipée valait environ
+$\SI{1.8}{\kilo\joule}$. Sous quelle forme se retrouve-t-elle, et dans quels corps ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** L'énergie interne d'un corps de masse m et de capacité thermique massique c varie de
+$\Delta U = m c \Delta T$. La neige a pour capacité thermique massique
+$\SI{2100}{\joule\per\kilogram\per\kelvin}$. Si toute l'énergie dissipée était reçue par
+$\SI{5.0}{\kilogram}$ de neige, de combien sa température s'élèverait-elle ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Cette élévation est-elle plausible ? Que peut-on en déduire sur la répartition réelle
+de l'énergie dissipée ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Un système reçoit $\SI{500}{\joule}$ de travail et cède $\SI{200}{\joule}$ par
+transfert thermique. Calcule $\Delta U$ en respectant les signes.
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Le bilan d'énergie de Première ne comptait que $E_c$ et
+$E_{pp}$. Le premier principe y ajoute l'énergie interne, et rend le bilan exact — c'est ce
+qui permet ensuite d'étudier le flux thermique et la loi de refroidissement de Newton.
 
 ---
 

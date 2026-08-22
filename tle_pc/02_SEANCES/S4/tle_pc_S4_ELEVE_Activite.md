@@ -79,6 +79,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Écrire la relation utilisée **avant** de remplacer par les valeurs |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Justifier par écrit, et contrôler l'unité du résultat |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Contrôler l'ordre de grandeur et les chiffres significatifs |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire un résultat avec son unité et ses chiffres significatifs, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -187,6 +188,102 @@ Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\squ
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend un résultat écrit avec son unité et un nombre de chiffres
+> significatifs justifié. Le second part d'une affirmation fausse : on attend un
+> contre-exemple précis, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la relation a été écrite avant les valeurs, si l'unité suit
+> le résultat, et où le raisonnement s'interrompt.
+
+**Exercice 9.** Une onde sonore de fréquence $\SI{680}{\hertz}$ se propage dans
+l'air, où la célérité vaut $\SI{340}{\metre\per\second}$.
+
+a) Calculer sa longueur d'onde et sa période.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) La même onde pénètre dans l'eau, où la célérité vaut
+$\SI{1500}{\metre\per\second}$. Indiquer, pour chacune des trois grandeurs — fréquence,
+période, longueur d'onde — si elle change, et donner sa nouvelle valeur.
+
+| Grandeur | Dans l'air | Dans l'eau | Change ? |
+|---|---|---|---|
+| fréquence | | | |
+| période | | | |
+| longueur d'onde | | | |
+
+....................................................................................................
+
+....................................................................................................
+
+c) Deux détecteurs sont placés dans l'air, distants de $\SI{0.25}{\metre}$ sur la
+direction de propagation. Quel décalage cela représente-t-il, exprimé en fraction de longueur
+d'onde ? Les deux signaux sont-ils en phase ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Expliquer pourquoi c'est la fréquence, et non la longueur d'onde, qui caractérise la
+source sonore.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Un élève affirme : « une lentille convergente donne toujours une image
+renversée ».
+
+a) Réfuter en plaçant l'objet entre le foyer objet F et le centre optique O. Faire le schéma.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) Écrire l'énoncé correct.
+
+....................................................................................................
+
+....................................................................................................
+
+c) « L'image d'un objet situé à l'infini se forme au foyer image. » Vrai ou faux ? Justifier.
+
+....................................................................................................
+
+....................................................................................................
+
+d) On masque la moitié inférieure de la lentille. Que devient l'image : moitié manquante,
+image entière moins lumineuse, ou image deux fois plus petite ? Justifier par la construction.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 **Diffraction et interférences.** Les deux se quantifient à partir de $\lambda$. L'écart
@@ -203,6 +300,58 @@ rayons d'aujourd'hui suffisent à construire toute la lunette.
 
 **Et une nouveauté :** la lumière décrite comme un flux de **photons**, avec des
 transitions d'énergie. Là, le tracé géométrique cède la place à un bilan énergétique.
+
+---
+
+## Atelier Terminale physique-chimie — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de manipuler des fréquences et des longueurs d'onde. L'oreille,
+elle, ne perçoit pas l'intensité sonore proportionnellement : le programme de Terminale
+introduit pour cela une **échelle logarithmique**.
+
+Le **niveau d'intensité sonore** vaut $L = 10 \log(I/I_0)$, exprimé en décibels, avec
+$I_0 = \SI{1.0e-12}{\watt\per\metre\squared}$, seuil d'audibilité.
+
+**a)** Une conversation correspond à $I = \SI{1.0e-6}{\watt\per\metre\squared}$. Calcule le
+niveau sonore correspondant.
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** Deux personnes parlent en même temps : l'intensité double. De combien de décibels le
+niveau augmente-t-il ? Le calcul dépend-il de l'intensité de départ ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Combien de personnes faudrait-il pour gagner $\SI{20}{\decibel}$ ?
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Le seuil de douleur est à $\SI{120}{\decibel}$. Combien de fois l'intensité y est-elle
+plus grande qu'au seuil d'audibilité ? Explique en une phrase pourquoi on n'utilise pas une
+échelle linéaire.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** La même échelle sert au pH, que tu as croisé en séance 1 :
+$\mathrm{pH} = - \log[\ce{H3O+}]$. Une unité de pH, c'est un facteur dix sur la concentration
+— exactement comme dix décibels sont un facteur dix sur l'intensité.
 
 ---
 

@@ -1,5 +1,151 @@
 # Journal des modifications
 
+## 2026.10 — 2026-08-22
+
+Relecture des documents que rien n'avait encore contrôlés : le mémento de physique-chimie,
+la place curriculaire de chaque notion, et les 416 pages destinées à l'enseignant.
+
+**Le mémento de formules de physique-chimie**, relu ligne à ligne contre le programme de
+Première de 2019, portait quatre défauts. C'est le seul document du corpus que l'élève
+emporte en septembre : ce qui y est faux le suit toute l'année.
+
+- `P = U I = R I²` enchaînait une loi générale et une loi qui ne vaut que pour un conducteur
+  ohmique — ni pour une pile, ni pour un moteur. Les deux relations sont désormais séparées,
+  avec leur domaine de validité.
+- La conservation de l'énergie mécanique était réduite à « sans frottement ». Une force
+  motrice la rompt tout autant : la condition est que le poids soit la seule force qui
+  travaille.
+- La longueur d'onde d'un son audible était donnée « de quelques centimètres à quelques
+  mètres ». À 20 Hz elle vaut 17 m.
+- Un espace parasite séparait les deux arguments d'un `\SI`.
+
+**Audit curriculaire.** `tools/qa_curriculum.py` vérifie qu'aucune notion de Terminale n'est
+présentée comme un acquis antérieur, que chaque domaine du positionnement porte son prérequis
+et son ouverture, que le programme de mathématiques publié en avril 2026 n'est jamais donné
+pour applicable à cette cohorte, et que toute notion de Terminale qui apparaît est annoncée
+comme telle. 1524 contrôles. Il a trouvé :
+
+- **la variante de l'item 9 de physique-chimie demandait le vecteur accélération** — introduit
+  en Terminale — pour remédier à une lacune de Première. Un élève qui échouait dessus était
+  compté en déficit sur une notion qu'il n'a pas encore rencontrée ;
+- **le champ `ouverture_terminale` était servi au professeur comme « argument à donner à
+  l'élève »** : cinq notions de l'année à venir, à citer à quelqu'un qui bute sur l'année
+  passée. C'est un repère curriculaire, pas un texte à lire ;
+- un piège de Première se corrigeait par l'énergie interne, une question de recul demandait
+  du SQL sans dire que SQL est de Terminale, et l'auto-évaluation finale de NSI mettait huit
+  énoncés de Première et deux de Terminale sur le même plan.
+
+**Balayage visuel des documents enseignant.** Il a trouvé ce que le contrôle de densité ne
+pouvait pas voir : **les files de points étaient converties en filets `\rule` jusque dans les
+blocs de code**. En verbatim, `\rule` n'est pas interprété — il s'imprime. Trente blocs
+étaient concernés, dont les fiches Python à trous distribuées aux élèves, qui sortaient avec
+`u = \rule{15mm}{0.32pt}` à la place du trou. La substitution connaît désormais les blocs de
+code, et cinq tests la tiennent.
+
+Le même balayage a montré que les documents de cadrage annonçaient encore **trois parcours**
+quand les fiches élèves en portent six : les guides du formateur, les documentations de
+module et les trois documents sources sont alignés. La distinction entre les **cinq cartes
+d'aide collectives** et les **trois indices gradués du cahier nominatif** est écrite là où
+elle manquait.
+
+**Index des modules.** Le générateur branchait sur la clé du module au lieu d'employer les
+champs prévus pour ces différences — `diagnostic_prefix`, `portfolio_dir`,
+`extra_portfolio`. La physique-chimie héritait donc de la forme de NSI : son index
+proposait un mini-diagnostic « pratique », un mémento Python et un portfolio dans
+`04_PORTFOLIO`, soit **quatre documents qui n'existent pas**. Le mémento de formules, lui,
+n'était lié depuis aucun index — alors que c'est le seul document du corpus destiné à
+servir après le stage. Les trois index mènent en outre désormais au guide d'impression et
+à la note de remise. Six tests refusent un lien mort, un mémento non lié, ou un index qui
+ne mènerait pas à la remise.
+
+**Dossier de remise.** `tools/build_dossier_livraison.py` produit `NOTE_DE_REMISE.md` à partir
+du registre de la cohorte : qui reçoit quoi, en combien de pages, ce qui se photocopie et en
+combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. Le même outil échoue si un
+document nominatif se trouve dans la liasse collective, si un document attendu manque, ou si
+un fichier est attribué à quelqu'un qui n'est pas au registre. Il tourne sans distribution
+TeX, et donc en intégration continue.
+
+Le guide d'impression annonçait encore WeasyPrint, une cohorte de huit élèves et l'absence de
+stage de physique-chimie. Les trois sont faux depuis plusieurs versions.
+
+## 2026.9 — 2026-08-22
+
+Balayage visuel des 327 pages des quinze cahiers nominatifs, en trente planches contact.
+Cinq défauts que ni les tests, ni la compilation, ni le contrôle de densité ne voyaient.
+
+- **Les exercices de la piste excellence figuraient dans le cahier de tous les élèves en
+  séance 5.** Cette séance n'est pas découpée en pistes : son contenu est repris par thème,
+  et le filtre laissait passer « Partie 3 bis — Exercices 9 et 10, piste Excellence ». Un
+  élève en remédiation recevait donc un problème de type bac au milieu de sa séance. Au
+  passage, l'évaluation finale et la carte de sortie, qui doublonnaient avec la question de
+  sortie du cahier, sont également retirées de cette reprise.
+- **Le décalage du point d'entrée suivait le mauvais domaine.** Il était calculé sur la
+  réussite du domaine travaillé en temps différencié, puis appliqué aux exercices du thème
+  de la séance. Adam Zahouani, à 0 % sur l'exponentielle, sautait une application directe
+  d'exponentielle parce qu'il avait 43 % sur les suites. Le décalage suit désormais le
+  domaine des exercices.
+- **Le décalage s'appliquait à la piste Confronter.** Un élève porteur d'une certitude
+  erronée a besoin de la reconstruction complète : son taux de réussite ne dit pas qu'il
+  maîtrise l'accès, il dit qu'une partie de ce qu'il croit savoir est juste. Le décalage ne
+  vaut plus que pour la piste Installer.
+- **Le cahier d'un élève sans positionnement parlait d'un positionnement qui n'a pas eu
+  lieu**, et répétait cinq fois la même phrase d'attente. Il porte désormais l'énoncé de sa
+  situation, une fois, et un objectif qui nomme le thème de chaque séance sans rien préjuger
+  de son niveau.
+- **Le tableau de suivi final débordait seul sur une dernière page presque vide** dans trois
+  cahiers sur quinze. Placé avant les questions ouvertes du bilan, c'est désormais une ligne
+  de réponse qui déborde le cas échéant — et une ligne de réponse sur une page neuve n'est
+  pas un défaut.
+
+Ajout de `tools/qa_planches.py`, qui assemble toutes les pages d'un PDF en planches de douze
+pour l'inspection. Le contrôle de densité trouve les pages vides ; il ne voit ni un tableau
+qui déborde, ni un exercice donné au mauvais élève.
+
+## 2026.8 — 2026-08-22
+
+- Ajout des **cahiers de séances nominatifs** : un cahier par élève et par matière, couvrant
+  les cinq séances. Les fiches collectives restaient la seule chose que l'élève avait sous
+  les yeux pendant la séance ; il y trouvait les huit exercices du groupe, dont la moitié ne
+  le concernait pas, et devait ouvrir son livret pour savoir lesquels étaient les siens. Le
+  cahier assemble, pour lui seul, la progression commune et ce que son bilan dit de lui :
+  objectif personnel, rappel de son diagnostic, automatismes, définitions et propriétés,
+  méthode pas à pas, exemple résolu quand sa posture le demande, uniquement les exercices de
+  sa piste, ses exercices issus de ses propres erreurs, indices gradués, transfert,
+  passerelle Terminale, prise de recul, question de sortie et travail inter-séances.
+  Quinze cahiers, de 17 à 25 pages.
+- L'étayage dépend désormais de la posture diagnostique et non d'un niveau supposé. Un élève
+  porteur d'une certitude erronée produit sa réponse avant toute correction ; un élève lucide
+  sur ce qui lui manque reçoit l'exemple résolu tout de suite ; un élève qui réussit sans
+  assurance s'en passe, c'est précisément l'objet du travail. Sans cette distinction, quatre
+  élèves de mathématiques recevaient quatre cahiers identiques à leur exercice personnel près.
+- Le point d'entrée dans une série d'exercices suit le taux de réussite du domaine : à plus
+  de 70 %, les deux premières applications directes sont passées, et le cahier dit pourquoi.
+  Aucun objectif n'est retiré — les exercices sautés restent dans la fiche collective.
+- Reprise espacée : le domaine travaillé en séance n revient en séance n+2, sous forme d'une
+  question de rappel sans notes. Une réussite le jour même ne prouve pas qu'une notion est
+  installée.
+- Correction d'un défaut d'interprétation du bilan : un domaine laissé **sans réponse**
+  affichait « 0 % de réussite ». Ce zéro ne mesure rien, et l'écrire annonçait un échec là où
+  le positionnement n'avait produit aucune information.
+- Ajout de `CURRICULUM_SOURCES.md`. Le nouveau programme de spécialité mathématiques publié
+  au BO du 2 avril 2026 n'entre en vigueur qu'à la rentrée 2027-2028 : il ne s'applique pas à
+  cette cohorte, qui relève du programme de 2019 en Première comme en Terminale. Une erreur
+  de génération de programme est indétectable dans un document fini ; la référence est donc
+  écrite, avec ses adresses et ses dates.
+- Charte enrichie : logo Nexus Réussite en page de garde et en tête de page, et huit encadrés
+  nommés — définition, propriété, méthode, automatisme, remarque, piège, exemple, rappel de
+  Première — reconnus depuis le Markdown à leur étiquette en gras.
+- Correction d'un échec de compilation : `\degree` n'est pas défini par siunitx v3. La macro
+  avait été introduite au commit précédent et n'avait jamais été compilée.
+- Pages presque vides ramenées de 17 à 5 : un sommaire de moins de six pièces ne prend plus
+  sa propre feuille, et les pénalités de veuves, d'orphelines et de coupure de liste
+  empêchent une ou deux lignes de partir seules. Les cinq restantes sont deux pages de
+  signature — faites pour être écrites — et trois queues de documents enseignant.
+- Ajout de quatre outils de contrôle : `qa_pdf.py` (pages presque vides), `qa_science.py`
+  (80 vérifications numériques des corrigés), `qa_code.py` (validité du code Python, en
+  distinguant les squelettes à compléter et les exercices de débogage) et
+  `qa_personnalisation.py` (deux bilans différents doivent produire deux cahiers différents).
+
 ## 2026.7 — 2026-08-22
 
 - Élargissement de l'espace d'écriture des exercices qui demandent une rédaction, dans les

@@ -38,6 +38,9 @@ import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_seances import render_cahier  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -912,7 +915,7 @@ def _remediation_exercises(diagnostic: dict, bank: list[dict]) -> list[dict[str,
             "competence": reference["competence"],
             "motif": ("question laissée sans réponse"
                       if item["verdict"] in ("NON TRAITÉE", "NON TRAITÉ", "SANS RÉPONSE")
-                      else "réponse fausse au positionnement"),
+                      else "réponse fausse"),
             "certitude": item["certitude_sur_4"],
             "origine_erreur": item["origine_erreur"],
             "enonce": reference["variante"],
@@ -1178,7 +1181,8 @@ def render_remediation_prof(student: dict, subject: dict, diagnostic: dict, inst
             add(method)
             add("")
             if opening:
-                add(f"**Argument à donner à l'élève.** {opening}")
+                add(f"**Ce que ce domaine conditionne en Terminale — repère pour vous, "
+                    f"non à lire tel quel.** {opening}")
                 add("")
     else:
         add("Cet élève ne relève d'aucune remédiation. Deux écueils à éviter : le laisser sans "
@@ -1457,10 +1461,20 @@ def render_dashboard(module: Module, entries: list[dict]) -> str:
     add("Ces liens sont volontairement absents de l'index du module : celui-ci ne nomme aucun "
         "élève, et c'est ici que se fait la navigation nominative.")
     add("")
+    add("**Ce qu'on imprime, et quand.** Le cahier des cinq séances est remis à l'élève le "
+        "premier jour et le suit pendant les dix heures : il ne porte que les exercices de sa "
+        "piste, et il est le seul document qu'il ait besoin d'apporter. Le livret lui est "
+        "remis en même temps mais se conserve après le stage : il restitue son positionnement "
+        "et sert d'appui à l'entretien avec la famille. La feuille de remédiation se donne au "
+        "moment où l'on traite le domaine concerné ; son corrigé ne quitte pas le professeur.")
+    add("")
     for entry in entries:
         base = f"../{module.nominative_dir}/{entry['slug']}"
         suffix = entry["file_suffix"]
-        links = [f"[livret]({base}/{module.key}_Livret_Individuel_{suffix}.md)"]
+        links = [
+            f"[cahier des cinq séances]({base}/{module.key}_Cahier_Seances_{suffix}.md)",
+            f"[livret]({base}/{module.key}_Livret_Individuel_{suffix}.md)",
+        ]
         if entry["diagnostic"] is not None:
             links.append(
                 f"[remédiation élève]({base}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md)")
@@ -1474,6 +1488,20 @@ def render_dashboard(module: Module, entries: list[dict]) -> str:
     add("---")
     add(f"_Document enseignant nominatif. Source pédagogique unique : `{module.source_document}`._")
     return "\n".join(out) + "\n"
+
+
+MEMENTOS = {
+    "Memento_Python": "Mémento Python",
+    "Memento_Formules": "Mémento de formules",
+}
+
+
+def portfolio_label(document: str) -> str:
+    """L'intitulé d'une pièce du portfolio, lu sur son nom de fichier."""
+    for marqueur, libelle in MEMENTOS.items():
+        if marqueur in document:
+            return libelle
+    raise KeyError(f"aucun intitulé connu pour {document} — l'ajouter à MEMENTOS")
 
 
 def render_index(module: Module, entries: list[dict]) -> str:
@@ -1508,19 +1536,17 @@ def render_index(module: Module, entries: list[dict]) -> str:
 
     add("## Évaluations")
     add("")
-    if module.key == "tle_spe":
-        add(f"- [Mini-diagnostic élève](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_ELEVE.md)")
-        add(f"- [Mini-diagnostic corrigé](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_PROF_Corrige.md)")
-    else:
-        add(f"- [Mini-diagnostic pratique élève](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_Pratique_ELEVE.md)")
-        add(f"- [Mini-diagnostic pratique corrigé](../03_EVALUATIONS/{module.key}_Mini_Diagnostic_Pratique_PROF_Corrige.md)")
+    diagnostic = "Mini-diagnostic" + (
+        " pratique" if module.diagnostic_prefix.endswith("_Pratique") else "")
+    add(f"- [{diagnostic} élève]"
+        f"(../03_EVALUATIONS/{module.key}_{module.diagnostic_prefix}_ELEVE.md)")
+    add(f"- [{diagnostic} corrigé]"
+        f"(../03_EVALUATIONS/{module.key}_{module.diagnostic_prefix}_PROF_Corrige.md)")
     add(f"- [Évaluation finale élève](../03_EVALUATIONS/{module.key}_Evaluation_Finale_ELEVE.md)")
     add(f"- [Évaluation finale corrigée](../03_EVALUATIONS/{module.key}_Evaluation_Finale_PROF_Corrige_Bareme.md)")
-    if module.key == "tle_spe":
-        add(f"- [Portfolio du stage](../03_EVALUATIONS/{module.key}_Portfolio_Individuel.md)")
-    else:
-        add(f"- [Mémento Python](../04_PORTFOLIO/{module.key}_Memento_Python_Terminale_ELEVE.md)")
-        add(f"- [Portfolio du stage](../04_PORTFOLIO/{module.key}_Portfolio_Individuel.md)")
+    for document in module.extra_portfolio:
+        add(f"- [{portfolio_label(document)}](../{module.portfolio_dir}/{document})")
+    add(f"- [Portfolio du stage](../{module.portfolio_dir}/{module.key}_Portfolio_Individuel.md)")
     add("")
 
     if module.key == "tle_nsi":
@@ -1537,8 +1563,11 @@ def render_index(module: Module, entries: list[dict]) -> str:
 
     add("## Dossiers nominatifs")
     add("")
-    add(f"Le dossier `{module.nominative_dir}/` contient, pour chaque élève, son livret "
-        "individuel et son plan de remédiation en deux versions.")
+    add(f"Le dossier `{module.nominative_dir}/` contient, pour chaque élève, trois pièces : "
+        "son **cahier des cinq séances**, qu'il a devant lui pendant le stage et qui ne "
+        "porte que les exercices de sa piste ; son **livret individuel**, qui lui restitue "
+        "son positionnement et se conserve après le stage ; et son **plan de remédiation** "
+        "en deux versions, élève et corrigé.")
     add("")
     add("> **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne "
         "les nomme pas : la liste et les liens figurent dans le "
@@ -1547,6 +1576,22 @@ def render_index(module: Module, entries: list[dict]) -> str:
         "collectif, ni le remettre à un autre élève du groupe.")
     add("")
     add(f"_{len(entries)} dossier(s) nominatif(s) dans ce module._")
+    add("")
+
+    # Le corpus ne sert à rien tant qu'il n'est pas entre les bonnes mains : l'index doit
+    # donner la route vers l'impression et la remise, sans quoi elle se cherche.
+    add("## Impression et remise")
+    add("")
+    guide = ("./PRINT_GUIDE_TERMINALE.md" if module.key == "tle_spe"
+             else "../../tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md")
+    add(f"- [Guide d'impression et de distribution]({guide}) — commun aux trois modules : "
+        "réglages, volumétrie, règles de distribution")
+    add("- `make terminale` puis `make terminale-pdf` produisent les PDF sous "
+        "`dist/terminale/`")
+    add("- `make terminale-livraison` écrit la **note de remise**, produite à partir du "
+        "registre de la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui "
+        "se photocopie et en combien d'exemplaires, ce qui ne sort pas du dossier "
+        "pédagogique. C'est le document à imprimer pour la personne qui distribue.")
     add("")
     return "\n".join(out) + "\n"
 
@@ -1590,6 +1635,17 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                 render_livret(student, subject, diagnostic, instrument, module, group,
                               frame, attached)
             )
+            # Le cahier de séances : les cinq séances écrites pour cet élève, avec ses
+            # exercices et son objectif. Il remplace, pour lui, la fiche collective.
+            documents[f"{directory}/{module.key}_Cahier_Seances_{suffix}.md"] = (
+                render_cahier(
+                    student, subject, module,
+                    session_focus(diagnostic, module),
+                    _remediation_exercises(diagnostic, instrument["items"]),
+                    frame, group, CONFIDENTIAL_BANNER,
+                    option_ouverte=bool(attached), root=root, diagnostic=diagnostic,
+                )
+            )
             documents[f"{directory}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md"] = (
                 render_remediation_eleve(student, subject, diagnostic, instrument, module,
                                          attached)
@@ -1621,6 +1677,27 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
             directory = f"{module.key}/{module.nominative_dir}/{student['slug']}"
             documents[f"{directory}/{module.key}_Livret_Individuel_{suffix}.md"] = (
                 render_missing_subject_notice(student, missing, module, group, frame)
+            )
+            # Le cahier de séances existe aussi pour lui : sans positionnement, il n'y a pas
+            # de priorité personnelle à écrire, mais il y a un noyau commun auquel il a
+            # droit. La piste par défaut est celle de l'installation, la plus étayée, et
+            # elle sera corrigée dès que la séance 1 aura produit un constat.
+            documents[f"{directory}/{module.key}_Cahier_Seances_{suffix}.md"] = (
+                render_cahier(
+                    student, missing, module,
+                    [{"seance": number, "theme": theme,
+                      "focus": "Diagnostic à établir en séance 1",
+                      # Le thème est nommé tel qu'il figure au programme du groupe ; la
+                      # réserve sur le niveau est dite une fois, dans l'encadré de la
+                      # séance, et non répétée cinq fois dans le tableau.
+                      "objectif": (f"Établir ce que tu sais déjà faire sur "
+                                   f"{theme.split(' :')[0]}, puis consolider ce qui en a "
+                                   f"besoin."),
+                      "parcours": "Installer"}
+                     for number, theme in module.sessions],
+                    [], frame, group, CONFIDENTIAL_BANNER,
+                    option_ouverte=False, root=root, diagnostic=None,
+                )
             )
             module_entries[module.key].append({
                 "name": student["displayName"],

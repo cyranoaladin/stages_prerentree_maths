@@ -138,6 +138,43 @@ Nommer les trois mouvements que la Terminale traitera avec elle — champ de pes
 uniforme, champ électrique uniforme, champ de gravitation et lois de Kepler — et
 s'arrêter là. Ne conduire aucun de ces mouvements.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) Deux forces : le poids, exercé par la Terre, vertical vers le bas ; la
+réaction normale du support, perpendiculaire au plan. Exiger que chaque force soit nommée avec
+ce qui l'exerce.
+b) $P_x = 0{,}50 \times 9{,}8 \times \sin \ang{30} = \SI{2.45}{\newton}$.
+c) $R = 0{,}50 \times 9{,}8 \times \cos \ang{30} = \SI{4.2}{\newton}$.
+d) Non : la composante normale se compense, mais $P_x$ ne l'est par rien. La résultante vaut
+$\SI{2.45}{\newton}$ le long du plan, donc le vecteur vitesse varie — le mouvement est
+accéléré vers le bas.
+e) La résultante devient $2{,}45 - 1{,}0 = \SI{1.45}{\newton}$ : toujours non nulle, donc
+toujours accéléré, mais moins. Faire dire que le frottement réduit l'accélération sans
+l'annuler.
+
+**Exercice 10.** a) Le livre est soumis à son poids et à la réaction de la table. Deux forces,
+et il ne bouge pas : elles se compensent.
+b) Un objet immobile est soumis à des forces **qui se compensent**. C'est le principe
+d'inertie.
+c) Faux : il peut aussi être en mouvement rectiligne uniforme. Contre-exemple : un palet qui
+glisse sans frottement à vitesse constante.
+d) Non, elle n'est pas nulle. La **norme** de la vitesse est constante, mais sa **direction**
+change en permanence : le vecteur vitesse varie, donc les forces ne se compensent pas. C'est
+la distinction que la Terminale exploite pour tout le chapitre.
+
+## Corrigé de l'atelier Terminale physique-chimie
+
+a) $a = F/m = 2{,}45/0{,}50 = \SI{4.9}{\metre\per\second\squared}$.
+b) Avec $m = \SI{2.0}{\kilogram}$, la résultante vaut
+$2{,}0 \times 9{,}8 \times 0{,}5 = \SI{9.8}{\newton}$ et
+$a = 9{,}8/2{,}0 = \SI{4.9}{\metre\per\second\squared}$ : **la même**. La masse se simplifie,
+puisqu'elle figure des deux côtés.
+c) En chute libre, $\sum \vv{F} = \vv{P} = m \vec{g}$ et $\sum \vv{F} = m \vec{a}$, donc
+$\vec{a} = \vec{g}$ quelle que soit la masse. C'est le résultat de Galilée.
+d) Le poids est vertical : sa composante horizontale est nulle, donc l'accélération
+horizontale aussi, et la composante horizontale du vecteur vitesse reste **constante**. Le
+mouvement se décompose en deux mouvements indépendants — l'idée maîtresse du chapitre.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

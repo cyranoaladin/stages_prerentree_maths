@@ -85,6 +85,19 @@ jobs:
       - name: Secret scan and public/private confidentiality gates
         run: python3 tools/ci_gates.py
 
+      # Ces quatre contrôles ne demandent ni distribution TeX ni pandoc : ils lisent les
+      # sources. Ils vérifient ce qu'un test unitaire ne voit pas — l'exactitude des
+      # résultats annoncés dans les corrigés, la validité du code Python donné aux élèves,
+      # la place curriculaire de chaque notion, et l'écart réel entre deux cahiers d'élèves
+      # aux bilans différents.
+      - name: Terminale corpus quality gates
+        run: |
+          python3 tools/qa_science.py
+          python3 tools/qa_code.py
+          python3 tools/qa_curriculum.py
+          python3 tools/qa_personnalisation.py
+          python3 tools/build_dossier_livraison.py --check
+
       - name: Automated QA counters must show zero failures
         run: |
           python3 - <<'PY'

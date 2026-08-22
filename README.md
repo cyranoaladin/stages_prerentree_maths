@@ -152,6 +152,35 @@ enseignant, qui porte aussi les liens vers les dossiers individuels : les index 
 nomment personne. Les tests vérifient qu'aucun nom ne figure ailleurs, qu'aucun élève
 n'apparaît dans le dossier d'un autre, et qu'aucune feuille élève ne contient de corrigé.
 
+Chaque élève reçoit un **cahier des cinq séances** qui lui est propre : la progression est
+commune au groupe, mais les exercices, l'objectif, l'étayage et les rappels viennent de son
+positionnement. Deux élèves aux bilans différents ne reçoivent pas deux documents identiques
+à leur prénom près — `tools/qa_personnalisation.py` le vérifie, et `tests/test_cahiers_seances.py`
+fixe les invariants pédagogiques : un exercice de la piste excellence ne peut pas se retrouver
+chez un élève en remédiation, un exemple résolu ne peut pas être donné à une piste qui doit
+s'en passer, et un domaine laissé sans réponse ne peut pas afficher un taux de réussite.
+
+Les textes officiels applicables à cette cohorte sont fixés dans
+[`CURRICULUM_SOURCES.md`](./CURRICULUM_SOURCES.md). Le programme de spécialité mathématiques
+publié au BO du 2 avril 2026 n'entre en vigueur qu'à la rentrée 2027-2028 : il ne s'applique
+pas ici. `tools/qa_curriculum.py` (`make terminale-qa`) tient cette frontière : il refuse
+qu'une notion de Terminale figure dans un encadré qui affirme un acquis de Première, qu'un
+prérequis annoncé décrive en réalité le programme de l'année à venir, ou qu'une notion de
+Terminale apparaisse sans être annoncée comme telle. L'erreur qu'il empêche est la plus
+coûteuse du dispositif : compter en déficit de Première un élève qui a buté sur une
+passerelle, et le faire donc travailler sur ce qu'il maîtrise déjà.
+
+### Remise
+
+`make terminale-livraison` écrit `dist/terminale/NOTE_DE_REMISE.md` à partir du registre de
+la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui se photocopie et en
+combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. La note n'est pas rédigée à
+la main — elle ne peut donc pas décrire une remise différente de ce qui a été fabriqué. Le
+même outil, en `--check`, échoue si un document nominatif se trouve dans la liasse
+collective, si un document attendu manque, ou si un fichier est attribué à quelqu'un qui
+n'est pas au registre. Il ne demande pas de distribution TeX et tourne en intégration
+continue.
+
 ## Module Première NSI
 
 Le dépôt contient également un module indépendant `1re_nsi/` (stage Python, Première NSI). Il n’est **pas** intégré au pipeline mathématique `tools/build.py` (niveaux `4e`, `3e`, `2nde`, `1ere_spe`) : c’est un pipeline de documentation séparé, avec ses propres Markdown, HTML et PDF déjà générés et versionnés directement dans l’arborescence `1re_nsi/`. Point d’entrée : [`1re_nsi/00_MASTER/index.md`](1re_nsi/00_MASTER/index.md).

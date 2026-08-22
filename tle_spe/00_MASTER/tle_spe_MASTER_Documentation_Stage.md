@@ -89,7 +89,7 @@ séance 4.
 | 10 min | Question de contrôle | Réactiver la séance précédente, avec certitude déclarée |
 | 20 min | Confrontation | Faire produire la conception erronée, puis la mettre en défaut |
 | 25 min | Reconstruction | Propriété, démonstration courte, exemple |
-| 30 min | Entraînement différencié | Trois parcours, cinq niveaux d'aide |
+| 30 min | Entraînement différencié | Six pistes, cinq niveaux d'aide |
 | 20 min | Ouverture Terminale | Nommer ce que la notion conditionne l'an prochain |
 | 15 min | Trace écrite et auto-évaluation | Portfolio, certitude déclarée |
 

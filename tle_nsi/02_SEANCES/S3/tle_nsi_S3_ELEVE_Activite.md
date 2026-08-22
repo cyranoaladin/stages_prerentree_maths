@@ -91,6 +91,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Exécuter avant de conclure, et écrire la table de trace |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Spécifier la fonction et écrire ses tests, sans carte d'aide |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Justifier le choix d'algorithme par son coût, pas par le temps mesuré |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire une fonction spécifiée et testée, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -232,6 +233,105 @@ def c(L):
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend une fonction spécifiée, testée, et dont tu sais dire le coût.
+> Le second part d'un énoncé faux : on attend un contre-exemple, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la fonction est spécifiée, si le cas limite est traité, et où
+> le raisonnement s'interrompt.
+
+**Exercice 9.** Écris `second_max(L)`, qui renvoie le deuxième plus grand élément
+**distinct** d'une liste de nombres, sans trier et en un seul parcours.
+
+a) La fonction, avec sa spécification en docstring.
+
+```python
+def second_max(L):
+    """..............................................................."""
+
+
+
+
+
+
+
+
+```
+
+b) Quelle précondition faut-il sur `L` ? Écris l'`assert` correspondant.
+
+....................................................................................................
+
+....................................................................................................
+
+c) Deux tests, dont un cas limite que ta précondition n'exclut pas.
+
+```python
+assert second_max(....) == ....
+assert second_max(....) == ....
+```
+
+d) Combien de comparaisons ta fonction effectue-t-elle au pire pour n éléments ? Compare avec
+la solution « trier la liste puis prendre l'avant-dernier ».
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Ce programme échoue à l'exécution.
+
+```python
+compteur = 0
+
+def incremente(n):
+    compteur = compteur + n
+    return compteur
+```
+
+a) Quelle erreur Python signale-t-il, et pourquoi ? Le nom `compteur` existe pourtant.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+b) Propose deux corrections. Laquelle est préférable, et pour quelle raison ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) « Une fonction qui ne renvoie rien ne sert à rien. » Réfute par un exemple tiré de cette
+séance.
+
+....................................................................................................
+
+....................................................................................................
+
+d) Une fonction peut-elle à la fois renvoyer une valeur et modifier son argument ? Écris un
+exemple, puis explique pourquoi c'est une mauvaise idée.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 > Une fonction **récursive** s'appelle elle-même. Elle renvoie une valeur construite à partir
@@ -251,6 +351,65 @@ def c(L):
 >
 > La **mise au point** et la **modularité**, également au programme de Terminale, reposent sur
 > la spécification et les tests que tu as écrits pendant cette séance.
+
+---
+
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de séparer ce qu'une fonction **renvoie** de ce qu'elle
+**modifie**. La programmation orientée objet, au programme de Terminale, range les deux au
+même endroit : les données et les fonctions qui les manipulent.
+
+**a)** Voici une pile écrite en objet. Complète les deux méthodes manquantes.
+
+```python
+class Pile:
+    def __init__(self):
+        self.contenu = []
+
+    def empiler(self, x):
+
+
+    def depiler(self):
+
+
+
+    def est_vide(self):
+
+```
+
+**b)** Écris les trois lignes qui créent une pile, y empilent 5, puis dépilent.
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** À quoi sert `self` ? Que se passerait-il si on l'oubliait dans la définition de
+`empiler` ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**d)** Compare avec la fonction `empiler(p, x)` de la séance 2, où `p` était une liste. Qu'est-ce
+que l'écriture objet garantit que l'écriture par fonctions ne garantissait pas ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** Toutes les structures de données de l'année — pile, file,
+liste chaînée, arbre, graphe — sont définies ainsi : une classe, ses attributs, ses méthodes,
+et une interface qu'on peut utiliser sans connaître l'implémentation.
 
 ---
 

@@ -107,19 +107,44 @@ reverser le temps gagné au parcours d'approfondissement.
 
 ## 6. Différenciation
 
-### Les cinq pistes
+### Les six pistes
 
-| Parcours | Attribution | Ce qui change |
+| Piste | Attribution | Ce qui change |
 |---|---|---|
 | Diagnostiquer | Le domaine de la séance a été laissé sans réponse | Question 0 puis exercices 1 et 2 ; établir ce que l'élève sait avant toute remédiation |
 | Confronter | Réponse fausse donnée avec une certitude de 3 ou 4 | La réponse fausse est produite avant d'être corrigée, puis exemple exécuté fourni |
 | Installer | Réponse fausse avec une certitude basse | Exemple exécuté fourni, table de trace pré-remplie |
 | Consolider | Le domaine est réussi mais hésitant | Pas d'exemple ; spécification et tests exigés |
 | Entretenir | Le domaine est acquis avec certitude | Problème ouvert, comparaison d'algorithmes |
+| Excellence | Le bilan ne comporte aucun domaine à reprendre | Exercices 9 et 10 puis l'atelier Terminale, puis rôle de vérificateur sur le code d'un camarade |
 
-Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance : un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
+Les cinq premières pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance : un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
 
 L'attribution est **relue à chaque séance** dans le livret individuel.
+
+**Les cartes A à E et les indices du cahier ne sont pas la même chose.** Les cinq cartes
+sont **collectives** : elles sont sur la table, l'élève va les chercher, et il note laquelle
+il a prise. Les **trois indices gradués** imprimés dans le cahier nominatif sont
+**individuels**, et ne figurent que chez Diagnostiquer, Confronter et Installer. Un élève en
+Consolider, Entretenir ou Excellence n'a aucun indice dans son cahier : aller chercher une
+carte est alors précisément l'information qu'on veut recueillir.
+
+### La piste excellence et l'atelier Terminale
+
+La NSI ne comporte pas d'option annuelle : l'équivalent de l'ouverture mathématiques expertes
+vient donc du programme de Terminale de la discipline lui-même.
+
+| Séance | Piste excellence — les deux derniers exercices | Atelier Terminale — 20 minutes |
+|---:|---|---|
+| 1 | Complément à deux ; réfuter « ajouter un bit double le maximum » | Adressage IP et masque de sous-réseau, par le ET bit à bit |
+| 2 | File par deux piles ; mutabilité de l'argument par défaut | Arbre binaire de recherche : insertion, parcours infixe, hauteur |
+| 3 | Second maximum en un parcours ; portée et `UnboundLocalError` | Programmation orientée objet : écrire une classe `Pile` |
+| 4 | Dichotomie : variant, invariant, coût ; réfuter « $O$ décide toujours » | Diviser pour régner : le tri fusion et son coût |
+| 5 | Schéma relationnel, jointure, intégrité ; CSV contre base de données | Processus, états, interblocage : le cycle dans un graphe |
+
+L'atelier n'est pas réservé aux élèves sans erreur : il s'adresse à quiconque a terminé sa
+piste avant la fin du temps différencié. Il se distingue de la rubrique « Ce que la Terminale
+en fera », qui se lit : ici, l'élève traite des questions.
 
 ### Les cinq aides
 

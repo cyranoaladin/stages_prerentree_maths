@@ -101,7 +101,9 @@ lors d'un déplacement horizontal.
 
 Toutes trois en **joules**.
 
-**Conservation.** Sans frottement, $E_m$ reste constante.
+**Conservation.** $E_m$ reste constante lorsque le poids est la seule force qui
+travaille — donc en l'absence de frottement, mais aussi de toute traction ou
+poussée. Une force motrice fait croître $E_m$ ; le frottement la fait décroître.
 
 **Contrôle.** Objet immobile $\Rightarrow E_c = 0$. Objet au niveau de référence
 $\Rightarrow E_{pp} = 0$.
@@ -143,8 +145,12 @@ est un point de la lentille : rien ne s'y forme.
 
 ## 6. Électricité
 
-$$P = U \times I = R\,I^{2} \qquad\text{et}\qquad U = R \times I
-\qquad\text{et}\qquad E = P \times \Delta t$$
+$$P = U \times I \qquad\text{et}\qquad E = P \times \Delta t$$
+
+Ces deux relations valent pour **tout** dipôle. Les deux suivantes ne valent que pour un
+**conducteur ohmique** — ni pour une pile, ni pour un moteur :
+
+$$U = R \times I \qquad\text{et}\qquad P = R\,I^{2}$$
 
 | Grandeur | Symbole | Unité |
 |---|---|---|
@@ -190,8 +196,8 @@ un aldéhyde d'une cétone.
 | Célérité du son dans l'air | $\SI{340}{\metre\per\second}$ |
 | Célérité du son dans l'eau | $\SI{1500}{\metre\per\second}$ |
 | Célérité de la lumière dans le vide | $\SI{3.0e8}{\metre\per\second}$ |
-| Intensité de pesanteur | $g =  \SI{9.8} {\newton\per\kilogram}$ |
-| Longueur d'onde d'un son audible | de quelques $\si{\centi\metre}$ à quelques $\si{\metre}$ |
+| Intensité de pesanteur | $g = \SI{9.8}{\newton\per\kilogram}$ |
+| Longueur d'onde d'un son audible | de $\SI{1.7}{\centi\metre}$ ($\SI{20}{\kilo\hertz}$) à $\SI{17}{\metre}$ ($\SI{20}{\hertz}$) |
 | Énergie potentielle gagnée en montant un étage | quelques $\si{\kilo\joule}$ |
 | Énergie cinétique d'une voiture sur autoroute | quelques centaines de $\si{\kilo\joule}$ |
 

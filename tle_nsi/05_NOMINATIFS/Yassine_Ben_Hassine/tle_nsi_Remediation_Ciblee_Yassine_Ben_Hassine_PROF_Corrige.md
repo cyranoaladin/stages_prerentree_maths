@@ -29,15 +29,15 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 1 | Représentation binaire | Convertir un entier de la base 10 vers la base 2 | réponse fausse au positionnement |
-| 2 | item 2 | Représentation binaire | Convertir entre base 16 et base 10 | réponse fausse au positionnement |
-| 3 | item 3 | Booléens et logique | Évaluer une expression booléenne | réponse fausse au positionnement |
-| 4 | item 6 | Types construits | Modifier un tableau en place | réponse fausse au positionnement |
-| 5 | item 8 | Types construits | Créer, modifier et supprimer une entrée de dictionnaire | réponse fausse au positionnement |
-| 6 | item 10 | Programmation | Distinguer effet de bord et valeur renvoyée | réponse fausse au positionnement |
-| 7 | item 12 | Programmation | Construire un accumulateur dans une boucle | réponse fausse au positionnement |
-| 8 | item 14 | Algorithmique | Évaluer le coût d'un algorithme de recherche | réponse fausse au positionnement |
-| 9 | item 15 | Données en tables | Distinguer enregistrement et descripteur | réponse fausse au positionnement |
+| 1 | item 1 | Représentation binaire | Convertir un entier de la base 10 vers la base 2 | réponse fausse |
+| 2 | item 2 | Représentation binaire | Convertir entre base 16 et base 10 | réponse fausse |
+| 3 | item 3 | Booléens et logique | Évaluer une expression booléenne | réponse fausse |
+| 4 | item 6 | Types construits | Modifier un tableau en place | réponse fausse |
+| 5 | item 8 | Types construits | Créer, modifier et supprimer une entrée de dictionnaire | réponse fausse |
+| 6 | item 10 | Programmation | Distinguer effet de bord et valeur renvoyée | réponse fausse |
+| 7 | item 12 | Programmation | Construire un accumulateur dans une boucle | réponse fausse |
+| 8 | item 14 | Algorithmique | Évaluer le coût d'un algorithme de recherche | réponse fausse |
+| 9 | item 15 | Données en tables | Distinguer enregistrement et descripteur | réponse fausse |
 
 Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi sans assurance : même compétence, énoncé différent. La feuille d'un autre élève n'a donc pas la même composition.
 
@@ -155,37 +155,37 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** La représentation en machine reste sous-jacente partout en Terminale : typage des attributs d'une base de données, coût mémoire des structures de données, arithmétique modulaire du chiffrement dans la sécurisation des communications, adressage réseau.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La représentation en machine reste sous-jacente partout en Terminale : typage des attributs d'une base de données, coût mémoire des structures de données, arithmétique modulaire du chiffrement dans la sécurisation des communications, adressage réseau.
 
 ### Booléens et logique — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Les conditions composées structurent les invariants de boucle, la preuve de terminaison et de correction d'un algorithme, ainsi que les clauses WHERE d'une requête SQL. Une négation mal formée fausse aussi bien un algorithme qu'une requête.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Les conditions composées structurent les invariants de boucle, la preuve de terminaison et de correction d'un algorithme, ainsi que les clauses WHERE d'une requête SQL. Une négation mal formée fausse aussi bien un algorithme qu'une requête.
 
 ### Types construits — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Toutes les structures de données de Terminale sont bâties dessus : listes chaînées, piles, files, arbres et graphes s'implémentent avec des listes et des dictionnaires. Une confusion sur l'indexation ou sur la mutabilité se paie immédiatement dans ces implémentations.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Toutes les structures de données de Terminale sont bâties dessus : listes chaînées, piles, files, arbres et graphes s'implémentent avec des listes et des dictionnaires. Une confusion sur l'indexation ou sur la mutabilité se paie immédiatement dans ces implémentations.
 
 ### Programmation — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** La récursivité, la modularité, la programmation objet et la mise au point systématique s'appuient entièrement sur une compréhension juste de l'appel de fonction, du retour et de la portée des variables.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La récursivité, la modularité, la programmation objet et la mise au point systématique s'appuient entièrement sur une compréhension juste de l'appel de fonction, du retour et de la portée des variables.
 
 ### Algorithmique — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Diviser pour régner, programmation dynamique, parcours d'arbres et de graphes, recherche textuelle : tous ces algorithmes se justifient par un raisonnement sur le coût, dans la continuité directe de la dichotomie de Première.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Diviser pour régner, programmation dynamique, parcours d'arbres et de graphes, recherche textuelle : tous ces algorithmes se justifient par un raisonnement sur le coût, dans la continuité directe de la dichotomie de Première.
 
 ### Données en tables — CONFRONTER
 
 Une réponse fausse a été donnée avec assurance. On part d'un cas qui met la conviction en défaut, on fait verbaliser le raisonnement, puis on reconstruit la notion avant tout entraînement.
 
-**Argument à donner à l'élève.** Le chapitre « Bases de données » reprend ces opérations dans le modèle relationnel : sélection, projection et jointure deviennent SELECT, WHERE et JOIN en SQL, avec en plus les contraintes d'intégrité et la notion de clé.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le chapitre « Bases de données » reprend ces opérations dans le modèle relationnel : sélection, projection et jointure deviennent SELECT, WHERE et JOIN en SQL, avec en plus les contraintes d'intégrité et la notion de clé.
 
 ## Décision de fin de parcours
 

@@ -153,6 +153,42 @@ la seconde les mémorise dans un **dictionnaire** — celui de la séance 2.
 Ne pas demander d'écrire une fonction récursive pendant le stage : ces deux fonctions sont
 fournies, exécutées, commentées, pas reproduites.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) Deux indices, `gauche` et `droite` ; tant que `gauche <= droite`, comparer
+au milieu et resserrer.
+b) Précondition : le tableau doit être trié par ordre croissant.
+`assert tableau == sorted(tableau)`.
+c) Variant : `droite - gauche`. Entier, positif tant que la boucle tourne, et strictement
+décroissant à chaque tour puisque le milieu est exclu.
+d) Invariant : si la valeur est présente dans le tableau, alors son indice est compris entre
+`gauche` et `droite`. Vrai avant la boucle, conservé à chaque tour, et donne la conclusion à la
+sortie.
+e) $\log_2(10^6) \approx 20$ : vingt comparaisons au pire. Faire remarquer qu'une recherche
+séquentielle en demanderait un million.
+
+**Exercice 10.** a) Sur une liste déjà triée : chaque élément est comparé une fois à son
+prédécesseur, soit $n - 1$ comparaisons. Le tri par insertion est alors **linéaire**.
+b) Le tri par insertion, presque toujours : la notation $O$ ignore les constantes et ne vaut
+que pour n grand. Le tri fusion alloue des listes intermédiaires, ce que le $O$ ne montre pas.
+c) « Le tri fusion est asymptotiquement meilleur : à partir d'une certaine taille, il devient
+plus rapide. » L'énoncé doit porter sur le comportement asymptotique, pas sur chaque cas.
+d) Résoudre $3n^2 + 2n = 100 n \log_2 n$ revient à $3n + 2 \approx 100 \log_2 n$. Pour
+$n = 200$ : $602$ contre $765$ — le second est encore meilleur. Pour $n = 250$ : $752$ contre
+$797$. Pour $n = 300$ : $902$ contre $823$ — la bascule se situe vers $n \approx 270$. Accepter
+tout encadrement obtenu par essais successifs, à condition qu'il soit écrit.
+
+## Corrigé de l'atelier Terminale NSI
+
+a) Parcourir A et B avec deux indices, ajouter à chaque tour le plus petit des deux éléments
+courants, puis concaténer ce qui reste de la liste non épuisée.
+b) `[5, 2, 8, 1]` $\to$ `[5, 2]` et `[8, 1]` $\to$ `[5]`, `[2]`, `[8]`, `[1]` $\to$ fusions : `[2, 5]` et
+`[1, 8]` $\to$ `[1, 2, 5, 8]`.
+c) Chaque niveau divise la taille par deux : il y a $\log_2 n$ niveaux, et chaque niveau coûte
+n comparaisons. Total : $n \log_2 n$.
+d) Pour $n = 1000$ : insertion $500\,000$ comparaisons, fusion environ $10\,000$. Un facteur
+cinquante — et il croît avec n.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

@@ -64,9 +64,15 @@
 
 ## Dossiers nominatifs
 
-Le dossier `05_NOMINATIFS/` contient, pour chaque élève, son livret individuel et son plan de remédiation en deux versions.
+Le dossier `05_NOMINATIFS/` contient, pour chaque élève, trois pièces : son **cahier des cinq séances**, qu'il a devant lui pendant le stage et qui ne porte que les exercices de sa piste ; son **livret individuel**, qui lui restitue son positionnement et se conserve après le stage ; et son **plan de remédiation** en deux versions, élève et corrigé.
 
 > **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne les nomme pas : la liste et les liens figurent dans le [tableau de bord enseignant](../01_ENSEIGNANT/tle_nsi_Tableau_Bord_Enseignant.md), qui est lui-même confidentiel. Ne jamais placer un document nominatif dans un pack collectif, ni le remettre à un autre élève du groupe.
 
 _4 dossier(s) nominatif(s) dans ce module._
+
+## Impression et remise
+
+- [Guide d'impression et de distribution](../../tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md) — commun aux trois modules : réglages, volumétrie, règles de distribution
+- `make terminale` puis `make terminale-pdf` produisent les PDF sous `dist/terminale/`
+- `make terminale-livraison` écrit la **note de remise**, produite à partir du registre de la cohorte : ce que chaque élève reçoit et en combien de pages, ce qui se photocopie et en combien d'exemplaires, ce qui ne sort pas du dossier pédagogique. C'est le document à imprimer pour la personne qui distribue.
 

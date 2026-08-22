@@ -91,6 +91,7 @@ les fais entièrement.
 | **INSTALLER** — il te manque quelque chose, et tu le sais | Exercices 1 à 4 | Exécuter avant de conclure, et écrire la table de trace |
 | **CONSOLIDER** — tu réussis, sans en être sûr | Exercices 3 à 6 | Spécifier la fonction et écrire ses tests, sans carte d'aide |
 | **ENTRETENIR** — c'est acquis et assumé | Exercices 6 à 8 | Justifier le choix d'algorithme par son coût, pas par le temps mesuré |
+| **EXCELLENCE** — ton bilan ne comporte aucun domaine à reprendre, ou tu as terminé ta piste | Exercices 9 et 10, puis l'atelier Terminale | Produire une fonction spécifiée et testée, puis relire la copie d'un camarade **sans lui donner la réponse** |
 
 ### Exercices 1 à 4 — pistes Diagnostiquer, Confronter et Installer
 
@@ -206,6 +207,121 @@ quand même.*
 
 ---
 
+## Piste excellence — exercices 9 et 10
+
+> **Pour qui.** Ces deux exercices sont les tiens si ton bilan ne comporte aucun domaine à
+> reprendre, ou si tu as terminé ta piste avant la fin du temps différencié. Le premier est un
+> problème complet : on attend une fonction spécifiée, testée, et dont tu sais dire le coût.
+> Le second part d'un énoncé faux : on attend un contre-exemple, puis l'énoncé corrigé.
+>
+> Une fois tes deux exercices rendus, le professeur pourra te confier la copie d'un camarade.
+> Tu ne corriges pas : tu dis si la fonction est spécifiée, si le cas limite est traité, et où
+> le raisonnement s'interrompt.
+
+**Exercice 9.** Une **file** est une structure « premier entré, premier sorti ». On la
+représente ici par un dictionnaire à deux clés, `'entree'` et `'sortie'`, contenant chacune
+une liste utilisée comme pile.
+
+a) Écris `enfiler(f, x)` et `defiler(f)`. Quand `'sortie'` est vide, `defiler` y bascule tout
+le contenu de `'entree'`, dans l'ordre inverse.
+
+```python
+def enfiler(f, x):
+
+
+
+
+
+
+
+def defiler(f):
+
+
+
+
+
+
+
+
+
+
+
+```
+
+b) Déroule la trace : file vide, puis `enfiler` 1, 2, 3, puis deux `defiler`. Donne le contenu
+des deux listes après chaque opération.
+
+| Opération | `'entree'` | `'sortie'` | Valeur renvoyée |
+|---|---|---|---|
+| `enfiler(f, 1)` | | | |
+| `enfiler(f, 2)` | | | |
+| `enfiler(f, 3)` | | | |
+| `defiler(f)` | | | |
+| `defiler(f)` | | | |
+
+c) Pourquoi ne pas simplement écrire `L.pop(0)` sur une seule liste ? Compare le coût des
+deux solutions.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+d) Que doit faire `defiler` sur une file vide ? Écris la précondition et l'`assert` qui la
+vérifie.
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 10.** Prédis, **avant d'exécuter**, ce que renvoient les appels successifs.
+
+```python
+def ajoute(element, liste=[]):
+    liste.append(element)
+    return liste
+```
+
+a) Que renvoie `ajoute(1)` ? Puis `ajoute(2)` ? Puis `ajoute(3)` ?
+
+....................................................................................................
+
+....................................................................................................
+
+b) Explique le mécanisme. À quel moment la liste par défaut est-elle créée ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+c) Corrige la fonction pour qu'elle renvoie une liste neuve à chaque appel sans argument.
+
+```python
+def ajoute(element, liste=None):
+
+
+
+
+```
+
+d) « Un tuple est immuable, donc son contenu ne peut pas changer. » Vrai ou faux ? Teste avec
+`t = ([1], 2)` puis `t[0].append(3)`, et écris l'énoncé correct.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+---
+
 ## Partie 4 — Ce que la Terminale en fera
 
 Exécute ces trois blocs :
@@ -236,6 +352,70 @@ print(arbre['gauche']['valeur'])   # affiche ...........
 > **usages conventionnés** des listes et des dictionnaires.
 >
 > Ce que tu sais faire aujourd'hui, tu le feras toute l'année — sous d'autres noms.
+
+---
+
+## Atelier Terminale NSI — 20 minutes
+
+> **Pour qui.** Cet atelier est pour toi si tu as terminé ta piste avant la fin du temps
+> différencié, ou si tu suis la piste excellence. Il ne porte pas sur le thème du jour : il
+> ouvre une notion du programme de Terminale que la Première n'aborde pas, et que la séance
+> rend abordable dès maintenant. Le temps y est prélevé sur la phase différenciée.
+
+**Le lien avec la séance du jour.** Tu viens de représenter un arbre par un dictionnaire imbriqué. Un **arbre
+binaire de recherche** est le même objet, avec une règle en plus : à gauche les valeurs plus
+petites, à droite les plus grandes.
+
+On insère successivement 8, 3, 10, 1, 6, 14, 4 dans un arbre binaire de recherche vide.
+
+**a)** Dessine l'arbre obtenu. Chaque valeur descend depuis la racine en comparant à chaque
+nœud.
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**b)** Le **parcours infixe** visite le sous-arbre gauche, puis la racine, puis le sous-arbre
+droit. Écris la suite des valeurs obtenue. Que remarques-tu ?
+
+....................................................................................................
+
+....................................................................................................
+
+**c)** Écris la fonction de recherche, en réutilisant le dictionnaire à trois clés de
+l'exercice 8.
+
+```python
+def recherche(arbre, valeur):
+    """..............................................................."""
+
+
+
+
+
+
+```
+
+**d)** Combien de comparaisons au pire pour trouver une valeur dans cet arbre ? Et si on avait
+inséré 1, 3, 4, 6, 8, 10, 14 dans cet ordre ? Que devient l'arbre ?
+
+....................................................................................................
+
+....................................................................................................
+
+....................................................................................................
+
+**Ce que la Terminale en fera.** L'arbre binaire de recherche est la structure du programme de
+Terminale qui explique pourquoi un dictionnaire Python est rapide. Sa hauteur décide de tout :
+un arbre équilibré cherche en $\log_2 n$ comparaisons, un arbre dégénéré en n.
 
 ---
 

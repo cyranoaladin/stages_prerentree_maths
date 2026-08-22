@@ -29,7 +29,7 @@
 
 | # | Item du positionnement | Domaine | Compétence | Motif de sélection |
 |---:|---:|---|---|---|
-| 1 | item 7 | Types construits | Accéder à une valeur par sa clé dans un dictionnaire | réponse fausse au positionnement |
+| 1 | item 7 | Types construits | Accéder à une valeur par sa clé dans un dictionnaire | réponse fausse |
 | 2 | item 1 | Représentation binaire | Convertir un entier de la base 10 vers la base 2 | réussi, domaine classé en réussite hésitante |
 | 3 | item 2 | Représentation binaire | Convertir entre base 16 et base 10 | réussi, domaine classé en réussite hésitante |
 | 4 | item 3 | Booléens et logique | Évaluer une expression booléenne | réussi, domaine classé en réussite hésitante |
@@ -173,7 +173,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Énoncé.** Citer trois ressources gérées par un système d'exploitation, puis deux commandes du shell agissant sur le système de fichiers en précisant leur effet.
 
-**Corrigé.** Le système d'exploitation gère notamment la mémoire, le processeur (ordonnancement des processus), les périphériques et le système de fichiers. Côté shell : ls affiche le contenu du répertoire courant, cd change de répertoire courant, mkdir crée un répertoire, pwd affiche le chemin du répertoire courant.
+**Corrigé.** Le système d'exploitation gère notamment la mémoire, le processeur, les périphériques et le système de fichiers. Côté shell : ls affiche le contenu du répertoire courant, cd change de répertoire courant, mkdir crée un répertoire, pwd affiche le chemin du répertoire courant.
 
 **Geste à installer.** Le système d'exploitation est l'intermédiaire entre les programmes et le matériel : il gère mémoire, processeur, périphériques, fichiers et processus.
 
@@ -203,43 +203,43 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 La difficulté est repérée et assumée : il n'y a aucune fausse certitude à défaire. On pose les définitions utiles, on montre des exemples résolus, puis on entraîne court et souvent.
 
-**Argument à donner à l'élève.** Toutes les structures de données de Terminale sont bâties dessus : listes chaînées, piles, files, arbres et graphes s'implémentent avec des listes et des dictionnaires. Une confusion sur l'indexation ou sur la mutabilité se paie immédiatement dans ces implémentations.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Toutes les structures de données de Terminale sont bâties dessus : listes chaînées, piles, files, arbres et graphes s'implémentent avec des listes et des dictionnaires. Une confusion sur l'indexation ou sur la mutabilité se paie immédiatement dans ces implémentations.
 
 ### Représentation binaire — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** La représentation en machine reste sous-jacente partout en Terminale : typage des attributs d'une base de données, coût mémoire des structures de données, arithmétique modulaire du chiffrement dans la sécurisation des communications, adressage réseau.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La représentation en machine reste sous-jacente partout en Terminale : typage des attributs d'une base de données, coût mémoire des structures de données, arithmétique modulaire du chiffrement dans la sécurisation des communications, adressage réseau.
 
 ### Booléens et logique — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** Les conditions composées structurent les invariants de boucle, la preuve de terminaison et de correction d'un algorithme, ainsi que les clauses WHERE d'une requête SQL. Une négation mal formée fausse aussi bien un algorithme qu'une requête.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Les conditions composées structurent les invariants de boucle, la preuve de terminaison et de correction d'un algorithme, ainsi que les clauses WHERE d'une requête SQL. Une négation mal formée fausse aussi bien un algorithme qu'une requête.
 
 ### Programmation — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** La récursivité, la modularité, la programmation objet et la mise au point systématique s'appuient entièrement sur une compréhension juste de l'appel de fonction, du retour et de la portée des variables.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** La récursivité, la modularité, la programmation objet et la mise au point systématique s'appuient entièrement sur une compréhension juste de l'appel de fonction, du retour et de la portée des variables.
 
 ### Algorithmique — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** Diviser pour régner, programmation dynamique, parcours d'arbres et de graphes, recherche textuelle : tous ces algorithmes se justifient par un raisonnement sur le coût, dans la continuité directe de la dichotomie de Première.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Diviser pour régner, programmation dynamique, parcours d'arbres et de graphes, recherche textuelle : tous ces algorithmes se justifient par un raisonnement sur le coût, dans la continuité directe de la dichotomie de Première.
 
 ### Données en tables — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** Le chapitre « Bases de données » reprend ces opérations dans le modèle relationnel : sélection, projection et jointure deviennent SELECT, WHERE et JOIN en SQL, avec en plus les contraintes d'intégrité et la notion de clé.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** Le chapitre « Bases de données » reprend ces opérations dans le modèle relationnel : sélection, projection et jointure deviennent SELECT, WHERE et JOIN en SQL, avec en plus les contraintes d'intégrité et la notion de clé.
 
 ### Architecture et systèmes — CONSOLIDER
 
 Les réponses sont justes mais l'hésitation se sent encore. On organise un entraînement espacé, sans réenseigner ce qui est déjà compris.
 
-**Argument à donner à l'élève.** En Terminale : gestion des processus et des ressources, ordonnancement, interblocage, protocoles de routage (RIP, OSPF), sécurisation des communications. La connaissance du modèle de von Neumann est le socle de tout le chapitre.
+**Ce que ce domaine conditionne en Terminale — repère pour vous, non à lire tel quel.** En Terminale : gestion des processus et des ressources, ordonnancement, interblocage, protocoles de routage (RIP, OSPF), sécurisation des communications. La connaissance du modèle de von Neumann est le socle de tout le chapitre.
 
 ## Décision de fin de parcours
 

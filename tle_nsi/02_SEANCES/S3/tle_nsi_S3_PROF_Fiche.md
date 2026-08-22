@@ -142,6 +142,41 @@ suite y sont écrites en séance 5. Signaler explicitement le lien : c'est le m�
 même risque de décalage d'une unité, et le même contrôle — confronter la sortie du programme
 au calcul fait à la main.
 
+## Corrigé de la piste excellence
+
+**Exercice 9.** a) Maintenir deux variables, le maximum et le second, et les mettre à jour à
+chaque élément : si l'élément dépasse le maximum, l'ancien maximum devient le second ; sinon,
+s'il dépasse le second **et diffère du maximum**, il devient le second. L'égalité stricte est
+le piège de l'exercice.
+b) `L` doit contenir au moins deux valeurs distinctes : `assert len(set(L)) >= 2`.
+c) Cas limite acceptable : une liste où le maximum est répété, par exemple `[5, 5, 3]`, qui
+doit renvoyer 3.
+d) Deux comparaisons par élément au pire, soit environ $2n$ : coût linéaire. Trier puis
+prendre l'avant-dernier coûte $n \log n$ — et échoue si le maximum est répété.
+
+**Exercice 10.** a) `UnboundLocalError`. L'affectation `compteur = ...` fait de `compteur` une
+variable **locale** pour tout le corps de la fonction ; elle est donc lue avant d'exister.
+Le nom global est masqué, pas utilisé.
+b) Soit déclarer `global compteur`, soit — nettement préférable — passer la valeur en paramètre
+et renvoyer le résultat. La seconde rend la fonction testable et sans effet de bord.
+c) Une fonction qui trie une liste en place, ou qui écrit dans un fichier, ne renvoie rien et
+sert. L'exercice 8 de la séance en donne deux.
+d) Oui, techniquement : `def f(L): L.append(0); return len(L)`. C'est une mauvaise idée parce
+que l'appelant ne peut plus prévoir l'état de son argument à la lecture de l'appel — la
+spécification doit alors énoncer les deux comportements.
+
+## Corrigé de l'atelier Terminale NSI
+
+a) `empiler` : `self.contenu.append(x)`. `depiler` : `return self.contenu.pop()`.
+`est_vide` : `return self.contenu == []`.
+b) `p = Pile()` puis `p.empiler(5)` puis `p.depiler()`.
+c) `self` désigne l'objet sur lequel la méthode est appelée : c'est par lui que la méthode
+atteint `contenu`. Sans lui, Python signale que la méthode reçoit un argument de trop —
+l'objet est toujours passé en premier.
+d) L'écriture par fonctions laissait n'importe qui manipuler la liste directement, y compris
+par `p.insert(0, x)`, ce qui n'est plus une pile. La classe fixe **l'interface** : on ne peut
+agir sur le contenu que par les trois méthodes prévues.
+
 ## Erreurs à surveiller et réponses à apporter
 
 | Erreur observée | Réponse |

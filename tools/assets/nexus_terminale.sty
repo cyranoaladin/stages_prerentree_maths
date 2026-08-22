@@ -94,6 +94,26 @@
 \sloppy
 \raggedbottom
 
+%% Veuves et orphelines : deux lignes seules en haut d'une page, avec le reste de leur
+%% paragraphe sur la page précédente, sont le défaut de mise en page le plus visible d'un
+%% document imprimé. TeX les évite si on lui en donne le budget.
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
+%% Et il faut lui laisser de quoi rattraper : sans élasticité, il n'a d'autre choix que de
+%% renvoyer la ligne à la page suivante.
+\setlength{\parskip}{3.3pt plus 1.2pt minus 0.8pt}
+%% Les pénalités de veuve ne s'appliquent pas aux listes : c'est un compteur distinct. Sans
+%% lui, une liste de matériel se coupait avant son dernier élément, qui partait seul sur la
+%% page suivante avec le pied du document. 9999 décourage sans interdire — à 10000, TeX
+%% n'aurait plus aucune issue et déplacerait des pages entières.
+\makeatletter
+\@beginparpenalty=9999
+\@itempenalty=9999
+\@endparpenalty=9999
+\makeatother
+
 %% Le français de babel met une espace fine avant : ; ! ? — mais il ne faut pas
 %% qu'elle provoque une coupure de ligne devant un deux-points de consigne.
 \frenchsetup{ThinSpaceInFrenchNumbers=true}
@@ -119,7 +139,13 @@
 \newcommand{\setnexusheader}[2]{\renewcommand{\NexusHeadRight}{#1}\renewcommand{\NexusFootLeft}{#2}}
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\textbf{NEXUS RÉUSSITE}}
+%% La marque est une image : les capitales grasses tenaient lieu de logo faute
+%% d'un fichier disponible dans le dossier de compilation.
+\newcommand{\nexusmark}{%
+  \IfFileExists{nexus_logo_mark.png}%
+    {\raisebox{-1.1mm}{\includegraphics[height=5.2mm]{nexus_logo_mark.png}}\,}{}%
+  \textbf{\color{Navy}NEXUS}\,\textbf{\color{Red}RÉUSSITE}}
+\lhead{\nexusmark}
 %% Le titre de droite est borné et cadré à droite : sans cette boîte, un intitulé de
 %% séance un peu long chevauchait la marque en haut de chaque page.
 \rhead{\parbox[b]{0.68\headwidth}{\raggedleft\footnotesize\NexusHeadRight}}
@@ -135,6 +161,37 @@
 \newtcolorbox{codegoalbox}{enhanced,breakable,colback=purple!3,colframe=Purple,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
 \newtcolorbox{warningbox}{enhanced,breakable,colback=orange!4,colframe=Orange,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
 \newtcolorbox{keybox}{enhanced,breakable,colback=Red!3,colframe=Red,boxrule=0.7pt,arc=2mm,left=2.5mm,right=2.5mm,top=1.8mm,bottom=1.8mm}
+
+%% Chaque nature de contenu a sa couleur et son onglet. Un document de deux heures
+%% alterne définitions, propriétés, méthodes, automatismes, remarques et pièges : sans
+%% repère visuel, l'élève qui revient dessus trois semaines plus tard ne distingue plus
+%% ce qu'il doit savoir par cœur de ce qu'il doit seulement avoir lu.
+\newcommand{\newnexusbox}[4]{%
+  \newtcolorbox{#1}{enhanced,breakable,colback=#4,colframe=#3,boxrule=0.7pt,arc=2mm,
+    left=2.5mm,right=2.5mm,top=3.4mm,bottom=1.8mm,
+    fonttitle=\bfseries\scriptsize\sffamily,coltitle=white,colbacktitle=#3,
+    attach boxed title to top left={xshift=3mm,yshift=-2.2mm},
+    boxed title style={arc=0.8mm,boxrule=0pt,left=1.6mm,right=1.6mm,top=0.5mm,bottom=0.5mm},
+    title={#2}}}
+
+\newnexusbox{definitionbox}{DÉFINITION}{Blue}{SoftBlue}
+\newnexusbox{propertybox}{PROPRIÉTÉ}{Navy}{SoftBlue}
+\newnexusbox{methodstepbox}{MÉTHODE}{Gold}{SoftGold}
+\newnexusbox{reflexbox}{AUTOMATISME}{Green}{green!4}
+\newnexusbox{remarkbox}{REMARQUE}{Purple}{purple!3}
+\newnexusbox{trapbox}{PIÈGE}{Red}{Red!4}
+\newnexusbox{examplebox}{EXEMPLE}{Orange}{orange!5}
+\newnexusbox{recallbox}{RAPPEL DE PREMIÈRE}{TextGray}{SoftGray}
+\newnexusbox{recallagainbox}{REPRISE}{TextGray}{SoftGray}
+\newnexusbox{supportbox}{POINT D'APPUI}{Green}{green!4}
+
+%% Bandeau de séance : durée, thème, piste de l'élève, d'un coup d'œil.
+\newcommand{\nexusbandeau}[3]{%
+  \begin{tcolorbox}[enhanced,colback=Navy,colframe=Navy,arc=1.6mm,boxrule=0pt,
+    left=3mm,right=3mm,top=1.6mm,bottom=1.6mm]
+  {\color{white}\bfseries\small #1}\hfill{\color{Gold}\bfseries\small #2}\\[0.4mm]
+  {\color{white!82!Navy}\scriptsize #3}
+  \end{tcolorbox}\vspace{0.6mm}}
 
 %% Les citations Markdown (« > ») portent dans ce corpus la trace écrite :
 %% c'est le contenu que l'élève doit garder. On lui donne l'encadré méthode.
@@ -214,7 +271,10 @@
 \newcommand{\nexuscover}[5]{%
 \thispagestyle{empty}
 \begin{center}
-\vspace*{18mm}
+\vspace*{10mm}
+\IfFileExists{nexus_logo_slogan.png}%
+  {\includegraphics[width=62mm]{nexus_logo_slogan.png}\\[7mm]}%
+  {\vspace*{8mm}}
 {\color{Gold}\large\bfseries PRÉ-RENTRÉE 2026-2027 \textperiodcentered\ NEXUS RÉUSSITE}\\[6mm]
 {\color{Navy}\fontsize{22}{26}\selectfont\bfseries #1}\\[4mm]
 {\color{Gold}\rule{0.55\linewidth}{1.4pt}}\\[4mm]

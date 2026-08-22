@@ -48,7 +48,8 @@ test:
 # cet artefact (terminale-check).
 
 .PHONY: terminale terminale-extract terminale-check terminale-test \
-        terminale-pdf terminale-pdf-list terminale-latex terminale-latex-check
+        terminale-pdf terminale-pdf-list terminale-latex terminale-latex-check \
+        terminale-livraison terminale-livraison-check
 
 terminale:
 	python3 tools/build_terminale.py
@@ -69,7 +70,36 @@ terminale-latex-check:
 	python3 tools/mathify_terminale.py --check
 
 terminale-test:
-	pytest -q tests/test_terminale.py
+	pytest -q tests/test_terminale.py tests/test_cahiers_seances.py
+
+# Contrôles qualité du corpus. Ils ne remplacent pas les tests : ils vérifient ce qu'un test
+# ne voit pas — l'exactitude des corrigés, la validité du code donné aux élèves, l'écart réel
+# entre deux cahiers, et la mise en page des PDF produits.
+terminale-qa:
+	python3 tools/qa_science.py
+	python3 tools/qa_code.py
+	python3 tools/qa_curriculum.py
+	python3 tools/qa_personnalisation.py
+
+# Exige que les PDF aient été produits (make terminale-pdf).
+terminale-qa-pdf:
+	python3 tools/qa_pdf.py
+
+# Planches contact pour l'inspection visuelle. Le motif est facultatif :
+#   make terminale-planches MOTIF='*CAHIER_SEANCES_ELEVE.pdf'
+MOTIF ?= *.pdf
+terminale-planches:
+	python3 tools/qa_planches.py '$(MOTIF)'
+
+# Note de remise : qui reçoit quoi, quand, en combien d'exemplaires. Produite à partir du
+# registre de la cohorte, donc incapable de décrire une remise différente de ce qui a été
+# fabriqué. --check ne l'écrit pas mais vérifie la conformité, et c'est cette forme-là qui
+# tourne en intégration continue — où les PDF n'existent pas.
+terminale-livraison:
+	python3 tools/build_dossier_livraison.py
+
+terminale-livraison-check:
+	python3 tools/build_dossier_livraison.py --check
 
 # Rendu imprimable. Exige pandoc, LuaLaTeX et latexmk ; les PDF vont dans dist/terminale/, qui
 # est ignoré par git : un PDF n'est pas reproductible d'une machine à l'autre.

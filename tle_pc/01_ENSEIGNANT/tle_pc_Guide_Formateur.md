@@ -55,11 +55,11 @@ reconstruction et consacrer le temps gagné au parcours d'approfondissement.
 | $\SI{10}{\minute}$ | Ouverture | Retour sur la séance précédente, lecture de la carte individuelle |
 | $\SI{20}{\minute}$ | Confrontation | L'élève produit sa réponse et sa certitude avant tout apport |
 | $\SI{25}{\minute}$ | Reconstruction | La méthode est établie au tableau, avec sa justification |
-| $\SI{30}{\minute}$ | Entraînement différencié | Trois parcours, l'aide utilisée est notée |
+| $\SI{30}{\minute}$ | Entraînement différencié | Six pistes, l'aide utilisée est notée |
 | $\SI{20}{\minute}$ | Ouverture Terminale | Ce que la Terminale fera de la notion, sans la traiter |
 | $\SI{15}{\minute}$ | Trace écrite et bilan | Synthèse écrite, certitude déclarée à nouveau |
 
-## 4. Les cinq pistes
+## 4. Les six pistes
 
 | Parcours | Élèves concernés | Attendu |
 |---|---|---|
@@ -68,11 +68,29 @@ reconstruction et consacrer le temps gagné au parcours d'approfondissement.
 | Installer | Réponse fausse avec une certitude basse | Exercices guidés, exemple résolu fourni |
 | Consolider | Domaine réussi mais hésitant | Mêmes exercices, justification écrite exigée |
 | Entretenir | Domaine acquis avec certitude | Exercices d'extension, ouverture Terminale anticipée |
+| Excellence | Aucun domaine à reprendre au bilan, ou piste terminée | Exercices 9 et 10, puis l'atelier Terminale ; rôle de vérificateur sur la copie d'un camarade |
 
-Les cinq pistes reprennent une à une les postures de la carte maîtrise $\times$ confiance : un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
+Les cinq premières reprennent une à une les postures de la carte maîtrise $\times$ confiance ; un élève qui n'a pas répondu et un élève qui s'est trompé en étant sûr de lui n'ont pas le même besoin. Ce sont les libellés que porte le livret individuel de chaque élève et le tableau d'aiguillage de chaque fiche de séance.
 
 L'attribution se lit dans le livret individuel, rubrique « Parcours personnalisé séance
 par séance ». Elle n'est pas annoncée collectivement : chaque élève lit la sienne.
+
+### La piste excellence et l'atelier Terminale
+
+La physique-chimie ne comporte pas d'option annuelle : l'équivalent de l'ouverture
+mathématiques expertes vient donc du programme de Terminale de la discipline lui-même.
+
+| Séance | Piste excellence — les deux derniers exercices | Atelier Terminale — 20 minutes |
+|---:|---|---|
+| 1 | Réactif limitant sur un cas chiffré ; réfuter « le limitant est le moins abondant » | Cinétique : vitesse non constante, temps de demi-réaction, catalyseur |
+| 2 | Plan incliné, résultante, effet du frottement ; réfuter « immobile donc sans force » | Deuxième loi de Newton et vecteur accélération |
+| 3 | Bilan d'énergie avec dissipation et rendement ; réfuter « l'énergie mécanique se conserve » | Premier principe : $\Delta U = W + Q$ et capacité thermique |
+| 4 | Onde changeant de milieu, déphasage ; réfuter « l'image est toujours renversée » | Échelle logarithmique : niveau d'intensité sonore, lien avec le pH |
+| 5 | Puissance, énergie, incertitude relative ; chiffres significatifs | Piles et électrolyse : sens spontané et sens forcé |
+
+L'atelier n'est pas réservé aux élèves sans erreur : il s'adresse à quiconque a terminé sa
+piste avant la fin du temps différencié. Il se distingue de la rubrique « Ce que la Terminale
+en fera », qui se lit : ici, l'élève traite des questions.
 
 ## 5. Les cinq cartes d'aide
 
@@ -89,6 +107,14 @@ note laquelle il a utilisée.
 
 Noter l'aide utilisée n'est pas une sanction : c'est la seule façon de distinguer, en fin
 de séance, une réussite autonome d'une réussite accompagnée.
+
+**Ces cartes ne sont pas les indices du cahier nominatif.** Les cinq cartes A à E sont
+**collectives** : elles sont sur la table, l'élève va les chercher, et il note laquelle il a
+prise. Les **trois indices gradués** imprimés dans le cahier de l'élève sont
+**individuels**, et ne figurent que chez les pistes qui en relèvent — Diagnostiquer,
+Confronter et Installer. Un élève en Consolider, Entretenir ou Excellence n'a aucun indice
+dans son cahier : les cartes restent sa seule ressource, et le fait d'aller en chercher une
+est précisément l'information qu'on veut recueillir.
 
 ## 6. Les trois gestes de contrôle à installer
 
