@@ -144,7 +144,6 @@ def enregistrer_resultat(resultats, code) -> Path:
     lu par ``tools/debt_gate.py``. Un résultat absent vaut « non exécutée » — jamais
     « réussie ».
     """
-    from app import config
     reussis = [r for r in resultats if r.get("etat") == ETAT_DISPONIBLE]
     refuses = [r for r in resultats if r.get("etat") == ETAT_REFUSE_POLITIQUE]
     # Le routage est démontré si aucun appel n'a été refusé par la politique ET si les
@@ -161,13 +160,73 @@ def enregistrer_resultat(resultats, code) -> Path:
         "modeles": {r["modele_demande"]: r.get("etat") for r in resultats},
         "cache_status": {r["modele_demande"]: r.get("cache_status", "NOT_REPORTED")
                          for r in resultats},
+        # Observations datées sur fixture synthétique. Ce ne sont pas des
+        # performances garanties, et rien ne permet d'en déduire le comportement sur
+        # une vraie copie : une page manuscrite n'a ni le poids ni le contenu d'une
+        # fixture typographique.
+        "observations": {r["modele_demande"]: {
+            "provider": r.get("fournisseur"),
+            "model_served": r.get("modele_servi"),
+            "latency_ms": r.get("latence_ms"),
+            "cost_usd": r.get("cout_usd"),
+            "tokens_in": r.get("jetons_entree"),
+            "tokens_out": r.get("jetons_sortie"),
+        } for r in resultats if r.get("etat") == ETAT_DISPONIBLE},
         "politique": dict(openrouter.PRIVACY_PROVIDER_BLOCK),
         "fixture": "synthetique",
+        # Empreinte du code qui a produit cette preuve. Sans elle, un lecteur ne peut
+        # pas savoir si la preuve qualifie encore le code présent : un horodatage ne
+        # suffit pas, car une extraction Git réécrit les dates de fichiers.
+        "empreinte": empreinte_code(),
     }
     chemin = Path(config.RUNTIME_DIR) / "live_gate_status.json"
     chemin.parent.mkdir(parents=True, exist_ok=True)
     chemin.write_text(json.dumps(etat, ensure_ascii=False, indent=2), encoding="utf-8")
     return chemin
+
+
+def empreinte_code() -> dict:
+    """Ce qui, dans le code, détermine le résultat d'un appel live."""
+    from app import APP_VERSION
+    return {
+        "app_version": APP_VERSION,
+        "model_primary": config.OCR_MODEL_PRIMARY,
+        "model_verify": config.OCR_MODEL_VERIFY,
+        "prompt_version": ocr_prompts.TRANSCRIPTION_PROMPT_VERSION,
+        "prompt_sha256": ocr_prompts.prompt_sha256(
+            ocr_prompts.transcription_system_prompt()),
+        "schema_version": ocr_schema.SCHEMA_VERSION,
+        "schema_sha256": ocr_schema.PAGE_SCHEMA_SHA256,
+        "attribution": openrouter.PROMPT_ATTRIBUTION,
+        "no_response_cache": dict(openrouter.NO_RESPONSE_CACHE_HEADER),
+    }
+
+
+def comparer_empreinte(etat: dict) -> dict:
+    """La preuve enregistrée qualifie-t-elle encore le code présent ?
+
+    Trois réponses possibles, et aucune n'est un jugement de valeur :
+
+    * ``COMPATIBLE``   — l'empreinte enregistrée correspond au code présent ;
+    * ``STALE``        — elle en diffère : la preuve porte sur un autre code ;
+    * ``UNVERIFIABLE`` — aucune empreinte n'a été enregistrée. Ce fut le cas des
+      preuves produites avant l'introduction de ce champ : elles ne peuvent être
+      qualifiées que par leurs champs partiels, jamais par elles-mêmes.
+    """
+    enregistree = etat.get("empreinte")
+    actuelle = empreinte_code()
+    if not enregistree:
+        # Repli : les champs que les anciennes preuves portaient déjà.
+        partiels = {
+            "modeles": set(etat.get("modeles") or {}) == {config.OCR_MODEL_PRIMARY,
+                                                          config.OCR_MODEL_VERIFY},
+            "politique": etat.get("politique") == openrouter.PRIVACY_PROVIDER_BLOCK,
+        }
+        return {"statut": "UNVERIFIABLE", "partiels": partiels,
+                "raison": "preuve antérieure à l'enregistrement d'empreinte"}
+    ecarts = {c: (enregistree.get(c), actuelle[c]) for c in actuelle
+              if enregistree.get(c) != actuelle[c]}
+    return {"statut": "COMPATIBLE" if not ecarts else "STALE", "ecarts": ecarts}
 
 
 def main(argv=None) -> int:

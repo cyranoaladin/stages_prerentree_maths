@@ -346,3 +346,68 @@ def test_les_causes_de_refus_sont_distinguees(exception, attendu):
         openrouter.OpenRouterError("model not found", status=404)) == "MODEL_UNAVAILABLE"
     assert ocr_smoke.classer_echec(
         openrouter.OpenRouterError("panne", status=503, retryable=True)) == "NETWORK_ERROR"
+
+
+# ============================ §3 la preuve live doit qualifier le code présent
+def test_une_preuve_live_porte_l_empreinte_du_code_qui_l_a_produite(tmp_path,
+                                                                    monkeypatch):
+    """§3 — un horodatage ne prouve rien : une extraction Git réécrit les dates.
+
+    Seule une empreinte du code permet de dire si une preuve live qualifie encore le
+    code présent. Sans elle, la preuve n'est ni valide ni invalide : elle est
+    **invérifiable**, et doit être rapportée comme telle.
+    """
+    import json
+    from app import config
+    from tools import ocr_smoke
+    monkeypatch.setattr(config, "RUNTIME_DIR", tmp_path)
+
+    resultats = [{"modele_demande": config.OCR_MODEL_PRIMARY,
+                  "etat": ocr_smoke.ETAT_DISPONIBLE, "cache_status": "NOT_REPORTED"},
+                 {"modele_demande": config.OCR_MODEL_VERIFY,
+                  "etat": ocr_smoke.ETAT_DISPONIBLE, "cache_status": "NOT_REPORTED"}]
+    etat = json.loads(ocr_smoke.enregistrer_resultat(resultats, 0).read_text())
+
+    empreinte = etat["empreinte"]
+    for champ in ("app_version", "model_primary", "model_verify", "prompt_version",
+                  "prompt_sha256", "schema_version", "schema_sha256", "attribution",
+                  "no_response_cache"):
+        assert champ in empreinte, champ
+    assert ocr_smoke.comparer_empreinte(etat)["statut"] == "COMPATIBLE"
+
+    # Un prompt modifié d'un caractère rend la preuve périmée, sans ambiguïté.
+    perimee = json.loads(json.dumps(etat))
+    perimee["empreinte"]["prompt_sha256"] = "0" * 64
+    resultat = ocr_smoke.comparer_empreinte(perimee)
+    assert resultat["statut"] == "STALE"
+    assert "prompt_sha256" in resultat["ecarts"]
+
+    # Un modèle changé aussi.
+    autre = json.loads(json.dumps(etat))
+    autre["empreinte"]["model_verify"] = "un/autre-modele"
+    assert ocr_smoke.comparer_empreinte(autre)["statut"] == "STALE"
+
+    # Une preuve sans empreinte est invérifiable — jamais « valide par défaut ».
+    ancienne = {k: v for k, v in etat.items() if k != "empreinte"}
+    verdict = ocr_smoke.comparer_empreinte(ancienne)
+    assert verdict["statut"] == "UNVERIFIABLE"
+    assert verdict["partiels"] == {"modeles": True, "politique": True}
+
+
+def test_une_preuve_perimee_ne_qualifie_pas_la_preparation(tmp_path, monkeypatch):
+    """Une preuve STALE fait tomber la préparation, même si elle disait PASS."""
+    import json
+    from tools import debt_gate
+    etat = tmp_path / "live.json"
+    monkeypatch.setattr(debt_gate, "LIVE_ETAT", etat)
+
+    etat.write_text(json.dumps({
+        "connectivity": "PASS", "privacy_routing": "PASS",
+        "empreinte": {"app_version": "0.0.0", "model_primary": "x/y",
+                      "model_verify": "x/z", "prompt_version": "v",
+                      "prompt_sha256": "0" * 64, "schema_version": "v",
+                      "schema_sha256": "0" * 64, "attribution": "x",
+                      "no_response_cache": {}}}), encoding="utf-8")
+    verdict = debt_gate.preparation_pilote(full_gate_ok=True)
+    assert verdict["live"]["compatibilite"]["statut"] == "STALE"
+    assert verdict["PILOT_SOFTWARE_READY"] == "NO"

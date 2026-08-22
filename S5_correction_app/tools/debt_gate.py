@@ -137,10 +137,20 @@ def preparation_pilote(full_gate_ok: bool) -> dict:
     précisément pour la mesurer que le pilote peut démarrer.
     """
     live = statut_live()
+    # Une preuve live ne qualifie que le code qui l'a produite. On le vérifie par
+    # l'empreinte enregistrée, jamais par un horodatage : une extraction Git réécrit
+    # les dates de fichiers et rendrait la comparaison trompeuse.
+    try:
+        from tools.ocr_smoke import comparer_empreinte
+        compatibilite = comparer_empreinte(live) if live.get("connectivity") else {}
+    except Exception:
+        compatibilite = {"statut": "UNVERIFIABLE", "raison": "comparaison impossible"}
+    live["compatibilite"] = compatibilite
+    conforme = compatibilite.get("statut") != "STALE"
     conditions = {
         "S5_FULL_GATE": full_gate_ok,
-        "OPENROUTER_LIVE_CONNECTIVITY_GATE": live.get("connectivity") == "PASS",
-        "OPENROUTER_PRIVACY_ROUTING_GATE": live.get("privacy_routing") == "PASS",
+        "OPENROUTER_LIVE_CONNECTIVITY_GATE": live.get("connectivity") == "PASS" and conforme,
+        "OPENROUTER_PRIVACY_ROUTING_GATE": live.get("privacy_routing") == "PASS" and conforme,
     }
     return {"conditions": conditions, "live": live,
             "PILOT_SOFTWARE_READY": "YES" if all(conditions.values()) else "NO",
@@ -188,6 +198,15 @@ def main(argv=None) -> int:
         print("  %-38s %s" % (nom, "PASS" if ok else "NON DÉMONTRÉ"))
     if preparation["live"].get("raison"):
         print("  (%s)" % preparation["live"]["raison"])
+    compat = preparation["live"].get("compatibilite") or {}
+    if compat:
+        print("  preuve live vs code présent : %s" % compat.get("statut"))
+        if compat.get("statut") == "UNVERIFIABLE":
+            print("    %s" % compat.get("raison", ""))
+            print("    contrôles partiels disponibles : %s" % compat.get("partiels"))
+        for cle, (avant, maintenant) in (compat.get("ecarts") or {}).items():
+            print("    écart %-18s enregistré=%s  présent=%s"
+                  % (cle, str(avant)[:28], str(maintenant)[:28]))
     print()
     print("PILOT_SOFTWARE_READY = %s" % preparation["PILOT_SOFTWARE_READY"])
     print("HANDWRITING_REAL_ACCURACY_GATE = %s   ← mesurable seulement sur une vraie "

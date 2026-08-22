@@ -329,6 +329,34 @@
       "status": "CLOSED",
       "titre": "@app.on_event déprécié par FastAPI — seul avertissement de dépréciation provenant du code S5 ; remplacé par un gestionnaire de cycle de vie",
       "test": "aucun avertissement S5 dans la suite ; les deux restants sont externes (websockets/uvicorn)"
+    },
+    {
+      "id": "D-48",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "la preuve du live gate ne portait aucune empreinte du code : impossible de démontrer qu'elle qualifie le HEAD présent, un horodatage étant réécrit par toute extraction Git",
+      "test": "test_une_preuve_live_porte_l_empreinte_du_code_qui_l_a_produite"
+    },
+    {
+      "id": "D-49",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "la séquence opérateur omettait ALLOW_REAL_STUDENT_REMOTE_OCR=1 : la lecture d'une copie réelle répondait 403 sans que l'opérateur sache pourquoi (défaut heurté pendant la répétition de bout en bout)",
+      "test": "docs/OPERATIONS_TODAY.md — séquence de lancement"
+    },
+    {
+      "id": "D-50",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "le manuel d'exploitation ne couvrait aucun incident de l'ère OCR : mauvaise copie, page manquante, mauvais élève, mauvaise lecture, fournisseur indisponible, restauration",
+      "test": "docs/OPERATIONS_RUNBOOK.md — 12 sections « que faire si »"
+    },
+    {
+      "id": "D-51",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "aucune procédure de déploiement par lots (taille, surveillance, arrêt, retour arrière)",
+      "test": "docs/OPERATIONS_RUNBOOK.md — section rollout"
     }
   ],
   "limitations": [
@@ -373,6 +401,13 @@
       "titre": "deux DeprecationWarning externes : websockets.legacy et uvicorn.protocols.websockets",
       "pourquoi_non_bloquant": "aucun code S5 n'en est responsable, et S5 n'emploie pas de WebSocket ; ils disparaîtront avec la mise à jour d'uvicorn.",
       "leve_par": "mise à jour d'uvicorn/websockets"
+    },
+    {
+      "id": "L-07",
+      "blocking": false,
+      "titre": "la preuve live existante (2026-08-22T14:27:45Z) est antérieure à l'introduction de l'empreinte : statut UNVERIFIABLE",
+      "pourquoi_non_bloquant": "ses deux champs enregistrés — modèles et politique — correspondent exactement au code présent, et elle a été produite par le composant d'enregistrement lui-même, donc postérieurement au code qu'elle qualifie. Rien ne la contredit ; simplement, elle ne peut pas se prouver seule.",
+      "leve_par": "make s5-ocr-live-gate — la prochaine preuve portera son empreinte"
     }
   ]
 }

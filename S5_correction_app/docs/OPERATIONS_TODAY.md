@@ -18,8 +18,16 @@ make s5-correction-backup-verify
 
 # 4. lancement
 S5_DATA_MODE=REAL NEXUS_S5_PASSWORD='…' \
-  NEXUS_S5_CORRECTION_MODE=digital make s5-correction-run   # http://127.0.0.1:8765
+  NEXUS_S5_CORRECTION_MODE=digital \
+  ALLOW_REAL_STUDENT_REMOTE_OCR=1 \
+  make s5-correction-run                                    # http://127.0.0.1:8765
 ```
+
+`ALLOW_REAL_STUDENT_REMOTE_OCR=1` est **obligatoire pour lire une copie réelle** :
+sans lui, la lecture assistée répond 403. Ce n'est pas une formalité — c'est la
+décision d'envoyer l'image d'une copie d'élève à un fournisseur. L'image *est* la
+copie, et elle porte le nom de l'élève. Sans ce drapeau, tout le reste fonctionne :
+téléversement, correction humaine, bilans.
 
 Puis, dans le navigateur :
 
