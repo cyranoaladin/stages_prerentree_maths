@@ -1,5 +1,38 @@
 # Journal des modifications
 
+## 2026.9 — 2026-08-22
+
+Balayage visuel des 327 pages des quinze cahiers nominatifs, en trente planches contact.
+Cinq défauts que ni les tests, ni la compilation, ni le contrôle de densité ne voyaient.
+
+- **Les exercices de la piste excellence figuraient dans le cahier de tous les élèves en
+  séance 5.** Cette séance n'est pas découpée en pistes : son contenu est repris par thème,
+  et le filtre laissait passer « Partie 3 bis — Exercices 9 et 10, piste Excellence ». Un
+  élève en remédiation recevait donc un problème de type bac au milieu de sa séance. Au
+  passage, l'évaluation finale et la carte de sortie, qui doublonnaient avec la question de
+  sortie du cahier, sont également retirées de cette reprise.
+- **Le décalage du point d'entrée suivait le mauvais domaine.** Il était calculé sur la
+  réussite du domaine travaillé en temps différencié, puis appliqué aux exercices du thème
+  de la séance. Adam Zahouani, à 0 % sur l'exponentielle, sautait une application directe
+  d'exponentielle parce qu'il avait 43 % sur les suites. Le décalage suit désormais le
+  domaine des exercices.
+- **Le décalage s'appliquait à la piste Confronter.** Un élève porteur d'une certitude
+  erronée a besoin de la reconstruction complète : son taux de réussite ne dit pas qu'il
+  maîtrise l'accès, il dit qu'une partie de ce qu'il croit savoir est juste. Le décalage ne
+  vaut plus que pour la piste Installer.
+- **Le cahier d'un élève sans positionnement parlait d'un positionnement qui n'a pas eu
+  lieu**, et répétait cinq fois la même phrase d'attente. Il porte désormais l'énoncé de sa
+  situation, une fois, et un objectif qui nomme le thème de chaque séance sans rien préjuger
+  de son niveau.
+- **Le tableau de suivi final débordait seul sur une dernière page presque vide** dans trois
+  cahiers sur quinze. Placé avant les questions ouvertes du bilan, c'est désormais une ligne
+  de réponse qui déborde le cas échéant — et une ligne de réponse sur une page neuve n'est
+  pas un défaut.
+
+Ajout de `tools/qa_planches.py`, qui assemble toutes les pages d'un PDF en planches de douze
+pour l'inspection. Le contrôle de densité trouve les pages vides ; il ne voit ni un tableau
+qui déborde, ni un exercice donné au mauvais élève.
+
 ## 2026.8 — 2026-08-22
 
 - Ajout des **cahiers de séances nominatifs** : un cahier par élève et par matière, couvrant

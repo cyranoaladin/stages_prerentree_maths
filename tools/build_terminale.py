@@ -1645,9 +1645,12 @@ def build_documents(root: Path = ROOT) -> dict[str, str]:
                     student, missing, module,
                     [{"seance": number, "theme": theme,
                       "focus": "Diagnostic à établir en séance 1",
-                      "objectif": ("Établir ce qui est acquis sur ce thème, puis consolider "
-                                   "ce qui en a besoin. Le contenu précis sera ajusté avec "
-                                   "toi dès la première séance."),
+                      # Le thème est nommé tel qu'il figure au programme du groupe ; la
+                      # réserve sur le niveau est dite une fois, dans l'encadré de la
+                      # séance, et non répétée cinq fois dans le tableau.
+                      "objectif": (f"Établir ce que tu sais déjà faire sur "
+                                   f"{theme.split(' :')[0]}, puis consolider ce qui en a "
+                                   f"besoin."),
                       "parcours": "Installer"}
                      for number, theme in module.sessions],
                     [], frame, group, CONFIDENTIAL_BANNER,

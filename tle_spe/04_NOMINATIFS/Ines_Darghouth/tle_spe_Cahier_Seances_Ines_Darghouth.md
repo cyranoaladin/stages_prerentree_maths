@@ -399,7 +399,14 @@ Ce que je constate : ...........................................................
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Simplifier $e^{3x} \times e^{1 - x} / e^{x}$ et donner le résultat sous la forme
+$e^{ax+b}$.
+
+Règle utilisée : ...........................................................................
+
+Calcul : ...........................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Résoudre dans $\mathbb{R}$ l'équation $e^{x^2 - 1} = 0$, puis l'inéquation $e^x > 0$.
 
@@ -608,14 +615,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-**Exercice 1.** Résoudre dans $\mathbb{R}$ l'équation $x^2 - 7x + 12 = 0$, puis vérifier par la somme et
-le produit des racines.
-
-$\Delta =$ ....................  Racines : ....................
-
-Contrôle : somme = ..........  (attendu $- b/a =$ ..........) · produit = .......... (attendu $c/a =$ ..........)
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
+> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
 
 **Exercice 2.** Combien de solutions réelles l'équation $3x^2 - 6x + 4 = 0$ admet-elle ?
 Justifier.
@@ -845,24 +845,7 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
-
-**Exercice 2.** Soit $f(x) = (2x - 1)/(x + 3)$, définie sur $] - 3 ; + \infty [$. Calculer $f'(x)$ et donner
-son signe.
-
-$u =$ ..............  $u' =$ ..............  $v =$ ..............  $v' =$ ..............
-
-$f'(x) =$ ...........................................................................................
-
-Signe : ...........................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
+> **Remarque.** Les 2 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
 
 **Exercice 3.** Soit $f(x) = x^3 - 12x$. Déterminer l'intervalle sur lequel f est décroissante.
 
@@ -1180,95 +1163,6 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ....................................................................................................
 
-### Partie 3 bis — Exercices 9 et 10, piste Excellence
-
-**Exercice 9.** Dans un repère orthonormé, on donne $A(1 ; 2)$, $B(5 ; 0)$ et $C(4 ; 5)$.
-
-a) Calculer $\vv{AB} \cdot \vv{AC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Calculer les longueurs AB et AC, puis en déduire la valeur exacte du cosinus de l'angle
-$\widehat{BAC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Déterminer une équation cartésienne de la droite passant par A et perpendiculaire à (BC).
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-d) Le point $H(3 ; 2{,}4)$ appartient-il à cette droite ? Justifier par le calcul.
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
-**Exercice 10.** Une urne contient n boules rouges et 3 boules noires, n étant un entier
-naturel non nul. On tire une boule, on note sa couleur, on la remet, puis on tire une seconde
-boule.
-
-a) Exprimer, en fonction de n, la probabilité d'obtenir deux boules de la même couleur.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Pour quelle valeur de n cette probabilité vaut-elle exactement 0,5 ?
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Écrire une fonction Python `proba(n)` qui renvoie cette probabilité, puis vérifier ta
-réponse à la question b).
-
-```python
-def proba(n):
-
-
-
-
-```
-
-d) Cette probabilité peut-elle être strictement inférieure à 0,5 ? Justifier — la réponse
-tient en une factorisation.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
----
-
 ## Tes exercices, ceux qui viennent de ton positionnement
 
 **1. Dérivation — Déduire les variations du signe de la dérivée.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
@@ -1397,6 +1291,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1420,8 +1319,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

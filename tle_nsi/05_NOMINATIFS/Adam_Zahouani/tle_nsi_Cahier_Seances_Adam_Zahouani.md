@@ -374,7 +374,12 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Soit `L = [5, 7, 9, 11]`. Que valent `L[0]`, `L[3]` et `L[-1]` ? Que provoque
+`L[4]` ?
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Soit `L = [1, 2, 3]`. Après `L.insert(0, 9)` puis `L.append(4)`, que contient
 L ? Et que vaudrait L après `L = L.append(5)` ?
@@ -1311,6 +1316,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1334,8 +1344,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

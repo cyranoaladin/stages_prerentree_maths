@@ -406,7 +406,14 @@ Relis ta première réponse. Y a-t-il une force que la définition écarte ?
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Une balle est lâchée sans vitesse initiale. On néglige l'action de l'air.
+Système, référentiel, bilan des forces.
+
+Système : ..................................  Référentiel : ..................................
+
+Forces : ...........................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** La même balle, mais l'énoncé précise cette fois « en tenant compte de la
 résistance de l'air ». Le mouvement est-il encore une chute libre ? Quel est le nouveau
@@ -1275,43 +1282,6 @@ les deux autres ne le sont-ils pas ?
 
 ---
 
-### Partie 4 — Évaluation finale
-
-L'évaluation dure 40 minutes. Elle **n'est pas notée**. Les cartes d'aide ne sont pas
-disponibles.
-
-Chaque exercice te demande de déclarer ta certitude. Cette déclaration compte autant que
-la réponse : elle mesure si tu sais reconnaître ce que tu sais.
-
----
-
-### Partie 5 — Carte de sortie
-
-À remplir après la correction, puis à comparer avec ta carte d'entrée.
-
-| Domaine | Ma certitude en entrée | Ma certitude en sortie |
-|---|---|---|
-| Transformations chimiques | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Mécanique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Énergie | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Ondes et signaux | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Optique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Électricité | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Chimie organique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-
-**Un domaine qui passe d'une certitude haute mais fausse à une certitude basse est un
-progrès.** Tu sais maintenant que tu ne sais pas : c'est la condition pour apprendre en
-septembre.
-
-**Les trois gestes que j'emporte :**
-
-1. ...........................................................................................
-2. ...........................................................................................
-3. ...........................................................................................
-
----
-_Source pédagogique unique : `stage_prerentree_terminale_pc.md`._
-
 ## Transfert — à toi de choisir la méthode
 
 Rien dans cet énoncé ne dit quelle notion employer. C'est la question.
@@ -1371,6 +1341,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1394,8 +1369,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

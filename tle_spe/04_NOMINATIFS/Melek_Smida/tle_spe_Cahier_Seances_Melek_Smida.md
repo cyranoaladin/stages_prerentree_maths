@@ -128,7 +128,23 @@ Ce que je constate : ...........................................................
 
 ## Ton entraînement
 
-> **Remarque.** Les 2 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** La suite $(u_n)$ est arithmétique, de premier terme $u_0 = - 4$ et de raison 3.
+Calculer $u_{12}$.
+
+Propriété utilisée : ......................................................................
+
+Calcul : ...........................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 2.** La suite $(v_n)$ est géométrique, de premier terme $v_0 = 5$ et de raison 1/2.
+Calculer $v_3$.
+
+Propriété utilisée : ......................................................................
+
+Calcul : ...........................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Les suites $(w_n)$ et $(t_n)$ sont définies par $w_n = 1{,}2^n$ et $t_n = 3 \times 0{,}8^n$.
 Donner le sens de variation de chacune, en justifiant.
@@ -1174,95 +1190,6 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ....................................................................................................
 
-### Partie 3 bis — Exercices 9 et 10, piste Excellence
-
-**Exercice 9.** Dans un repère orthonormé, on donne $A(1 ; 2)$, $B(5 ; 0)$ et $C(4 ; 5)$.
-
-a) Calculer $\vv{AB} \cdot \vv{AC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Calculer les longueurs AB et AC, puis en déduire la valeur exacte du cosinus de l'angle
-$\widehat{BAC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Déterminer une équation cartésienne de la droite passant par A et perpendiculaire à (BC).
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-d) Le point $H(3 ; 2{,}4)$ appartient-il à cette droite ? Justifier par le calcul.
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
-**Exercice 10.** Une urne contient n boules rouges et 3 boules noires, n étant un entier
-naturel non nul. On tire une boule, on note sa couleur, on la remet, puis on tire une seconde
-boule.
-
-a) Exprimer, en fonction de n, la probabilité d'obtenir deux boules de la même couleur.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Pour quelle valeur de n cette probabilité vaut-elle exactement 0,5 ?
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Écrire une fonction Python `proba(n)` qui renvoie cette probabilité, puis vérifier ta
-réponse à la question b).
-
-```python
-def proba(n):
-
-
-
-
-```
-
-d) Cette probabilité peut-elle être strictement inférieure à 0,5 ? Justifier — la réponse
-tient en une factorisation.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
----
-
 ## Transfert — à toi de choisir la méthode
 
 Rien dans cet énoncé ne dit quelle notion employer. C'est la question.
@@ -1383,6 +1310,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1406,8 +1338,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

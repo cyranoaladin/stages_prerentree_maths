@@ -143,11 +143,16 @@ def read_sheet(module: str, session: int, root: Path) -> dict[str, str]:
 
     # Les séances 5 ne sont pas découpées en pistes : elles enchaînent plusieurs domaines
     # puis l'évaluation. Leurs parties thématiques sont reprises telles quelles.
+    # Ce qui n'a pas sa place dans la reprise par thème : ce que le cahier porte déjà par
+    # ailleurs (trace écrite, bilan, ouverture Terminale), ce qui est réservé à une piste
+    # (excellence), et ce que le professeur distribue à part (l'évaluation finale).
+    hors_theme = ("Bilan", "Entraînement", "réponse spontanée", "trace écrite",
+                  "Terminale en fera", "Excellence", "excellence", "Évaluation finale",
+                  "Carte de sortie")
     parts["thematiques"] = "\n\n".join(
         f"### {title}\n\n{body}" for level, title, body in sections
-        if level == 2 and title.startswith("Partie ") and "Bilan" not in title
-        and "Entraînement" not in title and "réponse spontanée" not in title
-        and "trace écrite" not in title and "Terminale en fera" not in title
+        if level == 2 and title.startswith("Partie ")
+        and not any(exclu in title for exclu in hors_theme)
     ).strip()
     return parts
 
@@ -201,7 +206,7 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
                   module: str, student_name: str, personals: list[dict],
                   option_ouverte: bool, reactivation_differee: str | None,
                   reussite: float | None = None, intersession: str | None = None,
-                  appui: str | None = None) -> list[str]:
+                  appui: str | None = None, reussite_theme: float | None = None) -> list[str]:
     """Une séance du cahier, dans l'ordre où elle se déroule."""
     piste = str(row["parcours"])
     bank = BANK[(module, number)]
@@ -235,7 +240,14 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
             f"exercice personnel, plus bas, porte sur {domaine.lower()}. Les deux sont à "
             f"traiter : le premier avec le groupe, le second pendant le temps différencié.")
     add("")
-    if focus not in ("Consolidation d'ensemble", "Rédaction et raisonnement"):
+    if focus == "Diagnostic à établir en séance 1":
+        add("> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier "
+            "te donne donc le programme commun du groupe, avec l'étayage le plus complet — "
+            "exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de "
+            "ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée "
+            "à ce moment-là.")
+        add("")
+    elif focus not in ("Consolidation d'ensemble", "Rédaction et raisonnement"):
         chiffre = ""
         if piste == "Diagnostiquer":
             # Le taux de réussite d'un domaine sans réponse ne mesure rien : le publier
@@ -312,9 +324,11 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
     add("")
     exercises = parts.get(f"piste:{piste}")
     if exercises:
-        # On ne décale le point d'entrée que sur les pistes de remédiation : un élève en
-        # entretien ou en excellence traite sa série entière, elle est déjà courte.
-        skip = entry_point(reussite) if piste in ("Installer", "Confronter") else 0
+        # Le décalage ne vaut que pour la piste Installer. Un élève en confrontation porte
+        # une certitude erronée : le taux de réussite ne dit pas qu'il maîtrise l'accès, il
+        # dit qu'une partie de ce qu'il croit savoir est juste. On reconstruit depuis le
+        # début. Les pistes d'entretien et d'excellence ont des séries déjà courtes.
+        skip = entry_point(reussite_theme) if piste == "Installer" else 0
         exercises, removed = trim_exercises(exercises, skip)
         if removed:
             add(f"> **Remarque.** Les {removed} premier(s) exercice(s) d'application directe "
@@ -427,6 +441,21 @@ def render_seance(number: int, theme: str, row: dict, parts: dict[str, str],
     return out
 
 
+def theme_domain(theme: str, scores: dict[str, float]) -> str | None:
+    """Le domaine du bilan que le thème de la séance recouvre, s'il y en a un.
+
+    Les exercices d'une séance portent sur son thème. C'est donc la réussite sur ce
+    domaine-là, et non sur la priorité personnelle de l'élève, qui dit s'il peut sauter
+    l'application directe. Les deux coïncident souvent ; quand elles diffèrent, confondre
+    les deux fait sauter un exercice sur un domaine où rien ne l'autorise.
+    """
+    tete = theme.split(" :")[0].split(",")[0].strip().lower()
+    for domaine in scores:
+        if domaine.lower() in tete or tete in domaine.lower():
+            return domaine
+    return None
+
+
 def _reactivations(rows: list[dict]) -> dict[int, str]:
     """Reprise espacée : ce qui a été travaillé en séance n est rappelé plus tard.
 
@@ -478,8 +507,12 @@ def render_cahier(student: dict, subject: dict, module, rows: list[dict],
 
     add("## Ton parcours de pré-rentrée")
     add("")
-    add("Le thème de chaque séance est commun au groupe. L'objectif, la piste et les "
-        "exercices sont les tiens : ils viennent de ton positionnement.")
+    if diagnostic:
+        add("Le thème de chaque séance est commun au groupe. L'objectif, la piste et les "
+            "exercices sont les tiens : ils viennent de ton positionnement.")
+    else:
+        add("Le thème de chaque séance est commun au groupe. Ton parcours personnel reste à "
+            "établir : il le sera en séance, à partir de ce que tu montreras.")
     add("")
     add("| Séance | Thème | Ton objectif | Ta piste |")
     add("|---:|---|---|:---:|")
@@ -539,6 +572,7 @@ def render_cahier(student: dict, subject: dict, module, rows: list[dict],
             # stage, elle ne prépare rien.
             intersession=plan[number - 1] if number - 1 < len(plan) and number < 5 else None,
             appui=appuis[(number - 1) % len(appuis)] if appuis else None,
+            reussite_theme=scores.get(theme_domain(str(row["theme"]), scores) or ""),
         ))
         add("---")
         add("")
@@ -549,6 +583,11 @@ def render_cahier(student: dict, subject: dict, module, rows: list[dict],
     add("")
     add("Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les "
         "cinq séances.")
+    add("")
+    add("| Séance | 1 | 2 | 3 | 4 | 5 |")
+    add("|---|:---:|:---:|:---:|:---:|:---:|")
+    add("| Aide maximale utilisée | | | | | |")
+    add("| Certitude déclarée | | | | | |")
     add("")
     for question in (
         "Ce que je consolide vraiment, et que je saurais refaire seul",
@@ -562,9 +601,4 @@ def render_cahier(student: dict, subject: dict, module, rows: list[dict],
         add("")
         add(ANSWER)
         add("")
-    add("| Séance | 1 | 2 | 3 | 4 | 5 |")
-    add("|---|:---:|:---:|:---:|:---:|:---:|")
-    add("| Aide maximale utilisée | | | | | |")
-    add("| Certitude déclarée | | | | | |")
-    add("")
     return "\n".join(out).rstrip() + "\n"

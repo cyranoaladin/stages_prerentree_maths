@@ -15,15 +15,15 @@
 
 ## Ton parcours de pré-rentrée
 
-Le thème de chaque séance est commun au groupe. L'objectif, la piste et les exercices sont les tiens : ils viennent de ton positionnement.
+Le thème de chaque séance est commun au groupe. Ton parcours personnel reste à établir : il le sera en séance, à partir de ce que tu montreras.
 
 | Séance | Thème | Ton objectif | Ta piste |
 |---:|---|---|:---:|
-| 1 | Suites numériques : du sens de variation à la récurrence | Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance. | Installer |
-| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance. | Installer |
-| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance. | Installer |
-| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance. | Installer |
-| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance. | Installer |
+| 1 | Suites numériques : du sens de variation à la récurrence | Établir ce que tu sais déjà faire sur Suites numériques, puis consolider ce qui en a besoin. | Installer |
+| 2 | Fonction exponentielle : exposants, équations, vers le logarithme | Établir ce que tu sais déjà faire sur Fonction exponentielle, puis consolider ce qui en a besoin. | Installer |
+| 3 | Second degré : discriminant, signe du trinôme, tableau de signes | Établir ce que tu sais déjà faire sur Second degré, puis consolider ce qui en a besoin. | Installer |
+| 4 | Dérivation : du nombre dérivé aux variations, ouverture sur la convexité | Établir ce que tu sais déjà faire sur Dérivation, puis consolider ce qui en a besoin. | Installer |
+| 5 | Produit scalaire vers l'espace, probabilités, Python, évaluation | Établir ce que tu sais déjà faire sur Produit scalaire vers l'espace, probabilités, Python, évaluation, puis consolider ce qui en a besoin. | Installer |
 
 ## Comment utiliser ce cahier
 
@@ -43,9 +43,9 @@ Le thème de chaque séance est commun au groupe. L'objectif, la piste et les ex
 
 ## Aujourd'hui, tu vas…
 
-Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance.
+Établir ce que tu sais déjà faire sur Suites numériques, puis consolider ce qui en a besoin.
 
-> **Remarque.** Ce que ton positionnement a montré sur ce point : Diagnostic à établir en séance 1. C'est de là que part ta séance.
+> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier te donne donc le programme commun du groupe, avec l'étayage le plus complet — exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée à ce moment-là.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -226,9 +226,9 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 ## Aujourd'hui, tu vas…
 
-Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance.
+Établir ce que tu sais déjà faire sur Fonction exponentielle, puis consolider ce qui en a besoin.
 
-> **Remarque.** Ce que ton positionnement a montré sur ce point : Diagnostic à établir en séance 1. C'est de là que part ta séance.
+> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier te donne donc le programme commun du groupe, avec l'étayage le plus complet — exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée à ce moment-là.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -399,9 +399,9 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 ## Aujourd'hui, tu vas…
 
-Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance.
+Établir ce que tu sais déjà faire sur Second degré, puis consolider ce qui en a besoin.
 
-> **Remarque.** Ce que ton positionnement a montré sur ce point : Diagnostic à établir en séance 1. C'est de là que part ta séance.
+> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier te donne donc le programme commun du groupe, avec l'étayage le plus complet — exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée à ce moment-là.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -584,9 +584,9 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 ## Aujourd'hui, tu vas…
 
-Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance.
+Établir ce que tu sais déjà faire sur Dérivation, puis consolider ce qui en a besoin.
 
-> **Remarque.** Ce que ton positionnement a montré sur ce point : Diagnostic à établir en séance 1. C'est de là que part ta séance.
+> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier te donne donc le programme commun du groupe, avec l'étayage le plus complet — exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée à ce moment-là.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -777,9 +777,9 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 ## Aujourd'hui, tu vas…
 
-Établir ce qui est acquis sur ce thème, puis consolider ce qui en a besoin. Le contenu précis sera ajusté avec toi dès la première séance.
+Établir ce que tu sais déjà faire sur Produit scalaire vers l'espace, probabilités, Python, évaluation, puis consolider ce qui en a besoin.
 
-> **Remarque.** Ce que ton positionnement a montré sur ce point : Diagnostic à établir en séance 1. C'est de là que part ta séance.
+> **Remarque.** Tu n'as pas passé le positionnement de pré-rentrée. Ce cahier te donne donc le programme commun du groupe, avec l'étayage le plus complet — exemples résolus et indices gradués à chaque séance. Rien n'y est supposé de ton niveau : ce que tu maîtrises se verra en séance, et ta piste sera ajustée à ce moment-là.
 
 ## Pour commencer — dix minutes, de tête
 
@@ -952,95 +952,6 @@ c) Quel lien avec le sens de variation vu en séance 1 ?
 
 ....................................................................................................
 
-### Partie 3 bis — Exercices 9 et 10, piste Excellence
-
-**Exercice 9.** Dans un repère orthonormé, on donne $A(1 ; 2)$, $B(5 ; 0)$ et $C(4 ; 5)$.
-
-a) Calculer $\vv{AB} \cdot \vv{AC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Calculer les longueurs AB et AC, puis en déduire la valeur exacte du cosinus de l'angle
-$\widehat{BAC}$.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Déterminer une équation cartésienne de la droite passant par A et perpendiculaire à (BC).
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-d) Le point $H(3 ; 2{,}4)$ appartient-il à cette droite ? Justifier par le calcul.
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
-**Exercice 10.** Une urne contient n boules rouges et 3 boules noires, n étant un entier
-naturel non nul. On tire une boule, on note sa couleur, on la remet, puis on tire une seconde
-boule.
-
-a) Exprimer, en fonction de n, la probabilité d'obtenir deux boules de la même couleur.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-b) Pour quelle valeur de n cette probabilité vaut-elle exactement 0,5 ?
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-c) Écrire une fonction Python `proba(n)` qui renvoie cette probabilité, puis vérifier ta
-réponse à la question b).
-
-```python
-def proba(n):
-
-
-
-
-```
-
-d) Cette probabilité peut-elle être strictement inférieure à 0,5 ? Justifier — la réponse
-tient en une factorisation.
-
-....................................................................................................
-
-....................................................................................................
-
-....................................................................................................
-
-Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
-
----
-
 ## Transfert — à toi de choisir la méthode
 
 Rien dans cet énoncé ne dit quelle notion employer. C'est la question.
@@ -1113,6 +1024,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1136,8 +1052,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

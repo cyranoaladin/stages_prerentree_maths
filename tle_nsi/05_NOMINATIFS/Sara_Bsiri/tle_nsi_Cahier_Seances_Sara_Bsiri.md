@@ -120,7 +120,28 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-> **Remarque.** Les 2 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Écris 22 en binaire, puis vérifie en recalculant.
+
+Écriture : ....................  Vérification : ....................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 2.** Écris 45 en binaire par la méthode des divisions successives.
+
+```{=latex}
+\begin{center}
+$\begin{aligned}
+45 &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt} \\[2.2mm]
+\rule{16mm}{0.3pt} &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt} \\[2.2mm]
+\rule{16mm}{0.3pt} &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt} \\[2.2mm]
+\rule{16mm}{0.3pt} &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt} \\[2.2mm]
+\rule{16mm}{0.3pt} &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt} \\[2.2mm]
+\rule{16mm}{0.3pt} &= 2 \times \rule{16mm}{0.3pt} + \rule{8mm}{0.3pt}
+\end{aligned}$
+\end{center}
+```
+
+Lecture de bas en haut : ....................  Vérification : ....................
 
 **Exercice 3.** Convertis 0x2A en base 10, puis convertis 60 en hexadécimal.
 
@@ -1173,6 +1194,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1196,8 +1222,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

@@ -896,7 +896,12 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Peut-on appliquer directement la recherche dichotomique au tableau
+`[4, 1, 9, 3]` ? Que faut-il faire avant ?
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Dans un tableau trié de 1 000 éléments, combien de comparaisons au pire pour
 une recherche dichotomique ? Et pour une recherche séquentielle ?
@@ -1130,7 +1135,12 @@ Ces questions ne sont pas notées. Elles servent à réveiller ce dont la séanc
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Un fichier CSV décrit 500 élèves par 6 attributs, avec une ligne d'en-tête.
+Combien de lignes ? Combien d'enregistrements ? Combien de descripteurs ?
+
+....................................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Pour chaque opération, écris son nom.
 
@@ -1277,6 +1287,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1300,8 +1315,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |

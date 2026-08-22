@@ -392,7 +392,14 @@ Relis ta première réponse. Y a-t-il une force que la définition écarte ?
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Une balle est lâchée sans vitesse initiale. On néglige l'action de l'air.
+Système, référentiel, bilan des forces.
+
+Système : ..................................  Référentiel : ..................................
+
+Forces : ...........................................................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** La même balle, mais l'énoncé précise cette fois « en tenant compte de la
 résistance de l'air ». Le mouvement est-il encore une chute libre ? Quel est le nouveau
@@ -646,7 +653,15 @@ Ce que je constate : ...........................................................
 
 ## Ton entraînement
 
-> **Remarque.** Les 1 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Une caisse de $\SI{15}{\kilogram}$ est tirée horizontalement sur
+$\SI{8}{\metre}$ par une force horizontale de $\SI{40}{\newton}$. On prendra
+$g =  \SI{9.8} {\newton\per\kilogram}$.
+
+Travail de la force de traction : ..............................  Unité : ..........
+
+Travail du poids : ..............................  Justification : ..........................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 2.** Un objet de $\SI{2.0}{\kilogram}$ se déplace à $\SI{6.0}{\metre\per\second}$.
 Calculer son énergie cinétique. Puis recalculer si sa vitesse double.
@@ -898,7 +913,25 @@ serait entendue plus grave par un plongeur. L'est-elle ?
 
 ## Ton entraînement
 
-> **Remarque.** Les 2 premier(s) exercice(s) d'application directe ne figurent pas ici : ton positionnement montre que ce geste-là est acquis. On commence donc plus loin dans la série. Si tu bloques malgré tout, demande-les : ils existent.
+**Exercice 1.** Un son de fréquence $\SI{440}{\hertz}$ se propage dans l'air, où la célérité
+vaut $\SI{340}{\metre\per\second}$. Calculer sa longueur d'onde.
+
+Relation utilisée : ......................................................................
+
+Calcul : ...........................................................................................
+
+Résultat : ..............................  Unité : ..........
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
+
+**Exercice 2.** Le même son passe dans l'eau, où la célérité vaut
+$\SI{1500}{\metre\per\second}$. Que valent sa fréquence et sa longueur d'onde dans l'eau ?
+
+Fréquence : ..............................  Longueur d'onde : ..............................
+
+Justification de la fréquence : ...........................................................
+
+Certitude : $\square$1 $\square$2 $\square$3 $\square$4   Aide utilisée : $\square$A $\square$B $\square$C $\square$D $\square$E
 
 **Exercice 3.** Sur le schéma ci-dessous, trace les trois rayons particuliers issus du
 point $B$, puis place l'image $B'$.
@@ -1230,43 +1263,6 @@ les deux autres ne le sont-ils pas ?
 
 ---
 
-### Partie 4 — Évaluation finale
-
-L'évaluation dure 40 minutes. Elle **n'est pas notée**. Les cartes d'aide ne sont pas
-disponibles.
-
-Chaque exercice te demande de déclarer ta certitude. Cette déclaration compte autant que
-la réponse : elle mesure si tu sais reconnaître ce que tu sais.
-
----
-
-### Partie 5 — Carte de sortie
-
-À remplir après la correction, puis à comparer avec ta carte d'entrée.
-
-| Domaine | Ma certitude en entrée | Ma certitude en sortie |
-|---|---|---|
-| Transformations chimiques | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Mécanique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Énergie | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Ondes et signaux | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Optique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Électricité | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-| Chimie organique | $\square$1 $\square$2 $\square$3 $\square$4 | $\square$1 $\square$2 $\square$3 $\square$4 |
-
-**Un domaine qui passe d'une certitude haute mais fausse à une certitude basse est un
-progrès.** Tu sais maintenant que tu ne sais pas : c'est la condition pour apprendre en
-septembre.
-
-**Les trois gestes que j'emporte :**
-
-1. ...........................................................................................
-2. ...........................................................................................
-3. ...........................................................................................
-
----
-_Source pédagogique unique : `stage_prerentree_terminale_pc.md`._
-
 ## Tes exercices, ceux qui viennent de ton positionnement
 
 **1. Optique — Situer l'image d'un objet à l'infini.** Cet exercice est là parce que, au positionnement, la question correspondante a donné une réponse fausse au positionnement.
@@ -1368,6 +1364,11 @@ Trois questions courtes. Elles disent au professeur ce qui est acquis, ce qui es
 
 Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après les cinq séances.
 
+| Séance | 1 | 2 | 3 | 4 | 5 |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Aide maximale utilisée | | | | | |
+| Certitude déclarée | | | | | |
+
 **Ce que je consolide vraiment, et que je saurais refaire seul**
 
 ....................................................................................................
@@ -1391,8 +1392,3 @@ Rien n'est prérempli ici : ce sont des constats, et ils n'existent qu'après le
 ....................................................................................................
 
 ....................................................................................................
-
-| Séance | 1 | 2 | 3 | 4 | 5 |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Aide maximale utilisée | | | | | |
-| Certitude déclarée | | | | | |
