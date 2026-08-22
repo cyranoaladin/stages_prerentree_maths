@@ -89,6 +89,11 @@ NEUTRAL_SYMBOLS = {"·": r"\cdot", "×": r"\times"}
 FUNCTIONS = ("arccos", "arcsin", "arctan", "cos", "sin", "tan", "ln", "log",
              "exp", "lim", "max", "min", "sup", "inf")
 
+# Grandeurs dont le symbole compte plusieurs lettres et se compose en romain. En italique,
+# `10^{-pH}` se lit comme le produit d'un p par un H : c'est une faute de typographie
+# scientifique, et elle est visible pour qui enseigne la discipline.
+UPRIGHT_SYMBOLS = ("pH", "pOH", "pKa", "pKe")
+
 
 # Les commandes LaTeX que le corpus écrit au fil du texte. pandoc, en lecture `gfm`, ne
 # transmet le LaTeX brut qu'à l'intérieur des délimiteurs mathématiques : hors de `$…$`,
@@ -266,6 +271,14 @@ def _latex_atoms(expression: str) -> str:
         expression = expression.replace(symbol, f" {replacement} ")
     for symbol, replacement in SYMBOL_TO_LATEX.items():
         expression = expression.replace(symbol, f" {replacement} ")
+    # Les bornes sont alphabétiques seulement : `pH` termine souvent un groupe, comme
+    # dans `10^{-pH}`, et exclure l'accolade fermante ferait manquer précisément ce cas.
+    # Un double emballage est impossible ici : à la passe suivante, la formule entière est
+    # déjà mise de côté et ne repasse pas par cette fonction.
+    for symbol in UPRIGHT_SYMBOLS:
+        expression = re.sub(
+            rf"(?<![a-zA-Z]){symbol}(?![a-zA-Z])", rf"\\mathrm{{{symbol}}}", expression
+        )
     for function in FUNCTIONS:
         # `\b` ne convient pas : entre « log » et « _2 » il n'y a pas de frontière de mot,
         # le souligné étant lui-même un caractère de mot. La garde amont écarte aussi une

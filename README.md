@@ -135,6 +135,11 @@ pgfplots dans des blocs `` ```{=latex} ``. Trois tests refusent une source qui r
 en Unicode, qui laisserait un `$` non refermé, ou qui aurait absorbé de la prose française
 dans une formule.
 
+La construction signale elle-même ce qui dépasse de la page : LaTeX compte les
+débordements de marge, et `make terminale-pdf` les remonte document par document plutôt
+que de les laisser dans un journal que personne ne lit. Les largeurs de colonnes sont
+calculées à partir du contenu réel, le lecteur `gfm` de pandoc n'en transportant aucune.
+
 Les PDF **ne sont pas versionnés** (`dist/terminale/` est ignoré) : leur binaire dépend de la
 version de LuaLaTeX et des paquets TeX installés. Le Markdown fait foi. Détail des réglages
 d'impression et de la distribution : `tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md`.

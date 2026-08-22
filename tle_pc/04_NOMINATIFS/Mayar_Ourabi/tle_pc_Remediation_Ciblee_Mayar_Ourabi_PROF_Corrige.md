@@ -126,7 +126,7 @@ Chaque exercice est la **variante** de l'item que l'élève a manqué ou réussi
 
 **Corrigé.** [$\ce{H3O^+}$] $=$ $\SI{1e-2}{\mole\per\litre}$. Une dilution par cent divise la concentration par cent : [$\ce{H3O^+}$] $=$ $\SI{1e-4}{\mole\per\litre}$, soit un pH de 4. Diluer un acide augmente son pH.
 
-**Geste à installer.** pH = $- \log$[$\ce{H3O^+}$], donc [$\ce{H3O^+}$] $= 10^{ - pH}$. Une unité de pH correspond à un facteur dix sur la concentration.
+**Geste à installer.** pH = $- \log$[$\ce{H3O^+}$], donc [$\ce{H3O^+}$] $= 10^{ - \mathrm{pH}}$. Une unité de pH correspond à un facteur dix sur la concentration.
 
 **Erreur à surveiller chez cet élève.** Inverse l'échelle du pH, où les valeurs faibles correspondent à l'acidité. (constatée à l'item 6 du positionnement.)
 

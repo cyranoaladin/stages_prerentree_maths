@@ -898,3 +898,81 @@ def test_the_conversion_is_stable_when_applied_twice():
             assert to_latex(content) == content, (
                 f"{path.relative_to(ROOT)} : la conversion n'est pas stable"
             )
+
+
+# --------------------------------------------------- largeur des tableaux imprimés
+# Le lecteur `gfm` de pandoc ne transporte aucune largeur de colonne : il produit des
+# colonnes `l`, qui ne se coupent jamais. Les largeurs sont donc calculées à partir du
+# contenu. Ces tests portent sur ce calcul, que l'intégration continue peut vérifier sans
+# distribution TeX — la composition, elle, se contrôle à la construction des PDF, qui
+# signale tout débordement de marge.
+
+def _longtable(spec, rows):
+    body = "\n" + "\\\\\n".join(rows) + "\\\\\n"
+    return r"\begin{longtable}[]{@{}" + spec + "@{}}" + body + r"\end{longtable}"
+
+
+def _column_shares(rebuilt):
+    return [float(value) for value in re.findall(r"([\d.]+)\\linewidth", rebuilt)]
+
+
+def test_a_narrow_table_keeps_its_content_sized_columns():
+    from tools.build_terminale_pdf import size_tables
+
+    table = _longtable("ll", ["Oui & Non", "Vrai & Faux"])
+    assert size_tables(table) == table, "un tableau qui tient ne doit pas être redimensionné"
+
+
+def test_a_wide_table_gets_proportional_wrapping_columns():
+    from tools.build_terminale_pdf import size_tables
+
+    rebuilt = size_tables(_longtable("ll", [
+        "Erreur & Réponse",
+        "Comparer les quantités brutes sans les coefficients & "
+        "Faire poser le tableau, faire chercher quelle quantité s'annule la première",
+    ]))
+    shares = _column_shares(rebuilt)
+    assert r"\raggedright" in rebuilt and "p{" in rebuilt
+    assert len(shares) == 2
+    assert abs(sum(shares) - 1.0) < 0.001, "les colonnes doivent occuper toute la justification"
+    assert shares[1] > shares[0], "la colonne la plus fournie doit être la plus large"
+
+
+def test_no_column_is_narrower_than_its_longest_word():
+    """`**CONFRONTER**` débordait de 39 pt : un mot ne se coupe pas."""
+    from tools.build_terminale_pdf import CHARACTERS_PER_LINE, size_tables
+
+    rebuilt = size_tables(_longtable("lll", [
+        "Rang & Domaine & Posture",
+        r"1 & Fonction exponentielle & \textbf{CONFRONTER}",
+        "2 & Suites numériques & Une réponse fausse a été donnée avec assurance, "
+        "on part d'un cas qui met la conviction en défaut avant tout entraînement.",
+    ]))
+    shares = _column_shares(rebuilt)
+    # « CONFRONTER » : dix capitales en gras, soit bien plus de dix chasses.
+    assert shares[2] > 10 / CHARACTERS_PER_LINE, (
+        f"la colonne des postures ne fait que {shares[2]:.3f} de la justification"
+    )
+
+
+def test_a_wide_sparse_table_tightens_its_gutters_instead_of_wrapping():
+    """Dix-sept colonnes de quatre caractères : c'est le blanc qui déborde, pas le texte.
+
+    C'est la table hexadécimal/décimal/binaire de la séance 1 de NSI, qui débordait de
+    23 pt : le seul blanc entre ses colonnes dépasse la justification.
+    """
+    from tools.build_terminale_pdf import size_tables
+
+    header = " & ".join(["Hex"] + list("0123456789ABCDEF"))
+    decimal = " & ".join(["Déc"] + [str(n) for n in range(16)])
+    binary = " & ".join(["Bin"] + [format(n, "04b") for n in range(16)])
+    rebuilt = size_tables(_longtable("l" * 17, [header, decimal, binary]))
+    assert r"\tabcolsep" in rebuilt and r"\small" in rebuilt
+    assert "p{" not in rebuilt, "des cellules d'un caractère n'ont pas à être justifiées"
+
+
+def test_ph_is_typeset_upright_inside_mathematics():
+    """En italique, 10^{-pH} se lit comme le produit d'un p par un H."""
+    converted = to_latex("[H₃O⁺] = 10^(−pH) et le pKa vaut 4,8.", chemistry=True)
+    assert r"\mathrm{pH}" in converted
+    assert "10^{ - pH}" not in converted

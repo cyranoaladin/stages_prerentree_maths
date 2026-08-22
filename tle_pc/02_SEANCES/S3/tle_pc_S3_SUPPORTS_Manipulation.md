@@ -120,10 +120,13 @@ masse de la luge. C'est un résultat qui surprend, et qui mérite d'être commen
 \begin{tikzpicture}[node distance=5mm,font=\small,
   every node/.style={rounded corners=2pt,align=center,inner sep=2.5mm,text width=46mm}]
   \node[fill=SoftGold,draw=Gold,thick] (a) {$E_m = E_c + E_{pp}$\\\textit{bilan de Première}};
-  \node[fill=SoftBlue,draw=Navy,thick,right=14mm of a] (b)
+  % 32 mm entre les deux encadrés : le libellé de la flèche tient sur deux lignes et
+  % ne mord plus sur les boîtes, comme c'était le cas avec un écart de 14 mm.
+  \node[fill=SoftBlue,draw=Navy,thick,right=32mm of a] (b)
        {$\Delta U = W + Q$\\\textit{premier principe, Terminale}};
-  \draw[->,very thick,Navy] (a) -- (b)
-       node[midway,above,font=\scriptsize,text width=26mm] {on ajoute l'énergie interne};
+  \draw[->,very thick,Navy] (a) -- (b);
+  \node[font=\scriptsize,above=2mm,text width=30mm,align=center]
+       at ($(a)!0.5!(b)$) {on ajoute\\l'énergie interne};
   \node[below=8mm of b,fill=SoftGray,draw=TextGray,text width=58mm]
        (c) {Flux thermique\\Résistance thermique\\Loi de refroidissement de Newton};
   \draw[->,thick,TextGray] (b) -- (c);

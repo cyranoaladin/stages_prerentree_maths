@@ -155,22 +155,63 @@ def _rule_for(dots: int) -> str:
 LONGTABLE = re.compile(
     r"\\begin\{longtable\}\[\]\{@\{\}([lrc]+)@\{\}\}(.*?)\\end\{longtable\}", re.DOTALL
 )
-# En deçà, le tableau tient dans la page et des colonnes ajustées au contenu sont plus
-# lisibles qu'un pavé justifié.
-TABLE_WIDTH_THRESHOLD = 95
+# Chaque colonne coûte deux `\tabcolsep` de blanc, soit l'équivalent d'environ trois
+# caractères. Un tableau à dix-sept colonnes dépasse la justification par ce seul blanc,
+# même si son contenu tient sur une ligne : l'ignorer laissait passer la table des
+# chiffres hexadécimaux, qui débordait de 23 pt.
+PADDING_CHARACTERS = 3.4
+# Au-delà de ce nombre de colonnes, un tableau est large et creux : il vaut mieux resserrer
+# le blanc entre les colonnes que forcer un retour à la ligne dans des cellules d'un ou
+# deux caractères.
+MANY_COLUMNS = 8
+# `\small` réduit la chasse d'environ un dixième : autant de caractères en plus par ligne.
+SMALL_WIDTH_GAIN = 1.11
 # Une colonne ne descend pas sous cette part de la largeur, sinon un intitulé court se
 # retrouve coupé lettre par lettre.
 MIN_COLUMN_SHARE = 0.07
+# Nombre approximatif de caractères tenant sur une ligne pleine, en Latin Modern 10 pt.
+# Sert à convertir la longueur d'un mot en part de la justification.
+CHARACTERS_PER_LINE = 95
 
 
 def _cells(row: str) -> list[str]:
     return re.split(r"(?<!\\)&", row)
 
 
+def _plain(cell: str) -> str:
+    """Le texte composé, commandes LaTeX défalquées."""
+    return re.sub(r"[{}$\\]", "", re.sub(r"\\[a-zA-Z]+\s*", "", cell)).strip()
+
+
 def _visible_length(cell: str) -> int:
-    """Longueur approximative du texte composé, commandes LaTeX défalquées."""
-    cell = re.sub(r"\\[a-zA-Z]+\s*", "", cell)
-    return len(re.sub(r"[{}$\\]", "", cell).strip())
+    """Longueur approximative du texte composé."""
+    return len(_plain(cell))
+
+
+# Une capitale occupe environ 1,4 fois la chasse d'une bas-de-casse, et le gras environ
+# 1,1 fois celle du romain. Compter les caractères sans en tenir compte sous-estimait
+# `**CONFRONTER**` de moitié, et la colonne restait trop étroite pour lui.
+UPPERCASE_WIDTH = 1.4
+BOLD_WIDTH = 1.12
+# Le modèle ci-dessus compte les caractères, il ne les mesure pas : un mot fait de lettres
+# larges — « Mathématiques » — dépasse son estimation et se retrouve coupé. Cette marge
+# évite la césure sans coûter de place aux autres colonnes, qui se partagent le reste.
+WORD_SAFETY_MARGIN = 1.15
+
+
+def _longest_word(cell: str) -> float:
+    """Largeur du mot le plus large de la cellule, en chasses de bas-de-casse.
+
+    Un mot ne se coupe pas : la colonne ne peut pas être plus étroite que lui, sous peine
+    de le laisser déborder dans la marge — ce que LaTeX signale, et que l'impression
+    montre.
+    """
+    emphasis = BOLD_WIDTH if ("textbf" in cell or "bfseries" in cell) else 1.0
+    widths = (
+        sum(UPPERCASE_WIDTH if character.isupper() else 1.0 for character in word)
+        for word in _plain(cell).split()
+    )
+    return max(widths, default=0.0) * emphasis * WORD_SAFETY_MARGIN
 
 
 def size_tables(fragment: str) -> str:
@@ -178,16 +219,55 @@ def size_tables(fragment: str) -> str:
         spec, body = match.group(1), match.group(2)
         columns = len(spec)
         widths = [0] * columns
+        longest = [0.0] * columns
         for row in body.split(r"\\"):
             cells = _cells(row)
             if len(cells) != columns:
                 continue
             for index, cell in enumerate(cells):
                 widths[index] = max(widths[index], _visible_length(cell))
-        if not any(widths) or sum(widths) <= TABLE_WIDTH_THRESHOLD:
+                longest[index] = max(longest[index], _longest_word(cell))
+        if not any(widths):
             return match.group(0)
-        shares = [max(width / sum(widths), MIN_COLUMN_SHARE) for width in widths]
-        shares = [share / sum(shares) for share in shares]
+
+        natural = sum(widths) + PADDING_CHARACTERS * columns
+        if natural <= CHARACTERS_PER_LINE:
+            # Le tableau tient : des colonnes ajustées au contenu se lisent mieux qu'un
+            # pavé justifié.
+            return match.group(0)
+
+        if columns >= MANY_COLUMNS and max(widths) <= 6:
+            # Large et creux : c'est le blanc entre colonnes qui déborde, pas le texte.
+            return (
+                "{\\small\\setlength{\\tabcolsep}{2pt}"
+                + match.group(0)
+                + "}"
+            )
+
+        # Chaque colonne reçoit d'abord son plancher — la largeur de son mot le plus long,
+        # qui ne se coupe pas —, puis le reste de la justification est réparti au prorata
+        # du contenu. Normaliser après coup, comme on le faisait, ramenait les colonnes
+        # sous leur propre plancher et laissait le mot déborder : c'est ce qui restait des
+        # 39 pt d'origine.
+        def floors_for(capacity: float) -> list[float]:
+            return [max(word / capacity, MIN_COLUMN_SHARE) for word in longest]
+
+        prefix = suffix = ""
+        floors = floors_for(CHARACTERS_PER_LINE)
+        if sum(floors) >= 1.0:
+            # Les mots les plus longs, mis bout à bout, dépassent déjà la justification :
+            # aucune répartition ne les fera tenir. Composer en corps réduit est la seule
+            # issue qui préserve la mise en page.
+            prefix, suffix = "{\\small", "}"
+            floors = floors_for(CHARACTERS_PER_LINE * SMALL_WIDTH_GAIN)
+        if sum(floors) >= 1.0:
+            floors = [floor / sum(floors) for floor in floors]
+        remaining = 1.0 - sum(floors)
+        shares = [
+            floor + remaining * width / sum(widths)
+            for floor, width in zip(floors, widths)
+        ]
+
         alignment = {"l": r"\raggedright", "r": r"\raggedleft", "c": r"\centering"}
         rebuilt = "".join(
             r">{%s\arraybackslash}p{\dimexpr %.4f\linewidth-2\tabcolsep\relax}"
@@ -195,7 +275,9 @@ def size_tables(fragment: str) -> str:
             for letter, share in zip(spec, shares)
         )
         return (
-            r"\begin{longtable}[]{@{}" + rebuilt + "@{}}" + body + r"\end{longtable}"
+            prefix
+            + r"\begin{longtable}[]{@{}" + rebuilt + "@{}}" + body + r"\end{longtable}"
+            + suffix
         )
 
     return LONGTABLE.sub(rebuild, fragment)
@@ -345,10 +427,31 @@ def render(bundle: Bundle) -> Path:
         (work / f"{job}.tex").write_text(latex_document(bundle), encoding="utf-8")
         compile_latex(work, job, bundle.filename)
         shutil.copy(work / f"{job}.pdf", target)
+        log = work / f"{job}.log"
+        if log.exists():
+            excess = overfull_boxes(log.read_text(encoding="utf-8", errors="replace"))
+            if excess:
+                bundle.warnings.append(
+                    f"{bundle.directory}/{bundle.filename} : {len(excess)} débordement(s) "
+                    f"de marge, le plus large de {excess[0]:.0f} pt"
+                )
 
     bundle.size_bytes = target.stat().st_size
     bundle.pages = count_pages(target)
     return target
+
+
+# LaTeX signale lui-même ce qui dépasse de la justification. En deçà de ce seuil le
+# débordement ne se voit pas à l'impression — une ponctuation dans la marge ; au-delà,
+# c'est une ligne de tableau ou une formule qui sort de la page.
+OVERFULL_THRESHOLD_PT = 12.0
+OVERFULL = re.compile(r"Overfull \\[hv]box \((\d+(?:\.\d+)?)pt too (?:wide|high)\)")
+
+
+def overfull_boxes(log: str) -> list[float]:
+    """Les débordements que LaTeX a signalés, en points, du plus large au plus étroit."""
+    found = [float(match.group(1)) for match in OVERFULL.finditer(log)]
+    return sorted((value for value in found if value >= OVERFULL_THRESHOLD_PT), reverse=True)
 
 
 # Deux passes suffisent : la seconde résout \pageref{LastPage} du pied de page. latexmk
@@ -660,11 +763,12 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\n{len(bundles)} PDF écrits sous {OUTPUT_DIR.relative_to(ROOT)}/")
     print(f"Manifeste : {manifest.relative_to(ROOT)}")
 
-    # Une notation restée en Unicode ne fait pas échouer la compilation : elle produit un
-    # caractère absent de la police, donc une consigne trouée. Il faut la voir.
+    # Ni une notation restée en Unicode, ni un débordement de marge ne font échouer la
+    # compilation : le PDF sort, avec un caractère absent ou une ligne hors de la page.
+    # Il faut donc les afficher — c'est le seul moment où on peut encore les voir.
     alerts = sorted({warning for bundle in bundles for warning in bundle.warnings})
     if alerts:
-        print(f"\n{len(alerts)} document(s) à convertir en notation LaTeX :")
+        print(f"\n{len(alerts)} point(s) à revoir :")
         for alert in alerts:
             print(f"  {alert}")
         return 1
