@@ -7,7 +7,6 @@ Une demande contenant « .. », un chemin absolu ou une séquence encodée n'a r
 résoudre : elle n'est simplement jamais utilisée comme chemin.
 """
 
-from pathlib import Path
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse

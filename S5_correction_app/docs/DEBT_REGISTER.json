@@ -1,0 +1,378 @@
+{
+  "_lisez_moi": "Source du verdict NO_KNOWN_TECH_DEBT, calculé par tools/debt_gate.py. Un défaut n'est CLOSED que s'il porte le test qui le démontre. Une limitation blocking=true fait échouer la porte.",
+  "defects": [
+    {
+      "id": "D-01",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "--allow-network exigeait un mot de passe que rien ne vérifiait",
+      "test": "test_en_mode_reel_l_authentification_est_exigee_meme_en_local"
+    },
+    {
+      "id": "D-02",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "aucune protection CSRF sur les routes mutantes",
+      "test": "test_une_requete_mutante_sans_jeton_est_refusee"
+    },
+    {
+      "id": "D-03",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "response caching OpenRouter non désactivé",
+      "test": "test_l_entete_anti_cache_part_avec_chaque_appel"
+    },
+    {
+      "id": "D-04",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "OPENROUTER_BASE_URL librement configurable",
+      "test": "test_un_endpoint_non_autorise_est_refuse"
+    },
+    {
+      "id": "D-05",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "pièces stockées en 0444, lisibles par tous",
+      "test": "test_les_copies_ne_sont_pas_lisibles_par_tous"
+    },
+    {
+      "id": "D-06",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "copies servies sans Cache-Control",
+      "test": "test_les_copies_ne_sont_jamais_mises_en_cache_par_le_navigateur"
+    },
+    {
+      "id": "D-07",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "redact() laissait passer l'image base64",
+      "test": "test_une_exception_ne_reproduit_ni_la_cle_ni_l_image"
+    },
+    {
+      "id": "D-08",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "seconde lecture non aveugle, appelée « consensus »",
+      "test": "test_la_seconde_lecture_est_aveugle_et_utilise_le_meme_schema"
+    },
+    {
+      "id": "D-09",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "angle mort de l'omission : aucune attestation de complétude",
+      "test": "test_sans_attestation_la_transcription_n_est_pas_exploitable"
+    },
+    {
+      "id": "D-10",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "révisions humaines écrasées",
+      "test": "test_deux_corrections_humaines_successives_sont_toutes_conservees"
+    },
+    {
+      "id": "D-11",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "clé de cache fondée sur des noms de version",
+      "test": "test_un_prompt_modifie_invalide_le_cache_sans_changer_de_version"
+    },
+    {
+      "id": "D-12",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "configuration relue à chaque page : campagne hétérogène",
+      "test": "test_la_configuration_de_campagne_est_figee"
+    },
+    {
+      "id": "D-13",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "deux campagnes simultanées possibles",
+      "test": "test_deux_campagnes_simultanees_du_meme_role_sont_impossibles"
+    },
+    {
+      "id": "D-14",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "campagne RUNNING éternelle après un arrêt du processus",
+      "test": "test_une_campagne_restee_en_cours_est_reprise_au_demarrage"
+    },
+    {
+      "id": "D-15",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "copie remplacée pendant une campagne, sans signalement",
+      "test": "test_une_campagne_devient_perimee_si_la_copie_est_remplacee"
+    },
+    {
+      "id": "D-16",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "aucune borne de sortie du modèle",
+      "test": "test_les_bornes_de_bloc_sont_appliquees"
+    },
+    {
+      "id": "D-17",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "garde d'exploitation posée sur une seule route",
+      "test": "test_toutes_les_voies_passent_par_l_invariant_unique"
+    },
+    {
+      "id": "D-18",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "envoi d'une copie réelle sans décision explicite",
+      "test": "test_une_copie_reelle_ne_part_pas_sans_autorisation"
+    },
+    {
+      "id": "D-19",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "assertion « or True » : ne pouvait jamais échouer",
+      "test": "test_d_une_observation_utilisateur_n_est_jamais_rendue_en_html"
+    },
+    {
+      "id": "D-20",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "écrasement possible d'une pièce stockée",
+      "test": "test_un_doublon_avertit_et_demande_confirmation"
+    },
+    {
+      "id": "D-21",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "48 imports inutilisés, 5 variables mortes",
+      "test": "ruff F,E9"
+    },
+    {
+      "id": "D-22",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "aucune réconciliation base / fichiers",
+      "test": "tools/fsck.py"
+    },
+    {
+      "id": "D-23",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "TIFF multipage : perte silencieuse de pages",
+      "test": "test_un_tiff_multipage_est_refuse_explicitement"
+    },
+    {
+      "id": "D-24",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "doublon de page rejeté d'office",
+      "test": "test_un_doublon_avertit_et_demande_confirmation"
+    },
+    {
+      "id": "D-25",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "R-03 — aucun test navigateur : le skip masquait l'absence de couverture",
+      "test": "tests/test_browser_ui.py (9 parcours, Chromium réel)"
+    },
+    {
+      "id": "D-26",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "R-06 — rotation d'affichage seulement : le modèle recevait la page couchée",
+      "test": "test_la_lecture_emploie_bien_la_page_tournee"
+    },
+    {
+      "id": "D-27",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "R-07 — aucune catégorie non textuelle : une figure passait pour une absence de réponse",
+      "test": "test_une_figure_est_une_reponse_pas_une_absence_de_reponse"
+    },
+    {
+      "id": "D-28",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "R-07 — aucune catégorie CODE alors que la 1re NSI est déjà couverte",
+      "test": "test_un_programme_conserve_exactement_sa_mise_en_forme"
+    },
+    {
+      "id": "D-29",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "R-08 — continuation entre pages non exposée ni révisable",
+      "test": "test_une_reponse_qui_se_poursuit_page_suivante"
+    },
+    {
+      "id": "D-30",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "R-09 — plafond de 60 pages annoncé mais jamais éprouvé",
+      "test": "test_une_copie_de_soixante_pages"
+    },
+    {
+      "id": "D-31",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "R-10 — pdftoppm borné par le seul délai d'attente",
+      "test": "test_un_enfant_qui_deborde_ne_tue_pas_le_parent"
+    },
+    {
+      "id": "D-32",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "R-11 — application locale sans authentification malgré des copies de mineurs",
+      "test": "test_en_mode_reel_l_authentification_est_exigee_meme_en_local"
+    },
+    {
+      "id": "D-33",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "HTTP Basic sans TLS : mot de passe et copies interceptables sur le réseau",
+      "test": "test_donnees_reelles_hors_boucle_locale_en_clair_sont_refusees"
+    },
+    {
+      "id": "D-34",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "script inline bloqué par la CSP, et sans jeton anti-CSRF",
+      "test": "tests/test_browser_ui.py — toute erreur de script fait échouer"
+    },
+    {
+      "id": "D-35",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "la page tournée partait au modèle mais l'humain voyait l'originale",
+      "test": "test_f_la_rotation_change_reellement_les_pixels_envoyes"
+    },
+    {
+      "id": "D-36",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "--allow-network en mode SYNTHETIC démarrait sans mot de passe",
+      "test": "test_le_mode_reseau_exige_un_mot_de_passe"
+    },
+    {
+      "id": "D-37",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "sauvegarde d'une base en mode WAL par copie de fichier : instantané incomplet, jusqu'à l'absence des tables récentes (démontré)",
+      "test": "test_une_sauvegarde_capture_les_transactions_recentes"
+    },
+    {
+      "id": "D-38",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "migrations jamais éprouvées sur une base peuplée d'un schéma antérieur",
+      "test": "test_une_base_ancienne_avec_donnees_migre_sans_perte"
+    },
+    {
+      "id": "D-39",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "le contrôle de pipeline synthétique n'isolait pas tous les chemins et héritait du mode REAL : toutes ses requêtes recevaient 401, et la porte échouait sans rapport avec ce qu'elle mesure",
+      "test": "make s5-full-gate étape 7 — pipeline_synthetique 15/15, 45/45"
+    },
+    {
+      "id": "D-40",
+      "severity": "P0",
+      "status": "CLOSED",
+      "titre": "tiret cadratin dans une valeur d'en-tête HTTP : UnicodeEncodeError avant tout appel réseau, sans désigner l'en-tête fautif",
+      "test": "test_l_ancien_tiret_cadratin_reproduit_bien_la_panne"
+    },
+    {
+      "id": "D-41",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "risque résiduel : une clé collée avec un caractère non ASCII produisait la même panne, sans jamais mentionner la clé",
+      "test": "test_une_cle_non_ascii_est_signalee_comme_telle"
+    },
+    {
+      "id": "D-42",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "défaut VERIFY = anthropic/claude-opus-4.8, sans endpoint compatible avec la politique de routage imposée",
+      "test": "test_les_defauts_inscrits_sont_ceux_qualifies_en_live"
+    },
+    {
+      "id": "D-43",
+      "severity": "P1",
+      "status": "CLOSED",
+      "titre": "run_reading acceptait tout rôle : BASELINE produisait silencieusement une lecture de copie avec le modèle de vérification",
+      "test": "test_une_lecture_avec_un_role_inconnu_est_refusee"
+    },
+    {
+      "id": "D-44",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "documentation annonçant encore Opus 4.8 comme défaut VERIFY, et exemple de benchmark suggérant un modèle refusé par la politique",
+      "test": "grep — docs/OCR_TRANSCRIPTION_PIPELINE.md et tools/ocr_benchmark.py"
+    },
+    {
+      "id": "D-45",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "la porte live ne distinguait pas refus de politique, indisponibilité, paramètre non géré et panne réseau",
+      "test": "test_les_causes_de_refus_sont_distinguees"
+    },
+    {
+      "id": "D-46",
+      "severity": "P2",
+      "status": "CLOSED",
+      "titre": "documentation opérationnelle présentant encore le CLI comme voie principale, alors que le téléversement web est canonique",
+      "test": "docs/OPERATIONS_TODAY.md — séquence unique"
+    },
+    {
+      "id": "D-47",
+      "severity": "P3",
+      "status": "CLOSED",
+      "titre": "@app.on_event déprécié par FastAPI — seul avertissement de dépréciation provenant du code S5 ; remplacé par un gestionnaire de cycle de vie",
+      "test": "aucun avertissement S5 dans la suite ; les deux restants sont externes (websockets/uvicorn)"
+    }
+  ],
+  "limitations": [
+    {
+      "id": "L-02",
+      "blocking": false,
+      "titre": "qualité de lecture manuscrite non mesurée",
+      "pourquoi_non_bloquant": "intrinsèque : elle exige une copie manuscrite réelle et une transcription humaine de référence, qui n'existent pas encore. Aucune métrique n'est fabriquée en attendant.",
+      "leve_par": "benchmark sur la copie d'Inès, après ingestion et revue"
+    },
+    {
+      "id": "L-03",
+      "blocking": false,
+      "titre": "authentification par HTTP Basic, sans session ni déconnexion",
+      "pourquoi_non_bloquant": "suffisant pour un poste mono-opérateur : le secret n'est pas stocké côté serveur, il n'y a pas de session à voler, et le navigateur l'oublie à la fermeture. Une session serait nécessaire pour plusieurs opérateurs distincts.",
+      "leve_par": "session signée, si le produit devient multi-opérateur"
+    },
+    {
+      "id": "L-04",
+      "blocking": false,
+      "titre": "navigateur éprouvé : Chromium seulement",
+      "pourquoi_non_bloquant": "l'application est servie sur un poste dont le navigateur est connu ; le parcours n'emploie aucune API récente ni préfixée.",
+      "leve_par": "ajout de Firefox et WebKit au profil de développement"
+    },
+    {
+      "id": "L-01",
+      "blocking": false,
+      "titre": "porte live non rejouée dans CET environnement (clé absente)",
+      "pourquoi_non_bloquant": "la porte existe, s'exécute et enregistre son résultat ; PILOT_SOFTWARE_READY la lit et vaut NO tant qu'elle n'a pas réussi. Rien n'est déclaré à sa place.",
+      "leve_par": "make s5-ocr-live-gate, avec la clé dans l'environnement"
+    },
+    {
+      "id": "L-05",
+      "blocking": false,
+      "titre": "modèles refusés par la politique au dernier test live : claude-opus-4.8, qwen3-vl-32b-instruct, gpt-5.4-mini, mistral-medium-3.1",
+      "pourquoi_non_bloquant": "observation datée, pas un jugement de qualité ni une vérité durable. Deux modèles compatibles suffisent au pilote ; les autres restent candidats du benchmark.",
+      "leve_par": "réexécution du benchmark sur le catalogue du jour"
+    },
+    {
+      "id": "L-06",
+      "blocking": false,
+      "titre": "deux DeprecationWarning externes : websockets.legacy et uvicorn.protocols.websockets",
+      "pourquoi_non_bloquant": "aucun code S5 n'en est responsable, et S5 n'emploie pas de WebSocket ; ils disparaîtront avec la mise à jour d'uvicorn.",
+      "leve_par": "mise à jour d'uvicorn/websockets"
+    }
+  ]
+}

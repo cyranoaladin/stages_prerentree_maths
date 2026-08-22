@@ -6,7 +6,6 @@ référence de comportement. Sur une même saisie, le score brut, la consolidati
 disponibilité sur les passerelles et le profil d'erreurs doivent coïncider.
 """
 
-import json
 import sys
 from pathlib import Path
 

@@ -12,7 +12,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import config, database                          # noqa: E402
+from app import database                          # noqa: E402
 from app.domain import immutability, importer             # noqa: E402
 
 

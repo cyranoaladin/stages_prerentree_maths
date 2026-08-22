@@ -3,7 +3,6 @@
 
 import json
 
-import pytest
 
 from app import database
 from app.models import Assessment
@@ -86,7 +85,7 @@ def test_une_correction_incomplete_ne_peut_pas_etre_validee(client):
 def test_une_erreur_reste_sur_le_critere_echoue(client):
     """Deux critères dans un item : le code ne touche que celui qui a échoué."""
     student = "selim-mansouri"
-    rows = fill(client, student)
+    fill(client, student)      # effet de bord : la copie est remplie
     cible = "3E_SELIM_MANSOURI_B4_c2"
     voisin = "3E_SELIM_MANSOURI_B4_c1"
     assert client.post("/eleve/%s/critere/%s" % (student, cible),

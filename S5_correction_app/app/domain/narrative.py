@@ -16,7 +16,6 @@ Interdits tenus par construction, et vérifiés par les tests :
 import os
 from typing import List, Tuple
 
-from . import points
 
 Block = Tuple[str, str, str]          # (clé, titre, contenu)
 

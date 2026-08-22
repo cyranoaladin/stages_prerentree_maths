@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """Analyse : séparation des deux décomptes, force de preuve, absence de faux delta."""
 
-import pytest
 
 from app import database
-from app.models import Assessment, CriterionDefinition
+from app.models import Assessment
 from app.domain import action_plan
 from app.domain import analysis as ana
 from app.domain import correction as corr

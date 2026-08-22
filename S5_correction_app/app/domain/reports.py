@@ -73,6 +73,50 @@ _LATEX_ESCAPES = {
     "^": r"\textasciicircum{}",
 }
 
+# Caractères typographiques que le moteur refuse. Cette table n'est pas devinée :
+# elle vient d'un relevé de **tous** les caractères non-ASCII présents dans les
+# manifestes et les profils du corpus, chacun soumis à une compilation d'essai avec
+# la feuille de style du projet. Les autres — « » ° ² ³ × ÷ — passent sans
+# conversion et ne sont donc pas touchés.
+_UNICODE_REFUSE = {
+    "\u2212": "-",            # signe moins, distinct du trait d'union (106 occurrences)
+    "\u222a": r"$\cup$",      # union
+    "\u2229": r"$\cap$",      # intersection, par symétrie
+    "\u2265": r"$\geq$",
+    "\u2264": r"$\leq$",
+    "\u2260": r"$\neq$",
+    "\u2074": r"$^{4}$",
+    "\u2075": r"$^{5}$",
+    "\u207b": r"$^{-}$",       # exposant moins
+    "\u2032": r"$'$",
+}
+
+# Catégories Unicode des caractères qui risquent de ne pas être définis : symboles
+# mathématiques, symboles modificateurs, autres symboles, et « autres nombres »
+# (exposants, fractions). Les lettres accentuées et la ponctuation courante n'en
+# font pas partie et traversent intactes.
+_CATEGORIES_A_RISQUE = ("Sm", "Sk", "So", "No")
+
+# Caractères de ces catégories dont on a vérifié qu'ils compilent.
+_UNICODE_ACCEPTE = set("°²³×÷")
+
+
+def _neutraliser(char: str) -> str:
+    """Dernier recours pour un caractère non prévu.
+
+    Un glyphe inconnu ne doit jamais faire échouer la production d'un bilan. On
+    tente d'abord sa décomposition en ASCII ; à défaut, on le retire. Perdre un
+    symbole exotique est préférable à perdre le document.
+    """
+    import unicodedata
+    if ord(char) < 128 or char in _UNICODE_ACCEPTE:
+        return char
+    if unicodedata.category(char) not in _CATEGORIES_A_RISQUE:
+        return char
+    decompose = unicodedata.normalize("NFKD", char)
+    ascii_seul = "".join(c for c in decompose if ord(c) < 128)
+    return ascii_seul
+
 
 def latex_escape(value) -> str:
     """Aucun texte saisi par un humain n'atteint LaTeX sans passer par ici."""
@@ -81,7 +125,12 @@ def latex_escape(value) -> str:
     text = str(value)
     out = []
     for char in text:
-        out.append(_LATEX_ESCAPES.get(char, char))
+        if char in _LATEX_ESCAPES:
+            out.append(_LATEX_ESCAPES[char])
+        elif char in _UNICODE_REFUSE:
+            out.append(_UNICODE_REFUSE[char])
+        else:
+            out.append(_neutraliser(char))
     text = "".join(out)
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r"\n{2,}", r"\\par ", text)
@@ -99,6 +148,8 @@ def _environment() -> Environment:
         autoescape=False, undefined=StrictUndefined,
     )
     env.filters["esc"] = latex_escape
+    env.filters["esc_id"] = latex_id
+    env.filters["esc_ped"] = latex_pedagogique
     return env
 
 
@@ -110,8 +161,9 @@ def _context(session, assessment, correction, analysis, plan, delayed):
     subject_phrase = ("mathématiques" if assessment.subject.lower().startswith("math")
                       else assessment.subject)
     observations = []
+    stored = json.loads(correction.general_observations_json or "{}")
     for key, label in corr.GENERAL_OBSERVATION_FIELDS:
-        value = json.loads(correction.general_observations_json or "{}").get(key)
+        value = corr.observation_text(stored.get(key))
         if value:
             observations.append({"key": key, "label": label, "value": value})
     return {
@@ -243,6 +295,87 @@ def _scope_badge(scope):
             "mixed": "[MIXTE]"}.get(scope, "[?]")
 
 
+def _scope_court(scope):
+    """Forme brève, pour les colonnes de tableau.
+
+    « [PASSERELLE N] » mesure près de trois centimètres : dans un tableau à six
+    colonnes, il pousse l'ensemble au-delà du bloc de texte. La forme brève tient
+    dans une colonne étroite, et la légende du tableau rappelle le sens.
+    """
+    return {"n_minus_1": "N--1", "bridge_n": "Pass.", "mixed": "Mixte"}.get(scope, "?")
+
+
+# Macros pédagogiques du corpus, et leur équivalent LaTeX. Le rendu web les
+# traduit déjà en HTML ; sans leur pendant ici, elles s'affichaient telles quelles
+# dans la synthèse enseignant — « \\code{return} » au lieu de « return ».
+_MACROS_PEDAGOGIQUES = {"code": "texttt", "textbf": "textbf", "emph": "emph"}
+
+
+def _decouper_macros(texte):
+    """Découpe un texte en segments (texte simple, ou macro et son contenu).
+
+    Retourne une liste de tuples ``(commande_ou_None, contenu)``. Les accolades
+    imbriquées sont respectées : le corpus contient des arguments comme
+    ``\\code{mesures = [{"id": "C01"}]}``.
+    """
+    segments, position = [], 0
+    while position < len(texte):
+        debut, nom = None, None
+        for macro in _MACROS_PEDAGOGIQUES:
+            trouve = texte.find("\\" + macro + "{", position)
+            if trouve >= 0 and (debut is None or trouve < debut):
+                debut, nom = trouve, macro
+        if debut is None:
+            segments.append((None, texte[position:]))
+            return segments
+        if debut > position:
+            segments.append((None, texte[position:debut]))
+        curseur = debut + len(nom) + 2
+        profondeur = 1
+        while curseur < len(texte) and profondeur:
+            if texte[curseur] == "{":
+                profondeur += 1
+            elif texte[curseur] == "}":
+                profondeur -= 1
+            curseur += 1
+        if profondeur:                       # accolade non refermée : on n'invente rien
+            segments.append((None, texte[debut:]))
+            return segments
+        segments.append((_MACROS_PEDAGOGIQUES[nom],
+                         texte[debut + len(nom) + 2:curseur - 1]))
+        position = curseur
+    return segments
+
+
+def latex_pedagogique(value) -> str:
+    """Échappe un texte du référentiel en traduisant ses macros connues.
+
+    Le contenu de chaque macro est échappé comme le reste du texte : seule
+    l'enveloppe devient une commande LaTeX, et elle provient d'une liste fermée.
+    """
+    if value is None:
+        return ""
+    morceaux = []
+    for commande, contenu in _decouper_macros(str(value)):
+        if commande is None:
+            morceaux.append(latex_escape(contenu))
+        else:
+            morceaux.append("\\%s{%s}" % (commande, latex_escape(contenu)))
+    return "".join(morceaux)
+
+
+def latex_id(value) -> str:
+    """Échappe un identifiant technique en autorisant sa coupure.
+
+    Un identifiant comme ``M1RE_SUITES_RECURRENCE_BRIDGE`` n'offre aucun point de
+    césure : dans une colonne ``p{}``, il déborde du tableau au lieu de passer à la
+    ligne. On insère une possibilité de coupure après chaque souligné.
+    """
+    if value is None:
+        return ""
+    return latex_escape(str(value)).replace(r"\_", r"\_\allowbreak{}")
+
+
 def _error_rows(analysis):
     n1 = list(analysis["error_profile"]["n_minus_1"].items())
     br = list(analysis["error_profile"]["bridge_n"].items())
@@ -296,7 +429,8 @@ def render_tex(report: Report, assessment, analysis, plan) -> str:
                     for o in _observations_of(report, assessment)]
     return template.render(
         h=header, a=analysis, plan=plan, blocks=blocks,
-        pct=_pct, scope_badge=_scope_badge, centi=points.format_fr,
+        pct=_pct, scope_badge=_scope_badge, scope_court=_scope_court,
+        centi=points.format_fr,
         error_rows=_error_rows(analysis), domain_table=_domain_table(analysis),
         observations=observations)
 
@@ -307,8 +441,12 @@ def _observations_of(report, assessment):
     if correction is None:
         return []
     data = json.loads(correction.general_observations_json or "{}")
-    return [{"label": label, "value": data[key]}
-            for key, label in corr.GENERAL_OBSERVATION_FIELDS if data.get(key)]
+    rows = []
+    for key, label in corr.GENERAL_OBSERVATION_FIELDS:
+        text = corr.observation_text(data.get(key))
+        if text:
+            rows.append({"label": label, "value": text})
+    return rows
 
 
 # -------------------------------------------------------------- compilation

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Mise en service — {{ APP_NAME }}{% endblock %}
+{% block content %}
+
+<header class="topbar">
+  <div><h1>Mise en service</h1>
+    <div class="small muted">État du système — version {{ app_version }}</div></div>
+  <div class="spacer"></div>
+  <a class="btn btn-sm" href="/admin">Administration</a>
+  <a class="btn btn-sm" href="/">Tableau de bord</a>
+</header>
+
+{% if readonly %}
+<div class="banner banner-danger">
+  <strong>Application en lecture seule.</strong> {{ readonly_reason }}
+</div>
+{% endif %}
+
+<div class="pane-grid">
+  <table class="grid">
+    <thead><tr><th>Contrôle</th><th>État</th><th>Détail</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Application</td>
+        <td>{% if not readonly %}<span class="badge st-VALIDATED">prête</span>
+            {% else %}<span class="badge st-BLOCKED">lecture seule</span>{% endif %}</td>
+        <td class="small">version {{ app_version }}</td>
+      </tr>
+      <tr>
+        <td>Référentiel</td>
+        <td>{{ referentiel.students }} / 15</td>
+        <td class="small">{{ referentiel.assessments }} évaluations définies</td>
+      </tr>
+      <tr>
+        <td>Immutabilité des documents distribués</td>
+        <td>{{ immutability.total }} / 60</td>
+        <td class="small">
+          {{ immutability.changed }} modifié(s), {{ immutability.missing }} manquant(s)
+          — verdict {{ immutability.verdict }}</td>
+      </tr>
+      <tr>
+        <td>Préparation longitudinale</td>
+        <td>{{ readiness.total - readiness.blocked }} / {{ readiness.total }}</td>
+        <td class="small">
+          {{ readiness.ready }} prêt(s) ·
+          {{ readiness.ready_with_warning }} avec réserve documentaire ·
+          {{ readiness.blocked }} bloqué(s)</td>
+      </tr>
+      <tr>
+        <td>Corrections réelles en base</td>
+        <td>{{ real_corrections }}</td>
+        <td class="small">
+          {% if real_corrections == 0 %}aucune saisie : le premier pilote n'a pas commencé
+          {% else %}la réinitialisation destructrice est désormais refusée{% endif %}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <details class="key" open>
+    <summary>Préparation, élève par élève</summary>
+    <div class="key-body">
+      <table class="grid">
+        <thead><tr><th>Élève</th><th>Niveau</th><th>Évaluation</th>
+                   <th>Statut</th><th class="num">Réserves</th></tr></thead>
+        <tbody>
+        {% for ligne in readiness_rows %}
+          <tr>
+            <td class="small">{{ ligne.display_name }}</td>
+            <td class="small">{{ ligne.level_label }}</td>
+            <td class="small">
+              {% if ligne.final_assessment and ligne.final_assessment.defined %}
+              {{ ligne.final_assessment.scoring_lines }} lignes
+              {% else %}<span class="muted">absente</span>{% endif %}</td>
+            <td class="small long-{{ ligne.status }}">{{ ligne.status }}</td>
+            <td class="num small">{{ ligne.longitudinal_report.warnings|length }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small muted">Une réserve documentaire ne bloque rien : elle sera écrite
+        dans le bilan produit, sous forme de limite d'interprétation.</p>
+    </div>
+  </details>
+</div>
+{% endblock %}

@@ -1,0 +1,204 @@
+\#{ Bilan longitudinal de fin de stage — document destiné aux familles.
+
+    Cinq pages, dont la logique editoriale est stable :
+      1. identite, l'essentiel, objectifs, situation de depart ;
+      2. trajectoire S1 a S5 et fil conducteur ;
+      3. bilan par domaines, evaluation de cloture, N-1 et passerelles ;
+      4. points forts, points a consolider, reussites a confirmer ;
+      5. plan des quatre semaines ;
+      6. priorites de rentree, conseil et limites d'interpretation.
+
+    Le plan occupe une page entiere des que l'eleve cumule plusieurs priorites :
+    c'est la partie que la famille utilisera, et la comprimer serait la trahir.
+    Le document fait donc six pages, la derniere portant la cloture — priorites,
+    conseil, limites. La cible annoncee est de quatre a cinq pages ; l'ecart est
+    documente dans FINAL_REPORT_PDF_QA.md plutot que masque.
+
+    Aucun identifiant technique n'y figure : ni competence, ni critere, ni
+    vocabulaire du moteur d'analyse. Aucune progression chiffree non plus — le
+    diagnostic initial etait qualitatif, aucun ecart ne peut etre calcule.
+
+    Les largeurs de colonnes sont explicites et leur somme verifiee : le bloc de
+    texte fait 178 mm, et un tableau qui deborde n'est pas rattrapable a la lecture. }
+\documentclass[11pt,a4paper]{article}
+\usepackage{nexus_bilan}
+
+\setnexusheader{\VAR{ student_name|esc } — bilan de fin de stage}{Nexus Réussite — document confidentiel}
+
+\hypersetup{pdftitle={Bilan individuel de fin de stage — \VAR{ student_name|esc }},
+            pdfauthor={Nexus Réussite},
+            pdfsubject={Stage de pré-rentrée \VAR{ school_year|esc } — \VAR{ level_label|esc }, \VAR{ subject|esc }},
+            pdfcreator={Nexus Réussite — bilan longitudinal}}
+
+\begin{document}
+
+\bilancover{BILAN INDIVIDUEL DE FIN DE STAGE}{Pré-rentrée \VAR{ school_year|esc }}%
+{\VAR{ student_name|esc }}{\VAR{ level_label|esc } — \VAR{ subject|esc }}%
+{5 séances — 10 heures}
+
+\#{ ---------------------------------------------------------------- page 1 }
+\sectiontitle{L'essentiel}
+\VAR{ blocks.essentiel|esc }
+
+\subsectiontitle{Objectifs du stage}
+\VAR{ blocks.objectifs_stage|esc }
+
+\subsectiontitle{Situation de départ}
+\VAR{ blocks.situation_depart|esc }
+
+\newpage
+\#{ ---------------------------------------------------------------- page 2 }
+\sectiontitle{La trajectoire du stage}
+
+\subsectiontitle{Fil conducteur}
+\VAR{ blocks.fil_conducteur|esc }
+
+\vspace{2mm}
+\#{ 16 + 62 + 88 = 166 mm, filets compris on reste sous 178 mm. }
+\begin{tabularx}{\linewidth}{@{}p{14mm} p{60mm} X@{}}
+\toprule
+\textbf{Séance} & \textbf{Axe principal} & \textbf{Objectif personnalisé} \\
+\midrule
+%%# for seance in sessions
+\VAR{ seance.session|esc } & \VAR{ (seance.theme or "—")|esc } & \VAR{ (seance.personal_focus or "—")|esc } \\
+%%# endfor
+\bottomrule
+\end{tabularx}
+
+\vspace{2mm}
+{\small\color{TextGray}\VAR{ blocks.travail_realise|esc }}
+
+\newpage
+\#{ ---------------------------------------------------------------- page 3 }
+\sectiontitle{Bilan par domaines}
+
+\begin{tabularx}{\linewidth}{@{}p{32mm} p{30mm} p{32mm} X@{}}
+\toprule
+\textbf{Domaine} & \textbf{Au départ} & \textbf{Travail réalisé} & \textbf{État observé en fin de stage} \\
+\midrule
+%%# for domaine in domains
+\VAR{ domaine.domain|esc } & \VAR{ domaine.initial_label|esc } & \VAR{ domaine.coverage_label|esc } & \VAR{ domaine.final_label|esc } \\
+%%# endfor
+\bottomrule
+\end{tabularx}
+
+\vspace{1.5mm}
+{\footnotesize\color{TextGray}La colonne « travail réalisé » décrit ce qui a été
+proposé pendant le stage. Elle ne dit rien de la réussite : c'est l'objet de la
+dernière colonne, et seules les compétences réellement évaluées y figurent.}
+
+\sectiontitle{L'évaluation de clôture}
+
+\subsectiontitle{Score brut}
+\VAR{ blocks.score_brut|esc }
+
+\subsectiontitle{Consolidation des prérequis}
+\VAR{ blocks.consolidation|esc }
+
+\vspace{1mm}
+\begin{tcolorbox}[enhanced,colback=SoftGold,colframe=Gold,boxrule=0.4pt,arc=1.5mm,
+left=3mm,right=3mm,top=2mm,bottom=2mm]
+{\color{Navy}\bfseries Premières passerelles vers l'année suivante}\par\vspace{1mm}
+\VAR{ blocks.passerelles|esc }
+\end{tcolorbox}
+
+\newpage
+\#{ ---------------------------------------------------------------- page 4 }
+\sectiontitle{Ce que l'évaluation établit}
+
+%%# if lists.points_forts
+\subsectiontitle{Points forts actuels}
+\begin{itemize}[leftmargin=4mm,itemsep=1.2mm]
+%%# for ligne in lists.points_forts
+\item \VAR{ ligne|esc }
+%%# endfor
+\end{itemize}
+%%# endif
+
+%%# if lists.points_consolider
+\subsectiontitle{Points à consolider}
+\begin{itemize}[leftmargin=4mm,itemsep=1.2mm]
+%%# for ligne in lists.points_consolider
+\item \VAR{ ligne|esc }
+%%# endfor
+\end{itemize}
+%%# endif
+
+%%# if lists.a_confirmer
+\subsectiontitle{Réussites à confirmer dans la durée}
+\begin{itemize}[leftmargin=4mm,itemsep=1.2mm]
+%%# for ligne in lists.a_confirmer
+\item \VAR{ ligne|esc }
+%%# endfor
+\end{itemize}
+%%# endif
+
+%%# if lists.non_evaluees
+\subsectiontitle{Notions travaillées que l'évaluation ne mesure pas}
+\begin{itemize}[leftmargin=4mm,itemsep=1.2mm]
+%%# for ligne in lists.non_evaluees
+\item \VAR{ ligne|esc }
+%%# endfor
+\end{itemize}
+%%# endif
+
+\newpage
+\#{ ---------------------------------------------------------------- page 5 }
+\sectiontitle{Plan de travail — 4 premières semaines}
+
+{\small\color{TextGray}\VAR{ plan_mode_note|esc }}
+
+\vspace{2mm}
+\#{ Un seul tableau plutot que quatre : quatre en-tetes repetes consommaient une
+    page entiere, et le parent lit mieux une grille continue. L'en-tete se repete
+    si le tableau franchit une page. 14+46+38+22+40 = 160 mm. }
+\#{ Trois colonnes, et une ligne d'en-tete pleine largeur par semaine.
+
+    Deux variantes ont ete essayees et rejetees : loger l'intention dans une
+    colonne de 14 mm la brisait en huit lignes d'un mot, et une quatrieme colonne
+    « Rythme » de 22 mm multipliait les retours a la ligne sans rien apporter — le
+    rythme tient en cinq mots et se lit tres bien a la suite du travail.
+
+    56 + 54 + 48 = 158 mm, sous les 178 mm du bloc de texte. }
+{\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{56mm} >{\raggedright\arraybackslash}p{54mm} >{\raggedright\arraybackslash}p{48mm}@{}}
+\toprule
+\textbf{Objectif} & \textbf{Travail et rythme} & \textbf{Critère de réussite} \\
+\midrule
+\endhead
+%%# for semaine in weeks
+\multicolumn{3}{@{}l}{\rule{0pt}{4.2mm}\textbf{\color{Navy}Semaine \VAR{ semaine.week }} — \VAR{ semaine.intention|esc }} \\[0.6mm]
+%%# if semaine.objectives
+%%# for objectif in semaine.objectives
+\VAR{ objectif.objective|esc }\VAR{ '~\\textbf{(vérification différée)}' if objectif.is_delayed_check else '' } & \VAR{ objectif.work|esc }\newline{\color{TextGray}\VAR{ objectif.frequency|esc }} & \VAR{ objectif.success_threshold|esc } \\
+%%# endfor
+%%# else
+\multicolumn{3}{@{}l}{\small\color{TextGray}Aucun objectif spécifique cette semaine.} \\
+%%# endif
+\addlinespace[1.4mm]
+%%# endfor
+\bottomrule
+\end{longtable}}
+
+%%# if priorities
+\sectiontitle{Priorités de rentrée}
+\begin{enumerate}[leftmargin=6mm,itemsep=1.2mm]
+%%# for priorite in priorities
+\item \VAR{ priorite|esc }
+%%# endfor
+\end{enumerate}
+%%# endif
+
+\sectiontitle{Conseil Nexus Réussite}
+\VAR{ blocks.conseil|esc }
+
+%%# if limits
+\vspace{2mm}
+{\footnotesize\color{TextGray}\textbf{Ce que ce bilan ne permet pas d'affirmer.}
+%%# for limite in limits
+\VAR{ limite|esc }.
+%%# endfor
+}
+%%# endif
+
+\end{document}

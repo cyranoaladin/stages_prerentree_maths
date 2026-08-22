@@ -96,7 +96,6 @@ def test_l_historique_conserve_les_evenements(client):
 
 
 def test_aucune_ressource_distante_n_est_referencee(client):
-    from pathlib import Path
     from app import config
     pages = [client.get(u).text for u in ("/", "/eleve/ines-kefi", "/groupe", "/admin")]
     assets = [(config.STATIC_DIR / name).read_text(encoding="utf-8")

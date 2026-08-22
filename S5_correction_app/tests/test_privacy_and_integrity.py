@@ -6,9 +6,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-import pytest
 
-from app import config, database
+from app import config
 from app.domain import immutability
 from conftest import fill
 
@@ -85,10 +84,23 @@ def test_l_application_ecoute_la_boucle_locale_par_defaut():
 
 
 def test_le_mode_reseau_exige_un_mot_de_passe(monkeypatch):
-    from app import cli
+    """L'exposition réseau exige un mot de passe, quel que soit le mode déclaré.
+
+    « S5_DATA_MODE » est une déclaration d'opérateur : une erreur de déclaration ne
+    doit pas suffire à ouvrir un serveur sans authentification sur toutes les
+    interfaces.
+    """
+    from app import cli, config
+    monkeypatch.setattr(config.settings, "data_mode", "SYNTHETIC")
     monkeypatch.delenv("NEXUS_S5_PASSWORD", raising=False)
     assert cli.main(["serve", "--allow-network"]) == 2
     monkeypatch.setenv("NEXUS_S5_PASSWORD", "court")
+    assert cli.main(["serve", "--allow-network"]) == 2
+    # Et même avec un mot de passe suffisant : pas de réseau en clair sans TLS
+    # lorsque des données réelles sont déclarées.
+    monkeypatch.setattr(config.settings, "data_mode", "REAL")
+    monkeypatch.setenv("NEXUS_S5_PASSWORD", "un-mot-de-passe-assez-long")
+    monkeypatch.setattr(config, "TRUSTED_PROXY_TLS", False)
     assert cli.main(["serve", "--allow-network"]) == 2
 
 

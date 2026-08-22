@@ -3,7 +3,6 @@
 
 from app.models import (Assessment, CriterionDefinition, ItemDefinition, Person, Student,
                         VirtualCriterionDefinition)
-from app.domain import points
 
 
 def test_quinze_couples_eleve_matiere(session):
@@ -24,7 +23,10 @@ def test_le_nom_n_est_pas_une_cle(session):
 def test_le_referentiel_importe_est_complet(session):
     assert session.query(ItemDefinition).count() == 180
     assert session.query(CriterionDefinition).count() == 337
-    assert session.query(VirtualCriterionDefinition).count() == 6
+    # 6 sous-critères issus de la couche V3, plus 2 créés par la revue curriculaire
+    # d'Inès sur A3 — voir docs/INES_CURRICULUM_MATRIX.md. Le nombre de critères
+    # imprimés, lui, ne bouge pas : c'est ce que garantit la ligne précédente.
+    assert session.query(VirtualCriterionDefinition).count() == 8
 
 
 def test_chaque_critere_porte_un_scope(session):
@@ -35,13 +37,25 @@ def test_chaque_critere_porte_un_scope(session):
 
 
 def test_un_critere_mixte_est_eclate_a_somme_constante(session):
+    """L'invariant porte sur chaque critère mixte, quel qu'en soit le nombre.
+
+    Le compte est passé de 3 à 4 lorsque la revue curriculaire d'Inès a déclaré mixte
+    la réduction de A3. C'est la garantie — somme constante, aucune duplication — qui
+    doit tenir, pas un effectif figé : elle est donc vérifiée sur tous les mixtes, et
+    le total des points de chaque évaluation est contrôlé en plus.
+    """
     mixtes = session.query(CriterionDefinition).filter_by(curriculum_scope="mixed").all()
-    assert len(mixtes) == 3
+    assert len(mixtes) >= 3
+    vus = set()
     for crit in mixtes:
         parts = crit.virtual_parts
         assert len(parts) >= 2
         assert sum(p.max_score_centi for p in parts) == crit.max_score_centi
         assert {p.curriculum_scope for p in parts} <= {"n_minus_1", "bridge_n"}
+        for part in parts:
+            assert part.virtual_criterion_id not in vus, "sous-critère dupliqué"
+            vus.add(part.virtual_criterion_id)
+        assert crit.criterion_id not in vus, "le critère mixte ne se note pas lui-même"
 
 
 def test_les_deux_pools_recomposent_vingt_points(session):

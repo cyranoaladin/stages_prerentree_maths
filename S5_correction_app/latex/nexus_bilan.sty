@@ -70,14 +70,18 @@
 \newcommand{\minititle}[1]{\par\needspace{6mm}{\color{Purple}\normalsize\bfseries #1}\par\vspace{0.6mm}}
 
 %% ------------------------------------------------------------- page de garde
+%% Le \par doit se trouver A L'INTERIEUR du groupe de taille : sinon le
+%% paragraphe est compose avec l'interligne de la taille courante et non celle du
+%% \Huge, et un titre sur deux lignes voit ses lignes se toucher. Le \raggedright
+%% evite en outre une premiere ligne etiree par la justification.
 \newcommand{\bilancover}[5]{%
 \begin{tcolorbox}[enhanced,colback=Navy,colframe=Navy,boxrule=0pt,arc=2.5mm,
 left=6mm,right=6mm,top=5mm,bottom=5mm]
-{\color{white}\Huge\bfseries #1}\par\vspace{2.5mm}
-{\color{SoftGold}\Large #2}\par\vspace{1.5mm}
-{\color{white}\large #3}\par\vspace{1mm}
-{\color{SoftBlue}\normalsize #4}\par\vspace{0.6mm}
-{\color{SoftBlue}\small #5}
+{\color{white}\LARGE\bfseries\raggedright #1\par}\vspace{2.5mm}
+{\color{SoftGold}\large\raggedright #2\par}\vspace{1.5mm}
+{\color{white}\large\raggedright #3\par}\vspace{1mm}
+{\color{SoftBlue}\normalsize\raggedright #4\par}\vspace{0.6mm}
+{\color{SoftBlue}\small\raggedright #5\par}
 \end{tcolorbox}\par\vspace{3mm}}
 
 %% ------------------------------------------------------------------ badges

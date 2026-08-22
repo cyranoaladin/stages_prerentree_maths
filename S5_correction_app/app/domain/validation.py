@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from typing import List
 
 from . import correction as corr
-from . import immutability, points
+from . import immutability, points, source_copy
 
 
 @dataclass
@@ -19,6 +19,22 @@ class Problem:
     message: str
     item_ref: str = None
     scoring_id: str = None
+
+    @property
+    def group_ref(self) -> str:
+        """Clé de regroupement toujours comparable.
+
+        Tous les problèmes ne relèvent pas d'un item du sujet : une empreinte de
+        document qui a bougé, un total incohérent, une copie source manquante n'ont
+        pas de référence. Trier un mélange de ``None`` et de chaînes lève une
+        ``TypeError`` ; la chaîne vide se trie, et l'affichage la rend par « hors item ».
+        """
+        return self.item_ref or ""
+
+
+# Désignation lisible des périmètres curriculaires, pour les messages destinés à
+# l'enseignant. « n_minus_1 » et « bridge_n » sont des clés techniques.
+SCOPE_LABELS = {"n_minus_1": "N−1", "bridge_n": "passerelle N", "mixed": "mixte"}
 
 
 def validate(session, correction, assessment) -> List[Problem]:
@@ -41,9 +57,20 @@ def validate(session, correction, assessment) -> List[Problem]:
         meta = expected.get(scoring_id)
         ref = meta["item_ref"] if meta else None
         if row.scoring_status == "PENDING":
-            problems.append(Problem("non_saisi",
-                                    "item %s : le critère %s n'est pas corrigé"
-                                    % (ref or "?", scoring_id), ref, scoring_id))
+            # Un sous-critère analytique n'existe pas sur le sujet distribué : il
+            # provient de l'éclatement d'un critère mixte. Le nommer par son
+            # identifiant brut (« ..._v2 ») laisserait croire que le sujet papier
+            # comportait une question de plus. On le désigne donc par son scope et
+            # son libellé, sous la référence de l'item dont il relève.
+            if meta and meta.get("is_virtual"):
+                message = ("sous-critère analytique %s — %s : non renseigné"
+                           % (SCOPE_LABELS.get(meta["curriculum_scope"],
+                                               meta["curriculum_scope"]),
+                              meta["description"]))
+            else:
+                message = "item %s : le critère %s n'est pas corrigé" % (ref or "?",
+                                                                         scoring_id)
+            problems.append(Problem("non_saisi", message, ref, scoring_id))
             continue
         if row.scoring_status == "NEUTRALISED":
             if not (row.observation or "").strip():
@@ -111,6 +138,12 @@ def validate(session, correction, assessment) -> List[Problem]:
 
     for message in immutability.check_assessment(assessment):
         problems.append(Problem("immutabilite", message))
+
+    # En mode copie numérisée, une correction sans pièce source vérifiée n'est pas
+    # validable : rien ne permettrait plus tard de dire ce qui a été observé. En
+    # mode humain, cette liste est vide et le comportement historique est inchangé.
+    for message in source_copy.guard(session, assessment):
+        problems.append(Problem("copie_source", message))
 
     for item in assessment.items:
         obs = next((o for o in correction.item_observations if o.item_id == item.item_id), None)

@@ -96,6 +96,8 @@ c'est elle qui est utilisée.
 | `docs/REPORT_GENERATION.md` | blocs, provenance, LaTeX, PDF |
 | `docs/PRIVACY_SECURITY.md` | données, réseau, chemins, sous-processus |
 | `docs/OPERATIONS_RUNBOOK.md` | démarrer, sauvegarder, restaurer, dépanner |
+| `docs/SOURCE_COPY_PROVENANCE.md` | copie réelle : rattachement, empreintes, immutabilité |
+| `docs/OCR_TRANSCRIPTION_PIPELINE.md` | téléversement, lecture assistée, revue humaine |
 | `docs/PILOT_REAL_COPY_VALIDATION.md` | validation sur la première copie réelle |
 | `docs/TEST_REPORT.md` | ce qui est testé, et ce qui ne l'est pas |
 | `docs/QA_FINAL.md` | portes de qualité et verdicts |

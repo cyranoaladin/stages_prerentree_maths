@@ -92,6 +92,30 @@ C'est volontaire : les corpus de critères diffèrent d'un élève à l'autre, u
 classe n'aurait pas de sens, et le tableau porte l'avertissement. Mais un enseignant
 pourrait souhaiter une lecture par compétence à l'échelle du groupe. Elle n'existe pas.
 
+## 11. La revue curriculaire ne couvre qu'Inès KEFI
+
+**Portée** : les 315 critères des 14 autres élèves.
+
+La passe corrective du 21 août a établi, contre les attendus officiels, que développer
+`k(a − b)` est un attendu de Quatrième et non de Cinquième. Pour Inès, cela a fait passer
+`B2_c1` et `B2_c2` en passerelle et `A3_c1` en mixte. **`A3` et `B2` sont des items du
+noyau commun de Quatrième** : Fares DARGHOUTH et Sinda CHIKHAOUI ont exactement les mêmes.
+Leur classement n'a pas été modifié, la mission l'interdisant, mais la question est
+ouverte. Voir `FUTURE_CURRICULUM_REVIEW.md`.
+
+Les autres élèves portent par ailleurs encore la justification générée automatiquement
+« aucune notion du programme de l'année N n'est requise », qui est une affirmation et non
+une source.
+
+## 12. Rubriques et suggestions limitées aux 22 critères d'Inès
+
+**Portée** : les 315 autres critères.
+
+Ils conservent l'échelle de score arithmétique — sans règle d'attribution — et affichent
+encore les erreurs probables de l'item sous chacun de leurs critères. Le mécanisme est en
+place et générique (`app/data/criterion_overlays.py`) ; seul le contenu manque, et il ne
+peut être écrit qu'élève par élève.
+
 ## Ce qui n'est pas une dette
 
 - l'absence de progression chiffrée : c'est une décision scientifique, documentée ;

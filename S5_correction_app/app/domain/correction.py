@@ -16,8 +16,7 @@ import json
 
 from sqlalchemy import select
 
-from ..models import (Assessment, AuditEvent, Correction, CriterionDefinition,
-                      CriterionResponse, ItemDefinition, ItemObservation)
+from ..models import (Assessment, AuditEvent, Correction, CriterionResponse, ItemDefinition, ItemObservation)
 from . import points
 
 # Codes d'erreur du référentiel S5. La liste est fermée : un code inconnu est refusé.
@@ -58,15 +57,35 @@ STATUS_LABELS = {
     "REPORT_APPROVED": "Bilan approuvé",
 }
 
-GENERAL_OBSERVATION_FIELDS = (
-    ("autonomie", "Autonomie observée"),
-    ("methode", "Méthode de travail"),
-    ("rythme", "Rythme"),
-    ("redaction", "Qualité de rédaction"),
-    ("controle", "Contrôle des résultats"),
-    ("erreur", "Attitude face à l'erreur"),
-    ("libre", "Remarque libre"),
+# Observations générales : un choix rapide, puis un commentaire facultatif.
+#
+# Sept zones de texte libre rendaient la saisie lente et les formulations
+# incomparables d'un élève à l'autre. Le choix structuré se coche en une seconde ; le
+# commentaire reste disponible quand il apporte quelque chose. Rien n'est obligatoire,
+# et rien de tout cela n'entre dans le calcul des points.
+GENERAL_OBSERVATIONS = (
+    {"key": "autonomie", "label": "Autonomie observée",
+     "choices": ("Très autonome", "Globalement autonome", "Aide ponctuelle",
+                 "Aide fréquente", "Non observé")},
+    {"key": "methode", "label": "Méthode de travail",
+     "choices": ("Méthode explicite et suivie", "Méthode présente mais irrégulière",
+                 "Procède par essais", "Non observé")},
+    {"key": "rythme", "label": "Rythme",
+     "choices": ("Rapide et maîtrisé", "Adapté", "Irrégulier", "Lent", "Non observé")},
+    {"key": "redaction", "label": "Qualité de rédaction",
+     "choices": ("Très satisfaisante", "Satisfaisante", "À améliorer", "Non observée")},
+    {"key": "controle", "label": "Contrôle des résultats",
+     "choices": ("Contrôle systématique", "Contrôle occasionnel",
+                 "Aucun contrôle observé", "Non observé")},
+    {"key": "erreur", "label": "Attitude face à l'erreur",
+     "choices": ("Revient sur son erreur et la corrige", "Repère l'erreur sans la corriger",
+                 "Poursuit sans revenir en arrière", "Non observé")},
+    {"key": "libre", "label": "Remarque libre", "choices": None},
 )
+
+# Conservé pour les rapports, qui n'ont besoin que du couple clé / libellé.
+GENERAL_OBSERVATION_FIELDS = tuple((f["key"], f["label"]) for f in GENERAL_OBSERVATIONS)
+GENERAL_OBSERVATION_CHOICES = {f["key"]: f["choices"] for f in GENERAL_OBSERVATIONS}
 
 
 class CorrectionError(Exception):
@@ -285,17 +304,96 @@ def save_item_observation(session, correction: Correction, item_id: str,
 
 
 def save_general_observations(session, correction: Correction, data: dict):
+    """Enregistre un choix structuré et un commentaire facultatif par rubrique.
+
+    Un choix inconnu est refusé plutôt que stocké : la valeur doit rester comparable
+    d'un élève à l'autre. Rien n'est obligatoire, et rien n'entre dans le score.
+    """
     ensure_editable(correction)
-    cleaned = {key: (data.get(key) or "").strip()
-               for key, _ in GENERAL_OBSERVATION_FIELDS if (data.get(key) or "").strip()}
+    cleaned = {}
+    for field in GENERAL_OBSERVATIONS:
+        key = field["key"]
+        choice = (data.get("%s_choix" % key) or "").strip()
+        comment = (data.get("%s_commentaire" % key) or data.get(key) or "").strip()
+        if choice and field["choices"] and choice not in field["choices"]:
+            raise CorrectionError("valeur inconnue pour « %s » : %s"
+                                  % (field["label"], choice))
+        entry = {}
+        if choice:
+            entry["choix"] = choice
+        if comment:
+            entry["commentaire"] = comment
+        if entry:
+            cleaned[key] = entry
     correction.general_observations_json = json.dumps(cleaned, ensure_ascii=False)
     return cleaned
 
 
+def observation_text(entry) -> str:
+    """Rend une observation lisible, quel que soit son format de stockage."""
+    if isinstance(entry, str):
+        return entry
+    if not isinstance(entry, dict):
+        return ""
+    parts = [entry.get("choix"), entry.get("commentaire")]
+    return " — ".join(p for p in parts if p)
+
+
+# Contexte de passation d'un critère, tel que documenté par la couche
+# post-distribution. C'est un fait sur le **déroulé de la séance 5**, connu avant
+# toute correction : il ne dit rien de ce que l'élève a produit.
+#
+# La formulation précédente — « Réussite immédiate après remédiation » — affirmait
+# un résultat sur une copie encore vierge, et parlait de remédiation pour des
+# notions qui avaient seulement été découvertes en séance 5. Deux erreurs
+# distinctes, corrigées ici : la conséquence est énoncée au conditionnel, et le
+# contexte est nommé pour ce qu'il est.
+RETENTION_NOTICES = {
+    "immediate_after_remediation": (
+        "Notion retravaillée pendant la séance 5",
+        "puis évaluée moins d'une heure plus tard. Une réussite sur ce critère "
+        "devra être revérifiée à distance par le mini-test différé de semaine 2."),
+    "first_worked_in_session_5": (
+        "Notion découverte lors de la séance 5",
+        "puis évaluée immédiatement. Une réussite sur ce critère devra être "
+        "revérifiée à distance : elle n'établit pas encore la disponibilité."),
+}
+
+# Face à un contexte non prévu, on décrit la conséquence sans inventer sa cause.
+RETENTION_NOTICE_DEFAUT = (
+    "Contrôle différé recommandé",
+    "les conditions de passation appellent une revérification à distance.")
+
+
+def retention_notice(retention):
+    """Notice de contexte à afficher au correcteur, ou None.
+
+    ``retention`` est la charge utile importée de la couche post-distribution.
+    La notice conserve le motif documenté par la source, de sorte que la
+    provenance de l'affichage reste inspectable.
+    """
+    if not retention or not retention.get("recommended_delayed_check"):
+        return None
+    contexte = retention.get("post_test_context")
+    titre, texte = RETENTION_NOTICES.get(contexte, RETENTION_NOTICE_DEFAUT)
+    return {"title": titre, "text": texte, "context": contexte,
+            "source": retention.get("reason")}
+
+
 def progress(correction: Correction) -> dict:
+    """Avancement de la saisie, en distinguant deux comptes distincts.
+
+    « total » est le nombre de lignes analytiques à renseigner ; « original_criteria »
+    est le nombre de critères réellement imprimés sur le sujet distribué. Les deux
+    diffèrent dès qu'un critère mixte a été éclaté en sous-critères : chez Inès KEFI,
+    22 critères du sujet donnent 23 lignes. Les exposer séparément évite de laisser
+    croire que le sujet papier comportait une question de plus qu'en réalité.
+    """
     total = len(correction.responses)
     done = sum(1 for r in correction.responses if r.scoring_status != "PENDING")
+    original = len({r.criterion_id for r in correction.responses})
     return {"total": total, "done": done,
+            "original_criteria": original,
             "percent": int(round(100.0 * done / total)) if total else 0,
             "remaining": total - done}
 

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ APP_NAME }}{% endblock %}</title>
+<link rel="stylesheet" href="/static/vendor/katex/katex.min.css">
 <link rel="stylesheet" href="/static/app.css">
 </head>
 <body data-quick="{{ '1' if quick|default(false) else '0' }}">
@@ -38,6 +39,14 @@
   {% endif %}
   {% block content %}{% endblock %}
 </main>
+<!-- KaTeX est servi depuis le dépôt : aucune requête réseau, aucun CDN. -->
+<script defer src="/static/vendor/katex/katex.min.js"></script>
+<script defer src="/static/vendor/katex/auto-render.min.js"></script>
+<script defer src="/static/math.js"></script>
+<script src="/static/csrf.js"></script>
 <script src="/static/app.js"></script>
+<script defer src="/static/observations.js"></script>
+<script defer src="/static/copie.js"></script>
+<script defer src="/static/transcription.js"></script>
 </body>
 </html>

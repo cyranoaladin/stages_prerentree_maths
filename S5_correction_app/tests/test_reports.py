@@ -10,7 +10,6 @@ import pytest
 
 from app import config, database
 from app.models import Assessment, Report
-from app.domain import correction as corr
 from app.domain import reports as rep
 from conftest import fill
 

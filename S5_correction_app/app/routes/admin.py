@@ -7,8 +7,8 @@ import shutil
 import zipfile
 from pathlib import Path
 
-from fastapi import APIRouter, Depends, HTTPException, Request
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi import APIRouter, Depends, Request
+from fastapi.responses import HTMLResponse, JSONResponse
 from sqlalchemy.orm import Session
 
 from .. import APP_VERSION, config
@@ -216,3 +216,18 @@ def integrity(session: Session = Depends(get_session)):
     return JSONResponse({"immutabilite": report.summary(),
                          "changes": report.changed, "missing": report.missing,
                          "derive_des_sources": importer.check_sources_unchanged(session)})
+
+
+@router.get("/admin/mise-en-service", response_class=HTMLResponse)
+def readiness_screen(request: Request, session: Session = Depends(get_session)):
+    """Page de mise en service : l'état du système en un écran.
+
+    Elle répond aux questions qu'on se pose au moment d'ouvrir la journée :
+    les documents distribués sont-ils intacts, les quinze couples sont-ils
+    corrigeables, et la base contient-elle déjà des corrections réelles ?
+    """
+    from ..main import templates
+    from ..tools_readiness import etat_mise_en_service
+    return templates.TemplateResponse(
+        request, "mise_en_service.html",
+        page_context(request, **etat_mise_en_service(session)))

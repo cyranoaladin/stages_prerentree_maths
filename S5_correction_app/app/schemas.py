@@ -44,13 +44,27 @@ class ItemObservationIn(BaseModel):
 
 
 class GeneralObservationsIn(BaseModel):
-    autonomie: Optional[str] = Field(default=None, max_length=2000)
-    methode: Optional[str] = Field(default=None, max_length=2000)
-    rythme: Optional[str] = Field(default=None, max_length=2000)
-    redaction: Optional[str] = Field(default=None, max_length=2000)
-    controle: Optional[str] = Field(default=None, max_length=2000)
-    erreur: Optional[str] = Field(default=None, max_length=2000)
-    libre: Optional[str] = Field(default=None, max_length=4000)
+    """Un choix structuré et un commentaire facultatif par rubrique.
+
+    Les champs restent optionnels : ces observations sont un appui pour le bilan, pas
+    une case à remplir, et elles n'entrent dans aucun calcul de points.
+    """
+
+    model_config = {"extra": "forbid"}
+
+    autonomie_choix: Optional[str] = Field(default=None, max_length=120)
+    autonomie_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    methode_choix: Optional[str] = Field(default=None, max_length=120)
+    methode_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    rythme_choix: Optional[str] = Field(default=None, max_length=120)
+    rythme_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    redaction_choix: Optional[str] = Field(default=None, max_length=120)
+    redaction_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    controle_choix: Optional[str] = Field(default=None, max_length=120)
+    controle_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    erreur_choix: Optional[str] = Field(default=None, max_length=120)
+    erreur_commentaire: Optional[str] = Field(default=None, max_length=2000)
+    libre_commentaire: Optional[str] = Field(default=None, max_length=4000)
     observed_duration_minutes: Optional[int] = Field(default=None, ge=0, le=600)
 
 

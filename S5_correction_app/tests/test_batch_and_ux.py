@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Traitement de lot, vue de groupe, et parcours d'interface."""
 
-import importlib.util
 import shutil
 
 import pytest
@@ -11,7 +10,6 @@ from app.models import Assessment, Report
 from app.domain import correction as corr
 from conftest import fill
 
-PLAYWRIGHT = importlib.util.find_spec("playwright") is not None
 LATEX = shutil.which(config.LATEX_ENGINE) is not None
 
 
@@ -65,17 +63,7 @@ def test_le_tableau_de_bord_compte_juste(client):
     assert "bilans générés" in page
 
 
-@pytest.mark.skipif(not PLAYWRIGHT, reason="Playwright n'est pas installé sur ce poste")
-def test_parcours_navigateur():                                   # pragma: no cover
-    """Parcours de bout en bout dans un vrai navigateur.
-
-    Volontairement facultatif : la livraison ne dépend pas de l'installation d'un
-    navigateur complet. Les mêmes parcours sont couverts par TestClient.
-    """
-    from playwright.sync_api import sync_playwright
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
-        page.goto("http://127.0.0.1:%d/" % config.DEFAULT_PORT)
-        assert "Tableau de bord" in page.content()
-        browser.close()
+# Le parcours navigateur vit désormais dans « tests/test_browser_ui.py », où il
+# s'exécute contre un serveur réellement démarré. Ici, il visait un port sur lequel
+# rien n'écoutait : il attendait jusqu'à expiration sans rien vérifier, et son
+# « skip » masquait l'absence de toute couverture navigateur.

@@ -7,6 +7,6 @@ les remplace pas et ne les modifie jamais.
 """
 
 APP_NAME = "Nexus S5 — Correction & Bilans"
-APP_VERSION = "1.0.0"
-DOMAIN_SCHEMA_VERSION = "1"
+APP_VERSION = "1.6.0"
+DOMAIN_SCHEMA_VERSION = "8"
 IMPORT_SOURCE_VERSION = "nexus-s5-post-distribution-v3"

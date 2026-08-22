@@ -234,3 +234,235 @@ ul.tight li { margin-bottom: 3px; }
   .card, .pane, table.grid { break-inside: avoid; }
   body { background: #fff; }
 }
+
+/* ============================================================ passe corrective
+   Ajouts de la passe Inès : viewer collant, rubriques de score, suggestions
+   d'erreur propres au critère, rendu mathématique. */
+
+/* ---------------------------------------------- viewer PDF collant (desktop) */
+/* Le sujet doit rester sous les yeux pendant toute la descente dans la grille.
+   Le décalage haut laisse passer l'entête de page, qui ne doit jamais être
+   recouvert. */
+@media (min-width: 1101px) {
+  .split { align-items: start; }
+  .pane-pdf {
+    position: sticky;
+    top: 12px;
+    max-height: calc(100vh - 24px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .pane-pdf .pdf-frame {
+    flex: 1 1 auto;
+    height: auto;
+    min-height: 320px;
+  }
+}
+
+/* ------------------------------------------------------ rubrique de score */
+details.rubric { margin: 6px 0 2px; }
+details.rubric > summary {
+  cursor: pointer; font-size: 12.5px; color: var(--text-gray);
+  padding: 2px 0; user-select: none;
+}
+details.rubric > summary:hover { color: var(--blue); }
+table.rubric-table { width: 100%; border-collapse: collapse; margin: 4px 0 2px;
+  background: var(--soft-gray); border: 1px solid var(--line); border-radius: 4px; }
+table.rubric-table th, table.rubric-table td {
+  padding: 4px 8px; border-bottom: 1px solid var(--line); font-size: 12.5px;
+  text-align: left; vertical-align: top;
+}
+table.rubric-table th { background: var(--soft-blue); color: var(--navy);
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: .3px; }
+table.rubric-table tr:last-child td { border-bottom: 0; }
+table.rubric-table td.num { font-variant-numeric: tabular-nums; font-weight: 600;
+  width: 52px; text-align: right; }
+table.rubric-table tr.is-current td { background: #E9F5F2; }
+table.rubric-table tr.is-current td.num { color: var(--green); }
+
+/* ------------------------------------------- suggestions d'erreur du critère */
+.suggestions { margin: 6px 0; }
+.code-chip.suggested { border-color: var(--orange); color: #6E3C0D;
+  background: #FDF3E7; font-weight: 600; }
+.code-chip.suggested.on { background: var(--red); border-color: var(--red); color: #fff; }
+ul.suggestion-detail { margin: 4px 0 0; }
+details.all-codes { margin: 4px 0 6px; }
+details.all-codes > summary { cursor: pointer; font-size: 12.5px; color: var(--text-gray); }
+details.all-codes > summary:hover { color: var(--blue); }
+
+/* ------------------------------------------------------------ mathématiques */
+.katex { font-size: 1.02em; }
+.crit-desc .katex { font-size: 1em; }
+.item-statement .katex-display { margin: .3em 0; }
+
+/* Listes numérotées issues des environnements enumerate des énoncés.
+   Converties côté serveur par app/latex_html.py ; sans cette règle, la liste
+   hériterait du retrait par défaut du navigateur et se décalerait du texte. */
+.enonce-liste { margin: 6px 0 2px; padding-left: 22px; }
+.enonce-liste > li { margin-bottom: 4px; }
+.enonce-liste > li:last-child { margin-bottom: 0; }
+.item-statement > p { margin: 0 0 6px; }
+.item-statement > p:last-child { margin-bottom: 0; }
+
+/* Blocs de code des énoncés NSI. KaTeX ignore <pre> et <code> par défaut : le
+   contenu n'est donc jamais interprété comme des mathématiques, et un « $ » dans
+   du code reste un « $ ». Aucune coloration syntaxique : elle exigerait une
+   dépendance externe, et l'application doit fonctionner sans réseau. */
+.code-bloc { margin: 6px 0; padding: 8px 10px; background: var(--soft-gray, #F4F5F7);
+  border: 1px solid var(--line); border-left: 3px solid var(--text-gray);
+  border-radius: 4px; overflow-x: auto; }
+.code-bloc code { font-family: "Cascadia Mono", Consolas, monospace; font-size: 12.5px;
+  line-height: 1.45; white-space: pre; display: block; }
+.item-statement code, .key-body code { font-family: "Cascadia Mono", Consolas, monospace;
+  font-size: 0.94em; background: var(--soft-gray, #F4F5F7); padding: 0 3px;
+  border-radius: 3px; }
+.code-bloc code { background: none; padding: 0; }
+
+/* Tableaux d'état des énoncés. Les cellules vides sont celles que l'élève
+   remplit sur le papier : elles restent visibles, avec leur bordure. */
+.enonce-tableau { border-collapse: collapse; margin: 6px 0; width: 100%;
+  font-size: 13px; }
+.enonce-tableau th, .enonce-tableau td { border: 1px solid var(--line);
+  padding: 4px 8px; text-align: left; }
+.enonce-tableau thead th { background: var(--soft-gray, #F4F5F7); }
+.enonce-tableau tbody th { background: #FCFCFD; font-weight: 600; }
+
+/* Renvoi au PDF pour une structure que la conversion ne sait pas traiter
+   sûrement. Le sujet distribué reste affiché à gauche : mieux vaut renvoyer
+   vers lui qu'afficher une grille approximative. */
+.latex-repli { margin: 6px 0; }
+.latex-repli .badge { background: var(--soft-gold, #F7F1D8); color: #6B5310;
+  border: 1px solid #D9C87A; }
+
+/* Repli si KaTeX n'a pas pu s'exécuter : la source LaTeX reste lisible, en
+   monospace, plutôt que de se confondre avec du texte courant. */
+html[data-math-ready="0"] .math { font-family: "Cascadia Mono", Consolas, monospace; }
+
+/* --------------------------------- bandeau des critères restant à renseigner */
+.banner details > summary { cursor: pointer; list-style: revert; }
+.banner details > summary .small { color: var(--text-gray); margin-left: 6px; }
+
+/* ------------------------------------------------ observations structurées */
+.obs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px; }
+.obs-field { border: 1px solid var(--line); border-radius: 5px; padding: 8px 10px;
+  background: #fff; }
+.obs-field > .label { font-weight: 600; color: var(--navy); font-size: 13px;
+  margin-bottom: 4px; }
+.obs-field select { width: 100%; margin-bottom: 5px; }
+.obs-field textarea { min-height: 34px; }
+
+/* Indicateur longitudinal du tableau de bord. Il décrit l'état des SOURCES, à ne
+   pas confondre avec l'avancement de la correction : un élève peut être « non
+   commencé » et son bilan « prêt ». */
+.long-READY_FOR_CORRECTION { color: var(--green, #167A68); }
+.long-READY_WITH_DOCUMENTARY_WARNING { color: var(--text-gray, #526170); }
+.long-BLOCKED { color: var(--red, #9E2234); font-weight: 600; }
+
+/* Règles d'équité d'un critère. Elles s'affichent avec la rubrique et non dans le
+   corrigé replié : elles modifient la façon de noter, et une erreur de départ ne
+   doit pas être sanctionnée une seconde fois faute d'avoir lu la règle. */
+.fairness-rules { margin: 6px 0 2px; padding: 6px 10px; border-left: 3px solid var(--gold, #C9A227);
+  background: var(--soft-gold, #F7F1D8); border-radius: 0 4px 4px 0; }
+.fairness-rules strong { color: #6B5310; }
+.fairness-rules ul { margin: 3px 0 0; }
+
+/* Copie de l'élève : pièce probante rattachée à l'évaluation. Le bloc est
+   volontairement discret et séparé du sujet distribué, avec lequel il ne doit
+   jamais être confondu — l'un est ce qu'on lui a donné, l'autre ce qu'elle a écrit. */
+.source-copy { margin-top: 10px; border: 1px solid var(--line); border-radius: 6px;
+  background: #fff; overflow: hidden; }
+.source-copy .pane-head { border-bottom: 1px solid var(--line); }
+.source-copy table { margin: 6px 10px; }
+.source-copy th { font-weight: 500; color: var(--navy); padding-right: 10px;
+  white-space: nowrap; vertical-align: top; }
+.source-copy ul { padding-left: 26px; }
+.source-copy code { font-size: .85em; }
+
+/* ---------------------------------------------- téléversement d'une copie */
+.televersement { margin: 8px 10px 10px; border: 1px dashed var(--line); border-radius: 6px; }
+.televersement > summary { padding: 6px 10px; cursor: pointer; color: var(--navy);
+  font-weight: 500; }
+.corps-televersement { padding: 8px 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+.zone-depot { border: 2px dashed var(--line); border-radius: 6px; padding: 12px;
+  text-align: center; background: #FCFCFD; }
+.zone-depot.depot-actif { border-color: var(--gold, #C9A227); background: var(--soft-gold, #F7F1D8); }
+.zone-depot p { margin: 0 0 6px; }
+.liste-pages { list-style: none; margin: 0; padding: 0; display: flex;
+  flex-direction: column; gap: 6px; }
+.page-a-envoyer { display: flex; align-items: center; gap: 8px; padding: 5px;
+  border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+.vignette { width: 46px; height: 60px; flex: 0 0 46px; border: 1px solid var(--line);
+  border-radius: 3px; overflow: hidden; display: flex; align-items: center;
+  justify-content: center; background: #F4F5F7; font-size: .75em; color: var(--navy); }
+.vignette img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.infos-page { flex: 1 1 auto; min-width: 0; }
+.infos-page div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.actions-page { display: flex; gap: 3px; flex: 0 0 auto; }
+.actions-televersement { display: flex; gap: 8px; align-items: center; }
+.jauge-upload { height: 6px; background: #E8EAEE; border-radius: 3px; overflow: hidden; }
+.jauge-upload span { display: block; height: 100%; width: 0; background: var(--gold, #C9A227);
+  transition: width .2s ease; }
+.erreur-upload { color: #9E2234; }
+
+/* -------------------------------------------------- revue de transcription */
+.split-transcription { align-items: flex-start; }
+.pane-page .cadre-page { overflow: auto; max-height: 74vh; background: #F4F5F7;
+  padding: 8px; text-align: center; }
+.pane-page .cadre-page img { max-width: 100%; transform-origin: top center;
+  transition: transform .15s ease; background: #fff; }
+.pagination-pages { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px; }
+.bandeau-transcription { display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  justify-content: space-between; padding: 8px 12px; margin-bottom: 10px;
+  border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.bandeau-transcription .chiffres { display: flex; flex-wrap: wrap; gap: 14px; }
+.bandeau-transcription .chiffres > div { display: flex; flex-direction: column;
+  align-items: center; min-width: 62px; }
+.bandeau-transcription .valeur { font-size: 1.15em; font-weight: 600; color: var(--navy); }
+.bandeau-transcription .etiquette { font-size: .72em; color: #6B7280; text-align: center; }
+.actions-transcription { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.campagnes { margin-bottom: 10px; }
+.campagnes table { width: 100%; }
+.liste-blocs { list-style: none; margin: 0; padding: 8px; display: flex;
+  flex-direction: column; gap: 10px; max-height: 74vh; overflow: auto; }
+.bloc { border: 1px solid var(--line); border-radius: 6px; padding: 8px; background: #fff; }
+.bloc-tete { display: flex; flex-wrap: wrap; gap: 5px; align-items: center;
+  margin-bottom: 6px; }
+.petit-tag { font-size: .7em; padding: 1px 6px; border-radius: 10px; background: #EEF1F5;
+  color: #384151; text-transform: none; }
+.petit-tag.inc-MEDIUM { background: #FDF3D8; color: #6B5310; }
+.petit-tag.inc-HIGH { background: #F8DDE2; color: #9E2234; }
+.petit-tag.statut-CROSSED_OUT { background: #E8E3F5; color: #4B3A85; }
+.petit-tag.statut-AMBIGUOUS, .petit-tag.statut-OVERWRITTEN { background: #FDF3D8; color: #6B5310; }
+.petit-tag.rec-HUMAN_REVIEW_REQUIRED { background: #F8DDE2; color: #9E2234; }
+.petit-tag.rec-AI_CONSENSUS { background: #DEF0E4; color: #1F6D3A; }
+.petit-tag.rev-HUMAN_VERIFIED { background: #DEF0E4; color: #1F6D3A; }
+.bloc-lecture { border-left: 3px solid var(--line); padding: 4px 0 4px 8px; margin: 5px 0; }
+.bloc-verify { border-left-color: #7A6BB8; }
+.bloc-verify.verdict-DISAGREE { border-left-color: #9E2234; }
+.bloc-verify.verdict-AGREE { border-left-color: #1F6D3A; }
+.bloc-humain { border-left-color: var(--gold, #C9A227); background: var(--soft-gold, #F7F1D8); }
+.etiquette-lecture { font-size: .68em; letter-spacing: .06em; color: #6B7280; }
+.verbatim { margin: 3px 0; padding: 5px 7px; background: #F7F8FA; border-radius: 3px;
+  white-space: pre-wrap; word-break: break-word; font-size: .92em; }
+.math-double { display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin-top: 3px; }
+.latex-source { font-size: .8em; color: #6B7280; background: #F2F3F6; padding: 2px 5px;
+  border-radius: 3px; word-break: break-all; }
+.alternatives { margin: 3px 0; color: #6B5310; }
+.bloc-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.bloc-edition { display: flex; flex-direction: column; gap: 5px; margin-top: 7px;
+  padding-top: 7px; border-top: 1px dashed var(--line); }
+.bloc-edition textarea, .bloc-edition input[type=text] { width: 100%; }
+.badge[class*="tr-"] { text-transform: none; }
+
+/* Attestation de complétude : la seule réponse à l'angle mort de la revue par blocs. */
+.attestation { margin: 8px; padding: 8px 10px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--soft-gold, #F7F1D8); }
+.attestation p { margin: 0 0 6px; }
+.attestation input[type=text] { width: 100%; }
+
+/* Avertissement d'envoi distant : l'image EST la copie, nom de l'élève compris. */
+.avis-envoi { display: block; max-width: 460px; padding: 6px 9px; border-radius: 4px;
+  background: var(--soft-gold, #F7F1D8); color: #6B5310; line-height: 1.35; }

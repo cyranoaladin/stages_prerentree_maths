@@ -6,8 +6,9 @@ from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session, joinedload
 
 from ..database import get_session
-from ..domain import analysis as ana
 from ..domain import correction as corr
+from ..domain.longitudinal import readiness as long_readiness
+from .. import config
 from ..models import Assessment, AnalysisSnapshot, Report, Student
 from . import loads, page_context
 
@@ -16,11 +17,24 @@ router = APIRouter()
 ORDER = ["4e", "3e", "2nde", "1ere_spe", "1re_nsi"]
 
 
+# Deux axes distincts, jamais confondus : l'avancement de la correction décrit ce
+# que l'enseignant a saisi ; l'état longitudinal décrit ce que les sources
+# permettent d'écrire. Un élève peut être « non commencé » et son bilan « prêt ».
+LONGITUDINAL_LABELS = {
+    long_readiness.READY: "Prêt",
+    long_readiness.WARNING: "Prêt avec réserve documentaire",
+    long_readiness.BLOCKED: "Bloqué",
+}
+
+
 def _rows(session: Session):
     rows = []
     assessments = (session.query(Assessment)
                    .options(joinedload(Assessment.student).joinedload(Student.person))
                    .all())
+    # L'immutabilité est relevée une seule fois : elle est identique pour tous.
+    etats = {e["student_id"]: e
+             for e in long_readiness.evaluate_all(session, config)}
     for a in assessments:
         current = corr.current_correction(session, a.assessment_id)
         progress = corr.progress(current) if current else {"total": 0, "done": 0,
@@ -48,6 +62,13 @@ def _rows(session: Session):
             "progress": progress,
             "report_state": report_state, "report_label": report_label,
             "reports": len(generated),
+            "longitudinal_state": (etats.get(a.student_id) or {}).get(
+                "status", long_readiness.BLOCKED),
+            "longitudinal_label": LONGITUDINAL_LABELS.get(
+                (etats.get(a.student_id) or {}).get("status"), "—"),
+            "longitudinal_warnings": len(
+                ((etats.get(a.student_id) or {}).get("longitudinal_report") or {})
+                .get("warnings") or []),
         })
     rows.sort(key=lambda r: (ORDER.index(r["level_key"]) if r["level_key"] in ORDER else 9,
                              r["display_name"]))
