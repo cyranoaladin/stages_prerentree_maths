@@ -26,7 +26,31 @@
       "modules": [
         "tle_spe"
       ],
-      "effectif": 4
+      "effectif": 2
+    },
+    {
+      "id": "groupe-3-maths-pc",
+      "libelle": "Groupe 3 — Stages de mathématiques et de physique-chimie",
+      "stages": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "modules": [
+        "tle_spe",
+        "tle_pc"
+      ],
+      "effectif": 2
+    },
+    {
+      "id": "groupe-4-pc",
+      "libelle": "Groupe 4 — Stage de physique-chimie",
+      "stages": [
+        "Physique-Chimie"
+      ],
+      "modules": [
+        "tle_pc"
+      ],
+      "effectif": 1
     }
   ],
   "students": [
@@ -168,7 +192,7 @@
         "MELEK SMIDA"
       ],
       "slug": "Melek_Smida",
-      "groupe": "groupe-2-maths",
+      "groupe": "groupe-3-maths-pc",
       "active": true,
       "matieres": [
         {
@@ -177,13 +201,19 @@
           "diagnosticId": "melek-smida--maths",
           "sourceStudentReport": "bilan-nexus-eleve_bensmida_maths.pdf",
           "sourceParentReport": "bilan-nexus-parents_bensmida_maths.pdf"
+        },
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "melek-smida--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_smida_pc_terminale.pdf",
+          "sourceParentReport": "bilan-nexus-parents_smida_PC_terminale.pdf"
         }
       ],
       "specialites": [
         "Mathématiques",
         "Physique-Chimie"
       ],
-      "noteGroupe": "Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif.",
       "optionAnnuelle": {
         "intitule": "Mathématiques expertes",
         "diagnosticId": "melek-smida--maths-expertes",
@@ -224,7 +254,7 @@
         "ROSTOM FEKIH"
       ],
       "slug": "Rostom_Fekih",
-      "groupe": "groupe-2-maths",
+      "groupe": "groupe-3-maths-pc",
       "active": true,
       "matieres": [
         {
@@ -233,13 +263,19 @@
           "diagnosticId": "rostom-fekih--maths",
           "sourceStudentReport": "bilan-nexus-eleve_maths_rostom_fekih.pdf",
           "sourceParentReport": "bilan-nexus-parents_maths_rostom_fekih.pdf"
+        },
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "rostom-fekih--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_PC_rostom_fekih.pdf",
+          "sourceParentReport": "bilan-nexus-parents_PC_rostom_fekih.pdf"
         }
       ],
       "specialites": [
         "Mathématiques",
         "Physique-Chimie"
-      ],
-      "noteGroupe": "Suit également la spécialité physique-chimie en Terminale ; aucun stage de pré-rentrée n'est organisé pour cette spécialité dans ce dispositif."
+      ]
     },
     {
       "id": "ines-ben-yahia",
@@ -265,6 +301,32 @@
           "motif": "Aucun bilan de positionnement Terminale Mathématiques n'a été passé — l'inscription est postérieure à la campagne de positionnement. Le livret ne peut donc pas être individualisé sur preuve : il est produit en version « diagnostic à établir », avec un positionnement à faire passer à la séance 1."
         }
       ]
+    },
+    {
+      "id": "mayar-ourabi",
+      "displayName": "Mayar Ourabi",
+      "aliases": [
+        "Mayar Ourabi",
+        "MAYAR OURABI",
+        "Mayar (Terminale) Ourabi"
+      ],
+      "slug": "Mayar_Ourabi",
+      "groupe": "groupe-4-pc",
+      "active": true,
+      "matieres": [
+        {
+          "module": "tle_pc",
+          "matiere": "Physique-chimie",
+          "diagnosticId": "mayar-ourabi--pc",
+          "sourceStudentReport": "bilan-nexus-eleve_mayar_PC_terminale.pdf",
+          "sourceParentReport": "bilan-nexus-parents_Mayar_PC_terminale.pdf"
+        }
+      ],
+      "specialites": [
+        "Mathématiques",
+        "Physique-Chimie"
+      ],
+      "noteGroupe": "Mayar suit le stage de physique-chimie seul : les mathématiques restent une spécialité de son année de Terminale, mais elles ne font pas l'objet d'un stage de pré-rentrée pour elle."
     }
   ],
   "cadre": {

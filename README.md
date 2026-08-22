@@ -33,27 +33,34 @@ Ouvrez ensuite `http://localhost:8000`. Le portail public est dans `dist/site-pu
 
 ## Stages de pré-rentrée Terminale
 
-Le dépôt contient deux modules de pré-rentrée pour l'entrée en Terminale, `tle_spe`
-(spécialité mathématiques) et `tle_nsi` (numérique et sciences informatiques). Comme
-`1re_nsi/`, ils forment un **pipeline de documentation distinct** : ils ne sont pas
-ramassés par `tools/build.py`, dont la constante `LEVELS` reste inchangée, et ils
-n'utilisent pas `content/students.json`.
+Le dépôt contient trois modules de pré-rentrée pour l'entrée en Terminale : `tle_spe`
+(spécialité mathématiques), `tle_nsi` (numérique et sciences informatiques) et `tle_pc`
+(spécialité physique-chimie). Comme `1re_nsi/`, ils forment un **pipeline de documentation
+distinct** : ils ne sont pas ramassés par `tools/build.py`, dont la constante `LEVELS`
+reste inchangée, et ils n'utilisent pas `content/students.json`.
 
 Les stages sont organisés par **Nexus Réussite**, centre d'accompagnement scolaire. Chaque
 enseignement de spécialité donne lieu à un stage de **10 heures** — 2 heures par jour,
 5 jours consécutifs, **du 24 au 28 août 2026**.
 
-La cohorte compte huit élèves, répartis en deux groupes **selon les stages qu'ils suivent** :
+La cohorte compte neuf élèves, répartis en quatre groupes **selon les stages qu'ils
+suivent** :
 
 | Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques | 4 | `tle_spe` |
+| Groupe 2 | Mathématiques | 2 | `tle_spe` |
+| Groupe 3 | Mathématiques et physique-chimie | 2 | `tle_spe` et `tle_pc` |
+| Groupe 4 | Physique-chimie | 1 | `tle_pc` |
 
-Le groupe ne décrit pas une combinaison de spécialités : dans le groupe 2, deux élèves
-suivent également la physique-chimie — aucun stage n'est organisé pour cette spécialité ici —
-et deux ne suivent qu'un seul enseignement accompagné. Chaque livret annonce les spécialités
-réelles de son élève.
+Le groupe ne décrit pas une combinaison de spécialités mais un ensemble de stages suivis :
+huit élèves suivent celui de mathématiques, quatre celui de NSI, trois celui de
+physique-chimie. Chaque livret annonce les spécialités réelles de son élève.
+
+Le module `tle_pc` repose sur le seul programme officiel : la **progression de
+physique-chimie de l'établissement n'est pas disponible**, et aucune séance ne présume donc
+d'un ordre de chapitres particulier. La limite est écrite telle quelle dans le programme du
+stage.
 
 Deux élèves suivent l'option **mathématiques expertes**. Aucun stage ne lui est dédié :
 l'option est travaillée sur le temps différencié du stage de mathématiques, et son diagnostic
@@ -66,8 +73,8 @@ L'individualisation des livrets ne repose sur aucune saisie manuelle :
 | Fichier | Rôle |
 |---|---|
 | `content/students_terminale.json` | Registre nominatif de la cohorte : groupes, matières, bilans sources |
-| `content/diagnostics_terminale.json` | Diagnostics extraits des 14 bilans PDF, item par item |
-| `content/items_terminale.json` | Banque des 54 items : compétence évaluée, geste correct, lien avec le programme de Terminale, exercice-variante corrigé |
+| `content/diagnostics_terminale.json` | Diagnostics extraits des 17 bilans PDF, item par item |
+| `content/items_terminale.json` | Banque des 72 items : compétence évaluée, geste correct, lien avec le programme de Terminale, exercice-variante corrigé |
 
 Chaque livret reprend, pour son élève, l'énoncé exact de chaque item manqué, la réponse
 donnée, la réponse attendue et l'origine de l'erreur telle qu'établie par le bilan. Aucun
@@ -76,17 +83,19 @@ contenu n'est extrapolé au-delà.
 ### Commandes
 
 ```bash
-make terminale         # régénère les documents nominatifs des deux modules
+make terminale         # régénère les documents nominatifs des trois modules
 make terminale-check   # échoue si un document committé est périmé
 make terminale-test    # suite de tests dédiée
 make terminale-extract # ré-extrait les diagnostics depuis les bilans PDF (voir ci-dessous)
+make terminale-latex   # réécrit les documents rédigés à la main en notation LaTeX
+make terminale-latex-check  # signale ce qui resterait à convertir, sans rien écrire
 ```
 
 `make terminale-extract` **n'est pas exécutée en intégration continue** : le rendu du texte
 d'un PDF dépend de la version de `pypdf`, et les versions antérieures à la 6.16 coupent les
 mots au milieu (« T erm inale ») sans rien signaler. `content/diagnostics_terminale.json`
 est donc un artefact committé et relu ; le script refuse de s'exécuter sous une version qui
-dégraderait l'extraction, et `tests/test_terminale.py` compare les 18 énoncés de chaque
+dégraderait l'extraction, et `tests/test_terminale.py` compare les énoncés de chaque
 instrument à la banque, caractère pour caractère.
 
 ### Rendu imprimable
@@ -132,8 +141,8 @@ d'impression et de la distribution : `tle_spe/00_MASTER/PRINT_GUIDE_TERMINALE.md
 
 ### Confidentialité
 
-`tle_spe/04_NOMINATIFS/` et `tle_nsi/05_NOMINATIFS/` contiennent des données de mineurs.
-Dans ces deux modules, le **seul** document commun nominatif est le tableau de bord
+`tle_spe/04_NOMINATIFS/`, `tle_nsi/05_NOMINATIFS/` et `tle_pc/04_NOMINATIFS/` contiennent
+des données de mineurs. Dans ces trois modules, le **seul** document commun nominatif est le tableau de bord
 enseignant, qui porte aussi les liens vers les dossiers individuels : les index de module ne
 nomment personne. Les tests vérifient qu'aucun nom ne figure ailleurs, qu'aucun élève
 n'apparaît dans le dossier d'un autre, et qu'aucune feuille élève ne contient de corrigé.

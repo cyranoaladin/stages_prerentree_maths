@@ -1,5 +1,42 @@
 # Journal des modifications
 
+## 2026.5 — 2026-08-22
+
+- Ajout du module **`tle_pc`**, stage de pré-rentrée de spécialité physique-chimie : le
+  programme complet du stage, le guide du formateur, cinq séances de deux heures avec pour
+  chacune une fiche élève, une fiche professeur, des supports de manipulation et cinq
+  cartes d'aide graduées, un mini-diagnostic d'entrée, une évaluation finale avec son
+  barème, un mémento de formules et un portfolio. Trois élèves y sont inscrits.
+- Progression fondée sur le diagnostic réel du groupe et sur ce que la Terminale exige :
+  séance 1 les transformations chimiques — la seule erreur commune aux trois élèves, et le
+  domaine qui conditionne cinq chapitres de Terminale ; séance 2 la mécanique, domaine le
+  plus faible (16,7 %) ; séance 3 l'énergie ; séance 4 les ondes et l'optique ; séance 5
+  l'électricité, la chimie organique, la mesure et l'évaluation.
+- Composition de la cohorte portée à neuf élèves et à quatre groupes, définis par les
+  stages suivis : maths et NSI (4), maths seules (2), maths et physique-chimie (2),
+  physique-chimie seule (1). Huit élèves suivent le stage de mathématiques, quatre celui de
+  NSI, trois celui de physique-chimie.
+- La progression de physique-chimie de l'établissement n'étant pas disponible, le module
+  repose sur le seul programme officiel et le dit explicitement : aucune séance ne présume
+  d'un ordre de chapitres.
+- Les conventions propres à chaque module — répertoire des sources, nom du support de
+  séance, préfixe du mini-diagnostic, contenu du portfolio — passent du code au registre
+  `MODULES` : `tools/build_terminale_pdf.py` ne teste plus la clé du module en six
+  endroits.
+- Correction de sept défauts du convertisseur de notation, tous révélés par la
+  physique-chimie : `\ce{}` emballé dans lui-même à chaque passage, `L⁻¹` pris pour un ion,
+  une équation de réaction ré-emballée espèce par espèce, `1 200 kg` coupé par son
+  séparateur de milliers, `CH₃-CO-CH₃` découpé en trois formules, deux formules contiguës
+  refermant et rouvrant le mode mathématique au même endroit — ce que LaTeX lit comme une
+  formule hors-texte —, et une unité reconnue par-dessus une fin de ligne (« séance 5 » +
+  « L'évaluation » donnait `\SI{5}{\litre}`).
+- Correction de deux défauts de rendu que seule l'impression révélait : les commandes LaTeX
+  écrites au fil du texte ressortaient littéralement, backslash compris, parce que pandoc
+  ne transmet le LaTeX brut qu'à l'intérieur des délimiteurs mathématiques ; et les
+  tableaux débordaient de la page, le lecteur `gfm` ne transportant aucune largeur de
+  colonne. Les largeurs sont désormais calculées à partir du contenu réel de chaque
+  colonne.
+
 ## 2026.4 — 2026-08-22
 
 - Passage du rendu des stages Terminale à **LaTeX**. Pandoc traduit chaque document en

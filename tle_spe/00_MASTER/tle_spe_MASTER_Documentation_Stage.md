@@ -14,7 +14,7 @@
 | Organisme | Nexus Réussite — centre d'accompagnement scolaire |
 | Durée | 10 heures : 2 h/jour, 5 jours consécutifs |
 | Dates | du 24 au 28 août 2026 |
-| Effectif | 8 élèves, répartis en 2 groupes selon les stages suivis |
+| Effectif | 8 élèves sur les 9 de la cohorte, répartis en 4 groupes selon les stages suivis |
 | Référentiel | BO spécial n° 8 du 25 juillet 2019 (Terminale), BO spécial n° 1 du 22 janvier 2019 (Première) |
 | Évaluation | Sans note ; matrice réussite $\times$ confiance, avant et après |
 
@@ -31,11 +31,13 @@ Terminale.
 | Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques | 4 | `tle_spe` |
+| Groupe 2 | Mathématiques | 2 | `tle_spe` |
+| Groupe 3 | Mathématiques et physique-chimie | 2 | `tle_spe` et `tle_pc` |
+| Groupe 4 | Physique-chimie | 1 | `tle_pc` |
 
-Le groupe dit quels **stages** l'élève suit, pas quelles spécialités il a choisies : dans le
-groupe 2, deux élèves suivent également la physique-chimie — sans stage dédié dans ce
-dispositif — et deux ne suivent qu'un seul enseignement accompagné. Chaque livret annonce les
+Le groupe dit quels **stages** l'élève suit, pas quelles spécialités il a choisies. Les
+groupes 1, 2 et 3 suivent ce module, soit huit élèves ; le groupe 4 ne suit que la
+physique-chimie. Chaque livret annonce les
 spécialités réelles de son élève.
 
 Deux élèves suivent l'enseignement optionnel de mathématiques expertes. **Aucun stage ne lui

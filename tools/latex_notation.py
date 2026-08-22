@@ -27,7 +27,9 @@ import re
 # Les caractères qui ne doivent plus apparaître dans le corpus Markdown : ils relèvent
 # des mathématiques et Latin Modern n'en dessine qu'une partie.
 FORBIDDEN_SYMBOLS = (
-    "☐≥≤≠−×÷≈∞√∈∉⊂∪∩∀∃⇒⇔≡±‖ΔΣℝℂℤℕℚ✓↑↓←→↔↗↘⟹⟺"
+    "☐≥≤≠−×÷≈∞√∈∉⊂∪∩∀∃⇒⇔⇌≡±‖✓↑↓←→↔↗↘⟹⟺½¼¾"
+    "ℝℂℤℕℚ"
+    "αβγδεηθκλμνξπρστφχψωΓΔΘΛΞΠΣΦΨΩ"
     "₀₁₂₃₄₅₆₇₈₉ₙ⁰¹²³⁴⁵⁶⁷⁸⁹ⁿ⁺⁻"
 )
 
@@ -40,7 +42,7 @@ SUPPORTED_CHARACTERS = frozenset(
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     " \t\n\r!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"
     "àâäçéèêëîïôöùûüÿœæÀÂÄÇÉÈÊËÎÏÔÖÙÛÜŸŒÆ"
-    "«»—–‘’“”…°·§€"
+    "«»—–‘’“”…°·§€øØåÅ"
 )
 
 SUBSCRIPT_DIGITS = {c: str(i) for i, c in enumerate("₀₁₂₃₄₅₆₇₈₉")}
@@ -60,9 +62,22 @@ SYMBOL_TO_LATEX = {
     "⟹": r"\implies", "⟺": r"\iff", "↔": r"\leftrightarrow", "←": r"\leftarrow",
     "↑": r"\uparrow", "↓": r"\downarrow", "↗": r"\nearrow", "↘": r"\searrow",
     "✓": r"\checkmark", "‖": r"\|",
-    # Le discriminant, la somme, et les ensembles de nombres du programme.
-    "Δ": r"\Delta", "Σ": r"\sum", "ℝ": r"\mathbb{R}", "ℂ": r"\mathbb{C}",
+    "⇌": r"\rightleftharpoons",
+    # Les fractions vulgaires, telles que les bilans les écrivent : « ½ m v² ».
+    "½": r"\tfrac{1}{2}", "¼": r"\tfrac{1}{4}", "¾": r"\tfrac{3}{4}",
+    # Les ensembles de nombres du programme.
+    "ℝ": r"\mathbb{R}", "ℂ": r"\mathbb{C}",
     "ℤ": r"\mathbb{Z}", "ℕ": r"\mathbb{N}", "ℚ": r"\mathbb{Q}",
+    # Les lettres grecques que les trois disciplines emploient. Elles sont des variables
+    # comme les autres : leur place est en mode mathématique, pas dans le texte.
+    "α": r"\alpha", "β": r"\beta", "γ": r"\gamma", "δ": r"\delta",
+    "ε": r"\varepsilon", "η": r"\eta", "θ": r"\theta", "κ": r"\kappa",
+    "λ": r"\lambda", "μ": r"\mu", "ν": r"\nu", "ξ": r"\xi", "π": r"\pi",
+    "ρ": r"\rho", "σ": r"\sigma", "τ": r"\tau", "φ": r"\varphi", "χ": r"\chi",
+    "ψ": r"\psi", "ω": r"\omega",
+    "Γ": r"\Gamma", "Δ": r"\Delta", "Θ": r"\Theta", "Λ": r"\Lambda",
+    "Ξ": r"\Xi", "Π": r"\Pi", "Σ": r"\sum", "Φ": r"\Phi", "Ψ": r"\Psi",
+    "Ω": r"\Omega",
 }
 
 # Le point médian sépare les facteurs d'un produit scalaire ou d'une unité composée
@@ -75,6 +90,28 @@ FUNCTIONS = ("arccos", "arcsin", "arctan", "cos", "sin", "tan", "ln", "log",
              "exp", "lim", "max", "min", "sup", "inf")
 
 
+# Les commandes LaTeX que le corpus écrit au fil du texte. pandoc, en lecture `gfm`, ne
+# transmet le LaTeX brut qu'à l'intérieur des délimiteurs mathématiques : hors de `$…$`,
+# `\ce{HO^-}` ressort littéralement dans le PDF, backslash compris. mhchem et siunitx
+# fonctionnent en mode mathématique comme en mode texte : les y placer ne coûte rien.
+_BARE_LATEX = re.compile(
+    r"\\(?:ce|SIrange|SI|si|num)"
+    r"\{[^{}\n]*\}(?:\{[^{}\n]*\})?(?:\{[^{}\n]*\})?"
+)
+
+
+def _wrap_bare_latex(text: str) -> str:
+    return _BARE_LATEX.sub(lambda m: f"{OPEN}{m.group(0)}{CLOSE}", text)
+
+
+# Les délimiteurs des formules en ligne sont représentés par des sentinelles pendant
+# toute la conversion, et ne redeviennent des `$` qu'à la fin. C'est ce qui permet de
+# repérer deux formules contiguës — `$A$$B$` — que LaTeX lirait comme une formule
+# hors-texte, et de les fusionner. Les formules hors-texte, elles, sont mises de côté
+# entières et n'entrent jamais dans ce jeu.
+OPEN, CLOSE = "\x02", "\x03"
+
+
 def _protect(text: str) -> tuple[str, list[str]]:
     """Met de côté ce qui ne doit jamais être touché : code, maths déjà écrites, liens."""
     kept: list[str] = []
@@ -83,13 +120,35 @@ def _protect(text: str) -> tuple[str, list[str]]:
         kept.append(match.group(0))
         return f"\x00{len(kept) - 1}\x00"
 
-    # L'ordre compte : les blocs de code englobent parfois des backticks isolés.
+    # Le code d'abord : il peut contenir des commandes LaTeX qui n'en sont pas.
+    for pattern in (r"```.*?```", r"~~~.*?~~~", r"`[^`\n]+`"):
+        text = re.sub(pattern, stash, text, flags=re.DOTALL)
+
+    # L'ordre compte, et il est de l'englobant vers l'englobé : un bloc de code contient
+    # parfois des backticks isolés, et une formule hors-texte contient des `$` simples.
+    # Les commandes LaTeX déjà écrites à la main — `\ce`, `\SI`, `\si` — sont mises de
+    # côté ici : sans cela, un second passage les emballerait dans elles-mêmes
+    # (`\ce{\ce{...}}`) et la conversion cesserait d'être idempotente.
+    text = re.sub(r"\$\$.*?\$\$", stash, text, flags=re.DOTALL)
+
+    # Les formules en ligne : seul leur contenu est mis de côté, les délimiteurs restent
+    # visibles sous forme de sentinelles.
+    def stash_inline(match: re.Match[str]) -> str:
+        kept.append(match.group(1))
+        return f"{OPEN}\x00{len(kept) - 1}\x00{CLOSE}"
+
+    text = re.sub(r"\$([^$\n]*(?:\n[^$\n]*)?)\$", stash_inline, text)
+
+    # Ce qui reste de LaTeX brut est hors de toute formule : c'est là qu'il faut
+    # l'encadrer, pandoc ne transmettant le LaTeX qu'en mode mathématique.
+    text = _wrap_bare_latex(text)
+
     for pattern in (
-        r"```.*?```",              # bloc de code clôturé
-        r"~~~.*?~~~",
-        r"`[^`\n]+`",              # code en ligne
-        r"\$[^$\n]+\$",            # mathématiques déjà en LaTeX
-        r"\]\([^)\n]*\)",          # cible d'un lien Markdown
+        r"\\ce\{[^{}]*\}",                     # équations de réaction déjà écrites
+        r"\\SIrange\{[^{}]*\}\{[^{}]*\}\{[^{}]*\}",
+        r"\\SI\{[^{}]*\}\{[^{}]*\}",           # grandeurs avec unité déjà écrites
+        r"\\(?:si|num)\{[^{}]*\}",            # unités et nombres seuls
+        r"\]\([^)\n]*\)",                      # cible d'un lien Markdown
         r"https?://\S+",
     ):
         text = re.sub(pattern, stash, text, flags=re.DOTALL)
@@ -173,8 +232,14 @@ _LEADING_OPERATORS = " \t-+=<>/;"
 
 # Une formule chimique : suite d'éléments, avec charge éventuelle. `\ce{}` de mhchem
 # la compose selon les conventions de la chimie (indices bas, charge en exposant).
+# La charge est soit nue (`Cu^2+`), soit complètement accolée (`Cu^{2+}`). Une accolade
+# ouverte sans être refermée n'est pas une charge : `L^{-1}` est une unité par seconde,
+# pas un ion, et le reconnaître comme tel produisait `\ce{$L^{-}1$}`.
+_GROUP = r"(?:[A-Z][a-z]?(?:_\{?\d+\}?)?)"
 _CHEMICAL = re.compile(
-    r"\b((?:[A-Z][a-z]?(?:_\{?\d+\}?)?){1,6})(\^\{?[0-9]*[+-]\}?)?"
+    # Les tirets d'une chaîne carbonée font partie de la formule : découpée en trois, la
+    # propanone donnait `$\ce{CH3}$$-$CO$-$$\ce{CH3}$`, illisible et instable.
+    rf"\b({_GROUP}+(?:-{_GROUP}+)*)(\^\d*[+-]|\^\{{\d*[+-]\}})?"
 )
 
 
@@ -281,7 +346,7 @@ def _convert_runs(text: str) -> str:
         prefix += opener
         if not run or not _MARKERS.search(run):
             return match.group(0)
-        return f"{prefix}{leading}${_latex_atoms(run)}${trailing}"
+        return f"{prefix}{leading}{OPEN}{_latex_atoms(run)}{CLOSE}{trailing}"
 
     return _RUN.sub(replace, text)
 
@@ -290,9 +355,9 @@ def _convert_runs(text: str) -> str:
 # flèche. mhchem la compose d'un bloc — flèche, coefficients et états compris — ce qu'une
 # conversion espèce par espèce ne saurait pas faire.
 _REACTION = re.compile(
-    r"(?<![\w$])((?:\d*\s*[A-Z][A-Za-z0-9_{}^+-]*(?:\s*\+\s*)?)+)"
-    r"\s*(→|->|⇌|=)\s*"
-    r"((?:\d*\s*[A-Z][A-Za-z0-9_{}^+-]*(?:\s*\+\s*)?)+)"
+    r"(?<![\w$])((?:(?:\d+[^\S\n]*)?[A-Z][A-Za-z0-9_{}^+-]*(?:[^\S\n]*\+[^\S\n]*)?)+)"
+    r"[^\S\n]*(→|->|⇌|=)[^\S\n]*"
+    r"((?:(?:\d+[^\S\n]*)?[A-Z][A-Za-z0-9_{}^+-]*(?:[^\S\n]*\+[^\S\n]*)?)+)"
 )
 
 
@@ -311,17 +376,27 @@ def _convert_chemistry(text: str) -> str:
         symbol = {"→": "->", "->": "->", "⇌": "<=>"}[arrow]
         body = f"{_ce_body(left.strip())} {symbol} {_ce_body(right.strip())}"
         body = re.sub(r"\s+", " ", body)
-        return rf"\ce{{{body}}}"
+        return f"{OPEN}\\ce{{{body}}}{CLOSE}"
 
     def species(match: re.Match[str]) -> str:
         formula, charge = match.group(1), match.group(2)
         if not _looks_chemical(formula, charge):
             return match.group(0)
         body = _ce_body(formula + (charge or ""))
-        return rf"\ce{{{body}}}"
+        return f"{OPEN}\\ce{{{body}}}{CLOSE}"
 
     text = _REACTION.sub(reaction, text)
-    return _CHEMICAL.sub(species, text)
+    # Les espèces d'une équation déjà emballée sont composées par mhchem : les traiter à
+    # nouveau une par une produirait `\ce{Zn + \ce{Cu^2+} -> ...}`, que LaTeX refuse.
+    equations: list[str] = []
+
+    def hide(match: re.Match[str]) -> str:
+        equations.append(match.group(0))
+        return f"\x01{len(equations) - 1}\x01"
+
+    text = re.sub(r"\\ce\{[^{}]*\}", hide, text)
+    text = _CHEMICAL.sub(species, text)
+    return re.sub(r"\x01(\d+)\x01", lambda m: equations[int(m.group(1))], text)
 
 
 # --- unités du programme de physique-chimie ---------------------------------------
@@ -342,9 +417,10 @@ UNIT_MACROS = {
 }
 _UNIT_TOKEN = r"(?:°C|[A-Za-zΩ]{1,3})(?:\^\{?-?\d+\}?)?"
 _UNITS = re.compile(
-    r"(?<![\w.])(\d+(?:[.,]\d+)?)"                     # le nombre
-    r"(?:\s*×\s*10\^\{?(-?\d+)\}?)?"                  # la puissance de dix, si elle est là
-    rf"\s+({_UNIT_TOKEN}(?:[·.]{_UNIT_TOKEN})*)(?![\w·])"
+    r"(?<![\w.])(\d{1,3}(?:[  \u00a0\u202f]\d{3})+(?:[.,]\d+)?|\d+(?:[.,]\d+)?)"  # le nombre
+    r"(?:[^\S\n]*×[^\S\n]*10\^\{?(-?\d+)\}?"        # « 3,0 × 10⁸ »
+    r"|\^\{?(-?\d+)\}?)?"                             # ou « 10⁻² », sans mantisse
+    rf"[^\S\n]+({_UNIT_TOKEN}(?:[·.]{_UNIT_TOKEN})*)(?![\w·])"
 )
 
 
@@ -369,14 +445,19 @@ _POWERS = {2: r"\squared", 3: r"\cubed"}
 
 def _convert_units(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
-        number, exponent, unit = match.group(1), match.group(2), match.group(3)
+        number, scaled, bare, unit = match.groups()
         macro = _unit_macro(unit)
         if macro is None:
             return match.group(0)
-        value = number.replace(",", ".")
-        if exponent:
-            value = f"{value}e{exponent}"
-        return rf"\SI{{{value}}}{{{macro}}}"
+        if bare is not None:
+            # « 10⁻² mol·L⁻¹ » : la mantisse est le 10 de la puissance, pas un facteur.
+            if number != "10":
+                return match.group(0)
+            return f"{OPEN}\\SI{{1e{bare}}}{{{macro}}}{CLOSE}"
+        value = re.sub(r"[\s\u00a0\u202f]", "", number).replace(",", ".")
+        if scaled:
+            value = f"{value}e{scaled}"
+        return f"{OPEN}\\SI{{{value}}}{{{macro}}}{CLOSE}"
 
     return _UNITS.sub(replace, text)
 
@@ -400,7 +481,7 @@ def _convert_sequences(text: str) -> str:
 def to_latex(text: str, *, chemistry: bool = False) -> str:
     """Traduit la notation Unicode d'un document en LaTeX, hors code et liens."""
     text, kept = _protect(text)
-    text = text.replace("☐", "$\\square$")
+    text = text.replace("☐", f"{OPEN}\\square{CLOSE}")
     text = _ascii_scripts(text)
     text = _convert_sequences(text)
     if chemistry:
@@ -410,6 +491,12 @@ def to_latex(text: str, *, chemistry: bool = False) -> str:
         # convertisseur d'expressions y injecterait des `$` au milieu de la formule.
         text, kept = _protect_chemistry(text, kept)
     text = _convert_runs(text)
+    # Deux formules contiguës referment et rouvrent le mode mathématique au même endroit :
+    # LaTeX y lirait une formule hors-texte et perdrait la suite du document. Les
+    # sentinelles rendent le cas identifiable ; il n'y a qu'une lecture correcte, les
+    # fusionner.
+    text = text.replace(CLOSE + OPEN, " ")
+    text = text.replace(OPEN, "$").replace(CLOSE, "$")
     return _restore(text, kept)
 
 

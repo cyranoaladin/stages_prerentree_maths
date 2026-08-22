@@ -1,6 +1,7 @@
 # Guide d'impression et de distribution — stages Terminale
 
-Ce guide couvre les deux modules, `tle_spe` (mathématiques) et `tle_nsi` (NSI).
+Ce guide couvre les trois modules : `tle_spe` (mathématiques), `tle_nsi` (NSI) et
+`tle_pc` (physique-chimie).
 
 **Nexus Réussite** — centre d'accompagnement scolaire. Chaque stage dure 10 heures, à raison
 de 2 heures par jour pendant 5 jours consécutifs, **du 24 au 28 août 2026**. Les documents

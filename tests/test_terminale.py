@@ -42,6 +42,11 @@ from tools.latex_notation import (  # noqa: E402
     unsupported_characters,
 )
 
+
+def as_written(text: str, module_key: str) -> str:
+    """Le texte tel que le générateur l'écrit : converti en LaTeX, chimie comprise."""
+    return to_latex(text, chemistry=module_key == "tle_pc")
+
 MODULE_ROOTS = {"tle_spe": ROOT / "tle_spe", "tle_nsi": ROOT / "tle_nsi"}
 NOMINATIVE_DIRS = {"tle_spe": "04_NOMINATIFS", "tle_nsi": "05_NOMINATIFS"}
 
@@ -78,9 +83,11 @@ def test_sources_are_consistent(registry, diagnostics, items):
     check_sources(registry, diagnostics, items)
 
 
-def test_cohort_is_split_into_the_two_declared_groups(registry):
+def test_cohort_is_split_into_the_declared_groups(registry):
     groups = {group["id"]: group for group in registry["groupes"]}
-    assert set(groups) == {"groupe-1-maths-nsi", "groupe-2-maths"}
+    assert set(groups) == {
+        "groupe-1-maths-nsi", "groupe-2-maths", "groupe-3-maths-pc", "groupe-4-pc",
+    }
     counts: dict[str, int] = {}
     for student in registry["students"]:
         counts[student["groupe"]] = counts.get(student["groupe"], 0) + 1
@@ -108,11 +115,18 @@ def test_every_group_1_student_follows_both_modules(registry):
         )
 
 
-def test_every_student_follows_at_least_the_maths_module(registry):
-    """Tous les élèves de la cohorte suivent les mathématiques, quel que soit leur groupe."""
+def test_every_student_follows_the_modules_their_group_declares(registry):
+    """Le groupe déclare des modules ; l'élève doit suivre exactement ceux-là.
+
+    Tous les élèves ne suivent pas les mathématiques : celui du groupe 4 ne suit que la
+    physique-chimie. C'est le groupe, et lui seul, qui dit quels stages sont suivis.
+    """
+    groups = {group["id"]: group for group in registry["groupes"]}
     for student in registry["students"]:
-        assert "tle_spe" in _modules_of(student), (
-            f"{student['displayName']} ne suit pas le module de mathématiques"
+        declared = set(groups[student["groupe"]]["modules"])
+        assert _modules_of(student) == declared, (
+            f"{student['displayName']} suit {sorted(_modules_of(student))} "
+            f"alors que son groupe déclare {sorted(declared)}"
         )
 
 
@@ -175,19 +189,50 @@ def test_prose_group_sizes_match_the_registry(registry):
     assert mismatches == [], mismatches
 
 
+# Un module ne couvre plus toute la cohorte : « 8 élèves » est une phrase juste dans le
+# module de mathématiques, et fausse pour la cohorte. Le test ne peut donc plus bannir un
+# nombre ; il vérifie la phrase qui annonce explicitement l'effectif de la cohorte.
+NOMBRES_ECRITS = {
+    "un": 1, "deux": 2, "trois": 3, "quatre": 4, "cinq": 5,
+    "six": 6, "sept": 7, "huit": 8, "neuf": 9, "dix": 10,
+}
+COHORTE_ANNONCEE = re.compile(
+    r"[Ll]a cohorte compte (\d+|" + "|".join(NOMBRES_ECRITS) + r") élèves"
+)
+
+
 def test_total_cohort_size_is_stated_consistently(registry):
     total = len(registry["students"])
-    written = {"8": "huit", "9": "neuf", "10": "dix"}
     stale = []
     for relative in DOCUMENTS_CITANT_LES_EFFECTIFS:
         text = (ROOT / relative).read_text(encoding="utf-8")
-        for digits, word in written.items():
-            if int(digits) == total:
-                continue
-            for form in (f"{digits} élèves", f"{word} élèves"):
-                if form in text:
-                    stale.append(f"{relative} : « {form} » alors que la cohorte en compte {total}")
+        for match in COHORTE_ANNONCEE.finditer(text):
+            written = match.group(1)
+            value = int(written) if written.isdigit() else NOMBRES_ECRITS[written]
+            if value != total:
+                stale.append(
+                    f"{relative} : « la cohorte compte {written} élèves » "
+                    f"alors qu'elle en compte {total}"
+                )
     assert stale == [], stale
+
+
+def test_each_module_states_how_many_of_the_cohort_it_covers(registry):
+    """« 8 élèves » dans le module de mathématiques doit être le compte réel du module."""
+    groups = {group["id"]: group for group in registry["groupes"]}
+    covered = {
+        key: sum(
+            1 for student in registry["students"]
+            if key in groups[student["groupe"]]["modules"]
+        )
+        for key in MODULES
+    }
+    assert covered["tle_spe"] == 8
+    assert covered["tle_nsi"] == 4
+    assert covered["tle_pc"] == 3
+    assert sum(covered.values()) == sum(
+        len(groups[student["groupe"]]["modules"]) for student in registry["students"]
+    )
 
 
 def test_every_declared_source_report_exists(registry):
@@ -331,11 +376,11 @@ def test_each_livret_reprend_toutes_les_erreurs_de_son_eleve(registry, diagnosti
             for rank, item, _reference in items_to_revisit(diagnostic, bank):
                 # Le document compose l'énoncé en LaTeX ; c'est cette forme-là qu'on y
                 # cherche, sans quoi le test comparerait deux notations différentes.
-                assert to_latex(item["question"]) in content, (
+                assert as_written(item["question"], module.key) in content, (
                     f"{relative} : l'énoncé de l'item {rank} manque"
                 )
                 if item["origine_erreur"]:
-                    assert to_latex(item["origine_erreur"]) in content, (
+                    assert as_written(item["origine_erreur"], module.key) in content, (
                         f"{relative} : l'origine de l'erreur de l'item {rank} manque"
                     )
 
@@ -362,7 +407,7 @@ def test_remediation_sheets_only_target_the_student_own_weaknesses(registry, dia
             )
             content = documents[relative]
             for reference in bank:
-                present = to_latex(reference["variante"]) in content
+                present = as_written(reference["variante"], module.key) in content
                 if reference["variante"] in expected:
                     assert present, f"{relative} : exercice attendu absent"
                 else:
@@ -424,10 +469,10 @@ def test_option_exercises_reach_both_remediation_sheets(registry, diagnostics, i
         eleve = documents[f"{base}_ELEVE.md"]
         prof = documents[f"{base}_PROF_Corrige.md"]
         for variante in expected:
-            assert to_latex(variante) in eleve, (
+            assert as_written(variante, "tle_spe") in eleve, (
                 f"{student['displayName']} : exercice d'option absent"
             )
-            assert to_latex(variante) in prof
+            assert as_written(variante, "tle_spe") in prof
 
 
 def test_a_student_without_diagnostic_gets_an_explicit_notice(registry, documents):
@@ -596,10 +641,12 @@ def test_a_session_bundle_holds_only_that_session(bundles):
 
 def test_session_bundles_carry_the_expected_documents(bundles):
     """Préparation = fiche professeur + supports + cartes d'aide. Fiche élève = l'activité."""
+    from tools.build_terminale_pdf import file_label
+
     by_name = {bundle.filename: bundle for bundle in bundles}
     for key, module in MODULES.items():
-        label = "Tle_SPE" if key == "tle_spe" else "Tle_NSI"
-        supports = "SUPPORTS_Pratiques" if key == "tle_nsi" else "SUPPORTS_Manipulation"
+        label = file_label(module)
+        supports = module.supports_suffix
         for number in range(1, 6):
             prof = by_name[f"{label}_S{number}_PREPARATION_ENSEIGNANT.pdf"]
             assert [source.name for source in prof.sources] == [
@@ -764,12 +811,21 @@ def test_every_document_has_balanced_mathematics():
         if not base.is_dir():
             continue
         for path in sorted(base.rglob("*.md")):
-            fenced = False
+            fenced = display = False
             for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
                 if line.startswith("```"):
                     fenced = not fenced
                     continue
                 if fenced:
+                    continue
+                # Une formule hors-texte `$$…$$` s'étend souvent sur plusieurs lignes :
+                # on suit son ouverture et sa fermeture avant de compter les `$` simples.
+                opened = len(re.findall(r"(?<!\\)\$\$", line))
+                stripped = re.sub(r"(?<!\\)\$\$", "", line)
+                if display or opened:
+                    display = (display + opened) % 2 == 1
+                    if re.findall(r"(?<!\\)\$", stripped):
+                        unbalanced.append(f"{path.relative_to(ROOT)}:{number}")
                     continue
                 if len(re.findall(r"(?<!\\)\$", line)) % 2:
                     unbalanced.append(f"{path.relative_to(ROOT)}:{number}")
@@ -792,7 +848,10 @@ def test_no_french_prose_was_absorbed_into_a_formula():
             continue
         for path in sorted(base.rglob("*.md")):
             for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-                for match in re.finditer(r"(?<!\$)\$([^$\n]+)\$(?!\$)", line):
+                # Les `$` s'apparient de gauche à droite : chercher chaque paire à partir
+                # de la fin de la précédente, sinon le texte qui sépare deux formules
+                # voisines passe lui-même pour une formule.
+                for match in re.finditer(r"\$([^$\n]+)\$", re.sub(r"\$\$.*?\$\$", "", line)):
                     if FRENCH_WORDS.search(match.group(1)):
                         absorbed.append(f"{path.relative_to(ROOT)}:{number} ${match.group(1)}$")
     assert absorbed == [], "Prose française prise dans une formule : " + str(absorbed[:5])

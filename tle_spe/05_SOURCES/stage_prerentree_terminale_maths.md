@@ -23,18 +23,20 @@ programme de Terminale. Son objet est précis : **consolider les notions de Prem
 la Terminale a un besoin immédiat**, en traitant en priorité les conceptions erronées que
 le positionnement a mises au jour.
 
-La cohorte compte huit élèves, répartis en deux groupes **selon les stages qu'ils suivent**
-— et non selon la combinaison de spécialités qu'ils ont choisie :
+La cohorte compte neuf élèves, répartis en quatre groupes **selon les stages qu'ils
+suivent** — et non selon la combinaison de spécialités qu'ils ont choisie :
 
 | Groupe | Stages suivis | Effectif | Modules |
 |---|---|---:|---|
 | Groupe 1 | Mathématiques et NSI | 4 | `tle_spe` et `tle_nsi` |
-| Groupe 2 | Mathématiques | 4 | `tle_spe` |
+| Groupe 2 | Mathématiques | 2 | `tle_spe` |
+| Groupe 3 | Mathématiques et physique-chimie | 2 | `tle_spe` et `tle_pc` |
+| Groupe 4 | Physique-chimie | 1 | `tle_pc` |
 
-Les élèves du groupe 2 n'ont pas tous le même profil : deux suivent également la
-**physique-chimie**, pour laquelle aucun stage n'est organisé dans ce dispositif, et deux ne
-suivent qu'un seul enseignement de spécialité accompagné. Le livret de chacun annonce ses
-spécialités réelles.
+**Huit élèves** suivent donc le stage de mathématiques : ceux des groupes 1, 2 et 3. Le
+neuvième, du groupe 4, ne suit que la physique-chimie ; les mathématiques restent l'une de
+ses spécialités de Terminale, mais elles ne font pas l'objet d'un stage de pré-rentrée
+pour lui. Le livret de chacun annonce ses spécialités réelles.
 
 Deux élèves suivent en outre l'enseignement optionnel de **mathématiques expertes**.
 **Aucun stage n'est dédié à cette option** : elle se prépare à l'intérieur du stage de
@@ -701,7 +703,7 @@ spécialité NSI, le lien est fait explicitement avec le module `tle_nsi`.
 
 | Élément | Décision |
 |---|---|
-| Public | 8 élèves entrant en Terminale, deux groupes selon les stages suivis |
+| Public | 8 élèves sur les 9 de la cohorte Terminale — groupes 1, 2 et 3 |
 | Durée | 10 heures : 2 h/jour, 5 jours consécutifs, du 24 au 28 août 2026 |
 | Ordre des séances | Déduit du diagnostic : suites, exponentielle, second degré, dérivation, géométrie et probabilités |
 | Principe directeur | Les certitudes erronées d'abord, la justification toujours, l'usage en Terminale explicité |

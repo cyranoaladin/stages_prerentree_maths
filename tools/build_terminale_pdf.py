@@ -147,6 +147,60 @@ def _rule_for(dots: int) -> str:
     return r"\rule{%.0fmm}{0.32pt}" % width
 
 
+# --- largeur des tableaux ----------------------------------------------------------
+# Le lecteur `gfm` de pandoc ne transporte aucune largeur de colonne : il produit des
+# colonnes `l`, qui ne se coupent jamais. Un tableau de conduite de séance, dont les
+# cellules font une phrase, débordait alors de la page. Les largeurs sont donc calculées
+# ici, à partir du contenu réel de chaque colonne, comme le fait le lecteur `markdown`.
+LONGTABLE = re.compile(
+    r"\\begin\{longtable\}\[\]\{@\{\}([lrc]+)@\{\}\}(.*?)\\end\{longtable\}", re.DOTALL
+)
+# En deçà, le tableau tient dans la page et des colonnes ajustées au contenu sont plus
+# lisibles qu'un pavé justifié.
+TABLE_WIDTH_THRESHOLD = 95
+# Une colonne ne descend pas sous cette part de la largeur, sinon un intitulé court se
+# retrouve coupé lettre par lettre.
+MIN_COLUMN_SHARE = 0.07
+
+
+def _cells(row: str) -> list[str]:
+    return re.split(r"(?<!\\)&", row)
+
+
+def _visible_length(cell: str) -> int:
+    """Longueur approximative du texte composé, commandes LaTeX défalquées."""
+    cell = re.sub(r"\\[a-zA-Z]+\s*", "", cell)
+    return len(re.sub(r"[{}$\\]", "", cell).strip())
+
+
+def size_tables(fragment: str) -> str:
+    def rebuild(match: re.Match[str]) -> str:
+        spec, body = match.group(1), match.group(2)
+        columns = len(spec)
+        widths = [0] * columns
+        for row in body.split(r"\\"):
+            cells = _cells(row)
+            if len(cells) != columns:
+                continue
+            for index, cell in enumerate(cells):
+                widths[index] = max(widths[index], _visible_length(cell))
+        if not any(widths) or sum(widths) <= TABLE_WIDTH_THRESHOLD:
+            return match.group(0)
+        shares = [max(width / sum(widths), MIN_COLUMN_SHARE) for width in widths]
+        shares = [share / sum(shares) for share in shares]
+        alignment = {"l": r"\raggedright", "r": r"\raggedleft", "c": r"\centering"}
+        rebuilt = "".join(
+            r">{%s\arraybackslash}p{\dimexpr %.4f\linewidth-2\tabcolsep\relax}"
+            % (alignment[letter], share)
+            for letter, share in zip(spec, shares)
+        )
+        return (
+            r"\begin{longtable}[]{@{}" + rebuilt + "@{}}" + body + r"\end{longtable}"
+        )
+
+    return LONGTABLE.sub(rebuild, fragment)
+
+
 def latex_fragment(source: Path) -> str:
     """Traduit un document Markdown en fragment LaTeX, via pandoc."""
     result = subprocess.run(
@@ -166,7 +220,7 @@ def latex_fragment(source: Path) -> str:
     fragment = result.stdout
     # pandoc échappe les points ; ils ressortent tels quels et repassent ici en filets.
     fragment = DOTTED_RUN.sub(lambda match: _rule_for(len(match.group(0))), fragment)
-    return fragment
+    return size_tables(fragment)
 
 
 def check_source_notation(sources: list[Path]) -> list[str]:
@@ -327,6 +381,11 @@ def count_pages(pdf_path: Path) -> int:
     return len(PdfReader(str(pdf_path)).pages)
 
 
+def file_label(module: Module) -> str:
+    """Le préfixe des noms de fichiers : `tle_spe` donne `Tle_SPE`."""
+    return "Tle_" + module.key.removeprefix("tle_").upper()
+
+
 def nominative_dir(module: Module) -> Path:
     return ROOT / module.key / module.nominative_dir
 
@@ -355,7 +414,7 @@ def session_sheets(module: Module, audience: str) -> list[Path]:
 
 
 def support_sheets(module: Module) -> list[Path]:
-    supports = "SUPPORTS_Pratiques" if module.key == "tle_nsi" else "SUPPORTS_Manipulation"
+    supports = module.supports_suffix
     paths: list[Path] = []
     for number, _theme in module.sessions:
         folder = ROOT / module.key / "02_SEANCES" / f"S{number}"
@@ -366,10 +425,7 @@ def support_sheets(module: Module) -> list[Path]:
 
 def evaluation_sheets(module: Module, audience: str) -> list[Path]:
     folder = ROOT / module.key / "03_EVALUATIONS"
-    if module.key == "tle_spe":
-        diagnostic = f"{module.key}_Mini_Diagnostic_"
-    else:
-        diagnostic = f"{module.key}_Mini_Diagnostic_Pratique_"
+    diagnostic = f"{module.key}_{module.diagnostic_prefix}_"
     if audience == "eleve":
         names = [f"{diagnostic}ELEVE.md", f"{module.key}_Evaluation_Finale_ELEVE.md"]
     else:
@@ -381,12 +437,9 @@ def evaluation_sheets(module: Module, audience: str) -> list[Path]:
 
 
 def portfolio_sheets(module: Module) -> list[Path]:
-    if module.key == "tle_spe":
-        return [ROOT / module.key / "03_EVALUATIONS" / f"{module.key}_Portfolio_Individuel.md"]
-    folder = ROOT / module.key / "04_PORTFOLIO"
-    return [
-        folder / f"{module.key}_Memento_Python_Terminale_ELEVE.md",
-        folder / f"{module.key}_Portfolio_Individuel.md",
+    folder = ROOT / module.key / module.portfolio_dir
+    return [folder / name for name in module.extra_portfolio] + [
+        folder / f"{module.key}_Portfolio_Individuel.md"
     ]
 
 
@@ -408,7 +461,7 @@ def plan_bundles(root: Path = ROOT) -> list[Bundle]:
             module = MODULES[subject["module"]]
             suffix = subject_suffix(module, subject["matiere"], student["slug"])
             documents = student_documents(module, student["slug"], suffix)
-            label = module.key.replace("tle_", "Tle_").upper().replace("TLE_", "Tle_")
+            label = file_label(module)
             matiere_tag = "" if subject["matiere"] == module.subject_label else "_EXPERTES"
 
             # Dossier élève : livret + remédiation, jamais de corrigé.
@@ -455,9 +508,9 @@ def plan_bundles(root: Path = ROOT) -> list[Bundle]:
                 ))
 
     for key, module in MODULES.items():
-        label = "Tle_SPE" if key == "tle_spe" else "Tle_NSI"
-        sources_dir = "07_SOURCES" if key == "tle_nsi" else "05_SOURCES"
-        supports = "SUPPORTS_Pratiques" if key == "tle_nsi" else "SUPPORTS_Manipulation"
+        label = file_label(module)
+        sources_dir = module.sources_dir
+        supports = module.supports_suffix
 
         # Une séance est l'unité de travail réelle de l'enseignant : il prépare la séance 3,
         # pas « le module ». Sans ces fichiers, il faudrait imprimer un pack de cent pages ou
@@ -535,8 +588,8 @@ def plan_bundles(root: Path = ROOT) -> list[Bundle]:
             sources=[
                 ROOT / key / sources_dir / module.source_document,
                 ROOT / key / "01_ENSEIGNANT" / f"{key}_Guide_Formateur.md",
-                *([ROOT / key / "01_ENSEIGNANT" / f"{key}_Option_Maths_Expertes.md"]
-                  if key == "tle_spe" else []),
+                *[ROOT / key / "01_ENSEIGNANT" / name
+                  for name in module.extra_teacher_documents],
                 *session_sheets(module, "enseignant"),
                 *support_sheets(module),
                 *evaluation_sheets(module, "enseignant"),

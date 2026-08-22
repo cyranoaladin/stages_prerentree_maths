@@ -31,7 +31,7 @@ from tools.latex_notation import to_latex, unsupported_characters  # noqa: E402
 MODULE_DIRECTORIES = {
     "tle_spe": "04_NOMINATIFS",
     "tle_nsi": "05_NOMINATIFS",
-    "tle_pc": "05_NOMINATIFS",
+    "tle_pc": "04_NOMINATIFS",
 }
 # La physique-chimie seule active la reconnaissance des formules et des unités : hors
 # de ce module, « A + B → C » est une étape d'algorithme, pas une réaction.

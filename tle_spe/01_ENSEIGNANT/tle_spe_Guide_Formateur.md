@@ -32,10 +32,12 @@ Une phrase résume la doctrine :
 | Groupe | Stages suivis | Élèves |
 |---|---|---:|
 | Groupe 1 | Mathématiques et NSI | 4 |
-| Groupe 2 | Mathématiques | 4 |
+| Groupe 2 | Mathématiques | 2 |
+| Groupe 3 | Mathématiques et physique-chimie | 2 |
 
-Les deux groupes suivent **le même module de mathématiques**, ensemble. Le groupe 1 suit en
-outre le module `tle_nsi`.
+Ces trois groupes suivent **le même module de mathématiques**, ensemble : huit élèves. Le
+groupe 1 suit en outre le module `tle_nsi`, le groupe 3 le module `tle_pc`. Un quatrième
+groupe, d'un élève, ne suit que la physique-chimie et n'apparaît donc pas ici.
 
 Dans le groupe 2, deux élèves suivent aussi la physique-chimie — aucun stage n'est organisé
 pour cette spécialité ici — et deux ne suivent que les mathématiques. Deux élèves de la

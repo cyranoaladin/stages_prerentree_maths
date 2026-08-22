@@ -72,9 +72,19 @@ class Module:
     key: str
     label: str
     nominative_dir: str
+    sources_dir: str
     subject_label: str
     source_document: str
     sessions: tuple[tuple[int, str], ...]
+    # Les modules ne nomment pas leurs documents de la même façon : le support de séance
+    # s'appelle « manipulation » en sciences et « pratiques » en NSI, le mini-diagnostic
+    # est « pratique » en NSI seulement. Ces différences sont ici plutôt que dispersées
+    # en conditions sur la clé du module.
+    supports_suffix: str = "SUPPORTS_Manipulation"
+    diagnostic_prefix: str = "Mini_Diagnostic"
+    portfolio_dir: str = "03_EVALUATIONS"
+    extra_portfolio: tuple[str, ...] = ()
+    extra_teacher_documents: tuple[str, ...] = ()
 
 
 MODULES: dict[str, Module] = {
@@ -82,6 +92,7 @@ MODULES: dict[str, Module] = {
         key="tle_spe",
         label="Terminale Spécialité Mathématiques",
         nominative_dir="04_NOMINATIFS",
+        sources_dir="05_SOURCES",
         subject_label="Mathématiques",
         source_document="stage_prerentree_terminale_maths.md",
         sessions=(
@@ -91,11 +102,13 @@ MODULES: dict[str, Module] = {
             (4, "Dérivation : du nombre dérivé aux variations, ouverture sur la convexité"),
             (5, "Produit scalaire vers l'espace, probabilités, Python, évaluation"),
         ),
+        extra_teacher_documents=("tle_spe_Option_Maths_Expertes.md",),
     ),
     "tle_nsi": Module(
         key="tle_nsi",
         label="Terminale NSI",
         nominative_dir="05_NOMINATIFS",
+        sources_dir="07_SOURCES",
         subject_label="NSI",
         source_document="stage_prerentree_terminale_nsi.md",
         sessions=(
@@ -105,6 +118,26 @@ MODULES: dict[str, Module] = {
             (4, "Algorithmique : préconditions, recherche, tris, coût"),
             (5, "Données en tables, bases de données, systèmes, évaluation"),
         ),
+        supports_suffix="SUPPORTS_Pratiques",
+        diagnostic_prefix="Mini_Diagnostic_Pratique",
+        portfolio_dir="04_PORTFOLIO",
+        extra_portfolio=("tle_nsi_Memento_Python_Terminale_ELEVE.md",),
+    ),
+    "tle_pc": Module(
+        key="tle_pc",
+        label="Terminale Spécialité Physique-Chimie",
+        nominative_dir="04_NOMINATIFS",
+        sources_dir="05_SOURCES",
+        subject_label="Physique-chimie",
+        source_document="stage_prerentree_terminale_pc.md",
+        sessions=(
+            (1, "Transformations chimiques : avancement, réactif limitant, oxydo-réduction"),
+            (2, "Mécanique : vecteur vitesse, forces, vers la deuxième loi de Newton"),
+            (3, "Énergie : travail, énergies cinétique et potentielle, énergie mécanique"),
+            (4, "Ondes et optique : période, célérité, longueur d'onde, lentilles minces"),
+            (5, "Électricité, chimie organique, mesure et incertitudes, évaluation"),
+        ),
+        extra_portfolio=("tle_pc_Memento_Formules_Terminale_ELEVE.md",),
     ),
 }
 
