@@ -243,7 +243,7 @@ Ton positionnement comporte **12 item(s)** à reprendre. Pour chacun : l'énonc�
 
 **Ce qu'il faut retenir.** Le pH est l'opposé du logarithme décimal de la concentration en ions $\ce{H3O^+}$. Deux unités de pH d'écart correspondent donc à un facteur cent.
 
-**Le geste à installer.** pH = $- \log$[$\ce{H3O^+}$], donc [$\ce{H3O^+}$] $= 10^{ - pH}$. Une unité de pH correspond à un facteur dix sur la concentration.
+**Le geste à installer.** pH = $- \log$[$\ce{H3O^+}$], donc [$\ce{H3O^+}$] $= 10^{ - \mathrm{pH}}$. Une unité de pH correspond à un facteur dix sur la concentration.
 
 **Ma reformulation, avec mes mots :**
 

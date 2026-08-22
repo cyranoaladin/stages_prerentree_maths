@@ -64,21 +64,27 @@ seul** rayon : c'est ce qui empêche de les confondre.
 
 ```{=latex}
 \begin{center}
-\begin{tikzpicture}[x=6.5mm,y=6.5mm]
+\begin{tikzpicture}[x=5.4mm,y=5.4mm]
 \foreach \k/\titre in {0/{rayon 1 --- parallèle à l'axe},
                        1/{rayon 2 --- par le foyer objet $F$},
                        2/{rayon 3 --- par le centre optique $O$}}
 {
-  \begin{scope}[xshift=\k*58mm]
-    \draw[TextGray,thin,->] (-4.4,0) -- (4.6,0);
-    \draw[Navy,very thick] (0,-1.8) -- (0,1.8);
-    \draw[Navy,thick] (-0.18,1.62) -- (0,1.8) -- (0.18,1.62);
-    \draw[Navy,thick] (-0.18,-1.62) -- (0,-1.8) -- (0.18,-1.62);
-    \foreach \x/\lab in {-2.2/F,2.2/{F'},0/O}
+  \begin{scope}[xshift=\k*56mm]
+    % Un cadre léger par schéma : sans lui, les trois axes se touchaient et se
+    % lisaient comme une seule droite portant trois lentilles.
+    \draw[SoftGray,fill=SoftGray,rounded corners=1.5mm]
+         (-4.5,-2.9) rectangle (4.5,3.1);
+    \draw[TextGray,thin,->] (-4.1,0) -- (4.2,0);
+    \draw[Navy,very thick] (0,-2.1) -- (0,2.1);
+    \draw[Navy,thick] (-0.22,1.88) -- (0,2.1) -- (0.22,1.88);
+    \draw[Navy,thick] (-0.22,-1.88) -- (0,-2.1) -- (0.22,-1.88);
+    \foreach \x/\lab in {-2.3/F,2.3/{F'},0/O}
        {\fill (\x,0) circle (1.5pt);
         \node[below=0.7mm,font=\scriptsize] at (\x,0) {$\lab$};}
-    \draw[->,Red,thick] (-3.6,0) -- (-3.6,1.2) node[above,font=\scriptsize] {$B$};
-    \node[font=\scriptsize,below] at (0,-2.4) {\titre};
+    \draw[->,Red,very thick] (-3.5,0) -- (-3.5,1.7);
+    \node[Red,font=\scriptsize,above] at (-3.5,1.7) {$B$};
+    \node[Red,font=\scriptsize,below left=0.2mm] at (-3.5,0) {$A$};
+    \node[font=\scriptsize,align=center] at (0,-2.55) {\titre};
   \end{scope}
 }
 \end{tikzpicture}

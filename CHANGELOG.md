@@ -1,5 +1,36 @@
 # Journal des modifications
 
+## 2026.6 — 2026-08-22
+
+- Ajout d'un contrôle des débordements de marge à la construction des PDF : LaTeX les
+  signale dans son journal, `tools/build_terminale_pdf.py` les remonte document par
+  document. Ils ne font pas échouer la compilation — le PDF sort, avec une ligne hors de
+  la page —, et c'est le seul moment où on peut encore les voir.
+- Correction des 18 documents que ce contrôle a révélés, sur 65. Trois causes distinctes,
+  toutes dans le calcul des largeurs de colonnes :
+  - un mot ne se coupe pas, et aucune colonne ne peut être plus étroite que le sien :
+    `**CONFRONTER**` débordait de 39 pt dans la table des priorités de chaque livret ;
+  - une capitale occupe environ 1,4 fois la chasse d'une bas-de-casse et le gras 1,1 fois
+    celle du romain : compter les caractères sans en tenir compte sous-estimait ce mot de
+    moitié ;
+  - la normalisation appliquée après coup ramenait les colonnes sous leur propre plancher.
+    Les planchers sont désormais réservés d'abord, le reste de la justification étant
+    réparti au prorata du contenu.
+- Correction du dimensionnement des tableaux larges et creux : la table
+  hexadécimal/décimal/binaire de la séance 1 de NSI débordait de 23 pt par le seul blanc
+  entre ses dix-sept colonnes. Au-delà de huit colonnes courtes, le blanc est resserré
+  plutôt que le texte justifié.
+- Correction de deux figures de physique-chimie : les trois schémas de lentille de la
+  séance 4 se touchaient et se lisaient comme un seul axe portant trois lentilles ; le
+  libellé de la flèche du premier principe, en séance 3, mordait sur les deux encadrés
+  qu'elle relie.
+- `pH` se compose désormais en romain à l'intérieur d'une formule : en italique,
+  `10^{-pH}` se lit comme le produit d'un p par un H. Même traitement pour `pOH`, `pKa`
+  et `pKe`.
+- Ajout de cinq tests sur le calcul des largeurs de colonnes et la composition du pH.
+  L'intégration continue peut les exécuter sans distribution TeX ; la composition
+  elle-même reste vérifiée à la construction des PDF.
+
 ## 2026.5 — 2026-08-22
 
 - Ajout du module **`tle_pc`**, stage de pré-rentrée de spécialité physique-chimie : le
