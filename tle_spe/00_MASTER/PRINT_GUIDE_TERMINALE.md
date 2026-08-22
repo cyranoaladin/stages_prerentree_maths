@@ -28,7 +28,7 @@ sans rien rendre — utile pour vérifier la composition avant d'imprimer.
 
 | Dossier | Contenu | Destinataire |
 |---|---|---|
-| `eleves/` | Un dossier par élève et par matière : livret individuel et plan de remédiation | L'élève et sa famille |
+| `eleves/` | Par élève et par matière : le **cahier des cinq séances**, et un dossier réunissant livret individuel et plan de remédiation | L'élève et sa famille |
 | `seances/` | Une fiche par séance (S1 à S5) et le pack des cinq séances | À photocopier pour le groupe |
 | `enseignant/seances/` | Une préparation par séance : fiche professeur, supports, cartes d'aide | L'enseignant seul |
 | `enseignant/` | Les corrigés nominatifs, les tableaux de bord, les packs complets | L'enseignant seul |
@@ -42,6 +42,16 @@ obliger à imprimer un pack de cent pages.
 |---|---|---:|
 | `seances/Tle_SPE_S3_FICHE_ELEVE.pdf` | L'activité élève de la séance 3 | 5 |
 | `enseignant/seances/Tle_SPE_S3_PREPARATION_ENSEIGNANT.pdf` | Fiche professeur, supports, cartes d'aide | 12 |
+
+**Le cahier des cinq séances est le document de travail.** C'est celui que l'élève apporte
+chaque jour : il porte sa progression, ses automatismes, ses exercices — et seulement les
+siens, ceux de sa piste. Un élève en remédiation n'y trouve pas les problèmes destinés à
+ceux qui n'ont rien à reprendre, et réciproquement. Il fait de 17 à 25 pages selon le profil,
+et c'est la seule chose à imprimer en recto verso agrafé.
+
+Le **dossier individuel**, lui, se conserve : il restitue le positionnement, sert à l'entretien
+avec la famille et porte la page de signature de l'enseignant. On l'imprime une fois, on ne le
+réimprime pas.
 
 **Un dossier `eleves/` ne contient jamais de corrigé.** Ce n'est pas une convention de
 nommage : `tools/build_terminale_pdf.py` refuse d'assembler un pack élève contenant un

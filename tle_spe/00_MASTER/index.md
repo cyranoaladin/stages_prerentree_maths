@@ -58,7 +58,7 @@
 
 ## Dossiers nominatifs
 
-Le dossier `04_NOMINATIFS/` contient, pour chaque élève, son livret individuel et son plan de remédiation en deux versions.
+Le dossier `04_NOMINATIFS/` contient, pour chaque élève, trois pièces : son **cahier des cinq séances**, qu'il a devant lui pendant le stage et qui ne porte que les exercices de sa piste ; son **livret individuel**, qui lui restitue son positionnement et se conserve après le stage ; et son **plan de remédiation** en deux versions, élève et corrigé.
 
 > **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne les nomme pas : la liste et les liens figurent dans le [tableau de bord enseignant](../01_ENSEIGNANT/tle_spe_Tableau_Bord_Enseignant.md), qui est lui-même confidentiel. Ne jamais placer un document nominatif dans un pack collectif, ni le remettre à un autre élève du groupe.
 

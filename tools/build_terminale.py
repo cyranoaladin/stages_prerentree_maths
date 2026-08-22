@@ -1460,10 +1460,20 @@ def render_dashboard(module: Module, entries: list[dict]) -> str:
     add("Ces liens sont volontairement absents de l'index du module : celui-ci ne nomme aucun "
         "élève, et c'est ici que se fait la navigation nominative.")
     add("")
+    add("**Ce qu'on imprime, et quand.** Le cahier des cinq séances est remis à l'élève le "
+        "premier jour et le suit pendant les dix heures : il ne porte que les exercices de sa "
+        "piste, et il est le seul document qu'il ait besoin d'apporter. Le livret lui est "
+        "remis en même temps mais se conserve après le stage : il restitue son positionnement "
+        "et sert d'appui à l'entretien avec la famille. La feuille de remédiation se donne au "
+        "moment où l'on traite le domaine concerné ; son corrigé ne quitte pas le professeur.")
+    add("")
     for entry in entries:
         base = f"../{module.nominative_dir}/{entry['slug']}"
         suffix = entry["file_suffix"]
-        links = [f"[livret]({base}/{module.key}_Livret_Individuel_{suffix}.md)"]
+        links = [
+            f"[cahier des cinq séances]({base}/{module.key}_Cahier_Seances_{suffix}.md)",
+            f"[livret]({base}/{module.key}_Livret_Individuel_{suffix}.md)",
+        ]
         if entry["diagnostic"] is not None:
             links.append(
                 f"[remédiation élève]({base}/{module.key}_Remediation_Ciblee_{suffix}_ELEVE.md)")
@@ -1540,8 +1550,11 @@ def render_index(module: Module, entries: list[dict]) -> str:
 
     add("## Dossiers nominatifs")
     add("")
-    add(f"Le dossier `{module.nominative_dir}/` contient, pour chaque élève, son livret "
-        "individuel et son plan de remédiation en deux versions.")
+    add(f"Le dossier `{module.nominative_dir}/` contient, pour chaque élève, trois pièces : "
+        "son **cahier des cinq séances**, qu'il a devant lui pendant le stage et qui ne "
+        "porte que les exercices de sa piste ; son **livret individuel**, qui lui restitue "
+        "son positionnement et se conserve après le stage ; et son **plan de remédiation** "
+        "en deux versions, élève et corrigé.")
     add("")
     add("> **Ces documents portent des données personnelles d'élèves mineurs.** Cet index ne "
         "les nomme pas : la liste et les liens figurent dans le "
