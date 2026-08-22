@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+{% set nav = 'dashboard' %}
+{% block title %}{{ student.person.display_name }} — lecture assistée{% endblock %}
+{% block content %}
+
+<div class="sticky-bar">
+  <div>
+    <strong>{{ student.person.display_name }}</strong>
+    <span class="muted small">— lecture assistée de la copie</span>
+  </div>
+  <span class="badge tr-{{ resume.state }}">{{ resume.state }}</span>
+  {% if resume.state_detail %}<span class="small muted">{{ resume.state_detail }}</span>{% endif %}
+  <div class="spacer"></div>
+  <span class="small muted">{{ openrouter_status.label }}</span>
+  <a class="btn btn-sm" href="/eleve/{{ student.student_id }}">Retour à la correction</a>
+</div>
+
+{# La transcription n'est pas la correction. Le rappel est permanent : ce que l'IA
+   propose n'a aucune valeur tant qu'un humain ne l'a pas vérifié, et une transcription
+   ne dit jamais si la réponse est juste. #}
+<div class="banner banner-info">
+  <strong>Ceci est une lecture, pas une correction.</strong>
+  Les modèles restituent ce qui est écrit — erreurs comprises. Ils ne reçoivent ni le
+  corrigé, ni le barème, et n'ont pas à dire si la réponse est juste. Seule une
+  transcription vérifiée par un humain fait foi.
+  <br>
+  <strong>Deux lectures identiques ne prouvent pas qu'elles sont justes :</strong>
+  deux modèles peuvent se tromper de la même manière. Et l'écran ne montre que ce que
+  les modèles ont vu — c'est pourquoi chaque page demande une attestation humaine de
+  complétude.
+</div>
+
+{% if resume.blocking %}
+<div class="banner banner-warning">
+  <strong>Cette transcription n'est pas exploitable en l'état.</strong>
+  <ul class="tight small">{% for m in resume.blocking %}<li>{{ m }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+{% if not source_copy.attached %}
+<div class="banner banner-warning">
+  <strong>Aucune copie élève rattachée.</strong>
+  Téléversez d'abord la copie depuis l'écran de correction.
+</div>
+{% else %}
+
+<div class="bandeau-transcription" data-transcription
+     data-student="{{ student.student_id }}"
+     data-page="{{ page_index }}">
+  <div class="chiffres">
+    <div><span class="valeur">{{ resume.pages or "—" }}</span><span class="etiquette">pages rendues</span></div>
+    <div><span class="valeur">{{ resume.blocks }}</span><span class="etiquette">blocs</span></div>
+    <div><span class="valeur">{{ resume.handwritten }}</span><span class="etiquette">manuscrits</span></div>
+    <div><span class="valeur">{{ resume.math }}</span><span class="etiquette">mathématiques</span></div>
+    <div><span class="valeur">{{ resume.crossed_out }}</span><span class="etiquette">ratures</span></div>
+    <div><span class="valeur">{{ resume.uncertain }}</span><span class="etiquette">incertains</span></div>
+    <div><span class="valeur">{{ resume.blind_identical }}</span><span class="etiquette">lectures identiques</span></div>
+    <div><span class="valeur">{{ resume.disagreement }}</span><span class="etiquette">à trancher</span></div>
+    <div><span class="valeur">{{ resume.human_verified }}</span><span class="etiquette">vérifiés</span></div>
+    <div><span class="valeur">{{ resume.pending_review }}</span><span class="etiquette">en attente</span></div>
+  </div>
+  <div class="actions-transcription">
+    {% if not readonly %}
+    {# §15 — l'opérateur doit savoir ce qui part réellement chez le fournisseur. #}
+    <span class="avis-envoi small">
+      La <strong>copie visuelle</strong> sera transmise au fournisseur sélectionné.
+      Elle peut contenir des données personnelles visibles dans le scan, à commencer
+      par le nom de l'élève.
+      {% if not resume.openrouter.remote_ocr_allowed_for_real_copies %}
+      <br>Envoi de copies réelles <strong>non autorisé</strong> sur ce poste
+      (ALLOW_REAL_STUDENT_REMOTE_OCR=0).
+      {% endif %}
+    </span>
+    <button class="btn btn-sm" data-lancer="lancer">Lecture PRIMARY</button>
+    <button class="btn btn-sm" data-lancer="verifier"
+            title="Seconde lecture indépendante : elle ne voit pas la première.">Lecture AVEUGLE</button>
+    {% endif %}
+    <span class="small muted" data-etat-run></span>
+  </div>
+</div>
+
+{% if resume.runs %}
+<details class="campagnes">
+  <summary>Campagnes de lecture ({{ resume.runs|length }}){% if resume.cost_usd %} — coût relevé {{ resume.cost_usd }} $ {% endif %}</summary>
+  <table class="tight small">
+    <thead><tr><th>n°</th><th>rôle</th><th>modèle</th><th>fournisseur</th><th>consigne</th>
+      <th>schéma</th><th>empreintes</th><th>pages</th><th>appels</th><th>cache</th><th>jetons</th>
+      <th>coût</th><th>état</th></tr></thead>
+    <tbody>
+      {% for run in resume.runs %}
+      <tr>
+        <td>{{ run.run_id }}</td><td>{{ run.role }}</td>
+        <td><code>{{ run.model_id }}</code></td>
+        <td class="muted">{{ run.provider_name or "—" }}</td>
+        <td class="muted">{{ run.prompt_version }}</td>
+        <td class="muted">{{ run.schema_version }}</td>
+        <td class="muted"><code>{{ run.prompt_sha256 }}</code> / <code>{{ run.schema_sha256 }}</code></td>
+        <td>{{ run.pages }}{% if run.stale %} <span class="petit-tag rec-HUMAN_REVIEW_REQUIRED">périmée</span>{% endif %}</td><td>{{ run.calls }}</td><td>{{ run.cached_calls }}</td>
+        <td class="muted">{{ run.tokens_in }}/{{ run.tokens_out }}</td>
+        <td>{{ run.cost_usd or "—" }}</td>
+        <td>{{ run.status }}{% if run.error %} <span class="muted">{{ run.error[:80] }}</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</details>
+{% endif %}
+
+<div class="split split-transcription">
+  <div class="pane pane-page">
+    <div class="pane-head">
+      <strong>Page {{ page_index }}{% if resume.pages %} / {{ resume.pages }}{% endif %}</strong>
+      <span class="small muted">image rendue — lecture seule</span>
+      <div class="spacer"></div>
+      <button class="btn btn-sm" data-zoom="-">−</button>
+      <button class="btn btn-sm" data-zoom="+">+</button>
+      <button class="btn btn-sm" data-rotation title="Rotation d'affichage seulement : l'image envoyée au modèle n'est pas modifiée">⟳ aperçu</button>
+      {% if not readonly %}
+      <button class="btn btn-sm" data-rotation-reelle="90"
+              title="Tourne réellement les pixels envoyés au modèle. L'original et le rendu de base restent intacts.">⟳ 90°</button>
+      <button class="btn btn-sm" data-rotation-reelle="180">180°</button>
+      <button class="btn btn-sm" data-rotation-reelle="270">270°</button>
+      {% endif %}
+    </div>
+    <div class="cadre-page">
+      {% if resume.pages %}
+      <img data-image-page src="/eleve/{{ student.student_id }}/copie/rendu/{{ page_index }}"
+           alt="Page {{ page_index }} de la copie">
+      {% else %}
+      <p class="small muted">Les pages ne sont pas encore rendues. Lancez la lecture
+        PRIMARY : le rendu se fait automatiquement avant la première lecture.</p>
+      {% endif %}
+    </div>
+    {% if resume.pages and not readonly %}
+    {# Attestation de complétude : la seule chose qui puisse révéler une zone omise
+       par les DEUX lectures. Une pile de blocs acceptés ne le dit pas. #}
+    <div class="attestation" data-attestation data-student="{{ student.student_id }}"
+         data-page="{{ page_index }}">
+      {% if vue.attestation and vue.attestation.attested %}
+      <span class="badge scope-n1">COMPLÉTUDE ATTESTÉE</span>
+      <span class="small muted">{{ vue.attestation.actor_identity }} ·
+        {{ vue.attestation.attested_at }}</span>
+      {% else %}
+      <p class="small">
+        <strong>Complétude non attestée.</strong> Comparez la page originale et la
+        transcription : tout contenu manuscrit ou mathématique visible est-il
+        représenté, ou explicitement marqué comme non transcrit ?
+      </p>
+      <label class="small">Réserve éventuelle
+        <input type="text" data-attestation-note maxlength="300"
+               placeholder="ex. schéma non transcrit en bas de page">
+      </label>
+      <button class="btn-gold btn-sm" data-attester>
+        J'atteste avoir comparé la page et la transcription
+      </button>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if resume.pages %}
+    <nav class="pagination-pages">
+      {% for n in range(1, resume.pages + 1) %}
+      <a class="btn btn-sm {% if n == page_index %}btn-gold{% endif %}"
+         href="/eleve/{{ student.student_id }}/transcription?page={{ n }}">{{ n }}</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
+  </div>
+
+  <div class="pane pane-blocs">
+    <div class="pane-head">
+      <strong>Transcription proposée</strong>
+      <div class="spacer"></div>
+      <span class="small muted">{{ vue.blocks|length if vue.blocks else 0 }} bloc(s) sur cette page</span>
+    </div>
+
+    {% if vue.blind_only %}
+    <div class="banner banner-warning" style="margin:8px">
+      <strong>{{ vue.blind_only|length }} zone(s) vue(s) par la seule seconde lecture.</strong>
+      La première lecture ne les a pas rapportées : c'est un signal d'omission, à
+      trancher.
+      <ul class="tight small">
+        {% for b in vue.blind_only %}
+        <li><code>{{ b.verbatim[:120] }}</code>
+          {% if b.item_ref %}<span class="petit-tag">{{ b.item_ref }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if not vue.blocks %}
+    <p class="small muted" style="padding:10px">Aucune transcription pour cette page.</p>
+    {% else %}
+    <ul class="liste-blocs" data-liste-blocs>
+      {% for bloc in vue.blocks %}
+      <li class="bloc bloc-{{ bloc.review_state }}" data-bloc="{{ bloc.id }}">
+        <div class="bloc-tete">
+          {% if bloc.item_ref %}<span class="badge scope-n1">{{ bloc.item_ref }}</span>
+          {% else %}<span class="badge scope-mixed" title="Rattachement non déterminé">?</span>{% endif %}
+          <span class="petit-tag">{{ bloc.origin }}</span>
+          <span class="petit-tag">{{ bloc.kind }}</span>
+          <span class="petit-tag statut-{{ bloc.status }}">{{ bloc.status }}</span>
+          <span class="petit-tag inc-{{ bloc.uncertainty }}">incertitude {{ bloc.uncertainty }}</span>
+          <div class="spacer"></div>
+          <span class="petit-tag rec-{{ bloc.reconciliation }}">{{ bloc.reconciliation }}</span>
+          <span class="petit-tag rev-{{ bloc.review_state }}">{{ bloc.review_state }}</span>
+        </div>
+
+        <div class="bloc-lecture">
+          <div class="etiquette-lecture">PRIMARY</div>
+          <pre class="verbatim">{{ bloc.verbatim }}</pre>
+          {% if bloc.latex %}
+          <div class="math-double">
+            <code class="latex-source">{{ bloc.latex }}</code>
+            <div class="latex-rendu" data-latex="{{ bloc.latex }}"></div>
+          </div>
+          {% endif %}
+        </div>
+
+        {% if bloc.alternatives %}
+        <p class="small alternatives"><strong>lectures concurrentes :</strong>
+          {{ bloc.alternatives | join(" · ") }}</p>
+        {% endif %}
+        {% if bloc.notes %}<p class="small muted">note du lecteur : {{ bloc.notes }}</p>{% endif %}
+
+        {% if bloc.verify_verdict %}
+        <div class="bloc-lecture bloc-verify verdict-{{ bloc.verify_verdict }}">
+          <div class="etiquette-lecture">LECTURE AVEUGLE — {{ bloc.verify_verdict }}</div>
+          {% if bloc.verify_verbatim %}<pre class="verbatim">{{ bloc.verify_verbatim }}</pre>{% endif %}
+          {% if bloc.verify_latex %}
+          <div class="math-double">
+            <code class="latex-source">{{ bloc.verify_latex }}</code>
+            <div class="latex-rendu" data-latex="{{ bloc.verify_latex }}"></div>
+          </div>
+          {% endif %}
+          {% if bloc.verify_note %}<p class="small muted">{{ bloc.verify_note }}</p>{% endif %}
+        </div>
+        {% endif %}
+
+        {% if bloc.review_state != 'AI_PROPOSED' %}
+        <div class="bloc-lecture bloc-humain">
+          <div class="etiquette-lecture">RETENU PAR L'HUMAIN — {{ bloc.review_state }}</div>
+          {% if bloc.human_verbatim %}<pre class="verbatim">{{ bloc.human_verbatim }}</pre>
+          {% else %}<p class="small muted">bloc écarté</p>{% endif %}
+          {% if bloc.human_note %}<p class="small muted">{{ bloc.human_note }}</p>{% endif %}
+          <p class="small muted">{{ bloc.reviewed_by_role }} · {{ bloc.reviewed_at }}</p>
+        </div>
+        {% endif %}
+
+        {% if not readonly %}
+        <div class="bloc-actions">
+          <button class="btn btn-sm" data-action="accepter">Accepter</button>
+          <button class="btn btn-sm" data-action="modifier">Modifier</button>
+          <button class="btn btn-sm" data-action="illisible">Illisible</button>
+          <button class="btn btn-sm" data-action="rejeter" title="Ce bloc n'existe pas sur la page">Rejeter</button>
+          <button class="btn btn-sm" data-action="relancer" title="Relancer la lecture de cette page, sans cache">Relancer OCR</button>
+        </div>
+        <div class="bloc-edition" hidden>
+          <label class="small">Transcription retenue
+            <textarea data-edition-verbatim rows="2">{{ bloc.verbatim }}</textarea>
+          </label>
+          <label class="small">LaTeX (facultatif)
+            <input type="text" data-edition-latex value="{{ bloc.latex or '' }}">
+          </label>
+          <div class="latex-rendu" data-apercu-latex></div>
+          <label class="small">Note (facultatif)
+            <input type="text" data-edition-note maxlength="300">
+          </label>
+          <button class="btn-gold btn-sm" data-valider-edition>Enregistrer la lecture retenue</button>
+          <p class="small muted">La proposition de l'IA est conservée : votre lecture
+            s'ajoute, elle ne l'efface pas.</p>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}

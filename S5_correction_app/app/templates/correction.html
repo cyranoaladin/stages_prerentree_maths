@@ -12,7 +12,16 @@
   {% if correction.revision > 1 %}<span class="small muted">révision {{ correction.revision }}</span>{% endif %}
   <div style="min-width:220px">
     <div class="progress"><span id="progress-bar" style="width: {{ progress.percent }}%"></span></div>
-    <div class="small muted" id="progress-label">{{ progress.done }} / {{ progress.total }} critères renseignés — {{ progress.percent }} %</div>
+    {# Deux comptes distincts, et la raison de leur écart : sans elle, le
+       correcteur peut croire à une erreur de décompte. #}
+    <div class="small muted" id="progress-label"
+         title="{% set scindes = progress.total - progress.original_criteria %}{{ scindes }} critère{{ 's' if scindes > 1 }} du sujet {{ 'sont scindés' if scindes > 1 else 'est scindé' }} en deux composantes curriculaires : un acquis de l'année précédente et une passerelle vers l'année suivante. Chaque composante se note séparément.">{{ progress.original_criteria }} critères du sujet · {{ progress.done }} / {{ progress.total }} lignes analytiques renseignées — {{ progress.percent }} %</div>
+    {% if progress.total > progress.original_criteria %}
+    <div class="small muted" style="opacity:.8">
+      {{ progress.total - progress.original_criteria }} critère{{ 's' if progress.total - progress.original_criteria > 1 }} du sujet
+      scindé{{ 's' if progress.total - progress.original_criteria > 1 }} en deux composantes curriculaires.
+    </div>
+    {% endif %}
   </div>
   <div class="save-state" id="save-state">Prêt.</div>
   <div class="spacer"></div>
@@ -38,11 +47,28 @@
 
 {% if problems and not locked %}
 <div class="banner banner-warning">
-  <strong>{{ problems|length }} point(s) à traiter avant de pouvoir valider.</strong>
-  <ul class="tight small">
-    {% for p in problems[:6] %}<li>{{ p.message }}</li>{% endfor %}
-    {% if problems|length > 6 %}<li>… et {{ problems|length - 6 }} autre(s).</li>{% endif %}
-  </ul>
+  <details {% if validation_attempted %}open{% endif %}>
+    <summary>
+      <strong>{{ problems|length }}
+        {{ "ligne analytique reste à renseigner" if problems|length == 1 else "lignes analytiques restent à renseigner" }}
+        pour les {{ progress.original_criteria }} critères du sujet, avant validation.</strong>
+      <span class="small">Voir le détail</span>
+    </summary>
+    {# Regroupement par item du sujet : un critère mixte éclaté produit plusieurs
+       lignes analytiques, qui doivent se lire sous une seule référence d'item et
+       non comme autant de questions distinctes du sujet distribué. #}
+    <ul class="tight small">
+      {% for ref, groupe in problems|groupby('group_ref') %}
+      <li>
+        {% if ref %}<strong>{{ ref }}</strong>{% else %}<strong>hors item</strong>{% endif %}
+        {%- if groupe|length == 1 %} — {{ groupe[0].message }}
+        {%- else %}
+        <ul class="tight">{% for p in groupe %}<li>{{ p.message }}</li>{% endfor %}</ul>
+        {%- endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
 </div>
 {% endif %}
 
@@ -62,6 +88,109 @@
     </div>
     <iframe class="pdf-frame" src="/document/{{ student.student_id }}/evaluation#view=FitH"
             title="Évaluation distribuée de {{ student.person.display_name }}"></iframe>
+
+    {# La copie de l'élève n'est ni le sujet, ni le livret, ni le corrigé : c'est ce
+       qu'elle a effectivement écrit. Le bloc reste distinct de « Sujet distribué »
+       ci-dessus, et dit sobrement s'il y a une pièce, si son empreinte se vérifie, et
+       où en est sa lecture assistée. #}
+    <div class="source-copy" id="copie-eleve">
+      <div class="pane-head">
+        <strong>Copie de l'élève</strong>
+        {% if source_copy and source_copy.attached %}
+        <span class="small muted">pièce probante — lecture seule</span>
+        {% endif %}
+        <div class="spacer"></div>
+        {% if source_copy and source_copy.attached %}
+        <a class="btn btn-sm" href="/eleve/{{ student.student_id }}/transcription">Lecture assistée</a>
+        <a class="btn btn-sm" href="/eleve/{{ student.student_id }}/copie/manifeste"
+           target="_blank" rel="noopener">Manifeste</a>
+        {% endif %}
+      </div>
+
+      {% if source_copy and source_copy.attached %}
+      <table class="tight small" style="width:100%">
+        <tbody>
+          <tr><th>Pièce</th>
+              <td>n° {{ source_copy.source_copy_id }}
+                  {%- if source_copy.label %} — {{ source_copy.label }}{% endif %}
+                  <span class="muted">({{ source_copy.origin }})</span></td></tr>
+          <tr><th>Fichiers</th>
+              <td>{{ source_copy.file_count }}
+                  {%- if source_copy.page_count %} · {{ source_copy.page_count }} page(s){% endif %}</td></tr>
+          <tr><th>Empreinte</th>
+              <td>{% if source_copy.verification.ok %}
+                    <span class="badge scope-n1">{{ source_copy.verification.verdict }}</span>
+                    {{ source_copy.verification.files_verified }}/{{ source_copy.verification.files_total }}
+                  {% else %}
+                    <span class="badge scope-bridge">{{ source_copy.verification.verdict }}</span>
+                  {% endif %}</td></tr>
+        </tbody>
+      </table>
+      <ul class="tight small" style="margin:0 0 8px 0">
+        {% for f in source_copy.files %}
+        <li>
+          <a href="/eleve/{{ student.student_id }}/copie/page/{{ f.page_index }}"
+             target="_blank" rel="noopener">page {{ f.page_index }}</a>
+          — {{ f.original_name }}
+          <code class="muted">{{ f.sha256[:16] }}…</code>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="small muted" style="padding:8px 10px;margin:0">Aucune copie élève rattachée.</p>
+      {% endif %}
+
+      {% if not locked and not readonly %}
+      {# Téléversement. Tant que « Confirmer » n'est pas cliqué, rien n'a quitté le poste :
+         l'ordre des pages se règle ici, dans le navigateur, et le serveur ne le retrie jamais. #}
+      <details class="televersement" data-televersement
+               data-student="{{ student.student_id }}"
+               data-limites='{{ source_copy.limites | tojson if source_copy and source_copy.limites else "{}" }}'>
+        <summary>{% if source_copy and source_copy.attached %}Remplacer la copie{% else %}Téléverser la copie{% endif %}</summary>
+        <div class="corps-televersement">
+          <div class="zone-depot" data-zone-depot>
+            <p class="small">Glissez ici <strong>un PDF complet</strong> (toutes les pages
+              scannées, la pagination du PDF fait foi) ou <strong>plusieurs images</strong>
+              (une par page).</p>
+            <input type="file" data-input-fichiers multiple
+                   accept="application/pdf,image/png,image/jpeg,image/webp,image/tiff">
+            <p class="small muted" data-resume-selection></p>
+          </div>
+
+          <ul class="liste-pages" data-liste-pages></ul>
+
+          <label class="small">Libellé (facultatif)
+            <input type="text" data-libelle maxlength="200" placeholder="ex. scan du 22/08">
+          </label>
+          {% if source_copy and source_copy.attached %}
+          <label class="small" title="L'ancienne pièce est conservée et passe en SUPERSEDED.">
+            <input type="checkbox" data-remplacer> remplacer la pièce actuelle
+          </label>
+          {% endif %}
+
+          <div class="jauge-upload" hidden><span data-barre-upload></span></div>
+          <p class="small muted" data-etat-upload></p>
+
+          <div class="actions-televersement">
+            <button type="button" class="btn-gold" data-envoyer disabled>Confirmer l'ordre et téléverser</button>
+            <button type="button" class="btn btn-sm" data-annuler disabled>Annuler</button>
+          </div>
+          <p class="small muted">
+            Les octets sont contrôlés à l'arrivée : ni le nom, ni l'extension, ni le type
+            annoncé par le navigateur ne sont crus. Une fois rattachée, la pièce est
+            immuable ; un remplacement conserve l'ancienne.
+          </p>
+        </div>
+      </details>
+      {% endif %}
+
+      {% if source_copy_blocking %}
+      <div class="banner banner-warning" style="margin:0">
+        <strong>Correction suspendue.</strong>
+        <ul class="tight small">{% for m in source_copy_blocking %}<li>{{ m }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </div>
   </div>
 
   <div class="pane-grid">
@@ -69,7 +198,9 @@
     <details class="key" style="margin-bottom:12px">
       <summary>Raccourcis clavier</summary>
       <div class="key-body">
-        <span class="kbd">0</span>…<span class="kbd">9</span> score proposé ·
+        <span class="kbd">0</span>…<span class="kbd">9</span> le n-ième score proposé,
+        dans l'ordre affiché — <span class="kbd">0</span> sélectionne le premier bouton,
+        pas la valeur zéro d'un barème sur 1 ·
         <span class="kbd">F</span> plein score · <span class="kbd">N</span> non répondu ·
         <span class="kbd">E</span> codes d'erreur · <span class="kbd">O</span> observation ·
         <span class="kbd">→</span> critère suivant · <span class="kbd">←</span> précédent.
@@ -88,7 +219,7 @@
         <div class="spacer"></div>
       </div>
       {% if not quick %}
-      <div class="item-statement">{{ item.statement }}</div>
+      <div class="item-statement math">{{ item.statement | enonce }}</div>
       {% endif %}
 
       {% for crit in item.criteria %}
@@ -98,25 +229,28 @@
              data-url="/eleve/{{ student.student_id }}/critere/{{ row.scoring_id }}">
           <div class="crit-head">
             <span class="badge {{ row.badge.css }}" title="{{ row.badge.label }}">{{ row.badge.icon }} {{ row.badge.code }}</span>
-            <span class="crit-desc">{{ row.description }}</span>
+            <span class="crit-desc math">{{ row.neutral_label | enonce }}</span>
             <span class="crit-meta">— maximum {{ row.max_score }} pt</span>
             {% if row.is_virtual %}<span class="badge scope-mixed" title="sous-critère analytique d'un critère mixte">sous-critère</span>{% endif %}
           </div>
           <div class="crit-meta">
             compétence <span class="mono">{{ row.analysis_skill_id }}</span> ·
             preuve : {{ crit.evidence_type }}
+            {% if crit.scope_certainty and crit.scope_certainty != 'haute' %}
+            · <span class="badge scope-mixed" title="{{ crit.scope_rationale | enonce_texte }}">classement de certitude {{ crit.scope_certainty }}</span>{% endif %}
             {% if crit.evidence_quality == 'limited_by_prompt' %}
             · <span class="badge scope-mixed">énoncé à interprétation limitée</span>{% endif %}
           </div>
 
           {% if crit.bridge_notice %}
-          <div class="bridge-note">{{ crit.bridge_notice }}</div>
+          <div class="bridge-note">{{ crit.bridge_notice | enonce }}</div>
           {% endif %}
 
           <div class="score-row" role="group" aria-label="score du critère">
             {% for value in row.allowed %}
             <button type="button" class="score-btn btn-sm {{ 'zero' if value.centi == 0 }} {{ 'full' if value.centi == row.max_score_centi }} {{ 'selected' if row.scoring_status == 'SCORED' and row.score_centi == value.centi }}"
                     data-centi="{{ value.centi }}" aria-pressed="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == value.centi else 'false' }}"
+                    {% if loop.index0 < 10 %}title="{{ value.label }} — raccourci clavier : {{ loop.index0 }}"{% endif %}
                     {% if locked %}disabled{% endif %}>{{ value.label }}</button>
             {% endfor %}
             <button type="button" class="status-btn btn-sm {{ 'selected' if row.scoring_status == 'NOT_ANSWERED' }}"
@@ -125,14 +259,66 @@
                     data-status="UNCLASSIFIED" {% if locked %}disabled{% endif %}>zéro, cause non identifiée</button>
           </div>
 
-          <div class="codes" role="group" aria-label="codes d'erreur">
-            {% for code, description in ERROR_CODES.items() %}
-            <span class="code-chip {{ 'on' if code in row.error_codes }}" data-code="{{ code }}"
-                  title="{{ description }}" tabindex="0" role="checkbox"
-                  aria-checked="{{ 'true' if code in row.error_codes else 'false' }}"
-                  aria-disabled="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == row.max_score_centi else 'false' }}">{{ code }}</span>
-            {% endfor %}
+          {% if row.rubric %}
+          <details class="rubric" {% if not quick %}open{% endif %}>
+            <summary>Règle d'attribution des points</summary>
+            <table class="rubric-table">
+              <thead><tr><th class="num">Score</th><th>Attribution</th></tr></thead>
+              <tbody>
+              {% for level in row.rubric %}
+                <tr class="{{ 'is-current' if row.scoring_status == 'SCORED' and row.score_centi == level.score_centi }}">
+                  <td class="num nowrap">{{ level.score_centi|points }}</td>
+                  <td class="math">{{ level.regle | enonce }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </details>
+          {% endif %}
+          {# Une règle d'équité modifie la façon d'appliquer la rubrique ci-dessus :
+             elle doit se lire au moment de noter, pas dans le corrigé replié. C'est
+             elle qui évite de sanctionner deux fois une même erreur de départ. #}
+          {% if crit.fairness_rules %}
+          <div class="fairness-rules small">
+            <strong>À prendre en compte pour noter.</strong>
+            <ul class="tight">{% for m in crit.fairness_rules %}<li>{{ m | enonce }}</li>{% endfor %}</ul>
           </div>
+          {% endif %}
+
+          {% if row.error_suggestions %}
+          <div class="suggestions">
+            <div class="small muted">Erreurs fréquentes <em>sur ce critère</em> — ce sont des
+              suggestions, pas des cases à cocher obligatoires :</div>
+            <div class="codes" role="group" aria-label="erreurs suggérées pour ce critère">
+              {% for suggestion in row.error_suggestions %}
+              <span class="code-chip suggested {{ 'on' if suggestion.error_code in row.error_codes }}"
+                    data-code="{{ suggestion.error_code }}" tabindex="0" role="checkbox"
+                    aria-checked="{{ 'true' if suggestion.error_code in row.error_codes else 'false' }}"
+                    aria-disabled="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == row.max_score_centi else 'false' }}"
+                    title="{{ suggestion.description | enonce_texte }}">{{ suggestion.error_code }}</span>
+              {% endfor %}
+            </div>
+            <ul class="tight small muted suggestion-detail">
+              {% for suggestion in row.error_suggestions %}
+              <li><strong>{{ suggestion.error_code }}</strong> — <span class="math">{{ suggestion.description | enonce }}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+
+          <details class="all-codes">
+            <summary>Autre code d'erreur{% if row.error_suggestions %} que ceux suggérés{% endif %}</summary>
+            <div class="codes" role="group" aria-label="tous les codes d'erreur">
+              {% for code, description in ERROR_CODES.items() %}
+              {% if code not in row.suggested_codes %}
+              <span class="code-chip {{ 'on' if code in row.error_codes }}" data-code="{{ code }}"
+                    title="{{ description }}" tabindex="0" role="checkbox"
+                    aria-checked="{{ 'true' if code in row.error_codes else 'false' }}"
+                    aria-disabled="{{ 'true' if row.scoring_status == 'SCORED' and row.score_centi == row.max_score_centi else 'false' }}">{{ code }}</span>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </details>
 
           <label class="small muted" style="display:block">Observation sur ce critère
             <textarea class="obs" rows="2" {% if locked %}disabled{% endif %}>{{ row.observation or '' }}</textarea>
@@ -146,11 +332,20 @@
           {% if not quick %}
           <details class="key">
             <summary>Afficher le corrigé et le barème</summary>
-            <div class="key-body">
-              {% if item.expected_answer %}<p><strong>Réponse attendue.</strong> {{ item.expected_answer }}</p>{% endif %}
+            <div class="key-body math">
+              <p><strong>Ce que ce critère attend.</strong> {{ row.description | enonce }}</p>
+              {% if item.expected_answer %}<p><strong>Réponse attendue.</strong> {{ item.expected_answer | enonce }}</p>{% endif %}
               {% if item.significant_steps %}
               <p><strong>Étapes significatives.</strong></p>
-              <ul class="tight">{% for step in item.significant_steps %}<li>{{ step }}</li>{% endfor %}</ul>
+              <ul class="tight">{% for step in item.significant_steps %}<li>{{ step | enonce }}</li>{% endfor %}</ul>
+              {% endif %}
+              {% if row.rubric %}
+              <p><strong>Règle d'attribution.</strong></p>
+              <table class="rubric-table">
+                <tbody>{% for level in row.rubric %}
+                <tr><td class="num nowrap">{{ level.score_centi|points }}</td><td>{{ level.regle }}</td></tr>
+                {% endfor %}</tbody>
+              </table>
               {% endif %}
               {% if crit.printed_prompt %}<p><strong>Consigne réellement imprimée.</strong> « {{ crit.printed_prompt }} »</p>{% endif %}
               {% if crit.proof_levels %}
@@ -170,24 +365,31 @@
               <ul class="tight">{% for m in crit.rejected.detection %}<li>{{ m }}</li>{% endfor %}</ul>
               {% endif %}
               {% if crit.teacher_correction %}<p><strong>Correction enseignante.</strong> {{ crit.teacher_correction }}</p>{% endif %}
-              {% if crit.fairness_rules %}
-              <p><strong>Règles de correction.</strong></p>
-              <ul class="tight">{% for m in crit.fairness_rules %}<li>{{ m }}</li>{% endfor %}</ul>
-              {% endif %}
               {% if crit.interpretation_limits %}
               <p><strong>Limites d'interprétation.</strong></p>
               <ul class="tight">{% for m in crit.interpretation_limits %}<li>{{ m }}</li>{% endfor %}</ul>
               {% endif %}
-              {% if item.likely_errors %}
-              <p><strong>Erreurs probables.</strong></p>
-              <ul class="tight">{% for e in item.likely_errors %}<li><strong>{{ e.code }}</strong> — {{ e.desc }}</li>{% endfor %}</ul>
+              {% if row.error_suggestions %}
+              <p><strong>Erreurs fréquentes sur ce critère.</strong></p>
+              <ul class="tight">{% for e in row.error_suggestions %}<li><strong>{{ e.error_code }}</strong> — {{ e.description }}</li>{% endfor %}</ul>
+              {% elif item.likely_errors %}
+              <p><strong>Erreurs probables sur l'item.</strong>
+                <span class="muted small">— faute de suggestions propres à ce critère</span></p>
+              <ul class="tight">{% for e in item.likely_errors %}<li><strong>{{ e.code }}</strong> — {{ e.desc | enonce }}</li>{% endfor %}</ul>
               {% endif %}
-              {% if crit.retention and crit.retention.recommended_delayed_check %}
-              <p class="banner banner-warning small" style="margin:6px 0 0">
-                Réussite immédiate après remédiation — consolidation durable à vérifier
-                par le mini-test différé de semaine 2.</p>
+              {# Contexte de passation, documenté avant la correction. Ce n'est pas
+                 un constat sur l'élève : la conséquence est au conditionnel. #}
+              {% if crit.retention_notice %}
+              <p class="banner banner-info small" style="margin:6px 0 0"
+                 {% if crit.retention_notice.source %}title="{{ crit.retention_notice.source }}"{% endif %}>
+                <strong>{{ crit.retention_notice.title }}</strong> —
+                {{ crit.retention_notice.text }}</p>
               {% endif %}
-              <p class="small muted">{{ crit.scope_rationale }}</p>
+              <p class="small muted"><strong>Classement curriculaire.</strong> {{ crit.scope_rationale }}</p>
+              {% if crit.official_source %}
+              <p class="small muted"><strong>Source.</strong> {{ crit.official_source }}
+                {% if crit.scope_certainty %}— certitude {{ crit.scope_certainty }}{% endif %}</p>
+              {% endif %}
             </div>
           </details>
           {% endif %}
@@ -230,16 +432,40 @@
         <span class="small muted">facultatif — n'influence jamais les points</span></div>
       <div class="pane-body">
         <form id="general-form">
-          {% for key, label in general_fields %}
-          <label class="small muted" style="display:block;margin-bottom:6px">{{ label }}
-            <textarea name="{{ key }}" class="obs" rows="2" {% if locked %}disabled{% endif %}>{{ general.get(key, '') }}</textarea>
+          <div class="obs-grid">
+            {% for field in general_fields %}
+            {% if field.choices %}
+            <div class="obs-field">
+              <div class="label">{{ field.label }}</div>
+              <select name="{{ field.key }}_choix" {% if locked %}disabled{% endif %}>
+                <option value="">—</option>
+                {% for choice in field.choices %}
+                <option value="{{ choice }}" {% if general.get(field.key, {}).get('choix') == choice %}selected{% endif %}>{{ choice }}</option>
+                {% endfor %}
+              </select>
+              <textarea name="{{ field.key }}_commentaire" class="obs" rows="1"
+                        placeholder="commentaire facultatif"
+                        {% if locked %}disabled{% endif %}>{{ general.get(field.key, {}).get('commentaire', '') }}</textarea>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+          {% for field in general_fields %}
+          {% if not field.choices %}
+          <label class="small muted" style="display:block;margin-top:10px">{{ field.label }}
+            <textarea name="{{ field.key }}_commentaire" class="obs" rows="3"
+                      {% if locked %}disabled{% endif %}>{{ general.get(field.key, {}).get('commentaire', '') }}</textarea>
           </label>
+          {% endif %}
           {% endfor %}
-          <label class="small">Durée réellement observée (minutes, facultatif)
-            <input type="number" name="observed_duration_minutes" min="0" max="600"
-                   value="{{ correction.observed_duration_minutes or '' }}" {% if locked %}disabled{% endif %}>
-          </label>
-          <p><button type="button" id="save-general" class="btn-primary" {% if locked %}disabled{% endif %}>Enregistrer les observations</button></p>
+          <p class="small">
+            <label>Durée réellement observée (minutes, facultatif)
+              <input type="number" name="observed_duration_minutes" min="0" max="600"
+                     value="{{ correction.observed_duration_minutes or '' }}" {% if locked %}disabled{% endif %}>
+            </label>
+            <span class="muted">— n'entre dans aucun calcul de points.</span>
+          </p>
+          <p><button type="button" id="save-general" data-url="/eleve/{{ student.student_id }}/observations" class="btn-primary" {% if locked %}disabled{% endif %}>Enregistrer les observations</button></p>
         </form>
       </div>
     </div>
@@ -261,25 +487,5 @@
   </div>
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var button = document.getElementById("save-general");
-  if (!button) { return; }
-  button.addEventListener("click", function () {
-    var form = document.getElementById("general-form");
-    var payload = {};
-    form.querySelectorAll("textarea, input").forEach(function (field) {
-      if (field.name === "observed_duration_minutes") {
-        payload[field.name] = field.value ? parseInt(field.value, 10) : null;
-      } else if (field.name) { payload[field.name] = field.value; }
-    });
-    fetch("/eleve/{{ student.student_id }}/observations", {
-      method: "POST", headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(payload)
-    }).then(function (r) { return r.json(); }).then(function (body) {
-      document.getElementById("save-state").textContent = "✓ Observations enregistrées à " + body.saved_at;
-    });
-  });
-});
-</script>
+
 {% endblock %}

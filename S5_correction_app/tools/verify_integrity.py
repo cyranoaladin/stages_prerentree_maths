@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """Contrôle d'intégrité complet, à lancer avant et après toute campagne de correction."""
 
-import json
 import sys
 from pathlib import Path
 

@@ -17,9 +17,11 @@
   }
 
   function post(url, payload) {
-    return fetch(url, {
+    // nexusFetch pose le jeton anti-CSRF : l'oublier sur un seul appel produirait
+    // un refus que seul l'utilisateur découvrirait.
+    return window.nexusFetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Requested-With": "nexus" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (body) {
@@ -58,7 +60,8 @@
     var label = document.getElementById("progress-label");
     if (bar) { bar.style.width = progress.percent + "%"; }
     if (label) {
-      label.textContent = progress.done + " / " + progress.total + " critères renseignés — "
+      label.textContent = progress.original_criteria + " critères du sujet · "
+        + progress.done + " / " + progress.total + " lignes analytiques renseignées — "
         + progress.percent + " %";
     }
   }
@@ -102,7 +105,13 @@
 
   function bindCriterion(root) {
     root.querySelectorAll(".score-btn, .status-btn").forEach(function (button) {
-      button.addEventListener("click", function () { selectScore(root, button); });
+      button.addEventListener("click", function () {
+        selectScore(root, button);
+        // Le focus reste sinon sur le bouton, où les raccourcis sont neutralisés :
+        // on le rend au critère pour que la navigation au clavier reprenne.
+        root.setAttribute("tabindex", "-1");
+        root.focus({ preventScroll: true });
+      });
     });
     root.querySelectorAll(".code-chip").forEach(function (chip) {
       chip.addEventListener("click", function () {
@@ -161,10 +170,28 @@
     root.classList.add("focused");
   }
 
+  /* Un raccourci ne doit jamais s'activer pendant une saisie. Le test porte sur le
+   * nom de balise, sur contenteditable, et sur le rôle ARIA : taper « 0 » dans une
+   * observation doit écrire « 0 », pas attribuer zéro point. */
+  var TYPING_TAGS = ["input", "textarea", "select", "button", "option"];
+
+  function isTypingContext(target) {
+    if (!target || target.nodeType !== 1) { return false; }
+    var tag = (target.tagName || "").toLowerCase();
+    if (TYPING_TAGS.indexOf(tag) !== -1) { return true; }
+    if (target.isContentEditable) { return true; }
+    if (target.closest && target.closest("input, textarea, select, button, [contenteditable='true'], [contenteditable='']")) {
+      return true;
+    }
+    var role = (target.getAttribute && target.getAttribute("role")) || "";
+    return role === "textbox" || role === "checkbox" || role === "combobox";
+  }
+
+  window.nexusIsTypingContext = isTypingContext;
+
   function bindKeyboard() {
     document.addEventListener("keydown", function (event) {
-      var tag = (event.target.tagName || "").toLowerCase();
-      if (tag === "textarea" || tag === "input" || event.ctrlKey || event.metaKey
+      if (isTypingContext(event.target) || event.ctrlKey || event.metaKey
         || event.altKey) { return; }
       if (!order.length) { return; }
       var root = order[cursor] || order[0];

@@ -84,7 +84,13 @@ terminale-pdf-list:
 S5_APP := S5_correction_app
 
 .PHONY: s5-correction-install s5-correction-init s5-correction-run s5-correction-test \
-        s5-correction-qa s5-correction-backup
+        s5-correction-qa s5-correction-backup s5-correction-backup-verify \
+        s5-correction-longitudinal s5-correction-copie s5-correction-copie-etat \
+        s5-correction-readiness s5-correction-today s5-correction-today-rapide \
+        s5-correction-pdf-qa s5-correction-pdf-gate \
+        s5-ocr-modeles s5-ocr-smoke s5-ocr-bench s5-ocr-rendre s5-ocr-mesure-dpi \
+        s5-correction-fsck s5-correction-fsck-json s5-full-gate s5-ocr-live-gate \
+        s5-browser-gate s5-debt-gate
 
 s5-correction-install:
 	python3 -m pip install --user -r $(S5_APP)/requirements-correction.lock
@@ -98,8 +104,124 @@ s5-correction-run:
 s5-correction-test:
 	cd $(S5_APP) && python3 -m pytest -q
 
+s5-correction-longitudinal:
+	cd $(S5_APP) && python3 -m pytest -q tests/test_longitudinal.py
+
+s5-correction-readiness:
+	cd $(S5_APP) && python3 tools/build_readiness.py
+
+s5-correction-today:
+	cd $(S5_APP) && python3 tools/check_today_readiness.py
+
+s5-correction-today-rapide:
+	cd $(S5_APP) && python3 tools/check_today_readiness.py --no-compile
+
+s5-correction-pdf-qa:
+	cd $(S5_APP) && python3 tools/synthetic_pipeline_check.py --keep
+	cd $(S5_APP) && python3 tools/pdf_visual_qa.py ../tmp/tests/synthetic_reports --dpi 150
+
+s5-correction-pdf-gate:
+	cd $(S5_APP) && python3 tools/check_report_pdf_quality.py ../tmp/tests/synthetic_reports --allow-test-markers
+
 s5-correction-qa:
 	cd $(S5_APP) && python3 tools/verify_integrity.py && python3 -m pytest -q
 
 s5-correction-backup:
 	cd $(S5_APP) && python3 tools/backup.py
+
+# Restaure la dernière archive dans un temporaire et recontrôle chaque empreinte.
+# Ne touche pas à runtime/ : c'est un contrôle, pas une restauration.
+s5-correction-backup-verify:
+	cd $(S5_APP) && python3 tools/backup.py --verifier "$$(ls -1t runtime/backups/backup_*.zip | head -1)"
+
+# Rattache la copie réelle d'un élève. ELEVE=<student_id> COPIE="a.pdf" ou "p1.jpg p2.jpg"
+s5-correction-copie:
+	cd $(S5_APP) && python3 tools/attach_source_copy.py $(ELEVE) $(COPIE)
+
+# État de la copie rattachée à un élève, empreintes recontrôlées. ELEVE=<student_id>
+s5-correction-copie-etat:
+	cd $(S5_APP) && python3 tools/attach_source_copy.py $(ELEVE) --lister
+
+# Réconciliation base <-> fichiers. Lecture seule : aucune réparation automatique.
+s5-correction-fsck:
+	cd $(S5_APP) && python3 tools/fsck.py
+
+s5-correction-fsck-json:
+	cd $(S5_APP) && python3 tools/fsck.py --json
+
+# Porte de fermeture : tout ce qui ne coûte rien et ne nécessite aucune clé.
+# Chaque étape rend son propre code de retour ; rien n'est masqué.
+# Le parcours navigateur, isolé — il démarre un serveur et ouvre Chromium.
+# Il est INCLUS dans s5-full-gate : un test critique absent ne doit pas passer
+# inaperçu derrière un « skip ».
+s5-browser-gate:
+	cd $(S5_APP) && python3 -m pytest -q tests/test_browser_ui.py
+
+# Verdict de dette, calculé depuis le registre et les contrôles. Jamais déclaré.
+s5-debt-gate:
+	cd $(S5_APP) && python3 tools/debt_gate.py --sans-tests
+
+s5-full-gate:
+	@echo "=== 1/8  analyse statique ==="
+	cd $(S5_APP) && python3 -m ruff check app tools tests migrations --select F,E9
+	@echo "=== 2/8  schéma et migrations ==="
+	cd $(S5_APP) && python3 -c "import sys; sys.path.insert(0,'.'); \
+	from app import database, config; import migrations; \
+	print('schéma', migrations.apply(database.engine(), config.DB_PATH, config.BACKUPS_DIR))"
+	@echo "=== 3/8  intégrité du référentiel ==="
+	cd $(S5_APP) && python3 tools/verify_integrity.py
+	@echo "=== 4/8  suite complète, navigateur et échelle 60 pages compris ==="
+	@echo "     (un environnement de développement incomplet fait échouer cette étape :"
+	@echo "      le parcours navigateur n'est pas facultatif)"
+	cd $(S5_APP) && python3 tools/check_dev_profile.py
+	cd $(S5_APP) && python3 -m pytest -q -rs
+	@echo "=== 5/8  réconciliation base / fichiers ==="
+	cd $(S5_APP) && python3 tools/fsck.py
+	@echo "=== 6/8  sauvegarde et restauration ==="
+	cd $(S5_APP) && python3 tools/backup.py
+	cd $(S5_APP) && python3 tools/backup.py --verifier "$$(ls -1t runtime/backups/backup_*.zip | head -1)"
+	@echo "=== 7/8  état du jour et corrections réelles ==="
+	cd $(S5_APP) && python3 tools/check_today_readiness.py --no-compile
+	@echo "=== 8/8  verdict de dette, calculé ==="
+	cd $(S5_APP) && python3 tools/debt_gate.py --sans-tests
+	@echo
+	@echo "S5_FULL_GATE = PASS (aucune étape n'a échoué)"
+
+# Porte OpenRouter en conditions réelles. Séparée : elle coûte de l'argent et
+# demande une clé. Fixture synthétique uniquement, jamais une vraie copie.
+s5-ocr-live-gate:
+	cd $(S5_APP) && python3 tools/openrouter_models.py --limite 5
+	cd $(S5_APP) && python3 tools/ocr_smoke.py --verifier-aussi
+
+# --- Lecture assistée des copies (OpenRouter) --------------------------------
+# Le catalogue OpenRouter du jour, filtré sur « vision + sorties structurées ».
+# Aucune clé n'est nécessaire : cet endpoint est public.
+s5-ocr-modeles:
+	cd $(S5_APP) && python3 tools/openrouter_models.py
+
+# Contrôle de bout en bout de la chaîne, sur une FIXTURE SYNTHÉTIQUE uniquement.
+# Nécessite OPENROUTER_API_KEY. La clé n'est jamais affichée.
+s5-ocr-smoke:
+	cd $(S5_APP) && python3 tools/ocr_smoke.py --verifier-aussi
+
+# Rend les pages d'une copie rattachée, sans appeler aucun modèle. ELEVE=<student_id>
+s5-ocr-rendre:
+	cd $(S5_APP) && python3 -c "import sys; sys.path.insert(0,'.'); \
+	from app import config, database; import migrations; \
+	migrations.apply(database.engine(), config.DB_PATH, config.BACKUPS_DIR); \
+	from app.domain import rasterize; from app.models import Assessment; \
+	s = database.session_factory()(); \
+	a = s.query(Assessment).filter_by(student_id='$(ELEVE)').one(); \
+	d = rasterize.render_pages(s, a); s.commit(); \
+	print('pages rendues :', d.page_count, '— pièce dérivée n°', d.source_copy_id)"
+
+# Compare plusieurs modèles sur les pages d'une copie. ELEVE=<id> [REFERENCE=<json>]
+s5-ocr-bench:
+	cd $(S5_APP) && python3 tools/ocr_benchmark.py --eleve $(ELEVE) \
+	  $(if $(MODELES),--modeles $(MODELES),) $(if $(REFERENCE),--reference $(REFERENCE),)
+
+# Mesure la taille de rendu d'un PDF selon la résolution, pour justifier RASTER_DPI.
+s5-ocr-mesure-dpi:
+	cd $(S5_APP) && python3 -c "import sys, json; sys.path.insert(0,'.'); \
+	from app.domain import rasterize; \
+	print(json.dumps(rasterize.measure_legibility('$(PDF)'), ensure_ascii=False, indent=2))"

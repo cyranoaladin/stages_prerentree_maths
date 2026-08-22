@@ -1,0 +1,14 @@
+{
+  "name": "katex",
+  "version": "0.16.47",
+  "license": "MIT",
+  "origine": "copie locale du paquet npm katex présent sur le poste, aucune récupération réseau",
+  "contenu": [
+    "katex.min.js",
+    "katex.min.css",
+    "auto-render.min.js",
+    "fonts/*.woff2"
+  ],
+  "raison": "le rendu mathématique doit fonctionner hors ligne ; aucun CDN n'est appelé",
+  "polices": "woff2 uniquement ; woff et ttf écartés pour ne pas tripler le poids"
+}

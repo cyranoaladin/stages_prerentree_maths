@@ -1,6 +1,14 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{nexus_bilan}
 \setnexusheader{\VAR{ h.level_label }}{Plan des quatre premières semaines --- \VAR{ h.student_name }}
+
+% Metadonnees du PDF : sans elles, un lecteur affiche « sans nom ».
+% Aucun chemin local n'y figure.
+\hypersetup{pdftitle={Plan des quatre premières semaines — \VAR{ h.student_name }},
+            pdfauthor={Nexus Réussite},
+            pdfsubject={Plan de rentrée — \VAR{ h.level_label }},
+            pdfcreator={Nexus Réussite}}
+
 \begin{document}
 
 \bilancover{Plan des quatre premières semaines}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject } --- rentrée 2026-2027}{À conserver et à cocher au fur et à mesure}
@@ -10,13 +18,13 @@
 \end{methodbox}
 
 \BLOCK{ for week in plan.weeks }
-\subsectiontitle{Semaine \VAR{ week.week } --- \VAR{ week.focus|esc }}
+\subsectiontitle{Semaine \VAR{ week.week } --- \VAR{ week.focus|esc_ped }}
 \BLOCK{ if week.objectives }
 \begin{tabularx}{\linewidth}{|p{40mm}|X|p{30mm}|}
 \hline
 \rowcolor{SoftBlue} Ce qui est travaillé & Critère de réussite & Rythme \\ \hline
 \BLOCK{ for o in week.objectives }
-\VAR{ o.label|esc } & \VAR{ o.success_criterion|esc } & \VAR{ week.frequency|esc } \\ \hline
+\VAR{ o.label|esc_ped } & \VAR{ o.success_criterion|esc_ped } & \VAR{ week.frequency|esc } \\ \hline
 \BLOCK{ endfor }
 \end{tabularx}
 \par\vspace{1mm}
@@ -26,9 +34,9 @@ Aucune priorité restante : cette semaine peut être consacrée au réinvestisse
 \BLOCK{ endif }
 \BLOCK{ if week.delayed_check }
 \begin{successbox}
-\textbf{\VAR{ week.delayed_check.titre|esc } --- \VAR{ week.delayed_check.duree_minutes } minutes.} \VAR{ week.delayed_check.format|esc }. Critère : \VAR{ week.delayed_check.critere|esc }.
+\textbf{\VAR{ week.delayed_check.titre|esc_ped } --- \VAR{ week.delayed_check.duree_minutes } minutes.} \VAR{ week.delayed_check.format|esc_ped }. Critère : \VAR{ week.delayed_check.critere|esc_ped }.
 \par\vspace{0.8mm}
-Compétences à revérifier : \BLOCK{ for s in week.delayed_check.skills }\VAR{ s.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
+Compétences à revérifier : \BLOCK{ for s in week.delayed_check.skills }\VAR{ s.label|esc_ped }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
 \end{successbox}
 \BLOCK{ endif }
 \BLOCK{ endfor }
@@ -40,7 +48,7 @@ Ces notions ont été rencontrées pour la première fois pendant la séance de 
 \end{graybox}
 \begin{itemize}
 \BLOCK{ for b in plan.bridge_actions }
-\item \textbf{\VAR{ b.label|esc }} --- \VAR{ b.action_label|esc }, \VAR{ b.quand|esc }.
+\item \textbf{\VAR{ b.label|esc_ped }} --- \VAR{ b.action_label|esc_ped }, \VAR{ b.quand|esc_ped }.
 \BLOCK{ endfor }
 \end{itemize}
 \BLOCK{ endif }
@@ -49,7 +57,7 @@ Ces notions ont été rencontrées pour la première fois pendant la séance de 
 \VAR{ blocks.suivi }
 
 \begin{warningbox}
-\VAR{ a.delta_blocked_reason|esc }
+\VAR{ a.delta_blocked_reason|esc_ped }
 \end{warningbox}
 
 \end{document}

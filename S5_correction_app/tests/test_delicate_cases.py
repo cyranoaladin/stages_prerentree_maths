@@ -7,7 +7,7 @@ et que ce qui est hors barème le reste.
 
 import json
 
-from app.models import CriterionDefinition, ItemDefinition
+from app.models import CriterionDefinition
 
 
 def _criterion(session, criterion_id):

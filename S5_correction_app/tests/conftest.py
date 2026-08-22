@@ -12,6 +12,10 @@ import pytest
 
 PROJECT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT))
+# Les fichiers de test se partagent des fixtures (client simulé, fabriques de pages).
+# Le répertoire est donc importable explicitement, plutôt que de dépendre de la façon
+# dont pytest devine sa racine.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 @pytest.fixture(scope="module")
@@ -26,6 +30,15 @@ def runtime(tmp_path_factory):
     config.REPORTS_DIR = root / "reports"
     config.BACKUPS_DIR = root / "backups"
     config.BUILD_DIR = root / "build"
+    config.SOURCE_COPIES_DIR = root / "source_copies"
+    config.OCR_CACHE_DIR = root / "ocr_cache"
+    # Aucun test ne doit pouvoir lire un secret réel du poste, ni en écrire un.
+    config.SECRETS_DIR = root / "secrets"
+    config.OPENROUTER_KEY_FILE = config.SECRETS_DIR / "openrouter.key"
+    # Les tests ne manipulent que des fixtures : ils déclarent le mode SYNTHETIC,
+    # qui n'exige pas d'authentification. Le mode REAL, lui, l'exige toujours — et
+    # un test dédié le vérifie.
+    config.settings.data_mode = "SYNTHETIC"
     config.ensure_runtime()
     database.reset_engine()
     return root
@@ -38,6 +51,10 @@ def client(runtime):
     from fastapi.testclient import TestClient
     from app.main import app
     with TestClient(app, headers={"X-Requested-With": "nexus-tests"}) as test_client:
+        # Comme un navigateur : une première page pose le cookie anti-CSRF, que le
+        # client renvoie ensuite. Sans cette étape, toute requête mutante est refusée
+        # — c'est précisément ce que le contrôle doit garantir.
+        test_client.get("/")
         yield test_client
 
 

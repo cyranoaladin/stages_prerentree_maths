@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+{% block title %}Bilan longitudinal — {{ student.person.display_name }}{% endblock %}
+{% block content %}
+
+<header class="topbar">
+  <div>
+    <h1>Bilan longitudinal</h1>
+    <div class="small muted">{{ student.person.display_name }} — {{ student.level_label }}</div>
+  </div>
+  <div class="spacer"></div>
+  <a class="btn btn-sm" href="/eleve/{{ student.student_id }}">Correction</a>
+  <a class="btn btn-sm" href="/">Tableau de bord</a>
+</header>
+
+{# Les sources se lisent à tout moment : avant la correction, elles disent ce que
+   le bilan pourra établir ; après, elles restent la trace de sa provenance. #}
+<details class="key" {% if obstacles %}open{% endif %}>
+  <summary>Sources disponibles —
+    {{ readiness.diagnostic.skills }} compétences au diagnostic,
+    {{ readiness.longitudinal_report.warnings|length }} réserve(s)</summary>
+  <div class="key-body">
+    <ul class="tight small">
+      <li>{% if readiness.diagnostic.available %}✓{% else %}⚠{% endif %}
+        diagnostic initial
+        {% if readiness.diagnostic.available %}
+        — {{ readiness.diagnostic.instrument }}{% if readiness.diagnostic.date %},
+        {{ readiness.diagnostic.date }}{% endif %}
+        {% else %}absent{% endif %}</li>
+      {% for cle, seance in readiness.sessions.items() %}
+      <li>{% if seance.personalised_dossier %}✓{% elif seance.general_material %}✓{% else %}⚠{% endif %}
+        {{ cle }}
+        {% if seance.personalised_dossier %}personnalisé
+        {% elif seance.general_material %}général
+        {% else %}aucune source{% endif %}
+        {% if seance.theme %}— <span class="muted">{{ seance.theme }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% if readiness.longitudinal_report.warnings %}
+    <p class="small"><strong>Réserves documentaires.</strong> Elles seront écrites
+      dans le bilan ; rien ne sera inventé pour les combler.</p>
+    <ul class="tight small">
+      {% for reserve in readiness.longitudinal_report.warnings %}
+      <li>⚠ {{ reserve }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</details>
+
+{% if obstacles %}
+<div class="banner banner-warning">
+  <strong>Le bilan sera générable après validation de l'évaluation finale.</strong>
+  <ul class="tight small">
+    {% for obstacle in obstacles %}<li>{{ obstacle }}</li>{% endfor %}
+  </ul>
+  <p class="small">Un bilan remis à une famille se fonde sur une correction validée :
+    un brouillon peut encore changer. Aucun contenu final n'est produit avant.</p>
+</div>
+{% else %}
+
+{% if staleness and staleness.stale and staleness.facts_revision %}
+<div class="banner banner-danger">
+  <strong>Le bilan produit précédemment est périmé.</strong>
+  <span class="small">{{ staleness.reason }}</span>
+</div>
+{% endif %}
+
+<div class="pane-grid">
+
+  {# ---------------------------------------------------------- diagnostic #}
+  <details class="key" open>
+    <summary>Diagnostic initial</summary>
+    <div class="key-body">
+      {% if facts.initial_diagnostic.available %}
+      <p class="small">{{ facts.initial_diagnostic.instrument.name }} —
+        {{ facts.initial_diagnostic.date }}, {{ facts.initial_diagnostic.items_traites }},
+        accord réussite/certitude {{ facts.initial_diagnostic.confidence_calibration }}.</p>
+      <table class="grid">
+        <thead><tr><th>Domaine</th><th>Statut</th><th>Observation</th></tr></thead>
+        <tbody>
+        {% for observation in facts.initial_diagnostic.domain_observations %}
+          <tr><td>{{ observation[0] if observation is sequence and observation is not string else observation.domain }}</td>
+              <td>{{ observation[1] if observation is sequence and observation is not string else observation.statut }}</td>
+              <td class="small">{{ observation[2] if observation is sequence and observation is not string else observation.observation }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small muted">{{ facts.initial_diagnostic.nominative_measure_note }}</p>
+      {% else %}
+      <p>Le dossier disponible ne permet pas de reconstituer un positionnement initial complet.</p>
+      {% endif %}
+    </div>
+  </details>
+
+  {# ------------------------------------------------------- parcours S1–S5 #}
+  <details class="key" open>
+    <summary>Parcours S1 – S5</summary>
+    <div class="key-body">
+      <table class="grid">
+        <thead><tr><th>Séance</th><th>Axe</th><th>Objectif personnalisé</th>
+                   <th>Observations de séance</th></tr></thead>
+        <tbody>
+        {% for seance in facts.stage_trajectory.sessions %}
+          <tr>
+            <td class="mono">{{ seance.session }}</td>
+            <td class="small">{{ seance.theme or '—' }}</td>
+            <td class="small">{{ seance.personal_focus or '—' }}</td>
+            <td class="small">
+              {% if seance.observations_available %}renseignées
+              {% else %}<span class="muted">non renseignées</span>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small muted">« Ciblée » décrit le travail proposé. Ce n'est pas une preuve
+        de réussite : celle-ci ne peut venir que de l'évaluation de clôture.</p>
+    </div>
+  </details>
+
+  {# ----------------------------------------------- matrice longitudinale #}
+  <details class="key" open>
+    <summary>Analyse croisée — trajectoire par compétence</summary>
+    <div class="key-body">
+      <table class="grid">
+        <thead><tr>
+          <th>Compétence</th><th>Départ</th><th>Séances</th><th>Travail</th>
+          <th>Évaluation</th><th>Preuve</th><th>Trajectoire</th>
+        </tr></thead>
+        <tbody>
+        {% for ligne in facts.skills %}
+          <tr class="{{ 'pending' if not ligne.has_final_evidence }}">
+            <td class="small">{{ ligne.label }}
+              {% if ligne.curriculum_scope == 'bridge_n' %}
+              <span class="badge scope-bridge">passerelle</span>{% endif %}</td>
+            <td class="small">{{ ligne.initial_status or '—' }}</td>
+            <td class="mono small">{{ ligne.sessions|join(', ') or '—' }}</td>
+            <td class="small">{{ ligne.coverage_label }}</td>
+            <td class="small">{{ ligne.final_status_label or 'non évaluée' }}</td>
+            <td class="mono small" title="{{ ligne.evidence_strength or '' }}">
+              {{ ligne.evidence_level }}</td>
+            <td class="small">{{ ligne.trajectory_status }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small muted">La colonne « travail » décrit ce qui a été proposé ;
+        la colonne « évaluation » décrit ce qui a été mesuré. Elles ne se déduisent
+        pas l'une de l'autre.</p>
+    </div>
+  </details>
+
+  {# ------------------------------------------------------- plan 4 semaines #}
+  <details class="key" open>
+    <summary>Plan des 4 premières semaines</summary>
+    <div class="key-body">
+      <p class="small muted">{{ facts.four_week_plan.mode_note }}</p>
+      {% for semaine in facts.four_week_plan.weeks %}
+      <p><strong>Semaine {{ semaine.week }}</strong> — {{ semaine.intention }}</p>
+      <ul class="tight small">
+        {% for objectif in semaine.objectives %}
+        <li>{{ objectif.objective }}
+          <span class="muted">— {{ objectif.frequency }} · seuil :
+            {{ objectif.success_threshold }}</span>
+          {% if objectif.is_delayed_check %}
+          <span class="badge">contrôle différé</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </details>
+
+  {# ----------------------------------------------------- brouillon parents #}
+  <details class="key">
+    <summary>Brouillon du bilan parents</summary>
+    <div class="key-body">
+      {% for cle, titre, contenu in blocks %}
+      <p><strong>{{ titre }}</strong></p>
+      <p class="small">{{ contenu }}</p>
+      {% endfor %}
+    </div>
+  </details>
+
+  {# ------------------------------------------------------------ provenance #}
+  <details class="key">
+    <summary>Provenance — {{ facts.sources_summary.present }} source(s) lues,
+      {{ facts.sources_summary.missing }} absente(s)</summary>
+    <div class="key-body">
+      <table class="grid">
+        <thead><tr><th>Rôle</th><th>Document</th><th>Empreinte</th><th>État</th></tr></thead>
+        <tbody>
+        {% for releve in facts.sources %}
+          <tr>
+            <td class="small">{{ releve.role }}</td>
+            <td class="small mono">{{ releve.source_path or '—' }}</td>
+            <td class="mono small">{{ (releve.source_sha256 or '')[:12] }}</td>
+            <td class="small">
+              {% if releve.present %}lue{% else %}
+              <span class="muted" title="{{ releve.note }}">absente</span>{% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      <p class="small muted">Chaque affirmation du bilan renvoie à l'une de ces sources.
+        <a href="/eleve/{{ student.student_id }}/bilan-longitudinal/faits">Voir les faits bruts</a>.</p>
+    </div>
+  </details>
+
+  {# --------------------------------------------------------------- limites #}
+  <details class="key" open>
+    <summary>Ce que ce bilan ne permet pas d'affirmer</summary>
+    <div class="key-body">
+      <ul class="tight small">
+        {% for limite in facts.interpretation_limits %}<li>{{ limite }}.</li>{% endfor %}
+      </ul>
+    </div>
+  </details>
+
+</div>
+{% endif %}
+{% endblock %}

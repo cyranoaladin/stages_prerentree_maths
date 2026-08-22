@@ -11,10 +11,10 @@ divergence est signalée à l'écran ; elle n'est jamais résorbée en silence.
 """
 
 import json
-from decimal import Decimal
 from pathlib import Path
 
 from .. import config
+from ..data import criterion_overlays
 from ..models import (Assessment, BaselineStatus, CriterionDefinition, DelayedCheck,
                       ImportSource, ItemDefinition, Person, SkillReference, Student,
                       VirtualCriterionDefinition)
@@ -53,6 +53,83 @@ def _artifact_index(freeze: dict) -> dict:
 
 def _cloture_dir(pdf_relpath: str) -> Path:
     return (config.REPO_ROOT / pdf_relpath).parent
+
+
+def _apply_overlay(criterion: CriterionDefinition, overlay: dict) -> None:
+    """Superpose au critère importé ce que la revue curriculaire a établi.
+
+    Le classement, la rubrique de score, les suggestions d'erreur et le libellé neutre
+    viennent de ``app/data/criterion_overlays.py``. Les points, l'identifiant et
+    l'énoncé ne sont jamais touchés.
+    """
+    if overlay.get("scope"):
+        criterion.curriculum_scope = overlay["scope"]
+    if overlay.get("analysis_skill_id"):
+        criterion.analysis_skill_id = overlay["analysis_skill_id"]
+    criterion.neutral_label = overlay.get("neutral_label")
+    criterion.scope_certainty = overlay.get("certainty")
+    source_key = overlay.get("source")
+    if source_key:
+        criterion.official_source = criterion_overlays.SOURCES.get(source_key, source_key)
+    if overlay.get("rationale"):
+        criterion.scope_rationale = overlay["rationale"]
+    if overlay.get("rubric"):
+        criterion.score_rubric_json = json.dumps(
+            [{"score_centi": c, "regle": r} for c, r in overlay["rubric"]],
+            ensure_ascii=False)
+    if overlay.get("errors"):
+        criterion.error_suggestions_json = json.dumps(
+            [{"criterion_id": criterion.criterion_id, "error_code": c, "description": d}
+             for c, d in overlay["errors"]], ensure_ascii=False)
+    for key, column in (("interpretation_limits", "interpretation_limits_json"),
+                        ("fairness_rules", "fairness_rules_json")):
+        if not overlay.get(key):
+            continue
+        # Par défaut, les mentions de l'overlay s'ajoutent à celles importées de la
+        # couche post-distribution V3, la déduplication se faisant par égalité de
+        # chaîne. Un critère peut déclarer « replace » lorsque sa formulation
+        # reprend et complète mot pour mot celle de la couche V3 : les deux
+        # coexisteraient sinon, et l'enseignant lirait deux phrases quasi
+        # identiques. Le mode est explicite et par critère ; aucun autre critère,
+        # aucun autre élève n'est affecté.
+        if overlay.get(key + "_mode") == "replace":
+            merged = list(overlay[key])
+        else:
+            existing = json.loads(getattr(criterion, column) or "[]")
+            merged = existing + [v for v in overlay[key] if v not in existing]
+        setattr(criterion, column, json.dumps(merged, ensure_ascii=False))
+
+
+def _apply_virtual_split(session, criterion: CriterionDefinition, overlay: dict) -> None:
+    """Crée les sous-critères analytiques d'un critère déclaré mixte par la revue.
+
+    La somme de leurs points est vérifiée ici : elle doit être strictement égale aux
+    points du critère imprimé, sans perte ni duplication.
+    """
+    split = overlay.get("virtual_split") or []
+    if not split:
+        return
+    total = sum(part["points"] for part in split)
+    if total != criterion.max_score_centi:
+        raise ImportError_(
+            "critère mixte %s : les sous-critères totalisent %s au lieu de %s"
+            % (criterion.criterion_id, total, criterion.max_score_centi))
+    for rank, part in enumerate(split, start=1):
+        session.add(VirtualCriterionDefinition(
+            virtual_criterion_id="%s_%s" % (criterion.criterion_id, part["suffix"]),
+            criterion_id=criterion.criterion_id, rank=rank,
+            description=part["label"], max_score_centi=part["points"],
+            analysis_skill_id=part.get("analysis_skill_id") or criterion.analysis_skill_id,
+            analysis_skill_label=part.get("label"),
+            curriculum_scope=part["scope"],
+            neutral_label=part.get("label"),
+            score_rubric_json=json.dumps(
+                [{"score_centi": c, "regle": r} for c, r in part.get("rubric", [])],
+                ensure_ascii=False),
+            error_suggestions_json=json.dumps(
+                [{"criterion_id": criterion.criterion_id,
+                  "error_code": c, "description": d}
+                 for c, d in part.get("errors", [])], ensure_ascii=False)))
 
 
 def run_import(session, v3_root: Path = None) -> dict:
@@ -182,6 +259,16 @@ def run_import(session, v3_root: Path = None) -> dict:
                     retention_json=json.dumps(retention, ensure_ascii=False)
                     if retention else None))
                 stats["criteria"] += 1
+                session.flush()
+
+                overlay = criterion_overlays.for_criterion(crit["criterion_id"])
+                if overlay:
+                    definition = session.get(CriterionDefinition, crit["criterion_id"])
+                    _apply_overlay(definition, overlay)
+                    stats["overlays"] = stats.get("overlays", 0) + 1
+                    if overlay.get("virtual_split"):
+                        _apply_virtual_split(session, definition, overlay)
+                        stats["virtual_criteria"] += len(overlay["virtual_split"])
 
                 for vrank, virt in enumerate(crit.get("virtual_subcriteria") or [], start=1):
                     valias = alias_by_id.get(virt["analysis_skill_id"], {})
@@ -200,9 +287,23 @@ def run_import(session, v3_root: Path = None) -> dict:
         profile = _read(profile_path, sources, "student_learning_profile")
         session.flush()
         for row in profile["baseline"]["skills"]:
-            session.add(BaselineStatus(student_id=sid, skill_id=row["skill_id"],
-                                       status_qualitative=row.get("statut_avant_s5"),
-                                       evidence=row.get("preuve")))
+            # Le profil documente, en plus du statut initial, les séances où la
+            # compétence a été ciblée et l'état de la preuve de séance. Ces champs
+            # décrivent le travail prévu, jamais une réussite ; les conserver est ce
+            # qui permet au bilan de dire « travaillée en S1 » sans dire « acquise ».
+            session.add(BaselineStatus(
+                student_id=sid, skill_id=row["skill_id"],
+                status_qualitative=row.get("statut_avant_s5"),
+                evidence=row.get("preuve"),
+                baseline_items_json=json.dumps(row.get("baseline_items") or [],
+                                               ensure_ascii=False),
+                sessions_json=json.dumps(row.get("sessions_travaillees") or [],
+                                         ensure_ascii=False),
+                targeted_in_s5=bool(row.get("cible_s5")),
+                stage_evidence_note=row.get("preuve_post_s1_s4"),
+                provisional_priority=row.get("priorite_provisoire"),
+                domain=row.get("domain"),
+                importance_n=row.get("importance_n")))
             stats["baselines"] += 1
             key = (policy["level_key"], row["skill_id"])
             if key not in seen_skills:
@@ -245,11 +346,48 @@ def run_import(session, v3_root: Path = None) -> dict:
                                                ensure_ascii=False)))
             stats["delayed_checks"] += 1
 
+    session.flush()
+    recompute_curriculum_totals(session)
+
     for src in sources:
         session.add(ImportSource(**src))
     session.flush()
     stats["sources"] = len(sources)
     return stats
+
+
+def recompute_curriculum_totals(session) -> dict:
+    """Recalcule, pour chaque évaluation, les points N-1 et passerelle à partir des
+    critères réellement enregistrés.
+
+    Les totaux d'origine viennent d'un fichier JSON de la couche V3. Dès qu'un overlay
+    reclasse un critère, ce fichier n'est plus la source de vérité : seuls les critères
+    en base le sont. Un écart avec le total imprimé est une erreur, pas un arrondi.
+    """
+    totals = {}
+    for assessment in session.query(Assessment).all():
+        n1 = bridge = 0
+        for item in assessment.items:
+            for crit in item.criteria:
+                if crit.curriculum_scope == "mixed":
+                    for part in crit.virtual_parts:
+                        if part.curriculum_scope == "bridge_n":
+                            bridge += part.max_score_centi
+                        else:
+                            n1 += part.max_score_centi
+                elif crit.curriculum_scope == "bridge_n":
+                    bridge += crit.max_score_centi
+                else:
+                    n1 += crit.max_score_centi
+        if n1 + bridge != assessment.max_points_centi:
+            raise ImportError_(
+                "%s : la somme des portées (%s) ne redonne pas le total du sujet (%s)"
+                % (assessment.student_id, n1 + bridge, assessment.max_points_centi))
+        assessment.n_minus_1_available_centi = n1
+        assessment.bridge_available_centi = bridge
+        totals[assessment.student_id] = (n1, bridge)
+    session.flush()
+    return totals
 
 
 def check_sources_unchanged(session) -> list:

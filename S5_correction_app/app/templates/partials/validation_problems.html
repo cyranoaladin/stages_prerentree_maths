@@ -3,7 +3,9 @@
 {% block content %}
 <h1>Validation impossible</h1>
 <div class="banner banner-danger">
-  <strong>{{ problems|length }} point(s) à traiter avant de pouvoir valider.</strong>
+  <strong>{{ problems|length }}
+  {{ "ligne analytique reste à renseigner" if problems|length == 1 else "lignes analytiques restent à renseigner" }}
+  pour les {{ progress.original_criteria }} critères du sujet, avant validation.</strong>
 </div>
 <table class="grid">
 <thead><tr><th>Item</th><th>Ce qui manque ou ne va pas</th><th>Critère</th></tr></thead>
@@ -14,5 +16,5 @@
 {% endfor %}
 </tbody>
 </table>
-<p style="margin-top:12px"><a class="btn btn-primary" href="/eleve/{{ assessment.student_id }}">Revenir à la correction</a></p>
+<p style="margin-top:12px"><a class="btn btn-primary" href="/eleve/{{ assessment.student_id }}?verif=1">Revenir à la correction</a></p>
 {% endblock %}

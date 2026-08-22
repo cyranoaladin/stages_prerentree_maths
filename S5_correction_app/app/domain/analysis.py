@@ -45,7 +45,8 @@ N1_READING = {
     "SATISFAISANT": "réussite actuelle observée, à consolider dans la durée",
     "A_CONSOLIDER": "consolidation engagée, non achevée",
     "PRIORITAIRE": "fragilité de prérequis actuellement documentée",
-    "A_CONFIRMER": "réussite immédiate après remédiation ; la rétention reste à vérifier",
+    "A_CONFIRMER": "réussite obtenue juste après le travail sur la notion ; la "
+                   "rétention reste à vérifier",
     "PREUVE_INSUFFISANTE": "la copie ne contient pas assez d'éléments pour conclure",
 }
 
@@ -413,8 +414,8 @@ def conclusions(skills, n1_pool, bridge_pool, delayed, neutralised) -> dict:
                                    % (s["label"], s["reading"],
                                       evidence.LABELS[s["evidence_strength"]]))
             elif s["status"] == "A_CONFIRMER":
-                careful.append("%s : réussite obtenue juste après remédiation ; la rétention "
-                               "reste à vérifier" % s["label"])
+                careful.append("%s : réussite obtenue juste après le travail sur la "
+                               "notion ; la rétention reste à vérifier" % s["label"])
             elif s["status"] == "PREUVE_INSUFFISANTE":
                 limits.append("%s : trop peu d'éléments pour conclure" % s["label"])
             else:
@@ -450,7 +451,7 @@ def warnings(skills, n1_pool, bridge_pool, delayed, neutralised) -> list:
         out.append("Force de preuve faible ou insuffisante pour : %s. Ces lectures ne "
                    "peuvent pas fonder une conclusion isolée." % ", ".join(weak))
     if delayed:
-        out.append("Compétences mesurées juste après remédiation : %s."
+        out.append("Compétences évaluées juste après le travail sur la notion : %s."
                    % ", ".join(s["label"] for s in delayed))
     if not bridge_pool["available_centi"]:
         out.append("Aucun critère de passerelle dans ce sujet : le score brut porte "

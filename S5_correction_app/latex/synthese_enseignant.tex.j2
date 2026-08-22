@@ -1,6 +1,14 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{nexus_bilan}
 \setnexusheader{\VAR{ h.level_label } --- DOCUMENT ENSEIGNANT}{Synthèse de correction --- \VAR{ h.student_name }}
+
+% Metadonnees du PDF : sans elles, un lecteur affiche « sans nom ».
+% Aucun chemin local n'y figure.
+\hypersetup{pdftitle={Synthèse enseignant — \VAR{ h.student_name }},
+            pdfauthor={Nexus Réussite},
+            pdfsubject={Synthèse de correction — document interne — \VAR{ h.level_label }},
+            pdfcreator={Nexus Réussite}}
+
 \begin{document}
 
 \bilancover{Synthèse enseignant}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject } --- évaluation de clôture S5}{Document interne --- ne pas diffuser aux familles}
@@ -22,24 +30,30 @@ Passerelles vers N & \VAR{ a.bridge_n_readiness.earned|esc } & \VAR{ a.bridge_n_
 
 \sectiontitle{Compétences}
 \begin{center}
-\begin{longtable}{|p{46mm}|c|c|c|c|p{26mm}|}
+\#{ Largeurs explicites : la somme des colonnes et des filets doit rester sous le
+    bloc de texte, sinon le tableau deborde. 58+14+16+10+20+30 = 148 mm, filets et
+    marges internes compris on reste sous les 178 mm disponibles. }
+\begin{longtable}{|>{\raggedright\arraybackslash}p{54mm}|c|c|c|c|>{\raggedright\arraybackslash}p{28mm}|}
 \hline
 \rowcolor{SoftBlue} Compétence & Scope & Score & Crit. & Preuve & Statut \\ \hline
 \endhead
 \BLOCK{ for s in a.skills }
-\VAR{ s.label|esc } & \VAR{ scope_badge(s.curriculum_scope) } & \VAR{ s.earned|esc }/\VAR{ s.available|esc } & \VAR{ s.criteria|length } & \VAR{ s.evidence_strength|esc } & \VAR{ s.status_label|esc } \\ \hline
+\VAR{ s.label|esc_ped } & \VAR{ scope_court(s.curriculum_scope) } & \VAR{ s.earned|esc }/\VAR{ s.available|esc } & \VAR{ s.criteria|length } & \VAR{ s.evidence_strength|esc } & \VAR{ s.status_label|esc_ped } \\ \hline
 \BLOCK{ endfor }
 \end{longtable}
 \end{center}
 
 \sectiontitle{Détail critère par critère}
 \begin{center}
-\begin{longtable}{|c|p{50mm}|c|c|p{26mm}|p{22mm}|}
+\#{ La colonne « Competence » porte des identifiants sans point de cesure : ils
+    sont rendus par le filtre esc_id, qui autorise une coupure apres chaque
+    souligne. Sans lui, l'identifiant deborde du tableau. }
+\begin{longtable}{|c|>{\raggedright\arraybackslash}p{52mm}|c|c|>{\raggedright\arraybackslash}p{30mm}|>{\raggedright\arraybackslash}p{22mm}|}
 \hline
 \rowcolor{SoftBlue} Item & Critère & Score & Scope & Compétence & Erreurs \\ \hline
 \endhead
 \BLOCK{ for c in a.criteria }
-\VAR{ c.item_ref|esc } & \VAR{ c.description|esc } & \BLOCK{ if c.scoring_status == 'NEUTRALISED' }neutralisé\BLOCK{ else }\VAR{ centi(c.score_centi) }/\VAR{ centi(c.max_score_centi) }\BLOCK{ endif } & \VAR{ scope_badge(c.curriculum_scope) } & \VAR{ c.analysis_skill_id|esc } & \BLOCK{ for e in c.error_codes }\VAR{ e|esc }\BLOCK{ if not loop.last }, \BLOCK{ endif }\BLOCK{ endfor } \\ \hline
+\VAR{ c.item_ref|esc } & \VAR{ c.description|esc_ped } & \BLOCK{ if c.scoring_status == 'NEUTRALISED' }neutralisé\BLOCK{ else }\VAR{ centi(c.score_centi) }/\VAR{ centi(c.max_score_centi) }\BLOCK{ endif } & \VAR{ scope_court(c.curriculum_scope) } & {\footnotesize\ttfamily{}\VAR{ c.analysis_skill_id|esc_id }} & \BLOCK{ for e in c.error_codes }\VAR{ e|esc }\BLOCK{ if not loop.last }, \BLOCK{ endif }\BLOCK{ endfor } \\ \hline
 \BLOCK{ endfor }
 \end{longtable}
 \end{center}
@@ -70,10 +84,10 @@ Les codes ne sont comptés que sur les critères effectivement échoués. Aucun 
 
 \BLOCK{ if a.retention.skills }
 \sectiontitle{Rétention à vérifier}
-\VAR{ a.retention.principe|esc }
+\VAR{ a.retention.principe|esc_ped }
 \begin{itemize}
 \BLOCK{ for s in a.retention.skills }
-\item \VAR{ s.label|esc } --- \VAR{ s.status|esc }
+\item \VAR{ s.label|esc_ped } --- \VAR{ s.status|esc }
 \BLOCK{ endfor }
 \end{itemize}
 \BLOCK{ endif }
@@ -82,7 +96,7 @@ Les codes ne sont comptés que sur les critères effectivement échoués. Aucun 
 \sectiontitle{Critères neutralisés}
 \begin{itemize}
 \BLOCK{ for n in a.neutralised }
-\item \VAR{ n.item_ref|esc } --- \VAR{ n.points|esc } pt --- \VAR{ n.raison|esc }
+\item \VAR{ n.item_ref|esc } --- \VAR{ n.points|esc } pt --- \VAR{ n.raison|esc_ped }
 \BLOCK{ endfor }
 \end{itemize}
 \BLOCK{ endif }
@@ -91,7 +105,7 @@ Les codes ne sont comptés que sur les critères effectivement échoués. Aucun 
 \sectiontitle{Observations générales de l'enseignant}
 \begin{itemize}
 \BLOCK{ for o in observations }
-\item \textbf{\VAR{ o.label|esc }} : \VAR{ o.value }
+\item \textbf{\VAR{ o.label|esc_ped }} : \VAR{ o.value }
 \BLOCK{ endfor }
 \end{itemize}
 \BLOCK{ endif }

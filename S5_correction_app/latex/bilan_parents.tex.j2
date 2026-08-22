@@ -1,6 +1,14 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage{nexus_bilan}
 \setnexusheader{\VAR{ h.level_label }}{Bilan de fin de stage --- \VAR{ h.student_name }}
+
+% Metadonnees du PDF : sans elles, un lecteur affiche « sans nom ».
+% Aucun chemin local n'y figure.
+\hypersetup{pdftitle={Bilan de fin de stage — \VAR{ h.student_name }},
+            pdfauthor={Nexus Réussite},
+            pdfsubject={Stage de pré-rentrée — \VAR{ h.level_label }},
+            pdfcreator={Nexus Réussite}}
+
 \begin{document}
 
 \bilancover{Bilan de fin de stage}{\VAR{ h.student_name }}{\VAR{ h.level_label }}{\VAR{ h.subject } --- stage de pré-rentrée 2026-2027}{Cinq séances, dix heures de travail --- document remis aux responsables légaux}
@@ -69,7 +77,7 @@ Passerelles vers l'année à venir & \VAR{ a.bridge_n_readiness.earned|esc } & \
 \hline
 \rowcolor{SoftBlue} Semaine & Ce qui est travaillé & Rythme \\ \hline
 \BLOCK{ for week in plan.weeks }
-\VAR{ week.week } & \BLOCK{ if week.objectives }\BLOCK{ for o in week.objectives }\VAR{ o.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }\BLOCK{ else }Réinvestissement libre\BLOCK{ endif }\BLOCK{ if week.delayed_check } --- \emph{mini-test différé de 10 minutes}\BLOCK{ endif } & \VAR{ week.frequency|esc } \\ \hline
+\VAR{ week.week } & \BLOCK{ if week.objectives }\BLOCK{ for o in week.objectives }\VAR{ o.label|esc_ped }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }\BLOCK{ else }Réinvestissement libre\BLOCK{ endif }\BLOCK{ if week.delayed_check } --- \emph{mini-test différé de 10 minutes}\BLOCK{ endif } & \VAR{ week.frequency|esc } \\ \hline
 \BLOCK{ endfor }
 \end{tabularx}
 \end{center}
@@ -77,7 +85,7 @@ Passerelles vers l'année à venir & \VAR{ a.bridge_n_readiness.earned|esc } & \
 \BLOCK{ if plan.bridge_actions }
 \begin{graybox}
 \textbf{Notions découvertes pendant la séance de clôture.} Elles seront enseignées et reprises en classe dès la rentrée. Elles ne constituent pas un retard :
-\BLOCK{ for b in plan.bridge_actions }\VAR{ b.label|esc }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
+\BLOCK{ for b in plan.bridge_actions }\VAR{ b.label|esc_ped }\BLOCK{ if not loop.last } ; \BLOCK{ endif }\BLOCK{ endfor }.
 \end{graybox}
 \BLOCK{ endif }
 

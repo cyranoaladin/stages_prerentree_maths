@@ -12,7 +12,6 @@ Deux à trois objectifs par semaine, pas davantage : un plan que personne ne tie
 sert à rien.
 """
 
-from . import points
 
 WEEK_SHAPES = [
     (1, 2, "reprise guidée puis exercices gradués", 15, "3 séances de 15 minutes",

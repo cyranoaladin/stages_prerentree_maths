@@ -28,16 +28,46 @@ def _serve(args) -> int:
     if args.readonly:
         config.settings.set_readonly("démarré avec --readonly : aucune écriture n'est acceptée.")
     host = config.DEFAULT_HOST
-    if args.allow_network:
-        password = os.environ.get("NEXUS_S5_PASSWORD", "")
-        if len(password) < 12:
-            print("REFUS : --allow-network exige NEXUS_S5_PASSWORD, d'au moins 12 caractères.\n"
-                  "Aucun mot de passe par défaut n'est fourni, et l'application ne s'expose "
-                  "pas sans authentification.", file=sys.stderr)
-            return 2
-        print("AVERTISSEMENT : l'application va écouter sur toutes les interfaces réseau.\n"
-              "Les corrections et les bilans sont des données personnelles d'élèves.",
+    mode = config.settings.data_mode
+    password = os.environ.get("NEXUS_S5_PASSWORD", "")
+    tls = bool(args.ssl_certfile and args.ssl_keyfile)
+    config.settings.tls_active = tls
+    config.settings.tls_by_proxy = bool(config.TRUSTED_PROXY_TLS)
+
+    # Un mot de passe est exigé dans deux cas, et l'un ne remplace pas l'autre :
+    #
+    #  * mode REAL — aucune copie ne s'ouvre sans authentification, y compris sur la
+    #    boucle locale : tout processus du poste sait ouvrir un navigateur ;
+    #  * exposition réseau — quel que soit le mode déclaré. « S5_DATA_MODE » est une
+    #    déclaration d'opérateur : une erreur de déclaration ne doit pas suffire à
+    #    ouvrir un serveur sans authentification sur toutes les interfaces.
+    if (mode == "REAL" or args.allow_network) and len(password) < 12:
+        raison = ("S5_DATA_MODE=REAL" if mode == "REAL" else "--allow-network")
+        print("REFUS : %s exige NEXUS_S5_PASSWORD, d'au moins 12 caractères.\n"
+              "Aucun mot de passe par défaut n'est fourni. Pour travailler sur des "
+              "fixtures\nen local sans authentification, déclarez explicitement "
+              "S5_DATA_MODE=SYNTHETIC\net n'exposez pas le réseau." % raison,
               file=sys.stderr)
+        return 2
+
+    if args.allow_network:
+        # HTTP Basic ne chiffre rien : sur un réseau, le mot de passe ET les copies
+        # circuleraient en clair. On refuse plutôt que de donner le change.
+        if mode == "REAL" and not tls and not config.TRUSTED_PROXY_TLS:
+            print("REFUS : données réelles + réseau + HTTP en clair.\n"
+                  "HTTP Basic n'apporte aucune confidentialité sur un transport en "
+                  "clair : le mot de passe\net les copies d'élèves seraient "
+                  "interceptables. Deux issues :\n"
+                  "  --ssl-certfile CERT --ssl-keyfile CLE      (TLS direct)\n"
+                  "  NEXUS_S5_TRUSTED_PROXY_TLS=1 + NEXUS_S5_TRUSTED_PROXY_HOSTS=…\n"
+                  "                                             (TLS terminé par un "
+                  "proxy déclaré)\n"
+                  "Aucun certificat n'est généré automatiquement : un certificat non "
+                  "maîtrisé\nne résout rien.", file=sys.stderr)
+            return 2
+        print("AVERTISSEMENT : l'application va écouter sur toutes les interfaces "
+              "réseau.\nLes corrections et les bilans sont des données personnelles "
+              "d'élèves.", file=sys.stderr)
         host = "0.0.0.0"          # noqa: S104 — choix explicite de l'opérateur
         config.settings.allow_network = True
     config.settings.host, config.settings.port = host, args.port
@@ -45,8 +75,16 @@ def _serve(args) -> int:
     print("  http://%s:%d" % ("127.0.0.1" if host == "127.0.0.1" else host, args.port))
     print("  base : %s" % config.DB_PATH)
     print("  pour arrêter : Ctrl+C")
+    print("  mode de données : %s%s" % (mode, "" if mode == "REAL"
+                                        else "  (fixtures — aucune donnée réelle)"))
+    print("  transport : %s" % ("TLS direct" if tls else
+                                "TLS par proxy déclaré" if config.TRUSTED_PROXY_TLS
+                                else "clair (boucle locale uniquement)"))
+    options = {}
+    if tls:
+        options = {"ssl_certfile": args.ssl_certfile, "ssl_keyfile": args.ssl_keyfile}
     uvicorn.run("app.main:app", host=host, port=args.port, log_level="info",
-                reload=False, access_log=False)
+                reload=False, access_log=False, **options)
     return 0
 
 
@@ -69,6 +107,9 @@ def main(argv=None) -> int:
     sub = parser.add_subparsers(dest="command")
 
     serve = sub.add_parser("serve", help="démarre l'application web locale")
+    serve.add_argument("--ssl-certfile", default=None,
+                       help="certificat TLS ; exigé pour exposer des données réelles")
+    serve.add_argument("--ssl-keyfile", default=None, help="clé privée TLS")
     serve.add_argument("--host", default=config.DEFAULT_HOST,
                        help="ignoré sans --allow-network : la boucle locale est le défaut")
     serve.add_argument("--port", type=int, default=config.DEFAULT_PORT)
